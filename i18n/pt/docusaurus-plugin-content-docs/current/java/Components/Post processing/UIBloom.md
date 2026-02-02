@@ -1,0 +1,40 @@
+{@import ../../../links.md}
+
+# UIBloom
+
+Referência completa da API de `UIBloom`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Post processing
+
+**Componente:** sim
+
+---
+
+```java
+public class UIBloom extends Component
+```
+
+## Construtores (3)
+
+| Signature | Description |
+| --- | --- |
+| UIBloom([UIBloom]) | Executa `UIBloom` e retorna quando a chamada do motor termina. |
+| UIBloom([Engine]) | Executa `UIBloom` e retorna quando a chamada do motor termina. |
+| UIBloom() | Executa `UIBloom` e retorna quando a chamada do motor termina. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [UIBloom] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Atributos Virtuais (4)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `blurRadius` | [float] | `get/set` | Atributo virtual exposto por `getBlurRadius`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `intensity` | [float] | `get/set` | Atributo virtual exposto por `getIntensity`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `quality` | [Quality] | `get/set` | Atributo virtual exposto por `getQuality`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `threshold` | [float] | `get/set` | Atributo virtual exposto por `getThreshold`. Acesse como um campo para ler ou escrever o valor subjacente. |

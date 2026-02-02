@@ -1,0 +1,17 @@
+{@import ../../links.md}
+
+# Singleton
+
+Referência completa da API de `Singleton`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Uncategorized
+
+**Componente:** não
+
+---
+
+```java
+public interface Singleton
+```

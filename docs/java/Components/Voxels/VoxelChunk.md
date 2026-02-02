@@ -1,0 +1,58 @@
+{@import ../../../links.md}
+
+# VoxelChunk
+
+Complete API reference for `VoxelChunk`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Voxels
+
+**Component:** yes
+
+---
+
+```java
+public class VoxelChunk extends Component
+```
+
+## Constructors (2)
+
+| Signature | Description |
+| --- | --- |
+| VoxelChunk([VoxelChunk]) | Executes `VoxelChunk` and returns after the underlying engine call finishes. |
+| VoxelChunk() | Executes `VoxelChunk` and returns after the underlying engine call finishes. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [VoxelChunk] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
+
+## Virtual Attributes (6)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `blocksMatrix` | [OH3LevelIntArray] | `set` | Virtual attribute exposed by `setBlocksMatrix`. Access it like a field to read or write the underlying value. |
+| `blocksMatrixCritical` | [OH3LevelIntArray] | `get` | Virtual attribute exposed by `getBlocksMatrixCritical`. Access it like a field to read or write the underlying value. |
+| `height` | [int] | `get/set` | Virtual attribute exposed by `getHeight`. Access it like a field to read or write the underlying value. |
+| `offset` | [Vector2] | `get/set` | Virtual attribute exposed by `getOffset`. Access it like a field to read or write the underlying value. |
+| `usePositionAsCoordinatesOffset` | [boolean] | `get/set` | Virtual attribute exposed by `isUsePositionAsCoordinatesOffset`. Access it like a field to read or write the underlying value. |
+| `width` | [int] | `get/set` | Virtual attribute exposed by `getWidth`. Access it like a field to read or write the underlying value. |
+
+## Methods (12)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| apply() | [void] | Executes `apply` and returns after the underlying engine call finishes. |
+| invalidateBlocks() | [void] | Executes `invalidateBlocks` and returns after the underlying engine call finishes. |
+| getMaxVerticesCount() | [int] | Returns the current max vertices count. |
+| getBlock([int], [int], [int]) | [int] | Returns the current block. |
+| getBlockLocal([int], [int], [int]) | [int] | Returns the current block local. |
+| setBlock([int], [int], [int], [int]) | [void] | Sets or updates the block. |
+| setLocalBlock([int], [int], [int], [int]) | [void] | Sets or updates the local block. |
+| containsBlock([int], [int], [int]) | [boolean] | Performs the containsBlock operation using the provided parameters (x, y, z). |
+| containsLocalBlock([int], [int], [int]) | [boolean] | Performs the containsLocalBlock operation using the provided parameters (x, y, z). |
+| isReady() | [boolean] | Returns whether ready is true. |
+| componentClassMatch([Component], [Component]) | [boolean] | Executes `componentClassMatch` and returns after the underlying engine call finishes. |
+| getEngineComponent() | [Component] | Executes `getEngineComponent` and returns after the underlying engine call finishes. |

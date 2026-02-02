@@ -1,0 +1,39 @@
+{@import ../../../links.md}
+
+# UIContrastBrightnessSaturation
+
+Complete API reference for `UIContrastBrightnessSaturation`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Post processing
+
+**Component:** yes
+
+---
+
+```java
+public class UIContrastBrightnessSaturation extends Component
+```
+
+## Constructors (3)
+
+| Signature | Description |
+| --- | --- |
+| UIContrastBrightnessSaturation([UIContrastBrightnessSaturation]) | Executes `UIContrastBrightnessSaturation` and returns after the underlying engine call finishes. |
+| UIContrastBrightnessSaturation([Engine]) | Executes `UIContrastBrightnessSaturation` and returns after the underlying engine call finishes. |
+| UIContrastBrightnessSaturation() | Executes `UIContrastBrightnessSaturation` and returns after the underlying engine call finishes. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [UIContrastBrightnessSaturation] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
+
+## Virtual Attributes (3)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `brightness` | [float] | `get/set` | Virtual attribute exposed by `getBrightness`. Access it like a field to read or write the underlying value. |
+| `contrast` | [float] | `get/set` | Virtual attribute exposed by `getContrast`. Access it like a field to read or write the underlying value. |
+| `saturation` | [float] | `get/set` | Virtual attribute exposed by `getSaturation`. Access it like a field to read or write the underlying value. |

@@ -1,0 +1,59 @@
+{@import ../../../links.md}
+
+# SoundPlayer
+
+Referência completa da API de `SoundPlayer`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Sound
+
+**Componente:** sim
+
+---
+
+```java
+public class SoundPlayer extends Component
+```
+
+## Construtores (2)
+
+| Signature | Description |
+| --- | --- |
+| SoundPlayer([SoundPlayer]) | Executa `SoundPlayer` e retorna quando a chamada do motor termina. |
+| SoundPlayer() | Executa `SoundPlayer` e retorna quando a chamada do motor termina. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [SoundPlayer] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Atributos Virtuais (10)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `diameter` | [float] | `get/set` | Atributo virtual exposto por `getDiameter`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `loadMode` | [LoadMode] | `get/set` | Atributo virtual exposto por `getLoadMode`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `loop` | [boolean] | `get/set` | Atributo virtual exposto por `isLoop`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `mode` | [Mode] | `get/set` | Atributo virtual exposto por `getMode`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `paused` | [boolean] | `get` | Atributo virtual exposto por `isPaused`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `pitch` | [float] | `get/set` | Atributo virtual exposto por `getPitch`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `playing` | [boolean] | `get` | Atributo virtual exposto por `isPlaying`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `speed` | [float] | `get/set` | Atributo virtual exposto por `getSpeed`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `stopped` | [boolean] | `get` | Atributo virtual exposto por `isStopped`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `volume` | [float] | `get/set` | Atributo virtual exposto por `getVolume`. Acesse como um campo para ler ou escrever o valor subjacente. |
+
+## Métodos (9)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| setSoundFile([SoundFile]) | [void] | Define ou atualiza a propriedade `propriedade `sound file``. |
+| setSoundFile([File]) | [void] | Define ou atualiza a propriedade `propriedade `sound file``. |
+| play() | [void] | Executa a operação play. |
+| stop() | [void] | Executa a operação stop. |
+| pause() | [void] | Executa a operação pause. |
+| unPause() | [void] | Executa a operação unPause. |
+| seekTo([int]) | [void] | Executa `seekTo` e retorna quando a chamada do motor termina. |
+| componentClassMatch([Component], [Component]) | [boolean] | Executa `componentClassMatch` e retorna quando a chamada do motor termina. |
+| getEngineComponent() | [Component] | Executa `getEngineComponent` e retorna quando a chamada do motor termina. |

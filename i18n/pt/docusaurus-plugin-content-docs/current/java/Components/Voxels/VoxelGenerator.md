@@ -1,0 +1,39 @@
+{@import ../../../links.md}
+
+# VoxelGenerator
+
+Referência completa da API de `VoxelGenerator`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Voxels
+
+**Componente:** sim
+
+---
+
+```java
+public class VoxelGenerator extends Component
+```
+
+## Construtores (2)
+
+| Signature | Description |
+| --- | --- |
+| VoxelGenerator([VoxelGenerator]) | Executa `VoxelGenerator` e retorna quando a chamada do motor termina. |
+| VoxelGenerator() | Executa `VoxelGenerator` e retorna quando a chamada do motor termina. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `component` | [VoxelGenerator] | Representa o valor de `component` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Métodos (4)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| setListener([Component]) | [void] | Define ou atualiza a propriedade `propriedade `listener``. |
+| removeListener() | [void] | Remove listener da coleção. |
+| componentClassMatch([Component], [Component]) | [boolean] | Executa `componentClassMatch` e retorna quando a chamada do motor termina. |
+| getEngineComponent() | [Component] | Executa `getEngineComponent` e retorna quando a chamada do motor termina. |

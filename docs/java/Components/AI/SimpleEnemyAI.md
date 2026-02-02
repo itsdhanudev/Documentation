@@ -1,0 +1,54 @@
+{@import ../../../links.md}
+
+# SimpleEnemyAI
+
+Complete API reference for `SimpleEnemyAI`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** AI
+
+**Component:** yes
+
+---
+
+```java
+public class SimpleEnemyAI extends Component
+```
+
+## Constructors (3)
+
+| Signature | Description |
+| --- | --- |
+| SimpleEnemyAI([SimpleEnemyAI]) | Executes `SimpleEnemyAI` and returns after the underlying engine call finishes. |
+| SimpleEnemyAI([Engine]) | Executes `SimpleEnemyAI` and returns after the underlying engine call finishes. |
+| SimpleEnemyAI() | Creates a new instance of SimpleEnemyAI. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [SimpleEnemyAI] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
+
+## Virtual Attributes (12)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `attackDelay` | [float] | `get/set` | Virtual attribute exposed by `getAttackDelay`. Access it like a field to read or write the underlying value. |
+| `rayDistance` | [float] | `get/set` | Virtual attribute exposed by `getRayDistance`. Access it like a field to read or write the underlying value. |
+| `rayOffset` | [float] | `get/set` | Virtual attribute exposed by `getRayOffset`. Access it like a field to read or write the underlying value. |
+| `runSpeed` | [float] | `get/set` | Virtual attribute exposed by `getRunSpeed`. Access it like a field to read or write the underlying value. |
+| `startAttackDistance` | [float] | `get/set` | Virtual attribute exposed by `getStartAttackDistance`. Access it like a field to read or write the underlying value. |
+| `state` | [State] | `get` | Virtual attribute exposed by `getState`. Access it like a field to read or write the underlying value. |
+| `stickBottom` | [boolean] | `set` | Virtual attribute exposed by `setStickBottom`. Access it like a field to read or write the underlying value. |
+| `stickBottomOffset` | [float] | `get/set` | Virtual attribute exposed by `getStickBottomOffset`. Access it like a field to read or write the underlying value. |
+| `swapTargetDelay` | [float] | `get/set` | Virtual attribute exposed by `getSwapTargetDelay`. Access it like a field to read or write the underlying value. |
+| `swapTargetDistance` | [float] | `get/set` | Virtual attribute exposed by `getSwapTargetDistance`. Access it like a field to read or write the underlying value. |
+| `target` | [SpatialObject] | `get/set` | Virtual attribute exposed by `getTarget`. Access it like a field to read or write the underlying value. |
+| `walkSpeed` | [float] | `get/set` | Virtual attribute exposed by `getWalkSpeed`. Access it like a field to read or write the underlying value. |
+
+## Methods (1)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| isStickBottom() | [boolean] | Returns whether stick bottom is true. |

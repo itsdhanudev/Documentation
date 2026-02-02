@@ -1,0 +1,31 @@
+{@import ../../../links.md}
+
+# Armature
+
+Referência completa da API de `Armature`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Armature
+
+**Componente:** sim
+
+---
+
+```java
+public class Armature extends Component
+```
+
+## Construtores (3)
+
+| Signature | Description |
+| --- | --- |
+| Armature([Armature]) | Executa `Armature` e retorna quando a chamada do motor termina. |
+| Armature([Engine]) | Executa `Armature` e retorna quando a chamada do motor termina. |
+| Armature() | Cria uma nova instância de Armature. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [Armature] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |

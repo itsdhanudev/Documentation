@@ -1,0 +1,38 @@
+{@import ../../../links.md}
+
+# MotionBlur
+
+Referência completa da API de `MotionBlur`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** TODO
+
+**Componente:** sim
+
+---
+
+```java
+public class MotionBlur extends Component
+```
+
+## Construtores (3)
+
+| Signature | Description |
+| --- | --- |
+| MotionBlur([MotionBlur]) | Executa `MotionBlur` e retorna quando a chamada do motor termina. |
+| MotionBlur([Engine]) | Executa `MotionBlur` e retorna quando a chamada do motor termina. |
+| MotionBlur() | Executa `MotionBlur` e retorna quando a chamada do motor termina. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [MotionBlur] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Atributos Virtuais (2)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `alpha` | [float] | `get/set` | Atributo virtual exposto por `getAlpha`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `reset` | [float] | `get/set` | Atributo virtual exposto por `getReset`. Acesse como um campo para ler ou escrever o valor subjacente. |

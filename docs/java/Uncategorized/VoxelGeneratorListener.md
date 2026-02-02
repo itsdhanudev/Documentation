@@ -1,0 +1,26 @@
+{@import ../../links.md}
+
+# VoxelGeneratorListener
+
+Complete API reference for `VoxelGeneratorListener`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Uncategorized
+
+**Component:** no
+
+---
+
+```java
+public interface VoxelGeneratorListener
+```
+
+## Methods (4)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| getGroundHeight([int], [int]) | [int] | Executes `getGroundHeight` and returns after the underlying engine call finishes. |
+| getBlockType([int], [int], [int], [int]) | [int] | Executes `getBlockType` and returns after the underlying engine call finishes. |
+| storeChunk([OH3LevelIntArray], [int], [int]) | [void] | Executes `storeChunk` and returns after the underlying engine call finishes. |
+| loadChunk([int], [int]) | [OH3LevelIntArray] | Executes `loadChunk` and returns after the underlying engine call finishes. |

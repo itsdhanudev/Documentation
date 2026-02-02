@@ -1,0 +1,45 @@
+{@import ../../../links.md}
+
+# SSAO
+
+Complete API reference for `SSAO`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Post processing
+
+**Component:** yes
+
+---
+
+```java
+public class SSAO extends Component
+```
+
+## Constructors (3)
+
+| Signature | Description |
+| --- | --- |
+| SSAO([SSAO]) | Executes `SSAO` and returns after the underlying engine call finishes. |
+| SSAO([Engine]) | Executes `SSAO` and returns after the underlying engine call finishes. |
+| SSAO() | Executes `SSAO` and returns after the underlying engine call finishes. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [SSAO] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
+
+## Virtual Attributes (9)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `bias` | [float] | `get/set` | Virtual attribute exposed by `getBias`. Access it like a field to read or write the underlying value. |
+| `bilateralThreshold` | [float] | `get/set` | Virtual attribute exposed by `getBilateralThreshold`. Access it like a field to read or write the underlying value. |
+| `intensity` | [float] | `get/set` | Virtual attribute exposed by `getIntensity`. Access it like a field to read or write the underlying value. |
+| `lowPassFilter` | [QualityLevel] | `get/set` | Virtual attribute exposed by `getLowPassFilter`. Access it like a field to read or write the underlying value. |
+| `minHorizonAngleRad` | [float] | `get/set` | Virtual attribute exposed by `getMinHorizonAngleRad`. Access it like a field to read or write the underlying value. |
+| `power` | [float] | `get/set` | Virtual attribute exposed by `getPower`. Access it like a field to read or write the underlying value. |
+| `quality` | [QualityLevel] | `get/set` | Virtual attribute exposed by `getQuality`. Access it like a field to read or write the underlying value. |
+| `radius` | [float] | `get/set` | Virtual attribute exposed by `getRadius`. Access it like a field to read or write the underlying value. |
+| `upsampling` | [QualityLevel] | `get/set` | Virtual attribute exposed by `getUpsampling`. Access it like a field to read or write the underlying value. |

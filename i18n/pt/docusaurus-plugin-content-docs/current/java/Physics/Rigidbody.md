@@ -1,0 +1,64 @@
+{@import ../../links.md}
+
+# Rigidbody
+
+Referência completa da API de `Rigidbody`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Physics
+
+**Componente:** não
+
+---
+
+```java
+public class Rigidbody extends PhysicsComponent
+```
+
+## Construtores (2)
+
+| Signature | Description |
+| --- | --- |
+| Rigidbody([Rigidbody]) | Executa `Rigidbody` e retorna quando a chamada do motor termina. |
+| Rigidbody() | Executa `Rigidbody` e retorna quando a chamada do motor termina. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [Rigidbody] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Atributos Virtuais (16)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `angularDamping` | [float] | `get/set` | Retorna a propriedade `propriedade `amortecimento angular do Rigidbody``. |
+| `angularVelocity` | [Vector3] | `get/set` | Retorna a propriedade `velocidade angular atual do Rigidbody`. |
+| `bounciness` | [float] | `get/set` | Retorna a propriedade `elasticidade do Rigidbody`. |
+| `freezePX` | [boolean] | `get/set` | Retorna se o movimento no eixo X está travado. |
+| `freezePY` | [boolean] | `get/set` | Retorna se o movimento no eixo Y está travado. |
+| `freezePZ` | [boolean] | `get/set` | Retorna se o movimento no eixo Z está travado. |
+| `freezeRX` | [boolean] | `get/set` | Retorna se a rotação no eixo X está travada. |
+| `freezeRY` | [boolean] | `get/set` | Retorna se a rotação no eixo Y está travada. |
+| `freezeRZ` | [boolean] | `get/set` | Retorna se a rotação no eixo Z está travada. |
+| `friction` | [float] | `get/set` | Retorna a propriedade `propriedade `atrito/fricção do Rigidbody``. |
+| `gravityEnabled` | [boolean] | `get/set` | Verifica se a gravidade está ativada para o Rigidbody. |
+| `gravityMultiplier` | [Vector3] | `get/set` | Retorna a propriedade `propriedade `multiplicador de gravidade do Rigidbody``. |
+| `linearDamping` | [float] | `get/set` | Retorna a propriedade `propriedade `amortecimento linear do Rigidbody``. |
+| `mass` | [float] | `get/set` | Retorna a propriedade `massa do Rigidbody`. |
+| `physicsLayer` | [PhysicsLayer] | `get/set` | Retorna a propriedade `PhysicsLayer do Rigidbody`. |
+| `velocity` | [Vector3] | `get/set` | Retorna a propriedade `velocidade atual do Rigidbody`. |
+
+## Métodos (8)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| addForce([Vector3]) | [void] | Aplica uma força ao Rigidbody na direção especificada. |
+| addForce([float], [float], [float]) | [void] | Aplica uma força ao Rigidbody com os valores x, y e z especificados. |
+| addForce([Vector3], [Vector3]) | [void] | Aplica uma força ao Rigidbody em uma posição relativa específica. |
+| addVelocity([Vector3]) | [void] | Adiciona velocidade ao Rigidbody na direção especificada. |
+| addVelocity([float], [float], [float]) | [void] | Adiciona velocidade ao Rigidbody com os valores x, y e z especificados. |
+| addVelocityBySecond([Vector3]) | [void] | Adiciona velocidade por segundo ao Rigidbody na direção especificada. |
+| addVelocityBySecond([float], [float], [float]) | [void] | Adiciona velocidade por segundo ao Rigidbody com os valores x, y e z especificados. |
+| setVelocity([float], [float], [float]) | [void] | Define a propriedade `velocidade atual do Rigidbody`. |

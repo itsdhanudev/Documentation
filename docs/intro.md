@@ -1,0 +1,15 @@
+# ITsMagic Engine 2.0 Documentation
+
+This documentation brings together everything you need to use ITsMagic Engine 2.0: beginner guides, essential concepts, and the full Java runtime API reference.
+
+## What this documentation covers
+
+- Workflow guides: creating projects, scenes, objects, and scripts.
+- Key engine concepts such as components and virtual attributes.
+- Complete reference for Java runtime classes, with methods, attributes, and types.
+
+## How to navigate it
+
+- **Getting Started**: the shortest route to your first project.
+- **Java API**: full class catalog organized by category.
+- **Virtual Attributes**: explains how getters/setters become properties in ITsMagic.

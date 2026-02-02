@@ -1,0 +1,37 @@
+{@import ../../links.md}
+
+# VideoFile
+
+Complete API reference for `VideoFile`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Files
+
+**Component:** no
+
+---
+
+```java
+public class VideoFile
+```
+
+## Constructors (2)
+
+| Signature | Description |
+| --- | --- |
+| VideoFile([String]) | Executes `VideoFile` and returns after the underlying engine call finishes. |
+| VideoFile() | Executes `VideoFile` and returns after the underlying engine call finishes. |
+
+## Methods (1)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| toString() | [String] | Returns the string representation. |
+
+## Static Methods (2)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| genericInterface() | [GenericClassInspectorEntry] | Executes `genericInterface` and returns after the underlying engine call finishes. |
+| inspectorController() | [ClassInspectorEntry] | Executes `inspectorController` and returns after the underlying engine call finishes. |

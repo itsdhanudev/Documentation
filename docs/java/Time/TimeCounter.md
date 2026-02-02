@@ -1,0 +1,37 @@
+{@import ../../links.md}
+
+# TimeCounter
+
+Complete API reference for `TimeCounter`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Time
+
+**Component:** no
+
+---
+
+```java
+public class TimeCounter
+```
+
+## Constructors (1)
+
+| Signature | Description |
+| --- | --- |
+| TimeCounter() | Executes `TimeCounter` and returns after the underlying engine call finishes. |
+
+## Virtual Attributes (2)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `elapsedMilliseconds` | [float] | `get` | Returns the elapsed time in milliseconds. |
+| `elapsedSeconds` | [float] | `get` | Returns the elapsed time in seconds. |
+
+## Methods (2)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| start() | [void] | Starts the time counter. |
+| finish() | [void] | Finishes the time counter and calculates the elapsed time. |

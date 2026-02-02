@@ -1,0 +1,40 @@
+{@import ../../links.md}
+
+# CompoundVertex
+
+Referência completa da API de `CompoundVertex`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Uncategorized
+
+**Componente:** não
+
+---
+
+```java
+public class CompoundVertex
+```
+
+## Construtores (2)
+
+| Signature | Description |
+| --- | --- |
+| CompoundVertex([CompoundVertex]) | Executa `CompoundVertex` e retorna quando a chamada do motor termina. |
+| CompoundVertex() | Executa `CompoundVertex` e retorna quando a chamada do motor termina. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [CompoundVertex] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Métodos (5)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| addVertex([Vertex], [Transform]) | [Part] | Adiciona vertex à coleção. |
+| refreshMatrix([Part]) | [void] | Executa a operação refreshMatrix usando os parâmetros informados (part). |
+| remove([Part]) | [void] | Remove an item da coleção. |
+| removeAll([[List]&lt;Part&gt;]) | [void] | Remove all da coleção. |
+| getBake() | [Vertex] | Retorna a propriedade `propriedade `bake atual``. |

@@ -1,0 +1,58 @@
+{@import ../../../links.md}
+
+# VoxelChunk
+
+Referência completa da API de `VoxelChunk`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Voxels
+
+**Componente:** sim
+
+---
+
+```java
+public class VoxelChunk extends Component
+```
+
+## Construtores (2)
+
+| Signature | Description |
+| --- | --- |
+| VoxelChunk([VoxelChunk]) | Executa `VoxelChunk` e retorna quando a chamada do motor termina. |
+| VoxelChunk() | Executa `VoxelChunk` e retorna quando a chamada do motor termina. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [VoxelChunk] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Atributos Virtuais (6)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `blocksMatrix` | [OH3LevelIntArray] | `set` | Atributo virtual exposto por `setBlocksMatrix`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `blocksMatrixCritical` | [OH3LevelIntArray] | `get` | Atributo virtual exposto por `getBlocksMatrixCritical`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `height` | [int] | `get/set` | Atributo virtual exposto por `getHeight`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `offset` | [Vector2] | `get/set` | Atributo virtual exposto por `getOffset`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `usePositionAsCoordinatesOffset` | [boolean] | `get/set` | Atributo virtual exposto por `isUsePositionAsCoordinatesOffset`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `width` | [int] | `get/set` | Atributo virtual exposto por `getWidth`. Acesse como um campo para ler ou escrever o valor subjacente. |
+
+## Métodos (12)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| apply() | [void] | Executa a operação apply. |
+| invalidateBlocks() | [void] | Executa a operação invalidateBlocks. |
+| getMaxVerticesCount() | [int] | Retorna a propriedade `propriedade `max vertices count atual``. |
+| getBlock([int], [int], [int]) | [int] | Retorna a propriedade `propriedade `block atual``. |
+| getBlockLocal([int], [int], [int]) | [int] | Retorna a propriedade `propriedade `block local atual``. |
+| setBlock([int], [int], [int], [int]) | [void] | Define ou atualiza a propriedade `propriedade `block``. |
+| setLocalBlock([int], [int], [int], [int]) | [void] | Define ou atualiza a propriedade `propriedade `local block``. |
+| containsBlock([int], [int], [int]) | [boolean] | Executa a operação containsBlock usando os parâmetros informados (x, y, z). |
+| containsLocalBlock([int], [int], [int]) | [boolean] | Executa a operação containsLocalBlock usando os parâmetros informados (x, y, z). |
+| isReady() | [boolean] | Retorna se ready é verdadeiro. |
+| componentClassMatch([Component], [Component]) | [boolean] | Executa `componentClassMatch` e retorna quando a chamada do motor termina. |
+| getEngineComponent() | [Component] | Executa `getEngineComponent` e retorna quando a chamada do motor termina. |

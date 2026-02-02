@@ -1,0 +1,91 @@
+{@import ../../links.md}
+
+# Point2
+
+Complete API reference for `Point2`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Vector
+
+**Component:** no
+
+---
+
+```java
+public class Point2
+```
+
+## Constructors (3)
+
+| Signature | Description |
+| --- | --- |
+| Point2([Vector2]) | Executes `Point2` and returns after the underlying engine call finishes. |
+| Point2() | Executes `Point2` and returns after the underlying engine call finishes. |
+| Point2([int], [int]) | Creates a new instance of Point2. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `vector2` | [Vector2] | Represents the `vector2` value stored on this instance. Read or assign to update the property. |
+
+## Virtual Attributes (2)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `x` | [int] | `get/set` | Virtual attribute exposed by `getX`. Access it like a field to read or write the underlying value. |
+| `y` | [int] | `get/set` | Virtual attribute exposed by `getY`. Access it like a field to read or write the underlying value. |
+
+## Methods (41)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| mul([Point2]) | [Point2] | Performs the mul operation using the provided parameters (value). |
+| mul([int], [int]) | [Point2] | Performs the mul operation using the provided parameters (x, y). |
+| mul([int]) | [Point2] | Performs the mul operation using the provided parameters (a). |
+| div([Point2]) | [Point2] | Performs the div operation using the provided parameters (value). |
+| div([int], [int]) | [Point2] | Performs the div operation using the provided parameters (x, y). |
+| div([int]) | [Point2] | Performs the div operation using the provided parameters (a). |
+| sum([Point2]) | [Point2] | Performs the sum operation using the provided parameters (value). |
+| sum([int], [int]) | [Point2] | Performs the sum operation using the provided parameters (x, y). |
+| sum([int]) | [Point2] | Performs the sum operation using the provided parameters (a). |
+| sub([Point2]) | [Point2] | Performs the sub operation using the provided parameters (value). |
+| sub([int], [int]) | [Point2] | Performs the sub operation using the provided parameters (x, y). |
+| sub([int]) | [Point2] | Performs the sub operation using the provided parameters (a). |
+| equals([Point2]) | [boolean] | Compares this instance with another for equality/order. |
+| equals([int], [int]) | [boolean] | Compares this instance with another for equality/order. |
+| equals([int]) | [boolean] | Compares this instance with another for equality/order. |
+| set([Point2]) | [void] | Sets or updates the the value. |
+| set([Vector2]) | [void] | Sets or updates the the value. |
+| set([int], [int]) | [void] | Sets or updates the the value. |
+| set([int]) | [void] | Sets or updates the the value. |
+| lerp([Point2], [int]) | [void] | Performs the lerp operation using the provided parameters (vector3, speed). |
+| lerp([int], [int], [int]) | [void] | Performs the lerp operation using the provided parameters (x, y, speed). |
+| lerp([int], [int]) | [void] | Performs the lerp operation using the provided parameters (a, speed). |
+| lerpInSeconds([Point2], [int]) | [void] | Performs the lerpInSeconds operation using the provided parameters (vector3, speed). |
+| lerpInSeconds([int], [int], [int]) | [void] | Performs the lerpInSeconds operation using the provided parameters (x, y, speed). |
+| lerpInSeconds([int], [int]) | [void] | Performs the lerpInSeconds operation using the provided parameters (a, speed). |
+| blend([Point2], [int]) | [void] | Performs the blend operation using the provided parameters (vector3, blend). |
+| blend([int], [int], [int]) | [void] | Performs the blend operation using the provided parameters (x, y, blend). |
+| blend([int], [int]) | [void] | Performs the blend operation using the provided parameters (a, blend). |
+| normalize() | [Point2] | Executes `normalize` and returns after the underlying engine call finishes. |
+| normalizeLocal() | [void] | Executes `normalizeLocal` and returns after the underlying engine call finishes. |
+| length() | [float] | Executes `length` and returns after the underlying engine call finishes. |
+| sqrLength() | [float] | Executes `sqrLength` and returns after the underlying engine call finishes. |
+| distance([Point2]) | [float] | Performs the distance operation using the provided parameters (vector3). |
+| sqrDistance([Point2]) | [float] | Performs the sqrDistance operation using the provided parameters (vector3). |
+| dot([Point2]) | [float] | Performs the dot operation using the provided parameters (vector3). |
+| dot([int], [int]) | [float] | Performs the dot operation using the provided parameters (x, y). |
+| dot([int]) | [float] | Performs the dot operation using the provided parameters (a). |
+| cross([Point2]) | [Vector3] | Performs the cross operation using the provided parameters (value). |
+| cross([int], [int]) | [Vector3] | Performs the cross operation using the provided parameters (x, y). |
+| copy() | [Point2] | Returns a copy of this Point2 instance. |
+| toString() | [String] | Returns the string representation. |
+
+## Static Methods (2)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| inspectorController() | [ClassInspectorEntry] | Executes `inspectorController` and returns after the underlying engine call finishes. |
+| zero() | [Point2] | Executes `zero` and returns after the underlying engine call finishes. |

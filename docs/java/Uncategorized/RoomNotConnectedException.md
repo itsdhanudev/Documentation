@@ -1,0 +1,17 @@
+{@import ../../links.md}
+
+# RoomNotConnectedException
+
+Complete API reference for `RoomNotConnectedException`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Uncategorized
+
+**Component:** no
+
+---
+
+```java
+public class RoomNotConnectedException extends RuntimeException
+```

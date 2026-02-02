@@ -1,0 +1,72 @@
+{@import ../../../links.md}
+
+# UIShape
+
+Complete API reference for `UIShape`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** UI
+
+**Component:** yes
+
+---
+
+```java
+public class UIShape extends Component
+```
+
+## Constructors (3)
+
+| Signature | Description |
+| --- | --- |
+| UIShape([UIShape]) | Executes `UIShape` and returns after the underlying engine call finishes. |
+| UIShape([Engine]) | Executes `UIShape` and returns after the underlying engine call finishes. |
+| UIShape() | Executes `UIShape` and returns after the underlying engine call finishes. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [UIShape] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
+
+## Virtual Attributes (30)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `bottomLeftCorner` | [CornerType] | `get/set` | Virtual attribute exposed by `getBottomLeftCorner`. Access it like a field to read or write the underlying value. |
+| `bottomRightCorner` | [CornerType] | `get/set` | Virtual attribute exposed by `getBottomRightCorner`. Access it like a field to read or write the underlying value. |
+| `color` | [Color] | `get/set` | Virtual attribute exposed by `getColor`. Access it like a field to read or write the underlying value. |
+| `colorGradient` | [ColorGradient] | `get/set` | Virtual attribute exposed by `getColorGradient`. Access it like a field to read or write the underlying value. |
+| `corner` | [float] | `get/set` | Virtual attribute exposed by `getCorner`. Access it like a field to read or write the underlying value. |
+| `gradientAngle` | [float] | `get/set` | Virtual attribute exposed by `getGradientAngle`. Access it like a field to read or write the underlying value. |
+| `gradientMode` | [GradientMode] | `get/set` | Virtual attribute exposed by `getGradientMode`. Access it like a field to read or write the underlying value. |
+| `hole` | [float] | `get/set` | Virtual attribute exposed by `getHole`. Access it like a field to read or write the underlying value. |
+| `innerGlowColor` | [Color] | `get/set` | Virtual attribute exposed by `getInnerGlowColor`. Access it like a field to read or write the underlying value. |
+| `innerGlowSize` | [float] | `get/set` | Virtual attribute exposed by `getInnerGlowSize`. Access it like a field to read or write the underlying value. |
+| `innerGlowSmooth` | [float] | `get/set` | Virtual attribute exposed by `getInnerGlowSmooth`. Access it like a field to read or write the underlying value. |
+| `innerShadowAngle` | [float] | `get/set` | Virtual attribute exposed by `getInnerShadowAngle`. Access it like a field to read or write the underlying value. |
+| `innerShadowColor` | [Color] | `get/set` | Virtual attribute exposed by `getInnerShadowColor`. Access it like a field to read or write the underlying value. |
+| `innerShadowSize` | [float] | `get/set` | Virtual attribute exposed by `getInnerShadowSize`. Access it like a field to read or write the underlying value. |
+| `innerShadowSmooth` | [float] | `get/set` | Virtual attribute exposed by `getInnerShadowSmooth`. Access it like a field to read or write the underlying value. |
+| `maskAngle` | [float] | `get/set` | Virtual attribute exposed by `getMaskAngle`. Access it like a field to read or write the underlying value. |
+| `maskMode` | [MaskMode] | `get/set` | Virtual attribute exposed by `getMaskMode`. Access it like a field to read or write the underlying value. |
+| `maskValue` | [float] | `get/set` | Virtual attribute exposed by `getMaskValue`. Access it like a field to read or write the underlying value. |
+| `outerGlowColor` | [Color] | `get/set` | Virtual attribute exposed by `getOuterGlowColor`. Access it like a field to read or write the underlying value. |
+| `outerGlowSize` | [float] | `get/set` | Virtual attribute exposed by `getOuterGlowSize`. Access it like a field to read or write the underlying value. |
+| `outerGlowSmooth` | [float] | `get/set` | Virtual attribute exposed by `getOuterGlowSmooth`. Access it like a field to read or write the underlying value. |
+| `outerShadowAngle` | [float] | `get/set` | Virtual attribute exposed by `getOuterShadowAngle`. Access it like a field to read or write the underlying value. |
+| `outerShadowColor` | [Color] | `get/set` | Virtual attribute exposed by `getOuterShadowColor`. Access it like a field to read or write the underlying value. |
+| `outerShadowSize` | [float] | `get/set` | Virtual attribute exposed by `getOuterShadowSize`. Access it like a field to read or write the underlying value. |
+| `outerShadowSmooth` | [float] | `get/set` | Virtual attribute exposed by `getOuterShadowSmooth`. Access it like a field to read or write the underlying value. |
+| `quality` | [float] | `get/set` | Virtual attribute exposed by `getQuality`. Access it like a field to read or write the underlying value. |
+| `stroke` | [float] | `get/set` | Virtual attribute exposed by `getStroke`. Access it like a field to read or write the underlying value. |
+| `strokeColor` | [Color] | `get/set` | Virtual attribute exposed by `getStrokeColor`. Access it like a field to read or write the underlying value. |
+| `topLeftCorner` | [CornerType] | `get/set` | Virtual attribute exposed by `getTopLeftCorner`. Access it like a field to read or write the underlying value. |
+| `topRightCorner` | [CornerType] | `get/set` | Virtual attribute exposed by `getTopRightCorner`. Access it like a field to read or write the underlying value. |
+
+## Methods (1)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| requestDraw() | [void] | Executes `requestDraw` and returns after the underlying engine call finishes. |

@@ -1,0 +1,37 @@
+{@import ../../../links.md}
+
+# ScaleBasedDistance
+
+Referência completa da API de `ScaleBasedDistance`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** TODO
+
+**Componente:** sim
+
+---
+
+```java
+public class ScaleBasedDistance extends Component
+```
+
+## Construtores (3)
+
+| Signature | Description |
+| --- | --- |
+| ScaleBasedDistance([ScaleBasedDistance]) | Executa `ScaleBasedDistance` e retorna quando a chamada do motor termina. |
+| ScaleBasedDistance([Engine]) | Executa `ScaleBasedDistance` e retorna quando a chamada do motor termina. |
+| ScaleBasedDistance() | Executa `ScaleBasedDistance` e retorna quando a chamada do motor termina. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [ScaleBasedDistance] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Atributos Virtuais (1)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `scale` | [float] | `get/set` | Atributo virtual exposto por `getScale`. Acesse como um campo para ler ou escrever o valor subjacente. |

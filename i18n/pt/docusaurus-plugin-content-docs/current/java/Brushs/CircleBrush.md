@@ -1,0 +1,23 @@
+{@import ../../links.md}
+
+# CircleBrush
+
+Referência completa da API de `CircleBrush`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Brushs
+
+**Componente:** não
+
+---
+
+```java
+public class CircleBrush
+```
+
+## Métodos (1)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| getIntensity([float], [float]) | [float] | Retorna a propriedade `propriedade `intensity atual``. |

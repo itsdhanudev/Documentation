@@ -1,0 +1,17 @@
+{@import ../../links.md}
+
+# HideGetSet
+
+Referência completa da API de `HideGetSet`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Uncategorized
+
+**Componente:** não
+
+---
+
+```java
+public interface HideGetSet
+```

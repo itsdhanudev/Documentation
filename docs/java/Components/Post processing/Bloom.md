@@ -1,0 +1,59 @@
+{@import ../../../links.md}
+
+# Bloom
+
+Complete API reference for `Bloom`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Post processing
+
+**Component:** yes
+
+---
+
+```java
+public class Bloom extends Component
+```
+
+## Constructors (3)
+
+| Signature | Description |
+| --- | --- |
+| Bloom([Bloom]) | Executes `Bloom` and returns after the underlying engine call finishes. |
+| Bloom([Engine]) | Executes `Bloom` and returns after the underlying engine call finishes. |
+| Bloom() | Executes `Bloom` and returns after the underlying engine call finishes. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [Bloom] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
+
+## Virtual Attributes (15)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `chromaticAberration` | [float] | `get/set` | Virtual attribute exposed by `getChromaticAberration`. Access it like a field to read or write the underlying value. |
+| `ghostCount` | [int] | `get/set` | Virtual attribute exposed by `getGhostCount`. Access it like a field to read or write the underlying value. |
+| `ghostSpacing` | [float] | `get/set` | Virtual attribute exposed by `getGhostSpacing`. Access it like a field to read or write the underlying value. |
+| `ghostThreshold` | [float] | `get/set` | Virtual attribute exposed by `getGhostThreshold`. Access it like a field to read or write the underlying value. |
+| `haloRadius` | [float] | `get/set` | Virtual attribute exposed by `getHaloRadius`. Access it like a field to read or write the underlying value. |
+| `haloThickness` | [float] | `get/set` | Virtual attribute exposed by `getHaloThickness`. Access it like a field to read or write the underlying value. |
+| `haloThreshold` | [float] | `get/set` | Virtual attribute exposed by `getHaloThreshold`. Access it like a field to read or write the underlying value. |
+| `highlight` | [float] | `get/set` | Virtual attribute exposed by `getHighlight`. Access it like a field to read or write the underlying value. |
+| `lensFlare` | [boolean] | `set` | Virtual attribute exposed by `setLensFlare`. Access it like a field to read or write the underlying value. |
+| `levels` | [int] | `get/set` | Virtual attribute exposed by `getLevels`. Access it like a field to read or write the underlying value. |
+| `quality` | [QualityLevel] | `get/set` | Virtual attribute exposed by `getQuality`. Access it like a field to read or write the underlying value. |
+| `resolutionID` | [int] | `get/set` | Virtual attribute exposed by `getResolutionID`. Access it like a field to read or write the underlying value. |
+| `starburst` | [boolean] | `set` | Virtual attribute exposed by `setStarburst`. Access it like a field to read or write the underlying value. |
+| `strength` | [float] | `get/set` | Virtual attribute exposed by `getStrength`. Access it like a field to read or write the underlying value. |
+| `threshold` | [boolean] | `set` | Virtual attribute exposed by `setThreshold`. Access it like a field to read or write the underlying value. |
+
+## Methods (3)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| isLensFlare() | [boolean] | Executes `isLensFlare` and returns after the underlying engine call finishes. |
+| isStarburst() | [boolean] | Executes `isStarburst` and returns after the underlying engine call finishes. |
+| isThreshold() | [boolean] | Executes `isThreshold` and returns after the underlying engine call finishes. |

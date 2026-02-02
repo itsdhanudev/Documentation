@@ -1,0 +1,40 @@
+{@import ../../../links.md}
+
+# DepthOfField
+
+Complete API reference for `DepthOfField`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Post processing
+
+**Component:** yes
+
+---
+
+```java
+public class DepthOfField extends Component
+```
+
+## Constructors (3)
+
+| Signature | Description |
+| --- | --- |
+| DepthOfField([DepthOfField]) | Executes `DepthOfField` and returns after the underlying engine call finishes. |
+| DepthOfField([Engine]) | Executes `DepthOfField` and returns after the underlying engine call finishes. |
+| DepthOfField() | Executes `DepthOfField` and returns after the underlying engine call finishes. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [DepthOfField] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
+
+## Virtual Attributes (4)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `autoFocus` | [boolean] | `get/set` | Virtual attribute exposed by `isAutoFocus`. Access it like a field to read or write the underlying value. |
+| `focusDistance` | [float] | `get/set` | Virtual attribute exposed by `getFocusDistance`. Access it like a field to read or write the underlying value. |
+| `maxApertureDiameterCm` | [float] | `get/set` | Virtual attribute exposed by `getMaxApertureDiameterCm`. Access it like a field to read or write the underlying value. |
+| `scale` | [float] | `get/set` | Virtual attribute exposed by `getScale`. Access it like a field to read or write the underlying value. |

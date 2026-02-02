@@ -1,0 +1,38 @@
+{@import ../../../links.md}
+
+# ChromaticAberration
+
+Referência completa da API de `ChromaticAberration`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Post processing
+
+**Componente:** sim
+
+---
+
+```java
+public class ChromaticAberration extends Component
+```
+
+## Construtores (3)
+
+| Signature | Description |
+| --- | --- |
+| ChromaticAberration([ChromaticAberration]) | Executa `ChromaticAberration` e retorna quando a chamada do motor termina. |
+| ChromaticAberration([Engine]) | Executa `ChromaticAberration` e retorna quando a chamada do motor termina. |
+| ChromaticAberration() | Executa `ChromaticAberration` e retorna quando a chamada do motor termina. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [ChromaticAberration] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Atributos Virtuais (2)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `falloff` | [float] | `get/set` | Atributo virtual exposto por `getFalloff`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `strength` | [float] | `get/set` | Atributo virtual exposto por `getStrength`. Acesse como um campo para ler ou escrever o valor subjacente. |

@@ -1,0 +1,54 @@
+{@import ../../../links.md}
+
+# SimpleEnemyAI
+
+Referência completa da API de `SimpleEnemyAI`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** AI
+
+**Componente:** sim
+
+---
+
+```java
+public class SimpleEnemyAI extends Component
+```
+
+## Construtores (3)
+
+| Signature | Description |
+| --- | --- |
+| SimpleEnemyAI([SimpleEnemyAI]) | Executa `SimpleEnemyAI` e retorna quando a chamada do motor termina. |
+| SimpleEnemyAI([Engine]) | Executa `SimpleEnemyAI` e retorna quando a chamada do motor termina. |
+| SimpleEnemyAI() | Cria uma nova instância de SimpleEnemyAI. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [SimpleEnemyAI] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Atributos Virtuais (12)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `attackDelay` | [float] | `get/set` | Atributo virtual exposto por `getAttackDelay`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `rayDistance` | [float] | `get/set` | Atributo virtual exposto por `getRayDistance`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `rayOffset` | [float] | `get/set` | Atributo virtual exposto por `getRayOffset`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `runSpeed` | [float] | `get/set` | Atributo virtual exposto por `getRunSpeed`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `startAttackDistance` | [float] | `get/set` | Atributo virtual exposto por `getStartAttackDistance`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `state` | [State] | `get` | Atributo virtual exposto por `getState`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `stickBottom` | [boolean] | `set` | Atributo virtual exposto por `setStickBottom`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `stickBottomOffset` | [float] | `get/set` | Atributo virtual exposto por `getStickBottomOffset`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `swapTargetDelay` | [float] | `get/set` | Atributo virtual exposto por `getSwapTargetDelay`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `swapTargetDistance` | [float] | `get/set` | Atributo virtual exposto por `getSwapTargetDistance`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `target` | [SpatialObject] | `get/set` | Atributo virtual exposto por `getTarget`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `walkSpeed` | [float] | `get/set` | Atributo virtual exposto por `getWalkSpeed`. Acesse como um campo para ler ou escrever o valor subjacente. |
+
+## Métodos (1)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| isStickBottom() | [boolean] | Retorna se stick bottom é verdadeiro. |

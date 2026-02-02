@@ -1,0 +1,24 @@
+{@import ../../links.md}
+
+# AsyncTask
+
+Complete API reference for `AsyncTask`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Async
+
+**Component:** no
+
+---
+
+```java
+public class AsyncTask
+```
+
+## Constructors (2)
+
+| Signature | Description |
+| --- | --- |
+| AsyncTask([AsyncRunnable]) | Creates a new instance of AsyncTask. |
+| AsyncTask([Object], [AsyncRunnable]) | Creates a new instance of AsyncTask. |

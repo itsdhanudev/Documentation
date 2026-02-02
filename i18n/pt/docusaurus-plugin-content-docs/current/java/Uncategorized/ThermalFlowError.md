@@ -1,0 +1,43 @@
+{@import ../../links.md}
+
+# ThermalFlowError
+
+Referência completa da API de `ThermalFlowError`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Uncategorized
+
+**Componente:** não
+
+---
+
+```java
+public class ThermalFlowError extends RuntimeException
+```
+
+## Construtores (3)
+
+| Signature | Description |
+| --- | --- |
+| ThermalFlowError([String], [String]) | Cria uma nova instância de ThermalFlowError. |
+| ThermalFlowError([String], [String], [Exception]) | Cria uma nova instância de ThermalFlowError. |
+| ThermalFlowError([String], [String], [Error]) | Cria uma nova instância de ThermalFlowError. |
+
+## Atributos (3)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `TYPE_SIMPLE` | [int] | Representa o valor de `TYPE_SIMPLE` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+| `TYPE_EXCEPTION` | [int] | Representa o valor de `TYPE_EXCEPTION` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+| `TYPE_ERROR` | [int] | Representa o valor de `TYPE_ERROR` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Métodos (5)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| getMessage() | [String] | Retorna a propriedade `propriedade `message atual``. |
+| getCallStack() | [String] | Retorna a propriedade `propriedade `call stack atual``. |
+| getException() | [Exception] | Retorna a propriedade `propriedade `exception atual``. |
+| getError() | [Error] | Retorna a propriedade `propriedade `error atual``. |
+| getType() | [int] | Retorna a propriedade `propriedade `type atual``. |

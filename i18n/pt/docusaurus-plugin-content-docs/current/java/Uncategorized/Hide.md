@@ -1,0 +1,17 @@
+{@import ../../links.md}
+
+# Hide
+
+Referência completa da API de `Hide`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Uncategorized
+
+**Componente:** não
+
+---
+
+```java
+public interface Hide
+```

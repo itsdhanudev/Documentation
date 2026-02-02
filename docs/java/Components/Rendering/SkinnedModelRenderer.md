@@ -1,0 +1,52 @@
+{@import ../../../links.md}
+
+# SkinnedModelRenderer
+
+Complete API reference for `SkinnedModelRenderer`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Rendering
+
+**Component:** yes
+
+---
+
+```java
+public class SkinnedModelRenderer extends Component
+```
+
+## Constructors (2)
+
+| Signature | Description |
+| --- | --- |
+| SkinnedModelRenderer([SkinnedModelRenderer]) | Executes `SkinnedModelRenderer` and returns after the underlying engine call finishes. |
+| SkinnedModelRenderer() | Executes `SkinnedModelRenderer` and returns after the underlying engine call finishes. |
+
+## Attributes (9)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `CUBE` | [int] | Represents the `CUBE` value stored on this instance. Read or assign to update the property. |
+| `SPHERE` | [int] | Represents the `SPHERE` value stored on this instance. Read or assign to update the property. |
+| `CONE` | [int] | Represents the `CONE` value stored on this instance. Read or assign to update the property. |
+| `CYLINDER` | [int] | Represents the `CYLINDER` value stored on this instance. Read or assign to update the property. |
+| `CIRCLE` | [int] | Represents the `CIRCLE` value stored on this instance. Read or assign to update the property. |
+| `TORUS` | [int] | Represents the `TORUS` value stored on this instance. Read or assign to update the property. |
+| `SQUARE` | [int] | Represents the `SQUARE` value stored on this instance. Read or assign to update the property. |
+| `SQUARE90` | [int] | Represents the `SQUARE90` value stored on this instance. Read or assign to update the property. |
+| `component` | [SkinnedModelRenderer] | Represents the `component` value stored on this instance. Read or assign to update the property. |
+
+## Methods (9)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| setModelFile([VertexFile]) | [void] | Sets or updates the model file. |
+| setMaterialFile([MaterialFile]) | [void] | Sets or updates the material file. |
+| getMaterial() | [Material] | Returns the current material. |
+| setMaterial([Material]) | [void] | Sets or updates the material. |
+| getVertex() | [Vertex] | Returns the current vertex. |
+| setVertex([Vertex]) | [void] | Sets or updates the vertex. |
+| attachPrimitive([int]) | [void] | Performs the attachPrimitive operation using the provided parameters (primitive). |
+| componentClassMatch([Component], [Component]) | [boolean] | Executes `componentClassMatch` and returns after the underlying engine call finishes. |
+| getEngineComponent() | [Component] | Executes `getEngineComponent` and returns after the underlying engine call finishes. |

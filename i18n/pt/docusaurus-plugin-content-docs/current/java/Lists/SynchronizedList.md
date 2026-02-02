@@ -1,0 +1,54 @@
+{@import ../../links.md}
+
+# SynchronizedList
+
+Referência completa da API de `SynchronizedList`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Lists
+
+**Componente:** não
+
+---
+
+```java
+public class SynchronizedList
+```
+
+## Construtores (2)
+
+| Signature | Description |
+| --- | --- |
+| SynchronizedList() | Executa `SynchronizedList` e retorna quando a chamada do motor termina. |
+| SynchronizedList([List]) | Cria uma nova instância de SynchronizedList. |
+
+## Métodos (25)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| size() | [int] | Executa a operação size. |
+| isEmpty() | [boolean] | Retorna se empty é verdadeiro. |
+| contains([Object]) | [boolean] | Executa a operação contains usando os parâmetros informados (o). |
+| iterator() | [Iterator] | Executa a operação iterator. |
+| toArray() | [Object][] | Executa a operação toArray. |
+| add([Object]) | [boolean] | Adiciona an item à coleção. |
+| remove([Object]) | [boolean] | Remove an item da coleção. |
+| addAll([Collection]) | [boolean] | Adiciona all à coleção. |
+| addAll([int], [Collection]) | [boolean] | Adiciona all à coleção. |
+| clear() | [void] | Limpa ou redefine o estado do objeto. |
+| equals([Object]) | [boolean] | Compara esta instância com outra para igualdade/ordem. |
+| hashCode() | [int] | Retorna se code é verdadeiro. |
+| get([int]) | [Object] | Retorna a propriedade `propriedade `valor value atual``. |
+| set([int], [Object]) | [Object] | Define ou atualiza the value. |
+| add([int], [Object]) | [void] | Adiciona an item à coleção. |
+| remove([int]) | [Object] | Remove an item da coleção. |
+| indexOf([Object]) | [int] | Executa a operação indexOf usando os parâmetros informados (o). |
+| lastIndexOf([Object]) | [int] | Executa a operação lastIndexOf usando os parâmetros informados (o). |
+| listIterator() | [ListIterator] | Executa a operação listIterator. |
+| listIterator([int]) | [ListIterator] | Executa a operação listIterator usando os parâmetros informados (i). |
+| subList([int], [int]) | [List] | Executa a operação subList usando os parâmetros informados (i, i1). |
+| retainAll([Collection]) | [boolean] | Executa a operação retainAll usando os parâmetros informados (collection). |
+| removeAll([Collection]) | [boolean] | Remove all da coleção. |
+| containsAll([Collection]) | [boolean] | Executa a operação containsAll usando os parâmetros informados (collection). |
+| toArray([Object][]) | [Object][] | Executa a operação toArray usando os parâmetros informados (objects). |

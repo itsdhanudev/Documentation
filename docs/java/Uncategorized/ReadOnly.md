@@ -1,0 +1,17 @@
+{@import ../../links.md}
+
+# ReadOnly
+
+Complete API reference for `ReadOnly`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Uncategorized
+
+**Component:** no
+
+---
+
+```java
+public interface ReadOnly
+```

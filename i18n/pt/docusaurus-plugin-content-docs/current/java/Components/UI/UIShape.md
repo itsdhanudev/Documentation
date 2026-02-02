@@ -1,0 +1,72 @@
+{@import ../../../links.md}
+
+# UIShape
+
+Referência completa da API de `UIShape`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** UI
+
+**Componente:** sim
+
+---
+
+```java
+public class UIShape extends Component
+```
+
+## Construtores (3)
+
+| Signature | Description |
+| --- | --- |
+| UIShape([UIShape]) | Executa `UIShape` e retorna quando a chamada do motor termina. |
+| UIShape([Engine]) | Executa `UIShape` e retorna quando a chamada do motor termina. |
+| UIShape() | Executa `UIShape` e retorna quando a chamada do motor termina. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [UIShape] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Atributos Virtuais (30)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `bottomLeftCorner` | [CornerType] | `get/set` | Atributo virtual exposto por `getBottomLeftCorner`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `bottomRightCorner` | [CornerType] | `get/set` | Atributo virtual exposto por `getBottomRightCorner`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `color` | [Color] | `get/set` | Atributo virtual exposto por `getColor`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `colorGradient` | [ColorGradient] | `get/set` | Atributo virtual exposto por `getColorGradient`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `corner` | [float] | `get/set` | Atributo virtual exposto por `getCorner`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `gradientAngle` | [float] | `get/set` | Atributo virtual exposto por `getGradientAngle`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `gradientMode` | [GradientMode] | `get/set` | Atributo virtual exposto por `getGradientMode`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `hole` | [float] | `get/set` | Atributo virtual exposto por `getHole`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `innerGlowColor` | [Color] | `get/set` | Atributo virtual exposto por `getInnerGlowColor`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `innerGlowSize` | [float] | `get/set` | Atributo virtual exposto por `getInnerGlowSize`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `innerGlowSmooth` | [float] | `get/set` | Atributo virtual exposto por `getInnerGlowSmooth`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `innerShadowAngle` | [float] | `get/set` | Atributo virtual exposto por `getInnerShadowAngle`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `innerShadowColor` | [Color] | `get/set` | Atributo virtual exposto por `getInnerShadowColor`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `innerShadowSize` | [float] | `get/set` | Atributo virtual exposto por `getInnerShadowSize`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `innerShadowSmooth` | [float] | `get/set` | Atributo virtual exposto por `getInnerShadowSmooth`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `maskAngle` | [float] | `get/set` | Atributo virtual exposto por `getMaskAngle`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `maskMode` | [MaskMode] | `get/set` | Atributo virtual exposto por `getMaskMode`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `maskValue` | [float] | `get/set` | Atributo virtual exposto por `getMaskValue`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `outerGlowColor` | [Color] | `get/set` | Atributo virtual exposto por `getOuterGlowColor`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `outerGlowSize` | [float] | `get/set` | Atributo virtual exposto por `getOuterGlowSize`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `outerGlowSmooth` | [float] | `get/set` | Atributo virtual exposto por `getOuterGlowSmooth`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `outerShadowAngle` | [float] | `get/set` | Atributo virtual exposto por `getOuterShadowAngle`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `outerShadowColor` | [Color] | `get/set` | Atributo virtual exposto por `getOuterShadowColor`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `outerShadowSize` | [float] | `get/set` | Atributo virtual exposto por `getOuterShadowSize`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `outerShadowSmooth` | [float] | `get/set` | Atributo virtual exposto por `getOuterShadowSmooth`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `quality` | [float] | `get/set` | Atributo virtual exposto por `getQuality`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `stroke` | [float] | `get/set` | Atributo virtual exposto por `getStroke`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `strokeColor` | [Color] | `get/set` | Atributo virtual exposto por `getStrokeColor`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `topLeftCorner` | [CornerType] | `get/set` | Atributo virtual exposto por `getTopLeftCorner`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `topRightCorner` | [CornerType] | `get/set` | Atributo virtual exposto por `getTopRightCorner`. Acesse como um campo para ler ou escrever o valor subjacente. |
+
+## Métodos (1)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| requestDraw() | [void] | Executa `requestDraw` e retorna quando a chamada do motor termina. |

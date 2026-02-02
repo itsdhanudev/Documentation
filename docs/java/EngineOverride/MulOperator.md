@@ -1,0 +1,24 @@
+{@import ../../links.md}
+
+# MulOperator
+
+Complete API reference for `MulOperator`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** EngineOverride
+
+**Component:** no
+
+---
+
+```java
+public interface MulOperator
+```
+
+## Methods (2)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| @MethodArgs([{"otherObject"}]) | [void] | Multiplies the current value by the given object. |
+| mul([Object]) | [T] | Executes `mul` and returns after the underlying engine call finishes. |

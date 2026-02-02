@@ -1,0 +1,24 @@
+{@import ../../links.md}
+
+# SumEqualOperator
+
+Complete API reference for `SumEqualOperator`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** EngineOverride
+
+**Component:** no
+
+---
+
+```java
+public interface SumEqualOperator
+```
+
+## Methods (2)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| @MethodArgs([{"otherObject"}]) | [void] | Adds the given object to the current value and assigns the result. |
+| sumEqual([Object]) | [void] | Executes `sumEqual` and returns after the underlying engine call finishes. |

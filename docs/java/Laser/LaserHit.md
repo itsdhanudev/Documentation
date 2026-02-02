@@ -1,0 +1,43 @@
+{@import ../../links.md}
+
+# LaserHit
+
+Complete API reference for `LaserHit`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Laser
+
+**Component:** no
+
+---
+
+```java
+public class LaserHit
+```
+
+## Constructors (2)
+
+| Signature | Description |
+| --- | --- |
+| LaserHit([LaserHit]) | Executes `LaserHit` and returns after the underlying engine call finishes. |
+| LaserHit() | Executes `LaserHit` and returns after the underlying engine call finishes. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `laserHit` | [LaserHit] | Represents the `laserHit` value stored on this instance. Read or assign to update the property. |
+
+## Virtual Attributes (8)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `collider` | [Collider] | `get/set` | Returns the Collider the Laser collided with. |
+| `colliderObject` | [SpatialObject] | `get/set` | Returns the object the Laser collided with. |
+| `distance` | [float] | `get/set` | Returns the distance between the Laser origin and the point it collided. |
+| `faceNormal` | [Vector3] | `get/set` | Returns the normal vector of the face the Laser collided with. |
+| `normal` | [Vector3] | `get/set` | Returns the normal vector of the Laser's direction. |
+| `object` | [SpatialObject] | `get/set` | Returns the object hit by the Laser. |
+| `point` | [Vector3] | `get/set` | Returns the point where the Laser hit. |
+| `uVCoord` | [Vector2] | `get/set` | Returns the UV coordinates of the point the Laser collided with. |

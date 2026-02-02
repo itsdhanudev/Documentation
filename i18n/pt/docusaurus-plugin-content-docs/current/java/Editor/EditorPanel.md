@@ -1,0 +1,64 @@
+{@import ../../links.md}
+
+# EditorPanel
+
+Referência completa da API de `EditorPanel`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Editor
+
+**Componente:** não
+
+---
+
+```java
+public class EditorPanel
+```
+
+## Construtores (3)
+
+| Signature | Description |
+| --- | --- |
+| EditorPanel([EditorPanel]) | Executa `EditorPanel` e retorna quando a chamada do motor termina. |
+| EditorPanel([Engine]) | Executa `EditorPanel` e retorna quando a chamada do motor termina. |
+| EditorPanel() | Executa `EditorPanel` e retorna quando a chamada do motor termina. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `panel` | [EditorPanel] | Representa o valor de `panel` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Atributos Virtuais (12)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `contentHeightPixels` | [int] | `get` | Atributo virtual exposto por `getContentHeightPixels`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `contentWidthPixels` | [int] | `get` | Atributo virtual exposto por `getContentWidthPixels`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `contentXPixels` | [int] | `get` | Atributo virtual exposto por `getContentXPixels`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `contentYPixels` | [int] | `get` | Atributo virtual exposto por `getContentYPixels`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `floating` | [boolean] | `get` | Atributo virtual exposto por `isFloating`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `requestCloseConfirmation` | [boolean] | `get/set` | Atributo virtual exposto por `isRequestCloseConfirmation`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `tittle` | [String] | `get/set` | Atributo virtual exposto por `getTittle`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `totalHeightPixels` | [int] | `get` | Atributo virtual exposto por `getTotalHeightPixels`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `totalWidthPixels` | [int] | `get` | Atributo virtual exposto por `getTotalWidthPixels`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `totalXPixels` | [int] | `get` | Atributo virtual exposto por `getTotalXPixels`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `totalYPixels` | [int] | `get` | Atributo virtual exposto por `getTotalYPixels`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `visible` | [boolean] | `get` | Atributo virtual exposto por `isVisible`. Acesse como um campo para ler ou escrever o valor subjacente. |
+
+## Métodos (11)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| setPanel([EditorPanel]) | [void] | Executa `setPanel` e retorna quando a chamada do motor termina. |
+| isTouchInside([Touch]) | [boolean] | Retorna se touch inside é verdadeiro. |
+| determineTouch([GUIUtils.TouchFilter]) | [Touch] | Executa a operação determineTouch usando os parâmetros informados (touchFilter). |
+| determineTouch([GUIUtils.TouchFilter], [int]) | [Touch] | Executa a operação determineTouch usando os parâmetros informados (touchFilter, offset). |
+| determineTouchPosition([Touch]) | [Vector2] | Executa a operação determineTouchPosition usando os parâmetros informados (touch). |
+| determineTouchPosition([Touch], [Vector2]) | [Vector2] | Executa a operação determineTouchPosition usando os parâmetros informados (touch, out). |
+| requestDetach() | [void] | Executa a operação requestDetach. |
+| blink() | [void] | Executa a operação blink. |
+| isAllowCloseX() | [boolean] | Retorna se allow close x é verdadeiro. |
+| setAllowCloseX([boolean]) | [void] | Define ou atualiza a propriedade `propriedade `allow close x``. |
+| copy() | [EditorPanel] | Retorna uma cópia da instância de EditorPanel. |

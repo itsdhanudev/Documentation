@@ -1,0 +1,26 @@
+{@import ../../links.md}
+
+# IllegalOperatorException
+
+Referência completa da API de `IllegalOperatorException`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Uncategorized
+
+**Componente:** não
+
+---
+
+```java
+public class IllegalOperatorException extends RuntimeException
+```
+
+## Construtores (4)
+
+| Signature | Description |
+| --- | --- |
+| IllegalOperatorException() | Cria uma nova instância de IllegalOperatorException. |
+| IllegalOperatorException([String]) | Cria uma exceção com uma mensagem especificada. |
+| IllegalOperatorException([String], [Throwable]) | Cria uma exceção com uma mensagem e uma causa especificadas. |
+| IllegalOperatorException([Throwable]) | Cria uma exceção com uma causa especificada. |

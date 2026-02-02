@@ -1,0 +1,22 @@
+# Documentação da ITsMagic Engine 2.0
+
+Esta documentação reúne tudo o que você precisa para usar a ITsMagic Engine 2.0: guias para iniciantes, conceitos essenciais e a referência completa da API Java do runtime.
+
+## O que esta documentação expõe
+
+- Guias de fluxo de trabalho: criar projetos, cenas, objetos e scripts.
+- Conceitos importantes da engine, como componentes e atributos virtuais.
+- Referência de todas as classes do runtime Java, com métodos, atributos e tipos.
+
+## Como navegar por ela
+
+- **Primeiros Passos**: a rota mais curta para começar um projeto.
+- **Java API**: catálogo completo das classes do runtime, organizado por categoria.
+- **Atributos Virtuais**: explica como getters/setters viram propriedades na ITsMagic.
+- **Java API**
+
+Todas as classes do runtime ficam em `JAVARuntime` e estão organizadas aqui por categoria.
+
+- Se uma classe estende `Component`, ela aparece em **Java API/Components** e a categoria vem como `"<Categoria>"`.
+- Todas as outras classes aparecem em **Java API** e a categoria vem como `"<Categoria>"`.
+- Classes sem categoria ficam em **Uncategorized**.

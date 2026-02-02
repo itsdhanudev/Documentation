@@ -1,0 +1,26 @@
+{@import ../../links.md}
+
+# InspectorMemory
+
+Complete API reference for `InspectorMemory`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Platform
+
+**Component:** no
+
+---
+
+```java
+public class InspectorMemory
+```
+
+## Methods (4)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| HashMap&lt;&gt;() | [Map]&[lt];[String], [String]&[gt]; [dataBase] = [new] | Performs the HashMap&lt;&gt; operation. |
+| store([String], [String]) | [void] | Executes `store` and returns after the underlying engine call finishes. |
+| load([String]) | [String] | Executes `load` and returns after the underlying engine call finishes. |
+| clear() | [void] | Executes `clear` and returns after the underlying engine call finishes. |

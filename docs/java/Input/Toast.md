@@ -1,0 +1,30 @@
+{@import ../../links.md}
+
+# Toast
+
+Complete API reference for `Toast`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Input
+
+**Component:** no
+
+---
+
+```java
+public class Toast
+```
+
+## Attributes (2)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `LENGTH_LONG` | [int] | Represents the `LENGTH_LONG` value stored on this instance. Read or assign to update the property. |
+| `LENGTH_SHORT` | [int] | Represents the `LENGTH_SHORT` value stored on this instance. Read or assign to update the property. |
+
+## Static Methods (1)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| showText([String], [int]) | [void] | Shows a toast message on the screen with the given text and duration (use Toast.LENGTH_SHORT or Toast.LENGTH_LONG for length). |

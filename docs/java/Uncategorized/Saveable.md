@@ -1,0 +1,17 @@
+{@import ../../links.md}
+
+# Saveable
+
+Complete API reference for `Saveable`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Uncategorized
+
+**Component:** no
+
+---
+
+```java
+public interface Saveable
+```

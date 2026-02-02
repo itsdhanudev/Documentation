@@ -1,0 +1,23 @@
+{@import ../../links.md}
+
+# InaccessibleFilePathException
+
+Complete API reference for `InaccessibleFilePathException`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Uncategorized
+
+**Component:** no
+
+---
+
+```java
+public class InaccessibleFilePathException extends RuntimeException
+```
+
+## Constructors (1)
+
+| Signature | Description |
+| --- | --- |
+| InaccessibleFilePathException([String]) | Creates a new instance of InaccessibleFilePathException. |

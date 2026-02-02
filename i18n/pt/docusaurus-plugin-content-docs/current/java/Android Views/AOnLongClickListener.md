@@ -1,0 +1,24 @@
+{@import ../../links.md}
+
+# AOnLongClickListener
+
+Referência completa da API de `AOnLongClickListener`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Android Views
+
+**Componente:** não
+
+---
+
+```java
+public class AOnLongClickListener
+```
+
+## Métodos (2)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| onLongClick([View]) | [boolean] | Executa a operação onLongClick usando os parâmetros informados (v). |
+| onLongClickEvent([View]) | [boolean] | Executa `onLongClickEvent` e retorna quando a chamada do motor termina. |

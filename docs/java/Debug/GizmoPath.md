@@ -1,0 +1,59 @@
+{@import ../../links.md}
+
+# GizmoPath
+
+Complete API reference for `GizmoPath`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Debug
+
+**Component:** no
+
+---
+
+```java
+public class GizmoPath extends GizmoElement
+```
+
+## Constructors (1)
+
+| Signature | Description |
+| --- | --- |
+| GizmoPath() | Creates a new instance of GizmoPath. |
+
+## Attributes (2)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `rotMatrix` | [float][] | Represents the `rotMatrix` value stored on this instance. Read or assign to update the property. |
+| `createdEntries` | [int] | Represents the `createdEntries` value stored on this instance. Read or assign to update the property. |
+
+## Virtual Attributes (7)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `color` | [Color] | `get/set` | Virtual attribute exposed by `getColor`. Access it like a field to read or write the underlying value. |
+| `matrix` | [float][] | `get/set` | Virtual attribute exposed by `getMatrix`. Access it like a field to read or write the underlying value. |
+| `position` | [Vector3] | `get/set` | Virtual attribute exposed by `getPosition`. Access it like a field to read or write the underlying value. |
+| `rotation` | [Quaternion] | `get/set` | Virtual attribute exposed by `getRotation`. Access it like a field to read or write the underlying value. |
+| `scale` | [Vector3] | `get/set` | Virtual attribute exposed by `getScale`. Access it like a field to read or write the underlying value. |
+| `userPointer` | [Object] | `get/set` | Virtual attribute exposed by `getUserPointer`. Access it like a field to read or write the underlying value. |
+| `wireFrameWidth` | [int] | `get/set` | Virtual attribute exposed by `getWireFrameWidth`. Access it like a field to read or write the underlying value. |
+
+## Methods (12)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| setPosition([float], [float], [float]) | [void] | Sets or updates the position. |
+| setRotation([float], [float], [float]) | [void] | Sets or updates the rotation. |
+| setRotation([float], [float], [float], [float]) | [void] | Sets or updates the rotation. |
+| setScale([float], [float], [float]) | [void] | Sets or updates the scale. |
+| clear() | [void] | Clears or resets the object's state. |
+| addLine([Vector3], [Vector3]) | [GizmoPath] | Adds line to the collection. |
+| addLineUnsafe([Vector3], [Vector3]) | [GizmoPath] | Adds line unsafe to the collection. |
+| addPath([[List]&lt;Vector2&gt;]) | [GizmoPath] | Adds path to the collection. |
+| apply() | [void] | Executes `apply` and returns after the underlying engine call finishes. |
+| destroy() | [void] | Executes `destroy` and returns after the underlying engine call finishes. |
+| getVertex() | [Vertex] | Returns the current vertex. |
+| getRenderMode() | [RenderMode] | Returns the current render mode. |

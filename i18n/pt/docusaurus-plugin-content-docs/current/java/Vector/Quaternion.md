@@ -1,0 +1,117 @@
+{@import ../../links.md}
+
+# Quaternion
+
+Referência completa da API de `Quaternion`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Vector
+
+**Componente:** não
+
+---
+
+```java
+public class Quaternion
+```
+
+## Construtores (3)
+
+| Signature | Description |
+| --- | --- |
+| Quaternion([Quaternion]) | Executa `Quaternion` e retorna quando a chamada do motor termina. |
+| Quaternion() | Executa `Quaternion` e retorna quando a chamada do motor termina. |
+| Quaternion([float], [float], [float], [float]) | Cria uma nova instância de Quaternion. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [Quaternion] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Atributos Virtuais (7)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `qw` | [float] | `get/set` | Atributo virtual exposto por `getQW`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `qx` | [float] | `get/set` | Atributo virtual exposto por `getQX`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `qy` | [float] | `get/set` | Atributo virtual exposto por `getQY`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `qz` | [float] | `get/set` | Atributo virtual exposto por `getQZ`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `x` | [float] | `get/set` | Atributo virtual exposto por `getX`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `y` | [float] | `get/set` | Atributo virtual exposto por `getY`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `z` | [float] | `get/set` | Atributo virtual exposto por `getZ`. Acesse como um campo para ler ou escrever o valor subjacente. |
+
+## Métodos (51)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| increment([float], [float], [float]) | [void] | Executa a operação increment usando os parâmetros informados (eulerX, eulerY, eulerZ). |
+| mul([Quaternion]) | [Quaternion] | Executa a operação mul usando os parâmetros informados (value). |
+| mul([float], [float], [float], [float]) | [Quaternion] | Executa a operação mul usando os parâmetros informados (w, x, y, z). |
+| mulLocal([Quaternion]) | [void] | Executa a operação mulLocal usando os parâmetros informados (value). |
+| mulLocal([float], [float], [float], [float]) | [void] | Executa a operação mulLocal usando os parâmetros informados (w, x, y, z). |
+| multiply([Quaternion]) | [Quaternion] | Executa a operação multiply usando os parâmetros informados (value). |
+| multiply([float], [float], [float], [float]) | [Quaternion] | Executa a operação multiply usando os parâmetros informados (w, x, y, z). |
+| sum([Quaternion]) | [Quaternion] | Executa a operação sum usando os parâmetros informados (value). |
+| sum([float], [float], [float], [float]) | [Quaternion] | Executa a operação sum usando os parâmetros informados (w, x, y, z). |
+| sumLocal([Quaternion]) | [void] | Executa a operação sumLocal usando os parâmetros informados (value). |
+| sumLocal([float], [float], [float], [float]) | [void] | Executa a operação sumLocal usando os parâmetros informados (w, x, y, z). |
+| add([Quaternion]) | [Quaternion] | Adiciona an item à coleção. |
+| add([float], [float], [float], [float]) | [Quaternion] | Adiciona an item à coleção. |
+| normalize() | [Quaternion] | Executa a operação normalize. |
+| normalizeLocal() | [void] | Executa a operação normalizeLocal. |
+| equals([Quaternion]) | [boolean] | Compara esta instância com outra para igualdade/ordem. |
+| equals([float], [float], [float], [float]) | [boolean] | Compara esta instância com outra para igualdade/ordem. |
+| equals([float]) | [boolean] | Compara esta instância com outra para igualdade/ordem. |
+| blend([Quaternion], [float]) | [Quaternion] | Executa a operação blend usando os parâmetros informados (quaternion, blend). |
+| blendLocal([Quaternion], [float]) | [void] | Executa `blendLocal` e retorna quando a chamada do motor termina. |
+| selfLookTo([Vector3]) | [void] | Executa a operação selfLookTo usando os parâmetros informados (direction). |
+| selfLookTo([Vector3], [Vector3]) | [void] | Executa a operação selfLookTo usando os parâmetros informados (from, to). |
+| localLookTo([Vector3]) | [void] | Executa a operação localLookTo usando os parâmetros informados (direction). |
+| localLookTo([Vector3], [Vector3]) | [void] | Executa a operação localLookTo usando os parâmetros informados (from, to). |
+| lookTo([Vector3]) | [void] | Executa a operação lookTo usando os parâmetros informados (direction). |
+| lookTo([Vector3], [Vector3]) | [void] | Executa a operação lookTo usando os parâmetros informados (from, to). |
+| lookTo([Vector3], [Vector3], [Vector3]) | [void] | Executa a operação lookTo usando os parâmetros informados (from, to, up). |
+| lookToLocal([Vector3]) | [void] | Executa `lookToLocal` e retorna quando a chamada do motor termina. |
+| lookToLocal([Vector3], [Vector3]) | [void] | Executa `lookToLocal` e retorna quando a chamada do motor termina. |
+| lookToLocal([Vector3], [boolean], [boolean]) | [void] | Executa `lookToLocal` e retorna quando a chamada do motor termina. |
+| lookToLocal([Vector3], [Vector3], [boolean], [boolean]) | [void] | Executa `lookToLocal` e retorna quando a chamada do motor termina. |
+| slerp([Quaternion], [float]) | [Quaternion] | Executa a operação slerp usando os parâmetros informados (b, t). |
+| slerpLocal([Quaternion], [float]) | [void] | Executa a operação slerpLocal usando os parâmetros informados (b, t). |
+| slerpLocal([Quaternion], [Quaternion], [float]) | [void] | Executa a operação slerpLocal usando os parâmetros informados (a, b, t). |
+| set([Quaternion]) | [void] | Define ou atualiza the value. |
+| set([float], [float], [float], [float]) | [void] | Define ou atualiza the value. |
+| set([float]) | [void] | Define ou atualiza the value. |
+| setIdentity() | [void] | Define ou atualiza a propriedade `propriedade `identity``. |
+| setFromEuler([float], [float], [float]) | [void] | Define ou atualiza a propriedade `propriedade `from euler``. |
+| setFromEuler([Vector3]) | [void] | Define ou atualiza a propriedade `propriedade `from euler``. |
+| toEuler() | [Vector3] | Executa a operação toEuler. |
+| copy() | [Quaternion] | Retorna uma cópia da instância de Quaternion. |
+| rotateVector([Vector3]) | [Vector3] | Transforma ou move vector de acordo. |
+| rotateVector([Vector3], [Vector3]) | [Vector3] | Transforma ou move vector de acordo. |
+| equals([Object]) | [boolean] | Compara esta instância com outra para igualdade/ordem. |
+| pointerEquals([Object]) | [boolean] | Executa a operação pointerEquals usando os parâmetros informados (otherObject). |
+| notEquals([Object]) | [boolean] | Executa a operação notEquals usando os parâmetros informados (otherObject). |
+| mul([Object]) | [T] | Executa a operação mul usando os parâmetros informados (otherObject). |
+| mulEqual([Object]) | [void] | Executa a operação mulEqual usando os parâmetros informados (otherObject). |
+| serializeToString() | [String] | Executa a operação serializeToString. |
+| deserializeLocal([String]) | [void] | Executa a operação deserializeLocal usando os parâmetros informados (str). |
+
+## Métodos Estáticos (13)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| fromEuler([Vector3]) | [Quaternion] | Executa a operação fromEuler usando os parâmetros informados (value). |
+| fromEuler([float], [float], [float]) | [Quaternion] | Executa a operação fromEuler usando os parâmetros informados (x, y, z). |
+| createFromEuler([Vector3]) | [Quaternion] | Cria um novo from euler. |
+| createFromEuler([float], [float], [float]) | [Quaternion] | Cria um novo from euler. |
+| zero() | [Quaternion] | Executa a operação zero. |
+| slerp([Quaternion], [Quaternion], [float]) | [Quaternion] | Executa a operação slerp usando os parâmetros informados (a, b, t). |
+| lookAt([Vector3], [Vector3]) | [Quaternion] | Executa a operação lookAt usando os parâmetros informados (from, to). |
+| lookAt([Vector3], [Vector3], [Vector3]) | [Quaternion] | Executa a operação lookAt usando os parâmetros informados (from, to, up). |
+| angleAxis([float], [Vector3]) | [Quaternion] | Executa a operação angleAxis usando os parâmetros informados (angle, value). |
+| angleAxis([float], [float], [float], [float]) | [Quaternion] | Executa a operação angleAxis usando os parâmetros informados (angle, x, y, z). |
+| lookRotation([Vector3]) | [Quaternion] | Executa a operação lookRotation usando os parâmetros informados (forward). |
+| lookRotation([Vector3], [Vector3]) | [Quaternion] | Executa a operação lookRotation usando os parâmetros informados (forward, upwards). |
+| isNull([Object]) | [boolean] | Retorna se null é verdadeiro. |

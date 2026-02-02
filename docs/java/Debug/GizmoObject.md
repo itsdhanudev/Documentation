@@ -1,0 +1,49 @@
+{@import ../../links.md}
+
+# GizmoObject
+
+Complete API reference for `GizmoObject`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Debug
+
+**Component:** no
+
+---
+
+```java
+public class GizmoObject extends GizmoTransform
+```
+
+## Constructors (7)
+
+| Signature | Description |
+| --- | --- |
+| GizmoObject() | Creates a new instance of GizmoObject. |
+| GizmoObject([Vertex]) | Creates a new instance of GizmoObject. |
+| GizmoObject([Vertex], [Vector3]) | Creates a new instance of GizmoObject. |
+| GizmoObject([Vertex], [Vector3], [Quaternion]) | Creates a new instance of GizmoObject. |
+| GizmoObject([Vertex], [Vector3], [Quaternion], [Vector3]) | Creates a new instance of GizmoObject. |
+| GizmoObject([Vertex], [Vector3], [Quaternion], [Vector3], [boolean]) | Creates a new instance of GizmoObject. |
+| GizmoObject([Vertex], [Vector3], [Quaternion], [Vector3], [boolean], [Color], [Texture]) | Creates a new instance of GizmoObject. |
+
+## Virtual Attributes (9)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `color` | [Color] | `get/set` | Virtual attribute exposed by `getColor`. Access it like a field to read or write the underlying value. |
+| `dualFaceRender` | [boolean] | `get/set` | Virtual attribute exposed by `isDualFaceRender`. Access it like a field to read or write the underlying value. |
+| `enableTransparency` | [boolean] | `get/set` | Virtual attribute exposed by `isEnableTransparency`. Access it like a field to read or write the underlying value. |
+| `renderMode` | [RenderMode] | `get/set` | Virtual attribute exposed by `getRenderMode`. Access it like a field to read or write the underlying value. |
+| `scaleBasedCamera` | [boolean] | `get/set` | Virtual attribute exposed by `isScaleBasedCamera`. Access it like a field to read or write the underlying value. |
+| `texture` | [Texture] | `get/set` | Virtual attribute exposed by `getTexture`. Access it like a field to read or write the underlying value. |
+| `vertex` | [Vertex] | `get/set` | Virtual attribute exposed by `getVertex`. Access it like a field to read or write the underlying value. |
+| `wireFrame` | [boolean] | `get/set` | Virtual attribute exposed by `isWireFrame`. Access it like a field to read or write the underlying value. |
+| `wireFrameWidth` | [int] | `get/set` | Virtual attribute exposed by `getWireFrameWidth`. Access it like a field to read or write the underlying value. |
+
+## Methods (1)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| randomizeColor() | [void] | Executes `randomizeColor` and returns after the underlying engine call finishes. |

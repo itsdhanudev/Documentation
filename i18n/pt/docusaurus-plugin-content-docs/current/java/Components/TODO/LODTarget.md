@@ -1,0 +1,31 @@
+{@import ../../../links.md}
+
+# LODTarget
+
+Referência completa da API de `LODTarget`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** TODO
+
+**Componente:** sim
+
+---
+
+```java
+public class LODTarget extends Component
+```
+
+## Construtores (3)
+
+| Signature | Description |
+| --- | --- |
+| LODTarget([LODTarget]) | Executa `LODTarget` e retorna quando a chamada do motor termina. |
+| LODTarget([Engine]) | Executa `LODTarget` e retorna quando a chamada do motor termina. |
+| LODTarget() | Executa `LODTarget` e retorna quando a chamada do motor termina. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [LODTarget] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |

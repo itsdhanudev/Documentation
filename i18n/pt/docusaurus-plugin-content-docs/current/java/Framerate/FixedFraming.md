@@ -1,0 +1,39 @@
+{@import ../../links.md}
+
+# FixedFraming
+
+Referência completa da API de `FixedFraming`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Framerate
+
+**Componente:** não
+
+---
+
+```java
+public class FixedFraming
+```
+
+## Construtores (1)
+
+| Signature | Description |
+| --- | --- |
+| FixedFraming([int], [FixedFrameListener]) | Executa `FixedFraming` e retorna quando a chamada do motor termina. |
+
+## Atributos Virtuais (1)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `fixedFrames` | [int] | `get/set` | Atributo virtual exposto por `getFixedFrames`. Acesse como um campo para ler ou escrever o valor subjacente. |
+
+## Métodos (5)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| engineRepeat() | [void] | Executa a operação engineRepeat. |
+| setAllowTimeScale([boolean]) | [void] | Define ou atualiza a propriedade `propriedade `allow time scale``. |
+| setDesyncLowFrameRate([boolean]) | [void] | Define ou atualiza a propriedade `propriedade `desync low frame rate``. |
+| setDesyncHighFrameRate([boolean]) | [void] | Define ou atualiza a propriedade `propriedade `desync high frame rate``. |
+| setFixedFrameListener([FixedFrameListener]) | [void] | Define ou atualiza a propriedade `propriedade `fixed frame listener``. |

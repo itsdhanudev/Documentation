@@ -1,0 +1,45 @@
+{@import ../../../links.md}
+
+# UITouchTrigger
+
+Complete API reference for `UITouchTrigger`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** UI
+
+**Component:** yes
+
+---
+
+```java
+public class UITouchTrigger extends Component
+```
+
+## Constructors (3)
+
+| Signature | Description |
+| --- | --- |
+| UITouchTrigger([UITouchTrigger]) | Executes `UITouchTrigger` and returns after the underlying engine call finishes. |
+| UITouchTrigger([Engine]) | Executes `UITouchTrigger` and returns after the underlying engine call finishes. |
+| UITouchTrigger() | Creates a new instance of UITouchTrigger. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [UITouchTrigger] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
+
+## Virtual Attributes (1)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `selectedTouch` | [Touch] | `get` | Virtual attribute exposed by `getSelectedTouch`. Access it like a field to read or write the underlying value. |
+
+## Methods (3)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| isDown() | [boolean] | Returns whether down is true. |
+| isPressed() | [boolean] | Returns whether pressed is true. |
+| isUp() | [boolean] | Returns whether up is true. |

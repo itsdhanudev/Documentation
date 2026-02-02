@@ -1,0 +1,48 @@
+{@import ../../../links.md}
+
+# UIDynamicJoystick
+
+Referência completa da API de `UIDynamicJoystick`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** UI
+
+**Componente:** sim
+
+---
+
+```java
+public class UIDynamicJoystick extends Component
+```
+
+## Construtores (3)
+
+| Signature | Description |
+| --- | --- |
+| UIDynamicJoystick([UIDynamicJoystick]) | Executa `UIDynamicJoystick` e retorna quando a chamada do motor termina. |
+| UIDynamicJoystick([Engine]) | Executa `UIDynamicJoystick` e retorna quando a chamada do motor termina. |
+| UIDynamicJoystick() | Cria uma nova instância de UIDynamicJoystick. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [UIDynamicJoystick] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Atributos Virtuais (6)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `backgroundColor` | [Color] | `get/set` | Atributo virtual exposto por `getBackgroundColor`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `backgroundTexture` | [Texture] | `get/set` | Atributo virtual exposto por `getBackgroundTexture`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `handleSize` | [int] | `get/set` | Atributo virtual exposto por `getHandleSize`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `handlerColor` | [Color] | `get/set` | Atributo virtual exposto por `getHandlerColor`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `handlerTexture` | [Texture] | `get/set` | Atributo virtual exposto por `getHandlerTexture`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `size` | [int] | `get/set` | Atributo virtual exposto por `getSize`. Acesse como um campo para ler ou escrever o valor subjacente. |
+
+## Métodos (1)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| getValue() | [Vector2] | Executa `getValue` e retorna quando a chamada do motor termina. |

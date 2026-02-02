@@ -1,0 +1,63 @@
+{@import ../../../links.md}
+
+# Terrain
+
+Complete API reference for `Terrain`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Terrain
+
+**Component:** yes
+
+---
+
+```java
+public class Terrain extends Component
+```
+
+## Constructors (1)
+
+| Signature | Description |
+| --- | --- |
+| Terrain() | Executes `Terrain` and returns after the underlying engine call finishes. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `component` | [Terrain] | Represents the `component` value stored on this instance. Read or assign to update the property. |
+
+## Virtual Attributes (3)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `maxHeight` | [float] | `get/set` | Virtual attribute exposed by `getMaxHeight`. Access it like a field to read or write the underlying value. |
+| `resolution` | [int] | `get/set` | Virtual attribute exposed by `getResolution`. Access it like a field to read or write the underlying value. |
+| `width` | [float] | `get/set` | Virtual attribute exposed by `getWidth`. Access it like a field to read or write the underlying value. |
+
+## Methods (21)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| isInsideTerrain([float], [float]) | [boolean] | Executes `isInsideTerrain` and returns after the underlying engine call finishes. |
+| isInsideTerrain([Vector3]) | [boolean] | Executes `isInsideTerrain` and returns after the underlying engine call finishes. |
+| nearestVerticeAt([Vector3]) | [Point2] | Executes `nearestVerticeAt` and returns after the underlying engine call finishes. |
+| nearestLayerVerticeAt([Vector3]) | [Point2] | Executes `nearestLayerVerticeAt` and returns after the underlying engine call finishes. |
+| getWorldY([float], [float]) | [float] | Executes `getWorldY` and returns after the underlying engine call finishes. |
+| getWorldY([Vector3]) | [float] | Executes `getWorldY` and returns after the underlying engine call finishes. |
+| getHeight([Point2]) | [float] | Executes `getHeight` and returns after the underlying engine call finishes. |
+| getHeight([int], [int]) | [float] | Executes `getHeight` and returns after the underlying engine call finishes. |
+| setHeight([Point2], [float]) | [void] | Executes `setHeight` and returns after the underlying engine call finishes. |
+| setHeight([int], [int], [float]) | [void] | Executes `setHeight` and returns after the underlying engine call finishes. |
+| getLayerIntensity([int], [int], [int]) | [float] | Executes `getLayerIntensity` and returns after the underlying engine call finishes. |
+| setLayerIntensity([int], [int], [int], [float]) | [void] | Executes `setLayerIntensity` and returns after the underlying engine call finishes. |
+| getLayersCount() | [int] | Executes `getLayersCount` and returns after the underlying engine call finishes. |
+| getLayerAt([int]) | [Layer] | Executes `getLayerAt` and returns after the underlying engine call finishes. |
+| addLayer([Layer]) | [void] | Executes `addLayer` and returns after the underlying engine call finishes. |
+| traceRay([Vector3], [Vector3]) | [LaserHit] | Executes `traceRay` and returns after the underlying engine call finishes. |
+| traceRay([Vector3], [Vector3], [float]) | [LaserHit] | Executes `traceRay` and returns after the underlying engine call finishes. |
+| applyRaiseLower([Vector2], [float], [float], [Brush]) | [void] | Executes `applyRaiseLower` and returns after the underlying engine call finishes. |
+| applyPaint([Vector2], [float], [float], [float], [int], [Brush]) | [void] | Executes `applyPaint` and returns after the underlying engine call finishes. |
+| componentClassMatch([Component], [Component]) | [boolean] | Executes `componentClassMatch` and returns after the underlying engine call finishes. |
+| getEngineComponent() | [Component] | Executes `getEngineComponent` and returns after the underlying engine call finishes. |

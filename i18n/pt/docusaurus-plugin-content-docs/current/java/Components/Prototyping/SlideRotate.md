@@ -1,0 +1,49 @@
+{@import ../../../links.md}
+
+# SlideRotate
+
+Referência completa da API de `SlideRotate`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Prototyping
+
+**Componente:** sim
+
+---
+
+```java
+public class SlideRotate extends Component
+```
+
+## Construtores (3)
+
+| Signature | Description |
+| --- | --- |
+| SlideRotate([SlideRotate]) | Executa `SlideRotate` e retorna quando a chamada do motor termina. |
+| SlideRotate([Engine]) | Executa `SlideRotate` e retorna quando a chamada do motor termina. |
+| SlideRotate() | Cria uma nova instância de SlideRotate. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [SlideRotate] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Atributos Virtuais (7)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `axisName` | [String] | `get/set` | Atributo virtual exposto por `getAxisName`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `currentAngle` | [float] | `get/set` | Atributo virtual exposto por `getCurrentAngle`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `direction` | [Direction] | `get/set` | Atributo virtual exposto por `getDirection`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `limited` | [boolean] | `set` | Atributo virtual exposto por `setLimited`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `maxAngle` | [float] | `get/set` | Atributo virtual exposto por `getMaxAngle`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `minAngle` | [float] | `get/set` | Atributo virtual exposto por `getMinAngle`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `sensibility` | [float] | `get/set` | Atributo virtual exposto por `getSensibility`. Acesse como um campo para ler ou escrever o valor subjacente. |
+
+## Métodos (1)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| isLimited() | [boolean] | Retorna se limited é verdadeiro. |

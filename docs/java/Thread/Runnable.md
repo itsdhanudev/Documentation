@@ -1,0 +1,23 @@
+{@import ../../links.md}
+
+# Runnable
+
+Complete API reference for `Runnable`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Thread
+
+**Component:** no
+
+---
+
+```java
+public interface Runnable
+```
+
+## Methods (1)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| run() | [void] | Executes `run` and returns after the underlying engine call finishes. |

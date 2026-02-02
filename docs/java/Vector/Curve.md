@@ -1,0 +1,54 @@
+{@import ../../links.md}
+
+# Curve
+
+Complete API reference for `Curve`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Vector
+
+**Component:** no
+
+---
+
+```java
+public class Curve
+```
+
+## Constructors (2)
+
+| Signature | Description |
+| --- | --- |
+| Curve([Curve]) | Executes `Curve` and returns after the underlying engine call finishes. |
+| Curve() | Executes `Curve` and returns after the underlying engine call finishes. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [Curve] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
+
+## Methods (12)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| addPoint([float], [float]) | [void] | Adds point to the collection. |
+| setPoint([int], [float], [float]) | [void] | Sets or updates the point. |
+| pointAt([int]) | [Vector2] | Performs the pointAt operation using the provided parameters (idx). |
+| pointAt([int], [Vector2]) | [Vector2] | Performs the pointAt operation using the provided parameters (idx, out). |
+| clear() | [void] | Clears or resets the object's state. |
+| pointsCount() | [int] | Executes `pointsCount` and returns after the underlying engine call finishes. |
+| evaluate([float]) | [float] | Performs the evaluate operation using the provided parameters (x). |
+| apply() | [void] | Executes `apply` and returns after the underlying engine call finishes. |
+| getWrapMode() | [WrapMode] | Returns the current wrap mode. |
+| setWrapMode([WrapMode]) | [void] | Sets or updates the wrap mode. |
+| toJson() | [String] | Executes `toJson` and returns after the underlying engine call finishes. |
+| fromJson([String]) | [Curve] | Performs the fromJson operation using the provided parameters (json). |
+
+## Static Methods (2)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| genericInterface() | [GenericClassInspectorEntry] | Executes `genericInterface` and returns after the underlying engine call finishes. |
+| inspectorController() | [ClassInspectorEntry] | Executes `inspectorController` and returns after the underlying engine call finishes. |

@@ -1,0 +1,56 @@
+{@import ../../../links.md}
+
+# AnimationTrigger
+
+Referência completa da API de `AnimationTrigger`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** TODO
+
+**Componente:** sim
+
+---
+
+```java
+public class AnimationTrigger extends Component
+```
+
+## Construtores (3)
+
+| Signature | Description |
+| --- | --- |
+| AnimationTrigger([AnimationTrigger]) | Executa `AnimationTrigger` e retorna quando a chamada do motor termina. |
+| AnimationTrigger([Engine]) | Executa `AnimationTrigger` e retorna quando a chamada do motor termina. |
+| AnimationTrigger() | Executa `AnimationTrigger` e retorna quando a chamada do motor termina. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [AnimationTrigger] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Atributos Virtuais (7)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `animName` | [String] | `get/set` | Atributo virtual exposto por `getAnimName`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `animSpeed` | [float] | `get/set` | Atributo virtual exposto por `getAnimSpeed`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `animSpeedFrom` | [AnimSpeedFrom] | `get/set` | Atributo virtual exposto por `getAnimSpeedFrom`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `loopOnce` | [boolean] | `get/set` | Atributo virtual exposto por `isLoopOnce`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `onActiveEventName` | [String] | `get/set` | Atributo virtual exposto por `getOnActiveEventName`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `running` | [boolean] | `get` | Atributo virtual exposto por `isRunning`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `transitionDelay` | [float] | `get/set` | Atributo virtual exposto por `getTransitionDelay`. Acesse como um campo para ler ou escrever o valor subjacente. |
+
+## Métodos (8)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| enterConditionCount() | [int] | Executa `enterConditionCount` e retorna quando a chamada do motor termina. |
+| enterConditionAt([int]) | [Condition] | Executa `enterConditionAt` e retorna quando a chamada do motor termina. |
+| addEnterCondition([Condition]) | [void] | Executa `addEnterCondition` e retorna quando a chamada do motor termina. |
+| removeEnterCondition([Condition]) | [void] | Executa `removeEnterCondition` e retorna quando a chamada do motor termina. |
+| exitConditionCount() | [int] | Executa `exitConditionCount` e retorna quando a chamada do motor termina. |
+| exitConditionAt([int]) | [Condition] | Executa `exitConditionAt` e retorna quando a chamada do motor termina. |
+| addExitCondition([Condition]) | [void] | Executa `addExitCondition` e retorna quando a chamada do motor termina. |
+| removeExitCondition([Condition]) | [void] | Executa `removeExitCondition` e retorna quando a chamada do motor termina. |

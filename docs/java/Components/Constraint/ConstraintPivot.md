@@ -1,0 +1,31 @@
+{@import ../../../links.md}
+
+# ConstraintPivot
+
+Complete API reference for `ConstraintPivot`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Constraint
+
+**Component:** yes
+
+---
+
+```java
+public class ConstraintPivot extends Component
+```
+
+## Constructors (3)
+
+| Signature | Description |
+| --- | --- |
+| ConstraintPivot([ConstraintPivot]) | Executes `ConstraintPivot` and returns after the underlying engine call finishes. |
+| ConstraintPivot([Engine]) | Executes `ConstraintPivot` and returns after the underlying engine call finishes. |
+| ConstraintPivot() | Creates a new instance of ConstraintPivot. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [ConstraintPivot] | Represents the `instance` value stored on this instance. Read or assign to update the property. |

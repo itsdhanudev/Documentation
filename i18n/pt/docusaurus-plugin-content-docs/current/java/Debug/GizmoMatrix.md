@@ -1,0 +1,29 @@
+{@import ../../links.md}
+
+# GizmoMatrix
+
+Referência completa da API de `GizmoMatrix`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Debug
+
+**Componente:** não
+
+---
+
+```java
+public class GizmoMatrix extends GizmoElement
+```
+
+## Construtores (1)
+
+| Signature | Description |
+| --- | --- |
+| GizmoMatrix() | Cria uma nova instância de GizmoMatrix. |
+
+## Atributos Virtuais (1)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `matrix` | [float][] | `get/set` | Atributo virtual exposto por `getMatrix`. Acesse como um campo para ler ou escrever o valor subjacente. |

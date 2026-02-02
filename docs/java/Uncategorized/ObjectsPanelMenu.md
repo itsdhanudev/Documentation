@@ -1,0 +1,31 @@
+{@import ../../links.md}
+
+# ObjectsPanelMenu
+
+Complete API reference for `ObjectsPanelMenu`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Uncategorized
+
+**Component:** no
+
+---
+
+```java
+public class ObjectsPanelMenu
+```
+
+## Constructors (1)
+
+| Signature | Description |
+| --- | --- |
+| ObjectsPanelMenu([String]) | Creates a new instance of ObjectsPanelMenu. |
+
+## Methods (3)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| getMenu() | [String] | Returns the current menu. |
+| setMenu([String]) | [void] | Sets or updates the menu. |
+| onClick([SpatialObject]) | [void] | Performs the onClick operation using the provided parameters (object). |

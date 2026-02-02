@@ -1,0 +1,44 @@
+{@import ../../links.md}
+
+# ComponentInspector
+
+Complete API reference for `ComponentInspector`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Editor
+
+**Component:** no
+
+---
+
+```java
+public class ComponentInspector
+```
+
+## Constructors (1)
+
+| Signature | Description |
+| --- | --- |
+| ComponentInspector() | Creates a new instance of ComponentInspector. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `myComponent` | [T] | Represents the `myComponent` value stored on this instance. Read or assign to update the property. |
+
+## Methods (2)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| updateUIVisible() | [void] | Sets or updates the uivisible. |
+| onAttach() | [View] | Executes `onAttach` and returns after the underlying engine call finishes. |
+
+## Static Methods (3)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| findViewByID([View], [String]) | &[lt];[T] [extends] [View]&[gt]; [T] | Performs the findViewByID operation using the provided parameters (view, id). |
+| toView([Object]) | [View] | Performs the toView operation using the provided parameters (o). |
+| getIdOf([View]) | [String] | Returns the current id of. |

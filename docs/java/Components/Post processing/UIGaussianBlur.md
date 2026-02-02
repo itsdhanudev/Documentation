@@ -1,0 +1,38 @@
+{@import ../../../links.md}
+
+# UIGaussianBlur
+
+Complete API reference for `UIGaussianBlur`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Post processing
+
+**Component:** yes
+
+---
+
+```java
+public class UIGaussianBlur extends Component
+```
+
+## Constructors (3)
+
+| Signature | Description |
+| --- | --- |
+| UIGaussianBlur([UIGaussianBlur]) | Executes `UIGaussianBlur` and returns after the underlying engine call finishes. |
+| UIGaussianBlur([Engine]) | Executes `UIGaussianBlur` and returns after the underlying engine call finishes. |
+| UIGaussianBlur() | Executes `UIGaussianBlur` and returns after the underlying engine call finishes. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [UIGaussianBlur] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
+
+## Virtual Attributes (2)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `blurRadius` | [float] | `get/set` | Virtual attribute exposed by `getBlurRadius`. Access it like a field to read or write the underlying value. |
+| `quality` | [Quality] | `get/set` | Virtual attribute exposed by `getQuality`. Access it like a field to read or write the underlying value. |

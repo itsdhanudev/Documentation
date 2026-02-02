@@ -1,0 +1,36 @@
+{@import ../../links.md}
+
+# PropertiesButton
+
+Referência completa da API de `PropertiesButton`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Inspector
+
+**Componente:** não
+
+---
+
+```java
+public class PropertiesButton
+```
+
+## Construtores (2)
+
+| Signature | Description |
+| --- | --- |
+| PropertiesButton([Engine]) | Executa `PropertiesButton` e retorna quando a chamada do motor termina. |
+| PropertiesButton([PropertiesButtonListener]) | Cria uma nova instância de PropertiesButton. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `runOnEngineThread` | [boolean] | Representa o valor de `runOnEngineThread` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Métodos Estáticos (1)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| inspectorController() | [ClassInspectorEntry] | Executa `inspectorController` e retorna quando a chamada do motor termina. |

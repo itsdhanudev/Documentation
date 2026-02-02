@@ -1,0 +1,43 @@
+{@import ../../links.md}
+
+# NativeCharBuffer
+
+Complete API reference for `NativeCharBuffer`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Buffers
+
+**Component:** no
+
+---
+
+```java
+public class NativeCharBuffer
+```
+
+## Constructors (3)
+
+| Signature | Description |
+| --- | --- |
+| NativeCharBuffer([NativeCharBuffer]) | Executes `NativeCharBuffer` and returns after the underlying engine call finishes. |
+| NativeCharBuffer([Engine]) | Executes `NativeCharBuffer` and returns after the underlying engine call finishes. |
+| NativeCharBuffer([int]) | Creates a new instance of NativeCharBuffer. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `buffer` | [NativeCharBuffer] | Represents the `buffer` value stored on this instance. Read or assign to update the property. |
+
+## Methods (7)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| get([int]) | [char] | Returns the current value. |
+| set([int], [char]) | [void] | Sets or updates the the value. |
+| put([char]) | [void] | Sets or updates the the value. |
+| capacity() | [int] | Executes `capacity` and returns after the underlying engine call finishes. |
+| getPosition() | [int] | Returns the current position. |
+| Position([int]) | [void] | Performs the Position operation using the provided parameters (idx). |
+| setPosition([int]) | [void] | Sets or updates the position. |

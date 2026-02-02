@@ -1,0 +1,37 @@
+{@import ../../../links.md}
+
+# UIVerticalLayout
+
+Referência completa da API de `UIVerticalLayout`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** UI
+
+**Componente:** sim
+
+---
+
+```java
+public class UIVerticalLayout extends Component
+```
+
+## Construtores (3)
+
+| Signature | Description |
+| --- | --- |
+| UIVerticalLayout([UIVerticalLayout]) | Executa `UIVerticalLayout` e retorna quando a chamada do motor termina. |
+| UIVerticalLayout([Engine]) | Executa `UIVerticalLayout` e retorna quando a chamada do motor termina. |
+| UIVerticalLayout() | Cria uma nova instância de UIVerticalLayout. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [UIVerticalLayout] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Atributos Virtuais (1)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `spacing` | [int] | `get/set` | Atributo virtual exposto por `getSpacing`. Acesse como um campo para ler ou escrever o valor subjacente. |

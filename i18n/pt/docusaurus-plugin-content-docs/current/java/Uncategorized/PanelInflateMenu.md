@@ -1,0 +1,23 @@
+{@import ../../links.md}
+
+# PanelInflateMenu
+
+Referência completa da API de `PanelInflateMenu`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Uncategorized
+
+**Componente:** não
+
+---
+
+```java
+public interface PanelInflateMenu
+```
+
+## Métodos (1)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| value() | [String] | Executa `value` e retorna quando a chamada do motor termina. |

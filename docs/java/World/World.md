@@ -1,0 +1,17 @@
+{@import ../../links.md}
+
+# World
+
+Complete API reference for `World`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** World
+
+**Component:** no
+
+---
+
+```java
+public class World
+```

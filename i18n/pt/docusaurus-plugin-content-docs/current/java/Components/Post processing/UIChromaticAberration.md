@@ -1,0 +1,38 @@
+{@import ../../../links.md}
+
+# UIChromaticAberration
+
+Referência completa da API de `UIChromaticAberration`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Post processing
+
+**Componente:** sim
+
+---
+
+```java
+public class UIChromaticAberration extends Component
+```
+
+## Construtores (3)
+
+| Signature | Description |
+| --- | --- |
+| UIChromaticAberration([UIChromaticAberration]) | Executa `UIChromaticAberration` e retorna quando a chamada do motor termina. |
+| UIChromaticAberration([Engine]) | Executa `UIChromaticAberration` e retorna quando a chamada do motor termina. |
+| UIChromaticAberration() | Executa `UIChromaticAberration` e retorna quando a chamada do motor termina. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [UIChromaticAberration] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Atributos Virtuais (2)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `falloff` | [float] | `get/set` | Atributo virtual exposto por `getFalloff`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `strength` | [float] | `get/set` | Atributo virtual exposto por `getStrength`. Acesse como um campo para ler ou escrever o valor subjacente. |

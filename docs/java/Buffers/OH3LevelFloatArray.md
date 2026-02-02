@@ -1,0 +1,42 @@
+{@import ../../links.md}
+
+# OH3LevelFloatArray
+
+Complete API reference for `OH3LevelFloatArray`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Buffers
+
+**Component:** no
+
+---
+
+```java
+public class OH3LevelFloatArray extends OHFloatDataBase
+```
+
+## Constructors (4)
+
+| Signature | Description |
+| --- | --- |
+| OH3LevelFloatArray([OH3LevelFloatArray]) | Executes `OH3LevelFloatArray` and returns after the underlying engine call finishes. |
+| OH3LevelFloatArray([Engine]) | Executes `OH3LevelFloatArray` and returns after the underlying engine call finishes. |
+| OH3LevelFloatArray([int], [int], [int]) | Creates a new instance of OH3LevelFloatArray. |
+| OH3LevelFloatArray([int], [int], [int], [boolean]) | Creates a new instance of OH3LevelFloatArray. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `buffer` | [OH3LevelFloatArray] | Represents the `buffer` value stored on this instance. Read or assign to update the property. |
+
+## Methods (5)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| get([int], [int], [int]) | [float] | Returns the current value. |
+| set([int], [int], [int], [float]) | [void] | Sets or updates the the value. |
+| getSizeX() | [int] | Returns the current size x. |
+| getSizeY() | [int] | Returns the current size y. |
+| getSizeZ() | [int] | Returns the current size z. |

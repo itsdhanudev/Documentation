@@ -1,0 +1,37 @@
+{@import ../../links.md}
+
+# Axis
+
+Referência completa da API de `Axis`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Input
+
+**Componente:** não
+
+---
+
+```java
+public class Axis
+```
+
+## Construtores (2)
+
+| Signature | Description |
+| --- | --- |
+| Axis([Axis]) | Executa `Axis` e retorna quando a chamada do motor termina. |
+| Axis([String]) | Executa `Axis` e retorna quando a chamada do motor termina. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `axis` | [Axis] | Representa o valor de `axis` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Atributos Virtuais (2)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `name` | [String] | `get` | Retorna a propriedade `propriedade `nome do Axis``. |
+| `value` | [Vector2] | `get/set` | Retorna a propriedade `propriedade `valor do Axis``. |

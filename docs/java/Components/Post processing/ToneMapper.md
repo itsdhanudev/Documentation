@@ -1,0 +1,51 @@
+{@import ../../../links.md}
+
+# ToneMapper
+
+Complete API reference for `ToneMapper`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Post processing
+
+**Component:** yes
+
+---
+
+```java
+public class ToneMapper extends Component
+```
+
+## Constructors (3)
+
+| Signature | Description |
+| --- | --- |
+| ToneMapper([ToneMapper]) | Executes `ToneMapper` and returns after the underlying engine call finishes. |
+| ToneMapper([Engine]) | Executes `ToneMapper` and returns after the underlying engine call finishes. |
+| ToneMapper() | Executes `ToneMapper` and returns after the underlying engine call finishes. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [ToneMapper] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
+
+## Virtual Attributes (15)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `contrast` | [float] | `get/set` | Virtual attribute exposed by `getContrast`. Access it like a field to read or write the underlying value. |
+| `offsetB` | [float] | `get/set` | Virtual attribute exposed by `getOffsetB`. Access it like a field to read or write the underlying value. |
+| `offsetG` | [float] | `get/set` | Virtual attribute exposed by `getOffsetG`. Access it like a field to read or write the underlying value. |
+| `offsetR` | [float] | `get/set` | Virtual attribute exposed by `getOffsetR`. Access it like a field to read or write the underlying value. |
+| `powerB` | [float] | `get/set` | Virtual attribute exposed by `getPowerB`. Access it like a field to read or write the underlying value. |
+| `powerG` | [float] | `get/set` | Virtual attribute exposed by `getPowerG`. Access it like a field to read or write the underlying value. |
+| `powerR` | [float] | `get/set` | Virtual attribute exposed by `getPowerR`. Access it like a field to read or write the underlying value. |
+| `saturation` | [float] | `get/set` | Virtual attribute exposed by `getSaturation`. Access it like a field to read or write the underlying value. |
+| `slopeB` | [float] | `get/set` | Virtual attribute exposed by `getSlopeB`. Access it like a field to read or write the underlying value. |
+| `slopeG` | [float] | `get/set` | Virtual attribute exposed by `getSlopeG`. Access it like a field to read or write the underlying value. |
+| `slopeR` | [float] | `get/set` | Virtual attribute exposed by `getSlopeR`. Access it like a field to read or write the underlying value. |
+| `temperature` | [float] | `get/set` | Virtual attribute exposed by `getTemperature`. Access it like a field to read or write the underlying value. |
+| `tint` | [float] | `get/set` | Virtual attribute exposed by `getTint`. Access it like a field to read or write the underlying value. |
+| `tonnemapType` | [Type] | `get/set` | Virtual attribute exposed by `getTonnemapType`. Access it like a field to read or write the underlying value. |
+| `vibrance` | [float] | `get/set` | Virtual attribute exposed by `getVibrance`. Access it like a field to read or write the underlying value. |

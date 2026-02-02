@@ -1,0 +1,37 @@
+{@import ../../../links.md}
+
+# UI3DCameraAimInputSystem
+
+Referência completa da API de `UI3DCameraAimInputSystem`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** UI
+
+**Componente:** sim
+
+---
+
+```java
+public class UI3DCameraAimInputSystem extends Component
+```
+
+## Construtores (3)
+
+| Signature | Description |
+| --- | --- |
+| UI3DCameraAimInputSystem([UI3DCameraAimInputSystem]) | Executa `UI3DCameraAimInputSystem` e retorna quando a chamada do motor termina. |
+| UI3DCameraAimInputSystem([Engine]) | Executa `UI3DCameraAimInputSystem` e retorna quando a chamada do motor termina. |
+| UI3DCameraAimInputSystem() | Executa `UI3DCameraAimInputSystem` e retorna quando a chamada do motor termina. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [UI3DCameraAimInputSystem] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Métodos (1)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| performClick() | [void] | Executa `performClick` e retorna quando a chamada do motor termina. |

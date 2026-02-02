@@ -1,0 +1,23 @@
+{@import ../../links.md}
+
+# SynchronizedArrayList
+
+Referência completa da API de `SynchronizedArrayList`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Lists
+
+**Componente:** não
+
+---
+
+```java
+public class SynchronizedArrayList extends SynchronizedList
+```
+
+## Construtores (1)
+
+| Signature | Description |
+| --- | --- |
+| SynchronizedArrayList() | Cria uma nova instância de SynchronizedArrayList. |

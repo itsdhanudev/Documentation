@@ -1,0 +1,29 @@
+# Getting Started
+
+This guide gives a practical overview of the workflow in ITsMagic Engine 2.0, focusing on what you need to go from zero to a working project.
+
+## Download ITsMagic Engine 2.0
+
+You can download ITsMagic 2.0 from Google Play:
+
+```
+https://play.google.com/store/apps/details?id=com.itsmagic.engine2
+```
+
+## Basic workflow
+
+1. **Create a project**: set the name, location, and initial settings.
+2. **Build the scene**: add objects, organize the hierarchy, and configure transforms.
+3. **Add components**: each object gets behavior through specific components (rendering, physics, UI, etc.).
+4. **Program with Java**: use scripts for logic, events, and automation.
+5. **Test and iterate**: run the scene, tweak values, and refine gameplay.
+
+## Where to find each piece of info
+
+- **Java API**: complete reference of all runtime classes.
+- **Virtual Attributes**: understand how properties are exposed by getters/setters.
+- **Topics and guides**: practical concepts for common tasks.
+
+## Quick tip
+
+If you are looking for a specific feature, start with the closest category (Physics, Rendering, UI, etc.) inside the **Java API** and follow related types.

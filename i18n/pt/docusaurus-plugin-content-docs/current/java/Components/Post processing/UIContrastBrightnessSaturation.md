@@ -1,0 +1,39 @@
+{@import ../../../links.md}
+
+# UIContrastBrightnessSaturation
+
+Referência completa da API de `UIContrastBrightnessSaturation`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Post processing
+
+**Componente:** sim
+
+---
+
+```java
+public class UIContrastBrightnessSaturation extends Component
+```
+
+## Construtores (3)
+
+| Signature | Description |
+| --- | --- |
+| UIContrastBrightnessSaturation([UIContrastBrightnessSaturation]) | Executa `UIContrastBrightnessSaturation` e retorna quando a chamada do motor termina. |
+| UIContrastBrightnessSaturation([Engine]) | Executa `UIContrastBrightnessSaturation` e retorna quando a chamada do motor termina. |
+| UIContrastBrightnessSaturation() | Executa `UIContrastBrightnessSaturation` e retorna quando a chamada do motor termina. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [UIContrastBrightnessSaturation] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Atributos Virtuais (3)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `brightness` | [float] | `get/set` | Atributo virtual exposto por `getBrightness`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `contrast` | [float] | `get/set` | Atributo virtual exposto por `getContrast`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `saturation` | [float] | `get/set` | Atributo virtual exposto por `getSaturation`. Acesse como um campo para ler ou escrever o valor subjacente. |

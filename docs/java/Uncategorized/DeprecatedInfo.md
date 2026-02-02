@@ -1,0 +1,23 @@
+{@import ../../links.md}
+
+# DeprecatedInfo
+
+Complete API reference for `DeprecatedInfo`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Uncategorized
+
+**Component:** no
+
+---
+
+```java
+public interface DeprecatedInfo
+```
+
+## Methods (1)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| info() | [String][] | Executes `info` and returns after the underlying engine call finishes. |

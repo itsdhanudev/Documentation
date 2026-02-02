@@ -1,0 +1,31 @@
+{@import ../../links.md}
+
+# FilesPanelCustomIcon
+
+Complete API reference for `FilesPanelCustomIcon`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Files
+
+**Component:** no
+
+---
+
+```java
+public class FilesPanelCustomIcon
+```
+
+## Constructors (1)
+
+| Signature | Description |
+| --- | --- |
+| FilesPanelCustomIcon() | Creates a new instance of FilesPanelCustomIcon. |
+
+## Methods (3)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| getIconForFile([File]) | [File] | Returns the current icon for file. |
+| applyIcon([File], [ImageView]) | [boolean] | Performs the applyIcon operation using the provided parameters (file, imageView). |
+| supportFile([File]) | [boolean] | Performs the supportFile operation using the provided parameters (file). |

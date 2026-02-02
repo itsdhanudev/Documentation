@@ -1,0 +1,43 @@
+{@import ../../../links.md}
+
+# UIFlexLayout
+
+Complete API reference for `UIFlexLayout`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** UI
+
+**Component:** yes
+
+---
+
+```java
+public class UIFlexLayout extends Component
+```
+
+## Constructors (3)
+
+| Signature | Description |
+| --- | --- |
+| UIFlexLayout([UIFlexLayout]) | Executes `UIFlexLayout` and returns after the underlying engine call finishes. |
+| UIFlexLayout([Engine]) | Executes `UIFlexLayout` and returns after the underlying engine call finishes. |
+| UIFlexLayout() | Executes `UIFlexLayout` and returns after the underlying engine call finishes. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [UIFlexLayout] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
+
+## Virtual Attributes (1)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `spacing` | [int] | `set` | Virtual attribute exposed by `setSpacing`. Access it like a field to read or write the underlying value. |
+
+## Methods (1)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| getSpacing() | [int] | Executes `getSpacing` and returns after the underlying engine call finishes. |

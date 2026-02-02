@@ -1,0 +1,23 @@
+{@import ../../links.md}
+
+# Group
+
+Referência completa da API de `Group`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Uncategorized
+
+**Componente:** não
+
+---
+
+```java
+public interface Group
+```
+
+## Métodos (1)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| value() | [String] | Executa `value` e retorna quando a chamada do motor termina. |

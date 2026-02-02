@@ -1,0 +1,55 @@
+{@import ../../../links.md}
+
+# VideoPlayer
+
+Referência completa da API de `VideoPlayer`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Sound
+
+**Componente:** sim
+
+---
+
+```java
+public class VideoPlayer extends Component
+```
+
+## Construtores (2)
+
+| Signature | Description |
+| --- | --- |
+| VideoPlayer([VideoPlayer]) | Executa `VideoPlayer` e retorna quando a chamada do motor termina. |
+| VideoPlayer() | Executa `VideoPlayer` e retorna quando a chamada do motor termina. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `component` | [VideoPlayer] | Representa o valor de `component` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Atributos Virtuais (4)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `loop` | [boolean] | `get/set` | Atributo virtual exposto por `isLoop`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `paused` | [boolean] | `get` | Atributo virtual exposto por `isPaused`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `playing` | [boolean] | `get` | Atributo virtual exposto por `isPlaying`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `stopped` | [boolean] | `get` | Atributo virtual exposto por `isStopped`. Acesse como um campo para ler ou escrever o valor subjacente. |
+
+## Métodos (11)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| setVideoFile([VideoFile]) | [void] | Define ou atualiza a propriedade `propriedade `video file``. |
+| setVideoFile([File]) | [void] | Define ou atualiza a propriedade `propriedade `video file``. |
+| setOutputVideoFile([OutputVideoFile]) | [void] | Define ou atualiza a propriedade `propriedade `output video file``. |
+| setOutputVideoFile([File]) | [void] | Define ou atualiza a propriedade `propriedade `output video file``. |
+| play() | [void] | Executa a operação play. |
+| stop() | [void] | Executa a operação stop. |
+| pause() | [void] | Executa a operação pause. |
+| unPause() | [void] | Executa a operação unPause. |
+| seekTo([int]) | [void] | Executa a operação seekTo usando os parâmetros informados (miliSeconds). |
+| componentClassMatch([Component], [Component]) | [boolean] | Executa `componentClassMatch` e retorna quando a chamada do motor termina. |
+| getEngineComponent() | [Component] | Executa `getEngineComponent` e retorna quando a chamada do motor termina. |

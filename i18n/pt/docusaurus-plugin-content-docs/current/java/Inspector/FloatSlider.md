@@ -1,0 +1,54 @@
+{@import ../../links.md}
+
+# FloatSlider
+
+Referência completa da API de `FloatSlider`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Inspector
+
+**Componente:** não
+
+---
+
+```java
+public class FloatSlider
+```
+
+## Construtores (1)
+
+| Signature | Description |
+| --- | --- |
+| FloatSlider([float], [float], [float]) | Cria uma nova instância de FloatSlider. |
+
+## Atributos (3)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `value` | [float] | Representa o valor de `value` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+| `min` | [float] | Representa o valor de `min` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+| `max` | [float] | Representa o valor de `max` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Atributos Virtuais (3)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `max` | [float] | `get/set` | Retorna a propriedade `propriedade `valor máximo permitido do controle deslizante``. |
+| `min` | [float] | `get/set` | Retorna a propriedade `propriedade `valor mínimo permitido do controle deslizante``. |
+| `value` | [float] | `get/set` | Retorna a propriedade `propriedade `valor atual do controle deslizante``. |
+
+## Métodos (3)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| copy() | [FloatSlider] | Retorna uma cópia do FloatSlider. |
+| toString() | [String] | Retorna uma representação em string do FloatSlider. |
+| serialize() | [String] | Serializa o FloatSlider em uma string no formato '[value;min;max;step]'. |
+
+## Métodos Estáticos (2)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| inspectorController() | [ClassInspectorEntry] | Executa `inspectorController` e retorna quando a chamada do motor termina. |
+| deserialize([String]) | [FloatSlider] | Desserializa uma string para criar uma instância de FloatSlider. |

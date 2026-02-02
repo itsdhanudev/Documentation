@@ -1,0 +1,59 @@
+{@import ../../../links.md}
+
+# AtmosphericScattering
+
+Referência completa da API de `AtmosphericScattering`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Post processing
+
+**Componente:** sim
+
+---
+
+```java
+public class AtmosphericScattering extends Component
+```
+
+## Construtores (3)
+
+| Signature | Description |
+| --- | --- |
+| AtmosphericScattering([AtmosphericScattering]) | Executa `AtmosphericScattering` e retorna quando a chamada do motor termina. |
+| AtmosphericScattering([Engine]) | Executa `AtmosphericScattering` e retorna quando a chamada do motor termina. |
+| AtmosphericScattering() | Executa `AtmosphericScattering` e retorna quando a chamada do motor termina. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [AtmosphericScattering] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Atributos Virtuais (15)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `ambientLight` | [boolean] | `set` | Atributo virtual exposto por `setAmbientLight`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `ambientLightResolutionID` | [int] | `get/set` | Atributo virtual exposto por `getAmbientLightResolutionID`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `atmosphereDensity` | [float] | `get/set` | Atributo virtual exposto por `getAtmosphereDensity`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `atmosphereDensityFalloff` | [float] | `get/set` | Atributo virtual exposto por `getAtmosphereDensityFalloff`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `atmosphereExtent` | [float] | `get/set` | Atributo virtual exposto por `getAtmosphereExtent`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `cirrusClouds` | [CloudType] | `get/set` | Atributo virtual exposto por `getCirrusClouds`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `cumulusClouds` | [CloudType] | `get/set` | Atributo virtual exposto por `getCumulusClouds`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `enableMoonball` | [boolean] | `set` | Atributo virtual exposto por `setEnableMoonball`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `enableSunball` | [boolean] | `set` | Atributo virtual exposto por `setEnableSunball`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `groundColor` | [Color] | `get/set` | Atributo virtual exposto por `getGroundColor`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `lux` | [float] | `get/set` | Atributo virtual exposto por `getLux`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `maxResolutionID` | [int] | `get/set` | Atributo virtual exposto por `getMaxResolutionID`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `rayLeigh` | [Color] | `get/set` | Atributo virtual exposto por `getRayLeigh`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `skyboxSimulationSpeed` | [float] | `get/set` | Atributo virtual exposto por `getSkyboxSimulationSpeed`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `wetness` | [float] | `get/set` | Atributo virtual exposto por `getWetness`. Acesse como um campo para ler ou escrever o valor subjacente. |
+
+## Métodos (3)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| isAmbientLight() | [boolean] | Executa `isAmbientLight` e retorna quando a chamada do motor termina. |
+| isEnableMoonball() | [boolean] | Executa `isEnableMoonball` e retorna quando a chamada do motor termina. |
+| isEnableSunball() | [boolean] | Executa `isEnableSunball` e retorna quando a chamada do motor termina. |

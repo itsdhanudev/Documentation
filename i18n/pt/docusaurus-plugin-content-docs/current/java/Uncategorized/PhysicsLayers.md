@@ -1,0 +1,29 @@
+{@import ../../links.md}
+
+# PhysicsLayers
+
+Referência completa da API de `PhysicsLayers`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Uncategorized
+
+**Componente:** não
+
+---
+
+```java
+public class PhysicsLayers
+```
+
+## Métodos Estáticos (7)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| findByName([String]) | [PhysicsLayer] | Busca a PhysicsLayer com o nome especificado. |
+| add([PhysicsLayer]) | [void] | Adiciona a PhysicsLayer especificada. Limitado a 16 layers. |
+| remove([PhysicsLayer]) | [void] | Remove a PhysicsLayer especificada. |
+| apply() | [void] | Aplica as alterações. Chame após adicionar ou remover Layers. |
+| getLayersList() | [List]&[lt];[PhysicsLayer]&[gt]; | Retorna uma lista de todas as PhysicsLayers. |
+| layersCount() | [int] | Retorna a propriedade `propriedade `número de PhysicsLayers``. |
+| layerAt([int]) | [PhysicsLayer] | Retorna a propriedade `PhysicsLayer no índice especificado`. |

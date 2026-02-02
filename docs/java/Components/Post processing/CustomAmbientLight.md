@@ -1,0 +1,39 @@
+{@import ../../../links.md}
+
+# CustomAmbientLight
+
+Complete API reference for `CustomAmbientLight`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Post processing
+
+**Component:** yes
+
+---
+
+```java
+public class CustomAmbientLight extends Component
+```
+
+## Constructors (3)
+
+| Signature | Description |
+| --- | --- |
+| CustomAmbientLight([CustomAmbientLight]) | Executes `CustomAmbientLight` and returns after the underlying engine call finishes. |
+| CustomAmbientLight([Engine]) | Executes `CustomAmbientLight` and returns after the underlying engine call finishes. |
+| CustomAmbientLight() | Executes `CustomAmbientLight` and returns after the underlying engine call finishes. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [CustomAmbientLight] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
+
+## Virtual Attributes (3)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `ambientLight` | [boolean] | `get/set` | Virtual attribute exposed by `isAmbientLight`. Access it like a field to read or write the underlying value. |
+| `ambientLightResolutionID` | [int] | `get/set` | Virtual attribute exposed by `getAmbientLightResolutionID`. Access it like a field to read or write the underlying value. |
+| `lux` | [float] | `get/set` | Virtual attribute exposed by `getLux`. Access it like a field to read or write the underlying value. |

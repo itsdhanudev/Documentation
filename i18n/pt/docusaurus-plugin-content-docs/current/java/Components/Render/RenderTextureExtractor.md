@@ -1,0 +1,31 @@
+{@import ../../../links.md}
+
+# RenderTextureExtractor
+
+Referência completa da API de `RenderTextureExtractor`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Render
+
+**Componente:** sim
+
+---
+
+```java
+public class RenderTextureExtractor extends Component
+```
+
+## Construtores (3)
+
+| Signature | Description |
+| --- | --- |
+| RenderTextureExtractor([RenderTextureExtractor]) | Executa `RenderTextureExtractor` e retorna quando a chamada do motor termina. |
+| RenderTextureExtractor([Engine]) | Executa `RenderTextureExtractor` e retorna quando a chamada do motor termina. |
+| RenderTextureExtractor() | Executa `RenderTextureExtractor` e retorna quando a chamada do motor termina. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [RenderTextureExtractor] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |

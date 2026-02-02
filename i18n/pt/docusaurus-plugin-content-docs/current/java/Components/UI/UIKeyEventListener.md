@@ -1,0 +1,37 @@
+{@import ../../../links.md}
+
+# UIKeyEventListener
+
+Referência completa da API de `UIKeyEventListener`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** UI
+
+**Componente:** sim
+
+---
+
+```java
+public class UIKeyEventListener extends Component
+```
+
+## Construtores (3)
+
+| Signature | Description |
+| --- | --- |
+| UIKeyEventListener([UIKeyEventListener]) | Executa `UIKeyEventListener` e retorna quando a chamada do motor termina. |
+| UIKeyEventListener([Engine]) | Executa `UIKeyEventListener` e retorna quando a chamada do motor termina. |
+| UIKeyEventListener() | Cria uma nova instância de UIKeyEventListener. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [UIKeyEventListener] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Atributos Virtuais (1)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `keyName` | [String] | `get/set` | Atributo virtual exposto por `getKeyName`. Acesse como um campo para ler ou escrever o valor subjacente. |

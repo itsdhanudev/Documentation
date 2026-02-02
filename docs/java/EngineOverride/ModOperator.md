@@ -1,0 +1,24 @@
+{@import ../../links.md}
+
+# ModOperator
+
+Complete API reference for `ModOperator`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** EngineOverride
+
+**Component:** no
+
+---
+
+```java
+public interface ModOperator
+```
+
+## Methods (2)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| @MethodArgs([{"otherObject"}]) | [void] | Applies the modulus operation with the given object. |
+| mod([Object]) | [T] | Executes `mod` and returns after the underlying engine call finishes. |

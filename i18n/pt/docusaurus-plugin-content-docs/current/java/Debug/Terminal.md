@@ -1,0 +1,39 @@
+{@import ../../links.md}
+
+# Terminal
+
+Referência completa da API de `Terminal`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Debug
+
+**Componente:** não
+
+---
+
+```java
+public class Terminal
+```
+
+## Métodos Estáticos (17)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| log([Object]) | [void] | Executa `log` e retorna quando a chamada do motor termina. |
+| log([String]) | [void] | Executa `log` e retorna quando a chamada do motor termina. |
+| log([Vector3]) | [void] | Executa `log` e retorna quando a chamada do motor termina. |
+| log([Quaternion]) | [void] | Executa `log` e retorna quando a chamada do motor termina. |
+| log([Vector2]) | [void] | Executa `log` e retorna quando a chamada do motor termina. |
+| log([float]) | [void] | Executa `log` e retorna quando a chamada do motor termina. |
+| log([int]) | [void] | Executa `log` e retorna quando a chamada do motor termina. |
+| log([long]) | [void] | Executa `log` e retorna quando a chamada do motor termina. |
+| log([double]) | [void] | Executa `log` e retorna quando a chamada do motor termina. |
+| log([char]) | [void] | Executa `log` e retorna quando a chamada do motor termina. |
+| log([byte]) | [void] | Executa `log` e retorna quando a chamada do motor termina. |
+| log([Error]) | [void] | Executa `log` e retorna quando a chamada do motor termina. |
+| log([Exception]) | [void] | Executa `log` e retorna quando a chamada do motor termina. |
+| log([Throwable]) | [void] | Executa `log` e retorna quando a chamada do motor termina. |
+| log([Log]) | [void] | Executa `log` e retorna quando a chamada do motor termina. |
+| log([String][]) | [void] | Executa `log` e retorna quando a chamada do motor termina. |
+| log([[List]&lt;[String]&gt;]) | [void] | Executa `log` e retorna quando a chamada do motor termina. |

@@ -1,0 +1,39 @@
+{@import ../../links.md}
+
+# AtomicFloat
+
+Referência completa da API de `AtomicFloat`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Atomic
+
+**Componente:** não
+
+---
+
+```java
+public class AtomicFloat extends Number
+```
+
+## Construtores (2)
+
+| Signature | Description |
+| --- | --- |
+| AtomicFloat() | Cria uma nova instância de AtomicFloat. |
+| AtomicFloat([float]) | Cria uma nova instância de AtomicFloat. |
+
+## Métodos (10)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| compareAndSet([float], [float]) | [boolean] | Compara esta instância com outra para igualdade/ordem. |
+| set([float]) | [void] | Define ou atualiza the value. |
+| get() | [float] | Retorna a propriedade `propriedade `valor value atual``. |
+| floatValue() | [float] | Executa a operação floatValue. |
+| getAndSet([float]) | [float] | Retorna a propriedade `propriedade `and set atual``. |
+| weakCompareAndSet([float], [float]) | [boolean] | Executa a operação weakCompareAndSet usando os parâmetros informados (expect, update). |
+| doubleValue() | [double] | Executa a operação doubleValue. |
+| intValue() | [int] | Executa a operação intValue. |
+| longValue() | [long] | Executa a operação longValue. |
+| toString() | [String] | Retorna a propriedade `representação em string`. |

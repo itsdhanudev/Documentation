@@ -1,0 +1,45 @@
+{@import ../../links.md}
+
+# was
+
+Referência completa da API de `was`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Algorithms
+
+**Componente:** não
+
+---
+
+```java
+public class was
+```
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `scale` | [float] | Representa o valor de `scale` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Atributos Virtuais (1)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `scale` | [float] | `get/set` | Atributo virtual exposto por `getScale`. Acesse como um campo para ler ou escrever o valor subjacente. |
+
+## Métodos (11)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| PerlinNoise() | [void] | Executa `PerlinNoise` e retorna quando a chamada do motor termina. |
+| PerlinNoise([float]) | [void] | Executa `PerlinNoise` e retorna quando a chamada do motor termina. |
+| noise([double], [double]) | [double] | Executa `noise` e retorna quando a chamada do motor termina. |
+| noise([double], [double], [double]) | [double] | Executa `noise` e retorna quando a chamada do motor termina. |
+| noise([double], [double], [double], [double]) | [double] | Executa `noise` e retorna quando a chamada do motor termina. |
+| noise([int], [int]) | [float] | Executa `noise` e retorna quando a chamada do motor termina. |
+| noise([int], [int], [int]) | [float] | Executa `noise` e retorna quando a chamada do motor termina. |
+| noise([int], [int], [int], [int]) | [float] | Executa `noise` e retorna quando a chamada do motor termina. |
+| noise([float], [float]) | [float] | Executa `noise` e retorna quando a chamada do motor termina. |
+| noise([float], [float], [float]) | [float] | Executa `noise` e retorna quando a chamada do motor termina. |
+| noise([float], [float], [float], [float]) | [float] | Executa `noise` e retorna quando a chamada do motor termina. |

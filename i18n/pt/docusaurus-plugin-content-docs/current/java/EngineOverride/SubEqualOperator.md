@@ -1,0 +1,24 @@
+{@import ../../links.md}
+
+# SubEqualOperator
+
+Referência completa da API de `SubEqualOperator`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** EngineOverride
+
+**Componente:** não
+
+---
+
+```java
+public interface SubEqualOperator
+```
+
+## Métodos (2)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| @MethodArgs([{"otherObject"}]) | [void] | Subtrai o objeto fornecido do valor atual e atribui o resultado. |
+| subEqual([Object]) | [void] | Executa `subEqual` e retorna quando a chamada do motor termina. |

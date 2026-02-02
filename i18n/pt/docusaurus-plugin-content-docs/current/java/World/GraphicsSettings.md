@@ -1,0 +1,30 @@
+{@import ../../links.md}
+
+# GraphicsSettings
+
+Referência completa da API de `GraphicsSettings`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** World
+
+**Componente:** não
+
+---
+
+```java
+public class GraphicsSettings
+```
+
+## Construtores (2)
+
+| Signature | Description |
+| --- | --- |
+| GraphicsSettings([GraphicsSettings]) | Executa `GraphicsSettings` e retorna quando a chamada do motor termina. |
+| GraphicsSettings() | Executa `GraphicsSettings` e retorna quando a chamada do motor termina. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `graphicsSettings` | [GraphicsSettings] | Representa o valor de `graphicsSettings` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |

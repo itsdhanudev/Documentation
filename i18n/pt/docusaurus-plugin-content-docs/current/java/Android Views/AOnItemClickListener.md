@@ -1,0 +1,24 @@
+{@import ../../links.md}
+
+# AOnItemClickListener
+
+Referência completa da API de `AOnItemClickListener`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Android Views
+
+**Componente:** não
+
+---
+
+```java
+public class AOnItemClickListener
+```
+
+## Métodos (2)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| onItemClick([AdapterView&lt;?&gt;], [View], [int], [long]) | [void] | Executa a operação onItemClick usando os parâmetros informados (parent, view, position, id). |
+| onItemClickEvent([AdapterView&lt;?&gt;], [View], [int], [long]) | [void] | Executa `onItemClickEvent` e retorna quando a chamada do motor termina. |

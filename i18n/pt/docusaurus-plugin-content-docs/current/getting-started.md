@@ -1,0 +1,29 @@
+# Primeiros Passos
+
+Este guia oferece uma visão prática do fluxo de trabalho na ITsMagic Engine 2.0, com foco no que você precisa para sair do zero e começar a construir.
+
+## Baixe a ITsMagic Engine 2.0
+
+Você pode baixar a ITsMagic 2.0 pela Google Play:
+
+```
+https://play.google.com/store/apps/details?id=com.itsmagic.engine2
+```
+
+## Fluxo básico de trabalho
+
+1. **Crie um projeto**: defina o nome, o caminho e as configurações iniciais.
+2. **Monte a cena**: adicione objetos, organize a hierarquia e configure transformações.
+3. **Adicione componentes**: cada objeto ganha comportamento através de componentes específicos (renderização, física, UI, etc.).
+4. **Programe com Java**: use scripts para lógica, eventos e automações.
+5. **Teste e itere**: execute a cena, ajuste valores e refine o gameplay.
+
+## Onde encontrar cada informação
+
+- **Java API**: referência completa de todas as classes do runtime.
+- **Atributos Virtuais**: entenda como propriedades são expostas por getters/setters.
+- **Tópicos e guias**: conceitos práticos para tarefas comuns.
+
+## Dica rápida
+
+Se estiver procurando um recurso específico, comece pela categoria mais próxima (Physics, Rendering, UI, etc.) dentro da **Java API** e siga pelos tipos relacionados.

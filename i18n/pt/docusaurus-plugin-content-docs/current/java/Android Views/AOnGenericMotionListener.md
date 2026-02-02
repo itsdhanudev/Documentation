@@ -1,0 +1,24 @@
+{@import ../../links.md}
+
+# AOnGenericMotionListener
+
+Referência completa da API de `AOnGenericMotionListener`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Android Views
+
+**Componente:** não
+
+---
+
+```java
+public class AOnGenericMotionListener
+```
+
+## Métodos (2)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| onGenericMotion([View], [MotionEvent]) | [boolean] | Executa a operação onGenericMotion usando os parâmetros informados (v, event). |
+| onGenericMotionEvent([View], [MotionEvent]) | [boolean] | Executa `onGenericMotionEvent` e retorna quando a chamada do motor termina. |

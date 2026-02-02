@@ -1,0 +1,41 @@
+{@import ../../../links.md}
+
+# VoxelPlayerController
+
+Complete API reference for `VoxelPlayerController`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Voxels
+
+**Component:** yes
+
+---
+
+```java
+public class VoxelPlayerController extends Component
+```
+
+## Constructors (3)
+
+| Signature | Description |
+| --- | --- |
+| VoxelPlayerController([VoxelPlayerController]) | Executes `VoxelPlayerController` and returns after the underlying engine call finishes. |
+| VoxelPlayerController([Engine]) | Executes `VoxelPlayerController` and returns after the underlying engine call finishes. |
+| VoxelPlayerController() | Creates a new instance of VoxelPlayerController. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [VoxelPlayerController] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
+
+## Virtual Attributes (5)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `horizontalSlideName` | [String] | `get/set` | Virtual attribute exposed by `getHorizontalSlideName`. Access it like a field to read or write the underlying value. |
+| `horizontalSlideSens` | [float] | `get/set` | Virtual attribute exposed by `getHorizontalSlideSens`. Access it like a field to read or write the underlying value. |
+| `joystickName` | [String] | `get/set` | Virtual attribute exposed by `getJoystickName`. Access it like a field to read or write the underlying value. |
+| `runSpeed` | [float] | `get/set` | Virtual attribute exposed by `getRunSpeed`. Access it like a field to read or write the underlying value. |
+| `walkSpeed` | [float] | `get/set` | Virtual attribute exposed by `getWalkSpeed`. Access it like a field to read or write the underlying value. |

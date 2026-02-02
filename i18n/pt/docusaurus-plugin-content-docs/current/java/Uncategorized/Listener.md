@@ -1,0 +1,23 @@
+{@import ../../links.md}
+
+# Listener
+
+Referência completa da API de `Listener`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Uncategorized
+
+**Componente:** não
+
+---
+
+```java
+public interface Listener
+```
+
+## Métodos (1)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| onClicked() | [void] | Executa `onClicked` e retorna quando a chamada do motor termina. |

@@ -1,0 +1,36 @@
+{@import ../../links.md}
+
+# Font
+
+Complete API reference for `Font`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Fonts
+
+**Component:** no
+
+---
+
+```java
+public class Font
+```
+
+## Constructors (2)
+
+| Signature | Description |
+| --- | --- |
+| Font([Font]) | Executes `Font` and returns after the underlying engine call finishes. |
+| Font([Engine]) | Executes `Font` and returns after the underlying engine call finishes. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `font` | [Font] | Represents the `font` value stored on this instance. Read or assign to update the property. |
+
+## Methods (1)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| getResolution() | [int] | Returns the resolution of the font. |

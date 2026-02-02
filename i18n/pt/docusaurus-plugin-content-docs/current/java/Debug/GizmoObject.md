@@ -1,0 +1,49 @@
+{@import ../../links.md}
+
+# GizmoObject
+
+Referência completa da API de `GizmoObject`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Debug
+
+**Componente:** não
+
+---
+
+```java
+public class GizmoObject extends GizmoTransform
+```
+
+## Construtores (7)
+
+| Signature | Description |
+| --- | --- |
+| GizmoObject() | Cria uma nova instância de GizmoObject. |
+| GizmoObject([Vertex]) | Cria uma nova instância de GizmoObject. |
+| GizmoObject([Vertex], [Vector3]) | Cria uma nova instância de GizmoObject. |
+| GizmoObject([Vertex], [Vector3], [Quaternion]) | Cria uma nova instância de GizmoObject. |
+| GizmoObject([Vertex], [Vector3], [Quaternion], [Vector3]) | Cria uma nova instância de GizmoObject. |
+| GizmoObject([Vertex], [Vector3], [Quaternion], [Vector3], [boolean]) | Cria uma nova instância de GizmoObject. |
+| GizmoObject([Vertex], [Vector3], [Quaternion], [Vector3], [boolean], [Color], [Texture]) | Cria uma nova instância de GizmoObject. |
+
+## Atributos Virtuais (9)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `color` | [Color] | `get/set` | Atributo virtual exposto por `getColor`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `dualFaceRender` | [boolean] | `get/set` | Atributo virtual exposto por `isDualFaceRender`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `enableTransparency` | [boolean] | `get/set` | Atributo virtual exposto por `isEnableTransparency`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `renderMode` | [RenderMode] | `get/set` | Atributo virtual exposto por `getRenderMode`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `scaleBasedCamera` | [boolean] | `get/set` | Atributo virtual exposto por `isScaleBasedCamera`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `texture` | [Texture] | `get/set` | Atributo virtual exposto por `getTexture`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `vertex` | [Vertex] | `get/set` | Atributo virtual exposto por `getVertex`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `wireFrame` | [boolean] | `get/set` | Atributo virtual exposto por `isWireFrame`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `wireFrameWidth` | [int] | `get/set` | Atributo virtual exposto por `getWireFrameWidth`. Acesse como um campo para ler ou escrever o valor subjacente. |
+
+## Métodos (1)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| randomizeColor() | [void] | Executa a operação randomizeColor. |

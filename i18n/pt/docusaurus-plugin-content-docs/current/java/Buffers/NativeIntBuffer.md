@@ -1,0 +1,43 @@
+{@import ../../links.md}
+
+# NativeIntBuffer
+
+Referência completa da API de `NativeIntBuffer`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Buffers
+
+**Componente:** não
+
+---
+
+```java
+public class NativeIntBuffer
+```
+
+## Construtores (3)
+
+| Signature | Description |
+| --- | --- |
+| NativeIntBuffer([NativeIntBuffer]) | Executa `NativeIntBuffer` e retorna quando a chamada do motor termina. |
+| NativeIntBuffer([Engine]) | Executa `NativeIntBuffer` e retorna quando a chamada do motor termina. |
+| NativeIntBuffer([int]) | Cria uma nova instância de NativeIntBuffer. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `buffer` | [NativeIntBuffer] | Representa o valor de `buffer` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Métodos (7)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| get([int]) | [int] | Retorna a propriedade `propriedade `valor value atual``. |
+| set([int], [int]) | [void] | Define ou atualiza the value. |
+| put([int]) | [void] | Define ou atualiza the value. |
+| capacity() | [int] | Executa a operação capacity. |
+| getPosition() | [int] | Retorna a propriedade `propriedade `position atual``. |
+| Position([int]) | [void] | Executa a operação Position usando os parâmetros informados (idx). |
+| setPosition([int]) | [void] | Define ou atualiza a propriedade `propriedade `position``. |

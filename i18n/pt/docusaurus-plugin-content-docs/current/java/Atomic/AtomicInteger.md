@@ -1,0 +1,48 @@
+{@import ../../links.md}
+
+# AtomicInteger
+
+Referência completa da API de `AtomicInteger`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Atomic
+
+**Componente:** não
+
+---
+
+```java
+public class AtomicInteger
+```
+
+## Construtores (3)
+
+| Signature | Description |
+| --- | --- |
+| AtomicInteger([AtomicInteger]) | Executa `AtomicInteger` e retorna quando a chamada do motor termina. |
+| AtomicInteger() | Executa `AtomicInteger` e retorna quando a chamada do motor termina. |
+| AtomicInteger([int]) | Cria uma nova instância de AtomicInteger. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [AtomicInteger] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Métodos (12)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| get() | [int] | Retorna a propriedade `propriedade `valor value atual``. |
+| set([int]) | [void] | Define ou atualiza the value. |
+| lazySet([int]) | [void] | Executa a operação lazySet usando os parâmetros informados (value). |
+| getAndSet([int]) | [int] | Retorna a propriedade `propriedade `and set atual``. |
+| getAndIncrement() | [int] | Retorna a propriedade `propriedade `and increment atual``. |
+| getAndDecrement() | [int] | Retorna a propriedade `propriedade `and decrement atual``. |
+| incrementAndGet() | [int] | Executa a operação incrementAndGet. |
+| decrementAndGet() | [int] | Executa a operação decrementAndGet. |
+| getAndAdd([int]) | [int] | Retorna a propriedade `propriedade `and add atual``. |
+| addAndGet([int]) | [int] | Adiciona and get à coleção. |
+| compareAndSet([int], [int]) | [boolean] | Compara esta instância com outra para igualdade/ordem. |
+| weakCompareAndSet([int], [int]) | [boolean] | Executa a operação weakCompareAndSet usando os parâmetros informados (expect, update). |

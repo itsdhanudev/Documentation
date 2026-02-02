@@ -1,0 +1,26 @@
+{@import ../../links.md}
+
+# ALayoutInflater
+
+Referência completa da API de `ALayoutInflater`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Android Views
+
+**Componente:** não
+
+---
+
+```java
+public class ALayoutInflater
+```
+
+## Métodos Estáticos (4)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| inflate([String]) | [View] | Executa a operação inflate usando os parâmetros informados (inProjectPath). |
+| inflate([File]) | [View] | Executa `inflate` e retorna quando a chamada do motor termina. |
+| inflate([Resources.[File]]) | [View] | Executa a operação inflate usando os parâmetros informados (file). |
+| inflateXML([String]) | [View] | Executa a operação inflateXML usando os parâmetros informados (xml). |

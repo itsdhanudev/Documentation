@@ -1,0 +1,54 @@
+{@import ../../links.md}
+
+# PopupDialog
+
+Complete API reference for `PopupDialog`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Input
+
+**Component:** no
+
+---
+
+```java
+public class PopupDialog
+```
+
+## Constructors (4)
+
+| Signature | Description |
+| --- | --- |
+| PopupDialog([SweetAlertDialog]) | Executes `PopupDialog` and returns after the underlying engine call finishes. |
+| PopupDialog([int]) | Executes `PopupDialog` and returns after the underlying engine call finishes. |
+| PopupDialog([String], [String]) | Creates a new instance of PopupDialog. |
+| PopupDialog([int], [String], [String]) | Creates a new instance of PopupDialog. |
+
+## Attributes (5)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `SUCCESS` | [int] | Represents the `SUCCESS` value stored on this instance. Read or assign to update the property. |
+| `ERROR` | [int] | Represents the `ERROR` value stored on this instance. Read or assign to update the property. |
+| `ALERT` | [int] | Represents the `ALERT` value stored on this instance. Read or assign to update the property. |
+| `PROGRESS` | [int] | Represents the `PROGRESS` value stored on this instance. Read or assign to update the property. |
+| `dialog` | [SweetAlertDialog] | Represents the `dialog` value stored on this instance. Read or assign to update the property. |
+
+## Methods (13)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| setConfirmButton([String], [PopupDialogListener]) | [void] | Sets or updates the confirm button. |
+| setCancelButton([String], [PopupDialogListener]) | [void] | Sets or updates the cancel button. |
+| setMidButton([String], [PopupDialogListener]) | [void] | Sets or updates the mid button. |
+| setConfirmButton([String], [Listener]) | [void] | Sets or updates the confirm button. |
+| setCancelButton([String], [Listener]) | [void] | Sets or updates the cancel button. |
+| setMidButton([String], [Listener]) | [void] | Sets or updates the mid button. |
+| getTittle() | [String] | Returns the current tittle. |
+| setName([String]) | [void] | Sets or updates the name. |
+| getMessage() | [String] | Returns the current message. |
+| setMessage([String]) | [void] | Sets or updates the message. |
+| changeType([int]) | [void] | Performs the changeType operation using the provided parameters (type). |
+| show() | [void] | Executes `show` and returns after the underlying engine call finishes. |
+| dismiss() | [void] | Executes `dismiss` and returns after the underlying engine call finishes. |

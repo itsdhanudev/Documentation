@@ -1,0 +1,59 @@
+{@import ../../../links.md}
+
+# SoundPlayer
+
+Complete API reference for `SoundPlayer`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Sound
+
+**Component:** yes
+
+---
+
+```java
+public class SoundPlayer extends Component
+```
+
+## Constructors (2)
+
+| Signature | Description |
+| --- | --- |
+| SoundPlayer([SoundPlayer]) | Executes `SoundPlayer` and returns after the underlying engine call finishes. |
+| SoundPlayer() | Executes `SoundPlayer` and returns after the underlying engine call finishes. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [SoundPlayer] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
+
+## Virtual Attributes (10)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `diameter` | [float] | `get/set` | Virtual attribute exposed by `getDiameter`. Access it like a field to read or write the underlying value. |
+| `loadMode` | [LoadMode] | `get/set` | Virtual attribute exposed by `getLoadMode`. Access it like a field to read or write the underlying value. |
+| `loop` | [boolean] | `get/set` | Virtual attribute exposed by `isLoop`. Access it like a field to read or write the underlying value. |
+| `mode` | [Mode] | `get/set` | Virtual attribute exposed by `getMode`. Access it like a field to read or write the underlying value. |
+| `paused` | [boolean] | `get` | Virtual attribute exposed by `isPaused`. Access it like a field to read or write the underlying value. |
+| `pitch` | [float] | `get/set` | Virtual attribute exposed by `getPitch`. Access it like a field to read or write the underlying value. |
+| `playing` | [boolean] | `get` | Virtual attribute exposed by `isPlaying`. Access it like a field to read or write the underlying value. |
+| `speed` | [float] | `get/set` | Virtual attribute exposed by `getSpeed`. Access it like a field to read or write the underlying value. |
+| `stopped` | [boolean] | `get` | Virtual attribute exposed by `isStopped`. Access it like a field to read or write the underlying value. |
+| `volume` | [float] | `get/set` | Virtual attribute exposed by `getVolume`. Access it like a field to read or write the underlying value. |
+
+## Methods (9)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| setSoundFile([SoundFile]) | [void] | Sets or updates the sound file. |
+| setSoundFile([File]) | [void] | Sets or updates the sound file. |
+| play() | [void] | Executes `play` and returns after the underlying engine call finishes. |
+| stop() | [void] | Executes `stop` and returns after the underlying engine call finishes. |
+| pause() | [void] | Executes `pause` and returns after the underlying engine call finishes. |
+| unPause() | [void] | Executes `unPause` and returns after the underlying engine call finishes. |
+| seekTo([int]) | [void] | Executes `seekTo` and returns after the underlying engine call finishes. |
+| componentClassMatch([Component], [Component]) | [boolean] | Executes `componentClassMatch` and returns after the underlying engine call finishes. |
+| getEngineComponent() | [Component] | Executes `getEngineComponent` and returns after the underlying engine call finishes. |

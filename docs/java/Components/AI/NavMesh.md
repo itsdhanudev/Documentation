@@ -1,0 +1,59 @@
+{@import ../../../links.md}
+
+# NavMesh
+
+Complete API reference for `NavMesh`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** AI
+
+**Component:** yes
+
+---
+
+```java
+public class NavMesh extends Component
+```
+
+## Constructors (3)
+
+| Signature | Description |
+| --- | --- |
+| NavMesh([BakedNavMesh]) | Executes `NavMesh` and returns after the underlying engine call finishes. |
+| NavMesh([Engine]) | Executes `NavMesh` and returns after the underlying engine call finishes. |
+| NavMesh() | Creates a new instance of NavMesh. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [BakedNavMesh] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
+
+## Virtual Attributes (17)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `agentHeight` | [float] | `get/set` | Virtual attribute exposed by `getAgentHeight`. Access it like a field to read or write the underlying value. |
+| `agentMaxClimb` | [float] | `get/set` | Virtual attribute exposed by `getAgentMaxClimb`. Access it like a field to read or write the underlying value. |
+| `agentMaxSlope` | [float] | `get/set` | Virtual attribute exposed by `getAgentMaxSlope`. Access it like a field to read or write the underlying value. |
+| `agentWidth` | [float] | `get/set` | Virtual attribute exposed by `getAgentWidth`. Access it like a field to read or write the underlying value. |
+| `cellHeight` | [float] | `get` | Virtual attribute exposed by `getCellHeight`. Access it like a field to read or write the underlying value. |
+| `cellSize` | [float] | `get` | Virtual attribute exposed by `getCellSize`. Access it like a field to read or write the underlying value. |
+| `detailSampleDist` | [float] | `get/set` | Virtual attribute exposed by `getDetailSampleDist`. Access it like a field to read or write the underlying value. |
+| `detailSampleMaxError` | [float] | `get/set` | Virtual attribute exposed by `getDetailSampleMaxError`. Access it like a field to read or write the underlying value. |
+| `edgeMaxError` | [float] | `get/set` | Virtual attribute exposed by `getEdgeMaxError`. Access it like a field to read or write the underlying value. |
+| `edgeMaxLen` | [float] | `get/set` | Virtual attribute exposed by `getEdgeMaxLen`. Access it like a field to read or write the underlying value. |
+| `maxPathFails` | [int] | `get/set` | Virtual attribute exposed by `getMaxPathFails`. Access it like a field to read or write the underlying value. |
+| `maxTiles` | [int] | `get/set` | Virtual attribute exposed by `getMaxTiles`. Access it like a field to read or write the underlying value. |
+| `regionMergeArea` | [float] | `get` | Virtual attribute exposed by `getRegionMergeArea`. Access it like a field to read or write the underlying value. |
+| `regionMergeSize` | [int] | `get/set` | Virtual attribute exposed by `getRegionMergeSize`. Access it like a field to read or write the underlying value. |
+| `regionMinArea` | [float] | `get` | Virtual attribute exposed by `getRegionMinArea`. Access it like a field to read or write the underlying value. |
+| `regionMinSize` | [int] | `get/set` | Virtual attribute exposed by `getRegionMinSize`. Access it like a field to read or write the underlying value. |
+| `tileSize` | [int] | `get/set` | Virtual attribute exposed by `getTileSize`. Access it like a field to read or write the underlying value. |
+
+## Methods (1)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| generateBake() | [void] | Executes `generateBake` and returns after the underlying engine call finishes. |

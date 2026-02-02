@@ -1,0 +1,43 @@
+{@import ../../links.md}
+
+# MaterialFile
+
+Complete API reference for `MaterialFile`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Material
+
+**Component:** no
+
+---
+
+```java
+public class MaterialFile
+```
+
+## Constructors (2)
+
+| Signature | Description |
+| --- | --- |
+| MaterialFile([String]) | Executes `MaterialFile` and returns after the underlying engine call finishes. |
+| MaterialFile() | Executes `MaterialFile` and returns after the underlying engine call finishes. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `cache` | [Material] | Represents the `cache` value stored on this instance. Read or assign to update the property. |
+
+## Methods (1)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| toString() | [String] | Returns the string representation. |
+
+## Static Methods (2)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| genericInterface() | [GenericClassInspectorEntry] | Executes `genericInterface` and returns after the underlying engine call finishes. |
+| inspectorController() | [ClassInspectorEntry] | Executes `inspectorController` and returns after the underlying engine call finishes. |

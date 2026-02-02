@@ -1,0 +1,26 @@
+{@import ../../links.md}
+
+# AsyncRunnable
+
+Complete API reference for `AsyncRunnable`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Async
+
+**Component:** no
+
+---
+
+```java
+public interface AsyncRunnable
+```
+
+## Methods (4)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| @MethodArgs([{"input"}]) | [void] | Performs the @MethodArgs operation. |
+| onBackground([Object]) | [Object] | Executes `onBackground` and returns after the underlying engine call finishes. |
+| @MethodArgs([{"result"}]) | [void] | Performs the @MethodArgs operation. |
+| onEngine([Object]) | [void] | Executes `onEngine` and returns after the underlying engine call finishes. |

@@ -1,0 +1,38 @@
+{@import ../../../links.md}
+
+# KeyboardMapper
+
+Complete API reference for `KeyboardMapper`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Input
+
+**Component:** yes
+
+---
+
+```java
+public class KeyboardMapper extends Component
+```
+
+## Constructors (3)
+
+| Signature | Description |
+| --- | --- |
+| KeyboardMapper([KeyboardMapper]) | Executes `KeyboardMapper` and returns after the underlying engine call finishes. |
+| KeyboardMapper([Engine]) | Executes `KeyboardMapper` and returns after the underlying engine call finishes. |
+| KeyboardMapper() | Creates a new instance of KeyboardMapper. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [KeyboardMapper] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
+
+## Virtual Attributes (2)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `keyboardKey` | [String] | `get/set` | Virtual attribute exposed by `getKeyboardKey`. Access it like a field to read or write the underlying value. |
+| `outputKey` | [String] | `get/set` | Virtual attribute exposed by `getOutputKey`. Access it like a field to read or write the underlying value. |

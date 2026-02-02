@@ -1,0 +1,44 @@
+{@import ../../links.md}
+
+# NurbsPath3D
+
+Complete API reference for `NurbsPath3D`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** NurbsPath
+
+**Component:** no
+
+---
+
+```java
+public class NurbsPath3D
+```
+
+## Constructors (5)
+
+| Signature | Description |
+| --- | --- |
+| NurbsPath3D([NurbsPath3D]) | Executes `NurbsPath3D` and returns after the underlying engine call finishes. |
+| NurbsPath3D() | Executes `NurbsPath3D` and returns after the underlying engine call finishes. |
+| NurbsPath3D([[List]&lt;Vector3&gt;]) | Creates a new instance of NurbsPath3D. |
+| NurbsPath3D([boolean]) | Creates a new instance of NurbsPath3D. |
+| NurbsPath3D([[List]&lt;Vector3&gt;], [boolean]) | Creates a new instance of NurbsPath3D. |
+
+## Methods (12)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| evaluate([float]) | [Vector3] | Performs the evaluate operation using the provided parameters (u). |
+| evaluate([float], [Vector3]) | [Vector3] | Performs the evaluate operation using the provided parameters (u, out). |
+| evaluatePath([int]) | [List]&[lt];[Vector3]&[gt]; | Performs the evaluatePath operation using the provided parameters (resolution). |
+| evaluatePath([int], [[List]&lt;Vector3&gt;]) | [List]&[lt];[Vector3]&[gt]; | Performs the evaluatePath operation using the provided parameters (resolution, list). |
+| addPoint([Vector3]) | [void] | Adds point to the collection. |
+| addPath([[List]&lt;Vector3&gt;]) | [void] | Adds path to the collection. |
+| getPoint([int]) | [Vector3] | Returns the current point. |
+| removePoint([Vector3]) | [void] | Removes point from the collection. |
+| removePoint([int]) | [void] | Removes point from the collection. |
+| pointsCount() | [int] | Executes `pointsCount` and returns after the underlying engine call finishes. |
+| isContinuous() | [boolean] | Returns whether continuous is true. |
+| setContinuous([boolean]) | [void] | Sets or updates the continuous. |

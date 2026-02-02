@@ -1,0 +1,41 @@
+{@import ../../links.md}
+
+# AProgressBar
+
+Complete API reference for `AProgressBar`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Android Views
+
+**Component:** no
+
+---
+
+```java
+public class AProgressBar extends ProgressBar
+```
+
+## Constructors (2)
+
+| Signature | Description |
+| --- | --- |
+| AProgressBar() | Creates a new instance of AProgressBar. |
+| AProgressBar([String]) | Creates a new instance of AProgressBar. |
+
+## Methods (12)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| getViewID() | [String] | Returns the current view id. |
+| findByID([String]) | &[lt];[T] [extends] [View]&[gt]; [T] | Performs the findByID operation using the provided parameters (id). |
+| setOnGenericMotionListener([OnGenericMotionListener]) | [void] | Sets or updates the on generic motion listener. |
+| setOnLongClickListener([OnLongClickListener]) | [void] | Sets or updates the on long click listener. |
+| setOnClickListener([OnClickListener]) | [void] | Sets or updates the on click listener. |
+| setOnTouchListener([OnTouchListener]) | [void] | Sets or updates the on touch listener. |
+| setOnHoverListener([OnHoverListener]) | [void] | Sets or updates the on hover listener. |
+| setOnDragListener([OnDragListener]) | [void] | Sets or updates the on drag listener. |
+| setOnKeyListener([OnKeyListener]) | [void] | Sets or updates the on key listener. |
+| setOnScrollChangeListener([OnScrollChangeListener]) | [void] | Sets or updates the on scroll change listener. |
+| setOnFocusChangeListener([OnFocusChangeListener]) | [void] | Sets or updates the on focus change listener. |
+| setOnCreateContextMenuListener([OnCreateContextMenuListener]) | [void] | Sets or updates the on create context menu listener. |

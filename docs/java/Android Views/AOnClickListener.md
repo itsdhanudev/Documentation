@@ -1,0 +1,24 @@
+{@import ../../links.md}
+
+# AOnClickListener
+
+Complete API reference for `AOnClickListener`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Android Views
+
+**Component:** no
+
+---
+
+```java
+public class AOnClickListener
+```
+
+## Methods (2)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| onClick([View]) | [void] | Performs the onClick operation using the provided parameters (v). |
+| onClickEvent([View]) | [void] | Executes `onClickEvent` and returns after the underlying engine call finishes. |

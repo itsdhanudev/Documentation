@@ -1,0 +1,24 @@
+{@import ../../links.md}
+
+# MulEqualOperator
+
+Complete API reference for `MulEqualOperator`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** EngineOverride
+
+**Component:** no
+
+---
+
+```java
+public interface MulEqualOperator
+```
+
+## Methods (2)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| @MethodArgs([{"otherObject"}]) | [void] | Multiplies the current value by the given object and assigns the result. |
+| mulEqual([Object]) | [void] | Executes `mulEqual` and returns after the underlying engine call finishes. |

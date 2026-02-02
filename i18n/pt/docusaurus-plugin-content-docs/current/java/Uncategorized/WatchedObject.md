@@ -1,0 +1,17 @@
+{@import ../../links.md}
+
+# WatchedObject
+
+Referência completa da API de `WatchedObject`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Uncategorized
+
+**Componente:** não
+
+---
+
+```java
+public class WatchedObject
+```

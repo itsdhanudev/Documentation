@@ -1,0 +1,39 @@
+{@import ../../links.md}
+
+# AWebView
+
+Referência completa da API de `AWebView`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Android Views
+
+**Componente:** não
+
+---
+
+```java
+public class AWebView extends WebView
+```
+
+## Construtores (1)
+
+| Signature | Description |
+| --- | --- |
+| AWebView() | Cria uma nova instância de AWebView. |
+
+## Métodos (11)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| getViewID() | [String] | Retorna a propriedade `propriedade `view id atual``. |
+| findByID([String]) | &[lt];[T] [extends] [View]&[gt]; [T] | Executa a operação findByID usando os parâmetros informados (id). |
+| setOnLongClickListener([OnLongClickListener]) | [void] | Define ou atualiza a propriedade `propriedade `on long click listener``. |
+| setOnClickListener([OnClickListener]) | [void] | Define ou atualiza a propriedade `propriedade `on click listener``. |
+| setOnTouchListener([OnTouchListener]) | [void] | Define ou atualiza a propriedade `propriedade `on touch listener``. |
+| setOnHoverListener([OnHoverListener]) | [void] | Define ou atualiza a propriedade `propriedade `on hover listener``. |
+| setOnDragListener([OnDragListener]) | [void] | Define ou atualiza a propriedade `propriedade `on drag listener``. |
+| setOnKeyListener([OnKeyListener]) | [void] | Define ou atualiza a propriedade `propriedade `on key listener``. |
+| setOnScrollChangeListener([OnScrollChangeListener]) | [void] | Define ou atualiza a propriedade `propriedade `on scroll change listener``. |
+| setOnFocusChangeListener([OnFocusChangeListener]) | [void] | Define ou atualiza a propriedade `propriedade `on focus change listener``. |
+| setOnCreateContextMenuListener([OnCreateContextMenuListener]) | [void] | Define ou atualiza a propriedade `propriedade `on create context menu listener``. |

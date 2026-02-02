@@ -1,0 +1,35 @@
+{@import ../../links.md}
+
+# AnimationTransition
+
+Referência completa da API de `AnimationTransition`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Animations
+
+**Componente:** não
+
+---
+
+```java
+public class AnimationTransition
+```
+
+## Construtores (1)
+
+| Signature | Description |
+| --- | --- |
+| AnimationTransition([AnimationTransition]) | Executa `AnimationTransition` e retorna quando a chamada do motor termina. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [AnimationTransition] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Métodos (1)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| isFinished() | [boolean] | Retorna se a transição de animação terminou. |

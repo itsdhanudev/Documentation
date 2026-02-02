@@ -1,0 +1,23 @@
+{@import ../../links.md}
+
+# MethodArgs
+
+Complete API reference for `MethodArgs`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Uncategorized
+
+**Component:** no
+
+---
+
+```java
+public interface MethodArgs
+```
+
+## Methods (1)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| value() | [String][] | Executes `value` and returns after the underlying engine call finishes. |

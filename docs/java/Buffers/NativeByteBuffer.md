@@ -1,0 +1,43 @@
+{@import ../../links.md}
+
+# NativeByteBuffer
+
+Complete API reference for `NativeByteBuffer`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Buffers
+
+**Component:** no
+
+---
+
+```java
+public class NativeByteBuffer
+```
+
+## Constructors (3)
+
+| Signature | Description |
+| --- | --- |
+| NativeByteBuffer([NativeByteBuffer]) | Executes `NativeByteBuffer` and returns after the underlying engine call finishes. |
+| NativeByteBuffer([Engine]) | Executes `NativeByteBuffer` and returns after the underlying engine call finishes. |
+| NativeByteBuffer([int]) | Creates a new instance of NativeByteBuffer. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `buffer` | [NativeByteBuffer] | Represents the `buffer` value stored on this instance. Read or assign to update the property. |
+
+## Methods (7)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| get([int]) | [byte] | Returns the current value. |
+| set([int], [byte]) | [void] | Sets or updates the the value. |
+| put([byte]) | [void] | Sets or updates the the value. |
+| capacity() | [int] | Executes `capacity` and returns after the underlying engine call finishes. |
+| getPosition() | [int] | Returns the current position. |
+| Position([int]) | [void] | Performs the Position operation using the provided parameters (idx). |
+| setPosition([int]) | [void] | Sets or updates the position. |

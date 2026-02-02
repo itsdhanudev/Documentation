@@ -1,0 +1,54 @@
+{@import ../../../links.md}
+
+# UIHoverButton
+
+Referência completa da API de `UIHoverButton`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** UI
+
+**Componente:** sim
+
+---
+
+```java
+public class UIHoverButton extends Component
+```
+
+## Construtores (3)
+
+| Signature | Description |
+| --- | --- |
+| UIHoverButton([UIHoverButton]) | Executa `UIHoverButton` e retorna quando a chamada do motor termina. |
+| UIHoverButton([Engine]) | Executa `UIHoverButton` e retorna quando a chamada do motor termina. |
+| UIHoverButton() | Executa `UIHoverButton` e retorna quando a chamada do motor termina. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [UIHoverButton] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Atributos Virtuais (18)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `border` | [float] | `get/set` | Atributo virtual exposto por `getBorder`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `clicked` | [boolean] | `get` | Atributo virtual exposto por `isClicked`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `clickedColor` | [Color] | `get/set` | Atributo virtual exposto por `getClickedColor`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `clickedTexture` | [Texture] | `get/set` | Atributo virtual exposto por `getClickedTexture`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `fontFile` | [String] | `get` | Atributo virtual exposto por `getFontFile`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `hover` | [boolean] | `get` | Atributo virtual exposto por `isHover`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `hoverColor` | [Color] | `set` | Atributo virtual exposto por `setHoverColor`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `hoverTexture` | [Texture] | `get/set` | Atributo virtual exposto por `getHoverTexture`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `justBeginHover` | [boolean] | `get` | Atributo virtual exposto por `isJustBeginHover`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `normalColor` | [Color] | `get/set` | Atributo virtual exposto por `getNormalColor`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `normalTexture` | [Texture] | `get/set` | Atributo virtual exposto por `getNormalTexture`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `padding` | [Vector2] | `get/set` | Atributo virtual exposto por `getPadding`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `resolution` | [int] | `get/set` | Atributo virtual exposto por `getResolution`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `text` | [String] | `get/set` | Atributo virtual exposto por `getText`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `textClickedColor` | [Color] | `get/set` | Atributo virtual exposto por `getTextClickedColor`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `textHoverColor` | [Color] | `get/set` | Atributo virtual exposto por `getTextHoverColor`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `textNormalColor` | [Color] | `get/set` | Atributo virtual exposto por `getTextNormalColor`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `textSize` | [float] | `get/set` | Atributo virtual exposto por `getTextSize`. Acesse como um campo para ler ou escrever o valor subjacente. |

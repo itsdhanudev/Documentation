@@ -1,0 +1,41 @@
+{@import ../../links.md}
+
+# Particle
+
+Complete API reference for `Particle`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Uncategorized
+
+**Component:** no
+
+---
+
+```java
+public class Particle
+```
+
+## Constructors (2)
+
+| Signature | Description |
+| --- | --- |
+| Particle([Particle]) | Executes `Particle` and returns after the underlying engine call finishes. |
+| Particle() | Executes `Particle` and returns after the underlying engine call finishes. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [Particle] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
+
+## Virtual Attributes (6)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `color` | [Color] | `get/set` | Virtual attribute exposed by `getColor`. Access it like a field to read or write the underlying value. |
+| `liteTime` | [float] | `get/set` | Virtual attribute exposed by `getLiteTime`. Access it like a field to read or write the underlying value. |
+| `movement` | [Vector3] | `get/set` | Virtual attribute exposed by `getMovement`. Access it like a field to read or write the underlying value. |
+| `position` | [Vector3] | `get/set` | Virtual attribute exposed by `getPosition`. Access it like a field to read or write the underlying value. |
+| `rotation` | [float] | `get/set` | Virtual attribute exposed by `getRotation`. Access it like a field to read or write the underlying value. |
+| `scale` | [float] | `get/set` | Virtual attribute exposed by `getScale`. Access it like a field to read or write the underlying value. |

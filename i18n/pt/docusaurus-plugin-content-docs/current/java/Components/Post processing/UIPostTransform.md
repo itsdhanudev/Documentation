@@ -1,0 +1,41 @@
+{@import ../../../links.md}
+
+# UIPostTransform
+
+Referência completa da API de `UIPostTransform`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Post processing
+
+**Componente:** sim
+
+---
+
+```java
+public class UIPostTransform extends Component
+```
+
+## Construtores (3)
+
+| Signature | Description |
+| --- | --- |
+| UIPostTransform([UIPostTransform]) | Executa `UIPostTransform` e retorna quando a chamada do motor termina. |
+| UIPostTransform([Engine]) | Executa `UIPostTransform` e retorna quando a chamada do motor termina. |
+| UIPostTransform() | Executa `UIPostTransform` e retorna quando a chamada do motor termina. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [UIPostTransform] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Atributos Virtuais (5)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `fOV` | [float] | `get/set` | Atributo virtual exposto por `getFOV`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `pivot` | [Vector2] | `get/set` | Atributo virtual exposto por `getPivot`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `position` | [Vector2] | `get/set` | Atributo virtual exposto por `getPosition`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `rotation` | [Vector3] | `get/set` | Atributo virtual exposto por `getRotation`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `scale` | [Vector2] | `get/set` | Atributo virtual exposto por `getScale`. Acesse como um campo para ler ou escrever o valor subjacente. |

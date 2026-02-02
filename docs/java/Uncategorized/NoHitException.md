@@ -1,0 +1,17 @@
+{@import ../../links.md}
+
+# NoHitException
+
+Complete API reference for `NoHitException`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Uncategorized
+
+**Component:** no
+
+---
+
+```java
+public class NoHitException extends Exception
+```

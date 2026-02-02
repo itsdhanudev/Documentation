@@ -1,0 +1,37 @@
+{@import ../../links.md}
+
+# AnimationFile
+
+Referência completa da API de `AnimationFile`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Animations
+
+**Componente:** não
+
+---
+
+```java
+public class AnimationFile
+```
+
+## Construtores (2)
+
+| Signature | Description |
+| --- | --- |
+| AnimationFile([String]) | Executa `AnimationFile` e retorna quando a chamada do motor termina. |
+| AnimationFile() | Executa `AnimationFile` e retorna quando a chamada do motor termina. |
+
+## Métodos (1)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| toString() | [String] | Retorna a propriedade `propriedade `nome da classe``. |
+
+## Métodos Estáticos (2)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| genericInterface() | [GenericClassInspectorEntry] | Executa `genericInterface` e retorna quando a chamada do motor termina. |
+| inspectorController() | [ClassInspectorEntry] | Executa `inspectorController` e retorna quando a chamada do motor termina. |

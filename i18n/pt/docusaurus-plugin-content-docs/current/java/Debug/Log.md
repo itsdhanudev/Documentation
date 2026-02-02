@@ -1,0 +1,45 @@
+{@import ../../links.md}
+
+# Log
+
+Referência completa da API de `Log`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Debug
+
+**Componente:** não
+
+---
+
+```java
+public class Log
+```
+
+## Construtores (6)
+
+| Signature | Description |
+| --- | --- |
+| Log([ILog]) | Executa `Log` e retorna quando a chamada do motor termina. |
+| Log() | Executa `Log` e retorna quando a chamada do motor termina. |
+| Log([String]) | Cria uma nova instância de Log. |
+| Log([String], [String]) | Cria uma nova instância de Log. |
+| Log([String], [String], [String]) | Cria uma nova instância de Log. |
+| Log([String], [String], [String], [Color]) | Cria uma nova instância de Log. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `log` | [ILog] | Representa o valor de `log` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Atributos Virtuais (6)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `color` | [Color] | `get/set` | Atributo virtual exposto por `getColor`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `link` | [String] | `get/set` | Atributo virtual exposto por `getLink`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `message` | [String] | `get/set` | Atributo virtual exposto por `getMessage`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `quantity` | [int] | `get/set` | Atributo virtual exposto por `getQuantity`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `tag` | [String] | `get/set` | Atributo virtual exposto por `getTag`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `tittle` | [String] | `get/set` | Atributo virtual exposto por `getTittle`. Acesse como um campo para ler ou escrever o valor subjacente. |

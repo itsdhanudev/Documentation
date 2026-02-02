@@ -1,0 +1,47 @@
+{@import ../../../links.md}
+
+# VHSFilter
+
+Referência completa da API de `VHSFilter`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Post processing
+
+**Componente:** sim
+
+---
+
+```java
+public class VHSFilter extends Component
+```
+
+## Construtores (3)
+
+| Signature | Description |
+| --- | --- |
+| VHSFilter([VHSFilter]) | Executa `VHSFilter` e retorna quando a chamada do motor termina. |
+| VHSFilter([Engine]) | Executa `VHSFilter` e retorna quando a chamada do motor termina. |
+| VHSFilter() | Executa `VHSFilter` e retorna quando a chamada do motor termina. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [VHSFilter] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Atributos Virtuais (11)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `colorBleed` | [float] | `get/set` | Atributo virtual exposto por `getColorBleed`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `desaturation` | [float] | `get/set` | Atributo virtual exposto por `getDesaturation`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `distortion` | [float] | `get/set` | Atributo virtual exposto por `getDistortion`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `intensity` | [float] | `get/set` | Atributo virtual exposto por `getIntensity`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `noiseStrength` | [float] | `get/set` | Atributo virtual exposto por `getNoiseStrength`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `scanlineStrength` | [float] | `get/set` | Atributo virtual exposto por `getScanlineStrength`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `time` | [float] | `get/set` | Atributo virtual exposto por `getTime`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `trackingBandHeight` | [float] | `get/set` | Atributo virtual exposto por `getTrackingBandHeight`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `trackingNoise` | [float] | `get/set` | Atributo virtual exposto por `getTrackingNoise`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `trackingSpeed` | [float] | `get/set` | Atributo virtual exposto por `getTrackingSpeed`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `trackingStrength` | [float] | `get/set` | Atributo virtual exposto por `getTrackingStrength`. Acesse como um campo para ler ou escrever o valor subjacente. |

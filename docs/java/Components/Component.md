@@ -1,0 +1,109 @@
+{@import ../../../links.md}
+
+# Component
+
+Complete API reference for `Component`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Components
+
+**Component:** no
+
+---
+
+```java
+public class Component extends InspectorMemory
+```
+
+## Constructors (2)
+
+| Signature | Description |
+| --- | --- |
+| Component([Component]) | Executes `Component` and returns after the underlying engine call finishes. |
+| Component() | Creates a new instance of Component. |
+
+## Attributes (6)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `type` | [Type] | Represents the `type` value stored on this instance. Read or assign to update the property. |
+| `component` | [Component] | Represents the `component` value stored on this instance. Read or assign to update the property. |
+| `javaComponent` | [JavaComponent] | Represents the `javaComponent` value stored on this instance. Read or assign to update the property. |
+| `inspector` | [ComponentInspector] | Represents the `inspector` value stored on this instance. Read or assign to update the property. |
+| `myObject` | [SpatialObject] | Represents the `myObject` value stored on this instance. Read or assign to update the property. |
+| `myTransform` | [Transform] | Represents the `myTransform` value stored on this instance. Read or assign to update the property. |
+
+## Virtual Attributes (2)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `enabled` | [boolean] | `get/set` | Virtual attribute exposed by `isEnabled`. Access it like a field to read or write the underlying value. |
+| `object` | [SpatialObject] | `get` | Virtual attribute exposed by `getObject`. Access it like a field to read or write the underlying value. |
+
+## Methods (56)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| setComponentObject([SpatialObject]) | [void] | Executes `setComponentObject` and returns after the underlying engine call finishes. |
+| getComponentInspector() | [ComponentInspector] | Executes `getComponentInspector` and returns after the underlying engine call finishes. |
+| start() | [void] | Executes `start` and returns after the underlying engine call finishes. |
+| preRepeat() | [void] | Executes `preRepeat` and returns after the underlying engine call finishes. |
+| parallelRepeat() | [void] | Executes `parallelRepeat` and returns after the underlying engine call finishes. |
+| disabledParallelRepeat() | [void] | Executes `disabledParallelRepeat` and returns after the underlying engine call finishes. |
+| repeat() | [void] | Executes `repeat` and returns after the underlying engine call finishes. |
+| disabledRepeat() | [void] | Executes `disabledRepeat` and returns after the underlying engine call finishes. |
+| stoppedRepeat() | [void] | Executes `stoppedRepeat` and returns after the underlying engine call finishes. |
+| pausedRepeat() | [void] | Executes `pausedRepeat` and returns after the underlying engine call finishes. |
+| onDetach() | [void] | Executes `onDetach` and returns after the underlying engine call finishes. |
+| prePhysics() | [void] | Executes `prePhysics` and returns after the underlying engine call finishes. |
+| posPhysics() | [void] | Executes `posPhysics` and returns after the underlying engine call finishes. |
+| posWheelPhysics() | [void] | Executes `posWheelPhysics` and returns after the underlying engine call finishes. |
+| onCollision([Collision]) | [void] | Performs the onCollision operation using the provided parameters (collision). |
+| onCollisionEnter([Collision]) | [void] | Performs the onCollisionEnter operation using the provided parameters (collision). |
+| onCollisionStop([Collision]) | [void] | Performs the onCollisionStop operation using the provided parameters (collision). |
+| onKeyDown([Key]) | [void] | Performs the onKeyDown operation using the provided parameters (key). |
+| onKeyPressed([Key]) | [void] | Performs the onKeyPressed operation using the provided parameters (key). |
+| onKeyUp([Key]) | [void] | Performs the onKeyUp operation using the provided parameters (key). |
+| invoke([float], [Runnable]) | [void] | Performs the invoke operation using the provided parameters (delaySeconds, invokeListener). |
+| invokeFrames([int], [Runnable]) | [void] | Performs the invokeFrames operation using the provided parameters (frames, invokeListener). |
+| invoke([float], [InvokeListener]) | [void] | Performs the invoke operation using the provided parameters (delaySeconds, invokeListener). |
+| invokeFrames([int], [InvokeListener]) | [void] | Performs the invokeFrames operation using the provided parameters (frames, invokeListener). |
+| cancelAllInvokes() | [void] | Executes `cancelAllInvokes` and returns after the underlying engine call finishes. |
+| print([String]) | [void] | Performs the print operation using the provided parameters (message). |
+| print([Quaternion]) | [void] | Performs the print operation using the provided parameters (message). |
+| print([Vector3]) | [void] | Performs the print operation using the provided parameters (message). |
+| print([Vector2]) | [void] | Performs the print operation using the provided parameters (message). |
+| print([Object]) | [void] | Performs the print operation using the provided parameters (message). |
+| print([int]) | [void] | Performs the print operation using the provided parameters (t). |
+| print([float]) | [void] | Performs the print operation using the provided parameters (t). |
+| print([double]) | [void] | Performs the print operation using the provided parameters (t). |
+| print([long]) | [void] | Performs the print operation using the provided parameters (t). |
+| print([char]) | [void] | Performs the print operation using the provided parameters (t). |
+| print([short]) | [void] | Performs the print operation using the provided parameters (t). |
+| getComponentMenu() | [String] | Returns the current component menu. |
+| getComponentColor() | [Color] | Returns the current component color. |
+| getComponentTittle() | [String] | Returns the current component tittle. |
+| setInspector([ComponentInspector]) | [void] | Sets or updates the inspector. |
+| getUserData() | &[lt];[T] [extends] [Object]&[gt]; [T] | Returns the current user data. |
+| setUserData([Object]) | [void] | Sets or updates the user data. |
+| destroy() | [void] | Executes `destroy` and returns after the underlying engine call finishes. |
+| isHierarchyActive() | [boolean] | Returns whether hierarchy active is true. |
+| getTittle() | [String] | Returns the name of the component. |
+| componentClassMatch([Component], [Component], [Class]) | [boolean] | Executes `componentClassMatch` and returns after the underlying engine call finishes. |
+| componentClassMatch([Component], [Component]) | [boolean] | Executes `componentClassMatch` and returns after the underlying engine call finishes. |
+| getEngineComponent() | [Component] | Executes `getEngineComponent` and returns after the underlying engine call finishes. |
+| getGUID() | [GUID] | Returns the current guid. |
+| toString() | [String] | Returns the string representation. |
+| callFunction([String]) | [void] | Performs the callFunction operation using the provided parameters (name). |
+| callFunction([String], [int]) | [void] | Performs the callFunction operation using the provided parameters (name, args). |
+| callFunction([String], [float]) | [void] | Performs the callFunction operation using the provided parameters (name, args). |
+| callFunction([String], [String]) | [void] | Performs the callFunction operation using the provided parameters (name, args). |
+| callFunction([String], [boolean]) | [void] | Performs the callFunction operation using the provided parameters (name, args). |
+| callFunction([String], [[Object]...]) | [void] | Performs the callFunction operation using the provided parameters (name, args). |
+
+## Static Methods (1)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| inspectorController() | [ClassInspectorEntry] | Executes `inspectorController` and returns after the underlying engine call finishes. |

@@ -1,0 +1,41 @@
+{@import ../../../links.md}
+
+# GradientSkybox
+
+Referência completa da API de `GradientSkybox`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Post processing
+
+**Componente:** sim
+
+---
+
+```java
+public class GradientSkybox extends Component
+```
+
+## Construtores (3)
+
+| Signature | Description |
+| --- | --- |
+| GradientSkybox([GradientSkybox]) | Executa `GradientSkybox` e retorna quando a chamada do motor termina. |
+| GradientSkybox([Engine]) | Executa `GradientSkybox` e retorna quando a chamada do motor termina. |
+| GradientSkybox() | Executa `GradientSkybox` e retorna quando a chamada do motor termina. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [GradientSkybox] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Atributos Virtuais (5)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `ambientLight` | [boolean] | `get/set` | Atributo virtual exposto por `isAmbientLight`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `ambientLightResolutionID` | [int] | `get/set` | Atributo virtual exposto por `getAmbientLightResolutionID`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `colorGradient` | [ColorGradient] | `get/set` | Atributo virtual exposto por `getColorGradient`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `lux` | [float] | `get/set` | Atributo virtual exposto por `getLux`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `maxResolutionID` | [int] | `get/set` | Atributo virtual exposto por `getMaxResolutionID`. Acesse como um campo para ler ou escrever o valor subjacente. |

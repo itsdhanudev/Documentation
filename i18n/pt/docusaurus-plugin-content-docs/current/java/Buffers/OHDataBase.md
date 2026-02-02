@@ -1,0 +1,41 @@
+{@import ../../links.md}
+
+# OHDataBase
+
+Referência completa da API de `OHDataBase`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Buffers
+
+**Componente:** não
+
+---
+
+```java
+public class OHDataBase
+```
+
+## Construtores (3)
+
+| Signature | Description |
+| --- | --- |
+| OHDataBase() | Cria uma nova instância de OHDataBase. |
+| OHDataBase([Engine]) | Cria uma nova instância de OHDataBase. |
+| OHDataBase([int]) | Cria uma nova instância de OHDataBase. |
+
+## Métodos (11)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| incrementSize([int]) | [void] | Executa a operação incrementSize usando os parâmetros informados (size). |
+| decrementSize([int]) | [void] | Executa a operação decrementSize usando os parâmetros informados (size). |
+| resize([int]) | [void] | Executa a operação resize usando os parâmetros informados (newCapacity). |
+| resize([int], [boolean]) | [void] | Executa a operação resize usando os parâmetros informados (newCapacity, copyData). |
+| position([int]) | [void] | Executa a operação position usando os parâmetros informados (position). |
+| put([byte][]) | [void] | Define ou atualiza the value. |
+| set([int], [byte]) | [void] | Define ou atualiza the value. |
+| get([int]) | [byte] | Retorna a propriedade `propriedade `valor value atual``. |
+| getBytes() | [byte][] | Retorna a propriedade `propriedade `bytes atual``. |
+| size() | [int] | Executa a operação size. |
+| capacity() | [int] | Executa a operação capacity. |

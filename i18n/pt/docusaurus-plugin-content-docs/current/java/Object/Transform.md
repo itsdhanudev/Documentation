@@ -1,0 +1,139 @@
+{@import ../../links.md}
+
+# Transform
+
+Referência completa da API de `Transform`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Object
+
+**Componente:** não
+
+---
+
+```java
+public class Transform
+```
+
+## Construtores (2)
+
+| Signature | Description |
+| --- | --- |
+| Transform([Transform]) | Executa `Transform` e retorna quando a chamada do motor termina. |
+| Transform() | Executa `Transform` e retorna quando a chamada do motor termina. |
+
+## Atributos (3)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `STATE_DYNAMIC` | [int] | Representa o valor de `STATE_DYNAMIC` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+| `STATE_STATIC` | [int] | Representa o valor de `STATE_STATIC` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+| `transform` | [Transform] | Representa o valor de `transform` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Atributos Virtuais (8)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `globalPosition` | [Vector3] | `get/set` | Atributo virtual exposto por `getGlobalPosition`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `globalRotation` | [Quaternion] | `get/set` | Atributo virtual exposto por `getGlobalRotation`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `globalScale` | [Vector3] | `get/set` | Atributo virtual exposto por `getGlobalScale`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `ignoreParent` | [boolean] | `get/set` | Atributo virtual exposto por `isIgnoreParent`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `position` | [Vector3] | `get/set` | Atributo virtual exposto por `getPosition`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `rotation` | [Quaternion] | `get/set` | Atributo virtual exposto por `getRotation`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `scale` | [Vector3] | `get/set` | Atributo virtual exposto por `getScale`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `static` | [boolean] | `get/set` | Atributo virtual exposto por `isStatic`. Acesse como um campo para ler ou escrever o valor subjacente. |
+
+## Métodos (89)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| setPosition([float], [float], [float]) | [void] | Define ou atualiza a propriedade `propriedade `position``. |
+| setPositionX([float]) | [void] | Define ou atualiza a propriedade `propriedade `position x``. |
+| setPositionY([float]) | [void] | Define ou atualiza a propriedade `propriedade `position y``. |
+| setPositionZ([float]) | [void] | Define ou atualiza a propriedade `propriedade `position z``. |
+| setRotation([float], [float], [float]) | [void] | Define ou atualiza a propriedade `propriedade `rotation``. |
+| setRotation([float], [float], [float], [float]) | [void] | Define ou atualiza a propriedade `propriedade `rotation``. |
+| setScale([float], [float], [float]) | [void] | Define ou atualiza a propriedade `propriedade `scale``. |
+| setScale([float]) | [void] | Define ou atualiza a propriedade `propriedade `scale``. |
+| getGlobalPosition([Vector3]) | [Vector3] | Retorna a propriedade `propriedade `global position atual``. |
+| getGlobalRotation([Quaternion]) | [Quaternion] | Retorna a propriedade `propriedade `global rotation atual``. |
+| getGlobalScale([Vector3]) | [Vector3] | Retorna a propriedade `propriedade `global scale atual``. |
+| translate([float], [float], [float]) | [void] | Transforma ou move the object de acordo. |
+| move([float], [float], [float]) | [void] | Transforma ou move the object de acordo. |
+| rotate([float], [float], [float]) | [void] | Transforma ou move the object de acordo. |
+| translateInSeconds([float], [float], [float]) | [void] | Transforma ou move in seconds de acordo. |
+| moveInSeconds([float], [float], [float]) | [void] | Transforma ou move in seconds de acordo. |
+| rotateInSeconds([float], [float], [float]) | [void] | Transforma ou move in seconds de acordo. |
+| translateInSeconds([int], [int], [int]) | [void] | Executa `translateInSeconds` e retorna quando a chamada do motor termina. |
+| translateInSeconds([int], [int], [float]) | [void] | Executa `translateInSeconds` e retorna quando a chamada do motor termina. |
+| translateInSeconds([int], [float], [int]) | [void] | Executa `translateInSeconds` e retorna quando a chamada do motor termina. |
+| translateInSeconds([int], [float], [float]) | [void] | Executa `translateInSeconds` e retorna quando a chamada do motor termina. |
+| translateInSeconds([float], [int], [int]) | [void] | Executa `translateInSeconds` e retorna quando a chamada do motor termina. |
+| translateInSeconds([float], [int], [float]) | [void] | Executa `translateInSeconds` e retorna quando a chamada do motor termina. |
+| translateInSeconds([float], [float], [int]) | [void] | Executa `translateInSeconds` e retorna quando a chamada do motor termina. |
+| moveInSeconds([int], [int], [int]) | [void] | Executa `moveInSeconds` e retorna quando a chamada do motor termina. |
+| moveInSeconds([int], [int], [float]) | [void] | Executa `moveInSeconds` e retorna quando a chamada do motor termina. |
+| moveInSeconds([int], [float], [int]) | [void] | Executa `moveInSeconds` e retorna quando a chamada do motor termina. |
+| moveInSeconds([int], [float], [float]) | [void] | Executa `moveInSeconds` e retorna quando a chamada do motor termina. |
+| moveInSeconds([float], [int], [int]) | [void] | Executa `moveInSeconds` e retorna quando a chamada do motor termina. |
+| moveInSeconds([float], [int], [float]) | [void] | Executa `moveInSeconds` e retorna quando a chamada do motor termina. |
+| moveInSeconds([float], [float], [int]) | [void] | Executa `moveInSeconds` e retorna quando a chamada do motor termina. |
+| rotateInSeconds([int], [int], [int]) | [void] | Executa `rotateInSeconds` e retorna quando a chamada do motor termina. |
+| rotateInSeconds([int], [int], [float]) | [void] | Executa `rotateInSeconds` e retorna quando a chamada do motor termina. |
+| rotateInSeconds([int], [float], [int]) | [void] | Executa `rotateInSeconds` e retorna quando a chamada do motor termina. |
+| rotateInSeconds([int], [float], [float]) | [void] | Executa `rotateInSeconds` e retorna quando a chamada do motor termina. |
+| rotateInSeconds([float], [int], [int]) | [void] | Executa `rotateInSeconds` e retorna quando a chamada do motor termina. |
+| rotateInSeconds([float], [int], [float]) | [void] | Executa `rotateInSeconds` e retorna quando a chamada do motor termina. |
+| rotateInSeconds([float], [float], [int]) | [void] | Executa `rotateInSeconds` e retorna quando a chamada do motor termina. |
+| lookTo([SpatialObject]) | [void] | Executa a operação lookTo usando os parâmetros informados (object). |
+| lookTo([Vector3]) | [void] | Executa a operação lookTo usando os parâmetros informados (position). |
+| lookTo([float], [float], [float]) | [void] | Executa a operação lookTo usando os parâmetros informados (x, y, z). |
+| lookTo([SpatialObject], [boolean], [boolean]) | [void] | Executa `lookTo` e retorna quando a chamada do motor termina. |
+| lookTo([Vector3], [boolean], [boolean]) | [void] | Executa `lookTo` e retorna quando a chamada do motor termina. |
+| lookTo([float], [float], [float], [boolean], [boolean]) | [void] | Executa `lookTo` e retorna quando a chamada do motor termina. |
+| lookToIgnoreY([SpatialObject]) | [void] | Executa a operação lookToIgnoreY usando os parâmetros informados (object). |
+| lookToIgnoreY([Vector3]) | [void] | Executa a operação lookToIgnoreY usando os parâmetros informados (position). |
+| teleportTo([SpatialObject]) | [void] | Executa a operação teleportTo usando os parâmetros informados (object). |
+| teleportTo([Vector3]) | [void] | Executa a operação teleportTo usando os parâmetros informados (position). |
+| smoothLookTo([SpatialObject], [float]) | [void] | Executa a operação smoothLookTo usando os parâmetros informados (other, lerpSpeed). |
+| smoothLookTo([Vector3], [float]) | [void] | Executa a operação smoothLookTo usando os parâmetros informados (other, lerpSpeed). |
+| lerpLookTo([SpatialObject], [float]) | [void] | Executa a operação lerpLookTo usando os parâmetros informados (other, lerpSpeed). |
+| lerpLookTo([Vector3], [float]) | [void] | Executa a operação lerpLookTo usando os parâmetros informados (other, lerpSpeed). |
+| lerpLookToIgnoreY([SpatialObject], [float]) | [void] | Executa a operação lerpLookToIgnoreY usando os parâmetros informados (other, lerpSpeed). |
+| lerpLookToIgnoreY([Vector3], [float]) | [void] | Executa a operação lerpLookToIgnoreY usando os parâmetros informados (other, lerpSpeed). |
+| transformPoint([Vector3]) | [Vector3] | Executa a operação transformPoint usando os parâmetros informados (vector3). |
+| transformPoint([Vector3], [Vector3]) | [void] | Executa a operação transformPoint usando os parâmetros informados (vector3, out). |
+| inverseTransformPoint([Vector3]) | [Vector3] | Executa a operação inverseTransformPoint usando os parâmetros informados (vector3). |
+| inverseTransformPoint([Vector3], [Vector3]) | [void] | Executa a operação inverseTransformPoint usando os parâmetros informados (vector3, out). |
+| transformDirection([Vector3]) | [Vector3] | Executa a operação transformDirection usando os parâmetros informados (vector3). |
+| transformDirection([Vector3], [Vector3]) | [void] | Executa a operação transformDirection usando os parâmetros informados (vector3, out). |
+| inverseTransformDirection([Vector3]) | [Vector3] | Executa a operação inverseTransformDirection usando os parâmetros informados (vector3). |
+| inverseTransformDirection([Vector3], [Vector3]) | [void] | Executa a operação inverseTransformDirection usando os parâmetros informados (vector3, out). |
+| forward() | [Vector3] | Executa a operação forward. |
+| back() | [Vector3] | Executa a operação back. |
+| right() | [Vector3] | Executa a operação right. |
+| left() | [Vector3] | Executa a operação left. |
+| up() | [Vector3] | Executa a operação up. |
+| down() | [Vector3] | Executa a operação down. |
+| forward([Vector3]) | [Vector3] | Executa a operação forward usando os parâmetros informados (out). |
+| back([Vector3]) | [Vector3] | Executa a operação back usando os parâmetros informados (out). |
+| right([Vector3]) | [Vector3] | Executa a operação right usando os parâmetros informados (out). |
+| left([Vector3]) | [Vector3] | Executa a operação left usando os parâmetros informados (out). |
+| up([Vector3]) | [Vector3] | Executa a operação up usando os parâmetros informados (out). |
+| down([Vector3]) | [Vector3] | Executa a operação down usando os parâmetros informados (out). |
+| globalDistance([SpatialObject]) | [float] | Executa a operação globalDistance usando os parâmetros informados (other). |
+| globalDistance([Transform]) | [float] | Executa a operação globalDistance usando os parâmetros informados (other). |
+| globalDistance([Vector3]) | [float] | Executa a operação globalDistance usando os parâmetros informados (other). |
+| globalSqrtDistance([SpatialObject]) | [float] | Executa a operação globalSqrtDistance usando os parâmetros informados (other). |
+| globalSqrtDistance([Transform]) | [float] | Executa a operação globalSqrtDistance usando os parâmetros informados (other). |
+| globalSqrtDistance([Vector3]) | [float] | Executa a operação globalSqrtDistance usando os parâmetros informados (other). |
+| getState() | [int] | Retorna a propriedade `propriedade `state atual``. |
+| setState([int]) | [void] | Define ou atualiza a propriedade `propriedade `state``. |
+| getGlobalMatrix() | [float][] | Retorna a propriedade `propriedade `global matrix atual``. |
+| getGlobalMatrix([float][]) | [float][] | Retorna a propriedade `propriedade `global matrix atual``. |
+| getLocalMatrix() | [float][] | Retorna a propriedade `propriedade `local matrix atual``. |
+| getLocalMatrix([float][]) | [float][] | Retorna a propriedade `propriedade `local matrix atual``. |
+| mulGlobalVector3([Vector3]) | [Vector3] | Executa a operação mulGlobalVector3 usando os parâmetros informados (vector3). |
+| mulLocalVector3([Vector3]) | [Vector3] | Executa a operação mulLocalVector3 usando os parâmetros informados (vector3). |
+| recalculateMatrices() | [void] | Executa a operação recalculateMatrices. |

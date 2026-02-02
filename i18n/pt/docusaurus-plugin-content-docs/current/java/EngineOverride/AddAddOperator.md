@@ -1,0 +1,23 @@
+{@import ../../links.md}
+
+# AddAddOperator
+
+Referência completa da API de `AddAddOperator`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** EngineOverride
+
+**Componente:** não
+
+---
+
+```java
+public interface AddAddOperator
+```
+
+## Métodos (1)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| addAdd() | [void] | Adiciona +1 ao valor. |

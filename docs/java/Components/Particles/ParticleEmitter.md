@@ -1,0 +1,61 @@
+{@import ../../../links.md}
+
+# ParticleEmitter
+
+Complete API reference for `ParticleEmitter`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Particles
+
+**Component:** yes
+
+---
+
+```java
+public class ParticleEmitter extends Component
+```
+
+## Constructors (3)
+
+| Signature | Description |
+| --- | --- |
+| ParticleEmitter([ParticleEmitter]) | Executes `ParticleEmitter` and returns after the underlying engine call finishes. |
+| ParticleEmitter([Engine]) | Executes `ParticleEmitter` and returns after the underlying engine call finishes. |
+| ParticleEmitter() | Creates a new instance of ParticleEmitter. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [ParticleEmitter] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
+
+## Virtual Attributes (19)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `allowEmission` | [boolean] | `get/set` | Virtual attribute exposed by `isAllowEmission`. Access it like a field to read or write the underlying value. |
+| `alphaBased` | [AlphaBased] | `get/set` | Virtual attribute exposed by `getAlphaBased`. Access it like a field to read or write the underlying value. |
+| `alphaOverLifeTimeCurve` | [Curve] | `get/set` | Virtual attribute exposed by `getAlphaOverLifeTimeCurve`. Access it like a field to read or write the underlying value. |
+| `color` | [Color] | `get/set` | Virtual attribute exposed by `getColor`. Access it like a field to read or write the underlying value. |
+| `colorBased` | [ColorBased] | `get/set` | Virtual attribute exposed by `getColorBased`. Access it like a field to read or write the underlying value. |
+| `colorMode` | [ColorMode] | `get/set` | Virtual attribute exposed by `getColorMode`. Access it like a field to read or write the underlying value. |
+| `coneShapeOptions` | [ParticleConeShapeOptions] | `get` | Virtual attribute exposed by `getConeShapeOptions`. Access it like a field to read or write the underlying value. |
+| `emissionShape` | [EmissionShape] | `get/set` | Virtual attribute exposed by `getEmissionShape`. Access it like a field to read or write the underlying value. |
+| `emissionsPerSecond` | [float] | `get/set` | Virtual attribute exposed by `getEmissionsPerSecond`. Access it like a field to read or write the underlying value. |
+| `gravityMultiplier` | [float] | `get/set` | Virtual attribute exposed by `getGravityMultiplier`. Access it like a field to read or write the underlying value. |
+| `layer` | [int] | `get/set` | Virtual attribute exposed by `getLayer`. Access it like a field to read or write the underlying value. |
+| `maxLifeSeconds` | [float] | `get/set` | Virtual attribute exposed by `getMaxLifeSeconds`. Access it like a field to read or write the underlying value. |
+| `sizeBased` | [SizeBased] | `get/set` | Virtual attribute exposed by `getSizeBased`. Access it like a field to read or write the underlying value. |
+| `sizeOverLifeTimeCurve` | [Curve] | `get/set` | Virtual attribute exposed by `getSizeOverLifeTimeCurve`. Access it like a field to read or write the underlying value. |
+| `sphereShapeOptions` | [ParticleSphereShapeOptions] | `get` | Virtual attribute exposed by `getSphereShapeOptions`. Access it like a field to read or write the underlying value. |
+| `startSize` | [float] | `get/set` | Virtual attribute exposed by `getStartSize`. Access it like a field to read or write the underlying value. |
+| `startSpeed` | [float] | `get/set` | Virtual attribute exposed by `getStartSpeed`. Access it like a field to read or write the underlying value. |
+| `textureInstance` | [Texture] | `get/set` | Virtual attribute exposed by `getTextureInstance`. Access it like a field to read or write the underlying value. |
+| `transparencyBased` | [TransparencyBased] | `get/set` | Virtual attribute exposed by `getTransparencyBased`. Access it like a field to read or write the underlying value. |
+
+## Methods (1)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| emit([Vector3], [Vector3]) | [Particle] | Performs the emit operation using the provided parameters (position, movement). |

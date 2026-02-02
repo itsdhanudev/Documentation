@@ -1,0 +1,30 @@
+{@import ../../links.md}
+
+# GUIUtils
+
+Complete API reference for `GUIUtils`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** GUI
+
+**Component:** no
+
+---
+
+```java
+public class GUIUtils
+```
+
+## Static Methods (8)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| applyFilter([Touch], [TouchFilter]) | [boolean] | Executes `applyFilter` and returns after the underlying engine call finishes. |
+| isTouchInside([Touch], [int], [int], [int], [int]) | [boolean] | Returns whether touch inside is true. |
+| determineTouch([int], [int], [int], [int]) | [Touch] | Performs the determineTouch operation using the provided parameters (x, y, width, height). |
+| determineTouch([int], [int], [int], [int], [TouchFilter]) | [Touch] | Performs the determineTouch operation using the provided parameters (x, y, width, height, touchFilter). |
+| determineTouches([int], [int], [int], [int]) | [Touch][] | Performs the determineTouches operation using the provided parameters (x, y, width, height). |
+| determineTouches([int], [int], [int], [int], [TouchFilter]) | [Touch][] | Performs the determineTouches operation using the provided parameters (x, y, width, height, touchFilter). |
+| determineTouchList([int], [int], [int], [int]) | [List]&[lt];[Touch]&[gt]; | Performs the determineTouchList operation using the provided parameters (x, y, width, height). |
+| determineTouchList([int], [int], [int], [int], [TouchFilter]) | [List]&[lt];[Touch]&[gt]; | Performs the determineTouchList operation using the provided parameters (x, y, width, height, touchFilter). |

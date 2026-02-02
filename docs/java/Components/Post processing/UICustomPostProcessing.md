@@ -1,0 +1,39 @@
+{@import ../../../links.md}
+
+# UICustomPostProcessing
+
+Complete API reference for `UICustomPostProcessing`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Post processing
+
+**Component:** yes
+
+---
+
+```java
+public class UICustomPostProcessing extends Component
+```
+
+## Constructors (3)
+
+| Signature | Description |
+| --- | --- |
+| UICustomPostProcessing([UICustomPostProcessing]) | Executes `UICustomPostProcessing` and returns after the underlying engine call finishes. |
+| UICustomPostProcessing([Engine]) | Executes `UICustomPostProcessing` and returns after the underlying engine call finishes. |
+| UICustomPostProcessing() | Executes `UICustomPostProcessing` and returns after the underlying engine call finishes. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [UICustomPostProcessing] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
+
+## Virtual Attributes (3)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `param` | [String] | `set` | Virtual attribute exposed by `setParam`. Access it like a field to read or write the underlying value. |
+| `shaderFile` | [String] | `get/set` | Virtual attribute exposed by `getShaderFile`. Access it like a field to read or write the underlying value. |
+| `time` | [float] | `get/set` | Virtual attribute exposed by `getTime`. Access it like a field to read or write the underlying value. |

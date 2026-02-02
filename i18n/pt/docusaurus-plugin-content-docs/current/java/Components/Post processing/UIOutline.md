@@ -1,0 +1,39 @@
+{@import ../../../links.md}
+
+# UIOutline
+
+Referência completa da API de `UIOutline`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Post processing
+
+**Componente:** sim
+
+---
+
+```java
+public class UIOutline extends Component
+```
+
+## Construtores (3)
+
+| Signature | Description |
+| --- | --- |
+| UIOutline([UIOutline]) | Executa `UIOutline` e retorna quando a chamada do motor termina. |
+| UIOutline([Engine]) | Executa `UIOutline` e retorna quando a chamada do motor termina. |
+| UIOutline() | Executa `UIOutline` e retorna quando a chamada do motor termina. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [UIOutline] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Atributos Virtuais (3)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `outlineColor` | [Color] | `get/set` | Atributo virtual exposto por `getOutlineColor`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `thickness` | [float] | `get/set` | Atributo virtual exposto por `getThickness`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `threshold` | [float] | `get/set` | Atributo virtual exposto por `getThreshold`. Acesse como um campo para ler ou escrever o valor subjacente. |

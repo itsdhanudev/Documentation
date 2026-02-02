@@ -1,0 +1,45 @@
+{@import ../../../links.md}
+
+# UIFitParent
+
+Referência completa da API de `UIFitParent`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** UI
+
+**Componente:** sim
+
+---
+
+```java
+public class UIFitParent extends Component
+```
+
+## Construtores (3)
+
+| Signature | Description |
+| --- | --- |
+| UIFitParent([UIFitParent]) | Executa `UIFitParent` e retorna quando a chamada do motor termina. |
+| UIFitParent([Engine]) | Executa `UIFitParent` e retorna quando a chamada do motor termina. |
+| UIFitParent() | Cria uma nova instância de UIFitParent. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [UIFitParent] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Atributos Virtuais (2)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `fitHeight` | [boolean] | `set` | Atributo virtual exposto por `setFitHeight`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `fitWidth` | [boolean] | `set` | Atributo virtual exposto por `setFitWidth`. Acesse como um campo para ler ou escrever o valor subjacente. |
+
+## Métodos (2)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| isFitHeight() | [boolean] | Retorna se fit height é verdadeiro. |
+| isFitWidth() | [boolean] | Retorna se fit width é verdadeiro. |

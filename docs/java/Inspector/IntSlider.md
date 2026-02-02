@@ -1,0 +1,53 @@
+{@import ../../links.md}
+
+# IntSlider
+
+Complete API reference for `IntSlider`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Inspector
+
+**Component:** no
+
+---
+
+```java
+public class IntSlider
+```
+
+## Constructors (1)
+
+| Signature | Description |
+| --- | --- |
+| IntSlider([int], [int], [int]) | Creates a new instance of IntSlider. |
+
+## Attributes (3)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `value` | [int] | Represents the `value` value stored on this instance. Read or assign to update the property. |
+| `min` | [int] | Represents the `min` value stored on this instance. Read or assign to update the property. |
+| `max` | [int] | Represents the `max` value stored on this instance. Read or assign to update the property. |
+
+## Virtual Attributes (3)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `max` | [int] | `get/set` | Returns the maximum allowed value of the slider. |
+| `min` | [int] | `get/set` | Returns the minimum allowed value of the slider. |
+| `value` | [int] | `get/set` | Returns the current value of the slider. |
+
+## Methods (2)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| toString() | [String] | Returns a string representation of the IntSlider. |
+| serialize() | [String] | Serializes the IntSlider into a string in the format '[value;min;max;step]'. |
+
+## Static Methods (2)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| inspectorController() | [ClassInspectorEntry] | Executes `inspectorController` and returns after the underlying engine call finishes. |
+| deserialize([String]) | [IntSlider] | Deserializes a string to create a IntSlider instance. |

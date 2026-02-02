@@ -1,0 +1,28 @@
+{@import ../../links.md}
+
+# ListStreamListener
+
+Referência completa da API de `ListStreamListener`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Lists
+
+**Componente:** não
+
+---
+
+```java
+public interface ListStreamListener
+```
+
+## Métodos (6)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| @MethodArgs([{"object"], ["idx"], ["userData"}]) | [void] | Executa a operação @MethodArgs. |
+| execute([Object], [int], [Object]) | [void] | Executa `execute` e retorna quando a chamada do motor termina. |
+| @MethodArgs([{"exception"], ["error"], ["idx"], ["userData"}]) | [void] | Executa a operação @MethodArgs. |
+| onError([Exception], [Error], [int], [Object]) | [void] | Executa `onError` e retorna quando a chamada do motor termina. |
+| @MethodArgs([{"userData"}]) | [void] | Executa a operação @MethodArgs. |
+| onFinish([Object]) | [void] | Executa `onFinish` e retorna quando a chamada do motor termina. |

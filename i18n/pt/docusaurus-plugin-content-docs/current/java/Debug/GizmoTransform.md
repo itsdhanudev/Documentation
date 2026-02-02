@@ -1,0 +1,52 @@
+{@import ../../links.md}
+
+# GizmoTransform
+
+Referência completa da API de `GizmoTransform`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Debug
+
+**Componente:** não
+
+---
+
+```java
+public class GizmoTransform extends GizmoElement
+```
+
+## Construtores (4)
+
+| Signature | Description |
+| --- | --- |
+| GizmoTransform() | Cria uma nova instância de GizmoTransform. |
+| GizmoTransform([Vector3]) | Cria uma nova instância de GizmoTransform. |
+| GizmoTransform([Vector3], [Quaternion]) | Cria uma nova instância de GizmoTransform. |
+| GizmoTransform([Vector3], [Quaternion], [Vector3]) | Cria uma nova instância de GizmoTransform. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `rotMatrix` | [float][] | Representa o valor de `rotMatrix` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Atributos Virtuais (4)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `matrix` | [float][] | `get/set` | Atributo virtual exposto por `getMatrix`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `position` | [Vector3] | `get/set` | Atributo virtual exposto por `getPosition`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `rotation` | [Quaternion] | `get/set` | Atributo virtual exposto por `getRotation`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `scale` | [Vector3] | `get/set` | Atributo virtual exposto por `getScale`. Acesse como um campo para ler ou escrever o valor subjacente. |
+
+## Métodos (6)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| setPosition([float], [float], [float]) | [void] | Define ou atualiza a propriedade `propriedade `position``. |
+| setPosition([float]) | [void] | Define ou atualiza a propriedade `propriedade `position``. |
+| setRotation([float], [float], [float]) | [void] | Define ou atualiza a propriedade `propriedade `rotation``. |
+| setRotation([float], [float], [float], [float]) | [void] | Define ou atualiza a propriedade `propriedade `rotation``. |
+| setScale([float], [float], [float]) | [void] | Define ou atualiza a propriedade `propriedade `scale``. |
+| setScale([float]) | [void] | Define ou atualiza a propriedade `propriedade `scale``. |

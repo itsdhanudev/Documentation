@@ -1,0 +1,23 @@
+{@import ../../links.md}
+
+# ClassCategory
+
+Referência completa da API de `ClassCategory`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Uncategorized
+
+**Componente:** não
+
+---
+
+```java
+public interface ClassCategory
+```
+
+## Métodos (1)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| cat() | [String][] | Executa `cat` e retorna quando a chamada do motor termina. |

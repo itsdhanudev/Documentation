@@ -1,0 +1,49 @@
+{@import ../../links.md}
+
+# Vector2Buffer
+
+Referência completa da API de `Vector2Buffer`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Vector
+
+**Componente:** não
+
+---
+
+```java
+public class Vector2Buffer
+```
+
+## Construtores (4)
+
+| Signature | Description |
+| --- | --- |
+| Vector2Buffer([Vector2Buffer]) | Executa `Vector2Buffer` e retorna quando a chamada do motor termina. |
+| Vector2Buffer([Engine]) | Executa `Vector2Buffer` e retorna quando a chamada do motor termina. |
+| Vector2Buffer([int]) | Cria uma nova instância de Vector2Buffer. |
+| Vector2Buffer([NativeFloatBuffer]) | Cria uma nova instância de Vector2Buffer. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `buffer` | [Vector2Buffer] | Representa o valor de `buffer` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Métodos (12)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| get([int]) | [Vector2] | Retorna a propriedade `propriedade `valor value atual``. |
+| getX([int]) | [float] | Retorna a propriedade `propriedade `x atual``. |
+| getY([int]) | [float] | Retorna a propriedade `propriedade `y atual``. |
+| put([Vector2]) | [void] | Define ou atualiza the value. |
+| put([float], [float]) | [void] | Define ou atualiza the value. |
+| set([int], [Vector2]) | [void] | Define ou atualiza the value. |
+| set([int], [float], [float]) | [void] | Define ou atualiza the value. |
+| capacity() | [int] | Executa a operação capacity. |
+| array() | [Vector2][] | Executa a operação array. |
+| position([int]) | [void] | Executa a operação position usando os parâmetros informados (idx). |
+| copy() | [Vector2Buffer] | Retorna uma cópia da instância de Vector2Buffer. |
+| getFloatBuffer() | [JAVARuntime].[NativeFloatBuffer] | Retorna a propriedade `propriedade `float buffer atual``. |

@@ -1,0 +1,52 @@
+{@import ../../../links.md}
+
+# Road
+
+Complete API reference for `Road`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Roads
+
+**Component:** yes
+
+---
+
+```java
+public class Road extends Component
+```
+
+## Constructors (3)
+
+| Signature | Description |
+| --- | --- |
+| Road([Road]) | Executes `Road` and returns after the underlying engine call finishes. |
+| Road([Engine]) | Executes `Road` and returns after the underlying engine call finishes. |
+| Road() | Creates a new instance of Road. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [Road] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
+
+## Virtual Attributes (10)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `generateCollision` | [boolean] | `set` | Virtual attribute exposed by `setGenerateCollision`. Access it like a field to read or write the underlying value. |
+| `quality` | [float] | `get/set` | Virtual attribute exposed by `getQuality`. Access it like a field to read or write the underlying value. |
+| `roadBorder` | [float] | `get/set` | Virtual attribute exposed by `getRoadBorder`. Access it like a field to read or write the underlying value. |
+| `roadBorderUV` | [float] | `get/set` | Virtual attribute exposed by `getRoadBorderUV`. Access it like a field to read or write the underlying value. |
+| `roadBorderVerticalOffset` | [float] | `get/set` | Virtual attribute exposed by `getRoadBorderVerticalOffset`. Access it like a field to read or write the underlying value. |
+| `terrainBorder` | [float] | `get/set` | Virtual attribute exposed by `getTerrainBorder`. Access it like a field to read or write the underlying value. |
+| `textureMode` | [TextureMode] | `get/set` | Virtual attribute exposed by `getTextureMode`. Access it like a field to read or write the underlying value. |
+| `textureWidth` | [float] | `get/set` | Virtual attribute exposed by `getTextureWidth`. Access it like a field to read or write the underlying value. |
+| `verticalOffset` | [float] | `get/set` | Virtual attribute exposed by `getVerticalOffset`. Access it like a field to read or write the underlying value. |
+| `width` | [float] | `get/set` | Virtual attribute exposed by `getWidth`. Access it like a field to read or write the underlying value. |
+
+## Methods (1)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| isGenerateCollision() | [boolean] | Returns whether generate collision is true. |

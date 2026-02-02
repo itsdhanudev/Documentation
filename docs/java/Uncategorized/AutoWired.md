@@ -1,0 +1,17 @@
+{@import ../../links.md}
+
+# AutoWired
+
+Complete API reference for `AutoWired`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Uncategorized
+
+**Component:** no
+
+---
+
+```java
+public interface AutoWired
+```

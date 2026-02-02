@@ -1,0 +1,31 @@
+{@import ../../links.md}
+
+# LooperThread
+
+Complete API reference for `LooperThread`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Uncategorized
+
+**Component:** no
+
+---
+
+```java
+public class LooperThread
+```
+
+## Constructors (1)
+
+| Signature | Description |
+| --- | --- |
+| LooperThread() | Creates a new instance of LooperThread. |
+
+## Methods (3)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| start() | [void] | Executes `start` and returns after the underlying engine call finishes. |
+| stop() | [void] | Executes `stop` and returns after the underlying engine call finishes. |
+| execute([Runnable]) | [void] | Executes `execute` and returns after the underlying engine call finishes. |

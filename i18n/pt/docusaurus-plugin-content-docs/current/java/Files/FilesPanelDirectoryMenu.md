@@ -1,0 +1,32 @@
+{@import ../../links.md}
+
+# FilesPanelDirectoryMenu
+
+Referência completa da API de `FilesPanelDirectoryMenu`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Files
+
+**Componente:** não
+
+---
+
+```java
+public class FilesPanelDirectoryMenu
+```
+
+## Construtores (1)
+
+| Signature | Description |
+| --- | --- |
+| FilesPanelDirectoryMenu([String]) | Cria uma nova instância de FilesPanelDirectoryMenu. |
+
+## Métodos (4)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| getMenu() | [String] | Retorna a propriedade `propriedade `menu atual``. |
+| setMenu([String]) | [void] | Define ou atualiza a propriedade `propriedade `menu``. |
+| onClick([File]) | [void] | Executa a operação onClick usando os parâmetros informados (folder). |
+| onClick([File], [View]) | [void] | Executa a operação onClick usando os parâmetros informados (folder, view). |

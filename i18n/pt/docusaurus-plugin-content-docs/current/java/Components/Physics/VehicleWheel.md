@@ -1,0 +1,56 @@
+{@import ../../../links.md}
+
+# VehicleWheel
+
+Referência completa da API de `VehicleWheel`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Physics
+
+**Componente:** sim
+
+---
+
+```java
+public class VehicleWheel extends Component
+```
+
+## Construtores (2)
+
+| Signature | Description |
+| --- | --- |
+| VehicleWheel([VehicleWheel]) | Executa `VehicleWheel` e retorna quando a chamada do motor termina. |
+| VehicleWheel() | Executa `VehicleWheel` e retorna quando a chamada do motor termina. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `component` | [VehicleWheel] | Representa o valor de `component` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Atributos Virtuais (9)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `blockRotation` | [float] | `set` | Atributo virtual exposto por `setBlockRotation`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `frictionSlip` | [float] | `get/set` | Atributo virtual exposto por `getFrictionSlip`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `modelPosition` | [Vector3] | `get` | Atributo virtual exposto por `getModelPosition`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `modelRotation` | [Quaternion] | `get` | Atributo virtual exposto por `getModelRotation`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `posPhysicsFunctionEnabled` | [boolean] | `get/set` | Atributo virtual exposto por `getPosPhysicsFunctionEnabled`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `radius` | [float] | `get/set` | Atributo virtual exposto por `getRadius`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `rotation` | [float] | `get/set` | Atributo virtual exposto por `getRotation`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `skidding` | [float] | `get` | Atributo virtual exposto por `getSkidding`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `suspensionRestLength` | [float] | `get/set` | Atributo virtual exposto por `getSuspensionRestLength`. Acesse como um campo para ler ou escrever o valor subjacente. |
+
+## Métodos (7)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| isGrounded() | [boolean] | Retorna se grounded é verdadeiro. |
+| incrementRotation([float]) | [void] | Executa a operação incrementRotation usando os parâmetros informados (r). |
+| setTorque([float]) | [void] | Define ou atualiza a propriedade `propriedade `torque``. |
+| setBrake([float]) | [void] | Define ou atualiza a propriedade `propriedade `brake``. |
+| setSteer([float]) | [void] | Define ou atualiza a propriedade `propriedade `steer``. |
+| componentClassMatch([Component], [Component]) | [boolean] | Executa `componentClassMatch` e retorna quando a chamada do motor termina. |
+| getEngineComponent() | [Component] | Executa `getEngineComponent` e retorna quando a chamada do motor termina. |

@@ -1,0 +1,52 @@
+{@import ../../links.md}
+
+# Collision
+
+Referência completa da API de `Collision`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Physics
+
+**Componente:** não
+
+---
+
+```java
+public class Collision
+```
+
+## Construtores (2)
+
+| Signature | Description |
+| --- | --- |
+| Collision([Collision]) | Executa `Collision` e retorna quando a chamada do motor termina. |
+| Collision() | Executa `Collision` e retorna quando a chamada do motor termina. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [Collision] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Atributos Virtuais (9)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `collider` | [Collider] | `get/set` | Retorna a propriedade `propriedade `Collider associado a esta colisão``. |
+| `colliderObject` | [SpatialObject] | `get/set` | Retorna a propriedade `propriedade `objeto associado ao Collider nesta colisão``. |
+| `contactCount` | [int] | `get` | Retorna a propriedade `propriedade `número de pontos de contato na colisão``. |
+| `contactPoint` | [Vector3] | `get/set` | Retorna a propriedade `posição do primeiro ponto de contato (obsoleto, pegue um Contact com contactAt() ou getContactList() e use getContactPoint() nele)`. |
+| `distance` | [float] | `get/set` | Retorna a propriedade `distância de penetração no primeiro ponto de contato (obsoleto, pegue um Contact com contactAt() ou getContactList() e use getDistance() nele)`. |
+| `impulse` | [float] | `get/set` | Retorna a propriedade `magnitude do impulso no primeiro ponto de contato (obsoleto, pegue um Contact com contactAt() ou getContactList() e use getImpulse() nele)`. |
+| `normal` | [Vector3] | `get/set` | Retorna a propriedade `propriedade `vetor normal do primeiro ponto de contato (obsoleto, pegue um Contact com contactAt() ou getContactList() e use getNormal() nele)``. |
+| `object` | [SpatialObject] | `get/set` | Retorna a propriedade `propriedade `outro objeto envolvido na colisão``. |
+| `physicsComponent` | [PhysicsComponent] | `get/set` | Retorna a propriedade `física do outro objeto envolvido na colisão`. |
+
+## Métodos (3)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| contactCount() | [int] | Retorna a propriedade `propriedade `número de pontos de contato na colisão``. |
+| contactAt([int]) | [Contact] | Retorna a propriedade `propriedade `contato no índice especificado``. |
+| getContactList() | [List]&[lt];[Contact]&[gt]; | Retorna a propriedade `lista de pontos de contato na colisão`. |

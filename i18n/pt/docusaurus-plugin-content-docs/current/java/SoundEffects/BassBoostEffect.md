@@ -1,0 +1,36 @@
+{@import ../../links.md}
+
+# BassBoostEffect
+
+Referência completa da API de `BassBoostEffect`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** SoundEffects
+
+**Componente:** não
+
+---
+
+```java
+public class BassBoostEffect extends AudioEffect
+```
+
+## Construtores (2)
+
+| Signature | Description |
+| --- | --- |
+| BassBoostEffect([BassBoost]) | Executa `BassBoostEffect` e retorna quando a chamada do motor termina. |
+| BassBoostEffect() | Executa `BassBoostEffect` e retorna quando a chamada do motor termina. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `effect` | [BassBoost] | Representa o valor de `effect` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Atributos Virtuais (1)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `strength` | [float] | `get/set` | Atributo virtual exposto por `getStrength`. Acesse como um campo para ler ou escrever o valor subjacente. |

@@ -1,0 +1,23 @@
+{@import ../../links.md}
+
+# PopupDialogListener
+
+Complete API reference for `PopupDialogListener`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Input
+
+**Component:** no
+
+---
+
+```java
+public interface PopupDialogListener
+```
+
+## Methods (1)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| onClicked() | [void] | Executes `onClicked` and returns after the underlying engine call finishes. |

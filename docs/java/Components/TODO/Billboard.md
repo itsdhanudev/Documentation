@@ -1,0 +1,37 @@
+{@import ../../../links.md}
+
+# Billboard
+
+Complete API reference for `Billboard`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** TODO
+
+**Component:** yes
+
+---
+
+```java
+public class Billboard extends Component
+```
+
+## Constructors (3)
+
+| Signature | Description |
+| --- | --- |
+| Billboard([Billboard]) | Executes `Billboard` and returns after the underlying engine call finishes. |
+| Billboard([Engine]) | Executes `Billboard` and returns after the underlying engine call finishes. |
+| Billboard() | Executes `Billboard` and returns after the underlying engine call finishes. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [Billboard] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
+
+## Virtual Attributes (1)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `zAlign` | [boolean] | `get/set` | Virtual attribute exposed by `iszAlign`. Access it like a field to read or write the underlying value. |

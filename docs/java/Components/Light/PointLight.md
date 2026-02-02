@@ -1,0 +1,44 @@
+{@import ../../../links.md}
+
+# PointLight
+
+Complete API reference for `PointLight`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Light
+
+**Component:** yes
+
+---
+
+```java
+public class PointLight extends Component
+```
+
+## Constructors (3)
+
+| Signature | Description |
+| --- | --- |
+| PointLight([PointLight]) | Executes `PointLight` and returns after the underlying engine call finishes. |
+| PointLight([Engine]) | Executes `PointLight` and returns after the underlying engine call finishes. |
+| PointLight() | Executes `PointLight` and returns after the underlying engine call finishes. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [PointLight] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
+
+## Virtual Attributes (8)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `allowShadow` | [boolean] | `get/set` | Virtual attribute exposed by `isAllowShadow`. Access it like a field to read or write the underlying value. |
+| `color` | [Color] | `get/set` | Virtual attribute exposed by `getColor`. Access it like a field to read or write the underlying value. |
+| `falloffRadius` | [float] | `get/set` | Virtual attribute exposed by `getFalloffRadius`. Access it like a field to read or write the underlying value. |
+| `lumens` | [float] | `get/set` | Virtual attribute exposed by `getLumens`. Access it like a field to read or write the underlying value. |
+| `shadowBias` | [float] | `get/set` | Virtual attribute exposed by `getShadowBias`. Access it like a field to read or write the underlying value. |
+| `shadowFarDistance` | [float] | `get/set` | Virtual attribute exposed by `getShadowFarDistance`. Access it like a field to read or write the underlying value. |
+| `shadowNormalBias` | [float] | `get/set` | Virtual attribute exposed by `getShadowNormalBias`. Access it like a field to read or write the underlying value. |
+| `shadowResolutionID` | [int] | `get/set` | Virtual attribute exposed by `getShadowResolutionID`. Access it like a field to read or write the underlying value. |

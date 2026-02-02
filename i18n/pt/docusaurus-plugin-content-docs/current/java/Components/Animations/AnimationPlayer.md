@@ -1,0 +1,46 @@
+{@import ../../../links.md}
+
+# AnimationPlayer
+
+Referência completa da API de `AnimationPlayer`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Animations
+
+**Componente:** sim
+
+---
+
+```java
+public class AnimationPlayer extends Component
+```
+
+## Construtores (2)
+
+| Signature | Description |
+| --- | --- |
+| AnimationPlayer([AnimationPlayer]) | Executa `AnimationPlayer` e retorna quando a chamada do motor termina. |
+| AnimationPlayer() | Cria uma nova instância de AnimationPlayer. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `component` | [AnimationPlayer] | Representa o valor de `component` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Métodos (11)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| getAnimation([String]) | [Animation] | Retorna a propriedade `animação com o nome especificado`. |
+| getAnimation([int]) | [Animation] | Retorna a propriedade `animação do índice especificado`. |
+| setAnimation([int], [Animation]) | [void] | Define a propriedade `animação no índice especificado para a animação fornecida`. |
+| getAnimationList() | [List]&[lt];[Animation]&[gt]; | Retorna uma lista com todas as animações do AnimationPlayer. |
+| addAnimation([Animation]) | [void] | Adiciona a Animação especificada no AnimationPlayer. |
+| addTransition([Animation], [float]) | [AnimationTransition] | Adiciona uma transição de animação entre a animação atual e a especificada (to) com um atraso (delay). |
+| addTransition([Animation], [float], [Curve]) | [AnimationTransition] | Adiciona uma transição de animação entre a animação atual e a especificada (to) com um atraso (delay) e uma curva de interpolação (curve). |
+| addTransition([Animation], [Animation], [float]) | [AnimationTransition] | Adiciona uma transição de animação entre duas animações (from e to) com um atraso (delay) especificado. |
+| addTransition([Animation], [Animation], [float], [Curve]) | [AnimationTransition] | Adiciona uma transição de animação entre duas animações (from e to) com um atraso (delay) e uma curva de interpolação (curve) especificados. |
+| componentClassMatch([Component], [Component]) | [boolean] | Executa `componentClassMatch` e retorna quando a chamada do motor termina. |
+| getEngineComponent() | [Component] | Executa `getEngineComponent` e retorna quando a chamada do motor termina. |

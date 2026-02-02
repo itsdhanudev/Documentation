@@ -1,0 +1,24 @@
+{@import ../../links.md}
+
+# AOnKeyListener
+
+Complete API reference for `AOnKeyListener`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Android Views
+
+**Component:** no
+
+---
+
+```java
+public class AOnKeyListener
+```
+
+## Methods (2)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| onKey([View], [int], [KeyEvent]) | [boolean] | Performs the onKey operation using the provided parameters (v, keyCode, event). |
+| onKeyEvent([View], [int], [KeyEvent]) | [boolean] | Executes `onKeyEvent` and returns after the underlying engine call finishes. |

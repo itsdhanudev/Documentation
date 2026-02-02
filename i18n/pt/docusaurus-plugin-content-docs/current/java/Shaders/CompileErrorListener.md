@@ -1,0 +1,24 @@
+{@import ../../links.md}
+
+# CompileErrorListener
+
+Referência completa da API de `CompileErrorListener`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Shaders
+
+**Componente:** não
+
+---
+
+```java
+public interface CompileErrorListener
+```
+
+## Métodos (2)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| @MethodArgs([{"message"}]) | [void] | Executa a operação @MethodArgs. |
+| onError([String]) | [void] | Executa `onError` e retorna quando a chamada do motor termina. |

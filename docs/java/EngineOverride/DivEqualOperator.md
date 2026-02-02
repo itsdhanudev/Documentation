@@ -1,0 +1,24 @@
+{@import ../../links.md}
+
+# DivEqualOperator
+
+Complete API reference for `DivEqualOperator`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** EngineOverride
+
+**Component:** no
+
+---
+
+```java
+public interface DivEqualOperator
+```
+
+## Methods (2)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| @MethodArgs([{"otherObject"}]) | [void] | Divides the current value by the given object and assigns the result. |
+| divEqual([Object]) | [void] | Executes `divEqual` and returns after the underlying engine call finishes. |

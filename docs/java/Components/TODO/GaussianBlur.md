@@ -1,0 +1,39 @@
+{@import ../../../links.md}
+
+# GaussianBlur
+
+Complete API reference for `GaussianBlur`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** TODO
+
+**Component:** yes
+
+---
+
+```java
+public class GaussianBlur extends Component
+```
+
+## Constructors (3)
+
+| Signature | Description |
+| --- | --- |
+| GaussianBlur([GaussianBlur]) | Executes `GaussianBlur` and returns after the underlying engine call finishes. |
+| GaussianBlur([Engine]) | Executes `GaussianBlur` and returns after the underlying engine call finishes. |
+| GaussianBlur() | Executes `GaussianBlur` and returns after the underlying engine call finishes. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [GaussianBlur] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
+
+## Virtual Attributes (3)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `blurRadius` | [float] | `get/set` | Virtual attribute exposed by `getBlurRadius`. Access it like a field to read or write the underlying value. |
+| `intensity` | [float] | `get/set` | Virtual attribute exposed by `getIntensity`. Access it like a field to read or write the underlying value. |
+| `quality` | [Quality] | `get/set` | Virtual attribute exposed by `getQuality`. Access it like a field to read or write the underlying value. |

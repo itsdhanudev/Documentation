@@ -1,0 +1,27 @@
+{@import ../../links.md}
+
+# Screen
+
+Referência completa da API de `Screen`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Platform
+
+**Componente:** não
+
+---
+
+```java
+public class Screen
+```
+
+## Métodos Estáticos (5)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| getWidth() | [int] | Retorna a propriedade `largura da tela em pixels`. |
+| getHeight() | [int] | Retorna a propriedade `altura da tela em pixels`. |
+| width() | [int] | Retorna a propriedade `largura da tela em pixels`. |
+| height() | [int] | Retorna a propriedade `altura da tela em pixels`. |
+| ratio() | [float] | Retorna a propriedade `propriedade `aspecto da tela (largura dividida pela altura)``. |

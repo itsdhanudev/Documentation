@@ -1,0 +1,37 @@
+{@import ../../links.md}
+
+# VertexFile
+
+Complete API reference for `VertexFile`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Files
+
+**Component:** no
+
+---
+
+```java
+public class VertexFile
+```
+
+## Constructors (2)
+
+| Signature | Description |
+| --- | --- |
+| VertexFile([String]) | Executes `VertexFile` and returns after the underlying engine call finishes. |
+| VertexFile() | Executes `VertexFile` and returns after the underlying engine call finishes. |
+
+## Methods (1)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| toString() | [String] | Returns the string representation. |
+
+## Static Methods (2)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| genericInterface() | [GenericClassInspectorEntry] | Executes `genericInterface` and returns after the underlying engine call finishes. |
+| inspectorController() | [ClassInspectorEntry] | Executes `inspectorController` and returns after the underlying engine call finishes. |

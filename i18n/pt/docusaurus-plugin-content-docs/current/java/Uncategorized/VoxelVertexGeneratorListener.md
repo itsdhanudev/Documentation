@@ -1,0 +1,23 @@
+{@import ../../links.md}
+
+# VoxelVertexGeneratorListener
+
+Referência completa da API de `VoxelVertexGeneratorListener`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Uncategorized
+
+**Componente:** não
+
+---
+
+```java
+public interface VoxelVertexGeneratorListener
+```
+
+## Métodos (1)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| drawFace([int], [int], [int]) | [boolean] | Executa `drawFace` e retorna quando a chamada do motor termina. |

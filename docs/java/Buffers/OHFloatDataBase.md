@@ -1,0 +1,48 @@
+{@import ../../links.md}
+
+# OHFloatDataBase
+
+Complete API reference for `OHFloatDataBase`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Buffers
+
+**Component:** no
+
+---
+
+```java
+public class OHFloatDataBase
+```
+
+## Constructors (3)
+
+| Signature | Description |
+| --- | --- |
+| OHFloatDataBase([OHFloatDataBase]) | Executes `OHFloatDataBase` and returns after the underlying engine call finishes. |
+| OHFloatDataBase([Engine]) | Executes `OHFloatDataBase` and returns after the underlying engine call finishes. |
+| OHFloatDataBase([int]) | Creates a new instance of OHFloatDataBase. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `buffer` | [OHFloatDataBase] | Represents the `buffer` value stored on this instance. Read or assign to update the property. |
+
+## Methods (12)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| incrementSize([int]) | [void] | Performs the incrementSize operation using the provided parameters (size). |
+| decrementSize([int]) | [void] | Performs the decrementSize operation using the provided parameters (size). |
+| resize([int]) | [void] | Performs the resize operation using the provided parameters (newCapacity). |
+| resize([int], [boolean]) | [void] | Performs the resize operation using the provided parameters (newCapacity, copyData). |
+| position([int]) | [void] | Performs the position operation using the provided parameters (position). |
+| put([float][]) | [void] | Sets or updates the the value. |
+| put([float]) | [void] | Sets or updates the the value. |
+| set([int], [float]) | [void] | Sets or updates the the value. |
+| get([int]) | [float] | Returns the current value. |
+| getBytes() | [float][] | Returns the current bytes. |
+| size() | [int] | Executes `size` and returns after the underlying engine call finishes. |
+| capacity() | [int] | Executes `capacity` and returns after the underlying engine call finishes. |

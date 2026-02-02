@@ -1,0 +1,50 @@
+{@import ../../../links.md}
+
+# UIAnchor
+
+Referência completa da API de `UIAnchor`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** UI
+
+**Componente:** sim
+
+---
+
+```java
+public class UIAnchor extends Component
+```
+
+## Construtores (3)
+
+| Signature | Description |
+| --- | --- |
+| UIAnchor([UIAnchor]) | Executa `UIAnchor` e retorna quando a chamada do motor termina. |
+| UIAnchor([Engine]) | Executa `UIAnchor` e retorna quando a chamada do motor termina. |
+| UIAnchor() | Cria uma nova instância de UIAnchor. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [UIAnchor] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Atributos Virtuais (14)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `bottomAnchor` | [VerticalConstraintTarget] | `get/set` | Atributo virtual exposto por `getBottomAnchor`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `bottomOffset` | [int] | `get/set` | Atributo virtual exposto por `getBottomOffset`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `bottomTarget` | [SpatialObject] | `get/set` | Atributo virtual exposto por `getBottomTarget`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `expandH` | [boolean] | `get/set` | Atributo virtual exposto por `isExpandH`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `expandW` | [boolean] | `get/set` | Atributo virtual exposto por `isExpandW`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `leftAnchor` | [HorizontalConstraintTarget] | `get/set` | Atributo virtual exposto por `getLeftAnchor`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `leftOffset` | [int] | `get/set` | Atributo virtual exposto por `getLeftOffset`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `leftTarget` | [SpatialObject] | `get/set` | Atributo virtual exposto por `getLeftTarget`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `rightAnchor` | [HorizontalConstraintTarget] | `get/set` | Atributo virtual exposto por `getRightAnchor`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `rightOffset` | [int] | `get/set` | Atributo virtual exposto por `getRightOffset`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `rightTarget` | [SpatialObject] | `get/set` | Atributo virtual exposto por `getRightTarget`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `topAnchor` | [VerticalConstraintTarget] | `get/set` | Atributo virtual exposto por `getTopAnchor`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `topOffset` | [int] | `get/set` | Atributo virtual exposto por `getTopOffset`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `topTarget` | [SpatialObject] | `get/set` | Atributo virtual exposto por `getTopTarget`. Acesse como um campo para ler ou escrever o valor subjacente. |

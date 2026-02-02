@@ -1,0 +1,27 @@
+{@import ../../links.md}
+
+# FileLoader
+
+Referência completa da API de `FileLoader`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Files
+
+**Componente:** não
+
+---
+
+```java
+public class FileLoader
+```
+
+## Métodos Estáticos (5)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| exportTextToFile([String], [String]) | [void] | Executa `exportTextToFile` e retorna quando a chamada do motor termina. |
+| exportTextToFile([String], [File]) | [void] | Executa `exportTextToFile` e retorna quando a chamada do motor termina. |
+| loadTextFromFile([InputStream]) | [String] | Executa `loadTextFromFile` e retorna quando a chamada do motor termina. |
+| loadTextFromFile([File]) | [String] | Executa `loadTextFromFile` e retorna quando a chamada do motor termina. |
+| loadTextFromFile([ProjectFile]) | [String] | Carrega text from file no objeto. |

@@ -1,0 +1,42 @@
+{@import ../../links.md}
+
+# AtomicBoolean
+
+Complete API reference for `AtomicBoolean`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Atomic
+
+**Component:** no
+
+---
+
+```java
+public class AtomicBoolean
+```
+
+## Constructors (3)
+
+| Signature | Description |
+| --- | --- |
+| AtomicBoolean([AtomicBoolean]) | Executes `AtomicBoolean` and returns after the underlying engine call finishes. |
+| AtomicBoolean() | Executes `AtomicBoolean` and returns after the underlying engine call finishes. |
+| AtomicBoolean([boolean]) | Creates a new instance of AtomicBoolean. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [AtomicBoolean] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
+
+## Methods (6)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| get() | [boolean] | Returns the current value. |
+| set([boolean]) | [void] | Sets or updates the the value. |
+| lazySet([boolean]) | [void] | Performs the lazySet operation using the provided parameters (value). |
+| getAndSet([boolean]) | [boolean] | Returns the current and set. |
+| compareAndSet([boolean], [boolean]) | [boolean] | Compares this instance with another for equality/order. |
+| weakCompareAndSet([boolean], [boolean]) | [boolean] | Performs the weakCompareAndSet operation using the provided parameters (expect, update). |

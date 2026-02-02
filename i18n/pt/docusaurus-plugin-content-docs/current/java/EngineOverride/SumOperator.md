@@ -1,0 +1,24 @@
+{@import ../../links.md}
+
+# SumOperator
+
+Referência completa da API de `SumOperator`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** EngineOverride
+
+**Componente:** não
+
+---
+
+```java
+public interface SumOperator
+```
+
+## Métodos (2)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| @MethodArgs([{"otherObject"}]) | [void] | Adiciona o objeto fornecido ao valor atual. |
+| sum([Object]) | [T] | Executa `sum` e retorna quando a chamada do motor termina. |

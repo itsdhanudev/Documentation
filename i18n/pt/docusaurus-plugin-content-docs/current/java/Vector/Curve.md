@@ -1,0 +1,54 @@
+{@import ../../links.md}
+
+# Curve
+
+Referência completa da API de `Curve`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Vector
+
+**Componente:** não
+
+---
+
+```java
+public class Curve
+```
+
+## Construtores (2)
+
+| Signature | Description |
+| --- | --- |
+| Curve([Curve]) | Executa `Curve` e retorna quando a chamada do motor termina. |
+| Curve() | Executa `Curve` e retorna quando a chamada do motor termina. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [Curve] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Métodos (12)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| addPoint([float], [float]) | [void] | Adiciona point à coleção. |
+| setPoint([int], [float], [float]) | [void] | Define ou atualiza a propriedade `propriedade `point``. |
+| pointAt([int]) | [Vector2] | Executa a operação pointAt usando os parâmetros informados (idx). |
+| pointAt([int], [Vector2]) | [Vector2] | Executa a operação pointAt usando os parâmetros informados (idx, out). |
+| clear() | [void] | Limpa ou redefine o estado do objeto. |
+| pointsCount() | [int] | Executa a operação pointsCount. |
+| evaluate([float]) | [float] | Executa a operação evaluate usando os parâmetros informados (x). |
+| apply() | [void] | Executa a operação apply. |
+| getWrapMode() | [WrapMode] | Retorna a propriedade `propriedade `wrap mode atual``. |
+| setWrapMode([WrapMode]) | [void] | Define ou atualiza a propriedade `propriedade `wrap mode``. |
+| toJson() | [String] | Executa a operação toJson. |
+| fromJson([String]) | [Curve] | Executa a operação fromJson usando os parâmetros informados (json). |
+
+## Métodos Estáticos (2)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| genericInterface() | [GenericClassInspectorEntry] | Executa `genericInterface` e retorna quando a chamada do motor termina. |
+| inspectorController() | [ClassInspectorEntry] | Executa `inspectorController` e retorna quando a chamada do motor termina. |

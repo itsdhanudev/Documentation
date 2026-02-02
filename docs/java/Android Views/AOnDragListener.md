@@ -1,0 +1,24 @@
+{@import ../../links.md}
+
+# AOnDragListener
+
+Complete API reference for `AOnDragListener`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Android Views
+
+**Component:** no
+
+---
+
+```java
+public class AOnDragListener
+```
+
+## Methods (2)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| onDrag([View], [DragEvent]) | [boolean] | Performs the onDrag operation using the provided parameters (v, event). |
+| onDragEvent([View], [DragEvent]) | [boolean] | Executes `onDragEvent` and returns after the underlying engine call finishes. |

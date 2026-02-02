@@ -1,0 +1,23 @@
+{@import ../../links.md}
+
+# GalleryPicker
+
+Referência completa da API de `GalleryPicker`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Uncategorized
+
+**Componente:** não
+
+---
+
+```java
+public class GalleryPicker
+```
+
+## Métodos Estáticos (1)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| open([Listener]) | [void] | Executa a operação open usando os parâmetros informados (listener). |

@@ -1,0 +1,23 @@
+{@import ../../links.md}
+
+# Order
+
+Referência completa da API de `Order`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Uncategorized
+
+**Componente:** não
+
+---
+
+```java
+public interface Order
+```
+
+## Métodos (1)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| idx() | [int][] | Executa `idx` e retorna quando a chamada do motor termina. |

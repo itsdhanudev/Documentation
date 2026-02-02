@@ -1,0 +1,47 @@
+{@import ../../links.md}
+
+# Ray
+
+Referência completa da API de `Ray`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Laser
+
+**Componente:** não
+
+---
+
+```java
+public class Ray
+```
+
+## Construtores (4)
+
+| Signature | Description |
+| --- | --- |
+| Ray([Ray]) | Executa `Ray` e retorna quando a chamada do motor termina. |
+| Ray() | Executa `Ray` e retorna quando a chamada do motor termina. |
+| Ray([JAVARuntime.RayDirection], [float]) | Cria uma nova instância de Ray. |
+| Ray([Vector3], [Vector3], [float]) | Cria uma nova instância de Ray. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `ray` | [Ray] | Representa o valor de `ray` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Atributos Virtuais (1)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `physicsLayer` | [PhysicsLayer] | `get/set` | Retorna a propriedade `propriedade `PhysicsLayer deste Ray``. |
+
+## Métodos (4)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| getRayDirection() | [JAVARuntime].[RayDirection] | Retorna a propriedade `RayDirection deste Ray`. |
+| setRayDirection([JAVARuntime.RayDirection]) | [void] | Define a propriedade `RayDirection deste Ray`. |
+| getDistance() | [float] | Retorna a propriedade `distância deste Ray`. |
+| setDistance([float]) | [void] | Define a propriedade `distância deste Ray`. |

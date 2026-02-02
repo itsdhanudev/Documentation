@@ -1,0 +1,40 @@
+{@import ../../../links.md}
+
+# Vignette
+
+Complete API reference for `Vignette`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Post processing
+
+**Component:** yes
+
+---
+
+```java
+public class Vignette extends Component
+```
+
+## Constructors (3)
+
+| Signature | Description |
+| --- | --- |
+| Vignette([Vignette]) | Executes `Vignette` and returns after the underlying engine call finishes. |
+| Vignette([Engine]) | Executes `Vignette` and returns after the underlying engine call finishes. |
+| Vignette() | Executes `Vignette` and returns after the underlying engine call finishes. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [Vignette] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
+
+## Virtual Attributes (4)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `colorINT` | [Color] | `get/set` | Virtual attribute exposed by `getColorINT`. Access it like a field to read or write the underlying value. |
+| `feather` | [float] | `get/set` | Virtual attribute exposed by `getFeather`. Access it like a field to read or write the underlying value. |
+| `midPoint` | [float] | `get/set` | Virtual attribute exposed by `getMidPoint`. Access it like a field to read or write the underlying value. |
+| `roundness` | [float] | `get/set` | Virtual attribute exposed by `getRoundness`. Access it like a field to read or write the underlying value. |

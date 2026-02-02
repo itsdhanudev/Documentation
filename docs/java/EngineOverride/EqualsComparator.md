@@ -1,0 +1,28 @@
+{@import ../../links.md}
+
+# EqualsComparator
+
+Complete API reference for `EqualsComparator`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** EngineOverride
+
+**Component:** no
+
+---
+
+```java
+public interface EqualsComparator
+```
+
+## Methods (6)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| @MethodArgs([{"otherObject"}]) | [void] | Checks if the current object is equal to the given object. |
+| equals([Object]) | [boolean] | Executes `equals` and returns after the underlying engine call finishes. |
+| @MethodArgs([{"otherObject"}]) | [void] | Checks if the current object is the same instance as the given object. |
+| pointerEquals([Object]) | [boolean] | Executes `pointerEquals` and returns after the underlying engine call finishes. |
+| @MethodArgs([{"otherObject"}]) | [void] | Checks if the current object is not equal to the given object. |
+| notEquals([Object]) | [boolean] | Executes `notEquals` and returns after the underlying engine call finishes. |

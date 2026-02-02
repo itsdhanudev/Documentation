@@ -1,0 +1,31 @@
+{@import ../../../links.md}
+
+# UIRectangularMask
+
+Complete API reference for `UIRectangularMask`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** UI
+
+**Component:** yes
+
+---
+
+```java
+public class UIRectangularMask extends Component
+```
+
+## Constructors (3)
+
+| Signature | Description |
+| --- | --- |
+| UIRectangularMask([UIRectangularMask]) | Executes `UIRectangularMask` and returns after the underlying engine call finishes. |
+| UIRectangularMask([Engine]) | Executes `UIRectangularMask` and returns after the underlying engine call finishes. |
+| UIRectangularMask() | Creates a new instance of UIRectangularMask. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [UIRectangularMask] | Represents the `instance` value stored on this instance. Read or assign to update the property. |

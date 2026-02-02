@@ -1,0 +1,43 @@
+{@import ../../links.md}
+
+# Matcap
+
+Referência completa da API de `Matcap`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Uncategorized
+
+**Componente:** não
+
+---
+
+```java
+public class Matcap
+```
+
+## Construtores (3)
+
+| Signature | Description |
+| --- | --- |
+| Matcap([Engine]) | Cria uma nova instância de Matcap. |
+| Matcap([String]) | Cria uma nova instância de Matcap. |
+| Matcap() | Cria uma nova instância de Matcap. |
+
+## Métodos (5)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| getFile() | [String] | Retorna a propriedade `propriedade `file atual``. |
+| getTextureFile() | [String] | Retorna a propriedade `propriedade `texture file atual``. |
+| setTextureFile([String]) | [void] | Define ou atualiza a propriedade `propriedade `texture file``. |
+| toJson() | [String] | Executa a operação toJson. |
+| getTexture() | [Texture] | Retorna a propriedade `propriedade `texture atual``. |
+
+## Métodos Estáticos (3)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| genericInterface() | [GenericClassInspectorEntry] | Executa `genericInterface` e retorna quando a chamada do motor termina. |
+| inspectorController() | [ClassInspectorEntry] | Executa `inspectorController` e retorna quando a chamada do motor termina. |
+| fromJson([String]) | [Matcap] | Executa a operação fromJson usando os parâmetros informados (json). |

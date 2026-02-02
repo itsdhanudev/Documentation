@@ -1,0 +1,46 @@
+{@import ../../../links.md}
+
+# UIInputText
+
+Complete API reference for `UIInputText`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** UI
+
+**Component:** yes
+
+---
+
+```java
+public class UIInputText extends Component
+```
+
+## Constructors (3)
+
+| Signature | Description |
+| --- | --- |
+| UIInputText([UIInputText]) | Executes `UIInputText` and returns after the underlying engine call finishes. |
+| UIInputText([Engine]) | Executes `UIInputText` and returns after the underlying engine call finishes. |
+| UIInputText() | Executes `UIInputText` and returns after the underlying engine call finishes. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [UIInputText] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
+
+## Virtual Attributes (4)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `color` | [Color] | `get/set` | Virtual attribute exposed by `getColor`. Access it like a field to read or write the underlying value. |
+| `editing` | [boolean] | `set` | Virtual attribute exposed by `setEditing`. Access it like a field to read or write the underlying value. |
+| `text` | [String] | `get/set` | Virtual attribute exposed by `getText`. Access it like a field to read or write the underlying value. |
+| `textSize` | [float] | `get/set` | Virtual attribute exposed by `getTextSize`. Access it like a field to read or write the underlying value. |
+
+## Methods (1)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| isEditing() | [boolean] | Executes `isEditing` and returns after the underlying engine call finishes. |

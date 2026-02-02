@@ -1,0 +1,34 @@
+{@import ../../links.md}
+
+# ServerSocket
+
+Referência completa da API de `ServerSocket`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Uncategorized
+
+**Componente:** não
+
+---
+
+```java
+public class ServerSocket extends ServerSocket
+```
+
+## Construtores (4)
+
+| Signature | Description |
+| --- | --- |
+| ServerSocket() | Executa `ServerSocket` e retorna quando a chamada do motor termina. |
+| ServerSocket([int]) | Executa `ServerSocket` e retorna quando a chamada do motor termina. |
+| ServerSocket([int], [int]) | Executa `ServerSocket` e retorna quando a chamada do motor termina. |
+| ServerSocket([int], [int], [InetAddress]) | Executa `ServerSocket` e retorna quando a chamada do motor termina. |
+
+## Métodos (3)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| bind([SocketAddress]) | [void] | Executa `bind` e retorna quando a chamada do motor termina. |
+| bind([SocketAddress], [int]) | [void] | Executa `bind` e retorna quando a chamada do motor termina. |
+| accept() | [Socket] | Executa `accept` e retorna quando a chamada do motor termina. |

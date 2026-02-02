@@ -1,0 +1,42 @@
+{@import ../../links.md}
+
+# TagEnemyFieldOfView
+
+Complete API reference for `TagEnemyFieldOfView`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Prototyping
+
+**Component:** no
+
+---
+
+```java
+public class TagEnemyFieldOfView
+```
+
+## Constructors (3)
+
+| Signature | Description |
+| --- | --- |
+| TagEnemyFieldOfView([TagEnemyFieldOfView]) | Executes `TagEnemyFieldOfView` and returns after the underlying engine call finishes. |
+| TagEnemyFieldOfView([Engine]) | Executes `TagEnemyFieldOfView` and returns after the underlying engine call finishes. |
+| TagEnemyFieldOfView() | Creates a new instance of TagEnemyFieldOfView. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [TagEnemyFieldOfView] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
+
+## Virtual Attributes (6)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `active` | [boolean] | `get/set` | Virtual attribute exposed by `isActive`. Access it like a field to read or write the underlying value. |
+| `fov` | [float] | `get/set` | Virtual attribute exposed by `getFov`. Access it like a field to read or write the underlying value. |
+| `maxDistance` | [float] | `get/set` | Virtual attribute exposed by `getMaxDistance`. Access it like a field to read or write the underlying value. |
+| `minDistance` | [float] | `get/set` | Virtual attribute exposed by `getMinDistance`. Access it like a field to read or write the underlying value. |
+| `targetTag` | [String] | `get` | Virtual attribute exposed by `getTargetTag`. Access it like a field to read or write the underlying value. |
+| `targetsTag` | [String] | `set` | Virtual attribute exposed by `setTargetsTag`. Access it like a field to read or write the underlying value. |

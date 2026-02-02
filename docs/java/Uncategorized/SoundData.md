@@ -1,0 +1,32 @@
+{@import ../../links.md}
+
+# SoundData
+
+Complete API reference for `SoundData`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Uncategorized
+
+**Component:** no
+
+---
+
+```java
+public class SoundData
+```
+
+## Constructors (3)
+
+| Signature | Description |
+| --- | --- |
+| SoundData() | Creates a new instance of SoundData. |
+| SoundData([NativeFloatBuffer], [int]) | Creates a new instance of SoundData. |
+| SoundData([float][], [int]) | Creates a new instance of SoundData. |
+
+## Virtual Attributes (2)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `dataBuffer` | [NativeFloatBuffer] | `get/set` | Virtual attribute exposed by `getDataBuffer`. Access it like a field to read or write the underlying value. |
+| `sampleRate` | [int] | `get/set` | Virtual attribute exposed by `getSampleRate`. Access it like a field to read or write the underlying value. |

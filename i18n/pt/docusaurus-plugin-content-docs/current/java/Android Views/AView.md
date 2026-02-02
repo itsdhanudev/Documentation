@@ -1,0 +1,38 @@
+{@import ../../links.md}
+
+# AView
+
+Referência completa da API de `AView`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Android Views
+
+**Componente:** não
+
+---
+
+```java
+public class AView extends View
+```
+
+## Construtores (1)
+
+| Signature | Description |
+| --- | --- |
+| AView() | Cria uma nova instância de AView. |
+
+## Métodos (10)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| setOnGenericMotionListener([OnGenericMotionListener]) | [void] | Define ou atualiza a propriedade `propriedade `on generic motion listener``. |
+| setOnLongClickListener([OnLongClickListener]) | [void] | Define ou atualiza a propriedade `propriedade `on long click listener``. |
+| setOnClickListener([OnClickListener]) | [void] | Define ou atualiza a propriedade `propriedade `on click listener``. |
+| setOnTouchListener([OnTouchListener]) | [void] | Define ou atualiza a propriedade `propriedade `on touch listener``. |
+| setOnHoverListener([OnHoverListener]) | [void] | Define ou atualiza a propriedade `propriedade `on hover listener``. |
+| setOnDragListener([OnDragListener]) | [void] | Define ou atualiza a propriedade `propriedade `on drag listener``. |
+| setOnKeyListener([OnKeyListener]) | [void] | Define ou atualiza a propriedade `propriedade `on key listener``. |
+| setOnScrollChangeListener([OnScrollChangeListener]) | [void] | Define ou atualiza a propriedade `propriedade `on scroll change listener``. |
+| setOnFocusChangeListener([OnFocusChangeListener]) | [void] | Define ou atualiza a propriedade `propriedade `on focus change listener``. |
+| setOnCreateContextMenuListener([OnCreateContextMenuListener]) | [void] | Define ou atualiza a propriedade `propriedade `on create context menu listener``. |

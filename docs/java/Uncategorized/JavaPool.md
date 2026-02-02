@@ -1,0 +1,27 @@
+{@import ../../links.md}
+
+# JavaPool
+
+Complete API reference for `JavaPool`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Uncategorized
+
+**Component:** no
+
+---
+
+```java
+public class JavaPool
+```
+
+## Static Methods (5)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| acquire([Class]) | [T] | Executes `acquire` and returns after the underlying engine call finishes. |
+| release([Object]) | [void] | Executes `release` and returns after the underlying engine call finishes. |
+| acquireFloatArray([int]) | [float][] | Executes `acquireFloatArray` and returns after the underlying engine call finishes. |
+| acquireFloatArray([int], [boolean]) | [float][] | Executes `acquireFloatArray` and returns after the underlying engine call finishes. |
+| releaseFloatArray([float][]) | [void] | Executes `releaseFloatArray` and returns after the underlying engine call finishes. |

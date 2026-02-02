@@ -1,0 +1,58 @@
+{@import ../../links.md}
+
+# ShortVector3Buffer
+
+Referência completa da API de `ShortVector3Buffer`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Vector
+
+**Componente:** não
+
+---
+
+```java
+public class ShortVector3Buffer
+```
+
+## Construtores (4)
+
+| Signature | Description |
+| --- | --- |
+| ShortVector3Buffer([ShortVector3Buffer]) | Executa `ShortVector3Buffer` e retorna quando a chamada do motor termina. |
+| ShortVector3Buffer([Engine]) | Executa `ShortVector3Buffer` e retorna quando a chamada do motor termina. |
+| ShortVector3Buffer([int]) | Cria uma nova instância de ShortVector3Buffer. |
+| ShortVector3Buffer([NativeShortBuffer]) | Cria uma nova instância de ShortVector3Buffer. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `buffer` | [ShortVector3Buffer] | Representa o valor de `buffer` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Atributos Virtuais (1)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `vboEnabled` | [boolean] | `get/set` | Atributo virtual exposto por `isVboEnabled`. Acesse como um campo para ler ou escrever o valor subjacente. |
+
+## Métodos (15)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| get([int]) | [Vector3] | Retorna a propriedade `propriedade `valor value atual``. |
+| getX([int]) | [float] | Retorna a propriedade `propriedade `x atual``. |
+| getY([int]) | [float] | Retorna a propriedade `propriedade `y atual``. |
+| getZ([int]) | [float] | Retorna a propriedade `propriedade `z atual``. |
+| put([Vector3]) | [void] | Define ou atualiza the value. |
+| put([float], [float], [float]) | [void] | Define ou atualiza the value. |
+| set([int], [Vector3]) | [void] | Define ou atualiza the value. |
+| set([int], [float], [float], [float]) | [void] | Define ou atualiza the value. |
+| capacity() | [int] | Executa a operação capacity. |
+| array() | [Vector3][] | Executa a operação array. |
+| getPosition() | [int] | Retorna a propriedade `propriedade `position atual``. |
+| position([int]) | [int] | Executa a operação position usando os parâmetros informados (idx). |
+| setPosition([int]) | [void] | Define ou atualiza a propriedade `propriedade `position``. |
+| copy() | [ShortVector3Buffer] | Retorna uma cópia da instância de ShortVector3Buffer. |
+| getFloatBuffer() | [NativeShortBuffer] | Retorna a propriedade `propriedade `float buffer atual``. |

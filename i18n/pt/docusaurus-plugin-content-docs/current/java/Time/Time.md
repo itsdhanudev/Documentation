@@ -1,0 +1,36 @@
+{@import ../../links.md}
+
+# Time
+
+Referência completa da API de `Time`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Time
+
+**Componente:** não
+
+---
+
+```java
+public class Time
+```
+
+## Atributos Virtuais (6)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `deltaTime` | [float] | `get` | Retorna a propriedade `propriedade `tempo (em segundos) que passou entre o último frame e o atual``. |
+| `frameTime` | [float] | `get` | Retorna a propriedade `propriedade `tempo (em segundos) que passou entre o último frame e o atual``. |
+| `timeScale` | [float] | `get/set` | Retorna a propriedade `escala de tempo atual`. |
+| `timeSpeed` | [float] | `get/set` | Retorna a propriedade `velocidade atual da escala de tempo`. |
+| `unscaledDeltaTime` | [float] | `get` | Retorna a propriedade `propriedade `tempo (em segundos) que passou entre o último frame e o atual sem escala de tempo (tempo real)``. |
+| `unscaledFrameTime` | [float] | `get` | Retorna a propriedade `propriedade `tempo (em segundos) que passou entre o último frame e o atual sem escala de tempo (tempo real)``. |
+
+## Métodos Estáticos (3)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| deltaTime() | [float] | Retorna a propriedade `propriedade `tempo (em segundos) que passou entre o último frame e o atual``. |
+| frameTime() | [float] | Retorna a propriedade `propriedade `tempo (em segundos) que passou entre o último frame e o atual``. |
+| unscaledDeltaTime() | [float] | Retorna a propriedade `propriedade `tempo (em segundos) que passou entre o último frame e o atual sem escala de tempo (tempo real)``. |

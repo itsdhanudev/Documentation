@@ -1,0 +1,37 @@
+{@import ../../../links.md}
+
+# UIFadeOut
+
+Referência completa da API de `UIFadeOut`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Post processing
+
+**Componente:** sim
+
+---
+
+```java
+public class UIFadeOut extends Component
+```
+
+## Construtores (3)
+
+| Signature | Description |
+| --- | --- |
+| UIFadeOut([UIFadeOut]) | Executa `UIFadeOut` e retorna quando a chamada do motor termina. |
+| UIFadeOut([Engine]) | Executa `UIFadeOut` e retorna quando a chamada do motor termina. |
+| UIFadeOut() | Executa `UIFadeOut` e retorna quando a chamada do motor termina. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [UIFadeOut] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Atributos Virtuais (1)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `opacity` | [float] | `get/set` | Atributo virtual exposto por `getOpacity`. Acesse como um campo para ler ou escrever o valor subjacente. |

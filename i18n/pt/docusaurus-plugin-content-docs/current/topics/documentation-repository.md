@@ -1,21 +1,23 @@
-# Reposit?rio da documenta??o
+# Repositório da documentação
 
-A documenta??o oficial fica no reposit?rio p?blico do GitHub:
+A documentação oficial fica no repositório público do GitHub:
 
 ```
 https://github.com/ITsMagic-Software/Documentation
 ```
 
-## Como adicionar conte?do
+A documentação faz deploy automático via GitHub Actions.
 
-1. **Fa?a um fork do reposit?rio** no GitHub.
+## Como adicionar conteúdo
+
+1. **Faça um fork do repositório** no GitHub.
 2. **Crie ou edite arquivos** em `docs/` (ou `docs/topics/`) usando Markdown.
-3. **Mantenha as tradu??es sincronizadas** atualizando o arquivo correspondente em `i18n/pt/docusaurus-plugin-content-docs/current/`.
-4. **Fa?a commit e abra um Pull Request** para o reposit?rio principal.
+3. **Mantenha as traduções sincronizadas** atualizando o arquivo correspondente em `i18n/pt/docusaurus-plugin-content-docs/current/`.
+4. **Faça commit e abra um Pull Request** para o repositório principal.
 
 ## Dicas
 
 - Mantenha o caminho e o nome do arquivo iguais entre `docs/` e cada idioma em `i18n/`.
-- Use t?tulos claros e se??es curtas para facilitar a leitura.
-- Se voc? adicionar um novo t?pico, crie tamb?m nos outros idiomas para evitar p?ginas faltando.
-- Existe uma valida??o autom?tica que exige que todo arquivo de documenta??o exista em todos os idiomas.
+- Use títulos claros e seções curtas para facilitar a leitura.
+- Se você adicionar um novo tópico, crie também nos outros idiomas para evitar páginas faltando.
+- Existe uma validação automática que exige que todo arquivo de documentação exista em todos os idiomas.

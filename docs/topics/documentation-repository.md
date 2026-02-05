@@ -6,6 +6,8 @@ The official documentation lives in the public GitHub repository:
 https://github.com/ITsMagic-Software/Documentation
 ```
 
+A documentação faz deploy automático via GitHub Actions.
+
 ## How to add content
 
 1. **Fork the repository** on GitHub.

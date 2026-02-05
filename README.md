@@ -33,3 +33,7 @@ npm run build
 - `docs/` — English documentation (source of truth)
 - `i18n/pt/docusaurus-plugin-content-docs/current/` — Portuguese documentation
 - `tools/` — build and deploy scripts
+
+## Deploy
+
+- A documentação faz deploy automático via GitHub Actions.

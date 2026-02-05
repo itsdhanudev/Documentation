@@ -63,6 +63,7 @@ packages/seunomeusuario/seupacote/manifest.json
     "descriptionB64": "U2lzdGVtYSBkZSBzaW11bGHDp8OjbyBkZSBwYW5vIHNpbXBsZXMgcGFyYSBJdHMgTWFnaWMgRW5naW5lLiBwb3NzdWkgc2lzdGVtYSBkZSBjb2xpc29lcyBzaW1wbGVzLHZhcmlhcyBjb25maWd1cmHDp29lcyBlIHVtIHNpc3RlbWEgZGUgZWRpdG9yLHBvc3N1aSBIT1dfVE9fVVNF",
     "tags": "cloth,mesh,physics,malha,pano,fisica",
     "version": 1,
+    "appMajorVersion": 2,
     "repositoryURL": "https://github.com/Vitg1/Mesh-Simulation-System-v1",
     "isTemplate": false,
     "date": "02/02/2026",
@@ -94,6 +95,9 @@ packages/seunomeusuario/seupacote/manifest.json
 
 - **`version`**  
   A versão do seu pacote. Comece em `1` e aumente quando publicar novas versões.
+
+- **`appMajorVersion`**  
+  A versão principal do ITsMagic para a qual o pacote é destinado. Use `1` ou `2`.
 
 - **`repositoryURL`**  
   A URL do repositório público no GitHub contendo os arquivos do pacote.

@@ -1,0 +1,21 @@
+# Documentation Repository
+
+The official documentation lives in the public GitHub repository:
+
+```
+https://github.com/ITsMagic-Software/Documentation
+```
+
+## How to add content
+
+1. **Fork the repository** on GitHub.
+2. **Create or edit files** under `docs/` (or `docs/topics/`) using Markdown.
+3. **Keep translations in sync** by updating the matching file under `i18n/pt/docusaurus-plugin-content-docs/current/`.
+4. **Commit and open a Pull Request** to the main repository.
+
+## Tips
+
+- Keep the file path and filename identical between `docs/` and each language folder in `i18n/`.
+- Use clear titles and short sections to keep pages easy to scan.
+- If you add a new topic, add it in all languages to avoid missing pages.
+- There is an automated validation that requires every documentation file to exist in all languages.

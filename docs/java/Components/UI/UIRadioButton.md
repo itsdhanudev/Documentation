@@ -1,0 +1,43 @@
+{@import ../../../links.md}
+
+# UIRadioButton
+
+Complete API reference for `UIRadioButton`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** UI
+
+**Component:** yes
+
+---
+
+```java
+public class UIRadioButton extends Component
+```
+
+## Constructors (3)
+
+| Signature | Description |
+| --- | --- |
+| UIRadioButton([UIRadioButton]) | Executes `UIRadioButton` and returns after the underlying engine call finishes. |
+| UIRadioButton([Engine]) | Executes `UIRadioButton` and returns after the underlying engine call finishes. |
+| UIRadioButton() | Creates a new instance of UIRadioButton. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [UIRadioButton] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
+
+## Virtual Attributes (8)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `checked` | [boolean] | `get/set` | Virtual attribute exposed by `isChecked`. Access it like a field to read or write the underlying value. |
+| `pressed` | [boolean] | `get` | Virtual attribute exposed by `isPressed`. Access it like a field to read or write the underlying value. |
+| `down` | [boolean] | `get` | Virtual attribute exposed by `isDown`. Access it like a field to read or write the underlying value. |
+| `up` | [boolean] | `get` | Virtual attribute exposed by `isUp`. Access it like a field to read or write the underlying value. |
+| `color` | [Color] | `get/set` | Virtual attribute exposed by `getColor`. Access it like a field to read or write the underlying value. |
+| `checkedTexture` | [Texture] | `get/set` | Virtual attribute exposed by `getCheckedTexture`. Access it like a field to read or write the underlying value. |
+| `uncheckedTexture` | [Texture] | `get/set` | Virtual attribute exposed by `getUncheckedTexture`. Access it like a field to read or write the underlying value. |

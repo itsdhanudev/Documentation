@@ -6,12 +6,23 @@ MeshCurve gera um mesh baked (e opcionalmente um collider) ao longo de um caminh
 
 Existem duas formas rápidas de criar um MeshCurve no editor:
 
-1. **Topbar → Criar objeto → MeshCurve**  
+1. **Topbar -> Criar objeto -> MeshCurve**  
    Cria um MeshCurve com os filhos padrão `Mesh` e `Points`.
 
-2. **Painel Files → Arquivo de objeto → Create curve of**  
+2. **Painel Files -> Arquivo de objeto -> Create curve of**  
    Clique no menu do arquivo de objeto e escolha **Create curve of**.  
    Isso cria um MeshCurve e coloca automaticamente o objeto selecionado dentro do filho `Mesh`.
+
+## Galeria
+
+| | |
+| --- | --- |
+| ![MeshCurve com pontos e mesh baked](/img/meshcurve/meshcurve-01.jpg)<br/>MeshCurve seguindo um caminho curvo. | ![Configurações do MeshCurve no inspector](/img/meshcurve/meshcurve-02.jpg)<br/>Configurações do MeshCurve no inspector. |
+| ![Gizmos e path do MeshCurve](/img/meshcurve/meshcurve-03.jpg)<br/>Editando o path com gizmos. | ![Close do MeshCurve](/img/meshcurve/meshcurve-04.jpg)<br/>Close do mesh baked ao longo da curva. |
+| ![Exemplo de MeshCurve](/img/meshcurve/meshcurve-05.jpg)<br/>Outro exemplo de mesh curvo. | |
+
+<video controls src="/video/meshcurve/meshcurve-demo.mp4" width="100%"></video>
+<br/>Vídeo: fluxo de edição do MeshCurve.
 
 ## Configuração típica
 

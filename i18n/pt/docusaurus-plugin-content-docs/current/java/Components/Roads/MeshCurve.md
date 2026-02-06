@@ -1,0 +1,50 @@
+{@import ../../../links.md}
+
+# MeshCurve
+
+Referência completa da API de `MeshCurve`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Roads
+
+**Componente:** sim
+
+---
+
+```java
+public class MeshCurve extends Component
+```
+
+## Construtores (3)
+
+| Signature | Description |
+| --- | --- |
+| MeshCurve([MeshCurve]) | Executa `MeshCurve` e retorna quando a chamada do motor termina. |
+| MeshCurve([Engine]) | Executa `MeshCurve` e retorna quando a chamada do motor termina. |
+| MeshCurve() | Cria uma nova instância de MeshCurve. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [MeshCurve] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Atributos Virtuais (8)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `spacing` | [float] | `get/set` | Atributo virtual exposto por `getSpacing`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `startOffset` | [float] | `get/set` | Atributo virtual exposto por `getStartOffset`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `curveQuality` | [float] | `get/set` | Atributo virtual exposto por `getCurveQuality`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `offset` | [Vector3] | `get/set` | Atributo virtual exposto por `getOffset`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `scale` | [Vector3] | `get/set` | Atributo virtual exposto por `getScale`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `forwardAxis` | [ForwardAxis] | `get/set` | Atributo virtual exposto por `getForwardAxis`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `upMode` | [UpMode] | `get/set` | Atributo virtual exposto por `getUpMode`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `stickToTerrain` | [boolean] | `get/set` | Atributo virtual exposto por `isStickToTerrain`. Acesse como um campo para ler ou escrever o valor subjacente. |
+
+## Métodos (1)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| isStickToTerrain() | [boolean] | Retorna se stick to terrain está habilitado. |

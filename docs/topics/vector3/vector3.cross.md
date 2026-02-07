@@ -85,5 +85,9 @@ if (perpendicular.y > 0) {
   print("Target is to the left");
 }
 ```
-
-
+<div style={{ width: "100%", aspectRatio: "1 / 1" }}>
+  <iframe
+    src="https://rawcdn.githack.com/ITsMagic-Software/Documentation/main/static/hpages/vector3.cross.vis.html"
+    style={{ width: "100%", height: "100%", border: "none" }}
+  />
+</div>

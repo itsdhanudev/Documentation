@@ -76,3 +76,9 @@ if (viewAngle > 0.7f) {
 }
 ```
 
+<div style={{ width: "100%", aspectRatio: "1 / 1" }}>
+  <iframe
+    src="/hpages/vector3.dot.vis.html"
+    style={{ width: "100%", height: "100%", border: "none" }}
+  />
+</div>

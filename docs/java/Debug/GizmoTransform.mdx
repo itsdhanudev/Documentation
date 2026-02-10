@@ -1,0 +1,50 @@
+# GizmoTransform
+
+Complete API reference for `GizmoTransform`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Debug
+
+**Component:** no
+
+---
+
+```java
+public class GizmoTransform extends GizmoElement
+```
+
+## Constructors (4)
+
+| Signature | Description |
+| --- | --- |
+| GizmoTransform() | Creates a new instance of GizmoTransform. |
+| GizmoTransform([Vector3]) | Creates a new instance of GizmoTransform. |
+| GizmoTransform([Vector3], [Quaternion]) | Creates a new instance of GizmoTransform. |
+| GizmoTransform([Vector3], [Quaternion], [Vector3]) | Creates a new instance of GizmoTransform. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `rotMatrix` | [float][] | Represents the `rotMatrix` value stored on this instance. Read or assign to update the property. |
+
+## Virtual Attributes (4)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `matrix` | [float][] | `get/set` | Virtual attribute exposed by `getMatrix`. Access it like a field to read or write the underlying value. |
+| `position` | [Vector3] | `get/set` | Virtual attribute exposed by `getPosition`. Access it like a field to read or write the underlying value. |
+| `rotation` | [Quaternion] | `get/set` | Virtual attribute exposed by `getRotation`. Access it like a field to read or write the underlying value. |
+| `scale` | [Vector3] | `get/set` | Virtual attribute exposed by `getScale`. Access it like a field to read or write the underlying value. |
+
+## Methods (6)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| `setPosition(float, float, float)` | `void` | Sets or updates the position. |
+| `setPosition(float)` | `void` | Sets or updates the position. |
+| `setRotation(float, float, float)` | `void` | Sets or updates the rotation. |
+| `setRotation(float, float, float, float)` | `void` | Sets or updates the rotation. |
+| `setScale(float, float, float)` | `void` | Sets or updates the scale. |
+| `setScale(float)` | `void` | Sets or updates the scale. |

@@ -1,0 +1,56 @@
+# Characterbody
+
+Complete API reference for `Characterbody`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Physics
+
+**Component:** no
+
+---
+
+```java
+public class Characterbody extends PhysicsComponent
+```
+
+## Constructors (2)
+
+| Signature | Description |
+| --- | --- |
+| Characterbody([Characterbody]) | Executes `Characterbody` and returns after the underlying engine call finishes. |
+| Characterbody() | Executes `Characterbody` and returns after the underlying engine call finishes. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `component` | [Characterbody] | Represents the `component` value stored on this instance. Read or assign to update the property. |
+
+## Virtual Attributes (12)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `forwardSpeed` | [float] | `get/set` | Returns the forward movement speed. |
+| `globalDirections` | [boolean] | `get/set` | Returns whether the movement direction is global. |
+| `gravityEnabled` | [boolean] | `get/set` | Returns whether the character's gravity is enabled. |
+| `gravityMultiplier` | [Vector3] | `get/set` | Returns the gravity multiplier of the character. |
+| `height` | [float] | `get/set` | Returns the character's height. |
+| `horizontalPhysicsVelocity` | [Vector2] | `get` | Returns the character's horizontal velocity. |
+| `jumpSpeed` | [float] | `get/set` | Returns the jump speed of the character. |
+| `physicsLayer` | [PhysicsLayer] | `get/set` | Returns the PhysicsLayer of the Characterbody. |
+| `physicsVelocity` | [Vector3] | `get` | Returns the character's velocity. |
+| `sideSpeed` | [float] | `get/set` | Returns the lateral movement speed. |
+| `stepHeight` | [float] | `get/set` | Returns the maximum step height the character can climb. |
+| `width` | [float] | `get/set` | Returns the character's width. |
+
+## Methods (6)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| `isGrounded()` | `boolean` | Returns whether the character is grounded. |
+| `onGround()` | `boolean` | Returns whether the character is on the ground. |
+| `canJump()` | `boolean` | Returns whether the character is on the ground. |
+| `jump()` | `void` | Makes the character jump. |
+| `setSpeed(float, float)` | `void` | Sets the lateral (X) and forward (Z) movement speed. |
+| `zeroSpeed()` | `void` | Resets lateral and forward speed to zero. |

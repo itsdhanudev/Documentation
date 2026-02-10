@@ -1,0 +1,47 @@
+# NativeShortBuffer
+
+Complete API reference for `NativeShortBuffer`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Buffers
+
+**Component:** no
+
+---
+
+```java
+public class NativeShortBuffer
+```
+
+## Constructors (3)
+
+| Signature | Description |
+| --- | --- |
+| NativeShortBuffer([NativeShortBuffer]) | Executes `NativeShortBuffer` and returns after the underlying engine call finishes. |
+| NativeShortBuffer([Engine]) | Executes `NativeShortBuffer` and returns after the underlying engine call finishes. |
+| NativeShortBuffer([int]) | Creates a new instance of NativeShortBuffer. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `buffer` | [NativeShortBuffer] | Represents the `buffer` value stored on this instance. Read or assign to update the property. |
+
+## Virtual Attributes (1)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `vboEnabled` | [boolean] | `get/set` | Virtual attribute exposed by `isVboEnabled`. Access it like a field to read or write the underlying value. |
+
+## Methods (7)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| `get(int)` | `short` | Returns the current value. |
+| `set(int, short)` | `void` | Sets or updates the the value. |
+| `put(short)` | `void` | Sets or updates the the value. |
+| `capacity()` | `int` | Executes `capacity` and returns after the underlying engine call finishes. |
+| `getPosition()` | `int` | Returns the current position. |
+| `position(int)` | `int` | Performs the position operation using the provided parameters (idx). |
+| `setPosition(int)` | `void` | Sets or updates the position. |

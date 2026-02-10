@@ -1,0 +1,60 @@
+# ModelRenderer
+
+Complete API reference for `ModelRenderer`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Rendering
+
+**Component:** yes
+
+---
+
+```java
+public class ModelRenderer extends Component
+```
+
+## Constructors (3)
+
+| Signature | Description |
+| --- | --- |
+| ModelRenderer([ModelRenderer]) | Executes `ModelRenderer` and returns after the underlying engine call finishes. |
+| ModelRenderer() | Executes `ModelRenderer` and returns after the underlying engine call finishes. |
+| ModelRenderer([Vertex]) | Creates a new instance of ModelRenderer. |
+
+## Attributes (9)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `CUBE` | [int] | Represents the `CUBE` value stored on this instance. Read or assign to update the property. |
+| `SPHERE` | [int] | Represents the `SPHERE` value stored on this instance. Read or assign to update the property. |
+| `CONE` | [int] | Represents the `CONE` value stored on this instance. Read or assign to update the property. |
+| `CYLINDER` | [int] | Represents the `CYLINDER` value stored on this instance. Read or assign to update the property. |
+| `CIRCLE` | [int] | Represents the `CIRCLE` value stored on this instance. Read or assign to update the property. |
+| `TORUS` | [int] | Represents the `TORUS` value stored on this instance. Read or assign to update the property. |
+| `SQUARE` | [int] | Represents the `SQUARE` value stored on this instance. Read or assign to update the property. |
+| `SQUARE90` | [int] | Represents the `SQUARE90` value stored on this instance. Read or assign to update the property. |
+| `component` | [ModelRenderer] | Represents the `component` value stored on this instance. Read or assign to update the property. |
+
+## Virtual Attributes (7)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `castShadowEnabled` | [boolean] | `get/set` | Virtual attribute exposed by `isCastShadowEnabled`. Access it like a field to read or write the underlying value. |
+| `enableOutline` | [boolean] | `get/set` | Virtual attribute exposed by `isEnableOutline`. Access it like a field to read or write the underlying value. |
+| `material` | [Material] | `get/set` | Virtual attribute exposed by `getMaterial`. Access it like a field to read or write the underlying value. |
+| `outlineColor` | [Color] | `get/set` | Virtual attribute exposed by `getOutlineColor`. Access it like a field to read or write the underlying value. |
+| `outlineScale` | [float] | `set` | Virtual attribute exposed by `setOutlineScale`. Access it like a field to read or write the underlying value. |
+| `renderMatrix` | [float][] | `get/set` | Virtual attribute exposed by `getRenderMatrix`. Access it like a field to read or write the underlying value. |
+| `vertex` | [Vertex] | `get/set` | Virtual attribute exposed by `getVertex`. Access it like a field to read or write the underlying value. |
+
+## Methods (6)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| `setModelFile(VertexFile)` | `void` | Sets or updates the model file. |
+| `setMaterialFile(MaterialFile)` | `void` | Sets or updates the material file. |
+| `attachPrimitive(int)` | `void` | Performs the attachPrimitive operation using the provided parameters (primitive). |
+| `getOutlineScale()` | `float` | Returns the current outline scale. |
+| `componentClassMatch(Component, Component)` | `boolean` | Executes `componentClassMatch` and returns after the underlying engine call finishes. |
+| `getEngineComponent()` | `Component` | Executes `getEngineComponent` and returns after the underlying engine call finishes. |

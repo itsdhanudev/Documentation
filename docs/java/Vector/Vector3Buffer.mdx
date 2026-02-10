@@ -1,0 +1,50 @@
+# Vector3Buffer
+
+Complete API reference for `Vector3Buffer`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Vector
+
+**Component:** no
+
+---
+
+```java
+public class Vector3Buffer
+```
+
+## Constructors (4)
+
+| Signature | Description |
+| --- | --- |
+| Vector3Buffer([Vector3Buffer]) | Executes `Vector3Buffer` and returns after the underlying engine call finishes. |
+| Vector3Buffer([Engine]) | Executes `Vector3Buffer` and returns after the underlying engine call finishes. |
+| Vector3Buffer([int]) | Creates a new instance of Vector3Buffer. |
+| Vector3Buffer([NativeFloatBuffer]) | Creates a new instance of Vector3Buffer. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `buffer` | [Vector3Buffer] | Represents the `buffer` value stored on this instance. Read or assign to update the property. |
+
+## Methods (15)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| `get(int)` | `Vector3` | Returns the current value. |
+| `getX(int)` | `float` | Returns the current x. |
+| `getY(int)` | `float` | Returns the current y. |
+| `getZ(int)` | `float` | Returns the current z. |
+| `put(Vector3)` | `void` | Sets or updates the the value. |
+| `put(float, float, float)` | `void` | Sets or updates the the value. |
+| `set(int, Vector3)` | `void` | Sets or updates the the value. |
+| `set(int, float, float, float)` | `void` | Sets or updates the the value. |
+| `capacity()` | `int` | Executes `capacity` and returns after the underlying engine call finishes. |
+| `array()` | [Vector3][] | Executes `array` and returns after the underlying engine call finishes. |
+| `getPosition()` | `int` | Returns the current position. |
+| `position(int)` | `int` | Performs the position operation using the provided parameters (idx). |
+| `setPosition(int)` | `void` | Sets or updates the position. |
+| `copy()` | `Vector3Buffer` | Returns a copy of this Vector3Buffer instance. |
+| `getFloatBuffer()` | [JAVARuntime].[NativeFloatBuffer] | Returns the current float buffer. |

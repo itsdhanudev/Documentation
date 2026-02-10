@@ -1,0 +1,51 @@
+# IntSlider
+
+Referência completa da API de `IntSlider`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Inspector
+
+**Componente:** não
+
+---
+
+```java
+public class IntSlider
+```
+
+## Construtores (1)
+
+| Signature | Description |
+| --- | --- |
+| IntSlider([int], [int], [int]) | Cria uma nova instância de IntSlider. |
+
+## Atributos (3)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `value` | [int] | Representa o valor de `value` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+| `min` | [int] | Representa o valor de `min` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+| `max` | [int] | Representa o valor de `max` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Atributos Virtuais (3)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `max` | [int] | `get/set` | Retorna a propriedade `propriedade `valor máximo permitido do controle deslizante``. |
+| `min` | [int] | `get/set` | Retorna a propriedade `propriedade `valor mínimo permitido do controle deslizante``. |
+| `value` | [int] | `get/set` | Retorna a propriedade `propriedade `valor atual do controle deslizante``. |
+
+## Métodos (2)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| `toString()` | `String` | Retorna uma representação em string do IntSlider. |
+| `serialize()` | `String` | Serializa o InttSlider em uma string no formato '[value;min;max;step]'. |
+
+## Métodos Estáticos (2)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| `inspectorController()` | `ClassInspectorEntry` | Executa `inspectorController` e retorna quando a chamada do motor termina. |
+| `deserialize(String)` | `IntSlider` | Desserializa uma string para criar uma instância de IntSlider. |

@@ -1,0 +1,42 @@
+# ViewPanel
+
+Referência completa da API de `ViewPanel`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Editor
+
+**Componente:** não
+
+---
+
+```java
+public class ViewPanel extends EditorPanel
+```
+
+## Construtores (2)
+
+| Signature | Description |
+| --- | --- |
+| ViewPanel([JavaViewPanel]) | Executa `ViewPanel` e retorna quando a chamada do motor termina. |
+| ViewPanel() | Executa `ViewPanel` e retorna quando a chamada do motor termina. |
+
+## Métodos (7)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| `updateUI()` | `void` | Define ou atualiza a propriedade `propriedade `ui``. |
+| `updateUIVisible()` | `void` | Define ou atualiza a propriedade `propriedade `uivisible``. |
+| `minimizedUpdate()` | `void` | Executa a operação minimizedUpdate. |
+| `onBindView()` | `void` | Executa a operação onBindView. |
+| `onUnbindView()` | `void` | Executa a operação onUnbindView. |
+| `onAttach()` | `View` | Executa a operação onAttach. |
+| `onDetach()` | `void` | Executa a operação onDetach. |
+
+## Métodos Estáticos (3)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| `findViewByID(View, String)` | `<T extends View> T` | Executa a operação findViewByID usando os parâmetros informados (view, id). |
+| `toView(Object)` | `View` | Executa a operação toView usando os parâmetros informados (o). |
+| `getIdOf(View)` | `String` | Retorna a propriedade `propriedade `id of atual``. |

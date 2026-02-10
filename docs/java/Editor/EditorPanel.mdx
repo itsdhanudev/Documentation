@@ -1,0 +1,62 @@
+# EditorPanel
+
+Complete API reference for `EditorPanel`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Editor
+
+**Component:** no
+
+---
+
+```java
+public class EditorPanel
+```
+
+## Constructors (3)
+
+| Signature | Description |
+| --- | --- |
+| EditorPanel([EditorPanel]) | Executes `EditorPanel` and returns after the underlying engine call finishes. |
+| EditorPanel([Engine]) | Executes `EditorPanel` and returns after the underlying engine call finishes. |
+| EditorPanel() | Executes `EditorPanel` and returns after the underlying engine call finishes. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `panel` | [EditorPanel] | Represents the `panel` value stored on this instance. Read or assign to update the property. |
+
+## Virtual Attributes (12)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `contentHeightPixels` | [int] | `get` | Virtual attribute exposed by `getContentHeightPixels`. Access it like a field to read or write the underlying value. |
+| `contentWidthPixels` | [int] | `get` | Virtual attribute exposed by `getContentWidthPixels`. Access it like a field to read or write the underlying value. |
+| `contentXPixels` | [int] | `get` | Virtual attribute exposed by `getContentXPixels`. Access it like a field to read or write the underlying value. |
+| `contentYPixels` | [int] | `get` | Virtual attribute exposed by `getContentYPixels`. Access it like a field to read or write the underlying value. |
+| `floating` | [boolean] | `get` | Virtual attribute exposed by `isFloating`. Access it like a field to read or write the underlying value. |
+| `requestCloseConfirmation` | [boolean] | `get/set` | Virtual attribute exposed by `isRequestCloseConfirmation`. Access it like a field to read or write the underlying value. |
+| `tittle` | [String] | `get/set` | Virtual attribute exposed by `getTittle`. Access it like a field to read or write the underlying value. |
+| `totalHeightPixels` | [int] | `get` | Virtual attribute exposed by `getTotalHeightPixels`. Access it like a field to read or write the underlying value. |
+| `totalWidthPixels` | [int] | `get` | Virtual attribute exposed by `getTotalWidthPixels`. Access it like a field to read or write the underlying value. |
+| `totalXPixels` | [int] | `get` | Virtual attribute exposed by `getTotalXPixels`. Access it like a field to read or write the underlying value. |
+| `totalYPixels` | [int] | `get` | Virtual attribute exposed by `getTotalYPixels`. Access it like a field to read or write the underlying value. |
+| `visible` | [boolean] | `get` | Virtual attribute exposed by `isVisible`. Access it like a field to read or write the underlying value. |
+
+## Methods (11)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| `setPanel(EditorPanel)` | `void` | Executes `setPanel` and returns after the underlying engine call finishes. |
+| `isTouchInside(Touch)` | `boolean` | Returns whether touch inside is true. |
+| `determineTouch(GUIUtils.TouchFilter)` | `Touch` | Performs the determineTouch operation using the provided parameters (touchFilter). |
+| `determineTouch(GUIUtils.TouchFilter, int)` | `Touch` | Performs the determineTouch operation using the provided parameters (touchFilter, offset). |
+| `determineTouchPosition(Touch)` | `Vector2` | Performs the determineTouchPosition operation using the provided parameters (touch). |
+| `determineTouchPosition(Touch, Vector2)` | `Vector2` | Performs the determineTouchPosition operation using the provided parameters (touch, out). |
+| `requestDetach()` | `void` | Executes `requestDetach` and returns after the underlying engine call finishes. |
+| `blink()` | `void` | Executes `blink` and returns after the underlying engine call finishes. |
+| `isAllowCloseX()` | `boolean` | Returns whether allow close x is true. |
+| `setAllowCloseX(boolean)` | `void` | Sets or updates the allow close x. |
+| `copy()` | `EditorPanel` | Returns a copy of this EditorPanel instance. |

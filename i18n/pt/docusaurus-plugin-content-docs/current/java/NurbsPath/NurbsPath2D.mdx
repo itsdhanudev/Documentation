@@ -1,0 +1,42 @@
+# NurbsPath2D
+
+Referência completa da API de `NurbsPath2D`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** NurbsPath
+
+**Componente:** não
+
+---
+
+```java
+public class NurbsPath2D
+```
+
+## Construtores (5)
+
+| Signature | Description |
+| --- | --- |
+| NurbsPath2D([NurbsPath2D]) | Executa `NurbsPath2D` e retorna quando a chamada do motor termina. |
+| NurbsPath2D() | Executa `NurbsPath2D` e retorna quando a chamada do motor termina. |
+| NurbsPath2D([[List]&lt;Vector2&gt;]) | Cria uma nova instância de NurbsPath2D. |
+| NurbsPath2D([boolean]) | Cria uma nova instância de NurbsPath2D. |
+| NurbsPath2D([[List]&lt;Vector2&gt;], [boolean]) | Cria uma nova instância de NurbsPath2D. |
+
+## Métodos (12)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| `evaluate(float)` | `Vector2` | Executa a operação evaluate usando os parâmetros informados (u). |
+| `evaluate(float, Vector2)` | `Vector2` | Executa a operação evaluate usando os parâmetros informados (u, out). |
+| `evaluatePath(int)` | [List]&[lt];[Vector2]&[gt]; | Executa a operação evaluatePath usando os parâmetros informados (resolution). |
+| `evaluatePath(int, [List&lt;Vector2&gt;])` | [List]&[lt];[Vector2]&[gt]; | Executa a operação evaluatePath usando os parâmetros informados (resolution, list). |
+| `addPoint(Vector2)` | `void` | Adiciona point à coleção. |
+| `addPath([List&lt;Vector2&gt;])` | `void` | Adiciona path à coleção. |
+| `getPoint(int)` | `Vector2` | Retorna a propriedade `propriedade `point atual``. |
+| `removePoint(Vector2)` | `void` | Remove point da coleção. |
+| `removePoint(int)` | `void` | Remove point da coleção. |
+| `pointsCount()` | `int` | Executa a operação pointsCount. |
+| `isContinuous()` | `boolean` | Retorna se continuous é verdadeiro. |
+| `setContinuous(boolean)` | `void` | Define ou atualiza a propriedade `propriedade `continuous``. |

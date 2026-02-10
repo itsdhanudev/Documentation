@@ -1,0 +1,54 @@
+# VehicleWheel
+
+Complete API reference for `VehicleWheel`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Physics
+
+**Component:** yes
+
+---
+
+```java
+public class VehicleWheel extends Component
+```
+
+## Constructors (2)
+
+| Signature | Description |
+| --- | --- |
+| VehicleWheel([VehicleWheel]) | Executes `VehicleWheel` and returns after the underlying engine call finishes. |
+| VehicleWheel() | Executes `VehicleWheel` and returns after the underlying engine call finishes. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `component` | [VehicleWheel] | Represents the `component` value stored on this instance. Read or assign to update the property. |
+
+## Virtual Attributes (9)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `blockRotation` | [float] | `set` | Virtual attribute exposed by `setBlockRotation`. Access it like a field to read or write the underlying value. |
+| `frictionSlip` | [float] | `get/set` | Virtual attribute exposed by `getFrictionSlip`. Access it like a field to read or write the underlying value. |
+| `modelPosition` | [Vector3] | `get` | Virtual attribute exposed by `getModelPosition`. Access it like a field to read or write the underlying value. |
+| `modelRotation` | [Quaternion] | `get` | Virtual attribute exposed by `getModelRotation`. Access it like a field to read or write the underlying value. |
+| `posPhysicsFunctionEnabled` | [boolean] | `get/set` | Virtual attribute exposed by `getPosPhysicsFunctionEnabled`. Access it like a field to read or write the underlying value. |
+| `radius` | [float] | `get/set` | Virtual attribute exposed by `getRadius`. Access it like a field to read or write the underlying value. |
+| `rotation` | [float] | `get/set` | Virtual attribute exposed by `getRotation`. Access it like a field to read or write the underlying value. |
+| `skidding` | [float] | `get` | Virtual attribute exposed by `getSkidding`. Access it like a field to read or write the underlying value. |
+| `suspensionRestLength` | [float] | `get/set` | Virtual attribute exposed by `getSuspensionRestLength`. Access it like a field to read or write the underlying value. |
+
+## Methods (7)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| `isGrounded()` | `boolean` | Returns whether grounded is true. |
+| `incrementRotation(float)` | `void` | Performs the incrementRotation operation using the provided parameters (r). |
+| `setTorque(float)` | `void` | Sets or updates the torque. |
+| `setBrake(float)` | `void` | Sets or updates the brake. |
+| `setSteer(float)` | `void` | Sets or updates the steer. |
+| `componentClassMatch(Component, Component)` | `boolean` | Executes `componentClassMatch` and returns after the underlying engine call finishes. |
+| `getEngineComponent()` | `Component` | Executes `getEngineComponent` and returns after the underlying engine call finishes. |

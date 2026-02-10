@@ -1,0 +1,106 @@
+# Point3
+
+Complete API reference for `Point3`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Vector
+
+**Component:** no
+
+---
+
+```java
+public class Point3
+```
+
+## Constructors (4)
+
+| Signature | Description |
+| --- | --- |
+| Point3([Vector3]) | Executes `Point3` and returns after the underlying engine call finishes. |
+| Point3() | Executes `Point3` and returns after the underlying engine call finishes. |
+| Point3([int]) | Creates a new instance of Point3. |
+| Point3([int], [int], [int]) | Creates a new instance of Point3. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `vector` | [Vector3] | Represents the `vector` value stored on this instance. Read or assign to update the property. |
+
+## Virtual Attributes (3)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `x` | [int] | `get/set` | Virtual attribute exposed by `getX`. Access it like a field to read or write the underlying value. |
+| `y` | [int] | `get/set` | Virtual attribute exposed by `getY`. Access it like a field to read or write the underlying value. |
+| `z` | [int] | `get/set` | Virtual attribute exposed by `getZ`. Access it like a field to read or write the underlying value. |
+
+## Methods (56)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| `mul(Point3)` | `Point3` | Performs the mul operation using the provided parameters (value). |
+| `mul(int, int, int)` | `Point3` | Performs the mul operation using the provided parameters (x, y, z). |
+| `mul(int)` | `Point3` | Performs the mul operation using the provided parameters (a). |
+| `mulLocal(Vector3)` | `void` | Performs the mulLocal operation using the provided parameters (value). |
+| `mulLocal(Point3)` | `void` | Performs the mulLocal operation using the provided parameters (value). |
+| `mulLocal(float, float, float)` | `void` | Performs the mulLocal operation using the provided parameters (x, y, z). |
+| `mulLocal(float)` | `void` | Performs the mulLocal operation using the provided parameters (a). |
+| `div(Point3)` | `Point3` | Performs the div operation using the provided parameters (value). |
+| `div(int, int, int)` | `Point3` | Performs the div operation using the provided parameters (x, y, z). |
+| `div(int)` | `Point3` | Performs the div operation using the provided parameters (a). |
+| `divLocal(Vector3)` | `void` | Performs the divLocal operation using the provided parameters (value). |
+| `divLocal(Point3)` | `void` | Performs the divLocal operation using the provided parameters (value). |
+| `divLocal(float, float, float)` | `void` | Performs the divLocal operation using the provided parameters (x, y, z). |
+| `divLocal(float)` | `void` | Performs the divLocal operation using the provided parameters (a). |
+| `sum(Point3)` | `Point3` | Performs the sum operation using the provided parameters (value). |
+| `sum(int, int, int)` | `Point3` | Performs the sum operation using the provided parameters (x, y, z). |
+| `sum(int)` | `Point3` | Performs the sum operation using the provided parameters (a). |
+| `sumLocal(Vector3)` | `void` | Performs the sumLocal operation using the provided parameters (value). |
+| `sumLocal(Point3)` | `void` | Performs the sumLocal operation using the provided parameters (value). |
+| `sumLocal(float, float, float)` | `void` | Performs the sumLocal operation using the provided parameters (x, y, z). |
+| `sumLocal(float)` | `void` | Performs the sumLocal operation using the provided parameters (a). |
+| `sub(Point3)` | `Point3` | Performs the sub operation using the provided parameters (value). |
+| `sub(int, int, int)` | `Point3` | Performs the sub operation using the provided parameters (x, y, z). |
+| `sub(int)` | `Point3` | Performs the sub operation using the provided parameters (a). |
+| `subLocal(Vector3)` | `void` | Performs the subLocal operation using the provided parameters (value). |
+| `subLocal(Point3)` | `void` | Performs the subLocal operation using the provided parameters (value). |
+| `subLocal(float, float, float)` | `void` | Performs the subLocal operation using the provided parameters (x, y, z). |
+| `subLocal(float)` | `void` | Performs the subLocal operation using the provided parameters (a). |
+| `equals(Point3)` | `boolean` | Compares this instance with another for equality/order. |
+| `equals(int, int, int)` | `boolean` | Compares this instance with another for equality/order. |
+| `equals(int)` | `boolean` | Compares this instance with another for equality/order. |
+| `set(Point3)` | `void` | Sets or updates the the value. |
+| `set(int, int, int)` | `void` | Sets or updates the the value. |
+| `set(int)` | `void` | Sets or updates the the value. |
+| `lerp(Point3, int)` | `void` | Performs the lerp operation using the provided parameters (vector3, speed). |
+| `lerp(int, int, int, int)` | `void` | Performs the lerp operation using the provided parameters (x, y, z, speed). |
+| `lerp(int, int)` | `void` | Performs the lerp operation using the provided parameters (a, speed). |
+| `lerpInSeconds(Point3, int)` | `void` | Performs the lerpInSeconds operation using the provided parameters (vector3, speed). |
+| `lerpInSeconds(int, int, int, int)` | `void` | Performs the lerpInSeconds operation using the provided parameters (x, y, z, speed). |
+| `lerpInSeconds(int, int)` | `void` | Performs the lerpInSeconds operation using the provided parameters (a, speed). |
+| `blend(Point3, int)` | `void` | Performs the blend operation using the provided parameters (vector3, blend). |
+| `blend(int, int, int, int)` | `void` | Performs the blend operation using the provided parameters (x, y, z, blend). |
+| `blend(int, int)` | `void` | Performs the blend operation using the provided parameters (a, blend). |
+| `normalize()` | `Point3` | Executes `normalize` and returns after the underlying engine call finishes. |
+| `normalizeLocal()` | `void` | Executes `normalizeLocal` and returns after the underlying engine call finishes. |
+| `length()` | `float` | Executes `length` and returns after the underlying engine call finishes. |
+| `sqrLength()` | `float` | Executes `sqrLength` and returns after the underlying engine call finishes. |
+| `distance(Point3)` | `float` | Performs the distance operation using the provided parameters (vector3). |
+| `sqrDistance(Point3)` | `float` | Performs the sqrDistance operation using the provided parameters (vector3). |
+| `dot(Point3)` | `float` | Performs the dot operation using the provided parameters (vector3). |
+| `dot(int, int, int)` | `float` | Performs the dot operation using the provided parameters (x, y, z). |
+| `dot(int)` | `float` | Performs the dot operation using the provided parameters (a). |
+| `cross(Point3)` | `Vector3` | Performs the cross operation using the provided parameters (value). |
+| `cross(int, int, int)` | `Vector3` | Performs the cross operation using the provided parameters (x, y, z). |
+| `copy()` | `Point3` | Returns a copy of this Point3 instance. |
+| `toString()` | `String` | Returns the string representation. |
+
+## Static Methods (2)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| `inspectorController()` | `ClassInspectorEntry` | Executes `inspectorController` and returns after the underlying engine call finishes. |
+| `zero()` | `Point3` | Executes `zero` and returns after the underlying engine call finishes. |

@@ -1,0 +1,57 @@
+# GizmoPath
+
+Referência completa da API de `GizmoPath`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Debug
+
+**Componente:** não
+
+---
+
+```java
+public class GizmoPath extends GizmoElement
+```
+
+## Construtores (1)
+
+| Signature | Description |
+| --- | --- |
+| GizmoPath() | Cria uma nova instância de GizmoPath. |
+
+## Atributos (2)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `rotMatrix` | [float][] | Representa o valor de `rotMatrix` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+| `createdEntries` | [int] | Representa o valor de `createdEntries` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Atributos Virtuais (7)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `color` | [Color] | `get/set` | Atributo virtual exposto por `getColor`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `matrix` | [float][] | `get/set` | Atributo virtual exposto por `getMatrix`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `position` | [Vector3] | `get/set` | Atributo virtual exposto por `getPosition`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `rotation` | [Quaternion] | `get/set` | Atributo virtual exposto por `getRotation`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `scale` | [Vector3] | `get/set` | Atributo virtual exposto por `getScale`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `userPointer` | [Object] | `get/set` | Atributo virtual exposto por `getUserPointer`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `wireFrameWidth` | [int] | `get/set` | Atributo virtual exposto por `getWireFrameWidth`. Acesse como um campo para ler ou escrever o valor subjacente. |
+
+## Métodos (12)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| `setPosition(float, float, float)` | `void` | Define ou atualiza a propriedade `propriedade `position``. |
+| `setRotation(float, float, float)` | `void` | Define ou atualiza a propriedade `propriedade `rotation``. |
+| `setRotation(float, float, float, float)` | `void` | Define ou atualiza a propriedade `propriedade `rotation``. |
+| `setScale(float, float, float)` | `void` | Define ou atualiza a propriedade `propriedade `scale``. |
+| `clear()` | `void` | Limpa ou redefine o estado do objeto. |
+| `addLine(Vector3, Vector3)` | `GizmoPath` | Adiciona line à coleção. |
+| `addLineUnsafe(Vector3, Vector3)` | `GizmoPath` | Adiciona line unsafe à coleção. |
+| `addPath([List&lt;Vector2&gt;])` | `GizmoPath` | Adiciona path à coleção. |
+| `apply()` | `void` | Executa a operação apply. |
+| `destroy()` | `void` | Executa a operação destroy. |
+| `getVertex()` | `Vertex` | Retorna a propriedade `propriedade `vertex atual``. |
+| `getRenderMode()` | `RenderMode` | Retorna a propriedade `propriedade `render mode atual``. |

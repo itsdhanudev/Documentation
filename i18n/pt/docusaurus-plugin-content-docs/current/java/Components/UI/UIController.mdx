@@ -1,0 +1,59 @@
+# UIController
+
+Referência completa da API de `UIController`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** UI
+
+**Componente:** sim
+
+---
+
+```java
+public class UIController extends Component
+```
+
+## Construtores (3)
+
+| Signature | Description |
+| --- | --- |
+| UIController([UIController]) | Executa `UIController` e retorna quando a chamada do motor termina. |
+| UIController([Engine]) | Executa `UIController` e retorna quando a chamada do motor termina. |
+| UIController() | Cria uma nova instância de UIController. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [UIController] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Atributos Virtuais (15)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `allowScreenTouch` | [boolean] | `get/set` | Atributo virtual exposto por `isAllowScreenTouch`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `drawToScreen` | [boolean] | `get/set` | Atributo virtual exposto por `isDrawToScreen`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `fixedResolutionPixelsHeight` | [int] | `get/set` | Atributo virtual exposto por `getFixedResolutionPixelsHeight`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `fixedResolutionPixelsWidth` | [int] | `get/set` | Atributo virtual exposto por `getFixedResolutionPixelsWidth`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `frameBuffer` | [FrameBuffer] | `get` | Atributo virtual exposto por `getFrameBuffer`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `frameBufferH` | [int] | `get` | Atributo virtual exposto por `getFrameBufferH`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `frameBufferW` | [int] | `get` | Atributo virtual exposto por `getFrameBufferW`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `freeResolutionPixels` | [int] | `get/set` | Atributo virtual exposto por `getFreeResolutionPixels`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `imageRatio` | [float] | `get` | Atributo virtual exposto por `getImageRatio`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `pxSize` | [float] | `get/set` | Atributo virtual exposto por `getPxSize`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `renderTextureFile` | [String] | `get/set` | Atributo virtual exposto por `getRenderTextureFile`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `resolutionMode` | [ResolutionMode] | `get/set` | Atributo virtual exposto por `getResolutionMode`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `resolutionPercentage` | [float] | `get/set` | Atributo virtual exposto por `getResolutionPercentage`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `touchPos` | [Vector2] | `get` | Atributo virtual exposto por `getTouchPos`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `virtualToucheAt` | [Touch] | `get` | Atributo virtual exposto por `getVirtualToucheAt`. Acesse como um campo para ler ou escrever o valor subjacente. |
+
+## Métodos (5)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| `emitVirtualTouch()` | `Touch` | Executa `emitVirtualTouch` e retorna quando a chamada do motor termina. |
+| `pxToDP(float)` | `float` | Executa `pxToDP` e retorna quando a chamada do motor termina. |
+| `pxToDP(int)` | `int` | Executa `pxToDP` e retorna quando a chamada do motor termina. |
+| `releaseVirtualTouch(Touch)` | `void` | Executa `releaseVirtualTouch` e retorna quando a chamada do motor termina. |
+| `virtualTouchsCount()` | `int` | Executa `virtualTouchsCount` e retorna quando a chamada do motor termina. |

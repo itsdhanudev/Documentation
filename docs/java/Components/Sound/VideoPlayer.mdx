@@ -1,0 +1,53 @@
+# VideoPlayer
+
+Complete API reference for `VideoPlayer`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Sound
+
+**Component:** yes
+
+---
+
+```java
+public class VideoPlayer extends Component
+```
+
+## Constructors (2)
+
+| Signature | Description |
+| --- | --- |
+| VideoPlayer([VideoPlayer]) | Executes `VideoPlayer` and returns after the underlying engine call finishes. |
+| VideoPlayer() | Executes `VideoPlayer` and returns after the underlying engine call finishes. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `component` | [VideoPlayer] | Represents the `component` value stored on this instance. Read or assign to update the property. |
+
+## Virtual Attributes (4)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `loop` | [boolean] | `get/set` | Virtual attribute exposed by `isLoop`. Access it like a field to read or write the underlying value. |
+| `paused` | [boolean] | `get` | Virtual attribute exposed by `isPaused`. Access it like a field to read or write the underlying value. |
+| `playing` | [boolean] | `get` | Virtual attribute exposed by `isPlaying`. Access it like a field to read or write the underlying value. |
+| `stopped` | [boolean] | `get` | Virtual attribute exposed by `isStopped`. Access it like a field to read or write the underlying value. |
+
+## Methods (11)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| `setVideoFile(VideoFile)` | `void` | Sets or updates the video file. |
+| `setVideoFile(File)` | `void` | Sets or updates the video file. |
+| `setOutputVideoFile(OutputVideoFile)` | `void` | Sets or updates the output video file. |
+| `setOutputVideoFile(File)` | `void` | Sets or updates the output video file. |
+| `play()` | `void` | Executes `play` and returns after the underlying engine call finishes. |
+| `stop()` | `void` | Executes `stop` and returns after the underlying engine call finishes. |
+| `pause()` | `void` | Executes `pause` and returns after the underlying engine call finishes. |
+| `unPause()` | `void` | Executes `unPause` and returns after the underlying engine call finishes. |
+| `seekTo(int)` | `void` | Performs the seekTo operation using the provided parameters (miliSeconds). |
+| `componentClassMatch(Component, Component)` | `boolean` | Executes `componentClassMatch` and returns after the underlying engine call finishes. |
+| `getEngineComponent()` | `Component` | Executes `getEngineComponent` and returns after the underlying engine call finishes. |

@@ -1,0 +1,58 @@
+# AABB
+
+Complete API reference for `AABB`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Vector
+
+**Component:** no
+
+---
+
+```java
+public class AABB
+```
+
+## Constructors (6)
+
+| Signature | Description |
+| --- | --- |
+| AABB([AABB]) | Executes `AABB` and returns after the underlying engine call finishes. |
+| AABB() | Executes `AABB` and returns after the underlying engine call finishes. |
+| AABB([float], [float], [float], [float], [float], [float]) | Creates a new instance of AABB. |
+| AABB([float], [float], [float], [float], [float], [float], [float], [float], [float]) | Creates a new instance of AABB. |
+| AABB([Vector3], [Vector3]) | Creates a new instance of AABB. |
+| AABB([Vector3], [Vector3], [Vector3]) | Creates a new instance of AABB. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [AABB] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
+
+## Virtual Attributes (10)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `lengthMax` | [float] | `get` | Returns the length of the maximum of the bounds. |
+| `lengthMin` | [float] | `get` | Returns the length of the minimum of the bounds. |
+| `max` | [Vector3] | `get/set` | Returns the maximum of the bounds. |
+| `min` | [Vector3] | `get/set` | Returns the minimum of the bounds. |
+| `x` | [float] | `get/set` | Returns the X of the maximum of the bounds. |
+| `xn` | [float] | `get/set` | Returns the X of the minimum of the bounds. |
+| `y` | [float] | `get/set` | Returns the Y of the maximum of the bounds. |
+| `yn` | [float] | `get/set` | Returns the Y of the minimum of the bounds. |
+| `z` | [float] | `get/set` | Returns the Z of the maximum of the bounds. |
+| `zn` | [float] | `get/set` | Returns the Z of the minimum of the bounds. |
+
+## Methods (6)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| `lengthMax()` | `float` | Returns the length of the maximum of the bounds. |
+| `lengthMin()` | `float` | Returns the length of the minimum of the bounds. |
+| `maxDistanceFromCenter()` | `float` | Returns the maximum distance from the center. |
+| `isInside(Vector3)` | `boolean` | Returns true if the point is inside the AABB, otherwise returns false. |
+| `getCenter()` | `Vector3` | Returns the center position of the AABB. |
+| `copy()` | `AABB` | Returns a copy of the current class instance. |

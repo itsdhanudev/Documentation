@@ -1,0 +1,51 @@
+# Json
+
+Complete API reference for `Json`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Serializer
+
+**Component:** no
+
+---
+
+```java
+public class Json
+```
+
+## Constructors (1)
+
+| Signature | Description |
+| --- | --- |
+| Json() | Creates a new instance of Json. |
+
+## Virtual Attributes (5)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `ignorePrivateFields` | [boolean] | `get/set` | Virtual attribute exposed by `isIgnorePrivateFields`. Access it like a field to read or write the underlying value. |
+| `ignoreProtectedFields` | [boolean] | `get/set` | Virtual attribute exposed by `isIgnoreProtectedFields`. Access it like a field to read or write the underlying value. |
+| `ignorePublicFields` | [boolean] | `get/set` | Virtual attribute exposed by `isIgnorePublicFields`. Access it like a field to read or write the underlying value. |
+| `lenient` | [boolean] | `get/set` | Virtual attribute exposed by `isLenient`. Access it like a field to read or write the underlying value. |
+| `prettyPrinting` | [boolean] | `get/set` | Virtual attribute exposed by `isPrettyPrinting`. Access it like a field to read or write the underlying value. |
+
+## Methods (2)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| `toJsonString(Object)` | `String` | Returns the string representation. |
+| `fromJsonString(String, Class)` | `Object` | Performs the fromJsonString operation using the provided parameters (json, classType). |
+
+## Static Methods (8)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| `toJson(Object)` | `String` | Performs the toJson operation using the provided parameters (object). |
+| `toJson(Object, boolean)` | `String` | Performs the toJson operation using the provided parameters (object, prettyPrinting). |
+| `toJson(Object, boolean, boolean)` | `String` | Performs the toJson operation using the provided parameters (object, prettyPrinting, lenient). |
+| `toJson(Object, boolean, boolean, boolean)` | `String` | Performs the toJson operation using the provided parameters (object, prettyPrinting, lenient, ignorePrivateFields). |
+| `toJson(Object, boolean, boolean, boolean, boolean)` | `String` | Performs the toJson operation using the provided parameters (object, prettyPrinting, lenient, ignorePrivateFields, ignoreProtectedFields). |
+| `toJson(Object, boolean, boolean, boolean, boolean, boolean)` | `String` | Performs the toJson operation using the provided parameters (object, prettyPrinting, lenient, ignorePrivateFields, ignoreProtectedFields, ignorePublicFields). |
+| `fromJson(String, Class)` | `Object` | Performs the fromJson operation using the provided parameters (json, classType). |
+| `fromJson(String, Class, boolean)` | `Object` | Performs the fromJson operation using the provided parameters (json, classType, lenient). |

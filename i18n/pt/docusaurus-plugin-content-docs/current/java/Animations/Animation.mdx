@@ -1,0 +1,61 @@
+# Animation
+
+Referência completa da API de `Animation`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Animations
+
+**Componente:** não
+
+---
+
+```java
+public class Animation
+```
+
+## Construtores (3)
+
+| Signature | Description |
+| --- | --- |
+| Animation([AnimationInstance]) | Executa `Animation` e retorna quando a chamada do motor termina. |
+| Animation([Engine]) | Executa `Animation` e retorna quando a chamada do motor termina. |
+| Animation() | Executa `Animation` e retorna quando a chamada do motor termina. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [AnimationInstance] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Atributos Virtuais (5)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `fps` | [int] | `get/set` | Retorna a propriedade `propriedade `fps da animação``. |
+| `frameTime` | [float] | `get/set` | Retorna a propriedade `propriedade `quadro atual da animação``. |
+| `speed` | [float] | `get/set` | Retorna a propriedade `velocidade da animação`. |
+| `timeLineCount` | [int] | `get` | Retorna a propriedade `quantidade de timelines da animação`. |
+| `weight` | [float] | `get/set` | Retorna a propriedade `velocidade da animação`. |
+
+## Métodos (11)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| `play()` | `void` | Reproduz a animação. |
+| `playInLoop()` | `void` | Reproduz a animação em loop. |
+| `stop()` | `void` | Para a animação. |
+| `stopLoop()` | `void` | Para a animação em loop. |
+| `isPlaying()` | `boolean` | Retorna se a animação está sendo reproduzida. |
+| `isLoop()` | `boolean` | Retorna se a animação está em loop. |
+| `getTimeLineAt(int)` | `TimeLine` | Retorna a propriedade `timeline da animação do índice especificado`. |
+| `addTimeLine(TimeLine)` | `void` | Adiciona uma timeline na animação. |
+| `removeTimeLine(TimeLine)` | `void` | Remove uma timeline da animação. |
+| `getLength()` | `int` | Retorna a propriedade `duração da animação`. |
+| `sortFrames()` | `void` | Reorganiza os frames da animação. Chame após modificar uma animação. |
+
+## Métodos Estáticos (1)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| `loadFile(AnimationFile)` | `Animation` | Carrega um AnimationFile. |

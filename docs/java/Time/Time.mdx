@@ -1,0 +1,34 @@
+# Time
+
+Complete API reference for `Time`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Time
+
+**Component:** no
+
+---
+
+```java
+public class Time
+```
+
+## Virtual Attributes (6)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `deltaTime` | [float] | `get` | Returns the time (in seconds) between the last frame and the current one. |
+| `frameTime` | [float] | `get` | Returns the time (in seconds) between the last frame and the current one. |
+| `timeScale` | [float] | `get/set` | Returns the current time scale. |
+| `timeSpeed` | [float] | `get/set` | Returns the current time speed. |
+| `unscaledDeltaTime` | [float] | `get` | Returns the time (in seconds) between the last frame and the current one without time scale (real time). |
+| `unscaledFrameTime` | [float] | `get` | Returns the time (in seconds) between the last frame and the current one without time scale (real time). |
+
+## Static Methods (3)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| `deltaTime()` | `float` | Returns the time (in seconds) between the last frame and the current one. |
+| `frameTime()` | `float` | Returns the time (in seconds) between the last frame and the current one. |
+| `unscaledDeltaTime()` | `float` | Returns the time (in seconds) between the last frame and the current one without time scale (real time). |

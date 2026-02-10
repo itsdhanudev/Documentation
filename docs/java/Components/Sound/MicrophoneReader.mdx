@@ -1,0 +1,38 @@
+# MicrophoneReader
+
+Complete API reference for `MicrophoneReader`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Sound
+
+**Component:** yes
+
+---
+
+```java
+public class MicrophoneReader extends Component
+```
+
+## Constructors (3)
+
+| Signature | Description |
+| --- | --- |
+| MicrophoneReader([MicrophoneReader]) | Executes `MicrophoneReader` and returns after the underlying engine call finishes. |
+| MicrophoneReader([Engine]) | Executes `MicrophoneReader` and returns after the underlying engine call finishes. |
+| MicrophoneReader() | Creates a new instance of MicrophoneReader. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [MicrophoneReader] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
+
+## Virtual Attributes (4)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `enableRecord` | [boolean] | `get/set` | Virtual attribute exposed by `isEnableRecord`. Access it like a field to read or write the underlying value. |
+| `frameLength` | [int] | `get` | Virtual attribute exposed by `getFrameLength`. Access it like a field to read or write the underlying value. |
+| `framePCM` | [float][] | `get` | Virtual attribute exposed by `getFramePCM`. Access it like a field to read or write the underlying value. |
+| `sampleRate` | [int] | `get` | Virtual attribute exposed by `getSampleRate`. Access it like a field to read or write the underlying value. |

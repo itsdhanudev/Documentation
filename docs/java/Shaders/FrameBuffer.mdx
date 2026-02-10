@@ -1,0 +1,62 @@
+import Links from '../../links.mdx';
+
+<Links />
+
+# FrameBuffer
+
+Complete API reference for `FrameBuffer`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Shaders
+
+**Component:** no
+
+---
+
+```java
+public class FrameBuffer
+```
+
+## Constructors (5)
+
+| Signature | Description |
+| --- | --- |
+| FrameBuffer([FrameBuffer]) | Executes `FrameBuffer` and returns after the underlying engine call finishes. |
+| FrameBuffer([int], [int]) | Executes `FrameBuffer` and returns after the underlying engine call finishes. |
+| FrameBuffer([int], [int], [int]) | Creates a new instance of FrameBuffer. |
+| FrameBuffer([int], [int], [int], [int]) | Creates a new instance of FrameBuffer. |
+| FrameBuffer([int], [int], [int], [int], [Texture]) | Creates a new instance of FrameBuffer. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `frameBuffer` | [FrameBuffer] | Represents the `frameBuffer` value stored on this instance. Read or assign to update the property. |
+
+## Virtual Attributes (8)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `colorTexture` | [Texture] | `get` | Virtual attribute exposed by `getColorTexture`. Access it like a field to read or write the underlying value. |
+| `colorTexturesCount` | [int] | `get` | Virtual attribute exposed by `getColorTexturesCount`. Access it like a field to read or write the underlying value. |
+| `depthTexture` | [Texture] | `get` | Virtual attribute exposed by `getDepthTexture`. Access it like a field to read or write the underlying value. |
+| `height` | [int] | `get` | Virtual attribute exposed by `getHeight`. Access it like a field to read or write the underlying value. |
+| `maxHeight` | [int] | `get` | Virtual attribute exposed by `getMaxHeight`. Access it like a field to read or write the underlying value. |
+| `maxWidth` | [int] | `get` | Virtual attribute exposed by `getMaxWidth`. Access it like a field to read or write the underlying value. |
+| `renderPercentage` | [int] | `get/set` | Virtual attribute exposed by `getRenderPercentage`. Access it like a field to read or write the underlying value. |
+| `width` | [int] | `get` | Virtual attribute exposed by `getWidth`. Access it like a field to read or write the underlying value. |
+
+## Methods (9)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| resize([int], [int]) | [void] | Performs the resize operation using the provided parameters (width, height). |
+| resize([int], [int], [int]) | [void] | Performs the resize operation using the provided parameters (width, height, renderPercentage). |
+| getColorTexture([int]) | [Texture] | Returns the current color texture. |
+| getColorTextureArray() | [Texture][] | Returns the current color texture array. |
+| extractGPUImageToBtm([ExtractCallback]) | [void] | Executes `extractGPUImageToBtm` and returns after the underlying engine call finishes. |
+| saveGPUImageToFile([File]) | [void] | Executes `saveGPUImageToFile` and returns after the underlying engine call finishes. |
+| saveGPUImageToFile([File], [Runnable]) | [void] | Executes `saveGPUImageToFile` and returns after the underlying engine call finishes. |
+| destroy() | [void] | Executes `destroy` and returns after the underlying engine call finishes. |
+| validate() | [boolean] | Executes `validate` and returns after the underlying engine call finishes. |

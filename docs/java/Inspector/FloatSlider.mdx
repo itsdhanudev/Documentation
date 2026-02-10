@@ -1,0 +1,56 @@
+import Links from '../../links.mdx';
+
+<Links />
+
+# FloatSlider
+
+Complete API reference for `FloatSlider`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Inspector
+
+**Component:** no
+
+---
+
+```java
+public class FloatSlider
+```
+
+## Constructors (1)
+
+| Signature | Description |
+| --- | --- |
+| FloatSlider([float], [float], [float]) | Creates a new instance of FloatSlider. |
+
+## Attributes (3)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `value` | [float] | Represents the `value` value stored on this instance. Read or assign to update the property. |
+| `min` | [float] | Represents the `min` value stored on this instance. Read or assign to update the property. |
+| `max` | [float] | Represents the `max` value stored on this instance. Read or assign to update the property. |
+
+## Virtual Attributes (3)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `max` | [float] | `get/set` | Returns the maximum allowed value of the slider. |
+| `min` | [float] | `get/set` | Returns the minimum allowed value of the slider. |
+| `value` | [float] | `get/set` | Returns the current value of the slider. |
+
+## Methods (3)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| copy() | [FloatSlider] | Returns a copy of the FloatSlider. |
+| toString() | [String] | Returns a string representation of the FloatSlider. |
+| serialize() | [String] | Serializes the FloatSlider into a string in the format '[value;min;max;step]'. |
+
+## Static Methods (2)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| inspectorController() | [ClassInspectorEntry] | Executes `inspectorController` and returns after the underlying engine call finishes. |
+| deserialize([String]) | [FloatSlider] | Deserializes a string to create a FloatSlider instance. |

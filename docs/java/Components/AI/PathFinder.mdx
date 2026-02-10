@@ -1,0 +1,50 @@
+import Links from '../../../links.mdx';
+
+<Links />
+
+# PathFinder
+
+Complete API reference for `PathFinder`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** AI
+
+**Component:** yes
+
+---
+
+```java
+public class PathFinder extends Component
+```
+
+## Constructors (2)
+
+| Signature | Description |
+| --- | --- |
+| PathFinder([PathFinder]) | Executes `PathFinder` and returns after the underlying engine call finishes. |
+| PathFinder() | Executes `PathFinder` and returns after the underlying engine call finishes. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `component` | [PathFinder] | Represents the `component` value stored on this instance. Read or assign to update the property. |
+
+## Virtual Attributes (2)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `searchDelay` | [float] | `get/set` | Virtual attribute exposed by `getSearchDelay`. Access it like a field to read or write the underlying value. |
+| `target` | [SpatialObject] | `get/set` | Virtual attribute exposed by `getTarget`. Access it like a field to read or write the underlying value. |
+
+## Methods (6)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| getTargetDistance() | [float] | Returns the current target distance. |
+| getTargetDistanceInPath() | [float] | Returns the current target distance in path. |
+| hasPath() | [boolean] | Returns whether path is true. |
+| hasTarget() | [boolean] | Returns whether target is true. |
+| componentClassMatch([Component], [Component]) | [boolean] | Executes `componentClassMatch` and returns after the underlying engine call finishes. |
+| getEngineComponent() | [Component] | Executes `getEngineComponent` and returns after the underlying engine call finishes. |

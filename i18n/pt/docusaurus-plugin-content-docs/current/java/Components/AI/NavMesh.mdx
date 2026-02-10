@@ -1,0 +1,61 @@
+import Links from '../../../links.mdx';
+
+<Links />
+
+# NavMesh
+
+Referência completa da API de `NavMesh`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** AI
+
+**Componente:** sim
+
+---
+
+```java
+public class NavMesh extends Component
+```
+
+## Construtores (3)
+
+| Signature | Description |
+| --- | --- |
+| NavMesh([BakedNavMesh]) | Executa `NavMesh` e retorna quando a chamada do motor termina. |
+| NavMesh([Engine]) | Executa `NavMesh` e retorna quando a chamada do motor termina. |
+| NavMesh() | Cria uma nova instância de NavMesh. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [BakedNavMesh] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Atributos Virtuais (17)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `agentHeight` | [float] | `get/set` | Atributo virtual exposto por `getAgentHeight`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `agentMaxClimb` | [float] | `get/set` | Atributo virtual exposto por `getAgentMaxClimb`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `agentMaxSlope` | [float] | `get/set` | Atributo virtual exposto por `getAgentMaxSlope`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `agentWidth` | [float] | `get/set` | Atributo virtual exposto por `getAgentWidth`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `cellHeight` | [float] | `get` | Atributo virtual exposto por `getCellHeight`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `cellSize` | [float] | `get` | Atributo virtual exposto por `getCellSize`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `detailSampleDist` | [float] | `get/set` | Atributo virtual exposto por `getDetailSampleDist`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `detailSampleMaxError` | [float] | `get/set` | Atributo virtual exposto por `getDetailSampleMaxError`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `edgeMaxError` | [float] | `get/set` | Atributo virtual exposto por `getEdgeMaxError`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `edgeMaxLen` | [float] | `get/set` | Atributo virtual exposto por `getEdgeMaxLen`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `maxPathFails` | [int] | `get/set` | Atributo virtual exposto por `getMaxPathFails`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `maxTiles` | [int] | `get/set` | Atributo virtual exposto por `getMaxTiles`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `regionMergeArea` | [float] | `get` | Atributo virtual exposto por `getRegionMergeArea`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `regionMergeSize` | [int] | `get/set` | Atributo virtual exposto por `getRegionMergeSize`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `regionMinArea` | [float] | `get` | Atributo virtual exposto por `getRegionMinArea`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `regionMinSize` | [int] | `get/set` | Atributo virtual exposto por `getRegionMinSize`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `tileSize` | [int] | `get/set` | Atributo virtual exposto por `getTileSize`. Acesse como um campo para ler ou escrever o valor subjacente. |
+
+## Métodos (1)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| generateBake() | [void] | Executa a operação generateBake. |

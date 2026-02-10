@@ -1,0 +1,55 @@
+import Links from '../../../links.mdx';
+
+<Links />
+
+# Collider
+
+Referência completa da API de `Collider`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Physics
+
+**Componente:** sim
+
+---
+
+```java
+public class Collider extends Component
+```
+
+## Construtores (3)
+
+| Signature | Description |
+| --- | --- |
+| Collider([Collider]) | Executa `Collider` e retorna quando a chamada do motor termina. |
+| Collider() | Cria uma nova instância de Collider. |
+| Collider([Shape]) | Executa `Collider` e retorna quando a chamada do motor termina. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `component` | [Collider] | Representa o valor de `component` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Atributos Virtuais (3)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `convexVertex` | [Vertex] | `set` | Define a propriedade `propriedade `vertex convexo do collider``. |
+| `vertex` | [Vertex] | `get/set` | Retorna a propriedade `propriedade `vertex do collider``. |
+| `vertexFile` | [VertexFile] | `set` | Define a propriedade `propriedade `arquivo do vertex para o collider``. |
+
+## Métodos (9)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| getShape() | [Shape] | Retorna a propriedade `propriedade `tipo de forma do collider``. |
+| setShape([Shape]) | [void] | Define a propriedade `propriedade `tipo de forma do collider``. |
+| colliderWithName([String]) | [boolean] | Verifica se este objeto está colidindo com um objeto com o nome especificado. |
+| isColliding() | [boolean] | Verifica se este objeto está colidindo com algo. |
+| getCollisionList() | [List]&[lt];[Collision]&[gt]; | Retorna uma lista de todas as colisões atuais. |
+| getCollisionsCount() | [int] | Retorna a propriedade `propriedade `número de colisões atuais``. |
+| getCollisionAt([int]) | [Collision] | Retorna a propriedade `colisão no índice especificado`. |
+| componentClassMatch([Component], [Component]) | [boolean] | Executa `componentClassMatch` e retorna quando a chamada do motor termina. |
+| getEngineComponent() | [Component] | Executa `getEngineComponent` e retorna quando a chamada do motor termina. |

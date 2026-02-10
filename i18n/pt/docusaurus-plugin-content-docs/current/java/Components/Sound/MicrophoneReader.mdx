@@ -1,0 +1,42 @@
+import Links from '../../../links.mdx';
+
+<Links />
+
+# MicrophoneReader
+
+Referência completa da API de `MicrophoneReader`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Sound
+
+**Componente:** sim
+
+---
+
+```java
+public class MicrophoneReader extends Component
+```
+
+## Construtores (3)
+
+| Signature | Description |
+| --- | --- |
+| MicrophoneReader([MicrophoneReader]) | Executa `MicrophoneReader` e retorna quando a chamada do motor termina. |
+| MicrophoneReader([Engine]) | Executa `MicrophoneReader` e retorna quando a chamada do motor termina. |
+| MicrophoneReader() | Cria uma nova instância de MicrophoneReader. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [MicrophoneReader] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Atributos Virtuais (4)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `enableRecord` | [boolean] | `get/set` | Atributo virtual exposto por `isEnableRecord`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `frameLength` | [int] | `get` | Atributo virtual exposto por `getFrameLength`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `framePCM` | [float][] | `get` | Atributo virtual exposto por `getFramePCM`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `sampleRate` | [int] | `get` | Atributo virtual exposto por `getSampleRate`. Acesse como um campo para ler ou escrever o valor subjacente. |

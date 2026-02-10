@@ -1,0 +1,74 @@
+import Links from '../../../links.mdx';
+
+<Links />
+
+# VehiclePhysics
+
+Complete API reference for `VehiclePhysics`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Physics
+
+**Component:** yes
+
+---
+
+```java
+public class VehiclePhysics extends Component
+```
+
+## Constructors (3)
+
+| Signature | Description |
+| --- | --- |
+| VehiclePhysics([VehiclePhysics]) | Executes `VehiclePhysics` and returns after the underlying engine call finishes. |
+| VehiclePhysics([Engine]) | Executes `VehiclePhysics` and returns after the underlying engine call finishes. |
+| VehiclePhysics() | Executes `VehiclePhysics` and returns after the underlying engine call finishes. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [VehiclePhysics] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
+
+## Virtual Attributes (19)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `angularDamping` | [float] | `get/set` | Returns the angular damping of the Rigidbody. |
+| `angularVelocity` | [Vector3] | `get/set` | Returns the current angular velocity of the Rigidbody. |
+| `bounciness` | [float] | `get/set` | Returns the bounciness of the Rigidbody. |
+| `freezePX` | [boolean] | `get/set` | Returns whether movement on the X axis is frozen. |
+| `freezePY` | [boolean] | `get/set` | Returns whether movement on the Y axis is frozen. |
+| `freezePZ` | [boolean] | `get/set` | Returns whether movement on the Z axis is frozen. |
+| `freezeRX` | [boolean] | `get/set` | Returns whether rotation on the X axis is frozen. |
+| `freezeRY` | [boolean] | `get/set` | Returns whether rotation on the Y axis is frozen. |
+| `freezeRZ` | [boolean] | `get/set` | Returns whether rotation on the Z axis is frozen. |
+| `friction` | [float] | `get/set` | Returns the friction of the Rigidbody. |
+| `gravityEnabled` | [boolean] | `get/set` | Checks whether gravity is enabled for the Rigidbody. |
+| `gravityMultiplier` | [Vector3] | `get/set` | Returns the gravity multiplier of the Rigidbody. |
+| `linearDamping` | [float] | `get/set` | Returns the linear damping of the Rigidbody. |
+| `mass` | [float] | `get/set` | Returns the mass of the Rigidbody. |
+| `physicsLayer` | [PhysicsLayer] | `get/set` | Returns the PhysicsLayer of the Rigidbody. |
+| `speedKMH` | [float] | `get` | Returns the speed of the vehicle in KM/H. |
+| `suspensionLength` | [float] | `get/set` | Returns the suspension length of the vehicle. |
+| `suspensionStiffness` | [float] | `get/set` | Returns the suspension stiffness of the vehicle. |
+| `velocity` | [Vector3] | `get/set` | Returns the current velocity of the Rigidbody. |
+
+## Methods (12)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| setTorque([float], [int]) | [void] | Sets the torque for the specified wheel. |
+| setBrake([float], [int]) | [void] | Sets the brake force for the specified wheel. |
+| setSteer([float], [int]) | [void] | Sets the steering angle for the specified wheel (in degrees). |
+| setMaxSpeed([float]) | [void] | Sets the maximum speed the vehicle can reach (in KM/H). Used in the setSteerRelativeVelocity method as the maximum possible speed. |
+| getWheels() | [List]&[lt];[VehicleWheel]&[gt]; | Returns a list of all wheels on the vehicle. |
+| addForce([Vector3]) | [void] | Applies a force to the Rigidbody in the specified direction. |
+| addForce([float], [float], [float]) | [void] | Applies a force to the Rigidbody with the specified x, y and z values. |
+| addForce([Vector3], [Vector3]) | [void] | Applies a force to the Rigidbody at a specific relative position. |
+| addVelocity([Vector3]) | [void] | Adds velocity to the Rigidbody in the specified direction. |
+| addVelocity([float], [float], [float]) | [void] | Adds velocity to the Rigidbody with the specified x, y and z values. |
+| addVelocityBySecond([Vector3]) | [void] | Adds velocity per second to the Rigidbody in the specified direction. |
+| addVelocityBySecond([float], [float], [float]) | [void] | Adds velocity per second to the Rigidbody with the specified x, y and z values. |

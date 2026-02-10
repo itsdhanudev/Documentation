@@ -21,12 +21,23 @@
   --doc-muted: #a9b4bf;
   --doc-border: rgba(44, 125, 160, 0.25);
   --doc-bg: radial-gradient(1200px 500px at 10% -10%, rgba(44, 125, 160, 0.22) 0%, transparent 60%),
-    radial-gradient(900px 600px at 90% 0%, rgba(1, 79, 134, 0.25) 0%, transparent 55%),
-    linear-gradient(160deg, #000000 0%, #0d0d0d 45%, #141414 100%);
+  radial-gradient(900px 600px at 90% 0%, rgba(1, 79, 134, 0.25) 0%, transparent 55%),
+  linear-gradient(160deg, #000000 0%, #0d0d0d 45%, #141414 100%);
+
+  --doc-code-bg: #f1f5f9;
+  --doc-code-border: rgba(44, 125, 160, 0.2);
+  --doc-code-block-bg: #1e1e2e;
 }
 
 html {
   background: var(--doc-bg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -52,8 +63,12 @@ html[data-theme="dark"] {
   --doc-muted: #a9b4bf;
   --doc-border: rgba(44, 125, 160, 0.25);
   --doc-bg: radial-gradient(900px 600px at 15% -20%, rgba(44, 125, 160, 0.22) 0%, transparent 60%),
-    radial-gradient(800px 400px at 90% 0%, rgba(1, 79, 134, 0.25) 0%, transparent 55%),
-    linear-gradient(160deg, #000000 0%, #0d0d0d 45%, #141414 100%);
+  radial-gradient(800px 400px at 90% 0%, rgba(1, 79, 134, 0.25) 0%, transparent 55%),
+  linear-gradient(160deg, #000000 0%, #0d0d0d 45%, #141414 100%);
+
+  --doc-code-bg: rgba(77, 181, 214, 0.08);
+  --doc-code-border: rgba(77, 181, 214, 0.18);
+  --doc-code-block-bg: #0d1117;
 }
 
 .navbar {
@@ -190,4 +205,52 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
   .theme-doc-markdown {
     padding: 1rem 0.9rem;
   }
+}
+
+.theme-doc-markdown pre code {
+  background: none !important;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+
+.theme-doc-markdown pre,
+div[class*="codeBlockContainer"] {
+  background: var(--doc-code-block-bg) !important;
+  border: 1px solid var(--doc-border);
+  border-radius: 8px;
+  font-size: 0.875rem;
+  line-height: 1.65;
+  overflow-x: auto;
+}
+
+.theme-doc-markdown pre {
+  margin: 0;
+  padding: 0.7rem 1rem;
+}
+
+div[class*="codeBlockTitle"] {
+  background: rgba(255, 255, 255, 0.04);
+  border-bottom: 1px solid var(--doc-border);
+  font-family: var(--ifm-heading-font-family);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--doc-muted);
+  padding: 0.5rem 1.25rem;
+}
+
+div[class*="codeBlockContainer"] button {
+  background: rgba(77, 181, 214, 0.15);
+  border-radius: 6px;
+  border: 1px solid rgba(77, 181, 214, 0.3);
+  transition: all 0.2s ease;
+}
+
+div[class*="codeBlockContainer"] button:hover {
+  background: rgba(77, 181, 214, 0.25);
+  border-color: var(--ifm-color-primary);
 }

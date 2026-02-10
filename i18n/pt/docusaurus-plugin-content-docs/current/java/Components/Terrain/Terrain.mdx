@@ -1,0 +1,65 @@
+import Links from '../../../links.mdx';
+
+<Links />
+
+# Terrain
+
+Referência completa da API de `Terrain`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Terrain
+
+**Componente:** sim
+
+---
+
+```java
+public class Terrain extends Component
+```
+
+## Construtores (1)
+
+| Signature | Description |
+| --- | --- |
+| Terrain() | Executa `Terrain` e retorna quando a chamada do motor termina. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `component` | [Terrain] | Representa o valor de `component` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Atributos Virtuais (3)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `maxHeight` | [float] | `get/set` | Atributo virtual exposto por `getMaxHeight`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `resolution` | [int] | `get/set` | Atributo virtual exposto por `getResolution`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `width` | [float] | `get/set` | Atributo virtual exposto por `getWidth`. Acesse como um campo para ler ou escrever o valor subjacente. |
+
+## Métodos (21)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| isInsideTerrain([float], [float]) | [boolean] | Executa `isInsideTerrain` e retorna quando a chamada do motor termina. |
+| isInsideTerrain([Vector3]) | [boolean] | Executa `isInsideTerrain` e retorna quando a chamada do motor termina. |
+| nearestVerticeAt([Vector3]) | [Point2] | Executa `nearestVerticeAt` e retorna quando a chamada do motor termina. |
+| nearestLayerVerticeAt([Vector3]) | [Point2] | Executa `nearestLayerVerticeAt` e retorna quando a chamada do motor termina. |
+| getWorldY([float], [float]) | [float] | Executa `getWorldY` e retorna quando a chamada do motor termina. |
+| getWorldY([Vector3]) | [float] | Executa `getWorldY` e retorna quando a chamada do motor termina. |
+| getHeight([Point2]) | [float] | Executa `getHeight` e retorna quando a chamada do motor termina. |
+| getHeight([int], [int]) | [float] | Executa `getHeight` e retorna quando a chamada do motor termina. |
+| setHeight([Point2], [float]) | [void] | Executa `setHeight` e retorna quando a chamada do motor termina. |
+| setHeight([int], [int], [float]) | [void] | Executa `setHeight` e retorna quando a chamada do motor termina. |
+| getLayerIntensity([int], [int], [int]) | [float] | Executa `getLayerIntensity` e retorna quando a chamada do motor termina. |
+| setLayerIntensity([int], [int], [int], [float]) | [void] | Executa `setLayerIntensity` e retorna quando a chamada do motor termina. |
+| getLayersCount() | [int] | Executa `getLayersCount` e retorna quando a chamada do motor termina. |
+| getLayerAt([int]) | [Layer] | Executa `getLayerAt` e retorna quando a chamada do motor termina. |
+| addLayer([Layer]) | [void] | Executa `addLayer` e retorna quando a chamada do motor termina. |
+| traceRay([Vector3], [Vector3]) | [LaserHit] | Executa `traceRay` e retorna quando a chamada do motor termina. |
+| traceRay([Vector3], [Vector3], [float]) | [LaserHit] | Executa `traceRay` e retorna quando a chamada do motor termina. |
+| applyRaiseLower([Vector2], [float], [float], [Brush]) | [void] | Executa `applyRaiseLower` e retorna quando a chamada do motor termina. |
+| applyPaint([Vector2], [float], [float], [float], [int], [Brush]) | [void] | Executa `applyPaint` e retorna quando a chamada do motor termina. |
+| componentClassMatch([Component], [Component]) | [boolean] | Executa `componentClassMatch` e retorna quando a chamada do motor termina. |
+| getEngineComponent() | [Component] | Executa `getEngineComponent` e retorna quando a chamada do motor termina. |

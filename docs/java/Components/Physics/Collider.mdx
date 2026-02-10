@@ -1,0 +1,55 @@
+import Links from '../../../links.mdx';
+
+<Links />
+
+# Collider
+
+Complete API reference for `Collider`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Physics
+
+**Component:** yes
+
+---
+
+```java
+public class Collider extends Component
+```
+
+## Constructors (3)
+
+| Signature | Description |
+| --- | --- |
+| Collider([Collider]) | Executes `Collider` and returns after the underlying engine call finishes. |
+| Collider() | Creates a new instance of Collider. |
+| Collider([Shape]) | Executes `Collider` and returns after the underlying engine call finishes. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `component` | [Collider] | Represents the `component` value stored on this instance. Read or assign to update the property. |
+
+## Virtual Attributes (3)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `convexVertex` | [Vertex] | `set` | Sets the convex vertex of the collider. |
+| `vertex` | [Vertex] | `get/set` | Returns the collider vertex. |
+| `vertexFile` | [VertexFile] | `set` | Sets the vertex file for the collider. |
+
+## Methods (9)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| getShape() | [Shape] | Returns the shape type of the collider. |
+| setShape([Shape]) | [void] | Sets the shape type of the collider. |
+| colliderWithName([String]) | [boolean] | Checks if this object is colliding with an object with the specified name. |
+| isColliding() | [boolean] | Checks if this object is colliding with anything. |
+| getCollisionList() | [List]&[lt];[Collision]&[gt]; | Returns a list of all current collisions. |
+| getCollisionsCount() | [int] | Returns the number of current collisions. |
+| getCollisionAt([int]) | [Collision] | Returns the Collision at the specified index. |
+| componentClassMatch([Component], [Component]) | [boolean] | Executes `componentClassMatch` and returns after the underlying engine call finishes. |
+| getEngineComponent() | [Component] | Executes `getEngineComponent` and returns after the underlying engine call finishes. |

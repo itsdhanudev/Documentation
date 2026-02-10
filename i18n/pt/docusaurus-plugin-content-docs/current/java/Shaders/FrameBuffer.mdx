@@ -1,0 +1,62 @@
+import Links from '../../links.mdx';
+
+<Links />
+
+# FrameBuffer
+
+Referência completa da API de `FrameBuffer`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Shaders
+
+**Componente:** não
+
+---
+
+```java
+public class FrameBuffer
+```
+
+## Construtores (5)
+
+| Signature | Description |
+| --- | --- |
+| FrameBuffer([FrameBuffer]) | Executa `FrameBuffer` e retorna quando a chamada do motor termina. |
+| FrameBuffer([int], [int]) | Executa `FrameBuffer` e retorna quando a chamada do motor termina. |
+| FrameBuffer([int], [int], [int]) | Cria uma nova instância de FrameBuffer. |
+| FrameBuffer([int], [int], [int], [int]) | Cria uma nova instância de FrameBuffer. |
+| FrameBuffer([int], [int], [int], [int], [Texture]) | Cria uma nova instância de FrameBuffer. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `frameBuffer` | [FrameBuffer] | Representa o valor de `frameBuffer` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Atributos Virtuais (8)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `colorTexture` | [Texture] | `get` | Atributo virtual exposto por `getColorTexture`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `colorTexturesCount` | [int] | `get` | Atributo virtual exposto por `getColorTexturesCount`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `depthTexture` | [Texture] | `get` | Atributo virtual exposto por `getDepthTexture`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `height` | [int] | `get` | Atributo virtual exposto por `getHeight`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `maxHeight` | [int] | `get` | Atributo virtual exposto por `getMaxHeight`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `maxWidth` | [int] | `get` | Atributo virtual exposto por `getMaxWidth`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `renderPercentage` | [int] | `get/set` | Atributo virtual exposto por `getRenderPercentage`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `width` | [int] | `get` | Atributo virtual exposto por `getWidth`. Acesse como um campo para ler ou escrever o valor subjacente. |
+
+## Métodos (9)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| resize([int], [int]) | [void] | Executa a operação resize usando os parâmetros informados (width, height). |
+| resize([int], [int], [int]) | [void] | Executa a operação resize usando os parâmetros informados (width, height, renderPercentage). |
+| getColorTexture([int]) | [Texture] | Retorna a propriedade `propriedade `color texture atual``. |
+| getColorTextureArray() | [Texture][] | Retorna a propriedade `propriedade `color texture array atual``. |
+| extractGPUImageToBtm([ExtractCallback]) | [void] | Executa `extractGPUImageToBtm` e retorna quando a chamada do motor termina. |
+| saveGPUImageToFile([File]) | [void] | Executa `saveGPUImageToFile` e retorna quando a chamada do motor termina. |
+| saveGPUImageToFile([File], [Runnable]) | [void] | Executa `saveGPUImageToFile` e retorna quando a chamada do motor termina. |
+| destroy() | [void] | Executa a operação destroy. |
+| validate() | [boolean] | Executa a operação validate. |

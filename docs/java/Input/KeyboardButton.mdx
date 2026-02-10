@@ -1,0 +1,45 @@
+import Links from '../../links.mdx';
+
+<Links />
+
+# KeyboardButton
+
+Complete API reference for `KeyboardButton`, including constructors, attributes, virtual attributes, and methods.
+
+**Package:** `JAVARuntime`
+
+**Category:** Input
+
+**Component:** no
+
+---
+
+```java
+public class KeyboardButton
+```
+
+## Constructors (2)
+
+| Signature | Description |
+| --- | --- |
+| KeyboardButton([KeyboardButton]) | Executes `KeyboardButton` and returns after the underlying engine call finishes. |
+| KeyboardButton() | Executes `KeyboardButton` and returns after the underlying engine call finishes. |
+
+## Attributes (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `gamePadButton` | [KeyboardButton] | Represents the `gamePadButton` value stored on this instance. Read or assign to update the property. |
+
+## Virtual Attributes (8)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `down` | [boolean] | `get/set` | Checks whether the button was just pressed. This returns true only on the first frame it was pressed. |
+| `longDown` | [boolean] | `get/set` | Checks whether the button was just long-pressed. This returns true only on the first frame it was long-pressed. |
+| `longPressed` | [boolean] | `get/set` | Checks whether the button is being long-pressed. This returns true on every frame while it remains pressed for a long duration. |
+| `name` | [String] | `get` | Returns the name of the keyboard button. |
+| `pressed` | [boolean] | `get/set` | Checks whether the button is currently being held down. This returns true on every frame while it remains pressed. |
+| `printableName` | [String] | `get` | Returns the printable name of the keyboard button. |
+| `up` | [boolean] | `get/set` | Checks whether the button was just released. This returns true only on the first frame after it was released. |
+| `upperCase` | [boolean] | `get` | Checks if the button is uppercase. |

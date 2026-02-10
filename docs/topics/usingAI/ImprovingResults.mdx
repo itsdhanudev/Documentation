@@ -1,0 +1,49 @@
+﻿import Links from '../../links.mdx';
+
+<Links />
+
+# Improving Results With AI Code Generation
+
+To get better answers from AI, describe the problem clearly and provide essential technical context. The more objective and complete your request is, the less likely you are to receive generic responses.
+
+## Ways to improve results
+
+- Specify the final goal and the expected behavior.
+- Provide project context, including the API and classes you are using.
+- List requirements and constraints (language, patterns, code style, versions).
+- Provide input and output examples when possible.
+- Ask the AI to validate assumptions before concluding the solution.
+- Request a step-by-step explanation when the problem is more complex.
+
+## Required base prompt
+
+Attach this text to the AI prompt every time you use AI:
+
+```text
+Here is the link to the documentation:
+https://itmagic.com.br/documentation/docs/intro/
+or from repository:
+https://github.com/ITsMagic-Software/Documentation
+
+You should analyze the classes to be used and their respective methods.
+
+Always create classes that extend Component and override its methods as needed.
+
+It is not necessary to declare the class: `public class name extends Component{`
+Because ITsMagic automatically declares classes as a component.
+
+But after compilation, it will be declared like this.
+
+In the ITsMagic ecosystem, we don't need to import anything.
+
+We only need to import official Java classes that we want to use.
+
+In the ITsMagic ecosystem, there are only the classes available in the documentation provided by the link.
+
+What you will create are game mechanics and the component's repeat method happens next to the graphics API drawframe.
+```
+
+## Example of use
+
+See an example of using the prompt at:
+https://chatgpt.com/share/6984ac01-7e0c-8002-aab2-a3db3138dbd7

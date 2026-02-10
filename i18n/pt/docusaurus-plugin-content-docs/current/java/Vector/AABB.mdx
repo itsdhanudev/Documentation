@@ -1,0 +1,62 @@
+import Links from '../../links.mdx';
+
+<Links />
+
+# AABB
+
+Referência completa da API de `AABB`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Vector
+
+**Componente:** não
+
+---
+
+```java
+public class AABB
+```
+
+## Construtores (6)
+
+| Signature | Description |
+| --- | --- |
+| AABB([AABB]) | Executa `AABB` e retorna quando a chamada do motor termina. |
+| AABB() | Executa `AABB` e retorna quando a chamada do motor termina. |
+| AABB([float], [float], [float], [float], [float], [float]) | Cria uma nova instância de AABB. |
+| AABB([float], [float], [float], [float], [float], [float], [float], [float], [float]) | Cria uma nova instância de AABB. |
+| AABB([Vector3], [Vector3]) | Cria uma nova instância de AABB. |
+| AABB([Vector3], [Vector3], [Vector3]) | Cria uma nova instância de AABB. |
+
+## Atributos (1)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `instance` | [AABB] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Atributos Virtuais (10)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `lengthMax` | [float] | `get` | Retorna a propriedade `propriedade `comprimento do máximo das bordas/limites``. |
+| `lengthMin` | [float] | `get` | Retorna a propriedade `propriedade `comprimento do mínimo das bordas/limites``. |
+| `max` | [Vector3] | `get/set` | Retorna a propriedade `propriedade `máximo das bordas/limites``. |
+| `min` | [Vector3] | `get/set` | Retorna a propriedade `propriedade `mínimo das bordas/limites``. |
+| `x` | [float] | `get/set` | Retorna a propriedade `propriedade `X do máximo das bordas``. |
+| `xn` | [float] | `get/set` | Retorna a propriedade `propriedade `X do mínimo das bordas``. |
+| `y` | [float] | `get/set` | Retorna a propriedade `propriedade `Y do máximo das bordas``. |
+| `yn` | [float] | `get/set` | Retorna a propriedade `propriedade `Y do mínimo das bordas``. |
+| `z` | [float] | `get/set` | Retorna a propriedade `propriedade `Z do máximo das bordas``. |
+| `zn` | [float] | `get/set` | Retorna a propriedade `propriedade `Z do mínimo das bordas``. |
+
+## Métodos (6)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| lengthMax() | [float] | Retorna a propriedade `propriedade `comprimento do máximo das bordas/limites``. |
+| lengthMin() | [float] | Retorna a propriedade `propriedade `comprimento do mínimo das bordas/limites``. |
+| maxDistanceFromCenter() | [float] | Retorna a propriedade `distância máxima do centro`. |
+| isInside([Vector3]) | [boolean] | Retorna verdadeiro se o ponto estiver dentro do AABB, caso contrário, retorna falso. |
+| getCenter() | [Vector3] | Retorna a propriedade `posição central do AABB`. |
+| copy() | [AABB] | Retorna uma cópia da instância da classe atual. |

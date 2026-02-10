@@ -1,0 +1,64 @@
+import Links from '../../../links.mdx';
+
+<Links />
+
+# ModelRenderer
+
+Referência completa da API de `ModelRenderer`, incluindo construtores, atributos, atributos virtuais e métodos.
+
+**Pacote:** `JAVARuntime`
+
+**Categoria:** Rendering
+
+**Componente:** sim
+
+---
+
+```java
+public class ModelRenderer extends Component
+```
+
+## Construtores (3)
+
+| Signature | Description |
+| --- | --- |
+| ModelRenderer([ModelRenderer]) | Executa `ModelRenderer` e retorna quando a chamada do motor termina. |
+| ModelRenderer() | Executa `ModelRenderer` e retorna quando a chamada do motor termina. |
+| ModelRenderer([Vertex]) | Cria uma nova instância de ModelRenderer. |
+
+## Atributos (9)
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `CUBE` | [int] | Representa o valor de `CUBE` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+| `SPHERE` | [int] | Representa o valor de `SPHERE` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+| `CONE` | [int] | Representa o valor de `CONE` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+| `CYLINDER` | [int] | Representa o valor de `CYLINDER` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+| `CIRCLE` | [int] | Representa o valor de `CIRCLE` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+| `TORUS` | [int] | Representa o valor de `TORUS` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+| `SQUARE` | [int] | Representa o valor de `SQUARE` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+| `SQUARE90` | [int] | Representa o valor de `SQUARE90` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+| `component` | [ModelRenderer] | Representa o valor de `component` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+
+## Atributos Virtuais (7)
+
+| Name | Type | Access | Description |
+| --- | --- | --- | --- |
+| `castShadowEnabled` | [boolean] | `get/set` | Atributo virtual exposto por `isCastShadowEnabled`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `enableOutline` | [boolean] | `get/set` | Atributo virtual exposto por `isEnableOutline`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `material` | [Material] | `get/set` | Atributo virtual exposto por `getMaterial`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `outlineColor` | [Color] | `get/set` | Atributo virtual exposto por `getOutlineColor`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `outlineScale` | [float] | `set` | Atributo virtual exposto por `setOutlineScale`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `renderMatrix` | [float][] | `get/set` | Atributo virtual exposto por `getRenderMatrix`. Acesse como um campo para ler ou escrever o valor subjacente. |
+| `vertex` | [Vertex] | `get/set` | Atributo virtual exposto por `getVertex`. Acesse como um campo para ler ou escrever o valor subjacente. |
+
+## Métodos (6)
+
+| Signature | Returns | Description |
+| --- | --- | --- |
+| setModelFile([VertexFile]) | [void] | Define ou atualiza a propriedade `propriedade `model file``. |
+| setMaterialFile([MaterialFile]) | [void] | Define ou atualiza a propriedade `propriedade `material file``. |
+| attachPrimitive([int]) | [void] | Executa a operação attachPrimitive usando os parâmetros informados (primitive). |
+| getOutlineScale() | [float] | Retorna a propriedade `propriedade `outline scale atual``. |
+| componentClassMatch([Component], [Component]) | [boolean] | Executa `componentClassMatch` e retorna quando a chamada do motor termina. |
+| getEngineComponent() | [Component] | Executa `getEngineComponent` e retorna quando a chamada do motor termina. |

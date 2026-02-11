@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # ObjectsPanelMenu
 
 Complete API reference for `ObjectsPanelMenu`, including constructors, attributes, virtual attributes, and methods.
@@ -14,16 +16,28 @@ Complete API reference for `ObjectsPanelMenu`, including constructors, attribute
 public class ObjectsPanelMenu
 ```
 
-## Constructors (1)
-
-| Signature | Description |
-| --- | --- |
-| ObjectsPanelMenu([String]) | Creates a new instance of ObjectsPanelMenu. |
-
-## Methods (3)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getMenu()` | `String` | Returns the current menu. |
-| `setMenu(String)` | `void` | Sets or updates the menu. |
-| `onClick(SpatialObject)` | `void` | Performs the onClick operation using the provided parameters (object). |
+<ApiDoc
+  constructors={[
+    {
+      signature: "ObjectsPanelMenu(String)",
+      description: <>Creates a new instance of ObjectsPanelMenu.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "getMenu()",
+      returns: "String",
+      description: <>Returns the current menu.</>
+    },
+    {
+      signature: "setMenu(String)",
+      returns: "void",
+      description: <>Sets or updates the menu.</>
+    },
+    {
+      signature: "onClick(SpatialObject)",
+      returns: "void",
+      description: <>Performs the onClick operation using the provided parameters (object).</>
+    }
+  ]}
+/>

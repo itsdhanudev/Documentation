@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # NativeShortBuffer
 
 Referência completa da API de `NativeShortBuffer`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,34 +16,71 @@ Referência completa da API de `NativeShortBuffer`, incluindo construtores, atri
 public class NativeShortBuffer
 ```
 
-## Construtores (3)
-
-| Signature | Description |
-| --- | --- |
-| NativeShortBuffer([NativeShortBuffer]) | Executa `NativeShortBuffer` e retorna quando a chamada do motor termina. |
-| NativeShortBuffer([Engine]) | Executa `NativeShortBuffer` e retorna quando a chamada do motor termina. |
-| NativeShortBuffer([int]) | Cria uma nova instância de NativeShortBuffer. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `buffer` | [NativeShortBuffer] | Representa o valor de `buffer` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (1)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `vboEnabled` | [boolean] | `get/set` | Atributo virtual exposto por `isVboEnabled`. Acesse como um campo para ler ou escrever o valor subjacente. |
-
-## Métodos (7)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `get(int)` | `short` | Retorna a propriedade `propriedade `valor value atual``. |
-| `set(int, short)` | `void` | Define ou atualiza the value. |
-| `put(short)` | `void` | Define ou atualiza the value. |
-| `capacity()` | `int` | Executa a operação capacity. |
-| `getPosition()` | `int` | Retorna a propriedade `propriedade `position atual``. |
-| `position(int)` | `int` | Executa a operação position usando os parâmetros informados (idx). |
-| `setPosition(int)` | `void` | Define ou atualiza a propriedade `propriedade `position``. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "NativeShortBuffer(NativeShortBuffer)",
+      description: <>Executa <code>NativeShortBuffer</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "NativeShortBuffer(Engine)",
+      description: <>Executa <code>NativeShortBuffer</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "NativeShortBuffer(int)",
+      description: <>Cria uma nova instância de NativeShortBuffer.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "buffer",
+      type: "NativeShortBuffer",
+      description: <>Representa o valor de <code>buffer</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "vboEnabled",
+      type: "boolean",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>isVboEnabled</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "get(int)",
+      returns: "short",
+      description: <>Retorna a propriedade <code>propriedade </code>valor value atual``.</>
+    },
+    {
+      signature: "set(int, short)",
+      returns: "void",
+      description: <>Define ou atualiza the value.</>
+    },
+    {
+      signature: "put(short)",
+      returns: "void",
+      description: <>Define ou atualiza the value.</>
+    },
+    {
+      signature: "capacity()",
+      returns: "int",
+      description: <>Executa a operação capacity.</>
+    },
+    {
+      signature: "getPosition()",
+      returns: "int",
+      description: <>Retorna a propriedade <code>propriedade </code>position atual``.</>
+    },
+    {
+      signature: "position(int)",
+      returns: "int",
+      description: <>Executa a operação position usando os parâmetros informados (idx).</>
+    },
+    {
+      signature: "setPosition(int)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>position``.</>
+    }
+  ]}
+/>

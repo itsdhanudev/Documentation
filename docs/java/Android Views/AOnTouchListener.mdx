@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # AOnTouchListener
 
 Complete API reference for `AOnTouchListener`, including constructors, attributes, virtual attributes, and methods.
@@ -14,9 +16,17 @@ Complete API reference for `AOnTouchListener`, including constructors, attribute
 public class AOnTouchListener
 ```
 
-## Methods (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `onTouch(View, MotionEvent)` | `boolean` | Performs the onTouch operation using the provided parameters (v, event). |
-| `onTouchEvent(View, MotionEvent)` | `boolean` | Executes `onTouchEvent` and returns after the underlying engine call finishes. |
+<ApiDoc
+  methods={[
+    {
+      signature: "onTouch(View, MotionEvent)",
+      returns: "boolean",
+      description: <>Performs the onTouch operation using the provided parameters (v, event).</>
+    },
+    {
+      signature: "onTouchEvent(View, MotionEvent)",
+      returns: "boolean",
+      description: <>Executes <code>onTouchEvent</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

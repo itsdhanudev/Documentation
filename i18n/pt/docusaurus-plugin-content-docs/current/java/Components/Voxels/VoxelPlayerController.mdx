@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # VoxelPlayerController
 
 Referência completa da API de `VoxelPlayerController`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,26 +16,58 @@ Referência completa da API de `VoxelPlayerController`, incluindo construtores, 
 public class VoxelPlayerController extends Component
 ```
 
-## Construtores (3)
-
-| Signature | Description |
-| --- | --- |
-| VoxelPlayerController([VoxelPlayerController]) | Executa `VoxelPlayerController` e retorna quando a chamada do motor termina. |
-| VoxelPlayerController([Engine]) | Executa `VoxelPlayerController` e retorna quando a chamada do motor termina. |
-| VoxelPlayerController() | Cria uma nova instância de VoxelPlayerController. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [VoxelPlayerController] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (5)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `horizontalSlideName` | [String] | `get/set` | Atributo virtual exposto por `getHorizontalSlideName`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `horizontalSlideSens` | [float] | `get/set` | Atributo virtual exposto por `getHorizontalSlideSens`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `joystickName` | [String] | `get/set` | Atributo virtual exposto por `getJoystickName`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `runSpeed` | [float] | `get/set` | Atributo virtual exposto por `getRunSpeed`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `walkSpeed` | [float] | `get/set` | Atributo virtual exposto por `getWalkSpeed`. Acesse como um campo para ler ou escrever o valor subjacente. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "VoxelPlayerController(VoxelPlayerController)",
+      description: <>Executa <code>VoxelPlayerController</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "VoxelPlayerController(Engine)",
+      description: <>Executa <code>VoxelPlayerController</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "VoxelPlayerController()",
+      description: <>Cria uma nova instância de VoxelPlayerController.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "VoxelPlayerController",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "horizontalSlideName",
+      type: "String",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getHorizontalSlideName</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "horizontalSlideSens",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getHorizontalSlideSens</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "joystickName",
+      type: "String",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getJoystickName</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "runSpeed",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getRunSpeed</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "walkSpeed",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getWalkSpeed</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+/>

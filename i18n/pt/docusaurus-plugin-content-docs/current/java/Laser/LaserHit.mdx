@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # LaserHit
 
 Referência completa da API de `LaserHit`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,28 +16,72 @@ Referência completa da API de `LaserHit`, incluindo construtores, atributos, at
 public class LaserHit
 ```
 
-## Construtores (2)
-
-| Signature | Description |
-| --- | --- |
-| LaserHit([LaserHit]) | Executa `LaserHit` e retorna quando a chamada do motor termina. |
-| LaserHit() | Executa `LaserHit` e retorna quando a chamada do motor termina. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `laserHit` | [LaserHit] | Representa o valor de `laserHit` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (8)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `collider` | [Collider] | `get/set` | Retorna a propriedade `propriedade `Collider que o Laser colidiu``. |
-| `colliderObject` | [SpatialObject] | `get/set` | Retorna a propriedade `propriedade `objeto que o Laser colidiu``. |
-| `distance` | [float] | `get/set` | Retorna a propriedade `distância entre a origem do Laser e o ponto que o Laser colidiu`. |
-| `faceNormal` | [Vector3] | `get/set` | Retorna a propriedade `propriedade `vetor normal da face que o Laser colidiu``. |
-| `normal` | [Vector3] | `get/set` | Retorna a propriedade `propriedade `vetor normal da direção do Laser``. |
-| `object` | [SpatialObject] | `get/set` | Retorna a propriedade `propriedade `objeto que o Laser colidiu``. |
-| `point` | [Vector3] | `get/set` | Retorna a propriedade `propriedade `ponto onde o Laser atingiu``. |
-| `uVCoord` | [Vector2] | `get/set` | Retorna as coordenadas UV do ponto que o Laser colidiu. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "LaserHit(LaserHit)",
+      description: <>Executa <code>LaserHit</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "LaserHit()",
+      description: <>Executa <code>LaserHit</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "laserHit",
+      type: "LaserHit",
+      description: <>Representa o valor de <code>laserHit</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "collider",
+      type: "Collider",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>propriedade </code>Collider que o Laser colidiu``.</>
+    },
+    {
+      name: "colliderObject",
+      type: "SpatialObject",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>propriedade </code>objeto que o Laser colidiu``.</>
+    },
+    {
+      name: "distance",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>distância entre a origem do Laser e o ponto que o Laser colidiu</code>.</>
+    },
+    {
+      name: "faceNormal",
+      type: "Vector3",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>propriedade </code>vetor normal da face que o Laser colidiu``.</>
+    },
+    {
+      name: "normal",
+      type: "Vector3",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>propriedade </code>vetor normal da direção do Laser``.</>
+    },
+    {
+      name: "object",
+      type: "SpatialObject",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>propriedade </code>objeto que o Laser colidiu``.</>
+    },
+    {
+      name: "point",
+      type: "Vector3",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>propriedade </code>ponto onde o Laser atingiu``.</>
+    },
+    {
+      name: "uVCoord",
+      type: "Vector2",
+      access: "get/set",
+      description: <>Retorna as coordenadas UV do ponto que o Laser colidiu.</>
+    }
+  ]}
+/>

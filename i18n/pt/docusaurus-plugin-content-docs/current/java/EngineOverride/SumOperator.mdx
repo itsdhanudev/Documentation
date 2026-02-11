@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # SumOperator
 
 Referência completa da API de `SumOperator`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,9 +16,12 @@ Referência completa da API de `SumOperator`, incluindo construtores, atributos,
 public interface SumOperator
 ```
 
-## Métodos (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `@MethodArgs([{"otherObject"}])` | `void` | Adiciona o objeto fornecido ao valor atual. |
-| `sum(Object)` | `T` | Executa `sum` e retorna quando a chamada do motor termina. |
+<ApiDoc
+  methods={[
+    {
+      signature: "sum(Object)",
+      returns: "T",
+      description: <>Adiciona o objeto fornecido ao valor atual.</>
+    }
+  ]}
+/>

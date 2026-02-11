@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Toast
 
 Referência completa da API de `Toast`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,15 +16,31 @@ Referência completa da API de `Toast`, incluindo construtores, atributos, atrib
 public class Toast
 ```
 
-## Atributos (2)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `LENGTH_LONG` | [int] | Representa o valor de `LENGTH_LONG` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `LENGTH_SHORT` | [int] | Representa o valor de `LENGTH_SHORT` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Métodos Estáticos (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `showText(String, int)` | `void` | Exibe uma mensagem toast na tela com o texto e duração informados (use Toast.LENGTH_SHORT ou Toast.LENGTH_LONG para o length). |
+<ApiDoc
+  attributes={[
+    {
+      name: "LENGTH_LONG",
+      type: "int",
+      description: <>Representa o valor de <code>LENGTH_LONG</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "LENGTH_SHORT",
+      type: "int",
+      description: <>Representa o valor de <code>LENGTH_SHORT</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "showText(String, int)",
+      returns: "void",
+      description: <>Exibe uma mensagem toast na tela com o texto e duração informados (use Toast.LENGTH_SHORT ou Toast.LENGTH_LONG para o length).</>
+    }
+  ]}
+  staticMethods={[
+    {
+      signature: "showText(String, int)",
+      returns: "void",
+      description: <>Exibe uma mensagem toast na tela com o texto e duração informados (use Toast.LENGTH_SHORT ou Toast.LENGTH_LONG para o length).</>
+    }
+  ]}
+/>

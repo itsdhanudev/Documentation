@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # VoxelGeneratorListener
 
 Referência completa da API de `VoxelGeneratorListener`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,11 +16,27 @@ Referência completa da API de `VoxelGeneratorListener`, incluindo construtores,
 public interface VoxelGeneratorListener
 ```
 
-## Métodos (4)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getGroundHeight(int, int)` | `int` | Executa `getGroundHeight` e retorna quando a chamada do motor termina. |
-| `getBlockType(int, int, int, int)` | `int` | Executa `getBlockType` e retorna quando a chamada do motor termina. |
-| `storeChunk(OH3LevelIntArray, int, int)` | `void` | Executa `storeChunk` e retorna quando a chamada do motor termina. |
-| `loadChunk(int, int)` | `OH3LevelIntArray` | Executa `loadChunk` e retorna quando a chamada do motor termina. |
+<ApiDoc
+  methods={[
+    {
+      signature: "getGroundHeight(int, int)",
+      returns: "int",
+      description: <>Executa <code>getGroundHeight</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "getBlockType(int, int, int, int)",
+      returns: "int",
+      description: <>Executa <code>getBlockType</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "storeChunk(OH3LevelIntArray, int, int)",
+      returns: "void",
+      description: <>Executa <code>storeChunk</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "loadChunk(int, int)",
+      returns: "OH3LevelIntArray",
+      description: <>Executa <code>loadChunk</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+/>

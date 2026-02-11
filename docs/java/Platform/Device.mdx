@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Device
 
 Complete API reference for `Device`, including constructors, attributes, virtual attributes, and methods.
@@ -14,17 +16,57 @@ Complete API reference for `Device`, including constructors, attributes, virtual
 public class Device
 ```
 
-## Static Methods (10)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getBatteryPercentage()` | `int` | Returns the device's battery percentage. |
-| `availableProcessors()` | `int` | Returns the number of available processors on the device. |
-| `openURL(String)` | `void` | Opens the specified URL in the default web browser. |
-| `openLink(String)` | `void` | Opens the specified link in the default web browser. |
-| `vibrateOneShot(long)` | `void` | Vibrates the device for the specified duration (in milliseconds). |
-| `vibratePattern(long[], int)` | `void` | Makes the device vibrate following the time durations (in milliseconds) defined in the array, alternating between vibration and pause (starting with a pause). After completing the array, the repetition begins at the specified index (-1 to not repeat). |
-| `stopVibrate()` | `void` | Stops any ongoing vibration on the device. |
-| `setMouseVisible(boolean)` | `void` | Sets the visibility of the mouse cursor on the device. |
-| `setClipboard(String)` | `void` | Copies the given text to the device's clipboard. |
-| `getClipboard()` | `String` | Returns the text in the device's clipboard. |
+<ApiDoc
+  staticMethods={[
+    {
+      signature: "getBatteryPercentage()",
+      returns: "int",
+      description: <>Returns the device's battery percentage.</>
+    },
+    {
+      signature: "availableProcessors()",
+      returns: "int",
+      description: <>Returns the number of available processors on the device.</>
+    },
+    {
+      signature: "openURL(String)",
+      returns: "void",
+      description: <>Opens the specified URL in the default web browser.</>
+    },
+    {
+      signature: "openLink(String)",
+      returns: "void",
+      description: <>Opens the specified link in the default web browser.</>
+    },
+    {
+      signature: "vibrateOneShot(long)",
+      returns: "void",
+      description: <>Vibrates the device for the specified duration (in milliseconds).</>
+    },
+    {
+      signature: "vibratePattern(long[], int)",
+      returns: "void",
+      description: <>Makes the device vibrate following the time durations (in milliseconds) defined in the array, alternating between vibration and pause (starting with a pause). After completing the array, the repetition begins at the specified index (-1 to not repeat).</>
+    },
+    {
+      signature: "stopVibrate()",
+      returns: "void",
+      description: <>Stops any ongoing vibration on the device.</>
+    },
+    {
+      signature: "setMouseVisible(boolean)",
+      returns: "void",
+      description: <>Sets the visibility of the mouse cursor on the device.</>
+    },
+    {
+      signature: "setClipboard(String)",
+      returns: "void",
+      description: <>Copies the given text to the device's clipboard.</>
+    },
+    {
+      signature: "getClipboard()",
+      returns: "String",
+      description: <>Returns the text in the device's clipboard.</>
+    }
+  ]}
+/>

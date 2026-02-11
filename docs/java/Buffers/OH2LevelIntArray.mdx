@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # OH2LevelIntArray
 
 Complete API reference for `OH2LevelIntArray`, including constructors, attributes, virtual attributes, and methods.
@@ -14,17 +16,31 @@ Complete API reference for `OH2LevelIntArray`, including constructors, attribute
 public class OH2LevelIntArray extends OHIntDataBase
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| OH2LevelIntArray([Engine]) | Creates a new instance of OH2LevelIntArray. |
-| OH2LevelIntArray([int], [int]) | Creates a new instance of OH2LevelIntArray. |
-| OH2LevelIntArray([int], [int], [boolean]) | Creates a new instance of OH2LevelIntArray. |
-
-## Methods (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `get(int, int)` | `int` | Returns the current value. |
-| `set(int, int, int)` | `void` | Sets or updates the the value. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "OH2LevelIntArray(Engine)",
+      description: <>Creates a new instance of OH2LevelIntArray.</>
+    },
+    {
+      signature: "OH2LevelIntArray(int, int)",
+      description: <>Creates a new instance of OH2LevelIntArray.</>
+    },
+    {
+      signature: "OH2LevelIntArray(int, int, boolean)",
+      description: <>Creates a new instance of OH2LevelIntArray.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "get(int, int)",
+      returns: "int",
+      description: <>Returns the current value.</>
+    },
+    {
+      signature: "set(int, int, int)",
+      returns: "void",
+      description: <>Sets or updates the the value.</>
+    }
+  ]}
+/>

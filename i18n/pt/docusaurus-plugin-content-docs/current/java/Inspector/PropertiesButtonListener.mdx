@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # PropertiesButtonListener
 
 Referência completa da API de `PropertiesButtonListener`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,8 +16,12 @@ Referência completa da API de `PropertiesButtonListener`, incluindo construtore
 public interface PropertiesButtonListener
 ```
 
-## Métodos (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `onClicked()` | `void` | Executa `onClicked` e retorna quando a chamada do motor termina. |
+<ApiDoc
+  methods={[
+    {
+      signature: "onClicked()",
+      returns: "void",
+      description: <>Executa <code>onClicked</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+/>

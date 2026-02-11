@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # ConstraintPivot
 
 Referência completa da API de `ConstraintPivot`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,16 +16,26 @@ Referência completa da API de `ConstraintPivot`, incluindo construtores, atribu
 public class ConstraintPivot extends Component
 ```
 
-## Construtores (3)
-
-| Signature | Description |
-| --- | --- |
-| ConstraintPivot([ConstraintPivot]) | Executa `ConstraintPivot` e retorna quando a chamada do motor termina. |
-| ConstraintPivot([Engine]) | Executa `ConstraintPivot` e retorna quando a chamada do motor termina. |
-| ConstraintPivot() | Cria uma nova instância de ConstraintPivot. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [ConstraintPivot] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "ConstraintPivot(ConstraintPivot)",
+      description: <>Executa <code>ConstraintPivot</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "ConstraintPivot(Engine)",
+      description: <>Executa <code>ConstraintPivot</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "ConstraintPivot()",
+      description: <>Cria uma nova instância de ConstraintPivot.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "ConstraintPivot",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+/>

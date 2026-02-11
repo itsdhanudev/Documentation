@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # ValueObject
 
 Referência completa da API de `ValueObject`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,32 +16,107 @@ Referência completa da API de `ValueObject`, incluindo construtores, atributos,
 public class ValueObject
 ```
 
-## Construtores (2)
-
-| Signature | Description |
-| --- | --- |
-| ValueObject() | Cria uma nova instância de ValueObject. |
-| ValueObject([LuaValue]) | Cria uma nova instância de ValueObject. |
-
-## Métodos (18)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getCriticalValue()` | `LuaValue` | Retorna a propriedade `propriedade `critical value atual``. |
-| `typename()` | `String` | Executa a operação typename. |
-| `get(String)` | `ValueObject` | Retorna a propriedade `propriedade `valor value atual``. |
-| `put(String, ValueObject)` | `void` | Define ou atualiza the value. |
-| `put(String, Object)` | `void` | Define ou atualiza the value. |
-| `toJava(Class)` | `Object` | Executa a operação toJava usando os parâmetros informados (var1). |
-| `toBoolean()` | `boolean` | Executa a operação toBoolean. |
-| `toByte()` | `byte` | Executa a operação toByte. |
-| `toChar()` | `char` | Executa a operação toChar. |
-| `toShort()` | `short` | Executa a operação toShort. |
-| `toInt()` | `int` | Executa a operação toInt. |
-| `toLong()` | `long` | Executa a operação toLong. |
-| `toFloat()` | `float` | Executa a operação toFloat. |
-| `toDouble()` | `double` | Executa a operação toDouble. |
-| `equals(Object)` | `boolean` | Compara esta instância com outra para igualdade/ordem. |
-| `toString()` | `String` | Retorna a propriedade `representação em string`. |
-| `hashCode()` | `int` | Retorna se code é verdadeiro. |
-| `getObjectCritical()` | `LuaValue` | Retorna a propriedade `propriedade `object critical atual``. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "ValueObject()",
+      description: <>Cria uma nova instância de ValueObject.</>
+    },
+    {
+      signature: "ValueObject(LuaValue)",
+      description: <>Cria uma nova instância de ValueObject.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "getCriticalValue()",
+      returns: "LuaValue",
+      description: <>Retorna a propriedade <code>propriedade </code>critical value atual``.</>
+    },
+    {
+      signature: "typename()",
+      returns: "String",
+      description: <>Executa a operação typename.</>
+    },
+    {
+      signature: "get(String)",
+      returns: "ValueObject",
+      description: <>Retorna a propriedade <code>propriedade </code>valor value atual``.</>
+    },
+    {
+      signature: "put(String, ValueObject)",
+      returns: "void",
+      description: <>Define ou atualiza the value.</>
+    },
+    {
+      signature: "put(String, Object)",
+      returns: "void",
+      description: <>Define ou atualiza the value.</>
+    },
+    {
+      signature: "toJava(Class)",
+      returns: "Object",
+      description: <>Executa a operação toJava usando os parâmetros informados (var1).</>
+    },
+    {
+      signature: "toBoolean()",
+      returns: "boolean",
+      description: <>Executa a operação toBoolean.</>
+    },
+    {
+      signature: "toByte()",
+      returns: "byte",
+      description: <>Executa a operação toByte.</>
+    },
+    {
+      signature: "toChar()",
+      returns: "char",
+      description: <>Executa a operação toChar.</>
+    },
+    {
+      signature: "toShort()",
+      returns: "short",
+      description: <>Executa a operação toShort.</>
+    },
+    {
+      signature: "toInt()",
+      returns: "int",
+      description: <>Executa a operação toInt.</>
+    },
+    {
+      signature: "toLong()",
+      returns: "long",
+      description: <>Executa a operação toLong.</>
+    },
+    {
+      signature: "toFloat()",
+      returns: "float",
+      description: <>Executa a operação toFloat.</>
+    },
+    {
+      signature: "toDouble()",
+      returns: "double",
+      description: <>Executa a operação toDouble.</>
+    },
+    {
+      signature: "equals(Object)",
+      returns: "boolean",
+      description: <>Compara esta instância com outra para igualdade/ordem.</>
+    },
+    {
+      signature: "toString()",
+      returns: "String",
+      description: <>Retorna a propriedade <code>representação em string</code>.</>
+    },
+    {
+      signature: "hashCode()",
+      returns: "int",
+      description: <>Retorna se code é verdadeiro.</>
+    },
+    {
+      signature: "getObjectCritical()",
+      returns: "LuaValue",
+      description: <>Retorna a propriedade <code>propriedade </code>object critical atual``.</>
+    }
+  ]}
+/>

@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # AOnDragListener
 
 Complete API reference for `AOnDragListener`, including constructors, attributes, virtual attributes, and methods.
@@ -14,9 +16,17 @@ Complete API reference for `AOnDragListener`, including constructors, attributes
 public class AOnDragListener
 ```
 
-## Methods (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `onDrag(View, DragEvent)` | `boolean` | Performs the onDrag operation using the provided parameters (v, event). |
-| `onDragEvent(View, DragEvent)` | `boolean` | Executes `onDragEvent` and returns after the underlying engine call finishes. |
+<ApiDoc
+  methods={[
+    {
+      signature: "onDrag(View, DragEvent)",
+      returns: "boolean",
+      description: <>Performs the onDrag operation using the provided parameters (v, event).</>
+    },
+    {
+      signature: "onDragEvent(View, DragEvent)",
+      returns: "boolean",
+      description: <>Executes <code>onDragEvent</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

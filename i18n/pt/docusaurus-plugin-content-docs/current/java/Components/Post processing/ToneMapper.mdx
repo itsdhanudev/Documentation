@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # ToneMapper
 
 Referência completa da API de `ToneMapper`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,36 +16,118 @@ Referência completa da API de `ToneMapper`, incluindo construtores, atributos, 
 public class ToneMapper extends Component
 ```
 
-## Construtores (3)
-
-| Signature | Description |
-| --- | --- |
-| ToneMapper([ToneMapper]) | Executa `ToneMapper` e retorna quando a chamada do motor termina. |
-| ToneMapper([Engine]) | Executa `ToneMapper` e retorna quando a chamada do motor termina. |
-| ToneMapper() | Executa `ToneMapper` e retorna quando a chamada do motor termina. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [ToneMapper] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (15)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `contrast` | [float] | `get/set` | Atributo virtual exposto por `getContrast`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `offsetB` | [float] | `get/set` | Atributo virtual exposto por `getOffsetB`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `offsetG` | [float] | `get/set` | Atributo virtual exposto por `getOffsetG`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `offsetR` | [float] | `get/set` | Atributo virtual exposto por `getOffsetR`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `powerB` | [float] | `get/set` | Atributo virtual exposto por `getPowerB`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `powerG` | [float] | `get/set` | Atributo virtual exposto por `getPowerG`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `powerR` | [float] | `get/set` | Atributo virtual exposto por `getPowerR`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `saturation` | [float] | `get/set` | Atributo virtual exposto por `getSaturation`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `slopeB` | [float] | `get/set` | Atributo virtual exposto por `getSlopeB`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `slopeG` | [float] | `get/set` | Atributo virtual exposto por `getSlopeG`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `slopeR` | [float] | `get/set` | Atributo virtual exposto por `getSlopeR`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `temperature` | [float] | `get/set` | Atributo virtual exposto por `getTemperature`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `tint` | [float] | `get/set` | Atributo virtual exposto por `getTint`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `tonnemapType` | [Type] | `get/set` | Atributo virtual exposto por `getTonnemapType`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `vibrance` | [float] | `get/set` | Atributo virtual exposto por `getVibrance`. Acesse como um campo para ler ou escrever o valor subjacente. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "ToneMapper(ToneMapper)",
+      description: <>Executa <code>ToneMapper</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "ToneMapper(Engine)",
+      description: <>Executa <code>ToneMapper</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "ToneMapper()",
+      description: <>Executa <code>ToneMapper</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "ToneMapper",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "contrast",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getContrast</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "offsetB",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getOffsetB</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "offsetG",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getOffsetG</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "offsetR",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getOffsetR</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "powerB",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getPowerB</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "powerG",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getPowerG</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "powerR",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getPowerR</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "saturation",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getSaturation</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "slopeB",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getSlopeB</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "slopeG",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getSlopeG</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "slopeR",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getSlopeR</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "temperature",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getTemperature</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "tint",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getTint</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "tonnemapType",
+      type: "Type",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getTonnemapType</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "vibrance",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getVibrance</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+/>

@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # ParticleEmitter
 
 Complete API reference for `ParticleEmitter`, including constructors, attributes, virtual attributes, and methods.
@@ -14,46 +16,149 @@ Complete API reference for `ParticleEmitter`, including constructors, attributes
 public class ParticleEmitter extends Component
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| ParticleEmitter([ParticleEmitter]) | Executes `ParticleEmitter` and returns after the underlying engine call finishes. |
-| ParticleEmitter([Engine]) | Executes `ParticleEmitter` and returns after the underlying engine call finishes. |
-| ParticleEmitter() | Creates a new instance of ParticleEmitter. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [ParticleEmitter] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (19)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `allowEmission` | [boolean] | `get/set` | Virtual attribute exposed by `isAllowEmission`. Access it like a field to read or write the underlying value. |
-| `alphaBased` | [AlphaBased] | `get/set` | Virtual attribute exposed by `getAlphaBased`. Access it like a field to read or write the underlying value. |
-| `alphaOverLifeTimeCurve` | [Curve] | `get/set` | Virtual attribute exposed by `getAlphaOverLifeTimeCurve`. Access it like a field to read or write the underlying value. |
-| `color` | [Color] | `get/set` | Virtual attribute exposed by `getColor`. Access it like a field to read or write the underlying value. |
-| `colorBased` | [ColorBased] | `get/set` | Virtual attribute exposed by `getColorBased`. Access it like a field to read or write the underlying value. |
-| `colorMode` | [ColorMode] | `get/set` | Virtual attribute exposed by `getColorMode`. Access it like a field to read or write the underlying value. |
-| `coneShapeOptions` | [ParticleConeShapeOptions] | `get` | Virtual attribute exposed by `getConeShapeOptions`. Access it like a field to read or write the underlying value. |
-| `emissionShape` | [EmissionShape] | `get/set` | Virtual attribute exposed by `getEmissionShape`. Access it like a field to read or write the underlying value. |
-| `emissionsPerSecond` | [float] | `get/set` | Virtual attribute exposed by `getEmissionsPerSecond`. Access it like a field to read or write the underlying value. |
-| `gravityMultiplier` | [float] | `get/set` | Virtual attribute exposed by `getGravityMultiplier`. Access it like a field to read or write the underlying value. |
-| `layer` | [int] | `get/set` | Virtual attribute exposed by `getLayer`. Access it like a field to read or write the underlying value. |
-| `maxLifeSeconds` | [float] | `get/set` | Virtual attribute exposed by `getMaxLifeSeconds`. Access it like a field to read or write the underlying value. |
-| `sizeBased` | [SizeBased] | `get/set` | Virtual attribute exposed by `getSizeBased`. Access it like a field to read or write the underlying value. |
-| `sizeOverLifeTimeCurve` | [Curve] | `get/set` | Virtual attribute exposed by `getSizeOverLifeTimeCurve`. Access it like a field to read or write the underlying value. |
-| `sphereShapeOptions` | [ParticleSphereShapeOptions] | `get` | Virtual attribute exposed by `getSphereShapeOptions`. Access it like a field to read or write the underlying value. |
-| `startSize` | [float] | `get/set` | Virtual attribute exposed by `getStartSize`. Access it like a field to read or write the underlying value. |
-| `startSpeed` | [float] | `get/set` | Virtual attribute exposed by `getStartSpeed`. Access it like a field to read or write the underlying value. |
-| `textureInstance` | [Texture] | `get/set` | Virtual attribute exposed by `getTextureInstance`. Access it like a field to read or write the underlying value. |
-| `transparencyBased` | [TransparencyBased] | `get/set` | Virtual attribute exposed by `getTransparencyBased`. Access it like a field to read or write the underlying value. |
-
-## Methods (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `emit(Vector3, Vector3)` | `Particle` | Performs the emit operation using the provided parameters (position, movement). |
+<ApiDoc
+  constructors={[
+    {
+      signature: "ParticleEmitter(ParticleEmitter)",
+      description: <>Executes <code>ParticleEmitter</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "ParticleEmitter(Engine)",
+      description: <>Executes <code>ParticleEmitter</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "ParticleEmitter()",
+      description: <>Creates a new instance of ParticleEmitter.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "ParticleEmitter",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "allowEmission",
+      type: "boolean",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>isAllowEmission</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "alphaBased",
+      type: "AlphaBased",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getAlphaBased</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "alphaOverLifeTimeCurve",
+      type: "Curve",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getAlphaOverLifeTimeCurve</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "color",
+      type: "Color",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getColor</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "colorBased",
+      type: "ColorBased",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getColorBased</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "colorMode",
+      type: "ColorMode",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getColorMode</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "coneShapeOptions",
+      type: "ParticleConeShapeOptions",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>getConeShapeOptions</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "emissionShape",
+      type: "EmissionShape",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getEmissionShape</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "emissionsPerSecond",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getEmissionsPerSecond</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "gravityMultiplier",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getGravityMultiplier</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "layer",
+      type: "int",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getLayer</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "maxLifeSeconds",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getMaxLifeSeconds</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "sizeBased",
+      type: "SizeBased",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getSizeBased</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "sizeOverLifeTimeCurve",
+      type: "Curve",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getSizeOverLifeTimeCurve</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "sphereShapeOptions",
+      type: "ParticleSphereShapeOptions",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>getSphereShapeOptions</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "startSize",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getStartSize</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "startSpeed",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getStartSpeed</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "textureInstance",
+      type: "Texture",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getTextureInstance</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "transparencyBased",
+      type: "TransparencyBased",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getTransparencyBased</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "emit(Vector3, Vector3)",
+      returns: "Particle",
+      description: <>Performs the emit operation using the provided parameters (position, movement).</>
+    }
+  ]}
+/>

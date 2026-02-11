@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # SoundEmitter
 
 Referência completa da API de `SoundEmitter`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,46 +16,133 @@ Referência completa da API de `SoundEmitter`, incluindo construtores, atributos
 public class SoundEmitter
 ```
 
-## Construtores (5)
-
-| Signature | Description |
-| --- | --- |
-| SoundEmitter([NativeSoundEmitter]) | Executa `SoundEmitter` e retorna quando a chamada do motor termina. |
-| SoundEmitter([NativeFloatBuffer], [int]) | Executa `SoundEmitter` e retorna quando a chamada do motor termina. |
-| SoundEmitter([float][], [int]) | Cria uma nova instância de SoundEmitter. |
-| SoundEmitter([SoundData]) | Cria uma nova instância de SoundEmitter. |
-| SoundEmitter([File]) | Executa `SoundEmitter` e retorna quando a chamada do motor termina. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [NativeSoundEmitter] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (5)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `leftVolume` | [float] | `get/set` | Atributo virtual exposto por `getLeftVolume`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `pitch` | [float] | `get/set` | Atributo virtual exposto por `getPitch`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `rightVolume` | [float] | `get/set` | Atributo virtual exposto por `getRightVolume`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `speed` | [float] | `get/set` | Atributo virtual exposto por `getSpeed`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `volume` | [float] | `get/set` | Atributo virtual exposto por `getVolume`. Acesse como um campo para ler ou escrever o valor subjacente. |
-
-## Métodos (13)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `setVolumes(float, float)` | `void` | Define ou atualiza a propriedade `propriedade `volumes``. |
-| `setVolumes(float, float, float)` | `void` | Define ou atualiza a propriedade `propriedade `volumes``. |
-| `getCurrentSecond()` | `float` | Retorna a propriedade `propriedade `current second atual``. |
-| `getTotalSeconds()` | `float` | Retorna a propriedade `propriedade `total seconds atual``. |
-| `seekToSecond(float)` | `void` | Executa a operação seekToSecond usando os parâmetros informados (second). |
-| `isLoop()` | `boolean` | Retorna se loop é verdadeiro. |
-| `setLoop(boolean)` | `void` | Define ou atualiza a propriedade `propriedade `loop``. |
-| `play()` | `void` | Executa a operação play. |
-| `pause()` | `void` | Executa a operação pause. |
-| `stop()` | `void` | Executa a operação stop. |
-| `isPaused()` | `boolean` | Retorna se paused é verdadeiro. |
-| `isPlaying()` | `boolean` | Retorna se playing é verdadeiro. |
-| `isStopped()` | `boolean` | Retorna se stopped é verdadeiro. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "SoundEmitter(NativeSoundEmitter)",
+      description: <>Executa <code>SoundEmitter</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "SoundEmitter(NativeFloatBuffer, int)",
+      description: <>Executa <code>SoundEmitter</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "SoundEmitter(float[], int)",
+      description: <>Cria uma nova instância de SoundEmitter.</>
+    },
+    {
+      signature: "SoundEmitter(SoundData)",
+      description: <>Cria uma nova instância de SoundEmitter.</>
+    },
+    {
+      signature: "SoundEmitter(File)",
+      description: <>Executa <code>SoundEmitter</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "NativeSoundEmitter",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "leftVolume",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getLeftVolume</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "pitch",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getPitch</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "rightVolume",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getRightVolume</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "speed",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getSpeed</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "volume",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getVolume</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "setVolumes(float, float)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>volumes``.</>
+    },
+    {
+      signature: "setVolumes(float, float, float)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>volumes``.</>
+    },
+    {
+      signature: "getCurrentSecond()",
+      returns: "float",
+      description: <>Retorna a propriedade <code>propriedade </code>current second atual``.</>
+    },
+    {
+      signature: "getTotalSeconds()",
+      returns: "float",
+      description: <>Retorna a propriedade <code>propriedade </code>total seconds atual``.</>
+    },
+    {
+      signature: "seekToSecond(float)",
+      returns: "void",
+      description: <>Executa a operação seekToSecond usando os parâmetros informados (second).</>
+    },
+    {
+      signature: "isLoop()",
+      returns: "boolean",
+      description: <>Retorna se loop é verdadeiro.</>
+    },
+    {
+      signature: "setLoop(boolean)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>loop``.</>
+    },
+    {
+      signature: "play()",
+      returns: "void",
+      description: <>Executa a operação play.</>
+    },
+    {
+      signature: "pause()",
+      returns: "void",
+      description: <>Executa a operação pause.</>
+    },
+    {
+      signature: "stop()",
+      returns: "void",
+      description: <>Executa a operação stop.</>
+    },
+    {
+      signature: "isPaused()",
+      returns: "boolean",
+      description: <>Retorna se paused é verdadeiro.</>
+    },
+    {
+      signature: "isPlaying()",
+      returns: "boolean",
+      description: <>Retorna se playing é verdadeiro.</>
+    },
+    {
+      signature: "isStopped()",
+      returns: "boolean",
+      description: <>Retorna se stopped é verdadeiro.</>
+    }
+  ]}
+/>

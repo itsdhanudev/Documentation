@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # UIInputText
 
 Referência completa da API de `UIInputText`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,31 +16,59 @@ Referência completa da API de `UIInputText`, incluindo construtores, atributos,
 public class UIInputText extends Component
 ```
 
-## Construtores (3)
-
-| Signature | Description |
-| --- | --- |
-| UIInputText([UIInputText]) | Executa `UIInputText` e retorna quando a chamada do motor termina. |
-| UIInputText([Engine]) | Executa `UIInputText` e retorna quando a chamada do motor termina. |
-| UIInputText() | Executa `UIInputText` e retorna quando a chamada do motor termina. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [UIInputText] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (4)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `color` | [Color] | `get/set` | Atributo virtual exposto por `getColor`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `editing` | [boolean] | `set` | Atributo virtual exposto por `setEditing`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `text` | [String] | `get/set` | Atributo virtual exposto por `getText`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `textSize` | [float] | `get/set` | Atributo virtual exposto por `getTextSize`. Acesse como um campo para ler ou escrever o valor subjacente. |
-
-## Métodos (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `isEditing()` | `boolean` | Executa `isEditing` e retorna quando a chamada do motor termina. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "UIInputText(UIInputText)",
+      description: <>Executa <code>UIInputText</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "UIInputText(Engine)",
+      description: <>Executa <code>UIInputText</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "UIInputText()",
+      description: <>Executa <code>UIInputText</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "UIInputText",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "color",
+      type: "Color",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getColor</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "editing",
+      type: "boolean",
+      access: "set",
+      description: <>Atributo virtual exposto por <code>setEditing</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "text",
+      type: "String",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getText</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "textSize",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getTextSize</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "isEditing()",
+      returns: "boolean",
+      description: <>Executa <code>isEditing</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+/>

@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Characterbody
 
 Referência completa da API de `Characterbody`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,43 +16,128 @@ Referência completa da API de `Characterbody`, incluindo construtores, atributo
 public class Characterbody extends PhysicsComponent
 ```
 
-## Construtores (2)
-
-| Signature | Description |
-| --- | --- |
-| Characterbody([Characterbody]) | Executa `Characterbody` e retorna quando a chamada do motor termina. |
-| Characterbody() | Executa `Characterbody` e retorna quando a chamada do motor termina. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `component` | [Characterbody] | Representa o valor de `component` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (12)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `forwardSpeed` | [float] | `get/set` | Retorna a propriedade `velocidade de movimento para frente`. |
-| `globalDirections` | [boolean] | `get/set` | Retorna se a direção de movimentação é global. |
-| `gravityEnabled` | [boolean] | `get/set` | Retorna se a gravidade do personagem está ativada. |
-| `gravityMultiplier` | [Vector3] | `get/set` | Retorna a propriedade `propriedade `multiplicador de gravidade do personagem``. |
-| `height` | [float] | `get/set` | Retorna a propriedade `altura do personagem`. |
-| `horizontalPhysicsVelocity` | [Vector2] | `get` | Retorna a propriedade `velocidade horizontal do personagem`. |
-| `jumpSpeed` | [float] | `get/set` | Retorna a propriedade `velocidade do pulo do personagem`. |
-| `physicsLayer` | [PhysicsLayer] | `get/set` | Retorna a propriedade `PhysicsLayer do Characterbody`. |
-| `physicsVelocity` | [Vector3] | `get` | Retorna a propriedade `velocidade do personagem`. |
-| `sideSpeed` | [float] | `get/set` | Retorna a propriedade `velocidade de movimento lateral`. |
-| `stepHeight` | [float] | `get/set` | Retorna a propriedade `altura máxima de degrau que o personagem pode subir`. |
-| `width` | [float] | `get/set` | Retorna a propriedade `largura do personagem`. |
-
-## Métodos (6)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `isGrounded()` | `boolean` | Retorna se o personagem está no chão. |
-| `onGround()` | `boolean` | Retorna se o personagem está sobre o chão. |
-| `canJump()` | `boolean` | Retorna se o personagem está sobre o chão. |
-| `jump()` | `void` | Faz o personagem pular. |
-| `setSpeed(float, float)` | `void` | Define a propriedade `velocidade lateral (X) e para frente (Z)`. |
-| `zeroSpeed()` | `void` | Reseta as velocidades lateral e para frente para zero. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "Characterbody(Characterbody)",
+      description: <>Executa <code>Characterbody</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "Characterbody()",
+      description: <>Executa <code>Characterbody</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "component",
+      type: "Characterbody",
+      description: <>Representa o valor de <code>component</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "forwardSpeed",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>velocidade de movimento para frente</code>.</>
+    },
+    {
+      name: "globalDirections",
+      type: "boolean",
+      access: "get/set",
+      description: <>Retorna se a direção de movimentação é global.</>
+    },
+    {
+      name: "gravityEnabled",
+      type: "boolean",
+      access: "get/set",
+      description: <>Retorna se a gravidade do personagem está ativada.</>
+    },
+    {
+      name: "gravityMultiplier",
+      type: "Vector3",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>propriedade </code>multiplicador de gravidade do personagem``.</>
+    },
+    {
+      name: "height",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>altura do personagem</code>.</>
+    },
+    {
+      name: "horizontalPhysicsVelocity",
+      type: "Vector2",
+      access: "get",
+      description: <>Retorna a propriedade <code>velocidade horizontal do personagem</code>.</>
+    },
+    {
+      name: "jumpSpeed",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>velocidade do pulo do personagem</code>.</>
+    },
+    {
+      name: "physicsLayer",
+      type: "PhysicsLayer",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>PhysicsLayer do Characterbody</code>.</>
+    },
+    {
+      name: "physicsVelocity",
+      type: "Vector3",
+      access: "get",
+      description: <>Retorna a propriedade <code>velocidade do personagem</code>.</>
+    },
+    {
+      name: "sideSpeed",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>velocidade de movimento lateral</code>.</>
+    },
+    {
+      name: "stepHeight",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>altura máxima de degrau que o personagem pode subir</code>.</>
+    },
+    {
+      name: "width",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>largura do personagem</code>.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "isGrounded()",
+      returns: "boolean",
+      description: <>Retorna se o personagem está no chão.</>
+    },
+    {
+      signature: "onGround()",
+      returns: "boolean",
+      description: <>Retorna se o personagem está sobre o chão.</>
+    },
+    {
+      signature: "canJump()",
+      returns: "boolean",
+      description: <>Retorna se o personagem está sobre o chão.</>
+    },
+    {
+      signature: "jump()",
+      returns: "void",
+      description: <>Faz o personagem pular.</>
+    },
+    {
+      signature: "setSpeed(float, float)",
+      returns: "void",
+      description: <>Define a propriedade <code>velocidade lateral (X) e para frente (Z)</code>.</>
+    },
+    {
+      signature: "zeroSpeed()",
+      returns: "void",
+      description: <>Reseta as velocidades lateral e para frente para zero.</>
+    }
+  ]}
+/>

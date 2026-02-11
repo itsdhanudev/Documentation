@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # PopupDialog
 
 Referência completa da API de `PopupDialog`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,39 +16,117 @@ Referência completa da API de `PopupDialog`, incluindo construtores, atributos,
 public class PopupDialog
 ```
 
-## Construtores (4)
-
-| Signature | Description |
-| --- | --- |
-| PopupDialog([SweetAlertDialog]) | Executa `PopupDialog` e retorna quando a chamada do motor termina. |
-| PopupDialog([int]) | Executa `PopupDialog` e retorna quando a chamada do motor termina. |
-| PopupDialog([String], [String]) | Cria uma nova instância de PopupDialog. |
-| PopupDialog([int], [String], [String]) | Cria uma nova instância de PopupDialog. |
-
-## Atributos (5)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `SUCCESS` | [int] | Representa o valor de `SUCCESS` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `ERROR` | [int] | Representa o valor de `ERROR` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `ALERT` | [int] | Representa o valor de `ALERT` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `PROGRESS` | [int] | Representa o valor de `PROGRESS` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `dialog` | [SweetAlertDialog] | Representa o valor de `dialog` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Métodos (13)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `setConfirmButton(String, PopupDialogListener)` | `void` | Define ou atualiza a propriedade `propriedade `confirm button``. |
-| `setCancelButton(String, PopupDialogListener)` | `void` | Define ou atualiza a propriedade `propriedade `cancel button``. |
-| `setMidButton(String, PopupDialogListener)` | `void` | Define ou atualiza a propriedade `propriedade `mid button``. |
-| `setConfirmButton(String, Listener)` | `void` | Define ou atualiza a propriedade `propriedade `confirm button``. |
-| `setCancelButton(String, Listener)` | `void` | Define ou atualiza a propriedade `propriedade `cancel button``. |
-| `setMidButton(String, Listener)` | `void` | Define ou atualiza a propriedade `propriedade `mid button``. |
-| `getTittle()` | `String` | Retorna a propriedade `propriedade `tittle atual``. |
-| `setName(String)` | `void` | Define ou atualiza a propriedade `propriedade `name``. |
-| `getMessage()` | `String` | Retorna a propriedade `propriedade `message atual``. |
-| `setMessage(String)` | `void` | Define ou atualiza a propriedade `propriedade `message``. |
-| `changeType(int)` | `void` | Executa a operação changeType usando os parâmetros informados (type). |
-| `show()` | `void` | Executa a operação show. |
-| `dismiss()` | `void` | Executa a operação dismiss. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "PopupDialog(SweetAlertDialog)",
+      description: <>Executa <code>PopupDialog</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "PopupDialog(int)",
+      description: <>Executa <code>PopupDialog</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "PopupDialog(String, String)",
+      description: <>Cria uma nova instância de PopupDialog.</>
+    },
+    {
+      signature: "PopupDialog(int, String, String)",
+      description: <>Cria uma nova instância de PopupDialog.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "SUCCESS",
+      type: "int",
+      description: <>Representa o valor de <code>SUCCESS</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "ERROR",
+      type: "int",
+      description: <>Representa o valor de <code>ERROR</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "ALERT",
+      type: "int",
+      description: <>Representa o valor de <code>ALERT</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "PROGRESS",
+      type: "int",
+      description: <>Representa o valor de <code>PROGRESS</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "dialog",
+      type: "SweetAlertDialog",
+      description: <>Representa o valor de <code>dialog</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "setConfirmButton(String, PopupDialogListener)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>confirm button``.</>
+    },
+    {
+      signature: "setCancelButton(String, PopupDialogListener)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>cancel button``.</>
+    },
+    {
+      signature: "setMidButton(String, PopupDialogListener)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>mid button``.</>
+    },
+    {
+      signature: "setConfirmButton(String, Listener)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>confirm button``.</>
+    },
+    {
+      signature: "setCancelButton(String, Listener)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>cancel button``.</>
+    },
+    {
+      signature: "setMidButton(String, Listener)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>mid button``.</>
+    },
+    {
+      signature: "getTittle()",
+      returns: "String",
+      description: <>Retorna a propriedade <code>propriedade </code>tittle atual``.</>
+    },
+    {
+      signature: "setName(String)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>name``.</>
+    },
+    {
+      signature: "getMessage()",
+      returns: "String",
+      description: <>Retorna a propriedade <code>propriedade </code>message atual``.</>
+    },
+    {
+      signature: "setMessage(String)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>message``.</>
+    },
+    {
+      signature: "changeType(int)",
+      returns: "void",
+      description: <>Executa a operação changeType usando os parâmetros informados (type).</>
+    },
+    {
+      signature: "show()",
+      returns: "void",
+      description: <>Executa a operação show.</>
+    },
+    {
+      signature: "dismiss()",
+      returns: "void",
+      description: <>Executa a operação dismiss.</>
+    }
+  ]}
+/>

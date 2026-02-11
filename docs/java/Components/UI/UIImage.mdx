@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # UIImage
 
 Complete API reference for `UIImage`, including constructors, attributes, virtual attributes, and methods.
@@ -14,24 +16,46 @@ Complete API reference for `UIImage`, including constructors, attributes, virtua
 public class UIImage extends Component
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| UIImage([UIImage]) | Executes `UIImage` and returns after the underlying engine call finishes. |
-| UIImage([Engine]) | Executes `UIImage` and returns after the underlying engine call finishes. |
-| UIImage() | Creates a new instance of UIImage. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [UIImage] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (3)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `border` | [float] | `get/set` | Virtual attribute exposed by `getBorder`. Access it like a field to read or write the underlying value. |
-| `color` | [Color] | `get/set` | Virtual attribute exposed by `getColor`. Access it like a field to read or write the underlying value. |
-| `texture` | [Texture] | `get/set` | Virtual attribute exposed by `getTexture`. Access it like a field to read or write the underlying value. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "UIImage(UIImage)",
+      description: <>Executes <code>UIImage</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "UIImage(Engine)",
+      description: <>Executes <code>UIImage</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "UIImage()",
+      description: <>Creates a new instance of UIImage.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "UIImage",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "border",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getBorder</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "color",
+      type: "Color",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getColor</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "texture",
+      type: "Texture",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getTexture</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+/>

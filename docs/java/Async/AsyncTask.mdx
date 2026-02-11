@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # AsyncTask
 
 Complete API reference for `AsyncTask`, including constructors, attributes, virtual attributes, and methods.
@@ -14,9 +16,15 @@ Complete API reference for `AsyncTask`, including constructors, attributes, virt
 public class AsyncTask
 ```
 
-## Constructors (2)
-
-| Signature | Description |
-| --- | --- |
-| AsyncTask([AsyncRunnable]) | Creates a new instance of AsyncTask. |
-| AsyncTask([Object], [AsyncRunnable]) | Creates a new instance of AsyncTask. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "AsyncTask(AsyncRunnable)",
+      description: <>Creates a new instance of AsyncTask.</>
+    },
+    {
+      signature: "AsyncTask(Object, AsyncRunnable)",
+      description: <>Creates a new instance of AsyncTask.</>
+    }
+  ]}
+/>

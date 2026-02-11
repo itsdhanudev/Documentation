@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # GreaterThanComparator
 
 Complete API reference for `GreaterThanComparator`, including constructors, attributes, virtual attributes, and methods.
@@ -14,27 +16,57 @@ Complete API reference for `GreaterThanComparator`, including constructors, attr
 public interface GreaterThanComparator
 ```
 
-## Methods (20)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `@MethodArgs([{"otherObject"}])` | `void` | Checks if the current object is greater than the given object. |
-| `greaterThan(Object)` | `boolean` | Executes `greaterThan` and returns after the underlying engine call finishes. |
-| `@MethodArgs([{"v"}])` | `void` | Checks if the current object is greater than the given float value. |
-| `greaterThan(float)` | `boolean` | Executes `greaterThan` and returns after the underlying engine call finishes. |
-| `@MethodArgs([{"v"}])` | `void` | Checks if the current object is greater than the given integer value. |
-| `greaterThan(int)` | `boolean` | Executes `greaterThan` and returns after the underlying engine call finishes. |
-| `@MethodArgs([{"v"}])` | `void` | Checks if the current object is greater than the given long value. |
-| `greaterThan(long)` | `boolean` | Executes `greaterThan` and returns after the underlying engine call finishes. |
-| `@MethodArgs([{"v"}])` | `void` | Checks if the current object is greater than the given double value. |
-| `greaterThan(double)` | `boolean` | Executes `greaterThan` and returns after the underlying engine call finishes. |
-| `@MethodArgs([{"otherObject"}])` | `void` | Checks if the current object is greater than or equal to the given object. |
-| `greaterOrEqualsThan(Object)` | `boolean` | Executes `greaterOrEqualsThan` and returns after the underlying engine call finishes. |
-| `@MethodArgs([{"v"}])` | `void` | Checks if the current object is greater than or equal to the given float value. |
-| `greaterOrEqualsThan(float)` | `boolean` | Executes `greaterOrEqualsThan` and returns after the underlying engine call finishes. |
-| `@MethodArgs([{"v"}])` | `void` | Checks if the current object is greater than or equal to the given integer value. |
-| `greaterOrEqualsThan(int)` | `boolean` | Executes `greaterOrEqualsThan` and returns after the underlying engine call finishes. |
-| `@MethodArgs([{"v"}])` | `void` | Checks if the current object is greater than or equal to the given long value. |
-| `greaterOrEqualsThan(long)` | `boolean` | Executes `greaterOrEqualsThan` and returns after the underlying engine call finishes. |
-| `@MethodArgs([{"v"}])` | `void` | Checks if the current object is greater than or equal to the given double value. |
-| `greaterOrEqualsThan(double)` | `boolean` | Executes `greaterOrEqualsThan` and returns after the underlying engine call finishes. |
+<ApiDoc
+  methods={[
+    {
+      signature: "greaterThan(Object)",
+      returns: "boolean",
+      description: <>Checks if the current object is greater than the given object.</>
+    },
+    {
+      signature: "greaterThan(float)",
+      returns: "boolean",
+      description: <>Checks if the current object is greater than the given float value.</>
+    },
+    {
+      signature: "greaterThan(int)",
+      returns: "boolean",
+      description: <>Checks if the current object is greater than the given integer value.</>
+    },
+    {
+      signature: "greaterThan(long)",
+      returns: "boolean",
+      description: <>Checks if the current object is greater than the given long value.</>
+    },
+    {
+      signature: "greaterThan(double)",
+      returns: "boolean",
+      description: <>Checks if the current object is greater than the given double value.</>
+    },
+    {
+      signature: "greaterOrEqualsThan(Object)",
+      returns: "boolean",
+      description: <>Checks if the current object is greater than or equal to the given object.</>
+    },
+    {
+      signature: "greaterOrEqualsThan(float)",
+      returns: "boolean",
+      description: <>Checks if the current object is greater than or equal to the given float value.</>
+    },
+    {
+      signature: "greaterOrEqualsThan(int)",
+      returns: "boolean",
+      description: <>Checks if the current object is greater than or equal to the given integer value.</>
+    },
+    {
+      signature: "greaterOrEqualsThan(long)",
+      returns: "boolean",
+      description: <>Checks if the current object is greater than or equal to the given long value.</>
+    },
+    {
+      signature: "greaterOrEqualsThan(double)",
+      returns: "boolean",
+      description: <>Checks if the current object is greater than or equal to the given double value.</>
+    }
+  ]}
+/>

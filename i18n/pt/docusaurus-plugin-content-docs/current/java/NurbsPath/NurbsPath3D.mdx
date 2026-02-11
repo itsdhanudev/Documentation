@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # NurbsPath3D
 
 Referência completa da API de `NurbsPath3D`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,29 +16,89 @@ Referência completa da API de `NurbsPath3D`, incluindo construtores, atributos,
 public class NurbsPath3D
 ```
 
-## Construtores (5)
-
-| Signature | Description |
-| --- | --- |
-| NurbsPath3D([NurbsPath3D]) | Executa `NurbsPath3D` e retorna quando a chamada do motor termina. |
-| NurbsPath3D() | Executa `NurbsPath3D` e retorna quando a chamada do motor termina. |
-| NurbsPath3D([[List]&lt;Vector3&gt;]) | Cria uma nova instância de NurbsPath3D. |
-| NurbsPath3D([boolean]) | Cria uma nova instância de NurbsPath3D. |
-| NurbsPath3D([[List]&lt;Vector3&gt;], [boolean]) | Cria uma nova instância de NurbsPath3D. |
-
-## Métodos (12)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `evaluate(float)` | `Vector3` | Executa a operação evaluate usando os parâmetros informados (u). |
-| `evaluate(float, Vector3)` | `Vector3` | Executa a operação evaluate usando os parâmetros informados (u, out). |
-| `evaluatePath(int)` | [List]&[lt];[Vector3]&[gt]; | Executa a operação evaluatePath usando os parâmetros informados (resolution). |
-| `evaluatePath(int, [List&lt;Vector3&gt;])` | [List]&[lt];[Vector3]&[gt]; | Executa a operação evaluatePath usando os parâmetros informados (resolution, list). |
-| `addPoint(Vector3)` | `void` | Adiciona point à coleção. |
-| `addPath([List&lt;Vector3&gt;])` | `void` | Adiciona path à coleção. |
-| `getPoint(int)` | `Vector3` | Retorna a propriedade `propriedade `point atual``. |
-| `removePoint(Vector3)` | `void` | Remove point da coleção. |
-| `removePoint(int)` | `void` | Remove point da coleção. |
-| `pointsCount()` | `int` | Executa a operação pointsCount. |
-| `isContinuous()` | `boolean` | Retorna se continuous é verdadeiro. |
-| `setContinuous(boolean)` | `void` | Define ou atualiza a propriedade `propriedade `continuous``. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "NurbsPath3D(NurbsPath3D)",
+      description: <>Executa <code>NurbsPath3D</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "NurbsPath3D()",
+      description: <>Executa <code>NurbsPath3D</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "NurbsPath3D([List&lt;Vector3&gt;])",
+      description: <>Cria uma nova instância de NurbsPath3D.</>
+    },
+    {
+      signature: "NurbsPath3D(boolean)",
+      description: <>Cria uma nova instância de NurbsPath3D.</>
+    },
+    {
+      signature: "NurbsPath3D([List&lt;Vector3&gt;], boolean)",
+      description: <>Cria uma nova instância de NurbsPath3D.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "evaluate(float)",
+      returns: "Vector3",
+      description: <>Executa a operação evaluate usando os parâmetros informados (u).</>
+    },
+    {
+      signature: "evaluate(float, Vector3)",
+      returns: "Vector3",
+      description: <>Executa a operação evaluate usando os parâmetros informados (u, out).</>
+    },
+    {
+      signature: "evaluatePath(int)",
+      returns: "List&lt;Vector3&gt;",
+      description: <>Executa a operação evaluatePath usando os parâmetros informados (resolution).</>
+    },
+    {
+      signature: "evaluatePath(int, List&lt;Vector3&gt;)",
+      returns: "List&lt;Vector3&gt;",
+      description: <>Executa a operação evaluatePath usando os parâmetros informados (resolution, list).</>
+    },
+    {
+      signature: "addPoint(Vector3)",
+      returns: "void",
+      description: <>Adiciona point à coleção.</>
+    },
+    {
+      signature: "addPath(List&lt;Vector3&gt;)",
+      returns: "void",
+      description: <>Adiciona path à coleção.</>
+    },
+    {
+      signature: "getPoint(int)",
+      returns: "Vector3",
+      description: <>Retorna a propriedade <code>propriedade </code>point atual``.</>
+    },
+    {
+      signature: "removePoint(Vector3)",
+      returns: "void",
+      description: <>Remove point da coleção.</>
+    },
+    {
+      signature: "removePoint(int)",
+      returns: "void",
+      description: <>Remove point da coleção.</>
+    },
+    {
+      signature: "pointsCount()",
+      returns: "int",
+      description: <>Executa a operação pointsCount.</>
+    },
+    {
+      signature: "isContinuous()",
+      returns: "boolean",
+      description: <>Retorna se continuous é verdadeiro.</>
+    },
+    {
+      signature: "setContinuous(boolean)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>continuous``.</>
+    }
+  ]}
+/>

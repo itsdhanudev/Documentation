@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # ThermalFlowError
 
 Complete API reference for `ThermalFlowError`, including constructors, attributes, virtual attributes, and methods.
@@ -14,28 +16,63 @@ Complete API reference for `ThermalFlowError`, including constructors, attribute
 public class ThermalFlowError extends RuntimeException
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| ThermalFlowError([String], [String]) | Creates a new instance of ThermalFlowError. |
-| ThermalFlowError([String], [String], [Exception]) | Creates a new instance of ThermalFlowError. |
-| ThermalFlowError([String], [String], [Error]) | Creates a new instance of ThermalFlowError. |
-
-## Attributes (3)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `TYPE_SIMPLE` | [int] | Represents the `TYPE_SIMPLE` value stored on this instance. Read or assign to update the property. |
-| `TYPE_EXCEPTION` | [int] | Represents the `TYPE_EXCEPTION` value stored on this instance. Read or assign to update the property. |
-| `TYPE_ERROR` | [int] | Represents the `TYPE_ERROR` value stored on this instance. Read or assign to update the property. |
-
-## Methods (5)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getMessage()` | `String` | Returns the current message. |
-| `getCallStack()` | `String` | Returns the current call stack. |
-| `getException()` | `Exception` | Returns the current exception. |
-| `getError()` | `Error` | Returns the current error. |
-| `getType()` | `int` | Returns the current type. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "ThermalFlowError(String, String)",
+      description: <>Creates a new instance of ThermalFlowError.</>
+    },
+    {
+      signature: "ThermalFlowError(String, String, Exception)",
+      description: <>Creates a new instance of ThermalFlowError.</>
+    },
+    {
+      signature: "ThermalFlowError(String, String, Error)",
+      description: <>Creates a new instance of ThermalFlowError.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "TYPE_SIMPLE",
+      type: "int",
+      description: <>Represents the <code>TYPE_SIMPLE</code> value stored on this instance. Read or assign to update the property.</>
+    },
+    {
+      name: "TYPE_EXCEPTION",
+      type: "int",
+      description: <>Represents the <code>TYPE_EXCEPTION</code> value stored on this instance. Read or assign to update the property.</>
+    },
+    {
+      name: "TYPE_ERROR",
+      type: "int",
+      description: <>Represents the <code>TYPE_ERROR</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "getMessage()",
+      returns: "String",
+      description: <>Returns the current message.</>
+    },
+    {
+      signature: "getCallStack()",
+      returns: "String",
+      description: <>Returns the current call stack.</>
+    },
+    {
+      signature: "getException()",
+      returns: "Exception",
+      description: <>Returns the current exception.</>
+    },
+    {
+      signature: "getError()",
+      returns: "Error",
+      description: <>Returns the current error.</>
+    },
+    {
+      signature: "getType()",
+      returns: "int",
+      description: <>Returns the current type.</>
+    }
+  ]}
+/>

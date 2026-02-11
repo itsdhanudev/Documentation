@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # UIInputText
 
 Complete API reference for `UIInputText`, including constructors, attributes, virtual attributes, and methods.
@@ -14,31 +16,59 @@ Complete API reference for `UIInputText`, including constructors, attributes, vi
 public class UIInputText extends Component
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| UIInputText([UIInputText]) | Executes `UIInputText` and returns after the underlying engine call finishes. |
-| UIInputText([Engine]) | Executes `UIInputText` and returns after the underlying engine call finishes. |
-| UIInputText() | Executes `UIInputText` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [UIInputText] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (4)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `color` | [Color] | `get/set` | Virtual attribute exposed by `getColor`. Access it like a field to read or write the underlying value. |
-| `editing` | [boolean] | `set` | Virtual attribute exposed by `setEditing`. Access it like a field to read or write the underlying value. |
-| `text` | [String] | `get/set` | Virtual attribute exposed by `getText`. Access it like a field to read or write the underlying value. |
-| `textSize` | [float] | `get/set` | Virtual attribute exposed by `getTextSize`. Access it like a field to read or write the underlying value. |
-
-## Methods (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `isEditing()` | `boolean` | Executes `isEditing` and returns after the underlying engine call finishes. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "UIInputText(UIInputText)",
+      description: <>Executes <code>UIInputText</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "UIInputText(Engine)",
+      description: <>Executes <code>UIInputText</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "UIInputText()",
+      description: <>Executes <code>UIInputText</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "UIInputText",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "color",
+      type: "Color",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getColor</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "editing",
+      type: "boolean",
+      access: "set",
+      description: <>Virtual attribute exposed by <code>setEditing</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "text",
+      type: "String",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getText</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "textSize",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getTextSize</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "isEditing()",
+      returns: "boolean",
+      description: <>Executes <code>isEditing</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

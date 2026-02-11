@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # InvokeListener
 
 Complete API reference for `InvokeListener`, including constructors, attributes, virtual attributes, and methods.
@@ -14,8 +16,12 @@ Complete API reference for `InvokeListener`, including constructors, attributes,
 public interface InvokeListener
 ```
 
-## Methods (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `run()` | `void` | Executes `run` and returns after the underlying engine call finishes. |
+<ApiDoc
+  methods={[
+    {
+      signature: "run()",
+      returns: "void",
+      description: <>Executes <code>run</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

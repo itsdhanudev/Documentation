@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # ViewPanel
 
 Referência completa da API de `ViewPanel`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,29 +16,69 @@ Referência completa da API de `ViewPanel`, incluindo construtores, atributos, a
 public class ViewPanel extends EditorPanel
 ```
 
-## Construtores (2)
-
-| Signature | Description |
-| --- | --- |
-| ViewPanel([JavaViewPanel]) | Executa `ViewPanel` e retorna quando a chamada do motor termina. |
-| ViewPanel() | Executa `ViewPanel` e retorna quando a chamada do motor termina. |
-
-## Métodos (7)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `updateUI()` | `void` | Define ou atualiza a propriedade `propriedade `ui``. |
-| `updateUIVisible()` | `void` | Define ou atualiza a propriedade `propriedade `uivisible``. |
-| `minimizedUpdate()` | `void` | Executa a operação minimizedUpdate. |
-| `onBindView()` | `void` | Executa a operação onBindView. |
-| `onUnbindView()` | `void` | Executa a operação onUnbindView. |
-| `onAttach()` | `View` | Executa a operação onAttach. |
-| `onDetach()` | `void` | Executa a operação onDetach. |
-
-## Métodos Estáticos (3)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `findViewByID(View, String)` | `<T extends View> T` | Executa a operação findViewByID usando os parâmetros informados (view, id). |
-| `toView(Object)` | `View` | Executa a operação toView usando os parâmetros informados (o). |
-| `getIdOf(View)` | `String` | Retorna a propriedade `propriedade `id of atual``. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "ViewPanel(JavaViewPanel)",
+      description: <>Executa <code>ViewPanel</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "ViewPanel()",
+      description: <>Executa <code>ViewPanel</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "updateUI()",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>ui``.</>
+    },
+    {
+      signature: "updateUIVisible()",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>uivisible``.</>
+    },
+    {
+      signature: "minimizedUpdate()",
+      returns: "void",
+      description: <>Executa a operação minimizedUpdate.</>
+    },
+    {
+      signature: "onBindView()",
+      returns: "void",
+      description: <>Executa a operação onBindView.</>
+    },
+    {
+      signature: "onUnbindView()",
+      returns: "void",
+      description: <>Executa a operação onUnbindView.</>
+    },
+    {
+      signature: "onAttach()",
+      returns: "View",
+      description: <>Executa a operação onAttach.</>
+    },
+    {
+      signature: "onDetach()",
+      returns: "void",
+      description: <>Executa a operação onDetach.</>
+    }
+  ]}
+  staticMethods={[
+    {
+      signature: "findViewByID(View, String)",
+      returns: "<T extends View> T",
+      description: <>Executa a operação findViewByID usando os parâmetros informados (view, id).</>
+    },
+    {
+      signature: "toView(Object)",
+      returns: "View",
+      description: <>Executa a operação toView usando os parâmetros informados (o).</>
+    },
+    {
+      signature: "getIdOf(View)",
+      returns: "String",
+      description: <>Retorna a propriedade <code>propriedade </code>id of atual``.</>
+    }
+  ]}
+/>

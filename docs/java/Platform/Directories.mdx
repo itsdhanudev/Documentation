@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Directories
 
 Complete API reference for `Directories`, including constructors, attributes, virtual attributes, and methods.
@@ -14,9 +16,17 @@ Complete API reference for `Directories`, including constructors, attributes, vi
 public class Directories
 ```
 
-## Static Methods (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `internal()` | `String` | Executes `internal` and returns after the underlying engine call finishes. |
-| `getProjectFolder()` | `String` | Returns the current project folder. |
+<ApiDoc
+  staticMethods={[
+    {
+      signature: "internal()",
+      returns: "String",
+      description: <>Executes <code>internal</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "getProjectFolder()",
+      returns: "String",
+      description: <>Returns the current project folder.</>
+    }
+  ]}
+/>

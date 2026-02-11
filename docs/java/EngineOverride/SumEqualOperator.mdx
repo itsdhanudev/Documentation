@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # SumEqualOperator
 
 Complete API reference for `SumEqualOperator`, including constructors, attributes, virtual attributes, and methods.
@@ -14,9 +16,12 @@ Complete API reference for `SumEqualOperator`, including constructors, attribute
 public interface SumEqualOperator
 ```
 
-## Methods (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `@MethodArgs([{"otherObject"}])` | `void` | Adds the given object to the current value and assigns the result. |
-| `sumEqual(Object)` | `void` | Executes `sumEqual` and returns after the underlying engine call finishes. |
+<ApiDoc
+  methods={[
+    {
+      signature: "sumEqual(Object)",
+      returns: "void",
+      description: <>Adds the given object to the current value and assigns the result.</>
+    }
+  ]}
+/>

@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Quaternion
 
 Referência completa da API de `Quaternion`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,102 +16,394 @@ Referência completa da API de `Quaternion`, incluindo construtores, atributos, 
 public class Quaternion
 ```
 
-## Construtores (3)
-
-| Signature | Description |
-| --- | --- |
-| Quaternion([Quaternion]) | Executa `Quaternion` e retorna quando a chamada do motor termina. |
-| Quaternion() | Executa `Quaternion` e retorna quando a chamada do motor termina. |
-| Quaternion([float], [float], [float], [float]) | Cria uma nova instância de Quaternion. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [Quaternion] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (7)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `qw` | [float] | `get/set` | Atributo virtual exposto por `getQW`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `qx` | [float] | `get/set` | Atributo virtual exposto por `getQX`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `qy` | [float] | `get/set` | Atributo virtual exposto por `getQY`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `qz` | [float] | `get/set` | Atributo virtual exposto por `getQZ`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `x` | [float] | `get/set` | Atributo virtual exposto por `getX`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `y` | [float] | `get/set` | Atributo virtual exposto por `getY`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `z` | [float] | `get/set` | Atributo virtual exposto por `getZ`. Acesse como um campo para ler ou escrever o valor subjacente. |
-
-## Métodos (51)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `increment(float, float, float)` | `void` | Executa a operação increment usando os parâmetros informados (eulerX, eulerY, eulerZ). |
-| `mul(Quaternion)` | `Quaternion` | Executa a operação mul usando os parâmetros informados (value). |
-| `mul(float, float, float, float)` | `Quaternion` | Executa a operação mul usando os parâmetros informados (w, x, y, z). |
-| `mulLocal(Quaternion)` | `void` | Executa a operação mulLocal usando os parâmetros informados (value). |
-| `mulLocal(float, float, float, float)` | `void` | Executa a operação mulLocal usando os parâmetros informados (w, x, y, z). |
-| `multiply(Quaternion)` | `Quaternion` | Executa a operação multiply usando os parâmetros informados (value). |
-| `multiply(float, float, float, float)` | `Quaternion` | Executa a operação multiply usando os parâmetros informados (w, x, y, z). |
-| `sum(Quaternion)` | `Quaternion` | Executa a operação sum usando os parâmetros informados (value). |
-| `sum(float, float, float, float)` | `Quaternion` | Executa a operação sum usando os parâmetros informados (w, x, y, z). |
-| `sumLocal(Quaternion)` | `void` | Executa a operação sumLocal usando os parâmetros informados (value). |
-| `sumLocal(float, float, float, float)` | `void` | Executa a operação sumLocal usando os parâmetros informados (w, x, y, z). |
-| `add(Quaternion)` | `Quaternion` | Adiciona an item à coleção. |
-| `add(float, float, float, float)` | `Quaternion` | Adiciona an item à coleção. |
-| `normalize()` | `Quaternion` | Executa a operação normalize. |
-| `normalizeLocal()` | `void` | Executa a operação normalizeLocal. |
-| `equals(Quaternion)` | `boolean` | Compara esta instância com outra para igualdade/ordem. |
-| `equals(float, float, float, float)` | `boolean` | Compara esta instância com outra para igualdade/ordem. |
-| `equals(float)` | `boolean` | Compara esta instância com outra para igualdade/ordem. |
-| `blend(Quaternion, float)` | `Quaternion` | Executa a operação blend usando os parâmetros informados (quaternion, blend). |
-| `blendLocal(Quaternion, float)` | `void` | Executa `blendLocal` e retorna quando a chamada do motor termina. |
-| `selfLookTo(Vector3)` | `void` | Executa a operação selfLookTo usando os parâmetros informados (direction). |
-| `selfLookTo(Vector3, Vector3)` | `void` | Executa a operação selfLookTo usando os parâmetros informados (from, to). |
-| `localLookTo(Vector3)` | `void` | Executa a operação localLookTo usando os parâmetros informados (direction). |
-| `localLookTo(Vector3, Vector3)` | `void` | Executa a operação localLookTo usando os parâmetros informados (from, to). |
-| `lookTo(Vector3)` | `void` | Executa a operação lookTo usando os parâmetros informados (direction). |
-| `lookTo(Vector3, Vector3)` | `void` | Executa a operação lookTo usando os parâmetros informados (from, to). |
-| `lookTo(Vector3, Vector3, Vector3)` | `void` | Executa a operação lookTo usando os parâmetros informados (from, to, up). |
-| `lookToLocal(Vector3)` | `void` | Executa `lookToLocal` e retorna quando a chamada do motor termina. |
-| `lookToLocal(Vector3, Vector3)` | `void` | Executa `lookToLocal` e retorna quando a chamada do motor termina. |
-| `lookToLocal(Vector3, boolean, boolean)` | `void` | Executa `lookToLocal` e retorna quando a chamada do motor termina. |
-| `lookToLocal(Vector3, Vector3, boolean, boolean)` | `void` | Executa `lookToLocal` e retorna quando a chamada do motor termina. |
-| `slerp(Quaternion, float)` | `Quaternion` | Executa a operação slerp usando os parâmetros informados (b, t). |
-| `slerpLocal(Quaternion, float)` | `void` | Executa a operação slerpLocal usando os parâmetros informados (b, t). |
-| `slerpLocal(Quaternion, Quaternion, float)` | `void` | Executa a operação slerpLocal usando os parâmetros informados (a, b, t). |
-| `set(Quaternion)` | `void` | Define ou atualiza the value. |
-| `set(float, float, float, float)` | `void` | Define ou atualiza the value. |
-| `set(float)` | `void` | Define ou atualiza the value. |
-| `setIdentity()` | `void` | Define ou atualiza a propriedade `propriedade `identity``. |
-| `setFromEuler(float, float, float)` | `void` | Define ou atualiza a propriedade `propriedade `from euler``. |
-| `setFromEuler(Vector3)` | `void` | Define ou atualiza a propriedade `propriedade `from euler``. |
-| `toEuler()` | `Vector3` | Executa a operação toEuler. |
-| `copy()` | `Quaternion` | Retorna uma cópia da instância de Quaternion. |
-| `rotateVector(Vector3)` | `Vector3` | Transforma ou move vector de acordo. |
-| `rotateVector(Vector3, Vector3)` | `Vector3` | Transforma ou move vector de acordo. |
-| `equals(Object)` | `boolean` | Compara esta instância com outra para igualdade/ordem. |
-| `pointerEquals(Object)` | `boolean` | Executa a operação pointerEquals usando os parâmetros informados (otherObject). |
-| `notEquals(Object)` | `boolean` | Executa a operação notEquals usando os parâmetros informados (otherObject). |
-| `mul(Object)` | `T` | Executa a operação mul usando os parâmetros informados (otherObject). |
-| `mulEqual(Object)` | `void` | Executa a operação mulEqual usando os parâmetros informados (otherObject). |
-| `serializeToString()` | `String` | Executa a operação serializeToString. |
-| `deserializeLocal(String)` | `void` | Executa a operação deserializeLocal usando os parâmetros informados (str). |
-
-## Métodos Estáticos (13)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `fromEuler(Vector3)` | `Quaternion` | Executa a operação fromEuler usando os parâmetros informados (value). |
-| `fromEuler(float, float, float)` | `Quaternion` | Executa a operação fromEuler usando os parâmetros informados (x, y, z). |
-| `createFromEuler(Vector3)` | `Quaternion` | Cria um novo from euler. |
-| `createFromEuler(float, float, float)` | `Quaternion` | Cria um novo from euler. |
-| `zero()` | `Quaternion` | Executa a operação zero. |
-| `slerp(Quaternion, Quaternion, float)` | `Quaternion` | Executa a operação slerp usando os parâmetros informados (a, b, t). |
-| `lookAt(Vector3, Vector3)` | `Quaternion` | Executa a operação lookAt usando os parâmetros informados (from, to). |
-| `lookAt(Vector3, Vector3, Vector3)` | `Quaternion` | Executa a operação lookAt usando os parâmetros informados (from, to, up). |
-| `angleAxis(float, Vector3)` | `Quaternion` | Executa a operação angleAxis usando os parâmetros informados (angle, value). |
-| `angleAxis(float, float, float, float)` | `Quaternion` | Executa a operação angleAxis usando os parâmetros informados (angle, x, y, z). |
-| `lookRotation(Vector3)` | `Quaternion` | Executa a operação lookRotation usando os parâmetros informados (forward). |
-| `lookRotation(Vector3, Vector3)` | `Quaternion` | Executa a operação lookRotation usando os parâmetros informados (forward, upwards). |
-| `isNull(Object)` | `boolean` | Retorna se null é verdadeiro. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "Quaternion(Quaternion)",
+      description: <>Executa <code>Quaternion</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "Quaternion()",
+      description: <>Executa <code>Quaternion</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "Quaternion(float, float, float, float)",
+      description: <>Cria uma nova instância de Quaternion.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "Quaternion",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "qw",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getQW</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "qx",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getQX</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "qy",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getQY</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "qz",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getQZ</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "x",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getX</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "y",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getY</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "z",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getZ</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "increment(float, float, float)",
+      returns: "void",
+      description: <>Executa a operação increment usando os parâmetros informados (eulerX, eulerY, eulerZ).</>
+    },
+    {
+      signature: "mul(Quaternion)",
+      returns: "Quaternion",
+      description: <>Executa a operação mul usando os parâmetros informados (value).</>
+    },
+    {
+      signature: "mul(float, float, float, float)",
+      returns: "Quaternion",
+      description: <>Executa a operação mul usando os parâmetros informados (w, x, y, z).</>
+    },
+    {
+      signature: "mulLocal(Quaternion)",
+      returns: "void",
+      description: <>Executa a operação mulLocal usando os parâmetros informados (value).</>
+    },
+    {
+      signature: "mulLocal(float, float, float, float)",
+      returns: "void",
+      description: <>Executa a operação mulLocal usando os parâmetros informados (w, x, y, z).</>
+    },
+    {
+      signature: "multiply(Quaternion)",
+      returns: "Quaternion",
+      description: <>Executa a operação multiply usando os parâmetros informados (value).</>
+    },
+    {
+      signature: "multiply(float, float, float, float)",
+      returns: "Quaternion",
+      description: <>Executa a operação multiply usando os parâmetros informados (w, x, y, z).</>
+    },
+    {
+      signature: "sum(Quaternion)",
+      returns: "Quaternion",
+      description: <>Executa a operação sum usando os parâmetros informados (value).</>
+    },
+    {
+      signature: "sum(float, float, float, float)",
+      returns: "Quaternion",
+      description: <>Executa a operação sum usando os parâmetros informados (w, x, y, z).</>
+    },
+    {
+      signature: "sumLocal(Quaternion)",
+      returns: "void",
+      description: <>Executa a operação sumLocal usando os parâmetros informados (value).</>
+    },
+    {
+      signature: "sumLocal(float, float, float, float)",
+      returns: "void",
+      description: <>Executa a operação sumLocal usando os parâmetros informados (w, x, y, z).</>
+    },
+    {
+      signature: "add(Quaternion)",
+      returns: "Quaternion",
+      description: <>Adiciona an item à coleção.</>
+    },
+    {
+      signature: "add(float, float, float, float)",
+      returns: "Quaternion",
+      description: <>Adiciona an item à coleção.</>
+    },
+    {
+      signature: "normalize()",
+      returns: "Quaternion",
+      description: <>Executa a operação normalize.</>
+    },
+    {
+      signature: "normalizeLocal()",
+      returns: "void",
+      description: <>Executa a operação normalizeLocal.</>
+    },
+    {
+      signature: "equals(Quaternion)",
+      returns: "boolean",
+      description: <>Compara esta instância com outra para igualdade/ordem.</>
+    },
+    {
+      signature: "equals(float, float, float, float)",
+      returns: "boolean",
+      description: <>Compara esta instância com outra para igualdade/ordem.</>
+    },
+    {
+      signature: "equals(float)",
+      returns: "boolean",
+      description: <>Compara esta instância com outra para igualdade/ordem.</>
+    },
+    {
+      signature: "blend(Quaternion, float)",
+      returns: "Quaternion",
+      description: <>Executa a operação blend usando os parâmetros informados (quaternion, blend).</>
+    },
+    {
+      signature: "blendLocal(Quaternion, float)",
+      returns: "void",
+      description: <>Executa <code>blendLocal</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "selfLookTo(Vector3)",
+      returns: "void",
+      description: <>Executa a operação selfLookTo usando os parâmetros informados (direction).</>
+    },
+    {
+      signature: "selfLookTo(Vector3, Vector3)",
+      returns: "void",
+      description: <>Executa a operação selfLookTo usando os parâmetros informados (from, to).</>
+    },
+    {
+      signature: "localLookTo(Vector3)",
+      returns: "void",
+      description: <>Executa a operação localLookTo usando os parâmetros informados (direction).</>
+    },
+    {
+      signature: "localLookTo(Vector3, Vector3)",
+      returns: "void",
+      description: <>Executa a operação localLookTo usando os parâmetros informados (from, to).</>
+    },
+    {
+      signature: "lookTo(Vector3)",
+      returns: "void",
+      description: <>Executa a operação lookTo usando os parâmetros informados (direction).</>
+    },
+    {
+      signature: "lookTo(Vector3, Vector3)",
+      returns: "void",
+      description: <>Executa a operação lookTo usando os parâmetros informados (from, to).</>
+    },
+    {
+      signature: "lookTo(Vector3, Vector3, Vector3)",
+      returns: "void",
+      description: <>Executa a operação lookTo usando os parâmetros informados (from, to, up).</>
+    },
+    {
+      signature: "lookToLocal(Vector3)",
+      returns: "void",
+      description: <>Executa <code>lookToLocal</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "lookToLocal(Vector3, Vector3)",
+      returns: "void",
+      description: <>Executa <code>lookToLocal</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "lookToLocal(Vector3, boolean, boolean)",
+      returns: "void",
+      description: <>Executa <code>lookToLocal</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "lookToLocal(Vector3, Vector3, boolean, boolean)",
+      returns: "void",
+      description: <>Executa <code>lookToLocal</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "slerp(Quaternion, float)",
+      returns: "Quaternion",
+      description: <>Executa a operação slerp usando os parâmetros informados (b, t).</>
+    },
+    {
+      signature: "slerpLocal(Quaternion, float)",
+      returns: "void",
+      description: <>Executa a operação slerpLocal usando os parâmetros informados (b, t).</>
+    },
+    {
+      signature: "slerpLocal(Quaternion, Quaternion, float)",
+      returns: "void",
+      description: <>Executa a operação slerpLocal usando os parâmetros informados (a, b, t).</>
+    },
+    {
+      signature: "set(Quaternion)",
+      returns: "void",
+      description: <>Define ou atualiza the value.</>
+    },
+    {
+      signature: "set(float, float, float, float)",
+      returns: "void",
+      description: <>Define ou atualiza the value.</>
+    },
+    {
+      signature: "set(float)",
+      returns: "void",
+      description: <>Define ou atualiza the value.</>
+    },
+    {
+      signature: "setIdentity()",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>identity``.</>
+    },
+    {
+      signature: "setFromEuler(float, float, float)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>from euler``.</>
+    },
+    {
+      signature: "setFromEuler(Vector3)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>from euler``.</>
+    },
+    {
+      signature: "toEuler()",
+      returns: "Vector3",
+      description: <>Executa a operação toEuler.</>
+    },
+    {
+      signature: "copy()",
+      returns: "Quaternion",
+      description: <>Retorna uma cópia da instância de Quaternion.</>
+    },
+    {
+      signature: "rotateVector(Vector3)",
+      returns: "Vector3",
+      description: <>Transforma ou move vector de acordo.</>
+    },
+    {
+      signature: "rotateVector(Vector3, Vector3)",
+      returns: "Vector3",
+      description: <>Transforma ou move vector de acordo.</>
+    },
+    {
+      signature: "equals(Object)",
+      returns: "boolean",
+      description: <>Compara esta instância com outra para igualdade/ordem.</>
+    },
+    {
+      signature: "pointerEquals(Object)",
+      returns: "boolean",
+      description: <>Executa a operação pointerEquals usando os parâmetros informados (otherObject).</>
+    },
+    {
+      signature: "notEquals(Object)",
+      returns: "boolean",
+      description: <>Executa a operação notEquals usando os parâmetros informados (otherObject).</>
+    },
+    {
+      signature: "mul(Object)",
+      returns: "T",
+      description: <>Executa a operação mul usando os parâmetros informados (otherObject).</>
+    },
+    {
+      signature: "mulEqual(Object)",
+      returns: "void",
+      description: <>Executa a operação mulEqual usando os parâmetros informados (otherObject).</>
+    },
+    {
+      signature: "serializeToString()",
+      returns: "String",
+      description: <>Executa a operação serializeToString.</>
+    },
+    {
+      signature: "deserializeLocal(String)",
+      returns: "void",
+      description: <>Executa a operação deserializeLocal usando os parâmetros informados (str).</>
+    }
+  ]}
+  staticMethods={[
+    {
+      signature: "fromEuler(Vector3)",
+      returns: "Quaternion",
+      description: <>Executa a operação fromEuler usando os parâmetros informados (value).</>
+    },
+    {
+      signature: "fromEuler(float, float, float)",
+      returns: "Quaternion",
+      description: <>Executa a operação fromEuler usando os parâmetros informados (x, y, z).</>
+    },
+    {
+      signature: "createFromEuler(Vector3)",
+      returns: "Quaternion",
+      description: <>Cria um novo from euler.</>
+    },
+    {
+      signature: "createFromEuler(float, float, float)",
+      returns: "Quaternion",
+      description: <>Cria um novo from euler.</>
+    },
+    {
+      signature: "zero()",
+      returns: "Quaternion",
+      description: <>Executa a operação zero.</>
+    },
+    {
+      signature: "slerp(Quaternion, Quaternion, float)",
+      returns: "Quaternion",
+      description: <>Executa a operação slerp usando os parâmetros informados (a, b, t).</>
+    },
+    {
+      signature: "lookAt(Vector3, Vector3)",
+      returns: "Quaternion",
+      description: <>Executa a operação lookAt usando os parâmetros informados (from, to).</>
+    },
+    {
+      signature: "lookAt(Vector3, Vector3, Vector3)",
+      returns: "Quaternion",
+      description: <>Executa a operação lookAt usando os parâmetros informados (from, to, up).</>
+    },
+    {
+      signature: "angleAxis(float, Vector3)",
+      returns: "Quaternion",
+      description: <>Executa a operação angleAxis usando os parâmetros informados (angle, value).</>
+    },
+    {
+      signature: "angleAxis(float, float, float, float)",
+      returns: "Quaternion",
+      description: <>Executa a operação angleAxis usando os parâmetros informados (angle, x, y, z).</>
+    },
+    {
+      signature: "lookRotation(Vector3)",
+      returns: "Quaternion",
+      description: <>Executa a operação lookRotation usando os parâmetros informados (forward).</>
+    },
+    {
+      signature: "lookRotation(Vector3, Vector3)",
+      returns: "Quaternion",
+      description: <>Executa a operação lookRotation usando os parâmetros informados (forward, upwards).</>
+    },
+    {
+      signature: "isNull(Object)",
+      returns: "boolean",
+      description: <>Retorna se null é verdadeiro.</>
+    }
+  ]}
+/>

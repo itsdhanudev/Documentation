@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # AnimationTrigger
 
 Complete API reference for `AnimationTrigger`, including constructors, attributes, virtual attributes, and methods.
@@ -14,41 +16,112 @@ Complete API reference for `AnimationTrigger`, including constructors, attribute
 public class AnimationTrigger extends Component
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| AnimationTrigger([AnimationTrigger]) | Executes `AnimationTrigger` and returns after the underlying engine call finishes. |
-| AnimationTrigger([Engine]) | Executes `AnimationTrigger` and returns after the underlying engine call finishes. |
-| AnimationTrigger() | Executes `AnimationTrigger` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [AnimationTrigger] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (7)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `animName` | [String] | `get/set` | Virtual attribute exposed by `getAnimName`. Access it like a field to read or write the underlying value. |
-| `animSpeed` | [float] | `get/set` | Virtual attribute exposed by `getAnimSpeed`. Access it like a field to read or write the underlying value. |
-| `animSpeedFrom` | [AnimSpeedFrom] | `get/set` | Virtual attribute exposed by `getAnimSpeedFrom`. Access it like a field to read or write the underlying value. |
-| `loopOnce` | [boolean] | `get/set` | Virtual attribute exposed by `isLoopOnce`. Access it like a field to read or write the underlying value. |
-| `onActiveEventName` | [String] | `get/set` | Virtual attribute exposed by `getOnActiveEventName`. Access it like a field to read or write the underlying value. |
-| `running` | [boolean] | `get` | Virtual attribute exposed by `isRunning`. Access it like a field to read or write the underlying value. |
-| `transitionDelay` | [float] | `get/set` | Virtual attribute exposed by `getTransitionDelay`. Access it like a field to read or write the underlying value. |
-
-## Methods (8)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `enterConditionCount()` | `int` | Executes `enterConditionCount` and returns after the underlying engine call finishes. |
-| `enterConditionAt(int)` | `Condition` | Executes `enterConditionAt` and returns after the underlying engine call finishes. |
-| `addEnterCondition(Condition)` | `void` | Executes `addEnterCondition` and returns after the underlying engine call finishes. |
-| `removeEnterCondition(Condition)` | `void` | Executes `removeEnterCondition` and returns after the underlying engine call finishes. |
-| `exitConditionCount()` | `int` | Executes `exitConditionCount` and returns after the underlying engine call finishes. |
-| `exitConditionAt(int)` | `Condition` | Executes `exitConditionAt` and returns after the underlying engine call finishes. |
-| `addExitCondition(Condition)` | `void` | Executes `addExitCondition` and returns after the underlying engine call finishes. |
-| `removeExitCondition(Condition)` | `void` | Executes `removeExitCondition` and returns after the underlying engine call finishes. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "AnimationTrigger(AnimationTrigger)",
+      description: <>Executes <code>AnimationTrigger</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "AnimationTrigger(Engine)",
+      description: <>Executes <code>AnimationTrigger</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "AnimationTrigger()",
+      description: <>Executes <code>AnimationTrigger</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "AnimationTrigger",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "animName",
+      type: "String",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getAnimName</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "animSpeed",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getAnimSpeed</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "animSpeedFrom",
+      type: "AnimSpeedFrom",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getAnimSpeedFrom</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "loopOnce",
+      type: "boolean",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>isLoopOnce</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "onActiveEventName",
+      type: "String",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getOnActiveEventName</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "running",
+      type: "boolean",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>isRunning</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "transitionDelay",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getTransitionDelay</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "enterConditionCount()",
+      returns: "int",
+      description: <>Executes <code>enterConditionCount</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "enterConditionAt(int)",
+      returns: "Condition",
+      description: <>Executes <code>enterConditionAt</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "addEnterCondition(Condition)",
+      returns: "void",
+      description: <>Executes <code>addEnterCondition</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "removeEnterCondition(Condition)",
+      returns: "void",
+      description: <>Executes <code>removeEnterCondition</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "exitConditionCount()",
+      returns: "int",
+      description: <>Executes <code>exitConditionCount</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "exitConditionAt(int)",
+      returns: "Condition",
+      description: <>Executes <code>exitConditionAt</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "addExitCondition(Condition)",
+      returns: "void",
+      description: <>Executes <code>addExitCondition</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "removeExitCondition(Condition)",
+      returns: "void",
+      description: <>Executes <code>removeExitCondition</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

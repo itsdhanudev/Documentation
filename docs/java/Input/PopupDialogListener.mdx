@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # PopupDialogListener
 
 Complete API reference for `PopupDialogListener`, including constructors, attributes, virtual attributes, and methods.
@@ -14,8 +16,12 @@ Complete API reference for `PopupDialogListener`, including constructors, attrib
 public interface PopupDialogListener
 ```
 
-## Methods (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `onClicked()` | `void` | Executes `onClicked` and returns after the underlying engine call finishes. |
+<ApiDoc
+  methods={[
+    {
+      signature: "onClicked()",
+      returns: "void",
+      description: <>Executes <code>onClicked</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

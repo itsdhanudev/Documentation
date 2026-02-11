@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # AOnEditorActionListener
 
 Complete API reference for `AOnEditorActionListener`, including constructors, attributes, virtual attributes, and methods.
@@ -14,9 +16,17 @@ Complete API reference for `AOnEditorActionListener`, including constructors, at
 public class AOnEditorActionListener
 ```
 
-## Methods (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `onEditorAction(TextView, int, KeyEvent)` | `boolean` | Performs the onEditorAction operation using the provided parameters (v, actionId, event). |
-| `onEditorActionEvent(TextView, int, KeyEvent)` | `boolean` | Executes `onEditorActionEvent` and returns after the underlying engine call finishes. |
+<ApiDoc
+  methods={[
+    {
+      signature: "onEditorAction(TextView, int, KeyEvent)",
+      returns: "boolean",
+      description: <>Performs the onEditorAction operation using the provided parameters (v, actionId, event).</>
+    },
+    {
+      signature: "onEditorActionEvent(TextView, int, KeyEvent)",
+      returns: "boolean",
+      description: <>Executes <code>onEditorActionEvent</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

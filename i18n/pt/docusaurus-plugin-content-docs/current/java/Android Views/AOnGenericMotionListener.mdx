@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # AOnGenericMotionListener
 
 Referência completa da API de `AOnGenericMotionListener`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,9 +16,17 @@ Referência completa da API de `AOnGenericMotionListener`, incluindo construtore
 public class AOnGenericMotionListener
 ```
 
-## Métodos (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `onGenericMotion(View, MotionEvent)` | `boolean` | Executa a operação onGenericMotion usando os parâmetros informados (v, event). |
-| `onGenericMotionEvent(View, MotionEvent)` | `boolean` | Executa `onGenericMotionEvent` e retorna quando a chamada do motor termina. |
+<ApiDoc
+  methods={[
+    {
+      signature: "onGenericMotion(View, MotionEvent)",
+      returns: "boolean",
+      description: <>Executa a operação onGenericMotion usando os parâmetros informados (v, event).</>
+    },
+    {
+      signature: "onGenericMotionEvent(View, MotionEvent)",
+      returns: "boolean",
+      description: <>Executa <code>onGenericMotionEvent</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+/>

@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # UIRect
 
 Referência completa da API de `UIRect`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,44 +16,136 @@ Referência completa da API de `UIRect`, incluindo construtores, atributos, atri
 public class UIRect extends Component
 ```
 
-## Construtores (3)
-
-| Signature | Description |
-| --- | --- |
-| UIRect([UIRect]) | Executa `UIRect` e retorna quando a chamada do motor termina. |
-| UIRect([Engine]) | Executa `UIRect` e retorna quando a chamada do motor termina. |
-| UIRect() | Cria uma nova instância de UIRect. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [UIRect] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (16)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `autoSH` | [boolean] | `set` | Atributo virtual exposto por `setAutoSH`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `autoSW` | [boolean] | `set` | Atributo virtual exposto por `setAutoSW`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `marginBottom` | [int] | `get/set` | Atributo virtual exposto por `getMarginBottom`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `marginLeft` | [int] | `get/set` | Atributo virtual exposto por `getMarginLeft`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `marginRight` | [int] | `get/set` | Atributo virtual exposto por `getMarginRight`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `marginTop` | [int] | `get/set` | Atributo virtual exposto por `getMarginTop`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `paddingBottom` | [int] | `get/set` | Atributo virtual exposto por `getPaddingBottom`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `paddingLeft` | [int] | `get/set` | Atributo virtual exposto por `getPaddingLeft`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `paddingRight` | [int] | `get/set` | Atributo virtual exposto por `getPaddingRight`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `paddingTop` | [int] | `get/set` | Atributo virtual exposto por `getPaddingTop`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `position` | [int] | `get/set` | Atributo virtual exposto por `getPosition`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `positionX` | [int] | `get/set` | Atributo virtual exposto por `getPositionX`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `positionY` | [int] | `get/set` | Atributo virtual exposto por `getPositionY`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `size` | [int] | `get/set` | Atributo virtual exposto por `getSize`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `sizeX` | [int] | `get/set` | Atributo virtual exposto por `getSizeX`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `sizeY` | [int] | `get/set` | Atributo virtual exposto por `getSizeY`. Acesse como um campo para ler ou escrever o valor subjacente. |
-
-## Métodos (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `isAutoSH()` | `boolean` | Retorna se auto sh é verdadeiro. |
-| `isAutoSW()` | `boolean` | Retorna se auto sw é verdadeiro. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "UIRect(UIRect)",
+      description: <>Executa <code>UIRect</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "UIRect(Engine)",
+      description: <>Executa <code>UIRect</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "UIRect()",
+      description: <>Cria uma nova instância de UIRect.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "UIRect",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "autoSH",
+      type: "boolean",
+      access: "set",
+      description: <>Atributo virtual exposto por <code>setAutoSH</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "autoSW",
+      type: "boolean",
+      access: "set",
+      description: <>Atributo virtual exposto por <code>setAutoSW</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "marginBottom",
+      type: "int",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getMarginBottom</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "marginLeft",
+      type: "int",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getMarginLeft</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "marginRight",
+      type: "int",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getMarginRight</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "marginTop",
+      type: "int",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getMarginTop</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "paddingBottom",
+      type: "int",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getPaddingBottom</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "paddingLeft",
+      type: "int",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getPaddingLeft</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "paddingRight",
+      type: "int",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getPaddingRight</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "paddingTop",
+      type: "int",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getPaddingTop</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "position",
+      type: "int",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getPosition</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "positionX",
+      type: "int",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getPositionX</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "positionY",
+      type: "int",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getPositionY</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "size",
+      type: "int",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getSize</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "sizeX",
+      type: "int",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getSizeX</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "sizeY",
+      type: "int",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getSizeY</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "isAutoSH()",
+      returns: "boolean",
+      description: <>Retorna se auto sh é verdadeiro.</>
+    },
+    {
+      signature: "isAutoSW()",
+      returns: "boolean",
+      description: <>Retorna se auto sw é verdadeiro.</>
+    }
+  ]}
+/>

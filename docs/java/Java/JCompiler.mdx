@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # JCompiler
 
 Complete API reference for `JCompiler`, including constructors, attributes, virtual attributes, and methods.
@@ -14,19 +16,67 @@ Complete API reference for `JCompiler`, including constructors, attributes, virt
 public class JCompiler
 ```
 
-## Static Methods (12)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getAllClasses()` | [List]&[lt];[JClass]&[gt]; | Returns the current all classes. |
-| `getEngineClasses()` | [List]&[lt];[JClass]&[gt]; | Returns the current engine classes. |
-| `engineClassCount()` | `int` | Executes `engineClassCount` and returns after the underlying engine call finishes. |
-| `engineClassAt(int)` | `JClass` | Performs the engineClassAt operation using the provided parameters (idx). |
-| `getUsersClasses()` | [List]&[lt];[JClass]&[gt]; | Returns the current users classes. |
-| `userClassCount()` | `int` | Executes `userClassCount` and returns after the underlying engine call finishes. |
-| `userClassAt(int)` | `JClass` | Performs the userClassAt operation using the provided parameters (idx). |
-| `findOfficialClass(String)` | `JClass` | Performs the findOfficialClass operation using the provided parameters (fullName). |
-| `findUserClass(String)` | `JClass` | Performs the findUserClass operation using the provided parameters (fullName). |
-| `isCompiling()` | `boolean` | Returns whether compiling is true. |
-| `addListener(Object)` | `void` | Adds listener to the collection. |
-| `removeListener(Object)` | `void` | Removes listener from the collection. |
+<ApiDoc
+  staticMethods={[
+    {
+      signature: "getAllClasses()",
+      returns: "List&lt;JClass&gt;",
+      description: <>Returns the current all classes.</>
+    },
+    {
+      signature: "getEngineClasses()",
+      returns: "List&lt;JClass&gt;",
+      description: <>Returns the current engine classes.</>
+    },
+    {
+      signature: "engineClassCount()",
+      returns: "int",
+      description: <>Executes <code>engineClassCount</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "engineClassAt(int)",
+      returns: "JClass",
+      description: <>Performs the engineClassAt operation using the provided parameters (idx).</>
+    },
+    {
+      signature: "getUsersClasses()",
+      returns: "List&lt;JClass&gt;",
+      description: <>Returns the current users classes.</>
+    },
+    {
+      signature: "userClassCount()",
+      returns: "int",
+      description: <>Executes <code>userClassCount</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "userClassAt(int)",
+      returns: "JClass",
+      description: <>Performs the userClassAt operation using the provided parameters (idx).</>
+    },
+    {
+      signature: "findOfficialClass(String)",
+      returns: "JClass",
+      description: <>Performs the findOfficialClass operation using the provided parameters (fullName).</>
+    },
+    {
+      signature: "findUserClass(String)",
+      returns: "JClass",
+      description: <>Performs the findUserClass operation using the provided parameters (fullName).</>
+    },
+    {
+      signature: "isCompiling()",
+      returns: "boolean",
+      description: <>Returns whether compiling is true.</>
+    },
+    {
+      signature: "addListener(Object)",
+      returns: "void",
+      description: <>Adds listener to the collection.</>
+    },
+    {
+      signature: "removeListener(Object)",
+      returns: "void",
+      description: <>Removes listener from the collection.</>
+    }
+  ]}
+/>

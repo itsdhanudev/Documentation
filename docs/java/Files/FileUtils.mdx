@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # FileUtils
 
 Complete API reference for `FileUtils`, including constructors, attributes, virtual attributes, and methods.
@@ -14,16 +16,52 @@ Complete API reference for `FileUtils`, including constructors, attributes, virt
 public class FileUtils
 ```
 
-## Static Methods (9)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `determineClassFolder(Class)` | `String` | Performs the determineClassFolder operation using the provided parameters (classType). |
-| `determineClassPath(Class)` | `String` | Performs the determineClassPath operation using the provided parameters (classType). |
-| `commonPath(List)` | `String` | Performs the commonPath operation using the provided parameters (paths). |
-| `getFileName(String)` | `String` | Returns the current file name. |
-| `getFileName(String, boolean)` | `String` | Returns the current file name. |
-| `getFileFolder(String)` | `String` | Returns the current file folder. |
-| `getExtensionName(String)` | `String` | Returns the current extension name. |
-| `removeExtension(String)` | `String` | Removes extension from the collection. |
-| `getLastFolder(String)` | `String` | Returns the current last folder. |
+<ApiDoc
+  staticMethods={[
+    {
+      signature: "determineClassFolder(Class)",
+      returns: "String",
+      description: <>Performs the determineClassFolder operation using the provided parameters (classType).</>
+    },
+    {
+      signature: "determineClassPath(Class)",
+      returns: "String",
+      description: <>Performs the determineClassPath operation using the provided parameters (classType).</>
+    },
+    {
+      signature: "commonPath(List)",
+      returns: "String",
+      description: <>Performs the commonPath operation using the provided parameters (paths).</>
+    },
+    {
+      signature: "getFileName(String)",
+      returns: "String",
+      description: <>Returns the current file name.</>
+    },
+    {
+      signature: "getFileName(String, boolean)",
+      returns: "String",
+      description: <>Returns the current file name.</>
+    },
+    {
+      signature: "getFileFolder(String)",
+      returns: "String",
+      description: <>Returns the current file folder.</>
+    },
+    {
+      signature: "getExtensionName(String)",
+      returns: "String",
+      description: <>Returns the current extension name.</>
+    },
+    {
+      signature: "removeExtension(String)",
+      returns: "String",
+      description: <>Removes extension from the collection.</>
+    },
+    {
+      signature: "getLastFolder(String)",
+      returns: "String",
+      description: <>Returns the current last folder.</>
+    }
+  ]}
+/>

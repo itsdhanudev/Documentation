@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # KeyboardMapper
 
 Referência completa da API de `KeyboardMapper`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,23 +16,40 @@ Referência completa da API de `KeyboardMapper`, incluindo construtores, atribut
 public class KeyboardMapper extends Component
 ```
 
-## Construtores (3)
-
-| Signature | Description |
-| --- | --- |
-| KeyboardMapper([KeyboardMapper]) | Executa `KeyboardMapper` e retorna quando a chamada do motor termina. |
-| KeyboardMapper([Engine]) | Executa `KeyboardMapper` e retorna quando a chamada do motor termina. |
-| KeyboardMapper() | Cria uma nova instância de KeyboardMapper. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [KeyboardMapper] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (2)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `keyboardKey` | [String] | `get/set` | Atributo virtual exposto por `getKeyboardKey`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `outputKey` | [String] | `get/set` | Atributo virtual exposto por `getOutputKey`. Acesse como um campo para ler ou escrever o valor subjacente. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "KeyboardMapper(KeyboardMapper)",
+      description: <>Executa <code>KeyboardMapper</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "KeyboardMapper(Engine)",
+      description: <>Executa <code>KeyboardMapper</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "KeyboardMapper()",
+      description: <>Cria uma nova instância de KeyboardMapper.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "KeyboardMapper",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "keyboardKey",
+      type: "String",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getKeyboardKey</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "outputKey",
+      type: "String",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getOutputKey</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+/>

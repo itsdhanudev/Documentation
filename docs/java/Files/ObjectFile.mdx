@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # ObjectFile
 
 Complete API reference for `ObjectFile`, including constructors, attributes, virtual attributes, and methods.
@@ -14,24 +16,44 @@ Complete API reference for `ObjectFile`, including constructors, attributes, vir
 public class ObjectFile
 ```
 
-## Constructors (2)
-
-| Signature | Description |
-| --- | --- |
-| ObjectFile([String]) | Executes `ObjectFile` and returns after the underlying engine call finishes. |
-| ObjectFile() | Creates a new instance of ObjectFile. |
-
-## Methods (3)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `instantiate()` | `GameObject` | Executes `instantiate` and returns after the underlying engine call finishes. |
-| `setFilePath(String)` | `void` | Executes `setFilePath` and returns after the underlying engine call finishes. |
-| `toString()` | `String` | Returns the string representation. |
-
-## Static Methods (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `genericInterface()` | `GenericClassInspectorEntry` | Executes `genericInterface` and returns after the underlying engine call finishes. |
-| `inspectorController()` | `ClassInspectorEntry` | Executes `inspectorController` and returns after the underlying engine call finishes. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "ObjectFile(String)",
+      description: <>Executes <code>ObjectFile</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "ObjectFile()",
+      description: <>Creates a new instance of ObjectFile.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "instantiate()",
+      returns: "GameObject",
+      description: <>Executes <code>instantiate</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "setFilePath(String)",
+      returns: "void",
+      description: <>Executes <code>setFilePath</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "toString()",
+      returns: "String",
+      description: <>Returns the string representation.</>
+    }
+  ]}
+  staticMethods={[
+    {
+      signature: "genericInterface()",
+      returns: "GenericClassInspectorEntry",
+      description: <>Executes <code>genericInterface</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "inspectorController()",
+      returns: "ClassInspectorEntry",
+      description: <>Executes <code>inspectorController</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

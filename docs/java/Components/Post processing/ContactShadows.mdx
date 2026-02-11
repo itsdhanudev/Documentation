@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # ContactShadows
 
 Complete API reference for `ContactShadows`, including constructors, attributes, virtual attributes, and methods.
@@ -14,29 +16,76 @@ Complete API reference for `ContactShadows`, including constructors, attributes,
 public class ContactShadows extends Component
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| ContactShadows([ContactShadows]) | Executes `ContactShadows` and returns after the underlying engine call finishes. |
-| ContactShadows([Engine]) | Executes `ContactShadows` and returns after the underlying engine call finishes. |
-| ContactShadows() | Executes `ContactShadows` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [ContactShadows] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (8)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `ssctContactDistanceMax` | [float] | `get/set` | Virtual attribute exposed by `getSsctContactDistanceMax`. Access it like a field to read or write the underlying value. |
-| `ssctDepthBias` | [float] | `get/set` | Virtual attribute exposed by `getSsctDepthBias`. Access it like a field to read or write the underlying value. |
-| `ssctDepthSlopeBias` | [float] | `get/set` | Virtual attribute exposed by `getSsctDepthSlopeBias`. Access it like a field to read or write the underlying value. |
-| `ssctIntensity` | [float] | `get/set` | Virtual attribute exposed by `getSsctIntensity`. Access it like a field to read or write the underlying value. |
-| `ssctLightCone` | [float] | `get/set` | Virtual attribute exposed by `getSsctLightCone`. Access it like a field to read or write the underlying value. |
-| `ssctRayCount` | [int] | `get/set` | Virtual attribute exposed by `getSsctRayCount`. Access it like a field to read or write the underlying value. |
-| `ssctSampleCount` | [int] | `get/set` | Virtual attribute exposed by `getSsctSampleCount`. Access it like a field to read or write the underlying value. |
-| `ssctShadowDistance` | [float] | `get/set` | Virtual attribute exposed by `getSsctShadowDistance`. Access it like a field to read or write the underlying value. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "ContactShadows(ContactShadows)",
+      description: <>Executes <code>ContactShadows</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "ContactShadows(Engine)",
+      description: <>Executes <code>ContactShadows</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "ContactShadows()",
+      description: <>Executes <code>ContactShadows</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "ContactShadows",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "ssctContactDistanceMax",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getSsctContactDistanceMax</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "ssctDepthBias",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getSsctDepthBias</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "ssctDepthSlopeBias",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getSsctDepthSlopeBias</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "ssctIntensity",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getSsctIntensity</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "ssctLightCone",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getSsctLightCone</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "ssctRayCount",
+      type: "int",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getSsctRayCount</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "ssctSampleCount",
+      type: "int",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getSsctSampleCount</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "ssctShadowDistance",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getSsctShadowDistance</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+/>

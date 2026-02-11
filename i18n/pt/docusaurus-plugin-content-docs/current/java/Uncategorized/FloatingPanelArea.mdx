@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # FloatingPanelArea
 
 Referência completa da API de `FloatingPanelArea`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,34 +16,117 @@ Referência completa da API de `FloatingPanelArea`, incluindo construtores, atri
 public class FloatingPanelArea extends PanelArea
 ```
 
-## Construtores (2)
-
-| Signature | Description |
-| --- | --- |
-| FloatingPanelArea([PanelArea]) | Executa `FloatingPanelArea` e retorna quando a chamada do motor termina. |
-| FloatingPanelArea() | Cria uma nova instância de FloatingPanelArea. |
-
-## Métodos (20)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `isOpen()` | `boolean` | Retorna se open é verdadeiro. |
-| `isCloseWhenClickOutside()` | `boolean` | Retorna se close when click outside é verdadeiro. |
-| `setCloseWhenClickOutside(boolean)` | `void` | Define ou atualiza a propriedade `propriedade `close when click outside``. |
-| `isCaptureTouchWhenClickOutside()` | `boolean` | Retorna se capture touch when click outside é verdadeiro. |
-| `setCaptureTouchWhenClickOutside(boolean)` | `void` | Define ou atualiza a propriedade `propriedade `capture touch when click outside``. |
-| `isResizeable()` | `boolean` | Retorna se resizeable é verdadeiro. |
-| `setResizeable(boolean)` | `void` | Define ou atualiza a propriedade `propriedade `resizeable``. |
-| `isAllowCloseX()` | `boolean` | Retorna se allow close x é verdadeiro. |
-| `setAllowCloseX(boolean)` | `void` | Define ou atualiza a propriedade `propriedade `allow close x``. |
-| `getFloatingX()` | `float` | Retorna a propriedade `propriedade `floating x atual``. |
-| `setFloatingX(float)` | `void` | Define ou atualiza a propriedade `propriedade `floating x``. |
-| `getFloatingY()` | `float` | Retorna a propriedade `propriedade `floating y atual``. |
-| `setFloatingY(float)` | `void` | Define ou atualiza a propriedade `propriedade `floating y``. |
-| `getFloatingW()` | `float` | Retorna a propriedade `propriedade `floating w atual``. |
-| `setFloatingW(float)` | `void` | Define ou atualiza a propriedade `propriedade `floating w``. |
-| `getFloatingH()` | `float` | Retorna a propriedade `propriedade `floating h atual``. |
-| `setFloatingH(float)` | `void` | Define ou atualiza a propriedade `propriedade `floating h``. |
-| `isCloseWhenPressBack()` | `boolean` | Retorna se close when press back é verdadeiro. |
-| `setCloseWhenPressBack(boolean)` | `void` | Define ou atualiza a propriedade `propriedade `close when press back``. |
-| `closeWhenPressBack()` | `void` | Executa a operação closeWhenPressBack. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "FloatingPanelArea(PanelArea)",
+      description: <>Executa <code>FloatingPanelArea</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "FloatingPanelArea()",
+      description: <>Cria uma nova instância de FloatingPanelArea.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "isOpen()",
+      returns: "boolean",
+      description: <>Retorna se open é verdadeiro.</>
+    },
+    {
+      signature: "isCloseWhenClickOutside()",
+      returns: "boolean",
+      description: <>Retorna se close when click outside é verdadeiro.</>
+    },
+    {
+      signature: "setCloseWhenClickOutside(boolean)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>close when click outside``.</>
+    },
+    {
+      signature: "isCaptureTouchWhenClickOutside()",
+      returns: "boolean",
+      description: <>Retorna se capture touch when click outside é verdadeiro.</>
+    },
+    {
+      signature: "setCaptureTouchWhenClickOutside(boolean)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>capture touch when click outside``.</>
+    },
+    {
+      signature: "isResizeable()",
+      returns: "boolean",
+      description: <>Retorna se resizeable é verdadeiro.</>
+    },
+    {
+      signature: "setResizeable(boolean)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>resizeable``.</>
+    },
+    {
+      signature: "isAllowCloseX()",
+      returns: "boolean",
+      description: <>Retorna se allow close x é verdadeiro.</>
+    },
+    {
+      signature: "setAllowCloseX(boolean)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>allow close x``.</>
+    },
+    {
+      signature: "getFloatingX()",
+      returns: "float",
+      description: <>Retorna a propriedade <code>propriedade </code>floating x atual``.</>
+    },
+    {
+      signature: "setFloatingX(float)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>floating x``.</>
+    },
+    {
+      signature: "getFloatingY()",
+      returns: "float",
+      description: <>Retorna a propriedade <code>propriedade </code>floating y atual``.</>
+    },
+    {
+      signature: "setFloatingY(float)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>floating y``.</>
+    },
+    {
+      signature: "getFloatingW()",
+      returns: "float",
+      description: <>Retorna a propriedade <code>propriedade </code>floating w atual``.</>
+    },
+    {
+      signature: "setFloatingW(float)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>floating w``.</>
+    },
+    {
+      signature: "getFloatingH()",
+      returns: "float",
+      description: <>Retorna a propriedade <code>propriedade </code>floating h atual``.</>
+    },
+    {
+      signature: "setFloatingH(float)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>floating h``.</>
+    },
+    {
+      signature: "isCloseWhenPressBack()",
+      returns: "boolean",
+      description: <>Retorna se close when press back é verdadeiro.</>
+    },
+    {
+      signature: "setCloseWhenPressBack(boolean)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>close when press back``.</>
+    },
+    {
+      signature: "closeWhenPressBack()",
+      returns: "void",
+      description: <>Executa a operação closeWhenPressBack.</>
+    }
+  ]}
+/>

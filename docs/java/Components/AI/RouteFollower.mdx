@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # RouteFollower
 
 Complete API reference for `RouteFollower`, including constructors, attributes, virtual attributes, and methods.
@@ -14,36 +16,84 @@ Complete API reference for `RouteFollower`, including constructors, attributes, 
 public class RouteFollower extends Component
 ```
 
-## Constructors (2)
-
-| Signature | Description |
-| --- | --- |
-| RouteFollower([RouteFollower]) | Executes `RouteFollower` and returns after the underlying engine call finishes. |
-| RouteFollower() | Executes `RouteFollower` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `component` | [RouteFollower] | Represents the `component` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (3)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `findNearestPoint` | [Vector3] | `get` | Virtual attribute exposed by `getFindNearestPoint`. Access it like a field to read or write the underlying value. |
-| `findNearestPointIndex` | [int] | `get` | Virtual attribute exposed by `getFindNearestPointIndex`. Access it like a field to read or write the underlying value. |
-| `route` | [Route] | `get/set` | Virtual attribute exposed by `getRoute`. Access it like a field to read or write the underlying value. |
-
-## Methods (8)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `findNearestPoint()` | `Vector3` | Executes `findNearestPoint` and returns after the underlying engine call finishes. |
-| `getNearestPoint()` | `Vector3` | Returns the current nearest point. |
-| `findNearestPointIndex()` | `int` | Executes `findNearestPointIndex` and returns after the underlying engine call finishes. |
-| `getNearestPointIndex()` | `int` | Returns the current nearest point index. |
-| `hasPath()` | `boolean` | Returns whether path is true. |
-| `isPathFinished()` | `boolean` | Returns whether path finished is true. |
-| `componentClassMatch(Component, Component)` | `boolean` | Executes `componentClassMatch` and returns after the underlying engine call finishes. |
-| `getEngineComponent()` | `Component` | Executes `getEngineComponent` and returns after the underlying engine call finishes. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "RouteFollower(RouteFollower)",
+      description: <>Executes <code>RouteFollower</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "RouteFollower()",
+      description: <>Executes <code>RouteFollower</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "component",
+      type: "RouteFollower",
+      description: <>Represents the <code>component</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "findNearestPoint",
+      type: "Vector3",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>getFindNearestPoint</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "findNearestPointIndex",
+      type: "int",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>getFindNearestPointIndex</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "route",
+      type: "Route",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getRoute</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "findNearestPoint()",
+      returns: "Vector3",
+      description: <>Executes <code>findNearestPoint</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "getNearestPoint()",
+      returns: "Vector3",
+      description: <>Returns the current nearest point.</>
+    },
+    {
+      signature: "findNearestPointIndex()",
+      returns: "int",
+      description: <>Executes <code>findNearestPointIndex</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "getNearestPointIndex()",
+      returns: "int",
+      description: <>Returns the current nearest point index.</>
+    },
+    {
+      signature: "hasPath()",
+      returns: "boolean",
+      description: <>Returns whether path is true.</>
+    },
+    {
+      signature: "isPathFinished()",
+      returns: "boolean",
+      description: <>Returns whether path finished is true.</>
+    },
+    {
+      signature: "componentClassMatch(Component, Component)",
+      returns: "boolean",
+      description: <>Executes <code>componentClassMatch</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "getEngineComponent()",
+      returns: "Component",
+      description: <>Executes <code>getEngineComponent</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

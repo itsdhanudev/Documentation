@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # FrameBuffer
 
 Referência completa da API de `FrameBuffer`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,45 +16,131 @@ Referência completa da API de `FrameBuffer`, incluindo construtores, atributos,
 public class FrameBuffer
 ```
 
-## Construtores (5)
-
-| Signature | Description |
-| --- | --- |
-| FrameBuffer([FrameBuffer]) | Executa `FrameBuffer` e retorna quando a chamada do motor termina. |
-| FrameBuffer([int], [int]) | Executa `FrameBuffer` e retorna quando a chamada do motor termina. |
-| FrameBuffer([int], [int], [int]) | Cria uma nova instância de FrameBuffer. |
-| FrameBuffer([int], [int], [int], [int]) | Cria uma nova instância de FrameBuffer. |
-| FrameBuffer([int], [int], [int], [int], [Texture]) | Cria uma nova instância de FrameBuffer. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `frameBuffer` | [FrameBuffer] | Representa o valor de `frameBuffer` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (8)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `colorTexture` | [Texture] | `get` | Atributo virtual exposto por `getColorTexture`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `colorTexturesCount` | [int] | `get` | Atributo virtual exposto por `getColorTexturesCount`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `depthTexture` | [Texture] | `get` | Atributo virtual exposto por `getDepthTexture`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `height` | [int] | `get` | Atributo virtual exposto por `getHeight`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `maxHeight` | [int] | `get` | Atributo virtual exposto por `getMaxHeight`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `maxWidth` | [int] | `get` | Atributo virtual exposto por `getMaxWidth`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `renderPercentage` | [int] | `get/set` | Atributo virtual exposto por `getRenderPercentage`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `width` | [int] | `get` | Atributo virtual exposto por `getWidth`. Acesse como um campo para ler ou escrever o valor subjacente. |
-
-## Métodos (9)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `resize(int, int)` | `void` | Executa a operação resize usando os parâmetros informados (width, height). |
-| `resize(int, int, int)` | `void` | Executa a operação resize usando os parâmetros informados (width, height, renderPercentage). |
-| `getColorTexture(int)` | `Texture` | Retorna a propriedade `propriedade `color texture atual``. |
-| `getColorTextureArray()` | [Texture][] | Retorna a propriedade `propriedade `color texture array atual``. |
-| `extractGPUImageToBtm(ExtractCallback)` | `void` | Executa `extractGPUImageToBtm` e retorna quando a chamada do motor termina. |
-| `saveGPUImageToFile(File)` | `void` | Executa `saveGPUImageToFile` e retorna quando a chamada do motor termina. |
-| `saveGPUImageToFile(File, Runnable)` | `void` | Executa `saveGPUImageToFile` e retorna quando a chamada do motor termina. |
-| `destroy()` | `void` | Executa a operação destroy. |
-| `validate()` | `boolean` | Executa a operação validate. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "FrameBuffer(FrameBuffer)",
+      description: <>Executa <code>FrameBuffer</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "FrameBuffer(int, int)",
+      description: <>Executa <code>FrameBuffer</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "FrameBuffer(int, int, int)",
+      description: <>Cria uma nova instância de FrameBuffer.</>
+    },
+    {
+      signature: "FrameBuffer(int, int, int, int)",
+      description: <>Cria uma nova instância de FrameBuffer.</>
+    },
+    {
+      signature: "FrameBuffer(int, int, int, int, Texture)",
+      description: <>Cria uma nova instância de FrameBuffer.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "frameBuffer",
+      type: "FrameBuffer",
+      description: <>Representa o valor de <code>frameBuffer</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "colorTexture",
+      type: "Texture",
+      access: "get",
+      description: <>Atributo virtual exposto por <code>getColorTexture</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "colorTexturesCount",
+      type: "int",
+      access: "get",
+      description: <>Atributo virtual exposto por <code>getColorTexturesCount</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "depthTexture",
+      type: "Texture",
+      access: "get",
+      description: <>Atributo virtual exposto por <code>getDepthTexture</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "height",
+      type: "int",
+      access: "get",
+      description: <>Atributo virtual exposto por <code>getHeight</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "maxHeight",
+      type: "int",
+      access: "get",
+      description: <>Atributo virtual exposto por <code>getMaxHeight</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "maxWidth",
+      type: "int",
+      access: "get",
+      description: <>Atributo virtual exposto por <code>getMaxWidth</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "renderPercentage",
+      type: "int",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getRenderPercentage</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "width",
+      type: "int",
+      access: "get",
+      description: <>Atributo virtual exposto por <code>getWidth</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "resize(int, int)",
+      returns: "void",
+      description: <>Executa a operação resize usando os parâmetros informados (width, height).</>
+    },
+    {
+      signature: "resize(int, int, int)",
+      returns: "void",
+      description: <>Executa a operação resize usando os parâmetros informados (width, height, renderPercentage).</>
+    },
+    {
+      signature: "getColorTexture(int)",
+      returns: "Texture",
+      description: <>Retorna a propriedade <code>propriedade </code>color texture atual``.</>
+    },
+    {
+      signature: "getColorTextureArray()",
+      returns: "Texture[]",
+      description: <>Retorna a propriedade <code>propriedade </code>color texture array atual``.</>
+    },
+    {
+      signature: "extractGPUImageToBtm(ExtractCallback)",
+      returns: "void",
+      description: <>Executa <code>extractGPUImageToBtm</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "saveGPUImageToFile(File)",
+      returns: "void",
+      description: <>Executa <code>saveGPUImageToFile</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "saveGPUImageToFile(File, Runnable)",
+      returns: "void",
+      description: <>Executa <code>saveGPUImageToFile</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "destroy()",
+      returns: "void",
+      description: <>Executa a operação destroy.</>
+    },
+    {
+      signature: "validate()",
+      returns: "boolean",
+      description: <>Executa a operação validate.</>
+    }
+  ]}
+/>

@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Armature
 
 Referência completa da API de `Armature`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,16 +16,26 @@ Referência completa da API de `Armature`, incluindo construtores, atributos, at
 public class Armature extends Component
 ```
 
-## Construtores (3)
-
-| Signature | Description |
-| --- | --- |
-| Armature([Armature]) | Executa `Armature` e retorna quando a chamada do motor termina. |
-| Armature([Engine]) | Executa `Armature` e retorna quando a chamada do motor termina. |
-| Armature() | Cria uma nova instância de Armature. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [Armature] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "Armature(Armature)",
+      description: <>Executa <code>Armature</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "Armature(Engine)",
+      description: <>Executa <code>Armature</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "Armature()",
+      description: <>Cria uma nova instância de Armature.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "Armature",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+/>

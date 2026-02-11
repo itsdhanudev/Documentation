@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Characterbody
 
 Complete API reference for `Characterbody`, including constructors, attributes, virtual attributes, and methods.
@@ -14,43 +16,128 @@ Complete API reference for `Characterbody`, including constructors, attributes, 
 public class Characterbody extends PhysicsComponent
 ```
 
-## Constructors (2)
-
-| Signature | Description |
-| --- | --- |
-| Characterbody([Characterbody]) | Executes `Characterbody` and returns after the underlying engine call finishes. |
-| Characterbody() | Executes `Characterbody` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `component` | [Characterbody] | Represents the `component` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (12)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `forwardSpeed` | [float] | `get/set` | Returns the forward movement speed. |
-| `globalDirections` | [boolean] | `get/set` | Returns whether the movement direction is global. |
-| `gravityEnabled` | [boolean] | `get/set` | Returns whether the character's gravity is enabled. |
-| `gravityMultiplier` | [Vector3] | `get/set` | Returns the gravity multiplier of the character. |
-| `height` | [float] | `get/set` | Returns the character's height. |
-| `horizontalPhysicsVelocity` | [Vector2] | `get` | Returns the character's horizontal velocity. |
-| `jumpSpeed` | [float] | `get/set` | Returns the jump speed of the character. |
-| `physicsLayer` | [PhysicsLayer] | `get/set` | Returns the PhysicsLayer of the Characterbody. |
-| `physicsVelocity` | [Vector3] | `get` | Returns the character's velocity. |
-| `sideSpeed` | [float] | `get/set` | Returns the lateral movement speed. |
-| `stepHeight` | [float] | `get/set` | Returns the maximum step height the character can climb. |
-| `width` | [float] | `get/set` | Returns the character's width. |
-
-## Methods (6)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `isGrounded()` | `boolean` | Returns whether the character is grounded. |
-| `onGround()` | `boolean` | Returns whether the character is on the ground. |
-| `canJump()` | `boolean` | Returns whether the character is on the ground. |
-| `jump()` | `void` | Makes the character jump. |
-| `setSpeed(float, float)` | `void` | Sets the lateral (X) and forward (Z) movement speed. |
-| `zeroSpeed()` | `void` | Resets lateral and forward speed to zero. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "Characterbody(Characterbody)",
+      description: <>Executes <code>Characterbody</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "Characterbody()",
+      description: <>Executes <code>Characterbody</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "component",
+      type: "Characterbody",
+      description: <>Represents the <code>component</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "forwardSpeed",
+      type: "float",
+      access: "get/set",
+      description: <>Returns the forward movement speed.</>
+    },
+    {
+      name: "globalDirections",
+      type: "boolean",
+      access: "get/set",
+      description: <>Returns whether the movement direction is global.</>
+    },
+    {
+      name: "gravityEnabled",
+      type: "boolean",
+      access: "get/set",
+      description: <>Returns whether the character's gravity is enabled.</>
+    },
+    {
+      name: "gravityMultiplier",
+      type: "Vector3",
+      access: "get/set",
+      description: <>Returns the gravity multiplier of the character.</>
+    },
+    {
+      name: "height",
+      type: "float",
+      access: "get/set",
+      description: <>Returns the character's height.</>
+    },
+    {
+      name: "horizontalPhysicsVelocity",
+      type: "Vector2",
+      access: "get",
+      description: <>Returns the character's horizontal velocity.</>
+    },
+    {
+      name: "jumpSpeed",
+      type: "float",
+      access: "get/set",
+      description: <>Returns the jump speed of the character.</>
+    },
+    {
+      name: "physicsLayer",
+      type: "PhysicsLayer",
+      access: "get/set",
+      description: <>Returns the PhysicsLayer of the Characterbody.</>
+    },
+    {
+      name: "physicsVelocity",
+      type: "Vector3",
+      access: "get",
+      description: <>Returns the character's velocity.</>
+    },
+    {
+      name: "sideSpeed",
+      type: "float",
+      access: "get/set",
+      description: <>Returns the lateral movement speed.</>
+    },
+    {
+      name: "stepHeight",
+      type: "float",
+      access: "get/set",
+      description: <>Returns the maximum step height the character can climb.</>
+    },
+    {
+      name: "width",
+      type: "float",
+      access: "get/set",
+      description: <>Returns the character's width.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "isGrounded()",
+      returns: "boolean",
+      description: <>Returns whether the character is grounded.</>
+    },
+    {
+      signature: "onGround()",
+      returns: "boolean",
+      description: <>Returns whether the character is on the ground.</>
+    },
+    {
+      signature: "canJump()",
+      returns: "boolean",
+      description: <>Returns whether the character is on the ground.</>
+    },
+    {
+      signature: "jump()",
+      returns: "void",
+      description: <>Makes the character jump.</>
+    },
+    {
+      signature: "setSpeed(float, float)",
+      returns: "void",
+      description: <>Sets the lateral (X) and forward (Z) movement speed.</>
+    },
+    {
+      signature: "zeroSpeed()",
+      returns: "void",
+      description: <>Resets lateral and forward speed to zero.</>
+    }
+  ]}
+/>

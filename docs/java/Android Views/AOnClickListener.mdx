@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # AOnClickListener
 
 Complete API reference for `AOnClickListener`, including constructors, attributes, virtual attributes, and methods.
@@ -14,9 +16,17 @@ Complete API reference for `AOnClickListener`, including constructors, attribute
 public class AOnClickListener
 ```
 
-## Methods (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `onClick(View)` | `void` | Performs the onClick operation using the provided parameters (v). |
-| `onClickEvent(View)` | `void` | Executes `onClickEvent` and returns after the underlying engine call finishes. |
+<ApiDoc
+  methods={[
+    {
+      signature: "onClick(View)",
+      returns: "void",
+      description: <>Performs the onClick operation using the provided parameters (v).</>
+    },
+    {
+      signature: "onClickEvent(View)",
+      returns: "void",
+      description: <>Executes <code>onClickEvent</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

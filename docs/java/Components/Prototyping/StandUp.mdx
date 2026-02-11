@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # StandUp
 
 Complete API reference for `StandUp`, including constructors, attributes, virtual attributes, and methods.
@@ -14,30 +16,51 @@ Complete API reference for `StandUp`, including constructors, attributes, virtua
 public class StandUp extends Component
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| StandUp([StandUp]) | Executes `StandUp` and returns after the underlying engine call finishes. |
-| StandUp([Engine]) | Executes `StandUp` and returns after the underlying engine call finishes. |
-| StandUp() | Creates a new instance of StandUp. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [StandUp] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (1)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `rotationY` | [float] | `get/set` | Virtual attribute exposed by `getRotationY`. Access it like a field to read or write the underlying value. |
-
-## Methods (3)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `lookTo(Vector3)` | `void` | Performs the lookTo operation using the provided parameters (value). |
-| `rotate(float)` | `void` | Transforms or moves the object accordingly. |
-| `rotateInSeconds(float)` | `void` | Transforms or moves in seconds accordingly. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "StandUp(StandUp)",
+      description: <>Executes <code>StandUp</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "StandUp(Engine)",
+      description: <>Executes <code>StandUp</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "StandUp()",
+      description: <>Creates a new instance of StandUp.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "StandUp",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "rotationY",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getRotationY</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "lookTo(Vector3)",
+      returns: "void",
+      description: <>Performs the lookTo operation using the provided parameters (value).</>
+    },
+    {
+      signature: "rotate(float)",
+      returns: "void",
+      description: <>Transforms or moves the object accordingly.</>
+    },
+    {
+      signature: "rotateInSeconds(float)",
+      returns: "void",
+      description: <>Transforms or moves in seconds accordingly.</>
+    }
+  ]}
+/>

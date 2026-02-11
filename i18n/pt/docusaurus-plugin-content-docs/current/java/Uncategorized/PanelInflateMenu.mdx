@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # PanelInflateMenu
 
 Referência completa da API de `PanelInflateMenu`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,8 +16,12 @@ Referência completa da API de `PanelInflateMenu`, incluindo construtores, atrib
 public interface PanelInflateMenu
 ```
 
-## Métodos (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `value()` | `String` | Executa `value` e retorna quando a chamada do motor termina. |
+<ApiDoc
+  methods={[
+    {
+      signature: "value()",
+      returns: "String",
+      description: <>Executa <code>value</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+/>

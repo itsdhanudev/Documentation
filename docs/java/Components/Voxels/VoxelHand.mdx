@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # VoxelHand
 
 Complete API reference for `VoxelHand`, including constructors, attributes, virtual attributes, and methods.
@@ -14,40 +16,110 @@ Complete API reference for `VoxelHand`, including constructors, attributes, virt
 public class VoxelHand extends Component
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| VoxelHand([VoxelHand]) | Executes `VoxelHand` and returns after the underlying engine call finishes. |
-| VoxelHand([Engine]) | Executes `VoxelHand` and returns after the underlying engine call finishes. |
-| VoxelHand() | Creates a new instance of VoxelHand. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `component` | [VoxelHand] | Represents the `component` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (10)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `blockBroken` | [boolean] | `get` | Virtual attribute exposed by `isBlockBroken`. Access it like a field to read or write the underlying value. |
-| `blockPlaced` | [boolean] | `get` | Virtual attribute exposed by `isBlockPlaced`. Access it like a field to read or write the underlying value. |
-| `crossHairColor` | [Color] | `get` | Virtual attribute exposed by `getCrossHairColor`. Access it like a field to read or write the underlying value. |
-| `crossHairSize` | [Color] | `get/set` | Virtual attribute exposed by `getCrossHairSize`. Access it like a field to read or write the underlying value. |
-| `crossHairTexture` | [Texture] | `get/set` | Virtual attribute exposed by `getCrossHairTexture`. Access it like a field to read or write the underlying value. |
-| `distance` | [float] | `get/set` | Virtual attribute exposed by `getDistance`. Access it like a field to read or write the underlying value. |
-| `lastHitBlockID` | [int] | `get` | Virtual attribute exposed by `getLastHitBlockID`. Access it like a field to read or write the underlying value. |
-| `listener` | [Listener] | `set` | Virtual attribute exposed by `setListener`. Access it like a field to read or write the underlying value. |
-| `selectedBlockID` | [int] | `get/set` | Virtual attribute exposed by `getSelectedBlockID`. Access it like a field to read or write the underlying value. |
-| `showCrosshair` | [boolean] | `get/set` | Virtual attribute exposed by `isShowCrosshair`. Access it like a field to read or write the underlying value. |
-
-## Methods (4)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `requestPut()` | `void` | Executes `requestPut` and returns after the underlying engine call finishes. |
-| `requestBreak()` | `void` | Executes `requestBreak` and returns after the underlying engine call finishes. |
-| `componentClassMatch(Component, Component)` | `boolean` | Executes `componentClassMatch` and returns after the underlying engine call finishes. |
-| `getEngineComponent()` | `Component` | Executes `getEngineComponent` and returns after the underlying engine call finishes. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "VoxelHand(VoxelHand)",
+      description: <>Executes <code>VoxelHand</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "VoxelHand(Engine)",
+      description: <>Executes <code>VoxelHand</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "VoxelHand()",
+      description: <>Creates a new instance of VoxelHand.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "component",
+      type: "VoxelHand",
+      description: <>Represents the <code>component</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "blockBroken",
+      type: "boolean",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>isBlockBroken</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "blockPlaced",
+      type: "boolean",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>isBlockPlaced</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "crossHairColor",
+      type: "Color",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>getCrossHairColor</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "crossHairSize",
+      type: "Color",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getCrossHairSize</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "crossHairTexture",
+      type: "Texture",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getCrossHairTexture</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "distance",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getDistance</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "lastHitBlockID",
+      type: "int",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>getLastHitBlockID</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "listener",
+      type: "Listener",
+      access: "set",
+      description: <>Virtual attribute exposed by <code>setListener</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "selectedBlockID",
+      type: "int",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getSelectedBlockID</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "showCrosshair",
+      type: "boolean",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>isShowCrosshair</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "requestPut()",
+      returns: "void",
+      description: <>Executes <code>requestPut</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "requestBreak()",
+      returns: "void",
+      description: <>Executes <code>requestBreak</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "componentClassMatch(Component, Component)",
+      returns: "boolean",
+      description: <>Executes <code>componentClassMatch</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "getEngineComponent()",
+      returns: "Component",
+      description: <>Executes <code>getEngineComponent</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

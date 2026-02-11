@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # MeshCurve
 
 Referência completa da API de `MeshCurve`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,35 +16,83 @@ Referência completa da API de `MeshCurve`, incluindo construtores, atributos, a
 public class MeshCurve extends Component
 ```
 
-## Construtores (3)
-
-| Signature | Description |
-| --- | --- |
-| MeshCurve([MeshCurve]) | Executa `MeshCurve` e retorna quando a chamada do motor termina. |
-| MeshCurve([Engine]) | Executa `MeshCurve` e retorna quando a chamada do motor termina. |
-| MeshCurve() | Cria uma nova instância de MeshCurve. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [MeshCurve] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (8)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `spacing` | [float] | `get/set` | Atributo virtual exposto por `getSpacing`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `startOffset` | [float] | `get/set` | Atributo virtual exposto por `getStartOffset`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `curveQuality` | [float] | `get/set` | Atributo virtual exposto por `getCurveQuality`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `offset` | [Vector3] | `get/set` | Atributo virtual exposto por `getOffset`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `scale` | [Vector3] | `get/set` | Atributo virtual exposto por `getScale`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `forwardAxis` | [ForwardAxis] | `get/set` | Atributo virtual exposto por `getForwardAxis`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `upMode` | [UpMode] | `get/set` | Atributo virtual exposto por `getUpMode`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `stickToTerrain` | [boolean] | `get/set` | Atributo virtual exposto por `isStickToTerrain`. Acesse como um campo para ler ou escrever o valor subjacente. |
-
-## Métodos (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `isStickToTerrain()` | `boolean` | Retorna se stick to terrain está habilitado. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "MeshCurve(MeshCurve)",
+      description: <>Executa <code>MeshCurve</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "MeshCurve(Engine)",
+      description: <>Executa <code>MeshCurve</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "MeshCurve()",
+      description: <>Cria uma nova instância de MeshCurve.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "MeshCurve",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "spacing",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getSpacing</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "startOffset",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getStartOffset</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "curveQuality",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getCurveQuality</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "offset",
+      type: "Vector3",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getOffset</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "scale",
+      type: "Vector3",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getScale</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "forwardAxis",
+      type: "ForwardAxis",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getForwardAxis</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "upMode",
+      type: "UpMode",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getUpMode</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "stickToTerrain",
+      type: "boolean",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>isStickToTerrain</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "isStickToTerrain()",
+      returns: "boolean",
+      description: <>Retorna se stick to terrain está habilitado.</>
+    }
+  ]}
+/>

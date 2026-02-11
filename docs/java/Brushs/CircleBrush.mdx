@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # CircleBrush
 
 Complete API reference for `CircleBrush`, including constructors, attributes, virtual attributes, and methods.
@@ -14,8 +16,12 @@ Complete API reference for `CircleBrush`, including constructors, attributes, vi
 public class CircleBrush
 ```
 
-## Methods (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getIntensity(float, float)` | `float` | Returns the current intensity. |
+<ApiDoc
+  methods={[
+    {
+      signature: "getIntensity(float, float)",
+      returns: "float",
+      description: <>Returns the current intensity.</>
+    }
+  ]}
+/>

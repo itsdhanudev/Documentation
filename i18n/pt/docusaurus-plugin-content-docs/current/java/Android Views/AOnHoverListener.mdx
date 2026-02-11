@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # AOnHoverListener
 
 Referência completa da API de `AOnHoverListener`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,9 +16,17 @@ Referência completa da API de `AOnHoverListener`, incluindo construtores, atrib
 public class AOnHoverListener
 ```
 
-## Métodos (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `onHover(View, MotionEvent)` | `boolean` | Executa a operação onHover usando os parâmetros informados (v, event). |
-| `onHoverEvent(View, MotionEvent)` | `boolean` | Executa `onHoverEvent` e retorna quando a chamada do motor termina. |
+<ApiDoc
+  methods={[
+    {
+      signature: "onHover(View, MotionEvent)",
+      returns: "boolean",
+      description: <>Executa a operação onHover usando os parâmetros informados (v, event).</>
+    },
+    {
+      signature: "onHoverEvent(View, MotionEvent)",
+      returns: "boolean",
+      description: <>Executa <code>onHoverEvent</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+/>

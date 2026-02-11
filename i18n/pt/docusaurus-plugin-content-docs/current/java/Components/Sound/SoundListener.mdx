@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # SoundListener
 
 Referência completa da API de `SoundListener`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,22 +16,34 @@ Referência completa da API de `SoundListener`, incluindo construtores, atributo
 public class SoundListener extends Component
 ```
 
-## Construtores (2)
-
-| Signature | Description |
-| --- | --- |
-| SoundListener([SoundListener]) | Executa `SoundListener` e retorna quando a chamada do motor termina. |
-| SoundListener() | Executa `SoundListener` e retorna quando a chamada do motor termina. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `component` | [SoundListener] | Representa o valor de `component` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Métodos (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `componentClassMatch(Component, Component)` | `boolean` | Executa `componentClassMatch` e retorna quando a chamada do motor termina. |
-| `getEngineComponent()` | `Component` | Executa `getEngineComponent` e retorna quando a chamada do motor termina. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "SoundListener(SoundListener)",
+      description: <>Executa <code>SoundListener</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "SoundListener()",
+      description: <>Executa <code>SoundListener</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "component",
+      type: "SoundListener",
+      description: <>Representa o valor de <code>component</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "componentClassMatch(Component, Component)",
+      returns: "boolean",
+      description: <>Executa <code>componentClassMatch</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "getEngineComponent()",
+      returns: "Component",
+      description: <>Executa <code>getEngineComponent</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+/>

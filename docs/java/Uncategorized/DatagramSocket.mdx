@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # DatagramSocket
 
 Complete API reference for `DatagramSocket`, including constructors, attributes, virtual attributes, and methods.
@@ -14,20 +16,44 @@ Complete API reference for `DatagramSocket`, including constructors, attributes,
 public class DatagramSocket extends DatagramSocket
 ```
 
-## Constructors (5)
-
-| Signature | Description |
-| --- | --- |
-| DatagramSocket() | Executes `DatagramSocket` and returns after the underlying engine call finishes. |
-| DatagramSocket([DatagramSocketImpl]) | Creates a new instance of DatagramSocket. |
-| DatagramSocket([SocketAddress]) | Executes `DatagramSocket` and returns after the underlying engine call finishes. |
-| DatagramSocket([int]) | Executes `DatagramSocket` and returns after the underlying engine call finishes. |
-| DatagramSocket([int], [InetAddress]) | Executes `DatagramSocket` and returns after the underlying engine call finishes. |
-
-## Methods (3)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `bind(SocketAddress)` | `void` | Executes `bind` and returns after the underlying engine call finishes. |
-| `connect(InetAddress, int)` | `void` | Performs the connect operation using the provided parameters (address, port). |
-| `connect(SocketAddress)` | `void` | Executes `connect` and returns after the underlying engine call finishes. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "DatagramSocket()",
+      description: <>Executes <code>DatagramSocket</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "DatagramSocket(DatagramSocketImpl)",
+      description: <>Creates a new instance of DatagramSocket.</>
+    },
+    {
+      signature: "DatagramSocket(SocketAddress)",
+      description: <>Executes <code>DatagramSocket</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "DatagramSocket(int)",
+      description: <>Executes <code>DatagramSocket</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "DatagramSocket(int, InetAddress)",
+      description: <>Executes <code>DatagramSocket</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "bind(SocketAddress)",
+      returns: "void",
+      description: <>Executes <code>bind</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "connect(InetAddress, int)",
+      returns: "void",
+      description: <>Performs the connect operation using the provided parameters (address, port).</>
+    },
+    {
+      signature: "connect(SocketAddress)",
+      returns: "void",
+      description: <>Executes <code>connect</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

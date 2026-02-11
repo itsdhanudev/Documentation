@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Point2Buffer
 
 Referência completa da API de `Point2Buffer`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,30 +16,73 @@ Referência completa da API de `Point2Buffer`, incluindo construtores, atributos
 public class Point2Buffer
 ```
 
-## Construtores (3)
-
-| Signature | Description |
-| --- | --- |
-| Point2Buffer([NativeIntBuffer]) | Executa `Point2Buffer` e retorna quando a chamada do motor termina. |
-| Point2Buffer([Engine]) | Executa `Point2Buffer` e retorna quando a chamada do motor termina. |
-| Point2Buffer() | Cria uma nova instância de Point2Buffer. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `buffer` | [NativeIntBuffer] | Representa o valor de `buffer` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Métodos (9)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `get(int)` | `Point2` | Retorna a propriedade `propriedade `valor value atual``. |
-| `getX(int)` | `int` | Retorna a propriedade `propriedade `x atual``. |
-| `getY(int)` | `int` | Retorna a propriedade `propriedade `y atual``. |
-| `put(Point2)` | `void` | Define ou atualiza the value. |
-| `put(int, int)` | `void` | Define ou atualiza the value. |
-| `capacity()` | `int` | Executa a operação capacity. |
-| `array()` | [Point2][] | Executa a operação array. |
-| `position(int)` | `void` | Executa a operação position usando os parâmetros informados (idx). |
-| `getFloatBuffer()` | [JAVARuntime].[NativeIntBuffer] | Retorna a propriedade `propriedade `float buffer atual``. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "Point2Buffer(NativeIntBuffer)",
+      description: <>Executa <code>Point2Buffer</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "Point2Buffer(Engine)",
+      description: <>Executa <code>Point2Buffer</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "Point2Buffer()",
+      description: <>Cria uma nova instância de Point2Buffer.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "buffer",
+      type: "NativeIntBuffer",
+      description: <>Representa o valor de <code>buffer</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "get(int)",
+      returns: "Point2",
+      description: <>Retorna a propriedade <code>propriedade </code>valor value atual``.</>
+    },
+    {
+      signature: "getX(int)",
+      returns: "int",
+      description: <>Retorna a propriedade <code>propriedade </code>x atual``.</>
+    },
+    {
+      signature: "getY(int)",
+      returns: "int",
+      description: <>Retorna a propriedade <code>propriedade </code>y atual``.</>
+    },
+    {
+      signature: "put(Point2)",
+      returns: "void",
+      description: <>Define ou atualiza the value.</>
+    },
+    {
+      signature: "put(int, int)",
+      returns: "void",
+      description: <>Define ou atualiza the value.</>
+    },
+    {
+      signature: "capacity()",
+      returns: "int",
+      description: <>Executa a operação capacity.</>
+    },
+    {
+      signature: "array()",
+      returns: "Point2[]",
+      description: <>Executa a operação array.</>
+    },
+    {
+      signature: "position(int)",
+      returns: "void",
+      description: <>Executa a operação position usando os parâmetros informados (idx).</>
+    },
+    {
+      signature: "getFloatBuffer()",
+      returns: "JAVARuntime.NativeIntBuffer",
+      description: <>Retorna a propriedade <code>propriedade </code>float buffer atual``.</>
+    }
+  ]}
+/>

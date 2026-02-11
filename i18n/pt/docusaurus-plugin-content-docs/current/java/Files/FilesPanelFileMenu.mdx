@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # FilesPanelFileMenu
 
 Referência completa da API de `FilesPanelFileMenu`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,18 +16,38 @@ Referência completa da API de `FilesPanelFileMenu`, incluindo construtores, atr
 public class FilesPanelFileMenu
 ```
 
-## Construtores (1)
-
-| Signature | Description |
-| --- | --- |
-| FilesPanelFileMenu([String]) | Cria uma nova instância de FilesPanelFileMenu. |
-
-## Métodos (5)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getMenu()` | `String` | Retorna a propriedade `propriedade `menu atual``. |
-| `setMenu(String)` | `void` | Define ou atualiza a propriedade `propriedade `menu``. |
-| `onClick(File)` | `void` | Executa a operação onClick usando os parâmetros informados (file). |
-| `onClick(File, View)` | `void` | Executa a operação onClick usando os parâmetros informados (file, view). |
-| `filterFormat(String)` | `boolean` | Executa a operação filterFormat usando os parâmetros informados (format). |
+<ApiDoc
+  constructors={[
+    {
+      signature: "FilesPanelFileMenu(String)",
+      description: <>Cria uma nova instância de FilesPanelFileMenu.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "getMenu()",
+      returns: "String",
+      description: <>Retorna a propriedade <code>propriedade </code>menu atual``.</>
+    },
+    {
+      signature: "setMenu(String)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>menu``.</>
+    },
+    {
+      signature: "onClick(File)",
+      returns: "void",
+      description: <>Executa a operação onClick usando os parâmetros informados (file).</>
+    },
+    {
+      signature: "onClick(File, View)",
+      returns: "void",
+      description: <>Executa a operação onClick usando os parâmetros informados (file, view).</>
+    },
+    {
+      signature: "filterFormat(String)",
+      returns: "boolean",
+      description: <>Executa a operação filterFormat usando os parâmetros informados (format).</>
+    }
+  ]}
+/>

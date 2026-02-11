@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # TextScriptingStyleSpan
 
 Referência completa da API de `TextScriptingStyleSpan`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,35 +16,99 @@ Referência completa da API de `TextScriptingStyleSpan`, incluindo construtores,
 public class TextScriptingStyleSpan
 ```
 
-## Construtores (2)
-
-| Signature | Description |
-| --- | --- |
-| TextScriptingStyleSpan([Color]) | Cria uma nova instância de TextScriptingStyleSpan. |
-| TextScriptingStyleSpan([Color], [boolean], [boolean], [boolean], [boolean]) | Cria uma nova instância de TextScriptingStyleSpan. |
-
-## Atributos (5)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `color` | [Color] | Representa o valor de `color` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `bold` | [boolean] | Representa o valor de `bold` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `italic` | [boolean] | Representa o valor de `italic` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `underline` | [boolean] | Representa o valor de `underline` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `strikethrough` | [boolean] | Representa o valor de `strikethrough` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Métodos (11)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getColor()` | `Color` | Retorna a propriedade `propriedade `color atual``. |
-| `setColor(Color)` | `void` | Define ou atualiza a propriedade `propriedade `color``. |
-| `isBold()` | `boolean` | Retorna se bold é verdadeiro. |
-| `setBold(boolean)` | `void` | Define ou atualiza a propriedade `propriedade `bold``. |
-| `isItalic()` | `boolean` | Retorna se italic é verdadeiro. |
-| `setItalic(boolean)` | `void` | Define ou atualiza a propriedade `propriedade `italic``. |
-| `isUnderline()` | `boolean` | Retorna se underline é verdadeiro. |
-| `setUnderline(boolean)` | `void` | Define ou atualiza a propriedade `propriedade `underline``. |
-| `isStrikethrough()` | `boolean` | Retorna se strikethrough é verdadeiro. |
-| `setStrikethrough(boolean)` | `void` | Define ou atualiza a propriedade `propriedade `strikethrough``. |
-| `convertInternal()` | `StyleSpan` | Executa `convertInternal` e retorna quando a chamada do motor termina. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "TextScriptingStyleSpan(Color)",
+      description: <>Cria uma nova instância de TextScriptingStyleSpan.</>
+    },
+    {
+      signature: "TextScriptingStyleSpan(Color, boolean, boolean, boolean, boolean)",
+      description: <>Cria uma nova instância de TextScriptingStyleSpan.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "color",
+      type: "Color",
+      description: <>Representa o valor de <code>color</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "bold",
+      type: "boolean",
+      description: <>Representa o valor de <code>bold</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "italic",
+      type: "boolean",
+      description: <>Representa o valor de <code>italic</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "underline",
+      type: "boolean",
+      description: <>Representa o valor de <code>underline</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "strikethrough",
+      type: "boolean",
+      description: <>Representa o valor de <code>strikethrough</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "getColor()",
+      returns: "Color",
+      description: <>Retorna a propriedade <code>propriedade </code>color atual``.</>
+    },
+    {
+      signature: "setColor(Color)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>color``.</>
+    },
+    {
+      signature: "isBold()",
+      returns: "boolean",
+      description: <>Retorna se bold é verdadeiro.</>
+    },
+    {
+      signature: "setBold(boolean)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>bold``.</>
+    },
+    {
+      signature: "isItalic()",
+      returns: "boolean",
+      description: <>Retorna se italic é verdadeiro.</>
+    },
+    {
+      signature: "setItalic(boolean)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>italic``.</>
+    },
+    {
+      signature: "isUnderline()",
+      returns: "boolean",
+      description: <>Retorna se underline é verdadeiro.</>
+    },
+    {
+      signature: "setUnderline(boolean)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>underline``.</>
+    },
+    {
+      signature: "isStrikethrough()",
+      returns: "boolean",
+      description: <>Retorna se strikethrough é verdadeiro.</>
+    },
+    {
+      signature: "setStrikethrough(boolean)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>strikethrough``.</>
+    },
+    {
+      signature: "convertInternal()",
+      returns: "StyleSpan",
+      description: <>Executa <code>convertInternal</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+/>

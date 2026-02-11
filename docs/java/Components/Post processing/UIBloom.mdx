@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # UIBloom
 
 Complete API reference for `UIBloom`, including constructors, attributes, virtual attributes, and methods.
@@ -14,25 +16,52 @@ Complete API reference for `UIBloom`, including constructors, attributes, virtua
 public class UIBloom extends Component
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| UIBloom([UIBloom]) | Executes `UIBloom` and returns after the underlying engine call finishes. |
-| UIBloom([Engine]) | Executes `UIBloom` and returns after the underlying engine call finishes. |
-| UIBloom() | Executes `UIBloom` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [UIBloom] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (4)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `blurRadius` | [float] | `get/set` | Virtual attribute exposed by `getBlurRadius`. Access it like a field to read or write the underlying value. |
-| `intensity` | [float] | `get/set` | Virtual attribute exposed by `getIntensity`. Access it like a field to read or write the underlying value. |
-| `quality` | [Quality] | `get/set` | Virtual attribute exposed by `getQuality`. Access it like a field to read or write the underlying value. |
-| `threshold` | [float] | `get/set` | Virtual attribute exposed by `getThreshold`. Access it like a field to read or write the underlying value. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "UIBloom(UIBloom)",
+      description: <>Executes <code>UIBloom</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "UIBloom(Engine)",
+      description: <>Executes <code>UIBloom</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "UIBloom()",
+      description: <>Executes <code>UIBloom</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "UIBloom",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "blurRadius",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getBlurRadius</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "intensity",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getIntensity</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "quality",
+      type: "Quality",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getQuality</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "threshold",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getThreshold</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+/>

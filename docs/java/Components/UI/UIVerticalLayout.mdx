@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # UIVerticalLayout
 
 Complete API reference for `UIVerticalLayout`, including constructors, attributes, virtual attributes, and methods.
@@ -14,22 +16,34 @@ Complete API reference for `UIVerticalLayout`, including constructors, attribute
 public class UIVerticalLayout extends Component
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| UIVerticalLayout([UIVerticalLayout]) | Executes `UIVerticalLayout` and returns after the underlying engine call finishes. |
-| UIVerticalLayout([Engine]) | Executes `UIVerticalLayout` and returns after the underlying engine call finishes. |
-| UIVerticalLayout() | Creates a new instance of UIVerticalLayout. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [UIVerticalLayout] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (1)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `spacing` | [int] | `get/set` | Virtual attribute exposed by `getSpacing`. Access it like a field to read or write the underlying value. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "UIVerticalLayout(UIVerticalLayout)",
+      description: <>Executes <code>UIVerticalLayout</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "UIVerticalLayout(Engine)",
+      description: <>Executes <code>UIVerticalLayout</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "UIVerticalLayout()",
+      description: <>Creates a new instance of UIVerticalLayout.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "UIVerticalLayout",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "spacing",
+      type: "int",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getSpacing</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+/>

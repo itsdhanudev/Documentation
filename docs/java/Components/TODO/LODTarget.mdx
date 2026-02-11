@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # LODTarget
 
 Complete API reference for `LODTarget`, including constructors, attributes, virtual attributes, and methods.
@@ -14,16 +16,26 @@ Complete API reference for `LODTarget`, including constructors, attributes, virt
 public class LODTarget extends Component
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| LODTarget([LODTarget]) | Executes `LODTarget` and returns after the underlying engine call finishes. |
-| LODTarget([Engine]) | Executes `LODTarget` and returns after the underlying engine call finishes. |
-| LODTarget() | Executes `LODTarget` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [LODTarget] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "LODTarget(LODTarget)",
+      description: <>Executes <code>LODTarget</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "LODTarget(Engine)",
+      description: <>Executes <code>LODTarget</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "LODTarget()",
+      description: <>Executes <code>LODTarget</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "LODTarget",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+/>

@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # ScriptingExtension
 
 Complete API reference for `ScriptingExtension`, including constructors, attributes, virtual attributes, and methods.
@@ -14,16 +16,52 @@ Complete API reference for `ScriptingExtension`, including constructors, attribu
 public class ScriptingExtension
 ```
 
-## Methods (9)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getScriptingInterface()` | `ScriptingInterface` | Executes `getScriptingInterface` and returns after the underlying engine call finishes. |
-| `replaceScript(File)` | `void` | Executes `replaceScript` and returns after the underlying engine call finishes. |
-| `openScript(File)` | `void` | Performs the openScript operation using the provided parameters (script). |
-| `onClose()` | `void` | Executes `onClose` and returns after the underlying engine call finishes. |
-| `init()` | `void` | Initializes the object's internal state. |
-| `unload()` | `void` | Executes `unload` and returns after the underlying engine call finishes. |
-| `saveScript()` | `boolean` | Saves script from the object. |
-| `hasScript()` | `boolean` | Returns whether script is true. |
-| `supportFile(File)` | `boolean` | Performs the supportFile operation using the provided parameters (file). |
+<ApiDoc
+  methods={[
+    {
+      signature: "getScriptingInterface()",
+      returns: "ScriptingInterface",
+      description: <>Executes <code>getScriptingInterface</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "replaceScript(File)",
+      returns: "void",
+      description: <>Executes <code>replaceScript</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "openScript(File)",
+      returns: "void",
+      description: <>Performs the openScript operation using the provided parameters (script).</>
+    },
+    {
+      signature: "onClose()",
+      returns: "void",
+      description: <>Executes <code>onClose</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "init()",
+      returns: "void",
+      description: <>Initializes the object's internal state.</>
+    },
+    {
+      signature: "unload()",
+      returns: "void",
+      description: <>Executes <code>unload</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "saveScript()",
+      returns: "boolean",
+      description: <>Saves script from the object.</>
+    },
+    {
+      signature: "hasScript()",
+      returns: "boolean",
+      description: <>Returns whether script is true.</>
+    },
+    {
+      signature: "supportFile(File)",
+      returns: "boolean",
+      description: <>Performs the supportFile operation using the provided parameters (file).</>
+    }
+  ]}
+/>

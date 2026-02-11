@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # FormatDictionaries
 
 Referência completa da API de `FormatDictionaries`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,55 +16,231 @@ Referência completa da API de `FormatDictionaries`, incluindo construtores, atr
 public class FormatDictionaries
 ```
 
-## Atributos (42)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `BACKUP` | [String] | Representa o valor de `BACKUP` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `TEXTURE` | [String] | Representa o valor de `TEXTURE` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `Brush` | [String] | Representa o valor de `Brush` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `TIF` | [String] | Representa o valor de `TIF` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `TGA` | [String] | Representa o valor de `TGA` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `NODESCRIPT` | [String] | Representa o valor de `NODESCRIPT` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `NODESCRIPT_V2` | [String] | Representa o valor de `NODESCRIPT_V2` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `MAGICSCRIPT` | [String] | Representa o valor de `MAGICSCRIPT` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `MAGICSCRIPT_COMPILED` | [String] | Representa o valor de `MAGICSCRIPT_COMPILED` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `SCRIPT` | [String] | Representa o valor de `SCRIPT` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `OBJECT` | [String] | Representa o valor de `OBJECT` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `VERTEX` | [String] | Representa o valor de `VERTEX` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `OBJ` | [String] | Representa o valor de `OBJ` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `MTL` | [String] | Representa o valor de `MTL` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `WORLD` | [String] | Representa o valor de `WORLD` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `SOUND` | [String] | Representa o valor de `SOUND` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `ANIMATION` | [String] | Representa o valor de `ANIMATION` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `MATERIAL` | [String] | Representa o valor de `MATERIAL` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `TERRAINDATA` | [String] | Representa o valor de `TERRAINDATA` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `DAE` | [String] | Representa o valor de `DAE` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `FBX` | [String] | Representa o valor de `FBX` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `JAVA` | [String] | Representa o valor de `JAVA` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `JAVAC` | [String] | Representa o valor de `JAVAC` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `JAVADEX` | [String] | Representa o valor de `JAVADEX` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `SKELETONDATA` | [String] | Representa o valor de `SKELETONDATA` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `D3DS` | [String] | Representa o valor de `D3DS` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `JKS` | [String] | Representa o valor de `JKS` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `CONFIG` | [String] | Representa o valor de `CONFIG` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `VERTEX_GLSL` | [String] | Representa o valor de `VERTEX_GLSL` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `FRAGMENT_GLSL` | [String] | Representa o valor de `FRAGMENT_GLSL` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `GEOMETRY_GLSL` | [String] | Representa o valor de `GEOMETRY_GLSL` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `BLEND` | [String] | Representa o valor de `BLEND` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `ITJAR` | [String] | Representa o valor de `ITJAR` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `TXT` | [String] | Representa o valor de `TXT` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `PDF` | [String] | Representa o valor de `PDF` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `DOC` | [String] | Representa o valor de `DOC` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `DOCX` | [String] | Representa o valor de `DOCX` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `XML` | [String] | Representa o valor de `XML` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `JSON` | [String] | Representa o valor de `JSON` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `FONT` | [String] | Representa o valor de `FONT` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `SKYBOX_SHADER` | [String] | Representa o valor de `SKYBOX_SHADER` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `AMBIENT_LIGHT_SHADER` | [String] | Representa o valor de `AMBIENT_LIGHT_SHADER` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Métodos Estáticos (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `createFrom(String)` | `String` | Cria um novo from. |
+<ApiDoc
+  attributes={[
+    {
+      name: "BACKUP",
+      type: "String",
+      description: <>Representa o valor de <code>BACKUP</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "TEXTURE",
+      type: "String",
+      description: <>Representa o valor de <code>TEXTURE</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "Brush",
+      type: "String",
+      description: <>Representa o valor de <code>Brush</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "TIF",
+      type: "String",
+      description: <>Representa o valor de <code>TIF</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "TGA",
+      type: "String",
+      description: <>Representa o valor de <code>TGA</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "NODESCRIPT",
+      type: "String",
+      description: <>Representa o valor de <code>NODESCRIPT</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "NODESCRIPT_V2",
+      type: "String",
+      description: <>Representa o valor de <code>NODESCRIPT_V2</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "MAGICSCRIPT",
+      type: "String",
+      description: <>Representa o valor de <code>MAGICSCRIPT</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "MAGICSCRIPT_COMPILED",
+      type: "String",
+      description: <>Representa o valor de <code>MAGICSCRIPT_COMPILED</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "SCRIPT",
+      type: "String",
+      description: <>Representa o valor de <code>SCRIPT</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "OBJECT",
+      type: "String",
+      description: <>Representa o valor de <code>OBJECT</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "VERTEX",
+      type: "String",
+      description: <>Representa o valor de <code>VERTEX</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "OBJ",
+      type: "String",
+      description: <>Representa o valor de <code>OBJ</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "MTL",
+      type: "String",
+      description: <>Representa o valor de <code>MTL</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "WORLD",
+      type: "String",
+      description: <>Representa o valor de <code>WORLD</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "SOUND",
+      type: "String",
+      description: <>Representa o valor de <code>SOUND</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "ANIMATION",
+      type: "String",
+      description: <>Representa o valor de <code>ANIMATION</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "MATERIAL",
+      type: "String",
+      description: <>Representa o valor de <code>MATERIAL</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "TERRAINDATA",
+      type: "String",
+      description: <>Representa o valor de <code>TERRAINDATA</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "DAE",
+      type: "String",
+      description: <>Representa o valor de <code>DAE</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "FBX",
+      type: "String",
+      description: <>Representa o valor de <code>FBX</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "JAVA",
+      type: "String",
+      description: <>Representa o valor de <code>JAVA</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "JAVAC",
+      type: "String",
+      description: <>Representa o valor de <code>JAVAC</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "JAVADEX",
+      type: "String",
+      description: <>Representa o valor de <code>JAVADEX</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "SKELETONDATA",
+      type: "String",
+      description: <>Representa o valor de <code>SKELETONDATA</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "D3DS",
+      type: "String",
+      description: <>Representa o valor de <code>D3DS</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "JKS",
+      type: "String",
+      description: <>Representa o valor de <code>JKS</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "CONFIG",
+      type: "String",
+      description: <>Representa o valor de <code>CONFIG</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "VERTEX_GLSL",
+      type: "String",
+      description: <>Representa o valor de <code>VERTEX_GLSL</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "FRAGMENT_GLSL",
+      type: "String",
+      description: <>Representa o valor de <code>FRAGMENT_GLSL</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "GEOMETRY_GLSL",
+      type: "String",
+      description: <>Representa o valor de <code>GEOMETRY_GLSL</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "BLEND",
+      type: "String",
+      description: <>Representa o valor de <code>BLEND</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "ITJAR",
+      type: "String",
+      description: <>Representa o valor de <code>ITJAR</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "TXT",
+      type: "String",
+      description: <>Representa o valor de <code>TXT</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "PDF",
+      type: "String",
+      description: <>Representa o valor de <code>PDF</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "DOC",
+      type: "String",
+      description: <>Representa o valor de <code>DOC</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "DOCX",
+      type: "String",
+      description: <>Representa o valor de <code>DOCX</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "XML",
+      type: "String",
+      description: <>Representa o valor de <code>XML</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "JSON",
+      type: "String",
+      description: <>Representa o valor de <code>JSON</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "FONT",
+      type: "String",
+      description: <>Representa o valor de <code>FONT</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "SKYBOX_SHADER",
+      type: "String",
+      description: <>Representa o valor de <code>SKYBOX_SHADER</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "AMBIENT_LIGHT_SHADER",
+      type: "String",
+      description: <>Representa o valor de <code>AMBIENT_LIGHT_SHADER</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "createFrom(String)",
+      returns: "String",
+      description: <>Cria um novo from.</>
+    }
+  ]}
+  staticMethods={[
+    {
+      signature: "createFrom(String)",
+      returns: "String",
+      description: <>Cria um novo from.</>
+    }
+  ]}
+/>

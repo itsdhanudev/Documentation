@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # ColorGradient
 
 Referência completa da API de `ColorGradient`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,35 +16,76 @@ Referência completa da API de `ColorGradient`, incluindo construtores, atributo
 public class ColorGradient
 ```
 
-## Construtores (2)
-
-| Signature | Description |
-| --- | --- |
-| ColorGradient([Gradient]) | Executa `ColorGradient` e retorna quando a chamada do motor termina. |
-| ColorGradient() | Executa `ColorGradient` e retorna quando a chamada do motor termina. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [Gradient] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Métodos (8)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `addPoint(float, Color)` | [ColorGradient].[Point] | Adiciona point à coleção. |
-| `removePointAt(int)` | `void` | Remove point at da coleção. |
-| `pointAt(int)` | `Point` | Executa a operação pointAt usando os parâmetros informados (idx). |
-| `clear()` | `void` | Limpa ou redefine o estado do objeto. |
-| `pointsCount()` | `int` | Executa a operação pointsCount. |
-| `evaluate(float)` | `Color` | Executa a operação evaluate usando os parâmetros informados (location). |
-| `toJson()` | `String` | Executa a operação toJson. |
-| `fromJson(String)` | `ColorGradient` | Executa a operação fromJson usando os parâmetros informados (json). |
-
-## Métodos Estáticos (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `genericInterface()` | `GenericClassInspectorEntry` | Executa `genericInterface` e retorna quando a chamada do motor termina. |
-| `inspectorController()` | `ClassInspectorEntry` | Executa `inspectorController` e retorna quando a chamada do motor termina. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "ColorGradient(Gradient)",
+      description: <>Executa <code>ColorGradient</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "ColorGradient()",
+      description: <>Executa <code>ColorGradient</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "Gradient",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "addPoint(float, Color)",
+      returns: "ColorGradient.Point",
+      description: <>Adiciona point à coleção.</>
+    },
+    {
+      signature: "removePointAt(int)",
+      returns: "void",
+      description: <>Remove point at da coleção.</>
+    },
+    {
+      signature: "pointAt(int)",
+      returns: "Point",
+      description: <>Executa a operação pointAt usando os parâmetros informados (idx).</>
+    },
+    {
+      signature: "clear()",
+      returns: "void",
+      description: <>Limpa ou redefine o estado do objeto.</>
+    },
+    {
+      signature: "pointsCount()",
+      returns: "int",
+      description: <>Executa a operação pointsCount.</>
+    },
+    {
+      signature: "evaluate(float)",
+      returns: "Color",
+      description: <>Executa a operação evaluate usando os parâmetros informados (location).</>
+    },
+    {
+      signature: "toJson()",
+      returns: "String",
+      description: <>Executa a operação toJson.</>
+    },
+    {
+      signature: "fromJson(String)",
+      returns: "ColorGradient",
+      description: <>Executa a operação fromJson usando os parâmetros informados (json).</>
+    }
+  ]}
+  staticMethods={[
+    {
+      signature: "genericInterface()",
+      returns: "GenericClassInspectorEntry",
+      description: <>Executa <code>genericInterface</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "inspectorController()",
+      returns: "ClassInspectorEntry",
+      description: <>Executa <code>inspectorController</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+/>

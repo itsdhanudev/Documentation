@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # UIAxisEventListener
 
 Complete API reference for `UIAxisEventListener`, including constructors, attributes, virtual attributes, and methods.
@@ -14,29 +16,47 @@ Complete API reference for `UIAxisEventListener`, including constructors, attrib
 public class UIAxisEventListener extends Component
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| UIAxisEventListener([UIAxisEventListener]) | Executes `UIAxisEventListener` and returns after the underlying engine call finishes. |
-| UIAxisEventListener([Engine]) | Executes `UIAxisEventListener` and returns after the underlying engine call finishes. |
-| UIAxisEventListener() | Creates a new instance of UIAxisEventListener. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [UIAxisEventListener] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (2)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `axisName` | [String] | `get/set` | Virtual attribute exposed by `getAxisName`. Access it like a field to read or write the underlying value. |
-| `value` | [Vector2] | `get/set` | Virtual attribute exposed by `getValue`. Access it like a field to read or write the underlying value. |
-
-## Methods (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `setValue(float, float)` | `void` | Sets or updates the value. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "UIAxisEventListener(UIAxisEventListener)",
+      description: <>Executes <code>UIAxisEventListener</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "UIAxisEventListener(Engine)",
+      description: <>Executes <code>UIAxisEventListener</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "UIAxisEventListener()",
+      description: <>Creates a new instance of UIAxisEventListener.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "UIAxisEventListener",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "axisName",
+      type: "String",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getAxisName</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "value",
+      type: "Vector2",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getValue</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "setValue(float, float)",
+      returns: "void",
+      description: <>Sets or updates the value.</>
+    }
+  ]}
+/>

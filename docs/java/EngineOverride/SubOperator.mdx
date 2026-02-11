@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # SubOperator
 
 Complete API reference for `SubOperator`, including constructors, attributes, virtual attributes, and methods.
@@ -14,9 +16,12 @@ Complete API reference for `SubOperator`, including constructors, attributes, vi
 public interface SubOperator
 ```
 
-## Methods (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `@MethodArgs([{"otherObject"}])` | `void` | Subtracts the given object from the current value. |
-| `sub(Object)` | `T` | Executes `sub` and returns after the underlying engine call finishes. |
+<ApiDoc
+  methods={[
+    {
+      signature: "sub(Object)",
+      returns: "T",
+      description: <>Subtracts the given object from the current value.</>
+    }
+  ]}
+/>

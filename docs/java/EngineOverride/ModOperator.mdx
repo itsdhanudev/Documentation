@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # ModOperator
 
 Complete API reference for `ModOperator`, including constructors, attributes, virtual attributes, and methods.
@@ -14,9 +16,12 @@ Complete API reference for `ModOperator`, including constructors, attributes, vi
 public interface ModOperator
 ```
 
-## Methods (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `@MethodArgs([{"otherObject"}])` | `void` | Applies the modulus operation with the given object. |
-| `mod(Object)` | `T` | Executes `mod` and returns after the underlying engine call finishes. |
+<ApiDoc
+  methods={[
+    {
+      signature: "mod(Object)",
+      returns: "T",
+      description: <>Applies the modulus operation with the given object.</>
+    }
+  ]}
+/>

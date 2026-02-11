@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # UIVerticalScrollView
 
 Referência completa da API de `UIVerticalScrollView`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,22 +16,34 @@ Referência completa da API de `UIVerticalScrollView`, incluindo construtores, a
 public class UIVerticalScrollView extends Component
 ```
 
-## Construtores (3)
-
-| Signature | Description |
-| --- | --- |
-| UIVerticalScrollView([UIVerticalScrollView]) | Executa `UIVerticalScrollView` e retorna quando a chamada do motor termina. |
-| UIVerticalScrollView([Engine]) | Executa `UIVerticalScrollView` e retorna quando a chamada do motor termina. |
-| UIVerticalScrollView() | Cria uma nova instância de UIVerticalScrollView. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [UIVerticalScrollView] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (1)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `scroll` | [int] | `get/set` | Atributo virtual exposto por `getScroll`. Acesse como um campo para ler ou escrever o valor subjacente. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "UIVerticalScrollView(UIVerticalScrollView)",
+      description: <>Executa <code>UIVerticalScrollView</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "UIVerticalScrollView(Engine)",
+      description: <>Executa <code>UIVerticalScrollView</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "UIVerticalScrollView()",
+      description: <>Cria uma nova instância de UIVerticalScrollView.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "UIVerticalScrollView",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "scroll",
+      type: "int",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getScroll</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+/>

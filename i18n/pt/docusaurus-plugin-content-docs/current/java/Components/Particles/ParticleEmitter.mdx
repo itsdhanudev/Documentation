@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # ParticleEmitter
 
 Referência completa da API de `ParticleEmitter`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,46 +16,149 @@ Referência completa da API de `ParticleEmitter`, incluindo construtores, atribu
 public class ParticleEmitter extends Component
 ```
 
-## Construtores (3)
-
-| Signature | Description |
-| --- | --- |
-| ParticleEmitter([ParticleEmitter]) | Executa `ParticleEmitter` e retorna quando a chamada do motor termina. |
-| ParticleEmitter([Engine]) | Executa `ParticleEmitter` e retorna quando a chamada do motor termina. |
-| ParticleEmitter() | Cria uma nova instância de ParticleEmitter. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [ParticleEmitter] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (19)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `allowEmission` | [boolean] | `get/set` | Atributo virtual exposto por `isAllowEmission`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `alphaBased` | [AlphaBased] | `get/set` | Atributo virtual exposto por `getAlphaBased`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `alphaOverLifeTimeCurve` | [Curve] | `get/set` | Atributo virtual exposto por `getAlphaOverLifeTimeCurve`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `color` | [Color] | `get/set` | Atributo virtual exposto por `getColor`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `colorBased` | [ColorBased] | `get/set` | Atributo virtual exposto por `getColorBased`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `colorMode` | [ColorMode] | `get/set` | Atributo virtual exposto por `getColorMode`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `coneShapeOptions` | [ParticleConeShapeOptions] | `get` | Atributo virtual exposto por `getConeShapeOptions`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `emissionShape` | [EmissionShape] | `get/set` | Atributo virtual exposto por `getEmissionShape`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `emissionsPerSecond` | [float] | `get/set` | Atributo virtual exposto por `getEmissionsPerSecond`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `gravityMultiplier` | [float] | `get/set` | Atributo virtual exposto por `getGravityMultiplier`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `layer` | [int] | `get/set` | Atributo virtual exposto por `getLayer`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `maxLifeSeconds` | [float] | `get/set` | Atributo virtual exposto por `getMaxLifeSeconds`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `sizeBased` | [SizeBased] | `get/set` | Atributo virtual exposto por `getSizeBased`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `sizeOverLifeTimeCurve` | [Curve] | `get/set` | Atributo virtual exposto por `getSizeOverLifeTimeCurve`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `sphereShapeOptions` | [ParticleSphereShapeOptions] | `get` | Atributo virtual exposto por `getSphereShapeOptions`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `startSize` | [float] | `get/set` | Atributo virtual exposto por `getStartSize`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `startSpeed` | [float] | `get/set` | Atributo virtual exposto por `getStartSpeed`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `textureInstance` | [Texture] | `get/set` | Atributo virtual exposto por `getTextureInstance`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `transparencyBased` | [TransparencyBased] | `get/set` | Atributo virtual exposto por `getTransparencyBased`. Acesse como um campo para ler ou escrever o valor subjacente. |
-
-## Métodos (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `emit(Vector3, Vector3)` | `Particle` | Executa a operação emit usando os parâmetros informados (position, movement). |
+<ApiDoc
+  constructors={[
+    {
+      signature: "ParticleEmitter(ParticleEmitter)",
+      description: <>Executa <code>ParticleEmitter</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "ParticleEmitter(Engine)",
+      description: <>Executa <code>ParticleEmitter</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "ParticleEmitter()",
+      description: <>Cria uma nova instância de ParticleEmitter.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "ParticleEmitter",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "allowEmission",
+      type: "boolean",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>isAllowEmission</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "alphaBased",
+      type: "AlphaBased",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getAlphaBased</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "alphaOverLifeTimeCurve",
+      type: "Curve",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getAlphaOverLifeTimeCurve</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "color",
+      type: "Color",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getColor</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "colorBased",
+      type: "ColorBased",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getColorBased</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "colorMode",
+      type: "ColorMode",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getColorMode</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "coneShapeOptions",
+      type: "ParticleConeShapeOptions",
+      access: "get",
+      description: <>Atributo virtual exposto por <code>getConeShapeOptions</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "emissionShape",
+      type: "EmissionShape",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getEmissionShape</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "emissionsPerSecond",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getEmissionsPerSecond</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "gravityMultiplier",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getGravityMultiplier</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "layer",
+      type: "int",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getLayer</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "maxLifeSeconds",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getMaxLifeSeconds</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "sizeBased",
+      type: "SizeBased",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getSizeBased</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "sizeOverLifeTimeCurve",
+      type: "Curve",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getSizeOverLifeTimeCurve</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "sphereShapeOptions",
+      type: "ParticleSphereShapeOptions",
+      access: "get",
+      description: <>Atributo virtual exposto por <code>getSphereShapeOptions</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "startSize",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getStartSize</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "startSpeed",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getStartSpeed</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "textureInstance",
+      type: "Texture",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getTextureInstance</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "transparencyBased",
+      type: "TransparencyBased",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getTransparencyBased</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "emit(Vector3, Vector3)",
+      returns: "Particle",
+      description: <>Executa a operação emit usando os parâmetros informados (position, movement).</>
+    }
+  ]}
+/>

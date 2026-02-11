@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Resources
 
 Referência completa da API de `Resources`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,9 +16,29 @@ Referência completa da API de `Resources`, incluindo construtores, atributos, a
 public class Resources
 ```
 
-## Métodos Estáticos (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getFile(String)` | `File` | Retorna a propriedade `propriedade `file atual``. |
-| `isFolder(String)` | `boolean` | Retorna se folder é verdadeiro. |
+<ApiDoc
+  methods={[
+    {
+      signature: "getFile(String)",
+      returns: "File",
+      description: <>Retorna a propriedade <code>propriedade </code>file atual``.</>
+    },
+    {
+      signature: "isFolder(String)",
+      returns: "boolean",
+      description: <>Retorna se folder é verdadeiro.</>
+    }
+  ]}
+  staticMethods={[
+    {
+      signature: "getFile(String)",
+      returns: "File",
+      description: <>Retorna a propriedade <code>propriedade </code>file atual``.</>
+    },
+    {
+      signature: "isFolder(String)",
+      returns: "boolean",
+      description: <>Retorna se folder é verdadeiro.</>
+    }
+  ]}
+/>

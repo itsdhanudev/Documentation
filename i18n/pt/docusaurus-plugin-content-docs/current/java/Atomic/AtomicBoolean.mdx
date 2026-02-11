@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # AtomicBoolean
 
 Referência completa da API de `AtomicBoolean`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,27 +16,58 @@ Referência completa da API de `AtomicBoolean`, incluindo construtores, atributo
 public class AtomicBoolean
 ```
 
-## Construtores (3)
-
-| Signature | Description |
-| --- | --- |
-| AtomicBoolean([AtomicBoolean]) | Executa `AtomicBoolean` e retorna quando a chamada do motor termina. |
-| AtomicBoolean() | Executa `AtomicBoolean` e retorna quando a chamada do motor termina. |
-| AtomicBoolean([boolean]) | Cria uma nova instância de AtomicBoolean. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [AtomicBoolean] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Métodos (6)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `get()` | `boolean` | Retorna a propriedade `propriedade `valor value atual``. |
-| `set(boolean)` | `void` | Define ou atualiza the value. |
-| `lazySet(boolean)` | `void` | Executa a operação lazySet usando os parâmetros informados (value). |
-| `getAndSet(boolean)` | `boolean` | Retorna a propriedade `propriedade `and set atual``. |
-| `compareAndSet(boolean, boolean)` | `boolean` | Compara esta instância com outra para igualdade/ordem. |
-| `weakCompareAndSet(boolean, boolean)` | `boolean` | Executa a operação weakCompareAndSet usando os parâmetros informados (expect, update). |
+<ApiDoc
+  constructors={[
+    {
+      signature: "AtomicBoolean(AtomicBoolean)",
+      description: <>Executa <code>AtomicBoolean</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "AtomicBoolean()",
+      description: <>Executa <code>AtomicBoolean</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "AtomicBoolean(boolean)",
+      description: <>Cria uma nova instância de AtomicBoolean.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "AtomicBoolean",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "get()",
+      returns: "boolean",
+      description: <>Retorna a propriedade <code>propriedade </code>valor value atual``.</>
+    },
+    {
+      signature: "set(boolean)",
+      returns: "void",
+      description: <>Define ou atualiza the value.</>
+    },
+    {
+      signature: "lazySet(boolean)",
+      returns: "void",
+      description: <>Executa a operação lazySet usando os parâmetros informados (value).</>
+    },
+    {
+      signature: "getAndSet(boolean)",
+      returns: "boolean",
+      description: <>Retorna a propriedade <code>propriedade </code>and set atual``.</>
+    },
+    {
+      signature: "compareAndSet(boolean, boolean)",
+      returns: "boolean",
+      description: <>Compara esta instância com outra para igualdade/ordem.</>
+    },
+    {
+      signature: "weakCompareAndSet(boolean, boolean)",
+      returns: "boolean",
+      description: <>Executa a operação weakCompareAndSet usando os parâmetros informados (expect, update).</>
+    }
+  ]}
+/>

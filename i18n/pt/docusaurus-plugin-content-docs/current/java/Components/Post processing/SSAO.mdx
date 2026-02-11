@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # SSAO
 
 Referência completa da API de `SSAO`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,30 +16,82 @@ Referência completa da API de `SSAO`, incluindo construtores, atributos, atribu
 public class SSAO extends Component
 ```
 
-## Construtores (3)
-
-| Signature | Description |
-| --- | --- |
-| SSAO([SSAO]) | Executa `SSAO` e retorna quando a chamada do motor termina. |
-| SSAO([Engine]) | Executa `SSAO` e retorna quando a chamada do motor termina. |
-| SSAO() | Executa `SSAO` e retorna quando a chamada do motor termina. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [SSAO] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (9)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `bias` | [float] | `get/set` | Atributo virtual exposto por `getBias`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `bilateralThreshold` | [float] | `get/set` | Atributo virtual exposto por `getBilateralThreshold`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `intensity` | [float] | `get/set` | Atributo virtual exposto por `getIntensity`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `lowPassFilter` | [QualityLevel] | `get/set` | Atributo virtual exposto por `getLowPassFilter`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `minHorizonAngleRad` | [float] | `get/set` | Atributo virtual exposto por `getMinHorizonAngleRad`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `power` | [float] | `get/set` | Atributo virtual exposto por `getPower`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `quality` | [QualityLevel] | `get/set` | Atributo virtual exposto por `getQuality`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `radius` | [float] | `get/set` | Atributo virtual exposto por `getRadius`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `upsampling` | [QualityLevel] | `get/set` | Atributo virtual exposto por `getUpsampling`. Acesse como um campo para ler ou escrever o valor subjacente. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "SSAO(SSAO)",
+      description: <>Executa <code>SSAO</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "SSAO(Engine)",
+      description: <>Executa <code>SSAO</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "SSAO()",
+      description: <>Executa <code>SSAO</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "SSAO",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "bias",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getBias</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "bilateralThreshold",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getBilateralThreshold</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "intensity",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getIntensity</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "lowPassFilter",
+      type: "QualityLevel",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getLowPassFilter</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "minHorizonAngleRad",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getMinHorizonAngleRad</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "power",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getPower</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "quality",
+      type: "QualityLevel",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getQuality</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "radius",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getRadius</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "upsampling",
+      type: "QualityLevel",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getUpsampling</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+/>

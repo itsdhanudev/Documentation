@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # AbstractCameraObjectFilter
 
 Complete API reference for `AbstractCameraObjectFilter`, including constructors, attributes, virtual attributes, and methods.
@@ -14,17 +16,57 @@ Complete API reference for `AbstractCameraObjectFilter`, including constructors,
 public class AbstractCameraObjectFilter
 ```
 
-## Methods (10)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `filterShadow()` | `boolean` | Filters which Shadow will be rendered. Return true to render and false to ignore. |
-| `filterRenderer(ModelRenderer)` | `boolean` | Filters which ModelRenderer will be rendered. Return true to render and false to ignore. |
-| `filterRenderer(SkinnedModelRenderer)` | `boolean` | Filters which SkinnedModelRenderer will be rendered. Return true to render and false to ignore. |
-| `filterMaterialBake(Material, Vertex)` | `boolean` | Filters which Bake will be rendered. Return true to render and false to ignore. |
-| `filter3DText(Component)` | `boolean` | Filters which 3DText will be rendered. Return true to render and false to ignore. |
-| `renderFog()` | `boolean` | Defines whether the Fog will render. Return true to render and false to ignore. |
-| `renderParticles()` | `boolean` | Defines whether Particles will render. Return true to render and false to ignore. |
-| `filterParticle(ParticleEmitter)` | `boolean` | Filters which ParticleEmitter will be rendered. Return true to render and false to ignore. |
-| `overrideAmbientLight()` | `Color` | Overrides the Ambient Light Color. Return the Color that will override. |
-| `overrideIndirectLight()` | `Color` | Overrides the Indirect Light Color. Return the Color that will override. |
+<ApiDoc
+  methods={[
+    {
+      signature: "filterShadow()",
+      returns: "boolean",
+      description: <>Filters which Shadow will be rendered. Return true to render and false to ignore.</>
+    },
+    {
+      signature: "filterRenderer(ModelRenderer)",
+      returns: "boolean",
+      description: <>Filters which ModelRenderer will be rendered. Return true to render and false to ignore.</>
+    },
+    {
+      signature: "filterRenderer(SkinnedModelRenderer)",
+      returns: "boolean",
+      description: <>Filters which SkinnedModelRenderer will be rendered. Return true to render and false to ignore.</>
+    },
+    {
+      signature: "filterMaterialBake(Material, Vertex)",
+      returns: "boolean",
+      description: <>Filters which Bake will be rendered. Return true to render and false to ignore.</>
+    },
+    {
+      signature: "filter3DText(Component)",
+      returns: "boolean",
+      description: <>Filters which 3DText will be rendered. Return true to render and false to ignore.</>
+    },
+    {
+      signature: "renderFog()",
+      returns: "boolean",
+      description: <>Defines whether the Fog will render. Return true to render and false to ignore.</>
+    },
+    {
+      signature: "renderParticles()",
+      returns: "boolean",
+      description: <>Defines whether Particles will render. Return true to render and false to ignore.</>
+    },
+    {
+      signature: "filterParticle(ParticleEmitter)",
+      returns: "boolean",
+      description: <>Filters which ParticleEmitter will be rendered. Return true to render and false to ignore.</>
+    },
+    {
+      signature: "overrideAmbientLight()",
+      returns: "Color",
+      description: <>Overrides the Ambient Light Color. Return the Color that will override.</>
+    },
+    {
+      signature: "overrideIndirectLight()",
+      returns: "Color",
+      description: <>Overrides the Indirect Light Color. Return the Color that will override.</>
+    }
+  ]}
+/>

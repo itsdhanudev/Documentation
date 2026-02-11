@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # UIImage
 
 Referência completa da API de `UIImage`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,24 +16,46 @@ Referência completa da API de `UIImage`, incluindo construtores, atributos, atr
 public class UIImage extends Component
 ```
 
-## Construtores (3)
-
-| Signature | Description |
-| --- | --- |
-| UIImage([UIImage]) | Executa `UIImage` e retorna quando a chamada do motor termina. |
-| UIImage([Engine]) | Executa `UIImage` e retorna quando a chamada do motor termina. |
-| UIImage() | Cria uma nova instância de UIImage. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [UIImage] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (3)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `border` | [float] | `get/set` | Atributo virtual exposto por `getBorder`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `color` | [Color] | `get/set` | Atributo virtual exposto por `getColor`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `texture` | [Texture] | `get/set` | Atributo virtual exposto por `getTexture`. Acesse como um campo para ler ou escrever o valor subjacente. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "UIImage(UIImage)",
+      description: <>Executa <code>UIImage</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "UIImage(Engine)",
+      description: <>Executa <code>UIImage</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "UIImage()",
+      description: <>Cria uma nova instância de UIImage.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "UIImage",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "border",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getBorder</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "color",
+      type: "Color",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getColor</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "texture",
+      type: "Texture",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getTexture</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+/>

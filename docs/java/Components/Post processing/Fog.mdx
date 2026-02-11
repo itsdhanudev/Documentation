@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Fog
 
 Complete API reference for `Fog`, including constructors, attributes, virtual attributes, and methods.
@@ -14,36 +16,89 @@ Complete API reference for `Fog`, including constructors, attributes, virtual at
 public class Fog extends Component
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| Fog([Fog]) | Executes `Fog` and returns after the underlying engine call finishes. |
-| Fog([Engine]) | Executes `Fog` and returns after the underlying engine call finishes. |
-| Fog() | Executes `Fog` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [Fog] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (9)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `color` | [Color] | `get/set` | Virtual attribute exposed by `getColor`. Access it like a field to read or write the underlying value. |
-| `cutOffDistance` | [float] | `get/set` | Virtual attribute exposed by `getCutOffDistance`. Access it like a field to read or write the underlying value. |
-| `density` | [float] | `get/set` | Virtual attribute exposed by `getDensity`. Access it like a field to read or write the underlying value. |
-| `distance` | [float] | `get/set` | Virtual attribute exposed by `getDistance`. Access it like a field to read or write the underlying value. |
-| `fogColorFromIbl` | [boolean] | `set` | Virtual attribute exposed by `setFogColorFromIbl`. Access it like a field to read or write the underlying value. |
-| `height` | [float] | `get/set` | Virtual attribute exposed by `getHeight`. Access it like a field to read or write the underlying value. |
-| `heightFalloff` | [float] | `get/set` | Virtual attribute exposed by `getHeightFalloff`. Access it like a field to read or write the underlying value. |
-| `inScatteringSize` | [float] | `get/set` | Virtual attribute exposed by `getInScatteringSize`. Access it like a field to read or write the underlying value. |
-| `inScatteringStart` | [float] | `get/set` | Virtual attribute exposed by `getInScatteringStart`. Access it like a field to read or write the underlying value. |
-
-## Methods (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `isFogColorFromIbl()` | `boolean` | Executes `isFogColorFromIbl` and returns after the underlying engine call finishes. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "Fog(Fog)",
+      description: <>Executes <code>Fog</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "Fog(Engine)",
+      description: <>Executes <code>Fog</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "Fog()",
+      description: <>Executes <code>Fog</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "Fog",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "color",
+      type: "Color",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getColor</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "cutOffDistance",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getCutOffDistance</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "density",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getDensity</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "distance",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getDistance</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "fogColorFromIbl",
+      type: "boolean",
+      access: "set",
+      description: <>Virtual attribute exposed by <code>setFogColorFromIbl</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "height",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getHeight</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "heightFalloff",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getHeightFalloff</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "inScatteringSize",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getInScatteringSize</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "inScatteringStart",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getInScatteringStart</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "isFogColorFromIbl()",
+      returns: "boolean",
+      description: <>Executes <code>isFogColorFromIbl</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Route
 
 Complete API reference for `Route`, including constructors, attributes, virtual attributes, and methods.
@@ -14,22 +16,34 @@ Complete API reference for `Route`, including constructors, attributes, virtual 
 public class Route extends Component
 ```
 
-## Constructors (2)
-
-| Signature | Description |
-| --- | --- |
-| Route([Route]) | Executes `Route` and returns after the underlying engine call finishes. |
-| Route() | Executes `Route` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [Route] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Methods (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `componentClassMatch(Component, Component)` | `boolean` | Executes `componentClassMatch` and returns after the underlying engine call finishes. |
-| `getEngineComponent()` | `Component` | Executes `getEngineComponent` and returns after the underlying engine call finishes. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "Route(Route)",
+      description: <>Executes <code>Route</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "Route()",
+      description: <>Executes <code>Route</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "Route",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "componentClassMatch(Component, Component)",
+      returns: "boolean",
+      description: <>Executes <code>componentClassMatch</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "getEngineComponent()",
+      returns: "Component",
+      description: <>Executes <code>getEngineComponent</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # JavaUtils
 
 Referência completa da API de `JavaUtils`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,8 +16,19 @@ Referência completa da API de `JavaUtils`, incluindo construtores, atributos, a
 public class JavaUtils
 ```
 
-## Métodos Estáticos (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `isNull(Object)` | `boolean` | Retorna se null é verdadeiro. |
+<ApiDoc
+  methods={[
+    {
+      signature: "isNull(Object)",
+      returns: "boolean",
+      description: <>Retorna se null é verdadeiro.</>
+    }
+  ]}
+  staticMethods={[
+    {
+      signature: "isNull(Object)",
+      returns: "boolean",
+      description: <>Retorna se null é verdadeiro.</>
+    }
+  ]}
+/>

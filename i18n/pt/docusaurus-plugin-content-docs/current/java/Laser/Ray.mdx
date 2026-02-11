@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Ray
 
 Referência completa da API de `Ray`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,32 +16,60 @@ Referência completa da API de `Ray`, incluindo construtores, atributos, atribut
 public class Ray
 ```
 
-## Construtores (4)
-
-| Signature | Description |
-| --- | --- |
-| Ray([Ray]) | Executa `Ray` e retorna quando a chamada do motor termina. |
-| Ray() | Executa `Ray` e retorna quando a chamada do motor termina. |
-| Ray([JAVARuntime.RayDirection], [float]) | Cria uma nova instância de Ray. |
-| Ray([Vector3], [Vector3], [float]) | Cria uma nova instância de Ray. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `ray` | [Ray] | Representa o valor de `ray` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (1)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `physicsLayer` | [PhysicsLayer] | `get/set` | Retorna a propriedade `propriedade `PhysicsLayer deste Ray``. |
-
-## Métodos (4)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getRayDirection()` | [JAVARuntime].[RayDirection] | Retorna a propriedade `RayDirection deste Ray`. |
-| `setRayDirection(JAVARuntime.RayDirection)` | `void` | Define a propriedade `RayDirection deste Ray`. |
-| `getDistance()` | `float` | Retorna a propriedade `distância deste Ray`. |
-| `setDistance(float)` | `void` | Define a propriedade `distância deste Ray`. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "Ray(Ray)",
+      description: <>Executa <code>Ray</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "Ray()",
+      description: <>Executa <code>Ray</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "Ray(JAVARuntime.RayDirection, float)",
+      description: <>Cria uma nova instância de Ray.</>
+    },
+    {
+      signature: "Ray(Vector3, Vector3, float)",
+      description: <>Cria uma nova instância de Ray.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "ray",
+      type: "Ray",
+      description: <>Representa o valor de <code>ray</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "physicsLayer",
+      type: "PhysicsLayer",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>propriedade </code>PhysicsLayer deste Ray``.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "getRayDirection()",
+      returns: "JAVARuntime.RayDirection",
+      description: <>Retorna a propriedade <code>RayDirection deste Ray</code>.</>
+    },
+    {
+      signature: "setRayDirection(JAVARuntime.RayDirection)",
+      returns: "void",
+      description: <>Define a propriedade <code>RayDirection deste Ray</code>.</>
+    },
+    {
+      signature: "getDistance()",
+      returns: "float",
+      description: <>Retorna a propriedade <code>distância deste Ray</code>.</>
+    },
+    {
+      signature: "setDistance(float)",
+      returns: "void",
+      description: <>Define a propriedade <code>distância deste Ray</code>.</>
+    }
+  ]}
+/>

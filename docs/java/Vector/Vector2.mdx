@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Vector2
 
 Complete API reference for `Vector2`, including constructors, attributes, virtual attributes, and methods.
@@ -14,151 +16,630 @@ Complete API reference for `Vector2`, including constructors, attributes, virtua
 public class Vector2
 ```
 
-## Constructors (7)
-
-| Signature | Description |
-| --- | --- |
-| Vector2([Vector2]) | Executes `Vector2` and returns after the underlying engine call finishes. |
-| Vector2() | Executes `Vector2` and returns after the underlying engine call finishes. |
-| Vector2([float], [float]) | Creates a new instance of Vector2. |
-| Vector2([int], [float]) | Creates a new instance of Vector2. |
-| Vector2([float], [int]) | Creates a new instance of Vector2. |
-| Vector2([int], [int]) | Creates a new instance of Vector2. |
-| Vector2([float]) | Creates a new instance of Vector2. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [Vector2] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (2)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `x` | [float] | `get/set` | Returns the X component of this Vector2. |
-| `y` | [float] | `get/set` | Returns the Y component of this Vector2. |
-
-## Methods (108)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `mul(Vector2)` | `Vector2` | Multiplies this Vector2 by the specified Vector2 and returns a new Vector2. |
-| `mul(float, float)` | `Vector2` | Multiplies this Vector2 by the specified X and Y values and returns a new Vector2. |
-| `mul(float)` | `Vector2` | Multiplies this Vector2 by the specified value and returns a new Vector2. |
-| `mulLocal(Vector3)` | `void` | Multiplies this Vector2 by the specified Vector3 (using only X and Y components) and updates this Vector2. |
-| `mulLocal(Vector2)` | `void` | Multiplies this Vector2 by the specified Vector2 and updates this Vector2. |
-| `mulLocal(float, float)` | `void` | Multiplies this Vector2 by the specified X and Y values and updates this Vector2. |
-| `mulLocal(float)` | `void` | Multiplies this Vector2 by the specified value and updates this Vector2. |
-| `multiply(Vector2)` | `Vector2` | Multiplies this Vector2 by the specified Vector2 and returns a new Vector2. |
-| `multiply(float, float)` | `Vector2` | Multiplies this Vector2 by the specified X and Y values and returns a new Vector2. |
-| `multiply(float)` | `Vector2` | Multiplies this Vector2 by the specified value and returns a new Vector2. |
-| `div(Vector2)` | `Vector2` | Divides this Vector2 by the specified Vector2 and returns a new Vector2. |
-| `div(float, float)` | `Vector2` | Divides this Vector2 by the specified X and Y values and returns a new Vector2. |
-| `div(float)` | `Vector2` | Divides this Vector2 by the specified value and returns a new Vector2. |
-| `divLocal(Vector3)` | `void` | Divides this Vector2 by the specified Vector3 (using only X and Y components) and updates this Vector2. |
-| `divLocal(Vector2)` | `void` | Divides this Vector2 by the specified Vector2 and updates this Vector2. |
-| `divLocal(float, float)` | `void` | Divides this Vector2 by the specified X and Y values and updates this Vector2. |
-| `divLocal(float)` | `void` | Divides this Vector2 by the specified value and updates this Vector2. |
-| `divide(Vector2)` | `Vector2` | Divides this Vector2 by the specified Vector2 and returns a new Vector2. |
-| `divide(float, float)` | `Vector2` | Divides this Vector2 by the specified X and Y values and returns a new Vector2. |
-| `divide(float)` | `Vector2` | Divides this Vector2 by the specified value and returns a new Vector2. |
-| `sum(Vector2)` | `Vector2` | Adds the specified Vector2 to this Vector2 and returns a new Vector2. |
-| `sum(float, float)` | `Vector2` | Adds the specified X and Y values to this Vector2 and returns a new Vector2. |
-| `sum(float)` | `Vector2` | Adds the specified value to this Vector2 and returns a new Vector2. |
-| `sumLocal(Vector3)` | `void` | Adds the specified Vector3 (using only X and Y components) to this Vector2 and updates this Vector2. |
-| `sumLocal(Vector2)` | `void` | Adds the specified Vector2 to this Vector2 and updates this Vector2. |
-| `sumLocal(float, float)` | `void` | Adds the specified X and Y values to this Vector2 and updates this Vector2. |
-| `sumLocal(float)` | `void` | Adds the specified value to this Vector2 and updates this Vector2. |
-| `add(Vector2)` | `Vector2` | Adds the specified Vector2 to this Vector2 and returns a new Vector2. |
-| `add(float, float)` | `Vector2` | Adds the specified X and Y values to this Vector2 and returns a new Vector2. |
-| `add(float)` | `Vector2` | Adds the specified value to this Vector2 and returns a new Vector2. |
-| `sub(Vector2)` | `Vector2` | Subtracts the specified Vector2 from this Vector2 and returns a new Vector2. |
-| `sub(float, float)` | `Vector2` | Subtracts the specified X and Y values from this Vector2 and returns a new Vector2. |
-| `sub(float)` | `Vector2` | Subtracts the specified value from this Vector2 and returns a new Vector2. |
-| `subLocal(Vector3)` | `void` | Subtracts the specified Vector3 (using only X and Y components) from this Vector2 and updates this Vector2. |
-| `subLocal(Vector2)` | `void` | Subtracts the specified Vector2 from this Vector2 and updates this Vector2. |
-| `subLocal(float, float)` | `void` | Subtracts the specified X and Y values from this Vector2 and updates this Vector2. |
-| `subLocal(float)` | `void` | Subtracts the specified value from this Vector2 and updates this Vector2. |
-| `subtract(Vector2)` | `Vector2` | Subtracts the specified Vector2 from this Vector2 and returns a new Vector2. |
-| `subtract(float, float)` | `Vector2` | Subtracts the specified X and Y values from this Vector2 and returns a new Vector2. |
-| `subtract(float)` | `Vector2` | Subtracts the specified value from this Vector2 and returns a new Vector2. |
-| `equals(Vector2)` | `boolean` | Checks if this Vector2 is equal to the specified Vector2. |
-| `equals(float, float)` | `boolean` | Checks if this Vector2 is equal to the specified X and Y values. |
-| `equals(float)` | `boolean` | Checks if all components of this Vector2 are equal to the specified value. |
-| `set(Vector2)` | `void` | Sets the components of this Vector2 to the specified Vector2. |
-| `set(float, float)` | `void` | Sets the components of this Vector2 to the specified X and Y values. |
-| `set(float)` | `void` | Sets all components of this Vector2 to the specified value. |
-| `lerp(Vector2, float)` | `void` | Interpolates/smoothes between this Vector2 and the specified Vector2 based on the provided speed/interval and updates this Vector2. |
-| `lerp(float, float, float)` | `void` | Interpolates/smoothes between this Vector2 and the specified X and Y values based on the provided speed/interval and updates this Vector2. |
-| `lerp(float, float)` | `void` | Interpolates/smoothes between this Vector2 and the specified value based on the provided speed/interval and updates this Vector2. |
-| `lerpInSeconds(Vector2, float)` | `void` | Interpolates/smoothes between this Vector2 and the specified Vector2 based on the provided speed/interval in one second and updates this Vector2. |
-| `lerpInSeconds(float, float, float)` | `void` | Interpolates/smoothes between this Vector2 and the specified X and Y values based on the provided speed/interval in one second and updates this Vector2. |
-| `lerpInSeconds(float, float)` | `void` | Interpolates/smoothes between this Vector2 and the specified value based on the provided speed/interval in one second and updates this Vector2. |
-| `blend(Vector2, float)` | `Vector2` | Blends between this Vector2 and the specified Vector2 based on the provided blend factor (0 to 1) and updates this Vector2. |
-| `blend(float, float, float)` | `Vector2` | Blends between this Vector2 and the specified X and Y values based on the provided blend factor (0 to 1) and updates this Vector2. |
-| `blend(float, float)` | `Vector2` | Blends between this Vector2 and the specified value based on the provided blend factor (0 to 1) and updates this Vector2. |
-| `blendLocal(Vector2, float)` | `void` | Blends between this Vector2 and the specified Vector2 based on the provided blend factor (0 to 1) and updates this Vector2. |
-| `blendLocal(float, float, float)` | `void` | Blends between this Vector2 and the specified X and Y values based on the provided blend factor (0 to 1) and updates this Vector2. |
-| `blendLocal(float, float)` | `void` | Blends between this Vector2 and the specified value based on the provided blend factor (0 to 1) and updates this Vector2. |
-| `normalize()` | `Vector2` | Returns a normalized copy of this Vector2 (length equals 1). |
-| `normalizeLocal()` | `void` | Normalizes this Vector2 (sets its length to 1). |
-| `rotateLocal(float)` | `void` | Rotates this Vector2 by the specified angle (in degrees) and updates this Vector2. |
-| `length()` | `float` | Returns the length (magnitude) of this Vector2. |
-| `sqrLength()` | `float` | Returns the squared length of this Vector2. Faster than length() as it doesn't use a square root; useful for comparing distances. |
-| `distance(Vector2)` | `float` | Returns the distance between this Vector2 and the specified Vector2. |
-| `sqrDistance(Vector2)` | `float` | Returns the squared distance between this Vector2 and the specified Vector2. Faster than distance() as it doesn't use a square root; useful for comparing distances. |
-| `dot(Vector2)` | `float` | Returns the dot product of this Vector2 and the specified Vector2. |
-| `dot(float, float)` | `float` | Returns the dot product of this Vector2 and the specified X and Y values. |
-| `dot(float)` | `float` | Returns the dot product of this Vector2 and the specified value, used for both components. |
-| `cross(Vector2)` | `Vector3` | Returns the cross product of this Vector2 and the specified Vector2 as a Vector3. |
-| `cross(float, float)` | `Vector3` | Returns the cross product of this Vector2 and the specified X and Y values as a Vector3. |
-| `copy()` | `Vector2` | Returns a copy of this Vector2. |
-| `toString()` | `String` | Returns a String representation of this Vector2. |
-| `toString(int)` | `String` | Returns a String representation of this Vector2 with the specified number of decimal places. |
-| `equals(Object)` | `boolean` | Checks if this Vector2 is equal to the specified object. |
-| `pointerEquals(Object)` | `boolean` | Checks if this Vector2 is the same instance as the specified object. |
-| `notEquals(Object)` | `boolean` | Checks if this Vector2 is not equal to the specified object. |
-| `greaterThan(Object)` | `boolean` | Checks if this Vector2 is greater than the specified object (by magnitude). |
-| `greaterThan(float)` | `boolean` | Checks if this Vector2 is greater than the specified value (by magnitude). |
-| `greaterThan(int)` | `boolean` | Checks if this Vector2 is greater than the specified value (by magnitude). |
-| `greaterThan(long)` | `boolean` | Checks if this Vector2 is greater than the specified value (by magnitude). |
-| `greaterThan(double)` | `boolean` | Checks if this Vector2 is greater than the specified value (by magnitude). |
-| `greaterOrEqualsThan(Object)` | `boolean` | Checks if this Vector2 is greater than or equal to the specified object (by magnitude). |
-| `greaterOrEqualsThan(float)` | `boolean` | Checks if this Vector2 is greater than or equal to the specified value (by magnitude). |
-| `greaterOrEqualsThan(int)` | `boolean` | Checks if this Vector2 is greater than or equal to the specified value (by magnitude). |
-| `greaterOrEqualsThan(long)` | `boolean` | Checks if this Vector2 is greater than or equal to the specified value (by magnitude). |
-| `greaterOrEqualsThan(double)` | `boolean` | Checks if this Vector2 is greater than or equal to the specified value (by magnitude). |
-| `lessThan(Object)` | `boolean` | Checks if this Vector2 is less than the specified object (by magnitude). |
-| `lessThan(float)` | `boolean` | Checks if this Vector2 is less than the specified value (by magnitude). |
-| `lessThan(int)` | `boolean` | Checks if this Vector2 is less than the specified value (by magnitude). |
-| `lessThan(long)` | `boolean` | Checks if this Vector2 is less than the specified value (by magnitude). |
-| `lessThan(double)` | `boolean` | Checks if this Vector2 is less than the specified value (by magnitude). |
-| `lessOrEqualsThan(Object)` | `boolean` | Checks if this Vector2 is less than or equal to the specified object (by magnitude). |
-| `lessOrEqualsThan(float)` | `boolean` | Checks if this Vector2 is less than or equal to the specified value (by magnitude). |
-| `lessOrEqualsThan(int)` | `boolean` | Checks if this Vector2 is less than or equal to the specified value (by magnitude). |
-| `lessOrEqualsThan(long)` | `boolean` | Checks if this Vector2 is less than or equal to the specified value (by magnitude). |
-| `lessOrEqualsThan(double)` | `boolean` | Checks if this Vector2 is less than or equal to the specified value (by magnitude). |
-| `sum(Object)` | `T` | Returns the sum of this Vector2 and the specified object. |
-| `sumEqual(Object)` | `void` | Sums the specified object to this Vector2. |
-| `div(Object)` | `T` | Returns the division of this Vector2 by the specified object. |
-| `divEqual(Object)` | `void` | Divides this Vector2 by the specified object. |
-| `mul(Object)` | `T` | Returns the multiplication of this Vector2 by the specified object. |
-| `mulEqual(Object)` | `void` | Multiplies this Vector2 by the specified object. |
-| `sub(Object)` | `T` | Returns the subtraction of this Vector2 and the specified object. |
-| `subEqual(Object)` | `void` | Subtracts the specified object from this Vector2. |
-| `addAdd()` | `void` | Increments this Vector2 by 1. |
-| `removeRemove()` | `void` | Decrements this Vector2 by 1. |
-| `serializeToString()` | `String` | Returns a String representation of this Vector2 in the format '[X;Y]'. |
-| `deserializeLocal(String)` | `void` | Deserializes a String in the format '[X;Y]' and sets the values to this Vector2. |
-
-## Static Methods (6)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `genericInterface()` | `GenericClassInspectorEntry` | Executes `genericInterface` and returns after the underlying engine call finishes. |
-| `inspectorController()` | `ClassInspectorEntry` | Executes `inspectorController` and returns after the underlying engine call finishes. |
-| `zero()` | `Vector2` | Returns a Vector2 with all components set to zero (0, 0). |
-| `rotateAroundPivot(Vector2, float)` | `Vector2` | Rotates the specified Vector2 by the given angle (in degrees) and returns the result. |
-| `rotateAroundPivot(Vector2, Vector2, float)` | `Vector2` | Rotates the specified Vector2 around the given pivot point by the specified angle (in degrees) and returns the result. |
-| `isNull(Object)` | `boolean` | Checks if the specified object is null. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "Vector2(Vector2)",
+      description: <>Executes <code>Vector2</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "Vector2()",
+      description: <>Executes <code>Vector2</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "Vector2(float, float)",
+      description: <>Creates a new instance of Vector2.</>
+    },
+    {
+      signature: "Vector2(int, float)",
+      description: <>Creates a new instance of Vector2.</>
+    },
+    {
+      signature: "Vector2(float, int)",
+      description: <>Creates a new instance of Vector2.</>
+    },
+    {
+      signature: "Vector2(int, int)",
+      description: <>Creates a new instance of Vector2.</>
+    },
+    {
+      signature: "Vector2(float)",
+      description: <>Creates a new instance of Vector2.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "Vector2",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "x",
+      type: "float",
+      access: "get/set",
+      description: <>Returns the X component of this Vector2.</>
+    },
+    {
+      name: "y",
+      type: "float",
+      access: "get/set",
+      description: <>Returns the Y component of this Vector2.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "mul(Vector2)",
+      returns: "Vector2",
+      description: <>Multiplies this Vector2 by the specified Vector2 and returns a new Vector2.</>
+    },
+    {
+      signature: "mul(float, float)",
+      returns: "Vector2",
+      description: <>Multiplies this Vector2 by the specified X and Y values and returns a new Vector2.</>
+    },
+    {
+      signature: "mul(float)",
+      returns: "Vector2",
+      description: <>Multiplies this Vector2 by the specified value and returns a new Vector2.</>
+    },
+    {
+      signature: "mulLocal(Vector3)",
+      returns: "void",
+      description: <>Multiplies this Vector2 by the specified Vector3 (using only X and Y components) and updates this Vector2.</>
+    },
+    {
+      signature: "mulLocal(Vector2)",
+      returns: "void",
+      description: <>Multiplies this Vector2 by the specified Vector2 and updates this Vector2.</>
+    },
+    {
+      signature: "mulLocal(float, float)",
+      returns: "void",
+      description: <>Multiplies this Vector2 by the specified X and Y values and updates this Vector2.</>
+    },
+    {
+      signature: "mulLocal(float)",
+      returns: "void",
+      description: <>Multiplies this Vector2 by the specified value and updates this Vector2.</>
+    },
+    {
+      signature: "multiply(Vector2)",
+      returns: "Vector2",
+      description: <>Multiplies this Vector2 by the specified Vector2 and returns a new Vector2.</>
+    },
+    {
+      signature: "multiply(float, float)",
+      returns: "Vector2",
+      description: <>Multiplies this Vector2 by the specified X and Y values and returns a new Vector2.</>
+    },
+    {
+      signature: "multiply(float)",
+      returns: "Vector2",
+      description: <>Multiplies this Vector2 by the specified value and returns a new Vector2.</>
+    },
+    {
+      signature: "div(Vector2)",
+      returns: "Vector2",
+      description: <>Divides this Vector2 by the specified Vector2 and returns a new Vector2.</>
+    },
+    {
+      signature: "div(float, float)",
+      returns: "Vector2",
+      description: <>Divides this Vector2 by the specified X and Y values and returns a new Vector2.</>
+    },
+    {
+      signature: "div(float)",
+      returns: "Vector2",
+      description: <>Divides this Vector2 by the specified value and returns a new Vector2.</>
+    },
+    {
+      signature: "divLocal(Vector3)",
+      returns: "void",
+      description: <>Divides this Vector2 by the specified Vector3 (using only X and Y components) and updates this Vector2.</>
+    },
+    {
+      signature: "divLocal(Vector2)",
+      returns: "void",
+      description: <>Divides this Vector2 by the specified Vector2 and updates this Vector2.</>
+    },
+    {
+      signature: "divLocal(float, float)",
+      returns: "void",
+      description: <>Divides this Vector2 by the specified X and Y values and updates this Vector2.</>
+    },
+    {
+      signature: "divLocal(float)",
+      returns: "void",
+      description: <>Divides this Vector2 by the specified value and updates this Vector2.</>
+    },
+    {
+      signature: "divide(Vector2)",
+      returns: "Vector2",
+      description: <>Divides this Vector2 by the specified Vector2 and returns a new Vector2.</>
+    },
+    {
+      signature: "divide(float, float)",
+      returns: "Vector2",
+      description: <>Divides this Vector2 by the specified X and Y values and returns a new Vector2.</>
+    },
+    {
+      signature: "divide(float)",
+      returns: "Vector2",
+      description: <>Divides this Vector2 by the specified value and returns a new Vector2.</>
+    },
+    {
+      signature: "sum(Vector2)",
+      returns: "Vector2",
+      description: <>Adds the specified Vector2 to this Vector2 and returns a new Vector2.</>
+    },
+    {
+      signature: "sum(float, float)",
+      returns: "Vector2",
+      description: <>Adds the specified X and Y values to this Vector2 and returns a new Vector2.</>
+    },
+    {
+      signature: "sum(float)",
+      returns: "Vector2",
+      description: <>Adds the specified value to this Vector2 and returns a new Vector2.</>
+    },
+    {
+      signature: "sumLocal(Vector3)",
+      returns: "void",
+      description: <>Adds the specified Vector3 (using only X and Y components) to this Vector2 and updates this Vector2.</>
+    },
+    {
+      signature: "sumLocal(Vector2)",
+      returns: "void",
+      description: <>Adds the specified Vector2 to this Vector2 and updates this Vector2.</>
+    },
+    {
+      signature: "sumLocal(float, float)",
+      returns: "void",
+      description: <>Adds the specified X and Y values to this Vector2 and updates this Vector2.</>
+    },
+    {
+      signature: "sumLocal(float)",
+      returns: "void",
+      description: <>Adds the specified value to this Vector2 and updates this Vector2.</>
+    },
+    {
+      signature: "add(Vector2)",
+      returns: "Vector2",
+      description: <>Adds the specified Vector2 to this Vector2 and returns a new Vector2.</>
+    },
+    {
+      signature: "add(float, float)",
+      returns: "Vector2",
+      description: <>Adds the specified X and Y values to this Vector2 and returns a new Vector2.</>
+    },
+    {
+      signature: "add(float)",
+      returns: "Vector2",
+      description: <>Adds the specified value to this Vector2 and returns a new Vector2.</>
+    },
+    {
+      signature: "sub(Vector2)",
+      returns: "Vector2",
+      description: <>Subtracts the specified Vector2 from this Vector2 and returns a new Vector2.</>
+    },
+    {
+      signature: "sub(float, float)",
+      returns: "Vector2",
+      description: <>Subtracts the specified X and Y values from this Vector2 and returns a new Vector2.</>
+    },
+    {
+      signature: "sub(float)",
+      returns: "Vector2",
+      description: <>Subtracts the specified value from this Vector2 and returns a new Vector2.</>
+    },
+    {
+      signature: "subLocal(Vector3)",
+      returns: "void",
+      description: <>Subtracts the specified Vector3 (using only X and Y components) from this Vector2 and updates this Vector2.</>
+    },
+    {
+      signature: "subLocal(Vector2)",
+      returns: "void",
+      description: <>Subtracts the specified Vector2 from this Vector2 and updates this Vector2.</>
+    },
+    {
+      signature: "subLocal(float, float)",
+      returns: "void",
+      description: <>Subtracts the specified X and Y values from this Vector2 and updates this Vector2.</>
+    },
+    {
+      signature: "subLocal(float)",
+      returns: "void",
+      description: <>Subtracts the specified value from this Vector2 and updates this Vector2.</>
+    },
+    {
+      signature: "subtract(Vector2)",
+      returns: "Vector2",
+      description: <>Subtracts the specified Vector2 from this Vector2 and returns a new Vector2.</>
+    },
+    {
+      signature: "subtract(float, float)",
+      returns: "Vector2",
+      description: <>Subtracts the specified X and Y values from this Vector2 and returns a new Vector2.</>
+    },
+    {
+      signature: "subtract(float)",
+      returns: "Vector2",
+      description: <>Subtracts the specified value from this Vector2 and returns a new Vector2.</>
+    },
+    {
+      signature: "equals(Vector2)",
+      returns: "boolean",
+      description: <>Checks if this Vector2 is equal to the specified Vector2.</>
+    },
+    {
+      signature: "equals(float, float)",
+      returns: "boolean",
+      description: <>Checks if this Vector2 is equal to the specified X and Y values.</>
+    },
+    {
+      signature: "equals(float)",
+      returns: "boolean",
+      description: <>Checks if all components of this Vector2 are equal to the specified value.</>
+    },
+    {
+      signature: "set(Vector2)",
+      returns: "void",
+      description: <>Sets the components of this Vector2 to the specified Vector2.</>
+    },
+    {
+      signature: "set(float, float)",
+      returns: "void",
+      description: <>Sets the components of this Vector2 to the specified X and Y values.</>
+    },
+    {
+      signature: "set(float)",
+      returns: "void",
+      description: <>Sets all components of this Vector2 to the specified value.</>
+    },
+    {
+      signature: "lerp(Vector2, float)",
+      returns: "void",
+      description: <>Interpolates/smoothes between this Vector2 and the specified Vector2 based on the provided speed/interval and updates this Vector2.</>
+    },
+    {
+      signature: "lerp(float, float, float)",
+      returns: "void",
+      description: <>Interpolates/smoothes between this Vector2 and the specified X and Y values based on the provided speed/interval and updates this Vector2.</>
+    },
+    {
+      signature: "lerp(float, float)",
+      returns: "void",
+      description: <>Interpolates/smoothes between this Vector2 and the specified value based on the provided speed/interval and updates this Vector2.</>
+    },
+    {
+      signature: "lerpInSeconds(Vector2, float)",
+      returns: "void",
+      description: <>Interpolates/smoothes between this Vector2 and the specified Vector2 based on the provided speed/interval in one second and updates this Vector2.</>
+    },
+    {
+      signature: "lerpInSeconds(float, float, float)",
+      returns: "void",
+      description: <>Interpolates/smoothes between this Vector2 and the specified X and Y values based on the provided speed/interval in one second and updates this Vector2.</>
+    },
+    {
+      signature: "lerpInSeconds(float, float)",
+      returns: "void",
+      description: <>Interpolates/smoothes between this Vector2 and the specified value based on the provided speed/interval in one second and updates this Vector2.</>
+    },
+    {
+      signature: "blend(Vector2, float)",
+      returns: "Vector2",
+      description: <>Blends between this Vector2 and the specified Vector2 based on the provided blend factor (0 to 1) and updates this Vector2.</>
+    },
+    {
+      signature: "blend(float, float, float)",
+      returns: "Vector2",
+      description: <>Blends between this Vector2 and the specified X and Y values based on the provided blend factor (0 to 1) and updates this Vector2.</>
+    },
+    {
+      signature: "blend(float, float)",
+      returns: "Vector2",
+      description: <>Blends between this Vector2 and the specified value based on the provided blend factor (0 to 1) and updates this Vector2.</>
+    },
+    {
+      signature: "blendLocal(Vector2, float)",
+      returns: "void",
+      description: <>Blends between this Vector2 and the specified Vector2 based on the provided blend factor (0 to 1) and updates this Vector2.</>
+    },
+    {
+      signature: "blendLocal(float, float, float)",
+      returns: "void",
+      description: <>Blends between this Vector2 and the specified X and Y values based on the provided blend factor (0 to 1) and updates this Vector2.</>
+    },
+    {
+      signature: "blendLocal(float, float)",
+      returns: "void",
+      description: <>Blends between this Vector2 and the specified value based on the provided blend factor (0 to 1) and updates this Vector2.</>
+    },
+    {
+      signature: "normalize()",
+      returns: "Vector2",
+      description: <>Returns a normalized copy of this Vector2 (length equals 1).</>
+    },
+    {
+      signature: "normalizeLocal()",
+      returns: "void",
+      description: <>Normalizes this Vector2 (sets its length to 1).</>
+    },
+    {
+      signature: "rotateLocal(float)",
+      returns: "void",
+      description: <>Rotates this Vector2 by the specified angle (in degrees) and updates this Vector2.</>
+    },
+    {
+      signature: "length()",
+      returns: "float",
+      description: <>Returns the length (magnitude) of this Vector2.</>
+    },
+    {
+      signature: "sqrLength()",
+      returns: "float",
+      description: <>Returns the squared length of this Vector2. Faster than length() as it doesn't use a square root; useful for comparing distances.</>
+    },
+    {
+      signature: "distance(Vector2)",
+      returns: "float",
+      description: <>Returns the distance between this Vector2 and the specified Vector2.</>
+    },
+    {
+      signature: "sqrDistance(Vector2)",
+      returns: "float",
+      description: <>Returns the squared distance between this Vector2 and the specified Vector2. Faster than distance() as it doesn't use a square root; useful for comparing distances.</>
+    },
+    {
+      signature: "dot(Vector2)",
+      returns: "float",
+      description: <>Returns the dot product of this Vector2 and the specified Vector2.</>
+    },
+    {
+      signature: "dot(float, float)",
+      returns: "float",
+      description: <>Returns the dot product of this Vector2 and the specified X and Y values.</>
+    },
+    {
+      signature: "dot(float)",
+      returns: "float",
+      description: <>Returns the dot product of this Vector2 and the specified value, used for both components.</>
+    },
+    {
+      signature: "cross(Vector2)",
+      returns: "Vector3",
+      description: <>Returns the cross product of this Vector2 and the specified Vector2 as a Vector3.</>
+    },
+    {
+      signature: "cross(float, float)",
+      returns: "Vector3",
+      description: <>Returns the cross product of this Vector2 and the specified X and Y values as a Vector3.</>
+    },
+    {
+      signature: "copy()",
+      returns: "Vector2",
+      description: <>Returns a copy of this Vector2.</>
+    },
+    {
+      signature: "toString()",
+      returns: "String",
+      description: <>Returns a String representation of this Vector2.</>
+    },
+    {
+      signature: "toString(int)",
+      returns: "String",
+      description: <>Returns a String representation of this Vector2 with the specified number of decimal places.</>
+    },
+    {
+      signature: "equals(Object)",
+      returns: "boolean",
+      description: <>Checks if this Vector2 is equal to the specified object.</>
+    },
+    {
+      signature: "pointerEquals(Object)",
+      returns: "boolean",
+      description: <>Checks if this Vector2 is the same instance as the specified object.</>
+    },
+    {
+      signature: "notEquals(Object)",
+      returns: "boolean",
+      description: <>Checks if this Vector2 is not equal to the specified object.</>
+    },
+    {
+      signature: "greaterThan(Object)",
+      returns: "boolean",
+      description: <>Checks if this Vector2 is greater than the specified object (by magnitude).</>
+    },
+    {
+      signature: "greaterThan(float)",
+      returns: "boolean",
+      description: <>Checks if this Vector2 is greater than the specified value (by magnitude).</>
+    },
+    {
+      signature: "greaterThan(int)",
+      returns: "boolean",
+      description: <>Checks if this Vector2 is greater than the specified value (by magnitude).</>
+    },
+    {
+      signature: "greaterThan(long)",
+      returns: "boolean",
+      description: <>Checks if this Vector2 is greater than the specified value (by magnitude).</>
+    },
+    {
+      signature: "greaterThan(double)",
+      returns: "boolean",
+      description: <>Checks if this Vector2 is greater than the specified value (by magnitude).</>
+    },
+    {
+      signature: "greaterOrEqualsThan(Object)",
+      returns: "boolean",
+      description: <>Checks if this Vector2 is greater than or equal to the specified object (by magnitude).</>
+    },
+    {
+      signature: "greaterOrEqualsThan(float)",
+      returns: "boolean",
+      description: <>Checks if this Vector2 is greater than or equal to the specified value (by magnitude).</>
+    },
+    {
+      signature: "greaterOrEqualsThan(int)",
+      returns: "boolean",
+      description: <>Checks if this Vector2 is greater than or equal to the specified value (by magnitude).</>
+    },
+    {
+      signature: "greaterOrEqualsThan(long)",
+      returns: "boolean",
+      description: <>Checks if this Vector2 is greater than or equal to the specified value (by magnitude).</>
+    },
+    {
+      signature: "greaterOrEqualsThan(double)",
+      returns: "boolean",
+      description: <>Checks if this Vector2 is greater than or equal to the specified value (by magnitude).</>
+    },
+    {
+      signature: "lessThan(Object)",
+      returns: "boolean",
+      description: <>Checks if this Vector2 is less than the specified object (by magnitude).</>
+    },
+    {
+      signature: "lessThan(float)",
+      returns: "boolean",
+      description: <>Checks if this Vector2 is less than the specified value (by magnitude).</>
+    },
+    {
+      signature: "lessThan(int)",
+      returns: "boolean",
+      description: <>Checks if this Vector2 is less than the specified value (by magnitude).</>
+    },
+    {
+      signature: "lessThan(long)",
+      returns: "boolean",
+      description: <>Checks if this Vector2 is less than the specified value (by magnitude).</>
+    },
+    {
+      signature: "lessThan(double)",
+      returns: "boolean",
+      description: <>Checks if this Vector2 is less than the specified value (by magnitude).</>
+    },
+    {
+      signature: "lessOrEqualsThan(Object)",
+      returns: "boolean",
+      description: <>Checks if this Vector2 is less than or equal to the specified object (by magnitude).</>
+    },
+    {
+      signature: "lessOrEqualsThan(float)",
+      returns: "boolean",
+      description: <>Checks if this Vector2 is less than or equal to the specified value (by magnitude).</>
+    },
+    {
+      signature: "lessOrEqualsThan(int)",
+      returns: "boolean",
+      description: <>Checks if this Vector2 is less than or equal to the specified value (by magnitude).</>
+    },
+    {
+      signature: "lessOrEqualsThan(long)",
+      returns: "boolean",
+      description: <>Checks if this Vector2 is less than or equal to the specified value (by magnitude).</>
+    },
+    {
+      signature: "lessOrEqualsThan(double)",
+      returns: "boolean",
+      description: <>Checks if this Vector2 is less than or equal to the specified value (by magnitude).</>
+    },
+    {
+      signature: "sum(Object)",
+      returns: "T",
+      description: <>Returns the sum of this Vector2 and the specified object.</>
+    },
+    {
+      signature: "sumEqual(Object)",
+      returns: "void",
+      description: <>Sums the specified object to this Vector2.</>
+    },
+    {
+      signature: "div(Object)",
+      returns: "T",
+      description: <>Returns the division of this Vector2 by the specified object.</>
+    },
+    {
+      signature: "divEqual(Object)",
+      returns: "void",
+      description: <>Divides this Vector2 by the specified object.</>
+    },
+    {
+      signature: "mul(Object)",
+      returns: "T",
+      description: <>Returns the multiplication of this Vector2 by the specified object.</>
+    },
+    {
+      signature: "mulEqual(Object)",
+      returns: "void",
+      description: <>Multiplies this Vector2 by the specified object.</>
+    },
+    {
+      signature: "sub(Object)",
+      returns: "T",
+      description: <>Returns the subtraction of this Vector2 and the specified object.</>
+    },
+    {
+      signature: "subEqual(Object)",
+      returns: "void",
+      description: <>Subtracts the specified object from this Vector2.</>
+    },
+    {
+      signature: "addAdd()",
+      returns: "void",
+      description: <>Increments this Vector2 by 1.</>
+    },
+    {
+      signature: "removeRemove()",
+      returns: "void",
+      description: <>Decrements this Vector2 by 1.</>
+    },
+    {
+      signature: "serializeToString()",
+      returns: "String",
+      description: <>Returns a String representation of this Vector2 in the format '[X;Y]'.</>
+    },
+    {
+      signature: "deserializeLocal(String)",
+      returns: "void",
+      description: <>Deserializes a String in the format '[X;Y]' and sets the values to this Vector2.</>
+    }
+  ]}
+  staticMethods={[
+    {
+      signature: "genericInterface()",
+      returns: "GenericClassInspectorEntry",
+      description: <>Executes <code>genericInterface</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "inspectorController()",
+      returns: "ClassInspectorEntry",
+      description: <>Executes <code>inspectorController</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "zero()",
+      returns: "Vector2",
+      description: <>Returns a Vector2 with all components set to zero (0, 0).</>
+    },
+    {
+      signature: "rotateAroundPivot(Vector2, float)",
+      returns: "Vector2",
+      description: <>Rotates the specified Vector2 by the given angle (in degrees) and returns the result.</>
+    },
+    {
+      signature: "rotateAroundPivot(Vector2, Vector2, float)",
+      returns: "Vector2",
+      description: <>Rotates the specified Vector2 around the given pivot point by the specified angle (in degrees) and returns the result.</>
+    },
+    {
+      signature: "isNull(Object)",
+      returns: "boolean",
+      description: <>Checks if the specified object is null.</>
+    }
+  ]}
+/>

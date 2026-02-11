@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # ListStream
 
 Complete API reference for `ListStream`, including constructors, attributes, virtual attributes, and methods.
@@ -14,28 +16,61 @@ Complete API reference for `ListStream`, including constructors, attributes, vir
 public class ListStream
 ```
 
-## Constructors (5)
-
-| Signature | Description |
-| --- | --- |
-| ListStream([List]) | Executes `ListStream` and returns after the underlying engine call finishes. |
-| ListStream([List], [int], [ListStreamListener]) | Creates a new instance of ListStream. |
-| ListStream([Object], [List], [int], [ListStreamListener]) | Creates a new instance of ListStream. |
-| ListStream([List], [int], [int], [ListStreamListener]) | Creates a new instance of ListStream. |
-| ListStream([Object], [List], [int], [int], [ListStreamListener]) | Creates a new instance of ListStream. |
-
-## Attributes (3)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `HALF_THREADS` | [int] | Represents the `HALF_THREADS` value stored on this instance. Read or assign to update the property. |
-| `MAX_THREADS` | [int] | Represents the `MAX_THREADS` value stored on this instance. Read or assign to update the property. |
-| `FIXED_THREADS` | [int] | Represents the `FIXED_THREADS` value stored on this instance. Read or assign to update the property. |
-
-## Methods (3)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `setThreadsSequence(int)` | `void` | Sets or updates the threads sequence. |
-| `setThreadsCount(int)` | `void` | Sets or updates the threads count. |
-| `setListStreamListener(ListStreamListener)` | `void` | Sets or updates the list stream listener. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "ListStream(List)",
+      description: <>Executes <code>ListStream</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "ListStream(List, int, ListStreamListener)",
+      description: <>Creates a new instance of ListStream.</>
+    },
+    {
+      signature: "ListStream(Object, List, int, ListStreamListener)",
+      description: <>Creates a new instance of ListStream.</>
+    },
+    {
+      signature: "ListStream(List, int, int, ListStreamListener)",
+      description: <>Creates a new instance of ListStream.</>
+    },
+    {
+      signature: "ListStream(Object, List, int, int, ListStreamListener)",
+      description: <>Creates a new instance of ListStream.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "HALF_THREADS",
+      type: "int",
+      description: <>Represents the <code>HALF_THREADS</code> value stored on this instance. Read or assign to update the property.</>
+    },
+    {
+      name: "MAX_THREADS",
+      type: "int",
+      description: <>Represents the <code>MAX_THREADS</code> value stored on this instance. Read or assign to update the property.</>
+    },
+    {
+      name: "FIXED_THREADS",
+      type: "int",
+      description: <>Represents the <code>FIXED_THREADS</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "setThreadsSequence(int)",
+      returns: "void",
+      description: <>Sets or updates the threads sequence.</>
+    },
+    {
+      signature: "setThreadsCount(int)",
+      returns: "void",
+      description: <>Sets or updates the threads count.</>
+    },
+    {
+      signature: "setListStreamListener(ListStreamListener)",
+      returns: "void",
+      description: <>Sets or updates the list stream listener.</>
+    }
+  ]}
+/>

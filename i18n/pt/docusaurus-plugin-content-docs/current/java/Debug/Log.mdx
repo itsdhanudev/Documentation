@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Log
 
 Referência completa da API de `Log`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,30 +16,76 @@ Referência completa da API de `Log`, incluindo construtores, atributos, atribut
 public class Log
 ```
 
-## Construtores (6)
-
-| Signature | Description |
-| --- | --- |
-| Log([ILog]) | Executa `Log` e retorna quando a chamada do motor termina. |
-| Log() | Executa `Log` e retorna quando a chamada do motor termina. |
-| Log([String]) | Cria uma nova instância de Log. |
-| Log([String], [String]) | Cria uma nova instância de Log. |
-| Log([String], [String], [String]) | Cria uma nova instância de Log. |
-| Log([String], [String], [String], [Color]) | Cria uma nova instância de Log. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `log` | [ILog] | Representa o valor de `log` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (6)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `color` | [Color] | `get/set` | Atributo virtual exposto por `getColor`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `link` | [String] | `get/set` | Atributo virtual exposto por `getLink`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `message` | [String] | `get/set` | Atributo virtual exposto por `getMessage`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `quantity` | [int] | `get/set` | Atributo virtual exposto por `getQuantity`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `tag` | [String] | `get/set` | Atributo virtual exposto por `getTag`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `tittle` | [String] | `get/set` | Atributo virtual exposto por `getTittle`. Acesse como um campo para ler ou escrever o valor subjacente. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "Log(ILog)",
+      description: <>Executa <code>Log</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "Log()",
+      description: <>Executa <code>Log</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "Log(String)",
+      description: <>Cria uma nova instância de Log.</>
+    },
+    {
+      signature: "Log(String, String)",
+      description: <>Cria uma nova instância de Log.</>
+    },
+    {
+      signature: "Log(String, String, String)",
+      description: <>Cria uma nova instância de Log.</>
+    },
+    {
+      signature: "Log(String, String, String, Color)",
+      description: <>Cria uma nova instância de Log.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "log",
+      type: "ILog",
+      description: <>Representa o valor de <code>log</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "color",
+      type: "Color",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getColor</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "link",
+      type: "String",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getLink</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "message",
+      type: "String",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getMessage</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "quantity",
+      type: "int",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getQuantity</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "tag",
+      type: "String",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getTag</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "tittle",
+      type: "String",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getTittle</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+/>

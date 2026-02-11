@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Gizmo
 
 Referência completa da API de `Gizmo`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,40 +16,339 @@ Referência completa da API de `Gizmo`, incluindo construtores, atributos, atrib
 public class Gizmo
 ```
 
-## Métodos Estáticos (33)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `drawPoint(Vector3, float)` | `void` | Desenha o objeto no contexto atual. |
-| `drawPoint(Vector3, float, Color)` | `void` | Desenha o objeto no contexto atual. |
-| `drawSphere(Vector3, float)` | `void` | Desenha o objeto no contexto atual. |
-| `drawSphere(Vector3, float, Color)` | `void` | Desenha o objeto no contexto atual. |
-| `drawSphere(Vector3, Vector3, Color)` | `void` | Desenha o objeto no contexto atual. |
-| `drawQuad(Vector3, float, Texture)` | `void` | Desenha o objeto no contexto atual. |
-| `drawQuad(Vector3, Vector3, Texture)` | `void` | Desenha o objeto no contexto atual. |
-| `drawQuad(Vector3, Vector3, Texture, Color)` | `void` | Desenha o objeto no contexto atual. |
-| `drawTransparentQuad(Vector3, Vector3, Texture)` | `void` | Executa `drawTransparentQuad` e retorna quando a chamada do motor termina. |
-| `drawTransparentQuad(Vector3, Vector3, Texture, boolean)` | `void` | Executa `drawTransparentQuad` e retorna quando a chamada do motor termina. |
-| `drawTransparentQuad(Vector3, Vector3, Texture, Color)` | `void` | Executa `drawTransparentQuad` e retorna quando a chamada do motor termina. |
-| `drawTransparentQuad(Vector3, Vector3, Texture, Color, boolean)` | `void` | Executa `drawTransparentQuad` e retorna quando a chamada do motor termina. |
-| `drawCube(Vector3, float)` | `void` | Desenha o objeto no contexto atual. |
-| `drawCube(Vector3, float, Color)` | `void` | Desenha o objeto no contexto atual. |
-| `drawCube(Vector3, Vector3)` | `void` | Desenha o objeto no contexto atual. |
-| `drawCube(Vector3, Vector3, Color)` | `void` | Desenha o objeto no contexto atual. |
-| `drawCube(Vector3, Vector3, Color, Texture)` | `void` | Executa `drawCube` e retorna quando a chamada do motor termina. |
-| `drawCube(Vector3, float, Texture)` | `void` | Executa `drawCube` e retorna quando a chamada do motor termina. |
-| `drawTransparentCube(Vector3, Vector3, Color)` | `void` | Executa `drawTransparentCube` e retorna quando a chamada do motor termina. |
-| `drawVertex(Vertex, Vector3)` | `void` | Desenha o objeto no contexto atual. |
-| `drawVertex(Vertex, Vector3, Color)` | `void` | Desenha o objeto no contexto atual. |
-| `drawVertex(Vertex, Vector3, Quaternion)` | `void` | Desenha o objeto no contexto atual. |
-| `drawVertex(Vertex, Vector3, Vector3)` | `void` | Desenha o objeto no contexto atual. |
-| `drawVertex(Vertex, Vector3, Quaternion, Vector3)` | `void` | Desenha o objeto no contexto atual. |
-| `drawVertex(Vertex, Vector3, Quaternion, Vector3, Color)` | `void` | Desenha o objeto no contexto atual. |
-| `drawWireframeVertex(Vertex, Vector3, Quaternion, Vector3)` | `void` | Executa `drawWireframeVertex` e retorna quando a chamada do motor termina. |
-| `drawWireframeVertex(Vertex, Vector3, Quaternion, Vector3, Color)` | `void` | Executa `drawWireframeVertex` e retorna quando a chamada do motor termina. |
-| `drawWireframeVertex(Vertex, Vector3, Quaternion, Vector3, Color, Texture)` | `void` | Executa `drawWireframeVertex` e retorna quando a chamada do motor termina. |
-| `drawVertex(GizmoElement)` | `void` | Desenha o objeto no contexto atual. |
-| `drawGizmo(GizmoElement)` | `void` | Desenha o objeto no contexto atual. |
-| `drawElement(GizmoElement)` | `void` | Desenha o objeto no contexto atual. |
-| `draw(GizmoElement)` | `void` | Desenha o objeto no contexto atual. |
-| `drawEngine(GizmoElement)` | `void` | Executa `drawEngine` e retorna quando a chamada do motor termina. |
+<ApiDoc
+  methods={[
+    {
+      signature: "drawPoint(Vector3, float)",
+      returns: "void",
+      description: <>Desenha o objeto no contexto atual.</>
+    },
+    {
+      signature: "drawPoint(Vector3, float, Color)",
+      returns: "void",
+      description: <>Desenha o objeto no contexto atual.</>
+    },
+    {
+      signature: "drawSphere(Vector3, float)",
+      returns: "void",
+      description: <>Desenha o objeto no contexto atual.</>
+    },
+    {
+      signature: "drawSphere(Vector3, float, Color)",
+      returns: "void",
+      description: <>Desenha o objeto no contexto atual.</>
+    },
+    {
+      signature: "drawSphere(Vector3, Vector3, Color)",
+      returns: "void",
+      description: <>Desenha o objeto no contexto atual.</>
+    },
+    {
+      signature: "drawQuad(Vector3, float, Texture)",
+      returns: "void",
+      description: <>Desenha o objeto no contexto atual.</>
+    },
+    {
+      signature: "drawQuad(Vector3, Vector3, Texture)",
+      returns: "void",
+      description: <>Desenha o objeto no contexto atual.</>
+    },
+    {
+      signature: "drawQuad(Vector3, Vector3, Texture, Color)",
+      returns: "void",
+      description: <>Desenha o objeto no contexto atual.</>
+    },
+    {
+      signature: "drawTransparentQuad(Vector3, Vector3, Texture)",
+      returns: "void",
+      description: <>Executa <code>drawTransparentQuad</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "drawTransparentQuad(Vector3, Vector3, Texture, boolean)",
+      returns: "void",
+      description: <>Executa <code>drawTransparentQuad</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "drawTransparentQuad(Vector3, Vector3, Texture, Color)",
+      returns: "void",
+      description: <>Executa <code>drawTransparentQuad</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "drawTransparentQuad(Vector3, Vector3, Texture, Color, boolean)",
+      returns: "void",
+      description: <>Executa <code>drawTransparentQuad</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "drawCube(Vector3, float)",
+      returns: "void",
+      description: <>Desenha o objeto no contexto atual.</>
+    },
+    {
+      signature: "drawCube(Vector3, float, Color)",
+      returns: "void",
+      description: <>Desenha o objeto no contexto atual.</>
+    },
+    {
+      signature: "drawCube(Vector3, Vector3)",
+      returns: "void",
+      description: <>Desenha o objeto no contexto atual.</>
+    },
+    {
+      signature: "drawCube(Vector3, Vector3, Color)",
+      returns: "void",
+      description: <>Desenha o objeto no contexto atual.</>
+    },
+    {
+      signature: "drawCube(Vector3, Vector3, Color, Texture)",
+      returns: "void",
+      description: <>Executa <code>drawCube</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "drawCube(Vector3, float, Texture)",
+      returns: "void",
+      description: <>Executa <code>drawCube</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "drawTransparentCube(Vector3, Vector3, Color)",
+      returns: "void",
+      description: <>Executa <code>drawTransparentCube</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "drawVertex(Vertex, Vector3)",
+      returns: "void",
+      description: <>Desenha o objeto no contexto atual.</>
+    },
+    {
+      signature: "drawVertex(Vertex, Vector3, Color)",
+      returns: "void",
+      description: <>Desenha o objeto no contexto atual.</>
+    },
+    {
+      signature: "drawVertex(Vertex, Vector3, Quaternion)",
+      returns: "void",
+      description: <>Desenha o objeto no contexto atual.</>
+    },
+    {
+      signature: "drawVertex(Vertex, Vector3, Vector3)",
+      returns: "void",
+      description: <>Desenha o objeto no contexto atual.</>
+    },
+    {
+      signature: "drawVertex(Vertex, Vector3, Quaternion, Vector3)",
+      returns: "void",
+      description: <>Desenha o objeto no contexto atual.</>
+    },
+    {
+      signature: "drawVertex(Vertex, Vector3, Quaternion, Vector3, Color)",
+      returns: "void",
+      description: <>Desenha o objeto no contexto atual.</>
+    },
+    {
+      signature: "drawWireframeVertex(Vertex, Vector3, Quaternion, Vector3)",
+      returns: "void",
+      description: <>Executa <code>drawWireframeVertex</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "drawWireframeVertex(Vertex, Vector3, Quaternion, Vector3, Color)",
+      returns: "void",
+      description: <>Executa <code>drawWireframeVertex</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "drawWireframeVertex(Vertex, Vector3, Quaternion, Vector3, Color, Texture)",
+      returns: "void",
+      description: <>Executa <code>drawWireframeVertex</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "drawVertex(GizmoElement)",
+      returns: "void",
+      description: <>Desenha o objeto no contexto atual.</>
+    },
+    {
+      signature: "drawGizmo(GizmoElement)",
+      returns: "void",
+      description: <>Desenha o objeto no contexto atual.</>
+    },
+    {
+      signature: "drawElement(GizmoElement)",
+      returns: "void",
+      description: <>Desenha o objeto no contexto atual.</>
+    },
+    {
+      signature: "draw(GizmoElement)",
+      returns: "void",
+      description: <>Desenha o objeto no contexto atual.</>
+    },
+    {
+      signature: "drawEngine(GizmoElement)",
+      returns: "void",
+      description: <>Executa <code>drawEngine</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+  staticMethods={[
+    {
+      signature: "drawPoint(Vector3, float)",
+      returns: "void",
+      description: <>Desenha o objeto no contexto atual.</>
+    },
+    {
+      signature: "drawPoint(Vector3, float, Color)",
+      returns: "void",
+      description: <>Desenha o objeto no contexto atual.</>
+    },
+    {
+      signature: "drawSphere(Vector3, float)",
+      returns: "void",
+      description: <>Desenha o objeto no contexto atual.</>
+    },
+    {
+      signature: "drawSphere(Vector3, float, Color)",
+      returns: "void",
+      description: <>Desenha o objeto no contexto atual.</>
+    },
+    {
+      signature: "drawSphere(Vector3, Vector3, Color)",
+      returns: "void",
+      description: <>Desenha o objeto no contexto atual.</>
+    },
+    {
+      signature: "drawQuad(Vector3, float, Texture)",
+      returns: "void",
+      description: <>Desenha o objeto no contexto atual.</>
+    },
+    {
+      signature: "drawQuad(Vector3, Vector3, Texture)",
+      returns: "void",
+      description: <>Desenha o objeto no contexto atual.</>
+    },
+    {
+      signature: "drawQuad(Vector3, Vector3, Texture, Color)",
+      returns: "void",
+      description: <>Desenha o objeto no contexto atual.</>
+    },
+    {
+      signature: "drawTransparentQuad(Vector3, Vector3, Texture)",
+      returns: "void",
+      description: <>Executa <code>drawTransparentQuad</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "drawTransparentQuad(Vector3, Vector3, Texture, boolean)",
+      returns: "void",
+      description: <>Executa <code>drawTransparentQuad</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "drawTransparentQuad(Vector3, Vector3, Texture, Color)",
+      returns: "void",
+      description: <>Executa <code>drawTransparentQuad</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "drawTransparentQuad(Vector3, Vector3, Texture, Color, boolean)",
+      returns: "void",
+      description: <>Executa <code>drawTransparentQuad</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "drawCube(Vector3, float)",
+      returns: "void",
+      description: <>Desenha o objeto no contexto atual.</>
+    },
+    {
+      signature: "drawCube(Vector3, float, Color)",
+      returns: "void",
+      description: <>Desenha o objeto no contexto atual.</>
+    },
+    {
+      signature: "drawCube(Vector3, Vector3)",
+      returns: "void",
+      description: <>Desenha o objeto no contexto atual.</>
+    },
+    {
+      signature: "drawCube(Vector3, Vector3, Color)",
+      returns: "void",
+      description: <>Desenha o objeto no contexto atual.</>
+    },
+    {
+      signature: "drawCube(Vector3, Vector3, Color, Texture)",
+      returns: "void",
+      description: <>Executa <code>drawCube</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "drawCube(Vector3, float, Texture)",
+      returns: "void",
+      description: <>Executa <code>drawCube</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "drawTransparentCube(Vector3, Vector3, Color)",
+      returns: "void",
+      description: <>Executa <code>drawTransparentCube</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "drawVertex(Vertex, Vector3)",
+      returns: "void",
+      description: <>Desenha o objeto no contexto atual.</>
+    },
+    {
+      signature: "drawVertex(Vertex, Vector3, Color)",
+      returns: "void",
+      description: <>Desenha o objeto no contexto atual.</>
+    },
+    {
+      signature: "drawVertex(Vertex, Vector3, Quaternion)",
+      returns: "void",
+      description: <>Desenha o objeto no contexto atual.</>
+    },
+    {
+      signature: "drawVertex(Vertex, Vector3, Vector3)",
+      returns: "void",
+      description: <>Desenha o objeto no contexto atual.</>
+    },
+    {
+      signature: "drawVertex(Vertex, Vector3, Quaternion, Vector3)",
+      returns: "void",
+      description: <>Desenha o objeto no contexto atual.</>
+    },
+    {
+      signature: "drawVertex(Vertex, Vector3, Quaternion, Vector3, Color)",
+      returns: "void",
+      description: <>Desenha o objeto no contexto atual.</>
+    },
+    {
+      signature: "drawWireframeVertex(Vertex, Vector3, Quaternion, Vector3)",
+      returns: "void",
+      description: <>Executa <code>drawWireframeVertex</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "drawWireframeVertex(Vertex, Vector3, Quaternion, Vector3, Color)",
+      returns: "void",
+      description: <>Executa <code>drawWireframeVertex</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "drawWireframeVertex(Vertex, Vector3, Quaternion, Vector3, Color, Texture)",
+      returns: "void",
+      description: <>Executa <code>drawWireframeVertex</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "drawVertex(GizmoElement)",
+      returns: "void",
+      description: <>Desenha o objeto no contexto atual.</>
+    },
+    {
+      signature: "drawGizmo(GizmoElement)",
+      returns: "void",
+      description: <>Desenha o objeto no contexto atual.</>
+    },
+    {
+      signature: "drawElement(GizmoElement)",
+      returns: "void",
+      description: <>Desenha o objeto no contexto atual.</>
+    },
+    {
+      signature: "draw(GizmoElement)",
+      returns: "void",
+      description: <>Desenha o objeto no contexto atual.</>
+    },
+    {
+      signature: "drawEngine(GizmoElement)",
+      returns: "void",
+      description: <>Executa <code>drawEngine</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+/>

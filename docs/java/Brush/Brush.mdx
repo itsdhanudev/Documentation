@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Brush
 
 Complete API reference for `Brush`, including constructors, attributes, virtual attributes, and methods.
@@ -14,9 +16,12 @@ Complete API reference for `Brush`, including constructors, attributes, virtual 
 public interface Brush
 ```
 
-## Methods (2)
-
-| Signature                      | Returns | Description |
-| -------------------------------- | --- | --- |
-| `@MethodArgs([\{"x"], ["y"\}])` | `void` | Performs the @MethodArgs operation. |
-| `getIntensity(float, float)` | `float` | Executes `getIntensity` and returns after the underlying engine call finishes. |
+<ApiDoc
+  methods={[
+    {
+      signature: "getIntensity(float, float)",
+      returns: "float",
+      description: <>Executes <code>getIntensity</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

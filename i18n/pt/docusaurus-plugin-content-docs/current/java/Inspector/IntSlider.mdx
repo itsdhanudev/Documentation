@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # IntSlider
 
 Referência completa da API de `IntSlider`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,38 +16,72 @@ Referência completa da API de `IntSlider`, incluindo construtores, atributos, a
 public class IntSlider
 ```
 
-## Construtores (1)
-
-| Signature | Description |
-| --- | --- |
-| IntSlider([int], [int], [int]) | Cria uma nova instância de IntSlider. |
-
-## Atributos (3)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `value` | [int] | Representa o valor de `value` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `min` | [int] | Representa o valor de `min` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `max` | [int] | Representa o valor de `max` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (3)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `max` | [int] | `get/set` | Retorna a propriedade `propriedade `valor máximo permitido do controle deslizante``. |
-| `min` | [int] | `get/set` | Retorna a propriedade `propriedade `valor mínimo permitido do controle deslizante``. |
-| `value` | [int] | `get/set` | Retorna a propriedade `propriedade `valor atual do controle deslizante``. |
-
-## Métodos (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `toString()` | `String` | Retorna uma representação em string do IntSlider. |
-| `serialize()` | `String` | Serializa o InttSlider em uma string no formato '[value;min;max;step]'. |
-
-## Métodos Estáticos (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `inspectorController()` | `ClassInspectorEntry` | Executa `inspectorController` e retorna quando a chamada do motor termina. |
-| `deserialize(String)` | `IntSlider` | Desserializa uma string para criar uma instância de IntSlider. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "IntSlider(int, int, int)",
+      description: <>Cria uma nova instância de IntSlider.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "value",
+      type: "int",
+      description: <>Representa o valor de <code>value</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "min",
+      type: "int",
+      description: <>Representa o valor de <code>min</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "max",
+      type: "int",
+      description: <>Representa o valor de <code>max</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "max",
+      type: "int",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>propriedade </code>valor máximo permitido do controle deslizante``.</>
+    },
+    {
+      name: "min",
+      type: "int",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>propriedade </code>valor mínimo permitido do controle deslizante``.</>
+    },
+    {
+      name: "value",
+      type: "int",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>propriedade </code>valor atual do controle deslizante``.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "toString()",
+      returns: "String",
+      description: <>Retorna uma representação em string do IntSlider.</>
+    },
+    {
+      signature: "serialize()",
+      returns: "String",
+      description: <>Serializa o InttSlider em uma string no formato '[value;min;max;step]'.</>
+    }
+  ]}
+  staticMethods={[
+    {
+      signature: "inspectorController()",
+      returns: "ClassInspectorEntry",
+      description: <>Executa <code>inspectorController</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "deserialize(String)",
+      returns: "IntSlider",
+      description: <>Desserializa uma string para criar uma instância de IntSlider.</>
+    }
+  ]}
+/>

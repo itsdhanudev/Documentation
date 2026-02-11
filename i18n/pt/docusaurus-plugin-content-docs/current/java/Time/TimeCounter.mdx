@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # TimeCounter
 
 Referência completa da API de `TimeCounter`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,22 +16,49 @@ Referência completa da API de `TimeCounter`, incluindo construtores, atributos,
 public class TimeCounter
 ```
 
-## Construtores (1)
-
-| Signature | Description |
-| --- | --- |
-| TimeCounter() | Executa `TimeCounter` e retorna quando a chamada do motor termina. |
-
-## Atributos Virtuais (2)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `elapsedMilliseconds` | [float] | `get` | Retorna a propriedade `propriedade `tempo decorrido em milissegundos``. |
-| `elapsedSeconds` | [float] | `get` | Retorna a propriedade `propriedade `tempo decorrido em segundos``. |
-
-## Métodos (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `start()` | `void` | Inicia o contador de tempo. |
-| `finish()` | `void` | Finaliza o contador de tempo e calcula o tempo decorrido. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "TimeCounter()",
+      description: <>Executa <code>TimeCounter</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "elapsedMilliseconds",
+      type: "float",
+      description: <><code>get</code></>
+    },
+    {
+      name: "elapsedSeconds",
+      type: "float",
+      description: <><code>get</code></>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "elapsedMilliseconds",
+      type: "float",
+      access: "get",
+      description: <>Retorna a propriedade <code>propriedade </code>tempo decorrido em milissegundos``.</>
+    },
+    {
+      name: "elapsedSeconds",
+      type: "float",
+      access: "get",
+      description: <>Retorna a propriedade <code>propriedade </code>tempo decorrido em segundos``.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "start()",
+      returns: "void",
+      description: <>Inicia o contador de tempo.</>
+    },
+    {
+      signature: "finish()",
+      returns: "void",
+      description: <>Finaliza o contador de tempo e calcula o tempo decorrido.</>
+    }
+  ]}
+/>

@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # ConnectionListener
 
 Complete API reference for `ConnectionListener`, including constructors, attributes, virtual attributes, and methods.
@@ -14,11 +16,22 @@ Complete API reference for `ConnectionListener`, including constructors, attribu
 public interface ConnectionListener
 ```
 
-## Methods (4)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `onConnected()` | `void` | Executes `onConnected` and returns after the underlying engine call finishes. |
-| `onDisconnected()` | `void` | Executes `onDisconnected` and returns after the underlying engine call finishes. |
-| `@MethodArgs([\{"error"], ["code"\}])` | `void` | Performs the @MethodArgs operation. |
-| `onError(String, int)` | `void` | Executes `onError` and returns after the underlying engine call finishes. |
+<ApiDoc
+  methods={[
+    {
+      signature: "onConnected()",
+      returns: "void",
+      description: <>Executes <code>onConnected</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "onDisconnected()",
+      returns: "void",
+      description: <>Executes <code>onDisconnected</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "onError(String, int)",
+      returns: "void",
+      description: <>Executes <code>onError</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # UIAspectRatio
 
 Complete API reference for `UIAspectRatio`, including constructors, attributes, virtual attributes, and methods.
@@ -14,23 +16,40 @@ Complete API reference for `UIAspectRatio`, including constructors, attributes, 
 public class UIAspectRatio extends Component
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| UIAspectRatio([UIAspectRatio]) | Executes `UIAspectRatio` and returns after the underlying engine call finishes. |
-| UIAspectRatio([Engine]) | Executes `UIAspectRatio` and returns after the underlying engine call finishes. |
-| UIAspectRatio() | Executes `UIAspectRatio` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [UIAspectRatio] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (2)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `mode` | [Mode] | `get/set` | Virtual attribute exposed by `getMode`. Access it like a field to read or write the underlying value. |
-| `proportion` | [float] | `get/set` | Virtual attribute exposed by `getProportion`. Access it like a field to read or write the underlying value. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "UIAspectRatio(UIAspectRatio)",
+      description: <>Executes <code>UIAspectRatio</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "UIAspectRatio(Engine)",
+      description: <>Executes <code>UIAspectRatio</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "UIAspectRatio()",
+      description: <>Executes <code>UIAspectRatio</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "UIAspectRatio",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "mode",
+      type: "Mode",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getMode</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "proportion",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getProportion</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+/>

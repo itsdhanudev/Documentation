@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # UIRectangularMask
 
 Complete API reference for `UIRectangularMask`, including constructors, attributes, virtual attributes, and methods.
@@ -14,16 +16,26 @@ Complete API reference for `UIRectangularMask`, including constructors, attribut
 public class UIRectangularMask extends Component
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| UIRectangularMask([UIRectangularMask]) | Executes `UIRectangularMask` and returns after the underlying engine call finishes. |
-| UIRectangularMask([Engine]) | Executes `UIRectangularMask` and returns after the underlying engine call finishes. |
-| UIRectangularMask() | Creates a new instance of UIRectangularMask. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [UIRectangularMask] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "UIRectangularMask(UIRectangularMask)",
+      description: <>Executes <code>UIRectangularMask</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "UIRectangularMask(Engine)",
+      description: <>Executes <code>UIRectangularMask</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "UIRectangularMask()",
+      description: <>Creates a new instance of UIRectangularMask.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "UIRectangularMask",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+/>

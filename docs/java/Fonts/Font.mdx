@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Font
 
 Complete API reference for `Font`, including constructors, attributes, virtual attributes, and methods.
@@ -14,21 +16,29 @@ Complete API reference for `Font`, including constructors, attributes, virtual a
 public class Font
 ```
 
-## Constructors (2)
-
-| Signature | Description |
-| --- | --- |
-| Font([Font]) | Executes `Font` and returns after the underlying engine call finishes. |
-| Font([Engine]) | Executes `Font` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `font` | [Font] | Represents the `font` value stored on this instance. Read or assign to update the property. |
-
-## Methods (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getResolution()` | `int` | Returns the resolution of the font. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "Font(Font)",
+      description: <>Executes <code>Font</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "Font(Engine)",
+      description: <>Executes <code>Font</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "font",
+      type: "Font",
+      description: <>Represents the <code>font</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "getResolution()",
+      returns: "int",
+      description: <>Returns the resolution of the font.</>
+    }
+  ]}
+/>

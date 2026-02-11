@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Touch
 
 Referência completa da API de `Touch`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,37 +16,96 @@ Referência completa da API de `Touch`, incluindo construtores, atributos, atrib
 public class Touch
 ```
 
-## Construtores (2)
-
-| Signature | Description |
-| --- | --- |
-| Touch([Touch]) | Executa `Touch` e retorna quando a chamada do motor termina. |
-| Touch() | Executa `Touch` e retorna quando a chamada do motor termina. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `touch` | [Touch] | Representa o valor de `touch` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (10)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `down` | [boolean] | `get/set` | Verifica se o toque acabou de ser pressionado. Retorna verdadeiro apenas no primeiro quadro em que ele foi pressionado. |
-| `fromMouse` | [boolean] | `get` | Retorna se o toque veio de um clique de um mouse. |
-| `isFromMouse` | [boolean] | `set` | Define se esse toque veio de um mouse. |
-| `longDown` | [boolean] | `get/set` | Verifica se o toque acabou de ser pressionado por muito tempo. Retorna verdadeiro apenas no primeiro quadro em que ele foi pressionado por muito tempo. |
-| `longPressed` | [boolean] | `get/set` | Verifica se o toque está sendo mantido pressionado por um longo período. Retorna verdadeiro em todos os quadros enquanto ele permanecer pressionado por muito tempo. |
-| `position` | [Vector2] | `get/set` | Retorna a propriedade `posição do toque`. |
-| `pressed` | [boolean] | `get/set` | Verifica se o toque está sendo mantido pressionado. Retorna verdadeiro em todos os quadros enquanto ele permanecer pressionado. |
-| `slide` | [Vector2] | `get/set` | Retorna a propriedade `propriedade `vetor de deslize do toque``. |
-| `slided` | [boolean] | `get/set` | Verifica se o toque deslizou. |
-| `up` | [boolean] | `get/set` | Verifica se o toque acabou de ser liberado. Retorna verdadeiro apenas no primeiro quadro após ele ser liberado. |
-
-## Métodos (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `isPerformClick()` | `boolean` | Executa `isPerformClick` e retorna quando a chamada do motor termina. |
-| `setPerformClick()` | `void` | Executa `setPerformClick` e retorna quando a chamada do motor termina. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "Touch(Touch)",
+      description: <>Executa <code>Touch</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "Touch()",
+      description: <>Executa <code>Touch</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "touch",
+      type: "Touch",
+      description: <>Representa o valor de <code>touch</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "down",
+      type: "boolean",
+      access: "get/set",
+      description: <>Verifica se o toque acabou de ser pressionado. Retorna verdadeiro apenas no primeiro quadro em que ele foi pressionado.</>
+    },
+    {
+      name: "fromMouse",
+      type: "boolean",
+      access: "get",
+      description: <>Retorna se o toque veio de um clique de um mouse.</>
+    },
+    {
+      name: "isFromMouse",
+      type: "boolean",
+      access: "set",
+      description: <>Define se esse toque veio de um mouse.</>
+    },
+    {
+      name: "longDown",
+      type: "boolean",
+      access: "get/set",
+      description: <>Verifica se o toque acabou de ser pressionado por muito tempo. Retorna verdadeiro apenas no primeiro quadro em que ele foi pressionado por muito tempo.</>
+    },
+    {
+      name: "longPressed",
+      type: "boolean",
+      access: "get/set",
+      description: <>Verifica se o toque está sendo mantido pressionado por um longo período. Retorna verdadeiro em todos os quadros enquanto ele permanecer pressionado por muito tempo.</>
+    },
+    {
+      name: "position",
+      type: "Vector2",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>posição do toque</code>.</>
+    },
+    {
+      name: "pressed",
+      type: "boolean",
+      access: "get/set",
+      description: <>Verifica se o toque está sendo mantido pressionado. Retorna verdadeiro em todos os quadros enquanto ele permanecer pressionado.</>
+    },
+    {
+      name: "slide",
+      type: "Vector2",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>propriedade </code>vetor de deslize do toque``.</>
+    },
+    {
+      name: "slided",
+      type: "boolean",
+      access: "get/set",
+      description: <>Verifica se o toque deslizou.</>
+    },
+    {
+      name: "up",
+      type: "boolean",
+      access: "get/set",
+      description: <>Verifica se o toque acabou de ser liberado. Retorna verdadeiro apenas no primeiro quadro após ele ser liberado.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "isPerformClick()",
+      returns: "boolean",
+      description: <>Executa <code>isPerformClick</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "setPerformClick()",
+      returns: "void",
+      description: <>Executa <code>setPerformClick</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+/>

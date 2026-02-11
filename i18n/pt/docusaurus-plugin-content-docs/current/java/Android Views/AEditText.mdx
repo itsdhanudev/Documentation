@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # AEditText
 
 Referência completa da API de `AEditText`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,24 +16,68 @@ Referência completa da API de `AEditText`, incluindo construtores, atributos, a
 public class AEditText extends EditText
 ```
 
-## Construtores (1)
-
-| Signature | Description |
-| --- | --- |
-| AEditText() | Cria uma nova instância de AEditText. |
-
-## Métodos (11)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getViewID()` | `String` | Retorna a propriedade `propriedade `view id atual``. |
-| `findByID(String)` | `<T extends View> T` | Executa a operação findByID usando os parâmetros informados (id). |
-| `setOnLongClickListener(OnLongClickListener)` | `void` | Define ou atualiza a propriedade `propriedade `on long click listener``. |
-| `setOnClickListener(OnClickListener)` | `void` | Define ou atualiza a propriedade `propriedade `on click listener``. |
-| `setOnTouchListener(OnTouchListener)` | `void` | Define ou atualiza a propriedade `propriedade `on touch listener``. |
-| `setOnHoverListener(OnHoverListener)` | `void` | Define ou atualiza a propriedade `propriedade `on hover listener``. |
-| `setOnDragListener(OnDragListener)` | `void` | Define ou atualiza a propriedade `propriedade `on drag listener``. |
-| `setOnKeyListener(OnKeyListener)` | `void` | Define ou atualiza a propriedade `propriedade `on key listener``. |
-| `setOnScrollChangeListener(OnScrollChangeListener)` | `void` | Define ou atualiza a propriedade `propriedade `on scroll change listener``. |
-| `setOnFocusChangeListener(OnFocusChangeListener)` | `void` | Define ou atualiza a propriedade `propriedade `on focus change listener``. |
-| `setOnCreateContextMenuListener(OnCreateContextMenuListener)` | `void` | Define ou atualiza a propriedade `propriedade `on create context menu listener``. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "AEditText()",
+      description: <>Cria uma nova instância de AEditText.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "getViewID()",
+      returns: "String",
+      description: <>Retorna a propriedade <code>propriedade </code>view id atual``.</>
+    },
+    {
+      signature: "findByID(String)",
+      returns: "<T extends View> T",
+      description: <>Executa a operação findByID usando os parâmetros informados (id).</>
+    },
+    {
+      signature: "setOnLongClickListener(OnLongClickListener)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>on long click listener``.</>
+    },
+    {
+      signature: "setOnClickListener(OnClickListener)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>on click listener``.</>
+    },
+    {
+      signature: "setOnTouchListener(OnTouchListener)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>on touch listener``.</>
+    },
+    {
+      signature: "setOnHoverListener(OnHoverListener)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>on hover listener``.</>
+    },
+    {
+      signature: "setOnDragListener(OnDragListener)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>on drag listener``.</>
+    },
+    {
+      signature: "setOnKeyListener(OnKeyListener)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>on key listener``.</>
+    },
+    {
+      signature: "setOnScrollChangeListener(OnScrollChangeListener)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>on scroll change listener``.</>
+    },
+    {
+      signature: "setOnFocusChangeListener(OnFocusChangeListener)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>on focus change listener``.</>
+    },
+    {
+      signature: "setOnCreateContextMenuListener(OnCreateContextMenuListener)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>on create context menu listener``.</>
+    }
+  ]}
+/>

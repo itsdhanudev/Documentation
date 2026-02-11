@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # FrameBuffer
 
 Complete API reference for `FrameBuffer`, including constructors, attributes, virtual attributes, and methods.
@@ -14,45 +16,131 @@ Complete API reference for `FrameBuffer`, including constructors, attributes, vi
 public class FrameBuffer
 ```
 
-## Constructors (5)
-
-| Signature | Description |
-| --- | --- |
-| FrameBuffer([FrameBuffer]) | Executes `FrameBuffer` and returns after the underlying engine call finishes. |
-| FrameBuffer([int], [int]) | Executes `FrameBuffer` and returns after the underlying engine call finishes. |
-| FrameBuffer([int], [int], [int]) | Creates a new instance of FrameBuffer. |
-| FrameBuffer([int], [int], [int], [int]) | Creates a new instance of FrameBuffer. |
-| FrameBuffer([int], [int], [int], [int], [Texture]) | Creates a new instance of FrameBuffer. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `frameBuffer` | [FrameBuffer] | Represents the `frameBuffer` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (8)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `colorTexture` | [Texture] | `get` | Virtual attribute exposed by `getColorTexture`. Access it like a field to read or write the underlying value. |
-| `colorTexturesCount` | [int] | `get` | Virtual attribute exposed by `getColorTexturesCount`. Access it like a field to read or write the underlying value. |
-| `depthTexture` | [Texture] | `get` | Virtual attribute exposed by `getDepthTexture`. Access it like a field to read or write the underlying value. |
-| `height` | [int] | `get` | Virtual attribute exposed by `getHeight`. Access it like a field to read or write the underlying value. |
-| `maxHeight` | [int] | `get` | Virtual attribute exposed by `getMaxHeight`. Access it like a field to read or write the underlying value. |
-| `maxWidth` | [int] | `get` | Virtual attribute exposed by `getMaxWidth`. Access it like a field to read or write the underlying value. |
-| `renderPercentage` | [int] | `get/set` | Virtual attribute exposed by `getRenderPercentage`. Access it like a field to read or write the underlying value. |
-| `width` | [int] | `get` | Virtual attribute exposed by `getWidth`. Access it like a field to read or write the underlying value. |
-
-## Methods (9)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `resize(int, int)` | `void` | Performs the resize operation using the provided parameters (width, height). |
-| `resize(int, int, int)` | `void` | Performs the resize operation using the provided parameters (width, height, renderPercentage). |
-| `getColorTexture(int)` | `Texture` | Returns the current color texture. |
-| `getColorTextureArray()` | [Texture][] | Returns the current color texture array. |
-| `extractGPUImageToBtm(ExtractCallback)` | `void` | Executes `extractGPUImageToBtm` and returns after the underlying engine call finishes. |
-| `saveGPUImageToFile(File)` | `void` | Executes `saveGPUImageToFile` and returns after the underlying engine call finishes. |
-| `saveGPUImageToFile(File, Runnable)` | `void` | Executes `saveGPUImageToFile` and returns after the underlying engine call finishes. |
-| `destroy()` | `void` | Executes `destroy` and returns after the underlying engine call finishes. |
-| `validate()` | `boolean` | Executes `validate` and returns after the underlying engine call finishes. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "FrameBuffer(FrameBuffer)",
+      description: <>Executes <code>FrameBuffer</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "FrameBuffer(int, int)",
+      description: <>Executes <code>FrameBuffer</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "FrameBuffer(int, int, int)",
+      description: <>Creates a new instance of FrameBuffer.</>
+    },
+    {
+      signature: "FrameBuffer(int, int, int, int)",
+      description: <>Creates a new instance of FrameBuffer.</>
+    },
+    {
+      signature: "FrameBuffer(int, int, int, int, Texture)",
+      description: <>Creates a new instance of FrameBuffer.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "frameBuffer",
+      type: "FrameBuffer",
+      description: <>Represents the <code>frameBuffer</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "colorTexture",
+      type: "Texture",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>getColorTexture</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "colorTexturesCount",
+      type: "int",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>getColorTexturesCount</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "depthTexture",
+      type: "Texture",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>getDepthTexture</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "height",
+      type: "int",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>getHeight</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "maxHeight",
+      type: "int",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>getMaxHeight</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "maxWidth",
+      type: "int",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>getMaxWidth</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "renderPercentage",
+      type: "int",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getRenderPercentage</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "width",
+      type: "int",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>getWidth</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "resize(int, int)",
+      returns: "void",
+      description: <>Performs the resize operation using the provided parameters (width, height).</>
+    },
+    {
+      signature: "resize(int, int, int)",
+      returns: "void",
+      description: <>Performs the resize operation using the provided parameters (width, height, renderPercentage).</>
+    },
+    {
+      signature: "getColorTexture(int)",
+      returns: "Texture",
+      description: <>Returns the current color texture.</>
+    },
+    {
+      signature: "getColorTextureArray()",
+      returns: "Texture[]",
+      description: <>Returns the current color texture array.</>
+    },
+    {
+      signature: "extractGPUImageToBtm(ExtractCallback)",
+      returns: "void",
+      description: <>Executes <code>extractGPUImageToBtm</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "saveGPUImageToFile(File)",
+      returns: "void",
+      description: <>Executes <code>saveGPUImageToFile</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "saveGPUImageToFile(File, Runnable)",
+      returns: "void",
+      description: <>Executes <code>saveGPUImageToFile</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "destroy()",
+      returns: "void",
+      description: <>Executes <code>destroy</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "validate()",
+      returns: "boolean",
+      description: <>Executes <code>validate</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

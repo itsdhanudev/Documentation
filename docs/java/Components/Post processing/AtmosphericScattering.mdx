@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # AtmosphericScattering
 
 Complete API reference for `AtmosphericScattering`, including constructors, attributes, virtual attributes, and methods.
@@ -14,44 +16,135 @@ Complete API reference for `AtmosphericScattering`, including constructors, attr
 public class AtmosphericScattering extends Component
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| AtmosphericScattering([AtmosphericScattering]) | Executes `AtmosphericScattering` and returns after the underlying engine call finishes. |
-| AtmosphericScattering([Engine]) | Executes `AtmosphericScattering` and returns after the underlying engine call finishes. |
-| AtmosphericScattering() | Executes `AtmosphericScattering` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [AtmosphericScattering] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (15)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `ambientLight` | [boolean] | `set` | Virtual attribute exposed by `setAmbientLight`. Access it like a field to read or write the underlying value. |
-| `ambientLightResolutionID` | [int] | `get/set` | Virtual attribute exposed by `getAmbientLightResolutionID`. Access it like a field to read or write the underlying value. |
-| `atmosphereDensity` | [float] | `get/set` | Virtual attribute exposed by `getAtmosphereDensity`. Access it like a field to read or write the underlying value. |
-| `atmosphereDensityFalloff` | [float] | `get/set` | Virtual attribute exposed by `getAtmosphereDensityFalloff`. Access it like a field to read or write the underlying value. |
-| `atmosphereExtent` | [float] | `get/set` | Virtual attribute exposed by `getAtmosphereExtent`. Access it like a field to read or write the underlying value. |
-| `cirrusClouds` | [CloudType] | `get/set` | Virtual attribute exposed by `getCirrusClouds`. Access it like a field to read or write the underlying value. |
-| `cumulusClouds` | [CloudType] | `get/set` | Virtual attribute exposed by `getCumulusClouds`. Access it like a field to read or write the underlying value. |
-| `enableMoonball` | [boolean] | `set` | Virtual attribute exposed by `setEnableMoonball`. Access it like a field to read or write the underlying value. |
-| `enableSunball` | [boolean] | `set` | Virtual attribute exposed by `setEnableSunball`. Access it like a field to read or write the underlying value. |
-| `groundColor` | [Color] | `get/set` | Virtual attribute exposed by `getGroundColor`. Access it like a field to read or write the underlying value. |
-| `lux` | [float] | `get/set` | Virtual attribute exposed by `getLux`. Access it like a field to read or write the underlying value. |
-| `maxResolutionID` | [int] | `get/set` | Virtual attribute exposed by `getMaxResolutionID`. Access it like a field to read or write the underlying value. |
-| `rayLeigh` | [Color] | `get/set` | Virtual attribute exposed by `getRayLeigh`. Access it like a field to read or write the underlying value. |
-| `skyboxSimulationSpeed` | [float] | `get/set` | Virtual attribute exposed by `getSkyboxSimulationSpeed`. Access it like a field to read or write the underlying value. |
-| `wetness` | [float] | `get/set` | Virtual attribute exposed by `getWetness`. Access it like a field to read or write the underlying value. |
-
-## Methods (3)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `isAmbientLight()` | `boolean` | Executes `isAmbientLight` and returns after the underlying engine call finishes. |
-| `isEnableMoonball()` | `boolean` | Executes `isEnableMoonball` and returns after the underlying engine call finishes. |
-| `isEnableSunball()` | `boolean` | Executes `isEnableSunball` and returns after the underlying engine call finishes. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "AtmosphericScattering(AtmosphericScattering)",
+      description: <>Executes <code>AtmosphericScattering</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "AtmosphericScattering(Engine)",
+      description: <>Executes <code>AtmosphericScattering</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "AtmosphericScattering()",
+      description: <>Executes <code>AtmosphericScattering</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "AtmosphericScattering",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "ambientLight",
+      type: "boolean",
+      access: "set",
+      description: <>Virtual attribute exposed by <code>setAmbientLight</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "ambientLightResolutionID",
+      type: "int",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getAmbientLightResolutionID</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "atmosphereDensity",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getAtmosphereDensity</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "atmosphereDensityFalloff",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getAtmosphereDensityFalloff</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "atmosphereExtent",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getAtmosphereExtent</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "cirrusClouds",
+      type: "CloudType",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getCirrusClouds</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "cumulusClouds",
+      type: "CloudType",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getCumulusClouds</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "enableMoonball",
+      type: "boolean",
+      access: "set",
+      description: <>Virtual attribute exposed by <code>setEnableMoonball</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "enableSunball",
+      type: "boolean",
+      access: "set",
+      description: <>Virtual attribute exposed by <code>setEnableSunball</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "groundColor",
+      type: "Color",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getGroundColor</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "lux",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getLux</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "maxResolutionID",
+      type: "int",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getMaxResolutionID</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "rayLeigh",
+      type: "Color",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getRayLeigh</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "skyboxSimulationSpeed",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getSkyboxSimulationSpeed</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "wetness",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getWetness</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "isAmbientLight()",
+      returns: "boolean",
+      description: <>Executes <code>isAmbientLight</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "isEnableMoonball()",
+      returns: "boolean",
+      description: <>Executes <code>isEnableMoonball</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "isEnableSunball()",
+      returns: "boolean",
+      description: <>Executes <code>isEnableSunball</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

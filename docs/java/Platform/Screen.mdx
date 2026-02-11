@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Screen
 
 Complete API reference for `Screen`, including constructors, attributes, virtual attributes, and methods.
@@ -14,12 +16,32 @@ Complete API reference for `Screen`, including constructors, attributes, virtual
 public class Screen
 ```
 
-## Static Methods (5)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getWidth()` | `int` | Returns the screen width in pixels. |
-| `getHeight()` | `int` | Returns the screen height in pixels. |
-| `width()` | `int` | Returns the screen width in pixels. |
-| `height()` | `int` | Returns the screen height in pixels. |
-| `ratio()` | `float` | Returns the aspect ratio of the screen (width divided by height). |
+<ApiDoc
+  staticMethods={[
+    {
+      signature: "getWidth()",
+      returns: "int",
+      description: <>Returns the screen width in pixels.</>
+    },
+    {
+      signature: "getHeight()",
+      returns: "int",
+      description: <>Returns the screen height in pixels.</>
+    },
+    {
+      signature: "width()",
+      returns: "int",
+      description: <>Returns the screen width in pixels.</>
+    },
+    {
+      signature: "height()",
+      returns: "int",
+      description: <>Returns the screen height in pixels.</>
+    },
+    {
+      signature: "ratio()",
+      returns: "float",
+      description: <>Returns the aspect ratio of the screen (width divided by height).</>
+    }
+  ]}
+/>

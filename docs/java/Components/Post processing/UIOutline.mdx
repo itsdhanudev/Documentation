@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # UIOutline
 
 Complete API reference for `UIOutline`, including constructors, attributes, virtual attributes, and methods.
@@ -14,24 +16,46 @@ Complete API reference for `UIOutline`, including constructors, attributes, virt
 public class UIOutline extends Component
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| UIOutline([UIOutline]) | Executes `UIOutline` and returns after the underlying engine call finishes. |
-| UIOutline([Engine]) | Executes `UIOutline` and returns after the underlying engine call finishes. |
-| UIOutline() | Executes `UIOutline` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [UIOutline] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (3)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `outlineColor` | [Color] | `get/set` | Virtual attribute exposed by `getOutlineColor`. Access it like a field to read or write the underlying value. |
-| `thickness` | [float] | `get/set` | Virtual attribute exposed by `getThickness`. Access it like a field to read or write the underlying value. |
-| `threshold` | [float] | `get/set` | Virtual attribute exposed by `getThreshold`. Access it like a field to read or write the underlying value. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "UIOutline(UIOutline)",
+      description: <>Executes <code>UIOutline</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "UIOutline(Engine)",
+      description: <>Executes <code>UIOutline</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "UIOutline()",
+      description: <>Executes <code>UIOutline</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "UIOutline",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "outlineColor",
+      type: "Color",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getOutlineColor</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "thickness",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getThickness</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "threshold",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getThreshold</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+/>

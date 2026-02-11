@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # DeprecatedInfo
 
 Referência completa da API de `DeprecatedInfo`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,8 +16,12 @@ Referência completa da API de `DeprecatedInfo`, incluindo construtores, atribut
 public interface DeprecatedInfo
 ```
 
-## Métodos (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `info()` | [String][] | Executa `info` e retorna quando a chamada do motor termina. |
+<ApiDoc
+  methods={[
+    {
+      signature: "info()",
+      returns: "String[]",
+      description: <>Executa <code>info</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+/>

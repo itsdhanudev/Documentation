@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # GraphicsSettings
 
 Complete API reference for `GraphicsSettings`, including constructors, attributes, virtual attributes, and methods.
@@ -14,15 +16,22 @@ Complete API reference for `GraphicsSettings`, including constructors, attribute
 public class GraphicsSettings
 ```
 
-## Constructors (2)
-
-| Signature | Description |
-| --- | --- |
-| GraphicsSettings([GraphicsSettings]) | Executes `GraphicsSettings` and returns after the underlying engine call finishes. |
-| GraphicsSettings() | Executes `GraphicsSettings` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `graphicsSettings` | [GraphicsSettings] | Represents the `graphicsSettings` value stored on this instance. Read or assign to update the property. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "GraphicsSettings(GraphicsSettings)",
+      description: <>Executes <code>GraphicsSettings</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "GraphicsSettings()",
+      description: <>Executes <code>GraphicsSettings</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "graphicsSettings",
+      type: "GraphicsSettings",
+      description: <>Represents the <code>graphicsSettings</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+/>

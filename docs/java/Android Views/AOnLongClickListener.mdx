@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # AOnLongClickListener
 
 Complete API reference for `AOnLongClickListener`, including constructors, attributes, virtual attributes, and methods.
@@ -14,9 +16,17 @@ Complete API reference for `AOnLongClickListener`, including constructors, attri
 public class AOnLongClickListener
 ```
 
-## Methods (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `onLongClick(View)` | `boolean` | Performs the onLongClick operation using the provided parameters (v). |
-| `onLongClickEvent(View)` | `boolean` | Executes `onLongClickEvent` and returns after the underlying engine call finishes. |
+<ApiDoc
+  methods={[
+    {
+      signature: "onLongClick(View)",
+      returns: "boolean",
+      description: <>Performs the onLongClick operation using the provided parameters (v).</>
+    },
+    {
+      signature: "onLongClickEvent(View)",
+      returns: "boolean",
+      description: <>Executes <code>onLongClickEvent</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Material
 
 Referência completa da API de `Material`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,74 +16,249 @@ Referência completa da API de `Material`, incluindo construtores, atributos, at
 public class Material
 ```
 
-## Construtores (2)
-
-| Signature | Description |
-| --- | --- |
-| Material([Material]) | Executa `Material` e retorna quando a chamada do motor termina. |
-| Material() | Executa `Material` e retorna quando a chamada do motor termina. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `material` | [Material] | Representa o valor de `material` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (1)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `shader` | [String] | `get/set` | Atributo virtual exposto por `getShader`. Acesse como um campo para ler ou escrever o valor subjacente. |
-
-## Métodos (42)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getColor(String)` | `Color` | Retorna a propriedade `propriedade `color atual``. |
-| `findColor(String)` | `Color` | Executa a operação findColor usando os parâmetros informados (entryName). |
-| `setColor(String, Color)` | `void` | Define ou atualiza a propriedade `propriedade `color``. |
-| `setDiffuse(Color)` | `void` | Define ou atualiza a propriedade `propriedade `diffuse``. |
-| `getVector2(String)` | [JAVARuntime].[Vector2] | Retorna a propriedade `propriedade `vector2 atual``. |
-| `findVector2(String)` | [JAVARuntime].[Vector2] | Executa a operação findVector2 usando os parâmetros informados (entryName). |
-| `setVector2(String, JAVARuntime.Vector2)` | `void` | Define ou atualiza a propriedade `propriedade `vector2``. |
-| `getBoolean(String)` | `boolean` | Retorna a propriedade `propriedade `boolean atual``. |
-| `findBoolean(String)` | `boolean` | Executa a operação findBoolean usando os parâmetros informados (entryName). |
-| `setBoolean(String, boolean)` | `void` | Define ou atualiza a propriedade `propriedade `boolean``. |
-| `setReceiveLight(boolean)` | `void` | Define ou atualiza a propriedade `propriedade `receive light``. |
-| `getFloat(String)` | `float` | Retorna a propriedade `propriedade `float atual``. |
-| `findFloat(String)` | `float` | Executa a operação findFloat usando os parâmetros informados (entryName). |
-| `setFloat(String, float)` | `void` | Define ou atualiza a propriedade `propriedade `float``. |
-| `setMinimalAlphaIntensity(float)` | `void` | Define ou atualiza a propriedade `propriedade `minimal alpha intensity``. |
-| `setHeightIntensity(float)` | `void` | Define ou atualiza a propriedade `propriedade `height intensity``. |
-| `setUvSize(float)` | `void` | Define ou atualiza a propriedade `propriedade `uv size``. |
-| `setAlphaCutout(float)` | `void` | Define ou atualiza a propriedade `propriedade `alpha cutout``. |
-| `setSpecular(float)` | `void` | Define ou atualiza a propriedade `propriedade `specular``. |
-| `getTexture(String)` | `Texture` | Retorna a propriedade `propriedade `texture atual``. |
-| `findTexture(String)` | `Texture` | Executa a operação findTexture usando os parâmetros informados (entryName). |
-| `setTexture(String, Texture)` | `void` | Define ou atualiza a propriedade `propriedade `texture``. |
-| `setTextureFile(String, TextureFile)` | `void` | Define ou atualiza a propriedade `propriedade `texture file``. |
-| `setAlbedo(Texture)` | `void` | Define ou atualiza a propriedade `propriedade `albedo``. |
-| `setAlbedo(TextureFile)` | `void` | Define ou atualiza a propriedade `propriedade `albedo``. |
-| `setNormalMap(Texture)` | `void` | Define ou atualiza a propriedade `propriedade `normal map``. |
-| `setNormalMap(TextureFile)` | `void` | Define ou atualiza a propriedade `propriedade `normal map``. |
-| `setRoughness(Texture)` | `void` | Define ou atualiza a propriedade `propriedade `roughness``. |
-| `setRoughness(TextureFile)` | `void` | Define ou atualiza a propriedade `propriedade `roughness``. |
-| `setMetallic(Texture)` | `void` | Define ou atualiza a propriedade `propriedade `metallic``. |
-| `setMetallic(TextureFile)` | `void` | Define ou atualiza a propriedade `propriedade `metallic``. |
-| `setAoMap(Texture)` | `void` | Define ou atualiza a propriedade `propriedade `ao map``. |
-| `setAoMap(TextureFile)` | `void` | Define ou atualiza a propriedade `propriedade `ao map``. |
-| `setHeightMap(Texture)` | `void` | Define ou atualiza a propriedade `propriedade `height map``. |
-| `setHeightMap(TextureFile)` | `void` | Define ou atualiza a propriedade `propriedade `height map``. |
-| `setEmissiveMap(Texture)` | `void` | Define ou atualiza a propriedade `propriedade `emissive map``. |
-| `setEmissiveMap(TextureFile)` | `void` | Define ou atualiza a propriedade `propriedade `emissive map``. |
-| `setAlphaMap(Texture)` | `void` | Define ou atualiza a propriedade `propriedade `alpha map``. |
-| `setAlphaMap(TextureFile)` | `void` | Define ou atualiza a propriedade `propriedade `alpha map``. |
-| `setMatcap(Matcap)` | `void` | Define ou atualiza a propriedade `propriedade `matcap``. |
-| `reloadEntries()` | `void` | Executa a operação reloadEntries. |
-| `toJson()` | `String` | Executa a operação toJson. |
-
-## Métodos Estáticos (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `loadFile(MaterialFile)` | `Material` | Carrega file no objeto. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "Material(Material)",
+      description: <>Executa <code>Material</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "Material()",
+      description: <>Executa <code>Material</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "material",
+      type: "Material",
+      description: <>Representa o valor de <code>material</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "shader",
+      type: "String",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getShader</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "getColor(String)",
+      returns: "Color",
+      description: <>Retorna a propriedade <code>propriedade </code>color atual``.</>
+    },
+    {
+      signature: "findColor(String)",
+      returns: "Color",
+      description: <>Executa a operação findColor usando os parâmetros informados (entryName).</>
+    },
+    {
+      signature: "setColor(String, Color)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>color``.</>
+    },
+    {
+      signature: "setDiffuse(Color)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>diffuse``.</>
+    },
+    {
+      signature: "getVector2(String)",
+      returns: "JAVARuntime.Vector2",
+      description: <>Retorna a propriedade <code>propriedade </code>vector2 atual``.</>
+    },
+    {
+      signature: "findVector2(String)",
+      returns: "JAVARuntime.Vector2",
+      description: <>Executa a operação findVector2 usando os parâmetros informados (entryName).</>
+    },
+    {
+      signature: "setVector2(String, JAVARuntime.Vector2)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>vector2``.</>
+    },
+    {
+      signature: "getBoolean(String)",
+      returns: "boolean",
+      description: <>Retorna a propriedade <code>propriedade </code>boolean atual``.</>
+    },
+    {
+      signature: "findBoolean(String)",
+      returns: "boolean",
+      description: <>Executa a operação findBoolean usando os parâmetros informados (entryName).</>
+    },
+    {
+      signature: "setBoolean(String, boolean)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>boolean``.</>
+    },
+    {
+      signature: "setReceiveLight(boolean)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>receive light``.</>
+    },
+    {
+      signature: "getFloat(String)",
+      returns: "float",
+      description: <>Retorna a propriedade <code>propriedade </code>float atual``.</>
+    },
+    {
+      signature: "findFloat(String)",
+      returns: "float",
+      description: <>Executa a operação findFloat usando os parâmetros informados (entryName).</>
+    },
+    {
+      signature: "setFloat(String, float)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>float``.</>
+    },
+    {
+      signature: "setMinimalAlphaIntensity(float)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>minimal alpha intensity``.</>
+    },
+    {
+      signature: "setHeightIntensity(float)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>height intensity``.</>
+    },
+    {
+      signature: "setUvSize(float)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>uv size``.</>
+    },
+    {
+      signature: "setAlphaCutout(float)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>alpha cutout``.</>
+    },
+    {
+      signature: "setSpecular(float)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>specular``.</>
+    },
+    {
+      signature: "getTexture(String)",
+      returns: "Texture",
+      description: <>Retorna a propriedade <code>propriedade </code>texture atual``.</>
+    },
+    {
+      signature: "findTexture(String)",
+      returns: "Texture",
+      description: <>Executa a operação findTexture usando os parâmetros informados (entryName).</>
+    },
+    {
+      signature: "setTexture(String, Texture)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>texture``.</>
+    },
+    {
+      signature: "setTextureFile(String, TextureFile)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>texture file``.</>
+    },
+    {
+      signature: "setAlbedo(Texture)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>albedo``.</>
+    },
+    {
+      signature: "setAlbedo(TextureFile)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>albedo``.</>
+    },
+    {
+      signature: "setNormalMap(Texture)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>normal map``.</>
+    },
+    {
+      signature: "setNormalMap(TextureFile)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>normal map``.</>
+    },
+    {
+      signature: "setRoughness(Texture)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>roughness``.</>
+    },
+    {
+      signature: "setRoughness(TextureFile)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>roughness``.</>
+    },
+    {
+      signature: "setMetallic(Texture)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>metallic``.</>
+    },
+    {
+      signature: "setMetallic(TextureFile)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>metallic``.</>
+    },
+    {
+      signature: "setAoMap(Texture)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>ao map``.</>
+    },
+    {
+      signature: "setAoMap(TextureFile)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>ao map``.</>
+    },
+    {
+      signature: "setHeightMap(Texture)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>height map``.</>
+    },
+    {
+      signature: "setHeightMap(TextureFile)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>height map``.</>
+    },
+    {
+      signature: "setEmissiveMap(Texture)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>emissive map``.</>
+    },
+    {
+      signature: "setEmissiveMap(TextureFile)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>emissive map``.</>
+    },
+    {
+      signature: "setAlphaMap(Texture)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>alpha map``.</>
+    },
+    {
+      signature: "setAlphaMap(TextureFile)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>alpha map``.</>
+    },
+    {
+      signature: "setMatcap(Matcap)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>matcap``.</>
+    },
+    {
+      signature: "reloadEntries()",
+      returns: "void",
+      description: <>Executa a operação reloadEntries.</>
+    },
+    {
+      signature: "toJson()",
+      returns: "String",
+      description: <>Executa a operação toJson.</>
+    }
+  ]}
+  staticMethods={[
+    {
+      signature: "loadFile(MaterialFile)",
+      returns: "Material",
+      description: <>Carrega file no objeto.</>
+    }
+  ]}
+/>

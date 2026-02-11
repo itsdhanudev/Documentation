@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # UIVerticalScrollView
 
 Complete API reference for `UIVerticalScrollView`, including constructors, attributes, virtual attributes, and methods.
@@ -14,22 +16,34 @@ Complete API reference for `UIVerticalScrollView`, including constructors, attri
 public class UIVerticalScrollView extends Component
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| UIVerticalScrollView([UIVerticalScrollView]) | Executes `UIVerticalScrollView` and returns after the underlying engine call finishes. |
-| UIVerticalScrollView([Engine]) | Executes `UIVerticalScrollView` and returns after the underlying engine call finishes. |
-| UIVerticalScrollView() | Creates a new instance of UIVerticalScrollView. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [UIVerticalScrollView] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (1)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `scroll` | [int] | `get/set` | Virtual attribute exposed by `getScroll`. Access it like a field to read or write the underlying value. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "UIVerticalScrollView(UIVerticalScrollView)",
+      description: <>Executes <code>UIVerticalScrollView</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "UIVerticalScrollView(Engine)",
+      description: <>Executes <code>UIVerticalScrollView</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "UIVerticalScrollView()",
+      description: <>Creates a new instance of UIVerticalScrollView.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "UIVerticalScrollView",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "scroll",
+      type: "int",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getScroll</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+/>

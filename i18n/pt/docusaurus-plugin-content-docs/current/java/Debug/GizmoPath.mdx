@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # GizmoPath
 
 Referência completa da API de `GizmoPath`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,44 +16,129 @@ Referência completa da API de `GizmoPath`, incluindo construtores, atributos, a
 public class GizmoPath extends GizmoElement
 ```
 
-## Construtores (1)
-
-| Signature | Description |
-| --- | --- |
-| GizmoPath() | Cria uma nova instância de GizmoPath. |
-
-## Atributos (2)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `rotMatrix` | [float][] | Representa o valor de `rotMatrix` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `createdEntries` | [int] | Representa o valor de `createdEntries` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (7)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `color` | [Color] | `get/set` | Atributo virtual exposto por `getColor`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `matrix` | [float][] | `get/set` | Atributo virtual exposto por `getMatrix`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `position` | [Vector3] | `get/set` | Atributo virtual exposto por `getPosition`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `rotation` | [Quaternion] | `get/set` | Atributo virtual exposto por `getRotation`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `scale` | [Vector3] | `get/set` | Atributo virtual exposto por `getScale`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `userPointer` | [Object] | `get/set` | Atributo virtual exposto por `getUserPointer`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `wireFrameWidth` | [int] | `get/set` | Atributo virtual exposto por `getWireFrameWidth`. Acesse como um campo para ler ou escrever o valor subjacente. |
-
-## Métodos (12)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `setPosition(float, float, float)` | `void` | Define ou atualiza a propriedade `propriedade `position``. |
-| `setRotation(float, float, float)` | `void` | Define ou atualiza a propriedade `propriedade `rotation``. |
-| `setRotation(float, float, float, float)` | `void` | Define ou atualiza a propriedade `propriedade `rotation``. |
-| `setScale(float, float, float)` | `void` | Define ou atualiza a propriedade `propriedade `scale``. |
-| `clear()` | `void` | Limpa ou redefine o estado do objeto. |
-| `addLine(Vector3, Vector3)` | `GizmoPath` | Adiciona line à coleção. |
-| `addLineUnsafe(Vector3, Vector3)` | `GizmoPath` | Adiciona line unsafe à coleção. |
-| `addPath([List&lt;Vector2&gt;])` | `GizmoPath` | Adiciona path à coleção. |
-| `apply()` | `void` | Executa a operação apply. |
-| `destroy()` | `void` | Executa a operação destroy. |
-| `getVertex()` | `Vertex` | Retorna a propriedade `propriedade `vertex atual``. |
-| `getRenderMode()` | `RenderMode` | Retorna a propriedade `propriedade `render mode atual``. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "GizmoPath()",
+      description: <>Cria uma nova instância de GizmoPath.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "rotMatrix",
+      type: "float[]",
+      description: <>Representa o valor de <code>rotMatrix</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "createdEntries",
+      type: "int",
+      description: <>Representa o valor de <code>createdEntries</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "color",
+      type: "Color",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getColor</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "matrix",
+      type: "float[]",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getMatrix</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "position",
+      type: "Vector3",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getPosition</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "rotation",
+      type: "Quaternion",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getRotation</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "scale",
+      type: "Vector3",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getScale</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "userPointer",
+      type: "Object",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getUserPointer</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "wireFrameWidth",
+      type: "int",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getWireFrameWidth</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "setPosition(float, float, float)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>position``.</>
+    },
+    {
+      signature: "setRotation(float, float, float)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>rotation``.</>
+    },
+    {
+      signature: "setRotation(float, float, float, float)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>rotation``.</>
+    },
+    {
+      signature: "setScale(float, float, float)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>scale``.</>
+    },
+    {
+      signature: "clear()",
+      returns: "void",
+      description: <>Limpa ou redefine o estado do objeto.</>
+    },
+    {
+      signature: "addLine(Vector3, Vector3)",
+      returns: "GizmoPath",
+      description: <>Adiciona line à coleção.</>
+    },
+    {
+      signature: "addLineUnsafe(Vector3, Vector3)",
+      returns: "GizmoPath",
+      description: <>Adiciona line unsafe à coleção.</>
+    },
+    {
+      signature: "addPath(List&lt;Vector2&gt;)",
+      returns: "GizmoPath",
+      description: <>Adiciona path à coleção.</>
+    },
+    {
+      signature: "apply()",
+      returns: "void",
+      description: <>Executa a operação apply.</>
+    },
+    {
+      signature: "destroy()",
+      returns: "void",
+      description: <>Executa a operação destroy.</>
+    },
+    {
+      signature: "getVertex()",
+      returns: "Vertex",
+      description: <>Retorna a propriedade <code>propriedade </code>vertex atual``.</>
+    },
+    {
+      signature: "getRenderMode()",
+      returns: "RenderMode",
+      description: <>Retorna a propriedade <code>propriedade </code>render mode atual``.</>
+    }
+  ]}
+/>

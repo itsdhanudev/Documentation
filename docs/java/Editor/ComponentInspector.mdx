@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # ComponentInspector
 
 Complete API reference for `ComponentInspector`, including constructors, attributes, virtual attributes, and methods.
@@ -14,29 +16,47 @@ Complete API reference for `ComponentInspector`, including constructors, attribu
 public class ComponentInspector
 ```
 
-## Constructors (1)
-
-| Signature | Description |
-| --- | --- |
-| ComponentInspector() | Creates a new instance of ComponentInspector. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `myComponent` | [T] | Represents the `myComponent` value stored on this instance. Read or assign to update the property. |
-
-## Methods (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `updateUIVisible()` | `void` | Sets or updates the uivisible. |
-| `onAttach()` | `View` | Executes `onAttach` and returns after the underlying engine call finishes. |
-
-## Static Methods (3)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `findViewByID(View, String)` | `<T extends View> T` | Performs the findViewByID operation using the provided parameters (view, id). |
-| `toView(Object)` | `View` | Performs the toView operation using the provided parameters (o). |
-| `getIdOf(View)` | `String` | Returns the current id of. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "ComponentInspector()",
+      description: <>Creates a new instance of ComponentInspector.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "myComponent",
+      type: "T",
+      description: <>Represents the <code>myComponent</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "updateUIVisible()",
+      returns: "void",
+      description: <>Sets or updates the uivisible.</>
+    },
+    {
+      signature: "onAttach()",
+      returns: "View",
+      description: <>Executes <code>onAttach</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  staticMethods={[
+    {
+      signature: "findViewByID(View, String)",
+      returns: "<T extends View> T",
+      description: <>Performs the findViewByID operation using the provided parameters (view, id).</>
+    },
+    {
+      signature: "toView(Object)",
+      returns: "View",
+      description: <>Performs the toView operation using the provided parameters (o).</>
+    },
+    {
+      signature: "getIdOf(View)",
+      returns: "String",
+      description: <>Returns the current id of.</>
+    }
+  ]}
+/>

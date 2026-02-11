@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # JsonSerializer
 
 Complete API reference for `JsonSerializer`, including constructors, attributes, virtual attributes, and methods.
@@ -14,9 +16,17 @@ Complete API reference for `JsonSerializer`, including constructors, attributes,
 public interface JsonSerializer
 ```
 
-## Methods (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `serializeToString()` | `String` | Executes `serializeToString` and returns after the underlying engine call finishes. |
-| `deserializeLocal(String)` | `void` | Executes `deserializeLocal` and returns after the underlying engine call finishes. |
+<ApiDoc
+  methods={[
+    {
+      signature: "serializeToString()",
+      returns: "String",
+      description: <>Executes <code>serializeToString</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "deserializeLocal(String)",
+      returns: "void",
+      description: <>Executes <code>deserializeLocal</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

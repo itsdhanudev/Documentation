@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Point3Buffer
 
 Referência completa da API de `Point3Buffer`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,34 +16,92 @@ Referência completa da API de `Point3Buffer`, incluindo construtores, atributos
 public class Point3Buffer
 ```
 
-## Construtores (4)
-
-| Signature | Description |
-| --- | --- |
-| Point3Buffer([Point3Buffer]) | Executa `Point3Buffer` e retorna quando a chamada do motor termina. |
-| Point3Buffer([Engine]) | Executa `Point3Buffer` e retorna quando a chamada do motor termina. |
-| Point3Buffer([int]) | Cria uma nova instância de Point3Buffer. |
-| Point3Buffer([NativeIntBuffer]) | Cria uma nova instância de Point3Buffer. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `buffer` | [Point3Buffer] | Representa o valor de `buffer` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Métodos (12)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `get(int)` | `Point3` | Retorna a propriedade `propriedade `valor value atual``. |
-| `getX(int)` | `float` | Retorna a propriedade `propriedade `x atual``. |
-| `getY(int)` | `float` | Retorna a propriedade `propriedade `y atual``. |
-| `getZ(int)` | `float` | Retorna a propriedade `propriedade `z atual``. |
-| `put(Point3)` | `void` | Define ou atualiza the value. |
-| `put(int, int, int)` | `void` | Define ou atualiza the value. |
-| `set(int, Point3)` | `void` | Define ou atualiza the value. |
-| `set(int, int, int, int)` | `void` | Define ou atualiza the value. |
-| `capacity()` | `int` | Executa a operação capacity. |
-| `array()` | [Point3][] | Executa a operação array. |
-| `position(int)` | `void` | Executa a operação position usando os parâmetros informados (idx). |
-| `getFloatBuffer()` | [JAVARuntime].[NativeIntBuffer] | Retorna a propriedade `propriedade `float buffer atual``. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "Point3Buffer(Point3Buffer)",
+      description: <>Executa <code>Point3Buffer</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "Point3Buffer(Engine)",
+      description: <>Executa <code>Point3Buffer</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "Point3Buffer(int)",
+      description: <>Cria uma nova instância de Point3Buffer.</>
+    },
+    {
+      signature: "Point3Buffer(NativeIntBuffer)",
+      description: <>Cria uma nova instância de Point3Buffer.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "buffer",
+      type: "Point3Buffer",
+      description: <>Representa o valor de <code>buffer</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "get(int)",
+      returns: "Point3",
+      description: <>Retorna a propriedade <code>propriedade </code>valor value atual``.</>
+    },
+    {
+      signature: "getX(int)",
+      returns: "float",
+      description: <>Retorna a propriedade <code>propriedade </code>x atual``.</>
+    },
+    {
+      signature: "getY(int)",
+      returns: "float",
+      description: <>Retorna a propriedade <code>propriedade </code>y atual``.</>
+    },
+    {
+      signature: "getZ(int)",
+      returns: "float",
+      description: <>Retorna a propriedade <code>propriedade </code>z atual``.</>
+    },
+    {
+      signature: "put(Point3)",
+      returns: "void",
+      description: <>Define ou atualiza the value.</>
+    },
+    {
+      signature: "put(int, int, int)",
+      returns: "void",
+      description: <>Define ou atualiza the value.</>
+    },
+    {
+      signature: "set(int, Point3)",
+      returns: "void",
+      description: <>Define ou atualiza the value.</>
+    },
+    {
+      signature: "set(int, int, int, int)",
+      returns: "void",
+      description: <>Define ou atualiza the value.</>
+    },
+    {
+      signature: "capacity()",
+      returns: "int",
+      description: <>Executa a operação capacity.</>
+    },
+    {
+      signature: "array()",
+      returns: "Point3[]",
+      description: <>Executa a operação array.</>
+    },
+    {
+      signature: "position(int)",
+      returns: "void",
+      description: <>Executa a operação position usando os parâmetros informados (idx).</>
+    },
+    {
+      signature: "getFloatBuffer()",
+      returns: "JAVARuntime.NativeIntBuffer",
+      description: <>Retorna a propriedade <code>propriedade </code>float buffer atual``.</>
+    }
+  ]}
+/>

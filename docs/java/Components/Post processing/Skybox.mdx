@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Skybox
 
 Complete API reference for `Skybox`, including constructors, attributes, virtual attributes, and methods.
@@ -14,31 +16,59 @@ Complete API reference for `Skybox`, including constructors, attributes, virtual
 public class Skybox extends Component
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| Skybox([Skybox]) | Executes `Skybox` and returns after the underlying engine call finishes. |
-| Skybox([Engine]) | Executes `Skybox` and returns after the underlying engine call finishes. |
-| Skybox() | Executes `Skybox` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [Skybox] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (4)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `color` | [Color] | `get/set` | Virtual attribute exposed by `getColor`. Access it like a field to read or write the underlying value. |
-| `lux` | [float] | `get/set` | Virtual attribute exposed by `getLux`. Access it like a field to read or write the underlying value. |
-| `maxResolutionID` | [int] | `get/set` | Virtual attribute exposed by `getMaxResolutionID`. Access it like a field to read or write the underlying value. |
-| `showSun` | [boolean] | `set` | Virtual attribute exposed by `setShowSun`. Access it like a field to read or write the underlying value. |
-
-## Methods (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `isShowSun()` | `boolean` | Executes `isShowSun` and returns after the underlying engine call finishes. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "Skybox(Skybox)",
+      description: <>Executes <code>Skybox</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "Skybox(Engine)",
+      description: <>Executes <code>Skybox</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "Skybox()",
+      description: <>Executes <code>Skybox</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "Skybox",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "color",
+      type: "Color",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getColor</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "lux",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getLux</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "maxResolutionID",
+      type: "int",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getMaxResolutionID</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "showSun",
+      type: "boolean",
+      access: "set",
+      description: <>Virtual attribute exposed by <code>setShowSun</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "isShowSun()",
+      returns: "boolean",
+      description: <>Executes <code>isShowSun</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

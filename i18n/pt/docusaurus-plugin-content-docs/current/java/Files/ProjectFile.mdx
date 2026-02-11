@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # ProjectFile
 
 Referência completa da API de `ProjectFile`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,26 +16,54 @@ Referência completa da API de `ProjectFile`, incluindo construtores, atributos,
 public class ProjectFile
 ```
 
-## Construtores (2)
-
-| Signature | Description |
-| --- | --- |
-| ProjectFile([String], [String]) | Executa `ProjectFile` e retorna quando a chamada do motor termina. |
-| ProjectFile([String]) | Cria uma nova instância de ProjectFile. |
-
-## Métodos (5)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getFormat()` | `String` | Retorna a propriedade `propriedade `format atual``. |
-| `getInputStream()` | `InputStream` | Retorna a propriedade `propriedade `input stream atual``. |
-| `loadText()` | `String` | Carrega text no objeto. |
-| `toString()` | `String` | Retorna a propriedade `representação em string`. |
-| `copyTo(File)` | `boolean` | Retorna uma cópia da instância de ProjectFile. |
-
-## Métodos Estáticos (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `genericInterface()` | `GenericClassInspectorEntry` | Executa `genericInterface` e retorna quando a chamada do motor termina. |
-| `inspectorController()` | `ClassInspectorEntry` | Executa `inspectorController` e retorna quando a chamada do motor termina. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "ProjectFile(String, String)",
+      description: <>Executa <code>ProjectFile</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "ProjectFile(String)",
+      description: <>Cria uma nova instância de ProjectFile.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "getFormat()",
+      returns: "String",
+      description: <>Retorna a propriedade <code>propriedade </code>format atual``.</>
+    },
+    {
+      signature: "getInputStream()",
+      returns: "InputStream",
+      description: <>Retorna a propriedade <code>propriedade </code>input stream atual``.</>
+    },
+    {
+      signature: "loadText()",
+      returns: "String",
+      description: <>Carrega text no objeto.</>
+    },
+    {
+      signature: "toString()",
+      returns: "String",
+      description: <>Retorna a propriedade <code>representação em string</code>.</>
+    },
+    {
+      signature: "copyTo(File)",
+      returns: "boolean",
+      description: <>Retorna uma cópia da instância de ProjectFile.</>
+    }
+  ]}
+  staticMethods={[
+    {
+      signature: "genericInterface()",
+      returns: "GenericClassInspectorEntry",
+      description: <>Executa <code>genericInterface</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "inspectorController()",
+      returns: "ClassInspectorEntry",
+      description: <>Executa <code>inspectorController</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+/>

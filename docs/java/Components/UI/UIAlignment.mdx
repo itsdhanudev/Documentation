@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # UIAlignment
 
 Complete API reference for `UIAlignment`, including constructors, attributes, virtual attributes, and methods.
@@ -14,30 +16,82 @@ Complete API reference for `UIAlignment`, including constructors, attributes, vi
 public class UIAlignment extends Component
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| UIAlignment([UIAlignment]) | Executes `UIAlignment` and returns after the underlying engine call finishes. |
-| UIAlignment([Engine]) | Executes `UIAlignment` and returns after the underlying engine call finishes. |
-| UIAlignment() | Creates a new instance of UIAlignment. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [UIAlignment] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (9)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `bottomCenterEnabled` | [boolean] | `get/set` | Virtual attribute exposed by `isBottomCenterEnabled`. Access it like a field to read or write the underlying value. |
-| `bottomLeftEnabled` | [boolean] | `get/set` | Virtual attribute exposed by `isBottomLeftEnabled`. Access it like a field to read or write the underlying value. |
-| `bottomRightEnabled` | [boolean] | `get/set` | Virtual attribute exposed by `isBottomRightEnabled`. Access it like a field to read or write the underlying value. |
-| `centerEnabled` | [boolean] | `get/set` | Virtual attribute exposed by `isCenterEnabled`. Access it like a field to read or write the underlying value. |
-| `centerLeftEnabled` | [boolean] | `get/set` | Virtual attribute exposed by `isCenterLeftEnabled`. Access it like a field to read or write the underlying value. |
-| `centerRightEnabled` | [boolean] | `get/set` | Virtual attribute exposed by `isCenterRightEnabled`. Access it like a field to read or write the underlying value. |
-| `topCenterEnabled` | [boolean] | `get/set` | Virtual attribute exposed by `isTopCenterEnabled`. Access it like a field to read or write the underlying value. |
-| `topLeftEnabled` | [boolean] | `get/set` | Virtual attribute exposed by `isTopLeftEnabled`. Access it like a field to read or write the underlying value. |
-| `topRightEnabled` | [boolean] | `get/set` | Virtual attribute exposed by `isTopRightEnabled`. Access it like a field to read or write the underlying value. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "UIAlignment(UIAlignment)",
+      description: <>Executes <code>UIAlignment</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "UIAlignment(Engine)",
+      description: <>Executes <code>UIAlignment</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "UIAlignment()",
+      description: <>Creates a new instance of UIAlignment.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "UIAlignment",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "bottomCenterEnabled",
+      type: "boolean",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>isBottomCenterEnabled</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "bottomLeftEnabled",
+      type: "boolean",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>isBottomLeftEnabled</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "bottomRightEnabled",
+      type: "boolean",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>isBottomRightEnabled</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "centerEnabled",
+      type: "boolean",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>isCenterEnabled</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "centerLeftEnabled",
+      type: "boolean",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>isCenterLeftEnabled</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "centerRightEnabled",
+      type: "boolean",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>isCenterRightEnabled</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "topCenterEnabled",
+      type: "boolean",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>isTopCenterEnabled</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "topLeftEnabled",
+      type: "boolean",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>isTopLeftEnabled</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "topRightEnabled",
+      type: "boolean",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>isTopRightEnabled</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+/>

@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Curve
 
 Referência completa da API de `Curve`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,39 +16,96 @@ Referência completa da API de `Curve`, incluindo construtores, atributos, atrib
 public class Curve
 ```
 
-## Construtores (2)
-
-| Signature | Description |
-| --- | --- |
-| Curve([Curve]) | Executa `Curve` e retorna quando a chamada do motor termina. |
-| Curve() | Executa `Curve` e retorna quando a chamada do motor termina. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [Curve] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Métodos (12)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `addPoint(float, float)` | `void` | Adiciona point à coleção. |
-| `setPoint(int, float, float)` | `void` | Define ou atualiza a propriedade `propriedade `point``. |
-| `pointAt(int)` | `Vector2` | Executa a operação pointAt usando os parâmetros informados (idx). |
-| `pointAt(int, Vector2)` | `Vector2` | Executa a operação pointAt usando os parâmetros informados (idx, out). |
-| `clear()` | `void` | Limpa ou redefine o estado do objeto. |
-| `pointsCount()` | `int` | Executa a operação pointsCount. |
-| `evaluate(float)` | `float` | Executa a operação evaluate usando os parâmetros informados (x). |
-| `apply()` | `void` | Executa a operação apply. |
-| `getWrapMode()` | `WrapMode` | Retorna a propriedade `propriedade `wrap mode atual``. |
-| `setWrapMode(WrapMode)` | `void` | Define ou atualiza a propriedade `propriedade `wrap mode``. |
-| `toJson()` | `String` | Executa a operação toJson. |
-| `fromJson(String)` | `Curve` | Executa a operação fromJson usando os parâmetros informados (json). |
-
-## Métodos Estáticos (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `genericInterface()` | `GenericClassInspectorEntry` | Executa `genericInterface` e retorna quando a chamada do motor termina. |
-| `inspectorController()` | `ClassInspectorEntry` | Executa `inspectorController` e retorna quando a chamada do motor termina. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "Curve(Curve)",
+      description: <>Executa <code>Curve</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "Curve()",
+      description: <>Executa <code>Curve</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "Curve",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "addPoint(float, float)",
+      returns: "void",
+      description: <>Adiciona point à coleção.</>
+    },
+    {
+      signature: "setPoint(int, float, float)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>point``.</>
+    },
+    {
+      signature: "pointAt(int)",
+      returns: "Vector2",
+      description: <>Executa a operação pointAt usando os parâmetros informados (idx).</>
+    },
+    {
+      signature: "pointAt(int, Vector2)",
+      returns: "Vector2",
+      description: <>Executa a operação pointAt usando os parâmetros informados (idx, out).</>
+    },
+    {
+      signature: "clear()",
+      returns: "void",
+      description: <>Limpa ou redefine o estado do objeto.</>
+    },
+    {
+      signature: "pointsCount()",
+      returns: "int",
+      description: <>Executa a operação pointsCount.</>
+    },
+    {
+      signature: "evaluate(float)",
+      returns: "float",
+      description: <>Executa a operação evaluate usando os parâmetros informados (x).</>
+    },
+    {
+      signature: "apply()",
+      returns: "void",
+      description: <>Executa a operação apply.</>
+    },
+    {
+      signature: "getWrapMode()",
+      returns: "WrapMode",
+      description: <>Retorna a propriedade <code>propriedade </code>wrap mode atual``.</>
+    },
+    {
+      signature: "setWrapMode(WrapMode)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>wrap mode``.</>
+    },
+    {
+      signature: "toJson()",
+      returns: "String",
+      description: <>Executa a operação toJson.</>
+    },
+    {
+      signature: "fromJson(String)",
+      returns: "Curve",
+      description: <>Executa a operação fromJson usando os parâmetros informados (json).</>
+    }
+  ]}
+  staticMethods={[
+    {
+      signature: "genericInterface()",
+      returns: "GenericClassInspectorEntry",
+      description: <>Executa <code>genericInterface</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "inspectorController()",
+      returns: "ClassInspectorEntry",
+      description: <>Executa <code>inspectorController</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+/>

@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Random
 
 Complete API reference for `Random`, including constructors, attributes, virtual attributes, and methods.
@@ -14,9 +16,17 @@ Complete API reference for `Random`, including constructors, attributes, virtual
 public class Random
 ```
 
-## Static Methods (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `range(int, int)` | `int` | Returns a random integer value between min and max. |
-| `range(float, float)` | `float` | Returns a random float value between min and max. |
+<ApiDoc
+  staticMethods={[
+    {
+      signature: "range(int, int)",
+      returns: "int",
+      description: <>Returns a random integer value between min and max.</>
+    },
+    {
+      signature: "range(float, float)",
+      returns: "float",
+      description: <>Returns a random float value between min and max.</>
+    }
+  ]}
+/>

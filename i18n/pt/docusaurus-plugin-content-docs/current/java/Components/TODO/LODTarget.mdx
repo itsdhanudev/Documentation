@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # LODTarget
 
 Referência completa da API de `LODTarget`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,16 +16,26 @@ Referência completa da API de `LODTarget`, incluindo construtores, atributos, a
 public class LODTarget extends Component
 ```
 
-## Construtores (3)
-
-| Signature | Description |
-| --- | --- |
-| LODTarget([LODTarget]) | Executa `LODTarget` e retorna quando a chamada do motor termina. |
-| LODTarget([Engine]) | Executa `LODTarget` e retorna quando a chamada do motor termina. |
-| LODTarget() | Executa `LODTarget` e retorna quando a chamada do motor termina. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [LODTarget] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "LODTarget(LODTarget)",
+      description: <>Executa <code>LODTarget</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "LODTarget(Engine)",
+      description: <>Executa <code>LODTarget</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "LODTarget()",
+      description: <>Executa <code>LODTarget</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "LODTarget",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+/>

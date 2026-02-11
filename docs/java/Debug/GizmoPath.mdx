@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # GizmoPath
 
 Complete API reference for `GizmoPath`, including constructors, attributes, virtual attributes, and methods.
@@ -14,44 +16,129 @@ Complete API reference for `GizmoPath`, including constructors, attributes, virt
 public class GizmoPath extends GizmoElement
 ```
 
-## Constructors (1)
-
-| Signature | Description |
-| --- | --- |
-| GizmoPath() | Creates a new instance of GizmoPath. |
-
-## Attributes (2)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `rotMatrix` | [float][] | Represents the `rotMatrix` value stored on this instance. Read or assign to update the property. |
-| `createdEntries` | [int] | Represents the `createdEntries` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (7)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `color` | [Color] | `get/set` | Virtual attribute exposed by `getColor`. Access it like a field to read or write the underlying value. |
-| `matrix` | [float][] | `get/set` | Virtual attribute exposed by `getMatrix`. Access it like a field to read or write the underlying value. |
-| `position` | [Vector3] | `get/set` | Virtual attribute exposed by `getPosition`. Access it like a field to read or write the underlying value. |
-| `rotation` | [Quaternion] | `get/set` | Virtual attribute exposed by `getRotation`. Access it like a field to read or write the underlying value. |
-| `scale` | [Vector3] | `get/set` | Virtual attribute exposed by `getScale`. Access it like a field to read or write the underlying value. |
-| `userPointer` | [Object] | `get/set` | Virtual attribute exposed by `getUserPointer`. Access it like a field to read or write the underlying value. |
-| `wireFrameWidth` | [int] | `get/set` | Virtual attribute exposed by `getWireFrameWidth`. Access it like a field to read or write the underlying value. |
-
-## Methods (12)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `setPosition(float, float, float)` | `void` | Sets or updates the position. |
-| `setRotation(float, float, float)` | `void` | Sets or updates the rotation. |
-| `setRotation(float, float, float, float)` | `void` | Sets or updates the rotation. |
-| `setScale(float, float, float)` | `void` | Sets or updates the scale. |
-| `clear()` | `void` | Clears or resets the object's state. |
-| `addLine(Vector3, Vector3)` | `GizmoPath` | Adds line to the collection. |
-| `addLineUnsafe(Vector3, Vector3)` | `GizmoPath` | Adds line unsafe to the collection. |
-| `addPath([List&lt;Vector2&gt;])` | `GizmoPath` | Adds path to the collection. |
-| `apply()` | `void` | Executes `apply` and returns after the underlying engine call finishes. |
-| `destroy()` | `void` | Executes `destroy` and returns after the underlying engine call finishes. |
-| `getVertex()` | `Vertex` | Returns the current vertex. |
-| `getRenderMode()` | `RenderMode` | Returns the current render mode. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "GizmoPath()",
+      description: <>Creates a new instance of GizmoPath.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "rotMatrix",
+      type: "float[]",
+      description: <>Represents the <code>rotMatrix</code> value stored on this instance. Read or assign to update the property.</>
+    },
+    {
+      name: "createdEntries",
+      type: "int",
+      description: <>Represents the <code>createdEntries</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "color",
+      type: "Color",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getColor</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "matrix",
+      type: "float[]",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getMatrix</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "position",
+      type: "Vector3",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getPosition</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "rotation",
+      type: "Quaternion",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getRotation</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "scale",
+      type: "Vector3",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getScale</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "userPointer",
+      type: "Object",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getUserPointer</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "wireFrameWidth",
+      type: "int",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getWireFrameWidth</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "setPosition(float, float, float)",
+      returns: "void",
+      description: <>Sets or updates the position.</>
+    },
+    {
+      signature: "setRotation(float, float, float)",
+      returns: "void",
+      description: <>Sets or updates the rotation.</>
+    },
+    {
+      signature: "setRotation(float, float, float, float)",
+      returns: "void",
+      description: <>Sets or updates the rotation.</>
+    },
+    {
+      signature: "setScale(float, float, float)",
+      returns: "void",
+      description: <>Sets or updates the scale.</>
+    },
+    {
+      signature: "clear()",
+      returns: "void",
+      description: <>Clears or resets the object's state.</>
+    },
+    {
+      signature: "addLine(Vector3, Vector3)",
+      returns: "GizmoPath",
+      description: <>Adds line to the collection.</>
+    },
+    {
+      signature: "addLineUnsafe(Vector3, Vector3)",
+      returns: "GizmoPath",
+      description: <>Adds line unsafe to the collection.</>
+    },
+    {
+      signature: "addPath(List&lt;Vector2&gt;)",
+      returns: "GizmoPath",
+      description: <>Adds path to the collection.</>
+    },
+    {
+      signature: "apply()",
+      returns: "void",
+      description: <>Executes <code>apply</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "destroy()",
+      returns: "void",
+      description: <>Executes <code>destroy</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "getVertex()",
+      returns: "Vertex",
+      description: <>Returns the current vertex.</>
+    },
+    {
+      signature: "getRenderMode()",
+      returns: "RenderMode",
+      description: <>Returns the current render mode.</>
+    }
+  ]}
+/>

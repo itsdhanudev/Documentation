@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # ColorGradient
 
 Complete API reference for `ColorGradient`, including constructors, attributes, virtual attributes, and methods.
@@ -14,35 +16,76 @@ Complete API reference for `ColorGradient`, including constructors, attributes, 
 public class ColorGradient
 ```
 
-## Constructors (2)
-
-| Signature | Description |
-| --- | --- |
-| ColorGradient([Gradient]) | Executes `ColorGradient` and returns after the underlying engine call finishes. |
-| ColorGradient() | Executes `ColorGradient` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [Gradient] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Methods (8)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `addPoint(float, Color)` | [ColorGradient].[Point] | Adds point to the collection. |
-| `removePointAt(int)` | `void` | Removes point at from the collection. |
-| `pointAt(int)` | `Point` | Performs the pointAt operation using the provided parameters (idx). |
-| `clear()` | `void` | Clears or resets the object's state. |
-| `pointsCount()` | `int` | Executes `pointsCount` and returns after the underlying engine call finishes. |
-| `evaluate(float)` | `Color` | Performs the evaluate operation using the provided parameters (location). |
-| `toJson()` | `String` | Executes `toJson` and returns after the underlying engine call finishes. |
-| `fromJson(String)` | `ColorGradient` | Performs the fromJson operation using the provided parameters (json). |
-
-## Static Methods (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `genericInterface()` | `GenericClassInspectorEntry` | Executes `genericInterface` and returns after the underlying engine call finishes. |
-| `inspectorController()` | `ClassInspectorEntry` | Executes `inspectorController` and returns after the underlying engine call finishes. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "ColorGradient(Gradient)",
+      description: <>Executes <code>ColorGradient</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "ColorGradient()",
+      description: <>Executes <code>ColorGradient</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "Gradient",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "addPoint(float, Color)",
+      returns: "ColorGradient.Point",
+      description: <>Adds point to the collection.</>
+    },
+    {
+      signature: "removePointAt(int)",
+      returns: "void",
+      description: <>Removes point at from the collection.</>
+    },
+    {
+      signature: "pointAt(int)",
+      returns: "Point",
+      description: <>Performs the pointAt operation using the provided parameters (idx).</>
+    },
+    {
+      signature: "clear()",
+      returns: "void",
+      description: <>Clears or resets the object's state.</>
+    },
+    {
+      signature: "pointsCount()",
+      returns: "int",
+      description: <>Executes <code>pointsCount</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "evaluate(float)",
+      returns: "Color",
+      description: <>Performs the evaluate operation using the provided parameters (location).</>
+    },
+    {
+      signature: "toJson()",
+      returns: "String",
+      description: <>Executes <code>toJson</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "fromJson(String)",
+      returns: "ColorGradient",
+      description: <>Performs the fromJson operation using the provided parameters (json).</>
+    }
+  ]}
+  staticMethods={[
+    {
+      signature: "genericInterface()",
+      returns: "GenericClassInspectorEntry",
+      description: <>Executes <code>genericInterface</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "inspectorController()",
+      returns: "ClassInspectorEntry",
+      description: <>Executes <code>inspectorController</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

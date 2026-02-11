@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Collision
 
 Complete API reference for `Collision`, including constructors, attributes, virtual attributes, and methods.
@@ -14,37 +16,95 @@ Complete API reference for `Collision`, including constructors, attributes, virt
 public class Collision
 ```
 
-## Constructors (2)
-
-| Signature | Description |
-| --- | --- |
-| Collision([Collision]) | Executes `Collision` and returns after the underlying engine call finishes. |
-| Collision() | Executes `Collision` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [Collision] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (9)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `collider` | [Collider] | `get/set` | Returns the collider associated with this collision. |
-| `colliderObject` | [SpatialObject] | `get/set` | Returns the object associated with the Collider in this collision. |
-| `contactCount` | [int] | `get` | Returns the number of contact points in the collision. |
-| `contactPoint` | [Vector3] | `get/set` | Returns the contact position of the first contact point (deprecated, get a Contact using contactAt() or getContactList() and call getContactPoint() on it). |
-| `distance` | [float] | `get/set` | Returns the penetration distance at the first contact point (deprecated, get a Contact using contactAt() or getContactList() and call getDistance() on it). |
-| `impulse` | [float] | `get/set` | Returns the impulse magnitude at the first contact point (deprecated, get a Contact using contactAt() or getContactList() and call getImpulse() on it). |
-| `normal` | [Vector3] | `get/set` | Returns the normal vector of the first contact point (deprecated, get a Contact using contactAt() or getContactList() and call getNormal() on it). |
-| `object` | [SpatialObject] | `get/set` | Returns the other object involved in the collision. |
-| `physicsComponent` | [PhysicsComponent] | `get/set` | Returns the physics of the other object involved in the collision. |
-
-## Methods (3)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `contactCount()` | `int` | Returns the number of contact points in the collision. |
-| `contactAt(int)` | `Contact` | Returns the contact at the specified index. |
-| `getContactList()` | [List]&[lt];[Contact]&[gt]; | Returns the list of contact points in the collision. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "Collision(Collision)",
+      description: <>Executes <code>Collision</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "Collision()",
+      description: <>Executes <code>Collision</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "Collision",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "collider",
+      type: "Collider",
+      access: "get/set",
+      description: <>Returns the collider associated with this collision.</>
+    },
+    {
+      name: "colliderObject",
+      type: "SpatialObject",
+      access: "get/set",
+      description: <>Returns the object associated with the Collider in this collision.</>
+    },
+    {
+      name: "contactCount",
+      type: "int",
+      access: "get",
+      description: <>Returns the number of contact points in the collision.</>
+    },
+    {
+      name: "contactPoint",
+      type: "Vector3",
+      access: "get/set",
+      description: <>Returns the contact position of the first contact point (deprecated, get a Contact using contactAt() or getContactList() and call getContactPoint() on it).</>
+    },
+    {
+      name: "distance",
+      type: "float",
+      access: "get/set",
+      description: <>Returns the penetration distance at the first contact point (deprecated, get a Contact using contactAt() or getContactList() and call getDistance() on it).</>
+    },
+    {
+      name: "impulse",
+      type: "float",
+      access: "get/set",
+      description: <>Returns the impulse magnitude at the first contact point (deprecated, get a Contact using contactAt() or getContactList() and call getImpulse() on it).</>
+    },
+    {
+      name: "normal",
+      type: "Vector3",
+      access: "get/set",
+      description: <>Returns the normal vector of the first contact point (deprecated, get a Contact using contactAt() or getContactList() and call getNormal() on it).</>
+    },
+    {
+      name: "object",
+      type: "SpatialObject",
+      access: "get/set",
+      description: <>Returns the other object involved in the collision.</>
+    },
+    {
+      name: "physicsComponent",
+      type: "PhysicsComponent",
+      access: "get/set",
+      description: <>Returns the physics of the other object involved in the collision.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "contactCount()",
+      returns: "int",
+      description: <>Returns the number of contact points in the collision.</>
+    },
+    {
+      signature: "contactAt(int)",
+      returns: "Contact",
+      description: <>Returns the contact at the specified index.</>
+    },
+    {
+      signature: "getContactList()",
+      returns: "List&lt;Contact&gt;",
+      description: <>Returns the list of contact points in the collision.</>
+    }
+  ]}
+/>

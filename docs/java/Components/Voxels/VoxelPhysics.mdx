@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # VoxelPhysics
 
 Complete API reference for `VoxelPhysics`, including constructors, attributes, virtual attributes, and methods.
@@ -14,26 +16,58 @@ Complete API reference for `VoxelPhysics`, including constructors, attributes, v
 public class VoxelPhysics extends Component
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| VoxelPhysics([VoxelPhysics]) | Executes `VoxelPhysics` and returns after the underlying engine call finishes. |
-| VoxelPhysics([Engine]) | Executes `VoxelPhysics` and returns after the underlying engine call finishes. |
-| VoxelPhysics() | Creates a new instance of VoxelPhysics. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [VoxelPhysics] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (5)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `climbSpeed` | [float] | `get/set` | Virtual attribute exposed by `getClimbSpeed`. Access it like a field to read or write the underlying value. |
-| `gravity` | [float] | `get/set` | Virtual attribute exposed by `getGravity`. Access it like a field to read or write the underlying value. |
-| `maxClimbHeight` | [float] | `get/set` | Virtual attribute exposed by `getMaxClimbHeight`. Access it like a field to read or write the underlying value. |
-| `maxGravitySpeed` | [float] | `get/set` | Virtual attribute exposed by `getMaxGravitySpeed`. Access it like a field to read or write the underlying value. |
-| `velocity` | [Vector3] | `get/set` | Virtual attribute exposed by `getVelocity`. Access it like a field to read or write the underlying value. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "VoxelPhysics(VoxelPhysics)",
+      description: <>Executes <code>VoxelPhysics</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "VoxelPhysics(Engine)",
+      description: <>Executes <code>VoxelPhysics</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "VoxelPhysics()",
+      description: <>Creates a new instance of VoxelPhysics.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "VoxelPhysics",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "climbSpeed",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getClimbSpeed</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "gravity",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getGravity</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "maxClimbHeight",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getMaxClimbHeight</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "maxGravitySpeed",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getMaxGravitySpeed</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "velocity",
+      type: "Vector3",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getVelocity</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+/>

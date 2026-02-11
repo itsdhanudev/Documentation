@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # InputDialogListener
 
 Complete API reference for `InputDialogListener`, including constructors, attributes, virtual attributes, and methods.
@@ -14,10 +16,17 @@ Complete API reference for `InputDialogListener`, including constructors, attrib
 public interface InputDialogListener
 ```
 
-## Methods (3)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `@MethodArgs([{"text"}])` | `void` | Performs the @MethodArgs operation. |
-| `onFinish(String)` | `void` | Executes `onFinish` and returns after the underlying engine call finishes. |
-| `onCancel()` | `void` | Executes `onCancel` and returns after the underlying engine call finishes. |
+<ApiDoc
+  methods={[
+    {
+      signature: "onFinish(String)",
+      returns: "void",
+      description: <>Executes <code>onFinish</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "onCancel()",
+      returns: "void",
+      description: <>Executes <code>onCancel</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

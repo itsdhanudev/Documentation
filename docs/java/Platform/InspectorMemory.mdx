@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # InspectorMemory
 
 Complete API reference for `InspectorMemory`, including constructors, attributes, virtual attributes, and methods.
@@ -14,11 +16,27 @@ Complete API reference for `InspectorMemory`, including constructors, attributes
 public class InspectorMemory
 ```
 
-## Methods (4)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| HashMap&lt;&gt;() | [Map]&[lt];[String], [String]&[gt]; [dataBase] = [new] | Performs the HashMap&lt;&gt; operation. |
-| `store(String, String)` | `void` | Executes `store` and returns after the underlying engine call finishes. |
-| `load(String)` | `String` | Executes `load` and returns after the underlying engine call finishes. |
-| `clear()` | `void` | Executes `clear` and returns after the underlying engine call finishes. |
+<ApiDoc
+  methods={[
+    {
+      signature: "HashMap&lt;&gt;()",
+      returns: "Map&lt;String, String&gt; dataBase = new",
+      description: <>Performs the HashMap&lt;&gt; operation.</>
+    },
+    {
+      signature: "store(String, String)",
+      returns: "void",
+      description: <>Executes <code>store</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "load(String)",
+      returns: "String",
+      description: <>Executes <code>load</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "clear()",
+      returns: "void",
+      description: <>Executes <code>clear</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

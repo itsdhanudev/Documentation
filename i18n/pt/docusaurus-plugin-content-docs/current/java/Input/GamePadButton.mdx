@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # GamePadButton
 
 Referência completa da API de `GamePadButton`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,24 +16,48 @@ Referência completa da API de `GamePadButton`, incluindo construtores, atributo
 public class GamePadButton
 ```
 
-## Construtores (2)
-
-| Signature | Description |
-| --- | --- |
-| GamePadButton([GamePadButton]) | Executa `GamePadButton` e retorna quando a chamada do motor termina. |
-| GamePadButton() | Executa `GamePadButton` e retorna quando a chamada do motor termina. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `gamePadButton` | [GamePadButton] | Representa o valor de `gamePadButton` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (4)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `down` | [boolean] | `get/set` | Verifica se o botão acabou de ser pressionado. Retorna verdadeiro apenas no primeiro quadro em que ele foi pressionado. |
-| `longDown` | [boolean] | `get/set` | Verifica se o botão acabou de ser pressionado por muito tempo. Retorna verdadeiro apenas no primeiro quadro em que ele foi pressionado por muito tempo. |
-| `longPressed` | [boolean] | `get/set` | Verifica se o botão está sendo mantido pressionado por um longo período. Retorna verdadeiro em todos os quadros enquanto ele permanecer pressionado por muito tempo. |
-| `pressed` | [boolean] | `get/set` | Verifica se o botão está sendo mantido pressionado. Retorna verdadeiro em todos os quadros enquanto ele permanecer pressionado. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "GamePadButton(GamePadButton)",
+      description: <>Executa <code>GamePadButton</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "GamePadButton()",
+      description: <>Executa <code>GamePadButton</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "gamePadButton",
+      type: "GamePadButton",
+      description: <>Representa o valor de <code>gamePadButton</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "down",
+      type: "boolean",
+      access: "get/set",
+      description: <>Verifica se o botão acabou de ser pressionado. Retorna verdadeiro apenas no primeiro quadro em que ele foi pressionado.</>
+    },
+    {
+      name: "longDown",
+      type: "boolean",
+      access: "get/set",
+      description: <>Verifica se o botão acabou de ser pressionado por muito tempo. Retorna verdadeiro apenas no primeiro quadro em que ele foi pressionado por muito tempo.</>
+    },
+    {
+      name: "longPressed",
+      type: "boolean",
+      access: "get/set",
+      description: <>Verifica se o botão está sendo mantido pressionado por um longo período. Retorna verdadeiro em todos os quadros enquanto ele permanecer pressionado por muito tempo.</>
+    },
+    {
+      name: "pressed",
+      type: "boolean",
+      access: "get/set",
+      description: <>Verifica se o botão está sendo mantido pressionado. Retorna verdadeiro em todos os quadros enquanto ele permanecer pressionado.</>
+    }
+  ]}
+/>

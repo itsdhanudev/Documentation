@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # AOnFocusChangeListener
 
 Referência completa da API de `AOnFocusChangeListener`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,9 +16,17 @@ Referência completa da API de `AOnFocusChangeListener`, incluindo construtores,
 public class AOnFocusChangeListener
 ```
 
-## Métodos (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `onFocusChange(View, boolean)` | `void` | Executa a operação onFocusChange usando os parâmetros informados (v, hasFocus). |
-| `onFocusChangeEvent(View, boolean)` | `void` | Executa `onFocusChangeEvent` e retorna quando a chamada do motor termina. |
+<ApiDoc
+  methods={[
+    {
+      signature: "onFocusChange(View, boolean)",
+      returns: "void",
+      description: <>Executa a operação onFocusChange usando os parâmetros informados (v, hasFocus).</>
+    },
+    {
+      signature: "onFocusChangeEvent(View, boolean)",
+      returns: "void",
+      description: <>Executa <code>onFocusChangeEvent</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+/>

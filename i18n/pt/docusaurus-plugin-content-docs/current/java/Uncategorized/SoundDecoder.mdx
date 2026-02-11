@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # SoundDecoder
 
 Referência completa da API de `SoundDecoder`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,9 +16,29 @@ Referência completa da API de `SoundDecoder`, incluindo construtores, atributos
 public class SoundDecoder
 ```
 
-## Métodos Estáticos (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `decodeFile(File)` | `SoundData` | Executa `decodeFile` e retorna quando a chamada do motor termina. |
-| `streamDecodeFile(File)` | `SoundEmitter` | Executa a operação streamDecodeFile usando os parâmetros informados (soundFile). |
+<ApiDoc
+  methods={[
+    {
+      signature: "decodeFile(File)",
+      returns: "SoundData",
+      description: <>Executa <code>decodeFile</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "streamDecodeFile(File)",
+      returns: "SoundEmitter",
+      description: <>Executa a operação streamDecodeFile usando os parâmetros informados (soundFile).</>
+    }
+  ]}
+  staticMethods={[
+    {
+      signature: "decodeFile(File)",
+      returns: "SoundData",
+      description: <>Executa <code>decodeFile</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "streamDecodeFile(File)",
+      returns: "SoundEmitter",
+      description: <>Executa a operação streamDecodeFile usando os parâmetros informados (soundFile).</>
+    }
+  ]}
+/>

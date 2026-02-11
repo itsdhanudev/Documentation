@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # UIGridLayout
 
 Referência completa da API de `UIGridLayout`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,32 +16,63 @@ Referência completa da API de `UIGridLayout`, incluindo construtores, atributos
 public class UIGridLayout extends Component
 ```
 
-## Construtores (3)
-
-| Signature | Description |
-| --- | --- |
-| UIGridLayout([UIGridLayout]) | Executa `UIGridLayout` e retorna quando a chamada do motor termina. |
-| UIGridLayout([Engine]) | Executa `UIGridLayout` e retorna quando a chamada do motor termina. |
-| UIGridLayout() | Executa `UIGridLayout` e retorna quando a chamada do motor termina. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [UIGridLayout] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (3)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `autoColumns` | [boolean] | `set` | Atributo virtual exposto por `setAutoColumns`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `columns` | [int] | `set` | Atributo virtual exposto por `setColumns`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `spacing` | [int] | `set` | Atributo virtual exposto por `setSpacing`. Acesse como um campo para ler ou escrever o valor subjacente. |
-
-## Métodos (3)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getSpacing()` | `int` | Executa `getSpacing` e retorna quando a chamada do motor termina. |
-| `getColumns()` | `int` | Executa `getColumns` e retorna quando a chamada do motor termina. |
-| `isAutoColumns()` | `boolean` | Executa `isAutoColumns` e retorna quando a chamada do motor termina. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "UIGridLayout(UIGridLayout)",
+      description: <>Executa <code>UIGridLayout</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "UIGridLayout(Engine)",
+      description: <>Executa <code>UIGridLayout</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "UIGridLayout()",
+      description: <>Executa <code>UIGridLayout</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "UIGridLayout",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "autoColumns",
+      type: "boolean",
+      access: "set",
+      description: <>Atributo virtual exposto por <code>setAutoColumns</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "columns",
+      type: "int",
+      access: "set",
+      description: <>Atributo virtual exposto por <code>setColumns</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "spacing",
+      type: "int",
+      access: "set",
+      description: <>Atributo virtual exposto por <code>setSpacing</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "getSpacing()",
+      returns: "int",
+      description: <>Executa <code>getSpacing</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "getColumns()",
+      returns: "int",
+      description: <>Executa <code>getColumns</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "isAutoColumns()",
+      returns: "boolean",
+      description: <>Executa <code>isAutoColumns</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+/>

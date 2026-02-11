@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # UIRectangularMask
 
 Referência completa da API de `UIRectangularMask`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,16 +16,26 @@ Referência completa da API de `UIRectangularMask`, incluindo construtores, atri
 public class UIRectangularMask extends Component
 ```
 
-## Construtores (3)
-
-| Signature | Description |
-| --- | --- |
-| UIRectangularMask([UIRectangularMask]) | Executa `UIRectangularMask` e retorna quando a chamada do motor termina. |
-| UIRectangularMask([Engine]) | Executa `UIRectangularMask` e retorna quando a chamada do motor termina. |
-| UIRectangularMask() | Cria uma nova instância de UIRectangularMask. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [UIRectangularMask] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "UIRectangularMask(UIRectangularMask)",
+      description: <>Executa <code>UIRectangularMask</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "UIRectangularMask(Engine)",
+      description: <>Executa <code>UIRectangularMask</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "UIRectangularMask()",
+      description: <>Cria uma nova instância de UIRectangularMask.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "UIRectangularMask",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+/>

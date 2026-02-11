@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # UISlideBar
 
 Complete API reference for `UISlideBar`, including constructors, attributes, virtual attributes, and methods.
@@ -14,32 +16,94 @@ Complete API reference for `UISlideBar`, including constructors, attributes, vir
 public class UISlideBar extends Component
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| UISlideBar([UISlideBar]) | Executes `UISlideBar` and returns after the underlying engine call finishes. |
-| UISlideBar([Engine]) | Executes `UISlideBar` and returns after the underlying engine call finishes. |
-| UISlideBar() | Executes `UISlideBar` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [UISlideBar] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (11)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `backgroundColor` | [Color] | `get/set` | Virtual attribute exposed by `getBackgroundColor`. Access it like a field to read or write the underlying value. |
-| `backgroundTexture` | [Texture] | `get/set` | Virtual attribute exposed by `getBackgroundTexture`. Access it like a field to read or write the underlying value. |
-| `border` | [float] | `get/set` | Virtual attribute exposed by `getBorder`. Access it like a field to read or write the underlying value. |
-| `handlerColor` | [Color] | `get/set` | Virtual attribute exposed by `getHandlerColor`. Access it like a field to read or write the underlying value. |
-| `handlerTexture` | [Texture] | `get/set` | Virtual attribute exposed by `getHandlerTexture`. Access it like a field to read or write the underlying value. |
-| `jRPaddingBottom` | [int] | `get/set` | Virtual attribute exposed by `getJRPaddingBottom`. Access it like a field to read or write the underlying value. |
-| `jRPaddingLeft` | [int] | `get/set` | Virtual attribute exposed by `getJRPaddingLeft`. Access it like a field to read or write the underlying value. |
-| `jRPaddingRight` | [int] | `get/set` | Virtual attribute exposed by `getJRPaddingRight`. Access it like a field to read or write the underlying value. |
-| `jRPaddingTop` | [int] | `get/set` | Virtual attribute exposed by `getJRPaddingTop`. Access it like a field to read or write the underlying value. |
-| `orientation` | [Orientation] | `get/set` | Virtual attribute exposed by `getOrientation`. Access it like a field to read or write the underlying value. |
-| `value` | [float] | `get/set` | Virtual attribute exposed by `getValue`. Access it like a field to read or write the underlying value. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "UISlideBar(UISlideBar)",
+      description: <>Executes <code>UISlideBar</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "UISlideBar(Engine)",
+      description: <>Executes <code>UISlideBar</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "UISlideBar()",
+      description: <>Executes <code>UISlideBar</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "UISlideBar",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "backgroundColor",
+      type: "Color",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getBackgroundColor</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "backgroundTexture",
+      type: "Texture",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getBackgroundTexture</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "border",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getBorder</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "handlerColor",
+      type: "Color",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getHandlerColor</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "handlerTexture",
+      type: "Texture",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getHandlerTexture</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "jRPaddingBottom",
+      type: "int",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getJRPaddingBottom</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "jRPaddingLeft",
+      type: "int",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getJRPaddingLeft</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "jRPaddingRight",
+      type: "int",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getJRPaddingRight</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "jRPaddingTop",
+      type: "int",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getJRPaddingTop</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "orientation",
+      type: "Orientation",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getOrientation</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "value",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getValue</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+/>

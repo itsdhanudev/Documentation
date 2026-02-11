@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # MulOperator
 
 Complete API reference for `MulOperator`, including constructors, attributes, virtual attributes, and methods.
@@ -14,9 +16,12 @@ Complete API reference for `MulOperator`, including constructors, attributes, vi
 public interface MulOperator
 ```
 
-## Methods (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `@MethodArgs([{"otherObject"}])` | `void` | Multiplies the current value by the given object. |
-| `mul(Object)` | `T` | Executes `mul` and returns after the underlying engine call finishes. |
+<ApiDoc
+  methods={[
+    {
+      signature: "mul(Object)",
+      returns: "T",
+      description: <>Multiplies the current value by the given object.</>
+    }
+  ]}
+/>

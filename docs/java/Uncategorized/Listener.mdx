@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Listener
 
 Complete API reference for `Listener`, including constructors, attributes, virtual attributes, and methods.
@@ -14,8 +16,12 @@ Complete API reference for `Listener`, including constructors, attributes, virtu
 public interface Listener
 ```
 
-## Methods (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `onClicked()` | `void` | Executes `onClicked` and returns after the underlying engine call finishes. |
+<ApiDoc
+  methods={[
+    {
+      signature: "onClicked()",
+      returns: "void",
+      description: <>Executes <code>onClicked</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

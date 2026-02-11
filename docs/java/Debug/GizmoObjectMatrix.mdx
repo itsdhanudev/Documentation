@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # GizmoObjectMatrix
 
 Complete API reference for `GizmoObjectMatrix`, including constructors, attributes, virtual attributes, and methods.
@@ -14,29 +16,77 @@ Complete API reference for `GizmoObjectMatrix`, including constructors, attribut
 public class GizmoObjectMatrix extends GizmoMatrix
 ```
 
-## Constructors (2)
-
-| Signature | Description |
-| --- | --- |
-| GizmoObjectMatrix() | Creates a new instance of GizmoObjectMatrix. |
-| GizmoObjectMatrix([Vertex]) | Creates a new instance of GizmoObjectMatrix. |
-
-## Virtual Attributes (8)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `color` | [Color] | `get/set` | Virtual attribute exposed by `getColor`. Access it like a field to read or write the underlying value. |
-| `dualFaceRender` | [boolean] | `get/set` | Virtual attribute exposed by `isDualFaceRender`. Access it like a field to read or write the underlying value. |
-| `outlineScale` | [float] | `get/set` | Virtual attribute exposed by `getOutlineScale`. Access it like a field to read or write the underlying value. |
-| `renderMode` | [RenderMode] | `get/set` | Virtual attribute exposed by `getRenderMode`. Access it like a field to read or write the underlying value. |
-| `texture` | [Texture] | `get/set` | Virtual attribute exposed by `getTexture`. Access it like a field to read or write the underlying value. |
-| `vertex` | [Vertex] | `get/set` | Virtual attribute exposed by `getVertex`. Access it like a field to read or write the underlying value. |
-| `wireFrame` | [boolean] | `get/set` | Virtual attribute exposed by `isWireFrame`. Access it like a field to read or write the underlying value. |
-| `wireFrameWidth` | [int] | `get/set` | Virtual attribute exposed by `getWireFrameWidth`. Access it like a field to read or write the underlying value. |
-
-## Methods (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getUserPointer()` | `Object` | Returns the current user pointer. |
-| `setUserPointer(Object)` | `void` | Sets or updates the user pointer. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "GizmoObjectMatrix()",
+      description: <>Creates a new instance of GizmoObjectMatrix.</>
+    },
+    {
+      signature: "GizmoObjectMatrix(Vertex)",
+      description: <>Creates a new instance of GizmoObjectMatrix.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "color",
+      type: "Color",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getColor</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "dualFaceRender",
+      type: "boolean",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>isDualFaceRender</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "outlineScale",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getOutlineScale</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "renderMode",
+      type: "RenderMode",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getRenderMode</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "texture",
+      type: "Texture",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getTexture</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "vertex",
+      type: "Vertex",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getVertex</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "wireFrame",
+      type: "boolean",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>isWireFrame</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "wireFrameWidth",
+      type: "int",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getWireFrameWidth</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "getUserPointer()",
+      returns: "Object",
+      description: <>Returns the current user pointer.</>
+    },
+    {
+      signature: "setUserPointer(Object)",
+      returns: "void",
+      description: <>Sets or updates the user pointer.</>
+    }
+  ]}
+/>

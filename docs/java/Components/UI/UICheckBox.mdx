@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # UICheckBox
 
 Complete API reference for `UICheckBox`, including constructors, attributes, virtual attributes, and methods.
@@ -14,28 +16,70 @@ Complete API reference for `UICheckBox`, including constructors, attributes, vir
 public class UICheckBox extends Component
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| UICheckBox([UICheckBox]) | Executes `UICheckBox` and returns after the underlying engine call finishes. |
-| UICheckBox([Engine]) | Executes `UICheckBox` and returns after the underlying engine call finishes. |
-| UICheckBox() | Creates a new instance of UICheckBox. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [UICheckBox] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (7)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `checked` | [boolean] | `get/set` | Virtual attribute exposed by `isChecked`. Access it like a field to read or write the underlying value. |
-| `pressed` | [boolean] | `get` | Virtual attribute exposed by `isPressed`. Access it like a field to read or write the underlying value. |
-| `down` | [boolean] | `get` | Virtual attribute exposed by `isDown`. Access it like a field to read or write the underlying value. |
-| `up` | [boolean] | `get` | Virtual attribute exposed by `isUp`. Access it like a field to read or write the underlying value. |
-| `color` | [Color] | `get/set` | Virtual attribute exposed by `getColor`. Access it like a field to read or write the underlying value. |
-| `checkedTexture` | [Texture] | `get/set` | Virtual attribute exposed by `getCheckedTexture`. Access it like a field to read or write the underlying value. |
-| `uncheckedTexture` | [Texture] | `get/set` | Virtual attribute exposed by `getUncheckedTexture`. Access it like a field to read or write the underlying value. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "UICheckBox(UICheckBox)",
+      description: <>Executes <code>UICheckBox</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "UICheckBox(Engine)",
+      description: <>Executes <code>UICheckBox</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "UICheckBox()",
+      description: <>Creates a new instance of UICheckBox.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "UICheckBox",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "checked",
+      type: "boolean",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>isChecked</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "pressed",
+      type: "boolean",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>isPressed</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "down",
+      type: "boolean",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>isDown</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "up",
+      type: "boolean",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>isUp</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "color",
+      type: "Color",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getColor</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "checkedTexture",
+      type: "Texture",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getCheckedTexture</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "uncheckedTexture",
+      type: "Texture",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getUncheckedTexture</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+/>

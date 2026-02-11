@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # ScaleBasedDistance
 
 Referência completa da API de `ScaleBasedDistance`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,22 +16,34 @@ Referência completa da API de `ScaleBasedDistance`, incluindo construtores, atr
 public class ScaleBasedDistance extends Component
 ```
 
-## Construtores (3)
-
-| Signature | Description |
-| --- | --- |
-| ScaleBasedDistance([ScaleBasedDistance]) | Executa `ScaleBasedDistance` e retorna quando a chamada do motor termina. |
-| ScaleBasedDistance([Engine]) | Executa `ScaleBasedDistance` e retorna quando a chamada do motor termina. |
-| ScaleBasedDistance() | Executa `ScaleBasedDistance` e retorna quando a chamada do motor termina. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [ScaleBasedDistance] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (1)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `scale` | [float] | `get/set` | Atributo virtual exposto por `getScale`. Acesse como um campo para ler ou escrever o valor subjacente. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "ScaleBasedDistance(ScaleBasedDistance)",
+      description: <>Executa <code>ScaleBasedDistance</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "ScaleBasedDistance(Engine)",
+      description: <>Executa <code>ScaleBasedDistance</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "ScaleBasedDistance()",
+      description: <>Executa <code>ScaleBasedDistance</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "ScaleBasedDistance",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "scale",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getScale</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+/>

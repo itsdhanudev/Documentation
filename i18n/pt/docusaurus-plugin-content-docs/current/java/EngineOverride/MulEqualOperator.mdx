@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # MulEqualOperator
 
 Referência completa da API de `MulEqualOperator`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,9 +16,12 @@ Referência completa da API de `MulEqualOperator`, incluindo construtores, atrib
 public interface MulEqualOperator
 ```
 
-## Métodos (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `@MethodArgs([{"otherObject"}])` | `void` | Multiplica o valor atual pelo objeto fornecido e atribui o resultado. |
-| `mulEqual(Object)` | `void` | Executa `mulEqual` e retorna quando a chamada do motor termina. |
+<ApiDoc
+  methods={[
+    {
+      signature: "mulEqual(Object)",
+      returns: "void",
+      description: <>Multiplica o valor atual pelo objeto fornecido e atribui o resultado.</>
+    }
+  ]}
+/>

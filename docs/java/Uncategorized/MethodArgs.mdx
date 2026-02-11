@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # MethodArgs
 
 Complete API reference for `MethodArgs`, including constructors, attributes, virtual attributes, and methods.
@@ -14,8 +16,12 @@ Complete API reference for `MethodArgs`, including constructors, attributes, vir
 public interface MethodArgs
 ```
 
-## Methods (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `value()` | [String][] | Executes `value` and returns after the underlying engine call finishes. |
+<ApiDoc
+  methods={[
+    {
+      signature: "value()",
+      returns: "String[]",
+      description: <>Executes <code>value</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

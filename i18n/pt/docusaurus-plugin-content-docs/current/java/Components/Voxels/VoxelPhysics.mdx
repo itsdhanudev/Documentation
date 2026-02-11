@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # VoxelPhysics
 
 Referência completa da API de `VoxelPhysics`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,26 +16,58 @@ Referência completa da API de `VoxelPhysics`, incluindo construtores, atributos
 public class VoxelPhysics extends Component
 ```
 
-## Construtores (3)
-
-| Signature | Description |
-| --- | --- |
-| VoxelPhysics([VoxelPhysics]) | Executa `VoxelPhysics` e retorna quando a chamada do motor termina. |
-| VoxelPhysics([Engine]) | Executa `VoxelPhysics` e retorna quando a chamada do motor termina. |
-| VoxelPhysics() | Cria uma nova instância de VoxelPhysics. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [VoxelPhysics] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (5)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `climbSpeed` | [float] | `get/set` | Atributo virtual exposto por `getClimbSpeed`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `gravity` | [float] | `get/set` | Atributo virtual exposto por `getGravity`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `maxClimbHeight` | [float] | `get/set` | Atributo virtual exposto por `getMaxClimbHeight`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `maxGravitySpeed` | [float] | `get/set` | Atributo virtual exposto por `getMaxGravitySpeed`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `velocity` | [Vector3] | `get/set` | Atributo virtual exposto por `getVelocity`. Acesse como um campo para ler ou escrever o valor subjacente. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "VoxelPhysics(VoxelPhysics)",
+      description: <>Executa <code>VoxelPhysics</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "VoxelPhysics(Engine)",
+      description: <>Executa <code>VoxelPhysics</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "VoxelPhysics()",
+      description: <>Cria uma nova instância de VoxelPhysics.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "VoxelPhysics",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "climbSpeed",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getClimbSpeed</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "gravity",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getGravity</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "maxClimbHeight",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getMaxClimbHeight</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "maxGravitySpeed",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getMaxGravitySpeed</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "velocity",
+      type: "Vector3",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getVelocity</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+/>

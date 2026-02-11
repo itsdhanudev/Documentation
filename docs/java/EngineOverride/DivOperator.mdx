@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # DivOperator
 
 Complete API reference for `DivOperator`, including constructors, attributes, virtual attributes, and methods.
@@ -14,9 +16,12 @@ Complete API reference for `DivOperator`, including constructors, attributes, vi
 public interface DivOperator
 ```
 
-## Methods (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `@MethodArgs([{"otherObject"}])` | `void` | Divides the current value by the given object. |
-| `div(Object)` | `T` | Executes `div` and returns after the underlying engine call finishes. |
+<ApiDoc
+  methods={[
+    {
+      signature: "div(Object)",
+      returns: "T",
+      description: <>Divides the current value by the given object.</>
+    }
+  ]}
+/>

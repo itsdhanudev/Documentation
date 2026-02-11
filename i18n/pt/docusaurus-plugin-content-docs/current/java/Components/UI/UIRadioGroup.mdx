@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # UIRadioGroup
 
 Referencia completa da API de `UIRadioGroup`, incluindo construtores, atributos, atributos virtuais e metodos.
@@ -14,21 +16,26 @@ Referencia completa da API de `UIRadioGroup`, incluindo construtores, atributos,
 public class UIRadioGroup extends Component
 ```
 
-## Construtores (3)
-
-| Signature | Description |
-| --- | --- |
-| UIRadioGroup([UIRadioGroup]) | Executa `UIRadioGroup` e retorna quando a chamada do motor termina. |
-| UIRadioGroup([Engine]) | Executa `UIRadioGroup` e retorna quando a chamada do motor termina. |
-| UIRadioGroup() | Cria uma nova instancia de UIRadioGroup. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [UIRadioGroup] | Representa o valor de `instance` armazenado nesta instancia. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (1)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
+<ApiDoc
+  constructors={[
+    {
+      signature: "UIRadioGroup(UIRadioGroup)",
+      description: <>Executa <code>UIRadioGroup</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "UIRadioGroup(Engine)",
+      description: <>Executa <code>UIRadioGroup</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "UIRadioGroup()",
+      description: <>Cria uma nova instancia de UIRadioGroup.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "UIRadioGroup",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta instancia. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+/>

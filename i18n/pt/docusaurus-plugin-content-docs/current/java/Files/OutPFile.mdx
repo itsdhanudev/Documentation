@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # OutPFile
 
 Referência completa da API de `OutPFile`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,25 +16,49 @@ Referência completa da API de `OutPFile`, incluindo construtores, atributos, at
 public class OutPFile
 ```
 
-## Construtores (2)
-
-| Signature | Description |
-| --- | --- |
-| OutPFile() | Cria uma nova instância de OutPFile. |
-| OutPFile([String]) | Cria uma nova instância de OutPFile. |
-
-## Métodos (4)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getFilePath()` | `String` | Retorna a propriedade `propriedade `file path atual``. |
-| `setFilePath(String)` | `void` | Define ou atualiza a propriedade `propriedade `file path``. |
-| `getAbsolutePath()` | `String` | Retorna a propriedade `propriedade `absolute path atual``. |
-| `toString()` | `String` | Retorna a propriedade `representação em string`. |
-
-## Métodos Estáticos (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `genericInterface()` | `GenericClassInspectorEntry` | Executa `genericInterface` e retorna quando a chamada do motor termina. |
-| `inspectorController()` | `ClassInspectorEntry` | Executa `inspectorController` e retorna quando a chamada do motor termina. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "OutPFile()",
+      description: <>Cria uma nova instância de OutPFile.</>
+    },
+    {
+      signature: "OutPFile(String)",
+      description: <>Cria uma nova instância de OutPFile.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "getFilePath()",
+      returns: "String",
+      description: <>Retorna a propriedade <code>propriedade </code>file path atual``.</>
+    },
+    {
+      signature: "setFilePath(String)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>file path``.</>
+    },
+    {
+      signature: "getAbsolutePath()",
+      returns: "String",
+      description: <>Retorna a propriedade <code>propriedade </code>absolute path atual``.</>
+    },
+    {
+      signature: "toString()",
+      returns: "String",
+      description: <>Retorna a propriedade <code>representação em string</code>.</>
+    }
+  ]}
+  staticMethods={[
+    {
+      signature: "genericInterface()",
+      returns: "GenericClassInspectorEntry",
+      description: <>Executa <code>genericInterface</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "inspectorController()",
+      returns: "ClassInspectorEntry",
+      description: <>Executa <code>inspectorController</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+/>

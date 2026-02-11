@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # StandUp
 
 Referência completa da API de `StandUp`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,30 +16,51 @@ Referência completa da API de `StandUp`, incluindo construtores, atributos, atr
 public class StandUp extends Component
 ```
 
-## Construtores (3)
-
-| Signature | Description |
-| --- | --- |
-| StandUp([StandUp]) | Executa `StandUp` e retorna quando a chamada do motor termina. |
-| StandUp([Engine]) | Executa `StandUp` e retorna quando a chamada do motor termina. |
-| StandUp() | Cria uma nova instância de StandUp. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [StandUp] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (1)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `rotationY` | [float] | `get/set` | Atributo virtual exposto por `getRotationY`. Acesse como um campo para ler ou escrever o valor subjacente. |
-
-## Métodos (3)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `lookTo(Vector3)` | `void` | Executa a operação lookTo usando os parâmetros informados (value). |
-| `rotate(float)` | `void` | Transforma ou move the object de acordo. |
-| `rotateInSeconds(float)` | `void` | Transforma ou move in seconds de acordo. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "StandUp(StandUp)",
+      description: <>Executa <code>StandUp</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "StandUp(Engine)",
+      description: <>Executa <code>StandUp</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "StandUp()",
+      description: <>Cria uma nova instância de StandUp.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "StandUp",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "rotationY",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getRotationY</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "lookTo(Vector3)",
+      returns: "void",
+      description: <>Executa a operação lookTo usando os parâmetros informados (value).</>
+    },
+    {
+      signature: "rotate(float)",
+      returns: "void",
+      description: <>Transforma ou move the object de acordo.</>
+    },
+    {
+      signature: "rotateInSeconds(float)",
+      returns: "void",
+      description: <>Transforma ou move in seconds de acordo.</>
+    }
+  ]}
+/>

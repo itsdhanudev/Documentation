@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # InvalidStateException
 
 Complete API reference for `InvalidStateException`, including constructors, attributes, virtual attributes, and methods.
@@ -14,11 +16,23 @@ Complete API reference for `InvalidStateException`, including constructors, attr
 public class InvalidStateException extends RuntimeException
 ```
 
-## Constructors (4)
-
-| Signature | Description |
-| --- | --- |
-| InvalidStateException() | Creates a new instance of InvalidStateException. |
-| InvalidStateException([String]) | Creates a new instance of InvalidStateException. |
-| InvalidStateException([String], [Throwable]) | Creates a new instance of InvalidStateException. |
-| InvalidStateException([Throwable]) | Creates a new instance of InvalidStateException. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "InvalidStateException()",
+      description: <>Creates a new instance of InvalidStateException.</>
+    },
+    {
+      signature: "InvalidStateException(String)",
+      description: <>Creates a new instance of InvalidStateException.</>
+    },
+    {
+      signature: "InvalidStateException(String, Throwable)",
+      description: <>Creates a new instance of InvalidStateException.</>
+    },
+    {
+      signature: "InvalidStateException(Throwable)",
+      description: <>Creates a new instance of InvalidStateException.</>
+    }
+  ]}
+/>

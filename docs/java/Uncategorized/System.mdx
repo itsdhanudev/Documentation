@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # System
 
 Complete API reference for `System`, including constructors, attributes, virtual attributes, and methods.
@@ -14,17 +16,57 @@ Complete API reference for `System`, including constructors, attributes, virtual
 public class System
 ```
 
-## Static Methods (10)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `gc()` | `void` | Runs the Java garbage collector. |
-| `exit()` | `void` | Quits the game by calling GameController.quit(). |
-| `exit(int)` | `void` | Quits the game by calling GameController.quit(). |
-| `load(String)` | `void` | Not supported. |
-| `loadLibrary(String)` | `void` | Not supported. |
-| `mapLibraryName(String)` | `String` | Not supported. |
-| `lineSeparator()` | `String` | Returns the line separator string for the current operating system. |
-| `arraycopy(Object, int, Object, int, int)` | `void` | Copies an array from the specified source to the specified destination. |
-| `currentTimeMillis()` | `long` | Returns the current time in milliseconds. |
-| `nanoTime()` | `long` | Returns the current time in nanoseconds. |
+<ApiDoc
+  staticMethods={[
+    {
+      signature: "gc()",
+      returns: "void",
+      description: <>Runs the Java garbage collector.</>
+    },
+    {
+      signature: "exit()",
+      returns: "void",
+      description: <>Quits the game by calling GameController.quit().</>
+    },
+    {
+      signature: "exit(int)",
+      returns: "void",
+      description: <>Quits the game by calling GameController.quit().</>
+    },
+    {
+      signature: "load(String)",
+      returns: "void",
+      description: <>Not supported.</>
+    },
+    {
+      signature: "loadLibrary(String)",
+      returns: "void",
+      description: <>Not supported.</>
+    },
+    {
+      signature: "mapLibraryName(String)",
+      returns: "String",
+      description: <>Not supported.</>
+    },
+    {
+      signature: "lineSeparator()",
+      returns: "String",
+      description: <>Returns the line separator string for the current operating system.</>
+    },
+    {
+      signature: "arraycopy(Object, int, Object, int, int)",
+      returns: "void",
+      description: <>Copies an array from the specified source to the specified destination.</>
+    },
+    {
+      signature: "currentTimeMillis()",
+      returns: "long",
+      description: <>Returns the current time in milliseconds.</>
+    },
+    {
+      signature: "nanoTime()",
+      returns: "long",
+      description: <>Returns the current time in nanoseconds.</>
+    }
+  ]}
+/>

@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Thread
 
 Referência completa da API de `Thread`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,59 +16,213 @@ Referência completa da API de `Thread`, incluindo construtores, atributos, atri
 public class Thread
 ```
 
-## Construtores (8)
-
-| Signature | Description |
-| --- | --- |
-| Thread() | Cria uma nova instância de Thread. |
-| Thread([Runnable]) | Cria uma nova instância de Thread. |
-| Thread([ThreadGroup], [Runnable]) | Cria uma nova instância de Thread. |
-| Thread([String]) | Cria uma nova instância de Thread. |
-| Thread([ThreadGroup], [String]) | Cria uma nova instância de Thread. |
-| Thread([Runnable], [String]) | Cria uma nova instância de Thread. |
-| Thread([ThreadGroup], [Runnable], [String]) | Cria uma nova instância de Thread. |
-| Thread([ThreadGroup], [Runnable], [String], [long]) | Cria uma nova instância de Thread. |
-
-## Métodos (22)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `start()` | `void` | Executa a operação start. |
-| `run()` | `void` | Executa a operação run. |
-| `isInterruptCalled()` | `boolean` | Retorna se interrupt called é verdadeiro. |
-| `interrupt()` | `void` | Executa a operação interrupt. |
-| `isInterrupted()` | `boolean` | Retorna se interrupted é verdadeiro. |
-| `toString()` | `String` | Retorna a propriedade `representação em string`. |
-| `getContextClassLoader()` | `ClassLoader` | Retorna a propriedade `propriedade `context class loader atual``. |
-| `setContextClassLoader(ClassLoader)` | `void` | Define ou atualiza a propriedade `propriedade `context class loader``. |
-| `getStackTrace()` | [StackTraceElement][] | Retorna a propriedade `propriedade `stack trace atual``. |
-| `getId()` | `long` | Retorna a propriedade `propriedade `id atual``. |
-| `getState()` | `State` | Retorna a propriedade `propriedade `state atual``. |
-| `getUncaughtExceptionHandler()` | `UncaughtExceptionHandler` | Retorna a propriedade `propriedade `uncaught exception handler atual``. |
-| `setUncaughtExceptionHandler(UncaughtExceptionHandler)` | `void` | Define ou atualiza a propriedade `propriedade `uncaught exception handler``. |
-| `join()` | `void` | Executa `join` e retorna quando a chamada do motor termina. |
-| `join(long)` | `void` | Executa `join` e retorna quando a chamada do motor termina. |
-| `join(long, int)` | `void` | Executa `join` e retorna quando a chamada do motor termina. |
-| `isAlive()` | `boolean` | Retorna se alive é verdadeiro. |
-| `setPriority(int)` | `void` | Define ou atualiza a propriedade `propriedade `priority``. |
-| `getPriority()` | `int` | Retorna a propriedade `propriedade `priority atual``. |
-| `setName(String)` | `void` | Define ou atualiza a propriedade `propriedade `name``. |
-| `getName()` | `String` | Retorna a propriedade `propriedade `name atual``. |
-| `getThreadGroup()` | `ThreadGroup` | Retorna a propriedade `propriedade `thread group atual``. |
-
-## Métodos Estáticos (12)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `update()` | `void` | Executa `update` e retorna quando a chamada do motor termina. |
-| `interruptAll()` | `void` | Executa `interruptAll` e retorna quando a chamada do motor termina. |
-| `requestEngineThread()` | `void` | Executa `requestEngineThread` e retorna quando a chamada do motor termina. |
-| `requestOpenglEngineThread()` | `void` | Executa `requestOpenglEngineThread` e retorna quando a chamada do motor termina. |
-| `isEngineThread()` | `boolean` | Executa `isEngineThread` e retorna quando a chamada do motor termina. |
-| `isOpenglEngineThread()` | `boolean` | Executa `isOpenglEngineThread` e retorna quando a chamada do motor termina. |
-| `runOnEngine(Runnable)` | `void` | Executa a operação runOnEngine usando os parâmetros informados (runnable). |
-| `runOnEngine(float, Runnable)` | `void` | Executa a operação runOnEngine usando os parâmetros informados (delaySeconds, runnable). |
-| `runOnUIThread(Runnable)` | `void` | Executa a operação runOnUIThread usando os parâmetros informados (runnable). |
-| `sleep(long)` | `void` | Executa a operação sleep usando os parâmetros informados (milis). |
-| `sleep(long, int)` | `void` | Executa a operação sleep usando os parâmetros informados (milis, nanos). |
-| `dumpStack()` | `void` | Executa a operação dumpStack. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "Thread()",
+      description: <>Cria uma nova instância de Thread.</>
+    },
+    {
+      signature: "Thread(Runnable)",
+      description: <>Cria uma nova instância de Thread.</>
+    },
+    {
+      signature: "Thread(ThreadGroup, Runnable)",
+      description: <>Cria uma nova instância de Thread.</>
+    },
+    {
+      signature: "Thread(String)",
+      description: <>Cria uma nova instância de Thread.</>
+    },
+    {
+      signature: "Thread(ThreadGroup, String)",
+      description: <>Cria uma nova instância de Thread.</>
+    },
+    {
+      signature: "Thread(Runnable, String)",
+      description: <>Cria uma nova instância de Thread.</>
+    },
+    {
+      signature: "Thread(ThreadGroup, Runnable, String)",
+      description: <>Cria uma nova instância de Thread.</>
+    },
+    {
+      signature: "Thread(ThreadGroup, Runnable, String, long)",
+      description: <>Cria uma nova instância de Thread.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "start()",
+      returns: "void",
+      description: <>Executa a operação start.</>
+    },
+    {
+      signature: "run()",
+      returns: "void",
+      description: <>Executa a operação run.</>
+    },
+    {
+      signature: "isInterruptCalled()",
+      returns: "boolean",
+      description: <>Retorna se interrupt called é verdadeiro.</>
+    },
+    {
+      signature: "interrupt()",
+      returns: "void",
+      description: <>Executa a operação interrupt.</>
+    },
+    {
+      signature: "isInterrupted()",
+      returns: "boolean",
+      description: <>Retorna se interrupted é verdadeiro.</>
+    },
+    {
+      signature: "toString()",
+      returns: "String",
+      description: <>Retorna a propriedade <code>representação em string</code>.</>
+    },
+    {
+      signature: "getContextClassLoader()",
+      returns: "ClassLoader",
+      description: <>Retorna a propriedade <code>propriedade </code>context class loader atual``.</>
+    },
+    {
+      signature: "setContextClassLoader(ClassLoader)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>context class loader``.</>
+    },
+    {
+      signature: "getStackTrace()",
+      returns: "StackTraceElement[]",
+      description: <>Retorna a propriedade <code>propriedade </code>stack trace atual``.</>
+    },
+    {
+      signature: "getId()",
+      returns: "long",
+      description: <>Retorna a propriedade <code>propriedade </code>id atual``.</>
+    },
+    {
+      signature: "getState()",
+      returns: "State",
+      description: <>Retorna a propriedade <code>propriedade </code>state atual``.</>
+    },
+    {
+      signature: "getUncaughtExceptionHandler()",
+      returns: "UncaughtExceptionHandler",
+      description: <>Retorna a propriedade <code>propriedade </code>uncaught exception handler atual``.</>
+    },
+    {
+      signature: "setUncaughtExceptionHandler(UncaughtExceptionHandler)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>uncaught exception handler``.</>
+    },
+    {
+      signature: "join()",
+      returns: "void",
+      description: <>Executa <code>join</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "join(long)",
+      returns: "void",
+      description: <>Executa <code>join</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "join(long, int)",
+      returns: "void",
+      description: <>Executa <code>join</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "isAlive()",
+      returns: "boolean",
+      description: <>Retorna se alive é verdadeiro.</>
+    },
+    {
+      signature: "setPriority(int)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>priority``.</>
+    },
+    {
+      signature: "getPriority()",
+      returns: "int",
+      description: <>Retorna a propriedade <code>propriedade </code>priority atual``.</>
+    },
+    {
+      signature: "setName(String)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>name``.</>
+    },
+    {
+      signature: "getName()",
+      returns: "String",
+      description: <>Retorna a propriedade <code>propriedade </code>name atual``.</>
+    },
+    {
+      signature: "getThreadGroup()",
+      returns: "ThreadGroup",
+      description: <>Retorna a propriedade <code>propriedade </code>thread group atual``.</>
+    }
+  ]}
+  staticMethods={[
+    {
+      signature: "update()",
+      returns: "void",
+      description: <>Executa <code>update</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "interruptAll()",
+      returns: "void",
+      description: <>Executa <code>interruptAll</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "requestEngineThread()",
+      returns: "void",
+      description: <>Executa <code>requestEngineThread</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "requestOpenglEngineThread()",
+      returns: "void",
+      description: <>Executa <code>requestOpenglEngineThread</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "isEngineThread()",
+      returns: "boolean",
+      description: <>Executa <code>isEngineThread</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "isOpenglEngineThread()",
+      returns: "boolean",
+      description: <>Executa <code>isOpenglEngineThread</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "runOnEngine(Runnable)",
+      returns: "void",
+      description: <>Executa a operação runOnEngine usando os parâmetros informados (runnable).</>
+    },
+    {
+      signature: "runOnEngine(float, Runnable)",
+      returns: "void",
+      description: <>Executa a operação runOnEngine usando os parâmetros informados (delaySeconds, runnable).</>
+    },
+    {
+      signature: "runOnUIThread(Runnable)",
+      returns: "void",
+      description: <>Executa a operação runOnUIThread usando os parâmetros informados (runnable).</>
+    },
+    {
+      signature: "sleep(long)",
+      returns: "void",
+      description: <>Executa a operação sleep usando os parâmetros informados (milis).</>
+    },
+    {
+      signature: "sleep(long, int)",
+      returns: "void",
+      description: <>Executa a operação sleep usando os parâmetros informados (milis, nanos).</>
+    },
+    {
+      signature: "dumpStack()",
+      returns: "void",
+      description: <>Executa a operação dumpStack.</>
+    }
+  ]}
+/>

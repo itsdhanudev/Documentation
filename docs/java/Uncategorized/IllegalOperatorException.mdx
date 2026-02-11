@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # IllegalOperatorException
 
 Complete API reference for `IllegalOperatorException`, including constructors, attributes, virtual attributes, and methods.
@@ -14,11 +16,23 @@ Complete API reference for `IllegalOperatorException`, including constructors, a
 public class IllegalOperatorException extends RuntimeException
 ```
 
-## Constructors (4)
-
-| Signature | Description |
-| --- | --- |
-| IllegalOperatorException() | Creates a new instance of IllegalOperatorException. |
-| IllegalOperatorException([String]) | Creates an exception with a specified message. |
-| IllegalOperatorException([String], [Throwable]) | Creates an exception with a specified message and cause. |
-| IllegalOperatorException([Throwable]) | Creates an exception with a specified cause. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "IllegalOperatorException()",
+      description: <>Creates a new instance of IllegalOperatorException.</>
+    },
+    {
+      signature: "IllegalOperatorException(String)",
+      description: <>Creates an exception with a specified message.</>
+    },
+    {
+      signature: "IllegalOperatorException(String, Throwable)",
+      description: <>Creates an exception with a specified message and cause.</>
+    },
+    {
+      signature: "IllegalOperatorException(Throwable)",
+      description: <>Creates an exception with a specified cause.</>
+    }
+  ]}
+/>

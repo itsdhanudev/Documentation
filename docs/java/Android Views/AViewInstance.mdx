@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # AViewInstance
 
 Complete API reference for `AViewInstance`, including constructors, attributes, virtual attributes, and methods.
@@ -14,9 +16,17 @@ Complete API reference for `AViewInstance`, including constructors, attributes, 
 public interface AViewInstance
 ```
 
-## Methods (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getViewID()` | `String` | Executes `getViewID` and returns after the underlying engine call finishes. |
-| `findByID(String)` | `<T extends View> T` | Executes `findByID` and returns after the underlying engine call finishes. |
+<ApiDoc
+  methods={[
+    {
+      signature: "getViewID()",
+      returns: "String",
+      description: <>Executes <code>getViewID</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "findByID(String)",
+      returns: "<T extends View> T",
+      description: <>Executes <code>findByID</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

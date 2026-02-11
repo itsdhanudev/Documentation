@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # OHDataBase
 
 Referência completa da API de `OHDataBase`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,26 +16,76 @@ Referência completa da API de `OHDataBase`, incluindo construtores, atributos, 
 public class OHDataBase
 ```
 
-## Construtores (3)
-
-| Signature | Description |
-| --- | --- |
-| OHDataBase() | Cria uma nova instância de OHDataBase. |
-| OHDataBase([Engine]) | Cria uma nova instância de OHDataBase. |
-| OHDataBase([int]) | Cria uma nova instância de OHDataBase. |
-
-## Métodos (11)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `incrementSize(int)` | `void` | Executa a operação incrementSize usando os parâmetros informados (size). |
-| `decrementSize(int)` | `void` | Executa a operação decrementSize usando os parâmetros informados (size). |
-| `resize(int)` | `void` | Executa a operação resize usando os parâmetros informados (newCapacity). |
-| `resize(int, boolean)` | `void` | Executa a operação resize usando os parâmetros informados (newCapacity, copyData). |
-| `position(int)` | `void` | Executa a operação position usando os parâmetros informados (position). |
-| `put(byte[])` | `void` | Define ou atualiza the value. |
-| `set(int, byte)` | `void` | Define ou atualiza the value. |
-| `get(int)` | `byte` | Retorna a propriedade `propriedade `valor value atual``. |
-| `getBytes()` | [byte][] | Retorna a propriedade `propriedade `bytes atual``. |
-| `size()` | `int` | Executa a operação size. |
-| `capacity()` | `int` | Executa a operação capacity. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "OHDataBase()",
+      description: <>Cria uma nova instância de OHDataBase.</>
+    },
+    {
+      signature: "OHDataBase(Engine)",
+      description: <>Cria uma nova instância de OHDataBase.</>
+    },
+    {
+      signature: "OHDataBase(int)",
+      description: <>Cria uma nova instância de OHDataBase.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "incrementSize(int)",
+      returns: "void",
+      description: <>Executa a operação incrementSize usando os parâmetros informados (size).</>
+    },
+    {
+      signature: "decrementSize(int)",
+      returns: "void",
+      description: <>Executa a operação decrementSize usando os parâmetros informados (size).</>
+    },
+    {
+      signature: "resize(int)",
+      returns: "void",
+      description: <>Executa a operação resize usando os parâmetros informados (newCapacity).</>
+    },
+    {
+      signature: "resize(int, boolean)",
+      returns: "void",
+      description: <>Executa a operação resize usando os parâmetros informados (newCapacity, copyData).</>
+    },
+    {
+      signature: "position(int)",
+      returns: "void",
+      description: <>Executa a operação position usando os parâmetros informados (position).</>
+    },
+    {
+      signature: "put(byte[])",
+      returns: "void",
+      description: <>Define ou atualiza the value.</>
+    },
+    {
+      signature: "set(int, byte)",
+      returns: "void",
+      description: <>Define ou atualiza the value.</>
+    },
+    {
+      signature: "get(int)",
+      returns: "byte",
+      description: <>Retorna a propriedade <code>propriedade </code>valor value atual``.</>
+    },
+    {
+      signature: "getBytes()",
+      returns: "byte[]",
+      description: <>Retorna a propriedade <code>propriedade </code>bytes atual``.</>
+    },
+    {
+      signature: "size()",
+      returns: "int",
+      description: <>Executa a operação size.</>
+    },
+    {
+      signature: "capacity()",
+      returns: "int",
+      description: <>Executa a operação capacity.</>
+    }
+  ]}
+/>

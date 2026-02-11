@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # ObjectsPanelMenu
 
 Referência completa da API de `ObjectsPanelMenu`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,16 +16,28 @@ Referência completa da API de `ObjectsPanelMenu`, incluindo construtores, atrib
 public class ObjectsPanelMenu
 ```
 
-## Construtores (1)
-
-| Signature | Description |
-| --- | --- |
-| ObjectsPanelMenu([String]) | Cria uma nova instância de ObjectsPanelMenu. |
-
-## Métodos (3)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getMenu()` | `String` | Retorna a propriedade `propriedade `menu atual``. |
-| `setMenu(String)` | `void` | Define ou atualiza a propriedade `propriedade `menu``. |
-| `onClick(SpatialObject)` | `void` | Executa a operação onClick usando os parâmetros informados (object). |
+<ApiDoc
+  constructors={[
+    {
+      signature: "ObjectsPanelMenu(String)",
+      description: <>Cria uma nova instância de ObjectsPanelMenu.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "getMenu()",
+      returns: "String",
+      description: <>Retorna a propriedade <code>propriedade </code>menu atual``.</>
+    },
+    {
+      signature: "setMenu(String)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>menu``.</>
+    },
+    {
+      signature: "onClick(SpatialObject)",
+      returns: "void",
+      description: <>Executa a operação onClick usando os parâmetros informados (object).</>
+    }
+  ]}
+/>

@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # TextScriptingSyntaxHighlightSpan
 
 Referência completa da API de `TextScriptingSyntaxHighlightSpan`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,28 +16,64 @@ Referência completa da API de `TextScriptingSyntaxHighlightSpan`, incluindo con
 public class TextScriptingSyntaxHighlightSpan
 ```
 
-## Construtores (2)
-
-| Signature | Description |
-| --- | --- |
-| TextScriptingSyntaxHighlightSpan() | Cria uma nova instância de TextScriptingSyntaxHighlightSpan. |
-| TextScriptingSyntaxHighlightSpan([TextScriptingStyleSpan], [int], [int]) | Cria uma nova instância de TextScriptingSyntaxHighlightSpan. |
-
-## Atributos (3)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `span` | [TextScriptingStyleSpan] | Representa o valor de `span` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `start` | [int] | Representa o valor de `start` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `end` | [int] | Representa o valor de `end` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Métodos (6)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getSpan()` | `TextScriptingStyleSpan` | Retorna a propriedade `propriedade `span atual``. |
-| `setSpan(TextScriptingStyleSpan)` | `void` | Define ou atualiza a propriedade `propriedade `span``. |
-| `getStart()` | `int` | Retorna a propriedade `propriedade `start atual``. |
-| `setStart(int)` | `void` | Define ou atualiza a propriedade `propriedade `start``. |
-| `getEnd()` | `int` | Retorna a propriedade `propriedade `end atual``. |
-| `setEnd(int)` | `void` | Define ou atualiza a propriedade `propriedade `end``. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "TextScriptingSyntaxHighlightSpan()",
+      description: <>Cria uma nova instância de TextScriptingSyntaxHighlightSpan.</>
+    },
+    {
+      signature: "TextScriptingSyntaxHighlightSpan(TextScriptingStyleSpan, int, int)",
+      description: <>Cria uma nova instância de TextScriptingSyntaxHighlightSpan.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "span",
+      type: "TextScriptingStyleSpan",
+      description: <>Representa o valor de <code>span</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "start",
+      type: "int",
+      description: <>Representa o valor de <code>start</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "end",
+      type: "int",
+      description: <>Representa o valor de <code>end</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "getSpan()",
+      returns: "TextScriptingStyleSpan",
+      description: <>Retorna a propriedade <code>propriedade </code>span atual``.</>
+    },
+    {
+      signature: "setSpan(TextScriptingStyleSpan)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>span``.</>
+    },
+    {
+      signature: "getStart()",
+      returns: "int",
+      description: <>Retorna a propriedade <code>propriedade </code>start atual``.</>
+    },
+    {
+      signature: "setStart(int)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>start``.</>
+    },
+    {
+      signature: "getEnd()",
+      returns: "int",
+      description: <>Retorna a propriedade <code>propriedade </code>end atual``.</>
+    },
+    {
+      signature: "setEnd(int)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>end``.</>
+    }
+  ]}
+/>

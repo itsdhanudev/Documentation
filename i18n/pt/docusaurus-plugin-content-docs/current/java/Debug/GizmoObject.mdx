@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # GizmoObject
 
 Referência completa da API de `GizmoObject`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,34 +16,145 @@ Referência completa da API de `GizmoObject`, incluindo construtores, atributos,
 public class GizmoObject extends GizmoTransform
 ```
 
-## Construtores (7)
-
-| Signature | Description |
-| --- | --- |
-| GizmoObject() | Cria uma nova instância de GizmoObject. |
-| GizmoObject([Vertex]) | Cria uma nova instância de GizmoObject. |
-| GizmoObject([Vertex], [Vector3]) | Cria uma nova instância de GizmoObject. |
-| GizmoObject([Vertex], [Vector3], [Quaternion]) | Cria uma nova instância de GizmoObject. |
-| GizmoObject([Vertex], [Vector3], [Quaternion], [Vector3]) | Cria uma nova instância de GizmoObject. |
-| GizmoObject([Vertex], [Vector3], [Quaternion], [Vector3], [boolean]) | Cria uma nova instância de GizmoObject. |
-| GizmoObject([Vertex], [Vector3], [Quaternion], [Vector3], [boolean], [Color], [Texture]) | Cria uma nova instância de GizmoObject. |
-
-## Atributos Virtuais (9)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `color` | [Color] | `get/set` | Atributo virtual exposto por `getColor`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `dualFaceRender` | [boolean] | `get/set` | Atributo virtual exposto por `isDualFaceRender`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `enableTransparency` | [boolean] | `get/set` | Atributo virtual exposto por `isEnableTransparency`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `renderMode` | [RenderMode] | `get/set` | Atributo virtual exposto por `getRenderMode`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `scaleBasedCamera` | [boolean] | `get/set` | Atributo virtual exposto por `isScaleBasedCamera`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `texture` | [Texture] | `get/set` | Atributo virtual exposto por `getTexture`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `vertex` | [Vertex] | `get/set` | Atributo virtual exposto por `getVertex`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `wireFrame` | [boolean] | `get/set` | Atributo virtual exposto por `isWireFrame`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `wireFrameWidth` | [int] | `get/set` | Atributo virtual exposto por `getWireFrameWidth`. Acesse como um campo para ler ou escrever o valor subjacente. |
-
-## Métodos (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `randomizeColor()` | `void` | Executa a operação randomizeColor. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "GizmoObject()",
+      description: <>Cria uma nova instância de GizmoObject.</>
+    },
+    {
+      signature: "GizmoObject(Vertex)",
+      description: <>Cria uma nova instância de GizmoObject.</>
+    },
+    {
+      signature: "GizmoObject(Vertex, Vector3)",
+      description: <>Cria uma nova instância de GizmoObject.</>
+    },
+    {
+      signature: "GizmoObject(Vertex, Vector3, Quaternion)",
+      description: <>Cria uma nova instância de GizmoObject.</>
+    },
+    {
+      signature: "GizmoObject(Vertex, Vector3, Quaternion, Vector3)",
+      description: <>Cria uma nova instância de GizmoObject.</>
+    },
+    {
+      signature: "GizmoObject(Vertex, Vector3, Quaternion, Vector3, boolean)",
+      description: <>Cria uma nova instância de GizmoObject.</>
+    },
+    {
+      signature: "GizmoObject(Vertex, Vector3, Quaternion, Vector3, boolean, Color, Texture)",
+      description: <>Cria uma nova instância de GizmoObject.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "color",
+      type: "Color",
+      description: <><code>get/set</code></>
+    },
+    {
+      name: "dualFaceRender",
+      type: "boolean",
+      description: <><code>get/set</code></>
+    },
+    {
+      name: "enableTransparency",
+      type: "boolean",
+      description: <><code>get/set</code></>
+    },
+    {
+      name: "renderMode",
+      type: "RenderMode",
+      description: <><code>get/set</code></>
+    },
+    {
+      name: "scaleBasedCamera",
+      type: "boolean",
+      description: <><code>get/set</code></>
+    },
+    {
+      name: "texture",
+      type: "Texture",
+      description: <><code>get/set</code></>
+    },
+    {
+      name: "vertex",
+      type: "Vertex",
+      description: <><code>get/set</code></>
+    },
+    {
+      name: "wireFrame",
+      type: "boolean",
+      description: <><code>get/set</code></>
+    },
+    {
+      name: "wireFrameWidth",
+      type: "int",
+      description: <><code>get/set</code></>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "color",
+      type: "Color",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getColor</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "dualFaceRender",
+      type: "boolean",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>isDualFaceRender</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "enableTransparency",
+      type: "boolean",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>isEnableTransparency</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "renderMode",
+      type: "RenderMode",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getRenderMode</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "scaleBasedCamera",
+      type: "boolean",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>isScaleBasedCamera</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "texture",
+      type: "Texture",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getTexture</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "vertex",
+      type: "Vertex",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getVertex</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "wireFrame",
+      type: "boolean",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>isWireFrame</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "wireFrameWidth",
+      type: "int",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getWireFrameWidth</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "randomizeColor()",
+      returns: "void",
+      description: <>Executa a operação randomizeColor.</>
+    }
+  ]}
+/>

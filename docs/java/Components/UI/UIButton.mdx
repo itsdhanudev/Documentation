@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # UIButton
 
 Complete API reference for `UIButton`, including constructors, attributes, virtual attributes, and methods.
@@ -14,36 +16,118 @@ Complete API reference for `UIButton`, including constructors, attributes, virtu
 public class UIButton extends Component
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| UIButton([UIButton]) | Executes `UIButton` and returns after the underlying engine call finishes. |
-| UIButton([Engine]) | Executes `UIButton` and returns after the underlying engine call finishes. |
-| UIButton() | Creates a new instance of UIButton. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [UIButton] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (15)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `border` | [float] | `get/set` | Virtual attribute exposed by `getBorder`. Access it like a field to read or write the underlying value. |
-| `down` | [boolean] | `get` | Virtual attribute exposed by `isDown`. Access it like a field to read or write the underlying value. |
-| `fontFile` | [String] | `get` | Virtual attribute exposed by `getFontFile`. Access it like a field to read or write the underlying value. |
-| `normalColor` | [Color] | `get/set` | Virtual attribute exposed by `getNormalColor`. Access it like a field to read or write the underlying value. |
-| `normalTexture` | [Texture] | `get/set` | Virtual attribute exposed by `getNormalTexture`. Access it like a field to read or write the underlying value. |
-| `padding` | [Vector2] | `get/set` | Virtual attribute exposed by `getPadding`. Access it like a field to read or write the underlying value. |
-| `pressed` | [boolean] | `get` | Virtual attribute exposed by `isPressed`. Access it like a field to read or write the underlying value. |
-| `pressedColor` | [Color] | `get/set` | Virtual attribute exposed by `getPressedColor`. Access it like a field to read or write the underlying value. |
-| `pressedTexture` | [Texture] | `get/set` | Virtual attribute exposed by `getPressedTexture`. Access it like a field to read or write the underlying value. |
-| `resolution` | [int] | `get/set` | Virtual attribute exposed by `getResolution`. Access it like a field to read or write the underlying value. |
-| `text` | [String] | `get/set` | Virtual attribute exposed by `getText`. Access it like a field to read or write the underlying value. |
-| `textNormalColor` | [Color] | `get/set` | Virtual attribute exposed by `getTextNormalColor`. Access it like a field to read or write the underlying value. |
-| `textPressedColor` | [Color] | `get/set` | Virtual attribute exposed by `getTextPressedColor`. Access it like a field to read or write the underlying value. |
-| `textSize` | [float] | `get/set` | Virtual attribute exposed by `getTextSize`. Access it like a field to read or write the underlying value. |
-| `up` | [boolean] | `get` | Virtual attribute exposed by `isUp`. Access it like a field to read or write the underlying value. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "UIButton(UIButton)",
+      description: <>Executes <code>UIButton</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "UIButton(Engine)",
+      description: <>Executes <code>UIButton</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "UIButton()",
+      description: <>Creates a new instance of UIButton.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "UIButton",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "border",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getBorder</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "down",
+      type: "boolean",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>isDown</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "fontFile",
+      type: "String",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>getFontFile</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "normalColor",
+      type: "Color",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getNormalColor</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "normalTexture",
+      type: "Texture",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getNormalTexture</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "padding",
+      type: "Vector2",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getPadding</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "pressed",
+      type: "boolean",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>isPressed</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "pressedColor",
+      type: "Color",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getPressedColor</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "pressedTexture",
+      type: "Texture",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getPressedTexture</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "resolution",
+      type: "int",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getResolution</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "text",
+      type: "String",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getText</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "textNormalColor",
+      type: "Color",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getTextNormalColor</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "textPressedColor",
+      type: "Color",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getTextPressedColor</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "textSize",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getTextSize</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "up",
+      type: "boolean",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>isUp</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+/>

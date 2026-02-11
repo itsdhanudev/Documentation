@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Map2
 
 Complete API reference for `Map2`, including constructors, attributes, virtual attributes, and methods.
@@ -14,33 +16,90 @@ Complete API reference for `Map2`, including constructors, attributes, virtual a
 public class Map2
 ```
 
-## Constructors (1)
-
-| Signature | Description |
-| --- | --- |
-| Map2([Class], [Class]) | Creates a new instance of Map2. |
-
-## Methods (13)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `put(Object, Object)` | `void` | Sets or updates the the value. |
-| `get(Object)` | `Object` | Returns the current value. |
-| `replace(Object, Object)` | `void` | Performs the replace operation using the provided parameters (key, newValue). |
-| `remove(Object)` | `void` | Removes an item from the collection. |
-| `getKeyClass()` | `Class` | Returns the current key class. |
-| `getValueClass()` | `Class` | Returns the current value class. |
-| `getKeyList()` | `List` | Returns the current key list. |
-| `getDirectKeyList()` | `List` | Returns the current direct key list. |
-| `getValueList()` | `List` | Returns the current value list. |
-| `getDirectValueList()` | `List` | Returns the current direct value list. |
-| `toJson()` | `String` | Executes `toJson` and returns after the underlying engine call finishes. |
-| `clear()` | `void` | Clears or resets the object's state. |
-| `getSize()` | `int` | Returns the current size. |
-
-## Static Methods (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `inspectorController()` | `ClassInspectorEntry` | Executes `inspectorController` and returns after the underlying engine call finishes. |
-| `fromJson(String)` | `Map2` | Performs the fromJson operation using the provided parameters (json). |
+<ApiDoc
+  constructors={[
+    {
+      signature: "Map2(Class, Class)",
+      description: <>Creates a new instance of Map2.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "put(Object, Object)",
+      returns: "void",
+      description: <>Sets or updates the the value.</>
+    },
+    {
+      signature: "get(Object)",
+      returns: "Object",
+      description: <>Returns the current value.</>
+    },
+    {
+      signature: "replace(Object, Object)",
+      returns: "void",
+      description: <>Performs the replace operation using the provided parameters (key, newValue).</>
+    },
+    {
+      signature: "remove(Object)",
+      returns: "void",
+      description: <>Removes an item from the collection.</>
+    },
+    {
+      signature: "getKeyClass()",
+      returns: "Class",
+      description: <>Returns the current key class.</>
+    },
+    {
+      signature: "getValueClass()",
+      returns: "Class",
+      description: <>Returns the current value class.</>
+    },
+    {
+      signature: "getKeyList()",
+      returns: "List",
+      description: <>Returns the current key list.</>
+    },
+    {
+      signature: "getDirectKeyList()",
+      returns: "List",
+      description: <>Returns the current direct key list.</>
+    },
+    {
+      signature: "getValueList()",
+      returns: "List",
+      description: <>Returns the current value list.</>
+    },
+    {
+      signature: "getDirectValueList()",
+      returns: "List",
+      description: <>Returns the current direct value list.</>
+    },
+    {
+      signature: "toJson()",
+      returns: "String",
+      description: <>Executes <code>toJson</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "clear()",
+      returns: "void",
+      description: <>Clears or resets the object's state.</>
+    },
+    {
+      signature: "getSize()",
+      returns: "int",
+      description: <>Returns the current size.</>
+    }
+  ]}
+  staticMethods={[
+    {
+      signature: "inspectorController()",
+      returns: "ClassInspectorEntry",
+      description: <>Executes <code>inspectorController</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "fromJson(String)",
+      returns: "Map2",
+      description: <>Performs the fromJson operation using the provided parameters (json).</>
+    }
+  ]}
+/>

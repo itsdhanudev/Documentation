@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # CustomPostProcessing
 
 Complete API reference for `CustomPostProcessing`, including constructors, attributes, virtual attributes, and methods.
@@ -14,24 +16,46 @@ Complete API reference for `CustomPostProcessing`, including constructors, attri
 public class CustomPostProcessing extends Component
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| CustomPostProcessing([CustomPostProcessing]) | Executes `CustomPostProcessing` and returns after the underlying engine call finishes. |
-| CustomPostProcessing([Engine]) | Executes `CustomPostProcessing` and returns after the underlying engine call finishes. |
-| CustomPostProcessing() | Executes `CustomPostProcessing` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [CustomPostProcessing] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (3)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `param` | [String] | `set` | Virtual attribute exposed by `setParam`. Access it like a field to read or write the underlying value. |
-| `shaderFile` | [String] | `get/set` | Virtual attribute exposed by `getShaderFile`. Access it like a field to read or write the underlying value. |
-| `time` | [float] | `get/set` | Virtual attribute exposed by `getTime`. Access it like a field to read or write the underlying value. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "CustomPostProcessing(CustomPostProcessing)",
+      description: <>Executes <code>CustomPostProcessing</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "CustomPostProcessing(Engine)",
+      description: <>Executes <code>CustomPostProcessing</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "CustomPostProcessing()",
+      description: <>Executes <code>CustomPostProcessing</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "CustomPostProcessing",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "param",
+      type: "String",
+      access: "set",
+      description: <>Virtual attribute exposed by <code>setParam</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "shaderFile",
+      type: "String",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getShaderFile</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "time",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getTime</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+/>

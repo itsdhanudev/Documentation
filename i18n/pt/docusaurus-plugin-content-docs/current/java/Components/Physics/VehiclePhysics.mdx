@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # VehiclePhysics
 
 Referência completa da API de `VehiclePhysics`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,57 +16,204 @@ Referência completa da API de `VehiclePhysics`, incluindo construtores, atribut
 public class VehiclePhysics extends Component
 ```
 
-## Construtores (3)
-
-| Signature | Description |
-| --- | --- |
-| VehiclePhysics([VehiclePhysics]) | Executa `VehiclePhysics` e retorna quando a chamada do motor termina. |
-| VehiclePhysics([Engine]) | Executa `VehiclePhysics` e retorna quando a chamada do motor termina. |
-| VehiclePhysics() | Executa `VehiclePhysics` e retorna quando a chamada do motor termina. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [VehiclePhysics] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (19)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `angularDamping` | [float] | `get/set` | Retorna a propriedade `propriedade `amortecimento angular do Rigidbody``. |
-| `angularVelocity` | [Vector3] | `get/set` | Retorna a propriedade `velocidade angular atual do Rigidbody`. |
-| `bounciness` | [float] | `get/set` | Retorna a propriedade `elasticidade do Rigidbody`. |
-| `freezePX` | [boolean] | `get/set` | Retorna se o movimento no eixo X está travado. |
-| `freezePY` | [boolean] | `get/set` | Retorna se o movimento no eixo Y está travado. |
-| `freezePZ` | [boolean] | `get/set` | Retorna se o movimento no eixo Z está travado. |
-| `freezeRX` | [boolean] | `get/set` | Retorna se a rotação no eixo X está travada. |
-| `freezeRY` | [boolean] | `get/set` | Retorna se a rotação no eixo Y está travada. |
-| `freezeRZ` | [boolean] | `get/set` | Retorna se a rotação no eixo Z está travada. |
-| `friction` | [float] | `get/set` | Retorna a propriedade `propriedade `atrito/fricção do Rigidbody``. |
-| `gravityEnabled` | [boolean] | `get/set` | Verifica se a gravidade está ativada para o Rigidbody. |
-| `gravityMultiplier` | [Vector3] | `get/set` | Retorna a propriedade `propriedade `multiplicador de gravidade do Rigidbody``. |
-| `linearDamping` | [float] | `get/set` | Retorna a propriedade `propriedade `amortecimento linear do Rigidbody``. |
-| `mass` | [float] | `get/set` | Retorna a propriedade `massa do Rigidbody`. |
-| `physicsLayer` | [PhysicsLayer] | `get/set` | Retorna a propriedade `PhysicsLayer do Rigidbody`. |
-| `speedKMH` | [float] | `get` | Retorna a propriedade `velocidade do veículo em KM/H`. |
-| `suspensionLength` | [float] | `get/set` | Retorna a propriedade `propriedade `comprimento da suspensão do veículo``. |
-| `suspensionStiffness` | [float] | `get/set` | Retorna a propriedade `rigidez da suspensão do veículo`. |
-| `velocity` | [Vector3] | `get/set` | Retorna a propriedade `velocidade atual do Rigidbody`. |
-
-## Métodos (12)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `setTorque(float, int)` | `void` | Define a propriedade `propriedade `torque para a roda especificada``. |
-| `setBrake(float, int)` | `void` | Define a propriedade `força de frenagem para a roda especificada`. |
-| `setSteer(float, int)` | `void` | Define a propriedade `propriedade `ângulo da roda especificada (em graus)``. |
-| `setMaxSpeed(float)` | `void` | Define a propriedade `velocidade máxima que o veículo pode atingir (em KM/H)`. Usado no método setSteerRelativeVelocity como velocidade máxima possível. |
-| `getWheels()` | [List]&[lt];[VehicleWheel]&[gt]; | Retorna uma lista de todas as rodas do veículo. |
-| `addForce(Vector3)` | `void` | Aplica uma força ao Rigidbody na direção especificada. |
-| `addForce(float, float, float)` | `void` | Aplica uma força ao Rigidbody com os valores x, y e z especificados. |
-| `addForce(Vector3, Vector3)` | `void` | Aplica uma força ao Rigidbody em uma posição relativa específica. |
-| `addVelocity(Vector3)` | `void` | Adiciona velocidade ao Rigidbody na direção especificada. |
-| `addVelocity(float, float, float)` | `void` | Adiciona velocidade ao Rigidbody com os valores x, y e z especificados. |
-| `addVelocityBySecond(Vector3)` | `void` | Adiciona velocidade por segundo ao Rigidbody na direção especificada. |
-| `addVelocityBySecond(float, float, float)` | `void` | Adiciona velocidade por segundo ao Rigidbody com os valores x, y e z especificados. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "VehiclePhysics(VehiclePhysics)",
+      description: <>Executa <code>VehiclePhysics</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "VehiclePhysics(Engine)",
+      description: <>Executa <code>VehiclePhysics</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "VehiclePhysics()",
+      description: <>Executa <code>VehiclePhysics</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "VehiclePhysics",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "angularDamping",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>propriedade </code>amortecimento angular do Rigidbody``.</>
+    },
+    {
+      name: "angularVelocity",
+      type: "Vector3",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>velocidade angular atual do Rigidbody</code>.</>
+    },
+    {
+      name: "bounciness",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>elasticidade do Rigidbody</code>.</>
+    },
+    {
+      name: "freezePX",
+      type: "boolean",
+      access: "get/set",
+      description: <>Retorna se o movimento no eixo X está travado.</>
+    },
+    {
+      name: "freezePY",
+      type: "boolean",
+      access: "get/set",
+      description: <>Retorna se o movimento no eixo Y está travado.</>
+    },
+    {
+      name: "freezePZ",
+      type: "boolean",
+      access: "get/set",
+      description: <>Retorna se o movimento no eixo Z está travado.</>
+    },
+    {
+      name: "freezeRX",
+      type: "boolean",
+      access: "get/set",
+      description: <>Retorna se a rotação no eixo X está travada.</>
+    },
+    {
+      name: "freezeRY",
+      type: "boolean",
+      access: "get/set",
+      description: <>Retorna se a rotação no eixo Y está travada.</>
+    },
+    {
+      name: "freezeRZ",
+      type: "boolean",
+      access: "get/set",
+      description: <>Retorna se a rotação no eixo Z está travada.</>
+    },
+    {
+      name: "friction",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>propriedade </code>atrito/fricção do Rigidbody``.</>
+    },
+    {
+      name: "gravityEnabled",
+      type: "boolean",
+      access: "get/set",
+      description: <>Verifica se a gravidade está ativada para o Rigidbody.</>
+    },
+    {
+      name: "gravityMultiplier",
+      type: "Vector3",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>propriedade </code>multiplicador de gravidade do Rigidbody``.</>
+    },
+    {
+      name: "linearDamping",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>propriedade </code>amortecimento linear do Rigidbody``.</>
+    },
+    {
+      name: "mass",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>massa do Rigidbody</code>.</>
+    },
+    {
+      name: "physicsLayer",
+      type: "PhysicsLayer",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>PhysicsLayer do Rigidbody</code>.</>
+    },
+    {
+      name: "speedKMH",
+      type: "float",
+      access: "get",
+      description: <>Retorna a propriedade <code>velocidade do veículo em KM/H</code>.</>
+    },
+    {
+      name: "suspensionLength",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>propriedade </code>comprimento da suspensão do veículo``.</>
+    },
+    {
+      name: "suspensionStiffness",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>rigidez da suspensão do veículo</code>.</>
+    },
+    {
+      name: "velocity",
+      type: "Vector3",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>velocidade atual do Rigidbody</code>.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "setTorque(float, int)",
+      returns: "void",
+      description: <>Define a propriedade <code>propriedade </code>torque para a roda especificada``.</>
+    },
+    {
+      signature: "setBrake(float, int)",
+      returns: "void",
+      description: <>Define a propriedade <code>força de frenagem para a roda especificada</code>.</>
+    },
+    {
+      signature: "setSteer(float, int)",
+      returns: "void",
+      description: <>Define a propriedade <code>propriedade </code>ângulo da roda especificada (em graus)``.</>
+    },
+    {
+      signature: "setMaxSpeed(float)",
+      returns: "void",
+      description: <>Define a propriedade <code>velocidade máxima que o veículo pode atingir (em KM/H)</code>. Usado no método setSteerRelativeVelocity como velocidade máxima possível.</>
+    },
+    {
+      signature: "getWheels()",
+      returns: "List&lt;VehicleWheel&gt;",
+      description: <>Retorna uma lista de todas as rodas do veículo.</>
+    },
+    {
+      signature: "addForce(Vector3)",
+      returns: "void",
+      description: <>Aplica uma força ao Rigidbody na direção especificada.</>
+    },
+    {
+      signature: "addForce(float, float, float)",
+      returns: "void",
+      description: <>Aplica uma força ao Rigidbody com os valores x, y e z especificados.</>
+    },
+    {
+      signature: "addForce(Vector3, Vector3)",
+      returns: "void",
+      description: <>Aplica uma força ao Rigidbody em uma posição relativa específica.</>
+    },
+    {
+      signature: "addVelocity(Vector3)",
+      returns: "void",
+      description: <>Adiciona velocidade ao Rigidbody na direção especificada.</>
+    },
+    {
+      signature: "addVelocity(float, float, float)",
+      returns: "void",
+      description: <>Adiciona velocidade ao Rigidbody com os valores x, y e z especificados.</>
+    },
+    {
+      signature: "addVelocityBySecond(Vector3)",
+      returns: "void",
+      description: <>Adiciona velocidade por segundo ao Rigidbody na direção especificada.</>
+    },
+    {
+      signature: "addVelocityBySecond(float, float, float)",
+      returns: "void",
+      description: <>Adiciona velocidade por segundo ao Rigidbody com os valores x, y e z especificados.</>
+    }
+  ]}
+/>

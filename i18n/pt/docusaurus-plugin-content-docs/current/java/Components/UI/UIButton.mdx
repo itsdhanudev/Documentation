@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # UIButton
 
 Referência completa da API de `UIButton`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,36 +16,118 @@ Referência completa da API de `UIButton`, incluindo construtores, atributos, at
 public class UIButton extends Component
 ```
 
-## Construtores (3)
-
-| Signature | Description |
-| --- | --- |
-| UIButton([UIButton]) | Executa `UIButton` e retorna quando a chamada do motor termina. |
-| UIButton([Engine]) | Executa `UIButton` e retorna quando a chamada do motor termina. |
-| UIButton() | Cria uma nova instância de UIButton. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [UIButton] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (15)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `border` | [float] | `get/set` | Atributo virtual exposto por `getBorder`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `down` | [boolean] | `get` | Atributo virtual exposto por `isDown`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `fontFile` | [String] | `get` | Atributo virtual exposto por `getFontFile`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `normalColor` | [Color] | `get/set` | Atributo virtual exposto por `getNormalColor`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `normalTexture` | [Texture] | `get/set` | Atributo virtual exposto por `getNormalTexture`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `padding` | [Vector2] | `get/set` | Atributo virtual exposto por `getPadding`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `pressed` | [boolean] | `get` | Atributo virtual exposto por `isPressed`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `pressedColor` | [Color] | `get/set` | Atributo virtual exposto por `getPressedColor`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `pressedTexture` | [Texture] | `get/set` | Atributo virtual exposto por `getPressedTexture`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `resolution` | [int] | `get/set` | Atributo virtual exposto por `getResolution`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `text` | [String] | `get/set` | Atributo virtual exposto por `getText`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `textNormalColor` | [Color] | `get/set` | Atributo virtual exposto por `getTextNormalColor`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `textPressedColor` | [Color] | `get/set` | Atributo virtual exposto por `getTextPressedColor`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `textSize` | [float] | `get/set` | Atributo virtual exposto por `getTextSize`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `up` | [boolean] | `get` | Atributo virtual exposto por `isUp`. Acesse como um campo para ler ou escrever o valor subjacente. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "UIButton(UIButton)",
+      description: <>Executa <code>UIButton</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "UIButton(Engine)",
+      description: <>Executa <code>UIButton</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "UIButton()",
+      description: <>Cria uma nova instância de UIButton.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "UIButton",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "border",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getBorder</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "down",
+      type: "boolean",
+      access: "get",
+      description: <>Atributo virtual exposto por <code>isDown</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "fontFile",
+      type: "String",
+      access: "get",
+      description: <>Atributo virtual exposto por <code>getFontFile</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "normalColor",
+      type: "Color",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getNormalColor</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "normalTexture",
+      type: "Texture",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getNormalTexture</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "padding",
+      type: "Vector2",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getPadding</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "pressed",
+      type: "boolean",
+      access: "get",
+      description: <>Atributo virtual exposto por <code>isPressed</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "pressedColor",
+      type: "Color",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getPressedColor</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "pressedTexture",
+      type: "Texture",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getPressedTexture</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "resolution",
+      type: "int",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getResolution</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "text",
+      type: "String",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getText</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "textNormalColor",
+      type: "Color",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getTextNormalColor</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "textPressedColor",
+      type: "Color",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getTextPressedColor</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "textSize",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getTextSize</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "up",
+      type: "boolean",
+      access: "get",
+      description: <>Atributo virtual exposto por <code>isUp</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+/>

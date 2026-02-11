@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # DivEqualOperator
 
 Referência completa da API de `DivEqualOperator`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,9 +16,12 @@ Referência completa da API de `DivEqualOperator`, incluindo construtores, atrib
 public interface DivEqualOperator
 ```
 
-## Métodos (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `@MethodArgs([{"otherObject"}])` | `void` | Divide o valor atual pelo objeto fornecido e atribui o resultado. |
-| `divEqual(Object)` | `void` | Executa `divEqual` e retorna quando a chamada do motor termina. |
+<ApiDoc
+  methods={[
+    {
+      signature: "divEqual(Object)",
+      returns: "void",
+      description: <>Divide o valor atual pelo objeto fornecido e atribui o resultado.</>
+    }
+  ]}
+/>

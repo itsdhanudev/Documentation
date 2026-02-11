@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # File
 
 Referência completa da API de `File`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,75 +16,293 @@ Referência completa da API de `File`, incluindo construtores, atributos, atribu
 public class File extends File
 ```
 
-## Construtores (8)
-
-| Signature | Description |
-| --- | --- |
-| File([String], [boolean]) | Cria uma nova instância de File. |
-| File([File], [boolean]) | Executa `File` e retorna quando a chamada do motor termina. |
-| File([File], [String], [boolean]) | Executa `File` e retorna quando a chamada do motor termina. |
-| File([String]) | Cria uma nova instância de File. |
-| File([File]) | Executa `File` e retorna quando a chamada do motor termina. |
-| File([String], [String]) | Cria uma nova instância de File. |
-| File([File], [String]) | Executa `File` e retorna quando a chamada do motor termina. |
-| File([URI]) | Cria uma nova instância de File. |
-
-## Métodos (48)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getName()` | `String` | Retorna a propriedade `propriedade `name atual``. |
-| `getParent()` | `String` | Retorna a propriedade `propriedade `parent atual``. |
-| `getParentFile()` | `File` | Retorna a propriedade `propriedade `parent file atual``. |
-| `getPath()` | `String` | Retorna a propriedade `propriedade `path atual``. |
-| `isAbsolute()` | `boolean` | Retorna se absolute é verdadeiro. |
-| `getAbsolutePath()` | `String` | Retorna a propriedade `propriedade `absolute path atual``. |
-| `getAbsoluteFile()` | `File` | Retorna a propriedade `propriedade `absolute file atual``. |
-| `getCanonicalPath()` | `String` | Executa `getCanonicalPath` e retorna quando a chamada do motor termina. |
-| `getCanonicalFile()` | `File` | Executa `getCanonicalFile` e retorna quando a chamada do motor termina. |
-| `toURL()` | `URL` | Executa `toURL` e retorna quando a chamada do motor termina. |
-| `toURI()` | `URI` | Executa a operação toURI. |
-| `canRead()` | `boolean` | Retorna se read é verdadeiro. |
-| `canWrite()` | `boolean` | Retorna se write é verdadeiro. |
-| `exists()` | `boolean` | Executa a operação exists. |
-| `isDirectory()` | `boolean` | Retorna se directory é verdadeiro. |
-| `isFile()` | `boolean` | Retorna se file é verdadeiro. |
-| `isHidden()` | `boolean` | Retorna se hidden é verdadeiro. |
-| `lastModified()` | `long` | Executa a operação lastModified. |
-| `length()` | `long` | Executa a operação length. |
-| `createNewFile()` | `boolean` | Executa `createNewFile` e retorna quando a chamada do motor termina. |
-| `delete()` | `boolean` | Remove an item da coleção. |
-| `deleteOnExit()` | `void` | Remove on exit da coleção. |
-| `list()` | [String][] | Executa a operação list. |
-| `list(FilenameFilter)` | [String][] | Executa a operação list usando os parâmetros informados (filter). |
-| `listFiles()` | [File][] | Executa a operação listFiles. |
-| `listFiles(FilenameFilter)` | [File][] | Executa a operação listFiles usando os parâmetros informados (filter). |
-| `listFiles(FileFilter)` | [File][] | Executa a operação listFiles usando os parâmetros informados (filter). |
-| `mkdir()` | `boolean` | Executa a operação mkdir. |
-| `mkdirs()` | `boolean` | Executa a operação mkdirs. |
-| `renameTo(File)` | `boolean` | Executa a operação renameTo usando os parâmetros informados (dest). |
-| `setLastModified(long)` | `boolean` | Define ou atualiza a propriedade `propriedade `last modified``. |
-| `setReadOnly()` | `boolean` | Define ou atualiza a propriedade `propriedade `read only``. |
-| `setWritable(boolean, boolean)` | `boolean` | Define ou atualiza a propriedade `propriedade `writable``. |
-| `setWritable(boolean)` | `boolean` | Define ou atualiza a propriedade `propriedade `writable``. |
-| `setReadable(boolean, boolean)` | `boolean` | Define ou atualiza a propriedade `propriedade `readable``. |
-| `setReadable(boolean)` | `boolean` | Define ou atualiza a propriedade `propriedade `readable``. |
-| `setExecutable(boolean, boolean)` | `boolean` | Define ou atualiza a propriedade `propriedade `executable``. |
-| `setExecutable(boolean)` | `boolean` | Define ou atualiza a propriedade `propriedade `executable``. |
-| `canExecute()` | `boolean` | Retorna se execute é verdadeiro. |
-| `getTotalSpace()` | `long` | Retorna a propriedade `propriedade `total space atual``. |
-| `getFreeSpace()` | `long` | Retorna a propriedade `propriedade `free space atual``. |
-| `getUsableSpace()` | `long` | Retorna a propriedade `propriedade `usable space atual``. |
-| `compareTo(File)` | `int` | Compara esta instância com outra para igualdade/ordem. |
-| `equals(Object)` | `boolean` | Compara esta instância com outra para igualdade/ordem. |
-| `hashCode()` | `int` | Retorna se code é verdadeiro. |
-| `toPath()` | `Path` | Executa a operação toPath. |
-| `isAccessible()` | `boolean` | Retorna se accessible é verdadeiro. |
-| `isAccessible(String)` | `boolean` | Retorna se accessible é verdadeiro. |
-
-## Métodos Estáticos (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `createTempFile(String, String, File)` | `File` | Executa `createTempFile` e retorna quando a chamada do motor termina. |
-| `createTempFile(String, String)` | `File` | Executa `createTempFile` e retorna quando a chamada do motor termina. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "File(String, boolean)",
+      description: <>Cria uma nova instância de File.</>
+    },
+    {
+      signature: "File(File, boolean)",
+      description: <>Executa <code>File</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "File(File, String, boolean)",
+      description: <>Executa <code>File</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "File(String)",
+      description: <>Cria uma nova instância de File.</>
+    },
+    {
+      signature: "File(File)",
+      description: <>Executa <code>File</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "File(String, String)",
+      description: <>Cria uma nova instância de File.</>
+    },
+    {
+      signature: "File(File, String)",
+      description: <>Executa <code>File</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "File(URI)",
+      description: <>Cria uma nova instância de File.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "getName()",
+      returns: "String",
+      description: <>Retorna a propriedade <code>propriedade </code>name atual``.</>
+    },
+    {
+      signature: "getParent()",
+      returns: "String",
+      description: <>Retorna a propriedade <code>propriedade </code>parent atual``.</>
+    },
+    {
+      signature: "getParentFile()",
+      returns: "File",
+      description: <>Retorna a propriedade <code>propriedade </code>parent file atual``.</>
+    },
+    {
+      signature: "getPath()",
+      returns: "String",
+      description: <>Retorna a propriedade <code>propriedade </code>path atual``.</>
+    },
+    {
+      signature: "isAbsolute()",
+      returns: "boolean",
+      description: <>Retorna se absolute é verdadeiro.</>
+    },
+    {
+      signature: "getAbsolutePath()",
+      returns: "String",
+      description: <>Retorna a propriedade <code>propriedade </code>absolute path atual``.</>
+    },
+    {
+      signature: "getAbsoluteFile()",
+      returns: "File",
+      description: <>Retorna a propriedade <code>propriedade </code>absolute file atual``.</>
+    },
+    {
+      signature: "getCanonicalPath()",
+      returns: "String",
+      description: <>Executa <code>getCanonicalPath</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "getCanonicalFile()",
+      returns: "File",
+      description: <>Executa <code>getCanonicalFile</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "toURL()",
+      returns: "URL",
+      description: <>Executa <code>toURL</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "toURI()",
+      returns: "URI",
+      description: <>Executa a operação toURI.</>
+    },
+    {
+      signature: "canRead()",
+      returns: "boolean",
+      description: <>Retorna se read é verdadeiro.</>
+    },
+    {
+      signature: "canWrite()",
+      returns: "boolean",
+      description: <>Retorna se write é verdadeiro.</>
+    },
+    {
+      signature: "exists()",
+      returns: "boolean",
+      description: <>Executa a operação exists.</>
+    },
+    {
+      signature: "isDirectory()",
+      returns: "boolean",
+      description: <>Retorna se directory é verdadeiro.</>
+    },
+    {
+      signature: "isFile()",
+      returns: "boolean",
+      description: <>Retorna se file é verdadeiro.</>
+    },
+    {
+      signature: "isHidden()",
+      returns: "boolean",
+      description: <>Retorna se hidden é verdadeiro.</>
+    },
+    {
+      signature: "lastModified()",
+      returns: "long",
+      description: <>Executa a operação lastModified.</>
+    },
+    {
+      signature: "length()",
+      returns: "long",
+      description: <>Executa a operação length.</>
+    },
+    {
+      signature: "createNewFile()",
+      returns: "boolean",
+      description: <>Executa <code>createNewFile</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "delete()",
+      returns: "boolean",
+      description: <>Remove an item da coleção.</>
+    },
+    {
+      signature: "deleteOnExit()",
+      returns: "void",
+      description: <>Remove on exit da coleção.</>
+    },
+    {
+      signature: "list()",
+      returns: "String[]",
+      description: <>Executa a operação list.</>
+    },
+    {
+      signature: "list(FilenameFilter)",
+      returns: "String[]",
+      description: <>Executa a operação list usando os parâmetros informados (filter).</>
+    },
+    {
+      signature: "listFiles()",
+      returns: "File[]",
+      description: <>Executa a operação listFiles.</>
+    },
+    {
+      signature: "listFiles(FilenameFilter)",
+      returns: "File[]",
+      description: <>Executa a operação listFiles usando os parâmetros informados (filter).</>
+    },
+    {
+      signature: "listFiles(FileFilter)",
+      returns: "File[]",
+      description: <>Executa a operação listFiles usando os parâmetros informados (filter).</>
+    },
+    {
+      signature: "mkdir()",
+      returns: "boolean",
+      description: <>Executa a operação mkdir.</>
+    },
+    {
+      signature: "mkdirs()",
+      returns: "boolean",
+      description: <>Executa a operação mkdirs.</>
+    },
+    {
+      signature: "renameTo(File)",
+      returns: "boolean",
+      description: <>Executa a operação renameTo usando os parâmetros informados (dest).</>
+    },
+    {
+      signature: "setLastModified(long)",
+      returns: "boolean",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>last modified``.</>
+    },
+    {
+      signature: "setReadOnly()",
+      returns: "boolean",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>read only``.</>
+    },
+    {
+      signature: "setWritable(boolean, boolean)",
+      returns: "boolean",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>writable``.</>
+    },
+    {
+      signature: "setWritable(boolean)",
+      returns: "boolean",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>writable``.</>
+    },
+    {
+      signature: "setReadable(boolean, boolean)",
+      returns: "boolean",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>readable``.</>
+    },
+    {
+      signature: "setReadable(boolean)",
+      returns: "boolean",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>readable``.</>
+    },
+    {
+      signature: "setExecutable(boolean, boolean)",
+      returns: "boolean",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>executable``.</>
+    },
+    {
+      signature: "setExecutable(boolean)",
+      returns: "boolean",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>executable``.</>
+    },
+    {
+      signature: "canExecute()",
+      returns: "boolean",
+      description: <>Retorna se execute é verdadeiro.</>
+    },
+    {
+      signature: "getTotalSpace()",
+      returns: "long",
+      description: <>Retorna a propriedade <code>propriedade </code>total space atual``.</>
+    },
+    {
+      signature: "getFreeSpace()",
+      returns: "long",
+      description: <>Retorna a propriedade <code>propriedade </code>free space atual``.</>
+    },
+    {
+      signature: "getUsableSpace()",
+      returns: "long",
+      description: <>Retorna a propriedade <code>propriedade </code>usable space atual``.</>
+    },
+    {
+      signature: "compareTo(File)",
+      returns: "int",
+      description: <>Compara esta instância com outra para igualdade/ordem.</>
+    },
+    {
+      signature: "equals(Object)",
+      returns: "boolean",
+      description: <>Compara esta instância com outra para igualdade/ordem.</>
+    },
+    {
+      signature: "hashCode()",
+      returns: "int",
+      description: <>Retorna se code é verdadeiro.</>
+    },
+    {
+      signature: "toPath()",
+      returns: "Path",
+      description: <>Executa a operação toPath.</>
+    },
+    {
+      signature: "isAccessible()",
+      returns: "boolean",
+      description: <>Retorna se accessible é verdadeiro.</>
+    },
+    {
+      signature: "isAccessible(String)",
+      returns: "boolean",
+      description: <>Retorna se accessible é verdadeiro.</>
+    }
+  ]}
+  staticMethods={[
+    {
+      signature: "createTempFile(String, String, File)",
+      returns: "File",
+      description: <>Executa <code>createTempFile</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "createTempFile(String, String)",
+      returns: "File",
+      description: <>Executa <code>createTempFile</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+/>

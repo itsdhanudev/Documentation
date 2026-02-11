@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # TimeCounter
 
 Complete API reference for `TimeCounter`, including constructors, attributes, virtual attributes, and methods.
@@ -14,22 +16,37 @@ Complete API reference for `TimeCounter`, including constructors, attributes, vi
 public class TimeCounter
 ```
 
-## Constructors (1)
-
-| Signature | Description |
-| --- | --- |
-| TimeCounter() | Executes `TimeCounter` and returns after the underlying engine call finishes. |
-
-## Virtual Attributes (2)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `elapsedMilliseconds` | [float] | `get` | Returns the elapsed time in milliseconds. |
-| `elapsedSeconds` | [float] | `get` | Returns the elapsed time in seconds. |
-
-## Methods (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `start()` | `void` | Starts the time counter. |
-| `finish()` | `void` | Finishes the time counter and calculates the elapsed time. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "TimeCounter()",
+      description: <>Executes <code>TimeCounter</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "elapsedMilliseconds",
+      type: "float",
+      access: "get",
+      description: <>Returns the elapsed time in milliseconds.</>
+    },
+    {
+      name: "elapsedSeconds",
+      type: "float",
+      access: "get",
+      description: <>Returns the elapsed time in seconds.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "start()",
+      returns: "void",
+      description: <>Starts the time counter.</>
+    },
+    {
+      signature: "finish()",
+      returns: "void",
+      description: <>Finishes the time counter and calculates the elapsed time.</>
+    }
+  ]}
+/>

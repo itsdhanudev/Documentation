@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # UIKeyEventListener
 
 Complete API reference for `UIKeyEventListener`, including constructors, attributes, virtual attributes, and methods.
@@ -14,22 +16,34 @@ Complete API reference for `UIKeyEventListener`, including constructors, attribu
 public class UIKeyEventListener extends Component
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| UIKeyEventListener([UIKeyEventListener]) | Executes `UIKeyEventListener` and returns after the underlying engine call finishes. |
-| UIKeyEventListener([Engine]) | Executes `UIKeyEventListener` and returns after the underlying engine call finishes. |
-| UIKeyEventListener() | Creates a new instance of UIKeyEventListener. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [UIKeyEventListener] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (1)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `keyName` | [String] | `get/set` | Virtual attribute exposed by `getKeyName`. Access it like a field to read or write the underlying value. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "UIKeyEventListener(UIKeyEventListener)",
+      description: <>Executes <code>UIKeyEventListener</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "UIKeyEventListener(Engine)",
+      description: <>Executes <code>UIKeyEventListener</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "UIKeyEventListener()",
+      description: <>Creates a new instance of UIKeyEventListener.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "UIKeyEventListener",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "keyName",
+      type: "String",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getKeyName</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+/>

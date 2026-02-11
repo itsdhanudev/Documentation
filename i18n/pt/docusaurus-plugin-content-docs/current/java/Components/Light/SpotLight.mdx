@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # SpotLight
 
 Referência completa da API de `SpotLight`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,31 +16,88 @@ Referência completa da API de `SpotLight`, incluindo construtores, atributos, a
 public class SpotLight extends Component
 ```
 
-## Construtores (3)
-
-| Signature | Description |
-| --- | --- |
-| SpotLight([SpotLight]) | Executa `SpotLight` e retorna quando a chamada do motor termina. |
-| SpotLight([Engine]) | Executa `SpotLight` e retorna quando a chamada do motor termina. |
-| SpotLight() | Executa `SpotLight` e retorna quando a chamada do motor termina. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [SpotLight] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (10)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `allowShadow` | [boolean] | `get/set` | Atributo virtual exposto por `isAllowShadow`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `color` | [Color] | `get/set` | Atributo virtual exposto por `getColor`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `falloffRadius` | [float] | `get/set` | Atributo virtual exposto por `getFalloffRadius`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `innerConeAngle` | [float] | `get/set` | Atributo virtual exposto por `getInnerConeAngle`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `lumens` | [float] | `get/set` | Atributo virtual exposto por `getLumens`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `outerConeAngle` | [float] | `get/set` | Atributo virtual exposto por `getOuterConeAngle`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `shadowBias` | [float] | `get/set` | Atributo virtual exposto por `getShadowBias`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `shadowFarDistance` | [float] | `get/set` | Atributo virtual exposto por `getShadowFarDistance`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `shadowNormalBias` | [float] | `get/set` | Atributo virtual exposto por `getShadowNormalBias`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `shadowResolutionID` | [int] | `get/set` | Atributo virtual exposto por `getShadowResolutionID`. Acesse como um campo para ler ou escrever o valor subjacente. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "SpotLight(SpotLight)",
+      description: <>Executa <code>SpotLight</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "SpotLight(Engine)",
+      description: <>Executa <code>SpotLight</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "SpotLight()",
+      description: <>Executa <code>SpotLight</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "SpotLight",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "allowShadow",
+      type: "boolean",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>isAllowShadow</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "color",
+      type: "Color",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getColor</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "falloffRadius",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getFalloffRadius</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "innerConeAngle",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getInnerConeAngle</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "lumens",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getLumens</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "outerConeAngle",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getOuterConeAngle</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "shadowBias",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getShadowBias</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "shadowFarDistance",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getShadowFarDistance</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "shadowNormalBias",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getShadowNormalBias</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "shadowResolutionID",
+      type: "int",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getShadowResolutionID</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+/>

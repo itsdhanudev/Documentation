@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # SoundEmitter
 
 Complete API reference for `SoundEmitter`, including constructors, attributes, virtual attributes, and methods.
@@ -14,46 +16,133 @@ Complete API reference for `SoundEmitter`, including constructors, attributes, v
 public class SoundEmitter
 ```
 
-## Constructors (5)
-
-| Signature | Description |
-| --- | --- |
-| SoundEmitter([NativeSoundEmitter]) | Executes `SoundEmitter` and returns after the underlying engine call finishes. |
-| SoundEmitter([NativeFloatBuffer], [int]) | Executes `SoundEmitter` and returns after the underlying engine call finishes. |
-| SoundEmitter([float][], [int]) | Creates a new instance of SoundEmitter. |
-| SoundEmitter([SoundData]) | Creates a new instance of SoundEmitter. |
-| SoundEmitter([File]) | Executes `SoundEmitter` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [NativeSoundEmitter] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (5)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `leftVolume` | [float] | `get/set` | Virtual attribute exposed by `getLeftVolume`. Access it like a field to read or write the underlying value. |
-| `pitch` | [float] | `get/set` | Virtual attribute exposed by `getPitch`. Access it like a field to read or write the underlying value. |
-| `rightVolume` | [float] | `get/set` | Virtual attribute exposed by `getRightVolume`. Access it like a field to read or write the underlying value. |
-| `speed` | [float] | `get/set` | Virtual attribute exposed by `getSpeed`. Access it like a field to read or write the underlying value. |
-| `volume` | [float] | `get/set` | Virtual attribute exposed by `getVolume`. Access it like a field to read or write the underlying value. |
-
-## Methods (13)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `setVolumes(float, float)` | `void` | Sets or updates the volumes. |
-| `setVolumes(float, float, float)` | `void` | Sets or updates the volumes. |
-| `getCurrentSecond()` | `float` | Returns the current current second. |
-| `getTotalSeconds()` | `float` | Returns the current total seconds. |
-| `seekToSecond(float)` | `void` | Performs the seekToSecond operation using the provided parameters (second). |
-| `isLoop()` | `boolean` | Returns whether loop is true. |
-| `setLoop(boolean)` | `void` | Sets or updates the loop. |
-| `play()` | `void` | Executes `play` and returns after the underlying engine call finishes. |
-| `pause()` | `void` | Executes `pause` and returns after the underlying engine call finishes. |
-| `stop()` | `void` | Executes `stop` and returns after the underlying engine call finishes. |
-| `isPaused()` | `boolean` | Returns whether paused is true. |
-| `isPlaying()` | `boolean` | Returns whether playing is true. |
-| `isStopped()` | `boolean` | Returns whether stopped is true. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "SoundEmitter(NativeSoundEmitter)",
+      description: <>Executes <code>SoundEmitter</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "SoundEmitter(NativeFloatBuffer, int)",
+      description: <>Executes <code>SoundEmitter</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "SoundEmitter(float[], int)",
+      description: <>Creates a new instance of SoundEmitter.</>
+    },
+    {
+      signature: "SoundEmitter(SoundData)",
+      description: <>Creates a new instance of SoundEmitter.</>
+    },
+    {
+      signature: "SoundEmitter(File)",
+      description: <>Executes <code>SoundEmitter</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "NativeSoundEmitter",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "leftVolume",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getLeftVolume</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "pitch",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getPitch</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "rightVolume",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getRightVolume</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "speed",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getSpeed</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "volume",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getVolume</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "setVolumes(float, float)",
+      returns: "void",
+      description: <>Sets or updates the volumes.</>
+    },
+    {
+      signature: "setVolumes(float, float, float)",
+      returns: "void",
+      description: <>Sets or updates the volumes.</>
+    },
+    {
+      signature: "getCurrentSecond()",
+      returns: "float",
+      description: <>Returns the current current second.</>
+    },
+    {
+      signature: "getTotalSeconds()",
+      returns: "float",
+      description: <>Returns the current total seconds.</>
+    },
+    {
+      signature: "seekToSecond(float)",
+      returns: "void",
+      description: <>Performs the seekToSecond operation using the provided parameters (second).</>
+    },
+    {
+      signature: "isLoop()",
+      returns: "boolean",
+      description: <>Returns whether loop is true.</>
+    },
+    {
+      signature: "setLoop(boolean)",
+      returns: "void",
+      description: <>Sets or updates the loop.</>
+    },
+    {
+      signature: "play()",
+      returns: "void",
+      description: <>Executes <code>play</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "pause()",
+      returns: "void",
+      description: <>Executes <code>pause</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "stop()",
+      returns: "void",
+      description: <>Executes <code>stop</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "isPaused()",
+      returns: "boolean",
+      description: <>Returns whether paused is true.</>
+    },
+    {
+      signature: "isPlaying()",
+      returns: "boolean",
+      description: <>Returns whether playing is true.</>
+    },
+    {
+      signature: "isStopped()",
+      returns: "boolean",
+      description: <>Returns whether stopped is true.</>
+    }
+  ]}
+/>

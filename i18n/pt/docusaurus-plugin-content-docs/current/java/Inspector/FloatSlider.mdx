@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # FloatSlider
 
 Referência completa da API de `FloatSlider`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,39 +16,77 @@ Referência completa da API de `FloatSlider`, incluindo construtores, atributos,
 public class FloatSlider
 ```
 
-## Construtores (1)
-
-| Signature | Description |
-| --- | --- |
-| FloatSlider([float], [float], [float]) | Cria uma nova instância de FloatSlider. |
-
-## Atributos (3)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `value` | [float] | Representa o valor de `value` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `min` | [float] | Representa o valor de `min` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `max` | [float] | Representa o valor de `max` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (3)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `max` | [float] | `get/set` | Retorna a propriedade `propriedade `valor máximo permitido do controle deslizante``. |
-| `min` | [float] | `get/set` | Retorna a propriedade `propriedade `valor mínimo permitido do controle deslizante``. |
-| `value` | [float] | `get/set` | Retorna a propriedade `propriedade `valor atual do controle deslizante``. |
-
-## Métodos (3)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `copy()` | `FloatSlider` | Retorna uma cópia do FloatSlider. |
-| `toString()` | `String` | Retorna uma representação em string do FloatSlider. |
-| `serialize()` | `String` | Serializa o FloatSlider em uma string no formato '[value;min;max;step]'. |
-
-## Métodos Estáticos (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `inspectorController()` | `ClassInspectorEntry` | Executa `inspectorController` e retorna quando a chamada do motor termina. |
-| `deserialize(String)` | `FloatSlider` | Desserializa uma string para criar uma instância de FloatSlider. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "FloatSlider(float, float, float)",
+      description: <>Cria uma nova instância de FloatSlider.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "value",
+      type: "float",
+      description: <>Representa o valor de <code>value</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "min",
+      type: "float",
+      description: <>Representa o valor de <code>min</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "max",
+      type: "float",
+      description: <>Representa o valor de <code>max</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "max",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>propriedade </code>valor máximo permitido do controle deslizante``.</>
+    },
+    {
+      name: "min",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>propriedade </code>valor mínimo permitido do controle deslizante``.</>
+    },
+    {
+      name: "value",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>propriedade </code>valor atual do controle deslizante``.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "copy()",
+      returns: "FloatSlider",
+      description: <>Retorna uma cópia do FloatSlider.</>
+    },
+    {
+      signature: "toString()",
+      returns: "String",
+      description: <>Retorna uma representação em string do FloatSlider.</>
+    },
+    {
+      signature: "serialize()",
+      returns: "String",
+      description: <>Serializa o FloatSlider em uma string no formato '[value;min;max;step]'.</>
+    }
+  ]}
+  staticMethods={[
+    {
+      signature: "inspectorController()",
+      returns: "ClassInspectorEntry",
+      description: <>Executa <code>inspectorController</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "deserialize(String)",
+      returns: "FloatSlider",
+      description: <>Desserializa uma string para criar uma instância de FloatSlider.</>
+    }
+  ]}
+/>

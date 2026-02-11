@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # ExecutionAllow
 
 Complete API reference for `ExecutionAllow`, including constructors, attributes, virtual attributes, and methods.
@@ -14,17 +16,33 @@ Complete API reference for `ExecutionAllow`, including constructors, attributes,
 public class ExecutionAllow
 ```
 
-## Constructors (1)
-
-| Signature | Description |
-| --- | --- |
-| ExecutionAllow([boolean], [boolean]) | Creates a new instance of ExecutionAllow. |
-
-## Methods (4)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `onGameStopped()` | `boolean` | Executes `onGameStopped` and returns after the underlying engine call finishes. |
-| `setOnGameStopped(boolean)` | `void` | Sets or updates the on game stopped. |
-| `onGameRunning()` | `boolean` | Executes `onGameRunning` and returns after the underlying engine call finishes. |
-| `setOnGameRunning(boolean)` | `void` | Sets or updates the on game running. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "ExecutionAllow(boolean, boolean)",
+      description: <>Creates a new instance of ExecutionAllow.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "onGameStopped()",
+      returns: "boolean",
+      description: <>Executes <code>onGameStopped</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "setOnGameStopped(boolean)",
+      returns: "void",
+      description: <>Sets or updates the on game stopped.</>
+    },
+    {
+      signature: "onGameRunning()",
+      returns: "boolean",
+      description: <>Executes <code>onGameRunning</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "setOnGameRunning(boolean)",
+      returns: "void",
+      description: <>Sets or updates the on game running.</>
+    }
+  ]}
+/>

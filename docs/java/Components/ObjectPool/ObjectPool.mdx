@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # ObjectPool
 
 Complete API reference for `ObjectPool`, including constructors, attributes, virtual attributes, and methods.
@@ -14,30 +16,75 @@ Complete API reference for `ObjectPool`, including constructors, attributes, vir
 public class ObjectPool extends Component
 ```
 
-## Constructors (1)
-
-| Signature | Description |
-| --- | --- |
-| ObjectPool([ObjectPool]) | Executes `ObjectPool` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [ObjectPool] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Methods (11)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `add(Vector3)` | [ObjectPool].[Object] | Adds an HPO at the specified position and returns its index. |
-| `objectCount()` | `int` | Returns the count of objects in the current HPOP. |
-| `getObject(int)` | [ObjectPool].[Object] | Executes `getObject` and returns after the underlying engine call finishes. |
-| `notifyObjectChanged(ObjectPool.Object)` | `void` | Updates the object. |
-| `delete([List&lt;SearchResult&gt;])` | `void` | Deletes multiple HPOs based on the provided search results. |
-| `delete(ObjectPool.Object)` | `void` | Deletes the HPO at the specified index. |
-| `findInCircle(Vector3, float)` | [List]&[lt];[SearchResult]&[gt]; | Finds and returns all objects within a specified circle defined by center and radius. |
-| `findInSphere(Vector3, float)` | [List]&[lt];[SearchResult]&[gt]; | Finds and returns all objects within a specified sphere defined by center and radius. |
-| `findInSquare(Vector2, Vector2)` | [List]&[lt];[SearchResult]&[gt]; | Finds and returns all objects within a rectangular area defined by two corners: min and max. |
-| `componentClassMatch(Component, Component)` | `boolean` | Executes `componentClassMatch` and returns after the underlying engine call finishes. |
-| `getEngineComponent()` | `Component` | Executes `getEngineComponent` and returns after the underlying engine call finishes. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "ObjectPool(ObjectPool)",
+      description: <>Executes <code>ObjectPool</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "ObjectPool",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "add(Vector3)",
+      returns: "ObjectPool.Object",
+      description: <>Adds an HPO at the specified position and returns its index.</>
+    },
+    {
+      signature: "objectCount()",
+      returns: "int",
+      description: <>Returns the count of objects in the current HPOP.</>
+    },
+    {
+      signature: "getObject(int)",
+      returns: "ObjectPool.Object",
+      description: <>Executes <code>getObject</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "notifyObjectChanged(ObjectPool.Object)",
+      returns: "void",
+      description: <>Updates the object.</>
+    },
+    {
+      signature: "delete(List&lt;SearchResult&gt;)",
+      returns: "void",
+      description: <>Deletes multiple HPOs based on the provided search results.</>
+    },
+    {
+      signature: "delete(ObjectPool.Object)",
+      returns: "void",
+      description: <>Deletes the HPO at the specified index.</>
+    },
+    {
+      signature: "findInCircle(Vector3, float)",
+      returns: "List&lt;SearchResult&gt;",
+      description: <>Finds and returns all objects within a specified circle defined by center and radius.</>
+    },
+    {
+      signature: "findInSphere(Vector3, float)",
+      returns: "List&lt;SearchResult&gt;",
+      description: <>Finds and returns all objects within a specified sphere defined by center and radius.</>
+    },
+    {
+      signature: "findInSquare(Vector2, Vector2)",
+      returns: "List&lt;SearchResult&gt;",
+      description: <>Finds and returns all objects within a rectangular area defined by two corners: min and max.</>
+    },
+    {
+      signature: "componentClassMatch(Component, Component)",
+      returns: "boolean",
+      description: <>Executes <code>componentClassMatch</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "getEngineComponent()",
+      returns: "Component",
+      description: <>Executes <code>getEngineComponent</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

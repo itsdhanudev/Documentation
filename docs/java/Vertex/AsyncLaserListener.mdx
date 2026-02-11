@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # AsyncLaserListener
 
 Complete API reference for `AsyncLaserListener`, including constructors, attributes, virtual attributes, and methods.
@@ -14,9 +16,12 @@ Complete API reference for `AsyncLaserListener`, including constructors, attribu
 public interface AsyncLaserListener
 ```
 
-## Methods (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `@MethodArgs([{"laserHit"}])` | `void` | Performs the @MethodArgs operation. |
-| `onFinish(LaserHit)` | `void` | Executes `onFinish` and returns after the underlying engine call finishes. |
+<ApiDoc
+  methods={[
+    {
+      signature: "onFinish(LaserHit)",
+      returns: "void",
+      description: <>Executes <code>onFinish</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

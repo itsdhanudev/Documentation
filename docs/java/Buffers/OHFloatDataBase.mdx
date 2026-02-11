@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # OHFloatDataBase
 
 Complete API reference for `OHFloatDataBase`, including constructors, attributes, virtual attributes, and methods.
@@ -14,33 +16,88 @@ Complete API reference for `OHFloatDataBase`, including constructors, attributes
 public class OHFloatDataBase
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| OHFloatDataBase([OHFloatDataBase]) | Executes `OHFloatDataBase` and returns after the underlying engine call finishes. |
-| OHFloatDataBase([Engine]) | Executes `OHFloatDataBase` and returns after the underlying engine call finishes. |
-| OHFloatDataBase([int]) | Creates a new instance of OHFloatDataBase. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `buffer` | [OHFloatDataBase] | Represents the `buffer` value stored on this instance. Read or assign to update the property. |
-
-## Methods (12)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `incrementSize(int)` | `void` | Performs the incrementSize operation using the provided parameters (size). |
-| `decrementSize(int)` | `void` | Performs the decrementSize operation using the provided parameters (size). |
-| `resize(int)` | `void` | Performs the resize operation using the provided parameters (newCapacity). |
-| `resize(int, boolean)` | `void` | Performs the resize operation using the provided parameters (newCapacity, copyData). |
-| `position(int)` | `void` | Performs the position operation using the provided parameters (position). |
-| `put(float[])` | `void` | Sets or updates the the value. |
-| `put(float)` | `void` | Sets or updates the the value. |
-| `set(int, float)` | `void` | Sets or updates the the value. |
-| `get(int)` | `float` | Returns the current value. |
-| `getBytes()` | [float][] | Returns the current bytes. |
-| `size()` | `int` | Executes `size` and returns after the underlying engine call finishes. |
-| `capacity()` | `int` | Executes `capacity` and returns after the underlying engine call finishes. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "OHFloatDataBase(OHFloatDataBase)",
+      description: <>Executes <code>OHFloatDataBase</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "OHFloatDataBase(Engine)",
+      description: <>Executes <code>OHFloatDataBase</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "OHFloatDataBase(int)",
+      description: <>Creates a new instance of OHFloatDataBase.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "buffer",
+      type: "OHFloatDataBase",
+      description: <>Represents the <code>buffer</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "incrementSize(int)",
+      returns: "void",
+      description: <>Performs the incrementSize operation using the provided parameters (size).</>
+    },
+    {
+      signature: "decrementSize(int)",
+      returns: "void",
+      description: <>Performs the decrementSize operation using the provided parameters (size).</>
+    },
+    {
+      signature: "resize(int)",
+      returns: "void",
+      description: <>Performs the resize operation using the provided parameters (newCapacity).</>
+    },
+    {
+      signature: "resize(int, boolean)",
+      returns: "void",
+      description: <>Performs the resize operation using the provided parameters (newCapacity, copyData).</>
+    },
+    {
+      signature: "position(int)",
+      returns: "void",
+      description: <>Performs the position operation using the provided parameters (position).</>
+    },
+    {
+      signature: "put(float[])",
+      returns: "void",
+      description: <>Sets or updates the the value.</>
+    },
+    {
+      signature: "put(float)",
+      returns: "void",
+      description: <>Sets or updates the the value.</>
+    },
+    {
+      signature: "set(int, float)",
+      returns: "void",
+      description: <>Sets or updates the the value.</>
+    },
+    {
+      signature: "get(int)",
+      returns: "float",
+      description: <>Returns the current value.</>
+    },
+    {
+      signature: "getBytes()",
+      returns: "float[]",
+      description: <>Returns the current bytes.</>
+    },
+    {
+      signature: "size()",
+      returns: "int",
+      description: <>Executes <code>size</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "capacity()",
+      returns: "int",
+      description: <>Executes <code>capacity</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Vertex
 
 Referência completa da API de `Vertex`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,94 +16,370 @@ Referência completa da API de `Vertex`, incluindo construtores, atributos, atri
 public class Vertex
 ```
 
-## Construtores (3)
-
-| Signature | Description |
-| --- | --- |
-| Vertex([Vertex]) | Executa `Vertex` e retorna quando a chamada do motor termina. |
-| Vertex([Engine]) | Executa `Vertex` e retorna quando a chamada do motor termina. |
-| Vertex() | Cria uma nova instância de Vertex. |
-
-## Atributos (13)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `vertex` | [Vertex] | Representa o valor de `vertex` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `CUBE` | [int] | Representa o valor de `CUBE` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `SPHERE` | [int] | Representa o valor de `SPHERE` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `CONE` | [int] | Representa o valor de `CONE` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `CYLINDER` | [int] | Representa o valor de `CYLINDER` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `CIRCLE` | [int] | Representa o valor de `CIRCLE` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `TORUS` | [int] | Representa o valor de `TORUS` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `SQUARE` | [int] | Representa o valor de `SQUARE` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `SQUARE90` | [int] | Representa o valor de `SQUARE90` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `CAPSULE` | [int] | Representa o valor de `CAPSULE` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `HALF_CAPSULE` | [int] | Representa o valor de `HALF_CAPSULE` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `SPHERE_LOWPOLY` | [int] | Representa o valor de `SPHERE_LOWPOLY` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `RENDER_TARGET` | [int] | Representa o valor de `RENDER_TARGET` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Métodos (52)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getVertices()` | [List]&[lt];[Vector3]&[gt]; | Retorna a propriedade `propriedade `vertices atual``. |
-| `getVerticesArray()` | [float][] | Retorna a propriedade `propriedade `vertices array atual``. |
-| `getVerticesBuffer()` | `NativeFloatBuffer` | Retorna a propriedade `propriedade `vertices buffer atual``. |
-| `setVertices([List&lt;Vector3&gt;])` | `void` | Define ou atualiza a propriedade `propriedade `vertices``. |
-| `setVertices(float[])` | `void` | Define ou atualiza a propriedade `propriedade `vertices``. |
-| `setVertices(NativeFloatBuffer)` | `void` | Define ou atualiza a propriedade `propriedade `vertices``. |
-| `setVertices(Vector3Buffer)` | `void` | Define ou atualiza a propriedade `propriedade `vertices``. |
-| `getTriangles()` | [List]&[lt];[Vector3]&[gt]; | Retorna a propriedade `propriedade `triangles atual``. |
-| `getTrianglesArray()` | [int][] | Retorna a propriedade `propriedade `triangles array atual``. |
-| `getTrianglesBuffer()` | `NativeIntBuffer` | Retorna a propriedade `propriedade `triangles buffer atual``. |
-| `setTriangles([List&lt;Vector3&gt;])` | `void` | Define ou atualiza a propriedade `propriedade `triangles``. |
-| `setTriangles(int[])` | `void` | Define ou atualiza a propriedade `propriedade `triangles``. |
-| `setTriangles(NativeIntBuffer)` | `void` | Define ou atualiza a propriedade `propriedade `triangles``. |
-| `setTriangles(Point3Buffer)` | `void` | Define ou atualiza a propriedade `propriedade `triangles``. |
-| `getNormals()` | [List]&[lt];[Vector3]&[gt]; | Retorna a propriedade `propriedade `normals atual``. |
-| `getNormalsArray()` | [float][] | Retorna a propriedade `propriedade `normals array atual``. |
-| `getNormalsBuffer()` | `NativeFloatBuffer` | Retorna a propriedade `propriedade `normals buffer atual``. |
-| `setNormals([List&lt;Vector3&gt;])` | `void` | Define ou atualiza a propriedade `propriedade `normals``. |
-| `setNormals(float[])` | `void` | Define ou atualiza a propriedade `propriedade `normals``. |
-| `setNormals(NativeFloatBuffer)` | `void` | Define ou atualiza a propriedade `propriedade `normals``. |
-| `setNormals(Vector3Buffer)` | `void` | Define ou atualiza a propriedade `propriedade `normals``. |
-| `getUVs()` | [List]&[lt];[Vector2]&[gt]; | Retorna a propriedade `propriedade `uvs atual``. |
-| `getUVsArray()` | [float][] | Retorna a propriedade `propriedade `uvs array atual``. |
-| `getUVsBuffer()` | `NativeFloatBuffer` | Retorna a propriedade `propriedade `uvs buffer atual``. |
-| `setUVs([List&lt;Vector2&gt;])` | `void` | Define ou atualiza a propriedade `propriedade `uvs``. |
-| `setUVs(float[])` | `void` | Define ou atualiza a propriedade `propriedade `uvs``. |
-| `setUVs(NativeFloatBuffer)` | `void` | Define ou atualiza a propriedade `propriedade `uvs``. |
-| `setUVs(Vector2Buffer)` | `void` | Define ou atualiza a propriedade `propriedade `uvs``. |
-| `getJoints()` | [List]&[lt];[Vector3]&[gt]; | Retorna a propriedade `propriedade `joints atual``. |
-| `getJointsArray()` | [float][] | Retorna a propriedade `propriedade `joints array atual``. |
-| `getJointsBuffer()` | `NativeFloatBuffer` | Retorna a propriedade `propriedade `joints buffer atual``. |
-| `setJoints([List&lt;Vector3&gt;])` | `void` | Define ou atualiza a propriedade `propriedade `joints``. |
-| `setJoints(float[])` | `void` | Define ou atualiza a propriedade `propriedade `joints``. |
-| `setJoints(NativeFloatBuffer)` | `void` | Define ou atualiza a propriedade `propriedade `joints``. |
-| `setJoints(Vector3Buffer)` | `void` | Define ou atualiza a propriedade `propriedade `joints``. |
-| `getWeights()` | [List]&[lt];[Vector3]&[gt]; | Retorna a propriedade `propriedade `weights atual``. |
-| `getWeightsArray()` | [float][] | Retorna a propriedade `propriedade `weights array atual``. |
-| `getWeightsBuffer()` | `NativeFloatBuffer` | Retorna a propriedade `propriedade `weights buffer atual``. |
-| `setWeights([List&lt;Vector3&gt;])` | `void` | Define ou atualiza a propriedade `propriedade `weights``. |
-| `setWeights(float[])` | `void` | Define ou atualiza a propriedade `propriedade `weights``. |
-| `setWeights(NativeFloatBuffer)` | `void` | Define ou atualiza a propriedade `propriedade `weights``. |
-| `setWeights(Vector3Buffer)` | `void` | Define ou atualiza a propriedade `propriedade `weights``. |
-| `traceLaser(Transform, Ray)` | `LaserHit` | Executa a operação traceLaser usando os parâmetros informados (transform, ray). |
-| `traceLaser(Transform, Ray, RayMode)` | `LaserHit` | Executa a operação traceLaser usando os parâmetros informados (transform, ray, rayMode). |
-| `traceLaser(Transform, Ray, RayMode, boolean)` | `LaserHit` | Executa a operação traceLaser usando os parâmetros informados (transform, ray, rayMode, backfaceCulling). |
-| `traceLaserAsync(Transform, Ray, AsyncLaserListener)` | `void` | Executa a operação traceLaserAsync usando os parâmetros informados (transform, ray, asyncLaserListener). |
-| `traceLaserAsync(Transform, Ray, AsyncLaserListener, RayMode)` | `void` | Executa a operação traceLaserAsync usando os parâmetros informados (transform, ray, asyncLaserListener, rayMode). |
-| `traceLaserAsync(Transform, Ray, AsyncLaserListener, RayMode, boolean)` | `void` | Executa a operação traceLaserAsync usando os parâmetros informados (transform, ray, asyncLaserListener, rayMode, backfaceCulling). |
-| `apply()` | `void` | Executa a operação apply. |
-| `applyAsync()` | `void` | Executa `applyAsync` e retorna quando a chamada do motor termina. |
-| `getBoundingBox()` | `AABB` | Retorna a propriedade `propriedade `bounding box atual``. |
-| `recalculateBoundingBox()` | `AABB` | Executa a operação recalculateBoundingBox. |
-
-## Métodos Estáticos (4)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `loadFile(VertexFile)` | `Vertex` | Carrega file no objeto. |
-| `loadFile(File)` | `Vertex` | Carrega file no objeto. |
-| `loadFile(InputStream)` | `Vertex` | Carrega file no objeto. |
-| `loadPrimitive(int)` | `Vertex` | Carrega primitive no objeto. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "Vertex(Vertex)",
+      description: <>Executa <code>Vertex</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "Vertex(Engine)",
+      description: <>Executa <code>Vertex</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "Vertex()",
+      description: <>Cria uma nova instância de Vertex.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "vertex",
+      type: "Vertex",
+      description: <>Representa o valor de <code>vertex</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "CUBE",
+      type: "int",
+      description: <>Representa o valor de <code>CUBE</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "SPHERE",
+      type: "int",
+      description: <>Representa o valor de <code>SPHERE</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "CONE",
+      type: "int",
+      description: <>Representa o valor de <code>CONE</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "CYLINDER",
+      type: "int",
+      description: <>Representa o valor de <code>CYLINDER</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "CIRCLE",
+      type: "int",
+      description: <>Representa o valor de <code>CIRCLE</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "TORUS",
+      type: "int",
+      description: <>Representa o valor de <code>TORUS</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "SQUARE",
+      type: "int",
+      description: <>Representa o valor de <code>SQUARE</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "SQUARE90",
+      type: "int",
+      description: <>Representa o valor de <code>SQUARE90</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "CAPSULE",
+      type: "int",
+      description: <>Representa o valor de <code>CAPSULE</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "HALF_CAPSULE",
+      type: "int",
+      description: <>Representa o valor de <code>HALF_CAPSULE</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "SPHERE_LOWPOLY",
+      type: "int",
+      description: <>Representa o valor de <code>SPHERE_LOWPOLY</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "RENDER_TARGET",
+      type: "int",
+      description: <>Representa o valor de <code>RENDER_TARGET</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "getVertices()",
+      returns: "List&lt;Vector3&gt;",
+      description: <>Retorna a propriedade <code>propriedade </code>vertices atual``.</>
+    },
+    {
+      signature: "getVerticesArray()",
+      returns: "float[]",
+      description: <>Retorna a propriedade <code>propriedade </code>vertices array atual``.</>
+    },
+    {
+      signature: "getVerticesBuffer()",
+      returns: "NativeFloatBuffer",
+      description: <>Retorna a propriedade <code>propriedade </code>vertices buffer atual``.</>
+    },
+    {
+      signature: "setVertices(List&lt;Vector3&gt;)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>vertices``.</>
+    },
+    {
+      signature: "setVertices(float[])",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>vertices``.</>
+    },
+    {
+      signature: "setVertices(NativeFloatBuffer)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>vertices``.</>
+    },
+    {
+      signature: "setVertices(Vector3Buffer)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>vertices``.</>
+    },
+    {
+      signature: "getTriangles()",
+      returns: "List&lt;Vector3&gt;",
+      description: <>Retorna a propriedade <code>propriedade </code>triangles atual``.</>
+    },
+    {
+      signature: "getTrianglesArray()",
+      returns: "int[]",
+      description: <>Retorna a propriedade <code>propriedade </code>triangles array atual``.</>
+    },
+    {
+      signature: "getTrianglesBuffer()",
+      returns: "NativeIntBuffer",
+      description: <>Retorna a propriedade <code>propriedade </code>triangles buffer atual``.</>
+    },
+    {
+      signature: "setTriangles(List&lt;Vector3&gt;)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>triangles``.</>
+    },
+    {
+      signature: "setTriangles(int[])",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>triangles``.</>
+    },
+    {
+      signature: "setTriangles(NativeIntBuffer)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>triangles``.</>
+    },
+    {
+      signature: "setTriangles(Point3Buffer)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>triangles``.</>
+    },
+    {
+      signature: "getNormals()",
+      returns: "List&lt;Vector3&gt;",
+      description: <>Retorna a propriedade <code>propriedade </code>normals atual``.</>
+    },
+    {
+      signature: "getNormalsArray()",
+      returns: "float[]",
+      description: <>Retorna a propriedade <code>propriedade </code>normals array atual``.</>
+    },
+    {
+      signature: "getNormalsBuffer()",
+      returns: "NativeFloatBuffer",
+      description: <>Retorna a propriedade <code>propriedade </code>normals buffer atual``.</>
+    },
+    {
+      signature: "setNormals(List&lt;Vector3&gt;)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>normals``.</>
+    },
+    {
+      signature: "setNormals(float[])",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>normals``.</>
+    },
+    {
+      signature: "setNormals(NativeFloatBuffer)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>normals``.</>
+    },
+    {
+      signature: "setNormals(Vector3Buffer)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>normals``.</>
+    },
+    {
+      signature: "getUVs()",
+      returns: "List&lt;Vector2&gt;",
+      description: <>Retorna a propriedade <code>propriedade </code>uvs atual``.</>
+    },
+    {
+      signature: "getUVsArray()",
+      returns: "float[]",
+      description: <>Retorna a propriedade <code>propriedade </code>uvs array atual``.</>
+    },
+    {
+      signature: "getUVsBuffer()",
+      returns: "NativeFloatBuffer",
+      description: <>Retorna a propriedade <code>propriedade </code>uvs buffer atual``.</>
+    },
+    {
+      signature: "setUVs(List&lt;Vector2&gt;)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>uvs``.</>
+    },
+    {
+      signature: "setUVs(float[])",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>uvs``.</>
+    },
+    {
+      signature: "setUVs(NativeFloatBuffer)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>uvs``.</>
+    },
+    {
+      signature: "setUVs(Vector2Buffer)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>uvs``.</>
+    },
+    {
+      signature: "getJoints()",
+      returns: "List&lt;Vector3&gt;",
+      description: <>Retorna a propriedade <code>propriedade </code>joints atual``.</>
+    },
+    {
+      signature: "getJointsArray()",
+      returns: "float[]",
+      description: <>Retorna a propriedade <code>propriedade </code>joints array atual``.</>
+    },
+    {
+      signature: "getJointsBuffer()",
+      returns: "NativeFloatBuffer",
+      description: <>Retorna a propriedade <code>propriedade </code>joints buffer atual``.</>
+    },
+    {
+      signature: "setJoints(List&lt;Vector3&gt;)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>joints``.</>
+    },
+    {
+      signature: "setJoints(float[])",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>joints``.</>
+    },
+    {
+      signature: "setJoints(NativeFloatBuffer)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>joints``.</>
+    },
+    {
+      signature: "setJoints(Vector3Buffer)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>joints``.</>
+    },
+    {
+      signature: "getWeights()",
+      returns: "List&lt;Vector3&gt;",
+      description: <>Retorna a propriedade <code>propriedade </code>weights atual``.</>
+    },
+    {
+      signature: "getWeightsArray()",
+      returns: "float[]",
+      description: <>Retorna a propriedade <code>propriedade </code>weights array atual``.</>
+    },
+    {
+      signature: "getWeightsBuffer()",
+      returns: "NativeFloatBuffer",
+      description: <>Retorna a propriedade <code>propriedade </code>weights buffer atual``.</>
+    },
+    {
+      signature: "setWeights(List&lt;Vector3&gt;)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>weights``.</>
+    },
+    {
+      signature: "setWeights(float[])",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>weights``.</>
+    },
+    {
+      signature: "setWeights(NativeFloatBuffer)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>weights``.</>
+    },
+    {
+      signature: "setWeights(Vector3Buffer)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>weights``.</>
+    },
+    {
+      signature: "traceLaser(Transform, Ray)",
+      returns: "LaserHit",
+      description: <>Executa a operação traceLaser usando os parâmetros informados (transform, ray).</>
+    },
+    {
+      signature: "traceLaser(Transform, Ray, RayMode)",
+      returns: "LaserHit",
+      description: <>Executa a operação traceLaser usando os parâmetros informados (transform, ray, rayMode).</>
+    },
+    {
+      signature: "traceLaser(Transform, Ray, RayMode, boolean)",
+      returns: "LaserHit",
+      description: <>Executa a operação traceLaser usando os parâmetros informados (transform, ray, rayMode, backfaceCulling).</>
+    },
+    {
+      signature: "traceLaserAsync(Transform, Ray, AsyncLaserListener)",
+      returns: "void",
+      description: <>Executa a operação traceLaserAsync usando os parâmetros informados (transform, ray, asyncLaserListener).</>
+    },
+    {
+      signature: "traceLaserAsync(Transform, Ray, AsyncLaserListener, RayMode)",
+      returns: "void",
+      description: <>Executa a operação traceLaserAsync usando os parâmetros informados (transform, ray, asyncLaserListener, rayMode).</>
+    },
+    {
+      signature: "traceLaserAsync(Transform, Ray, AsyncLaserListener, RayMode, boolean)",
+      returns: "void",
+      description: <>Executa a operação traceLaserAsync usando os parâmetros informados (transform, ray, asyncLaserListener, rayMode, backfaceCulling).</>
+    },
+    {
+      signature: "apply()",
+      returns: "void",
+      description: <>Executa a operação apply.</>
+    },
+    {
+      signature: "applyAsync()",
+      returns: "void",
+      description: <>Executa <code>applyAsync</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "getBoundingBox()",
+      returns: "AABB",
+      description: <>Retorna a propriedade <code>propriedade </code>bounding box atual``.</>
+    },
+    {
+      signature: "recalculateBoundingBox()",
+      returns: "AABB",
+      description: <>Executa a operação recalculateBoundingBox.</>
+    }
+  ]}
+  staticMethods={[
+    {
+      signature: "loadFile(VertexFile)",
+      returns: "Vertex",
+      description: <>Carrega file no objeto.</>
+    },
+    {
+      signature: "loadFile(File)",
+      returns: "Vertex",
+      description: <>Carrega file no objeto.</>
+    },
+    {
+      signature: "loadFile(InputStream)",
+      returns: "Vertex",
+      description: <>Carrega file no objeto.</>
+    },
+    {
+      signature: "loadPrimitive(int)",
+      returns: "Vertex",
+      description: <>Carrega primitive no objeto.</>
+    }
+  ]}
+/>

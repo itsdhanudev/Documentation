@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # AOnCreateContextMenuListener
 
 Complete API reference for `AOnCreateContextMenuListener`, including constructors, attributes, virtual attributes, and methods.
@@ -14,9 +16,17 @@ Complete API reference for `AOnCreateContextMenuListener`, including constructor
 public class AOnCreateContextMenuListener
 ```
 
-## Methods (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `onCreateContextMenu(ContextMenu, View, ContextMenu.ContextMenuInfo)` | `void` | Performs the onCreateContextMenu operation using the provided parameters (menu, v, menuInfo). |
-| `onCreateContextMenuEvent(ContextMenu, View, ContextMenu.ContextMenuInfo)` | `void` | Executes `onCreateContextMenuEvent` and returns after the underlying engine call finishes. |
+<ApiDoc
+  methods={[
+    {
+      signature: "onCreateContextMenu(ContextMenu, View, ContextMenu.ContextMenuInfo)",
+      returns: "void",
+      description: <>Performs the onCreateContextMenu operation using the provided parameters (menu, v, menuInfo).</>
+    },
+    {
+      signature: "onCreateContextMenuEvent(ContextMenu, View, ContextMenu.ContextMenuInfo)",
+      returns: "void",
+      description: <>Executes <code>onCreateContextMenuEvent</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

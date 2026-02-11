@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Math
 
 Complete API reference for `Math`, including constructors, attributes, virtual attributes, and methods.
@@ -14,86 +16,379 @@ Complete API reference for `Math`, including constructors, attributes, virtual a
 public class Math
 ```
 
-## Attributes (3)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `PI` | [float] | Represents the `PI` value stored on this instance. Read or assign to update the property. |
-| `PI2` | [float] | Represents the `PI2` value stored on this instance. Read or assign to update the property. |
-| `RADIANS` | [float] | Represents the `RADIANS` value stored on this instance. Read or assign to update the property. |
-
-## Static Methods (71)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| =([Float.SIZE /]) | [int] [BYTES_IN_FLOAT] | Performs the = operation. |
-| =([Integer.SIZE /]) | [int] [BYTES_IN_INT] | Performs the = operation. |
-| =([Short.SIZE /]) | [int] [BYTES_IN_SHORT] | Performs the = operation. |
-| `bySecond()` | `float` | Returns the value for this frame to reach 1 in one second (using deltaTime). |
-| `bySecond(float)` | `float` | Returns the value for this frame to reach the specified value in one second (using deltaTime). |
-| `sin(float)` | `float` | Returns the sine of the angle in degrees. |
-| `cos(float)` | `float` | Returns the cosine of the angle in degrees. |
-| `tan(float)` | `float` | Returns the tangent of the angle in degrees. |
-| `asin(float)` | `float` | Returns the arcsine of the angle in degrees. |
-| `acos(float)` | `float` | Returns the arccosine of the angle in degrees. |
-| `atan(float)` | `float` | Returns the arctangent of the angle in degrees. |
-| `atan2(float, float)` | `float` | Returns the arctangent of y/x in degrees. |
-| `sinRad(float)` | `float` | Returns the sine of the angle in radians. |
-| `cosRad(float)` | `float` | Returns the cosine of the angle in radians. |
-| `tanRad(float)` | `float` | Returns the tangent of the angle in radians. |
-| `atan2Rad(float, float)` | `float` | Returns the arctangent of y/x in radians. |
-| `asinRad(float)` | `float` | Returns the arcsine of the angle in radians. |
-| `acosRad(float)` | `float` | Returns the arccosine of the angle in radians. |
-| `atanRad(float)` | `float` | Returns the arctangent of the angle in radians. |
-| `sqrt(float)` | `float` | Returns the square root of the value. |
-| `cbrt(float)` | `float` | Returns the cubic root of the value. |
-| `pow(float, float)` | `float` | Returns the value raised to the power of b. |
-| `abs(float)` | `float` | Returns the absolute value. |
-| `abs(int)` | `int` | Returns the absolute value. |
-| `abs(double)` | `double` | Returns the absolute value. |
-| `ceil(float)` | `float` | Returns the smallest integer greater than or equal to the value. |
-| `floor(float)` | `float` | Returns the largest integer less than or equal to the value. |
-| `round(float)` | `float` | Rounds the value to the nearest integer. |
-| `exp(float)` | `float` | Returns Euler's number (e ≈ 2.718) raised to the given value. |
-| `log(float)` | `float` | Returns the natural logarithm (base e) of the value. |
-| `log10(float)` | `float` | Returns the base 10 logarithm of the value. |
-| `toRadians(float)` | `float` | Converts degrees to radians. |
-| `toDegrees(float)` | `float` | Converts radians to degrees. |
-| `dptopx(int)` | `int` | Converts the value from dp (density-independent pixels) to px (pixels) based on the device screen density. |
-| `deadzone(float, float)` | `float` | Returns 0 if the value is within the deadzone, otherwise returns the original value. |
-| `isOnDeadzone(float, float)` | `boolean` | Checks if the value is within the deadzone. Returns true if it is, false otherwise. |
-| `clamp(float, float, float)` | `float` | Clamps the value between min and max. |
-| `clamp(float, float)` | `float` | Clamps the value to be at least the specified minimum. |
-| `clampMin(float, float)` | `float` | Clamps the value to be at least the specified minimum. |
-| `clamp01(float)` | `float` | Clamps the value between 0 and 1. |
-| `max(float, float)` | `float` | Returns the largest value. |
-| `max(float...)` | `float` | Returns the largest value. |
-| `max(int, int)` | `int` | Returns the largest value. |
-| `max(int...)` | `int` | Returns the largest value. |
-| `max(double, double)` | `double` | Returns the largest value. |
-| `max(double...)` | `double` | Returns the largest value. |
-| `max(long, long)` | `long` | Returns the largest value. |
-| `max(long...)` | `long` | Returns the largest value. |
-| `min(float, float)` | `float` | Returns the smallest value. |
-| `min(float...)` | `float` | Returns the smallest value. |
-| `min(int, int)` | `int` | Returns the smallest value. |
-| `min(int...)` | `int` | Returns the smallest value. |
-| `min(double, double)` | `double` | Returns the smallest value. |
-| `min(double...)` | `double` | Returns the smallest value. |
-| `min(long, long)` | `long` | Returns the smallest value. |
-| `min(long...)` | `long` | Returns the smallest value. |
-| `blend(float, float, float)` | `float` | Blends a value towards the target using the specified blend factor (0..1). |
-| `lerp(float, float, float)` | `float` | Interpolates a value towards the target with the specified speed. |
-| `lerpInSeconds(float, float, float)` | `float` | Interpolates a value towards the target with the specified speed per second. |
-| `negative(boolean)` | `boolean` | Returns the inverse of the value. |
-| `negative(float)` | `float` | Returns the negative value. |
-| `negative(int)` | `int` | Returns the negative value. |
-| `inverseSQRT(float)` | `float` | Returns the inverse square root of the value. |
-| `lerpAngle(float, float, float)` | `float` | Interpolates between two angles (0-360) with the specified progress, keeping the result in this range. |
-| `lerpAngleInSeconds(float, float, float)` | `float` | Interpolates between two angles (0-360) with the specified progress per second, keeping the result in this range. |
-| `clampAngleTo360(float)` | `float` | Keeps the angle between 0 and 360, keeping values in this range. |
-| `rangeConverter(float, float, float, float, float)` | `float` | Converts a value from the range [oldMin, oldMax] to the range [newMin, newMax]. |
-| `fixNaN(float)` | `float` | Returns 0 if the value is NaN, otherwise returns the specified value. |
-| `pitchDegrees(Vector3, Vector3)` | `float` | Executes `pitchDegrees` and returns after the underlying engine call finishes. |
-| `normalizeDeg(float)` | `float` | Executes `normalizeDeg` and returns after the underlying engine call finishes. |
-| `deltaPitchDegrees(float, Vector3, Vector3)` | `float` | Executes `deltaPitchDegrees` and returns after the underlying engine call finishes. |
+<ApiDoc
+  attributes={[
+    {
+      name: "PI",
+      type: "float",
+      description: <>Represents the <code>PI</code> value stored on this instance. Read or assign to update the property.</>
+    },
+    {
+      name: "PI2",
+      type: "float",
+      description: <>Represents the <code>PI2</code> value stored on this instance. Read or assign to update the property.</>
+    },
+    {
+      name: "RADIANS",
+      type: "float",
+      description: <>Represents the <code>RADIANS</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  staticMethods={[
+    {
+      signature: "=(Float.SIZE /)",
+      returns: "int BYTES_IN_FLOAT",
+      description: <>Performs the = operation.</>
+    },
+    {
+      signature: "=(Integer.SIZE /)",
+      returns: "int BYTES_IN_INT",
+      description: <>Performs the = operation.</>
+    },
+    {
+      signature: "=(Short.SIZE /)",
+      returns: "int BYTES_IN_SHORT",
+      description: <>Performs the = operation.</>
+    },
+    {
+      signature: "bySecond()",
+      returns: "float",
+      description: <>Returns the value for this frame to reach 1 in one second (using deltaTime).</>
+    },
+    {
+      signature: "bySecond(float)",
+      returns: "float",
+      description: <>Returns the value for this frame to reach the specified value in one second (using deltaTime).</>
+    },
+    {
+      signature: "sin(float)",
+      returns: "float",
+      description: <>Returns the sine of the angle in degrees.</>
+    },
+    {
+      signature: "cos(float)",
+      returns: "float",
+      description: <>Returns the cosine of the angle in degrees.</>
+    },
+    {
+      signature: "tan(float)",
+      returns: "float",
+      description: <>Returns the tangent of the angle in degrees.</>
+    },
+    {
+      signature: "asin(float)",
+      returns: "float",
+      description: <>Returns the arcsine of the angle in degrees.</>
+    },
+    {
+      signature: "acos(float)",
+      returns: "float",
+      description: <>Returns the arccosine of the angle in degrees.</>
+    },
+    {
+      signature: "atan(float)",
+      returns: "float",
+      description: <>Returns the arctangent of the angle in degrees.</>
+    },
+    {
+      signature: "atan2(float, float)",
+      returns: "float",
+      description: <>Returns the arctangent of y/x in degrees.</>
+    },
+    {
+      signature: "sinRad(float)",
+      returns: "float",
+      description: <>Returns the sine of the angle in radians.</>
+    },
+    {
+      signature: "cosRad(float)",
+      returns: "float",
+      description: <>Returns the cosine of the angle in radians.</>
+    },
+    {
+      signature: "tanRad(float)",
+      returns: "float",
+      description: <>Returns the tangent of the angle in radians.</>
+    },
+    {
+      signature: "atan2Rad(float, float)",
+      returns: "float",
+      description: <>Returns the arctangent of y/x in radians.</>
+    },
+    {
+      signature: "asinRad(float)",
+      returns: "float",
+      description: <>Returns the arcsine of the angle in radians.</>
+    },
+    {
+      signature: "acosRad(float)",
+      returns: "float",
+      description: <>Returns the arccosine of the angle in radians.</>
+    },
+    {
+      signature: "atanRad(float)",
+      returns: "float",
+      description: <>Returns the arctangent of the angle in radians.</>
+    },
+    {
+      signature: "sqrt(float)",
+      returns: "float",
+      description: <>Returns the square root of the value.</>
+    },
+    {
+      signature: "cbrt(float)",
+      returns: "float",
+      description: <>Returns the cubic root of the value.</>
+    },
+    {
+      signature: "pow(float, float)",
+      returns: "float",
+      description: <>Returns the value raised to the power of b.</>
+    },
+    {
+      signature: "abs(float)",
+      returns: "float",
+      description: <>Returns the absolute value.</>
+    },
+    {
+      signature: "abs(int)",
+      returns: "int",
+      description: <>Returns the absolute value.</>
+    },
+    {
+      signature: "abs(double)",
+      returns: "double",
+      description: <>Returns the absolute value.</>
+    },
+    {
+      signature: "ceil(float)",
+      returns: "float",
+      description: <>Returns the smallest integer greater than or equal to the value.</>
+    },
+    {
+      signature: "floor(float)",
+      returns: "float",
+      description: <>Returns the largest integer less than or equal to the value.</>
+    },
+    {
+      signature: "round(float)",
+      returns: "float",
+      description: <>Rounds the value to the nearest integer.</>
+    },
+    {
+      signature: "exp(float)",
+      returns: "float",
+      description: <>Returns Euler's number (e ≈ 2.718) raised to the given value.</>
+    },
+    {
+      signature: "log(float)",
+      returns: "float",
+      description: <>Returns the natural logarithm (base e) of the value.</>
+    },
+    {
+      signature: "log10(float)",
+      returns: "float",
+      description: <>Returns the base 10 logarithm of the value.</>
+    },
+    {
+      signature: "toRadians(float)",
+      returns: "float",
+      description: <>Converts degrees to radians.</>
+    },
+    {
+      signature: "toDegrees(float)",
+      returns: "float",
+      description: <>Converts radians to degrees.</>
+    },
+    {
+      signature: "dptopx(int)",
+      returns: "int",
+      description: <>Converts the value from dp (density-independent pixels) to px (pixels) based on the device screen density.</>
+    },
+    {
+      signature: "deadzone(float, float)",
+      returns: "float",
+      description: <>Returns 0 if the value is within the deadzone, otherwise returns the original value.</>
+    },
+    {
+      signature: "isOnDeadzone(float, float)",
+      returns: "boolean",
+      description: <>Checks if the value is within the deadzone. Returns true if it is, false otherwise.</>
+    },
+    {
+      signature: "clamp(float, float, float)",
+      returns: "float",
+      description: <>Clamps the value between min and max.</>
+    },
+    {
+      signature: "clamp(float, float)",
+      returns: "float",
+      description: <>Clamps the value to be at least the specified minimum.</>
+    },
+    {
+      signature: "clampMin(float, float)",
+      returns: "float",
+      description: <>Clamps the value to be at least the specified minimum.</>
+    },
+    {
+      signature: "clamp01(float)",
+      returns: "float",
+      description: <>Clamps the value between 0 and 1.</>
+    },
+    {
+      signature: "max(float, float)",
+      returns: "float",
+      description: <>Returns the largest value.</>
+    },
+    {
+      signature: "max(float...)",
+      returns: "float",
+      description: <>Returns the largest value.</>
+    },
+    {
+      signature: "max(int, int)",
+      returns: "int",
+      description: <>Returns the largest value.</>
+    },
+    {
+      signature: "max(int...)",
+      returns: "int",
+      description: <>Returns the largest value.</>
+    },
+    {
+      signature: "max(double, double)",
+      returns: "double",
+      description: <>Returns the largest value.</>
+    },
+    {
+      signature: "max(double...)",
+      returns: "double",
+      description: <>Returns the largest value.</>
+    },
+    {
+      signature: "max(long, long)",
+      returns: "long",
+      description: <>Returns the largest value.</>
+    },
+    {
+      signature: "max(long...)",
+      returns: "long",
+      description: <>Returns the largest value.</>
+    },
+    {
+      signature: "min(float, float)",
+      returns: "float",
+      description: <>Returns the smallest value.</>
+    },
+    {
+      signature: "min(float...)",
+      returns: "float",
+      description: <>Returns the smallest value.</>
+    },
+    {
+      signature: "min(int, int)",
+      returns: "int",
+      description: <>Returns the smallest value.</>
+    },
+    {
+      signature: "min(int...)",
+      returns: "int",
+      description: <>Returns the smallest value.</>
+    },
+    {
+      signature: "min(double, double)",
+      returns: "double",
+      description: <>Returns the smallest value.</>
+    },
+    {
+      signature: "min(double...)",
+      returns: "double",
+      description: <>Returns the smallest value.</>
+    },
+    {
+      signature: "min(long, long)",
+      returns: "long",
+      description: <>Returns the smallest value.</>
+    },
+    {
+      signature: "min(long...)",
+      returns: "long",
+      description: <>Returns the smallest value.</>
+    },
+    {
+      signature: "blend(float, float, float)",
+      returns: "float",
+      description: <>Blends a value towards the target using the specified blend factor (0..1).</>
+    },
+    {
+      signature: "lerp(float, float, float)",
+      returns: "float",
+      description: <>Interpolates a value towards the target with the specified speed.</>
+    },
+    {
+      signature: "lerpInSeconds(float, float, float)",
+      returns: "float",
+      description: <>Interpolates a value towards the target with the specified speed per second.</>
+    },
+    {
+      signature: "negative(boolean)",
+      returns: "boolean",
+      description: <>Returns the inverse of the value.</>
+    },
+    {
+      signature: "negative(float)",
+      returns: "float",
+      description: <>Returns the negative value.</>
+    },
+    {
+      signature: "negative(int)",
+      returns: "int",
+      description: <>Returns the negative value.</>
+    },
+    {
+      signature: "inverseSQRT(float)",
+      returns: "float",
+      description: <>Returns the inverse square root of the value.</>
+    },
+    {
+      signature: "lerpAngle(float, float, float)",
+      returns: "float",
+      description: <>Interpolates between two angles (0-360) with the specified progress, keeping the result in this range.</>
+    },
+    {
+      signature: "lerpAngleInSeconds(float, float, float)",
+      returns: "float",
+      description: <>Interpolates between two angles (0-360) with the specified progress per second, keeping the result in this range.</>
+    },
+    {
+      signature: "clampAngleTo360(float)",
+      returns: "float",
+      description: <>Keeps the angle between 0 and 360, keeping values in this range.</>
+    },
+    {
+      signature: "rangeConverter(float, float, float, float, float)",
+      returns: "float",
+      description: <>Converts a value from the range [oldMin, oldMax] to the range [newMin, newMax].</>
+    },
+    {
+      signature: "fixNaN(float)",
+      returns: "float",
+      description: <>Returns 0 if the value is NaN, otherwise returns the specified value.</>
+    },
+    {
+      signature: "pitchDegrees(Vector3, Vector3)",
+      returns: "float",
+      description: <>Executes <code>pitchDegrees</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "normalizeDeg(float)",
+      returns: "float",
+      description: <>Executes <code>normalizeDeg</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "deltaPitchDegrees(float, Vector3, Vector3)",
+      returns: "float",
+      description: <>Executes <code>deltaPitchDegrees</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

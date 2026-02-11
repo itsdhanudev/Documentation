@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # AsyncRunnable
 
 Complete API reference for `AsyncRunnable`, including constructors, attributes, virtual attributes, and methods.
@@ -14,11 +16,17 @@ Complete API reference for `AsyncRunnable`, including constructors, attributes, 
 public interface AsyncRunnable
 ```
 
-## Methods (4)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `@MethodArgs([{"input"}])` | `void` | Performs the @MethodArgs operation. |
-| `onBackground(Object)` | `Object` | Executes `onBackground` and returns after the underlying engine call finishes. |
-| `@MethodArgs([{"result"}])` | `void` | Performs the @MethodArgs operation. |
-| `onEngine(Object)` | `void` | Executes `onEngine` and returns after the underlying engine call finishes. |
+<ApiDoc
+  methods={[
+    {
+      signature: "onBackground(Object)",
+      returns: "Object",
+      description: <>Executes <code>onBackground</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "onEngine(Object)",
+      returns: "void",
+      description: <>Executes <code>onEngine</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

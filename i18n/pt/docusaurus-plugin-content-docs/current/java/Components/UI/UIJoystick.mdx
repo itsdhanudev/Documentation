@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # UIJoystick
 
 Referência completa da API de `UIJoystick`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,32 +16,65 @@ Referência completa da API de `UIJoystick`, incluindo construtores, atributos, 
 public class UIJoystick extends Component
 ```
 
-## Construtores (3)
-
-| Signature | Description |
-| --- | --- |
-| UIJoystick([UIJoystick]) | Executa `UIJoystick` e retorna quando a chamada do motor termina. |
-| UIJoystick([Engine]) | Executa `UIJoystick` e retorna quando a chamada do motor termina. |
-| UIJoystick() | Cria uma nova instância de UIJoystick. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [UIJoystick] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (5)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `backgroundColor` | [Color] | `get/set` | Atributo virtual exposto por `getBackgroundColor`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `backgroundTexture` | [Texture] | `get/set` | Atributo virtual exposto por `getBackgroundTexture`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `handleSizePercentage` | [float] | `get/set` | Atributo virtual exposto por `getHandleSizePercentage`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `handlerColor` | [Color] | `get/set` | Atributo virtual exposto por `getHandlerColor`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `handlerTexture` | [Texture] | `get/set` | Atributo virtual exposto por `getHandlerTexture`. Acesse como um campo para ler ou escrever o valor subjacente. |
-
-## Métodos (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getValue()` | `Vector2` | Executa `getValue` e retorna quando a chamada do motor termina. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "UIJoystick(UIJoystick)",
+      description: <>Executa <code>UIJoystick</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "UIJoystick(Engine)",
+      description: <>Executa <code>UIJoystick</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "UIJoystick()",
+      description: <>Cria uma nova instância de UIJoystick.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "UIJoystick",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "backgroundColor",
+      type: "Color",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getBackgroundColor</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "backgroundTexture",
+      type: "Texture",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getBackgroundTexture</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "handleSizePercentage",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getHandleSizePercentage</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "handlerColor",
+      type: "Color",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getHandlerColor</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "handlerTexture",
+      type: "Texture",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getHandlerTexture</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "getValue()",
+      returns: "Vector2",
+      description: <>Executa <code>getValue</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+/>

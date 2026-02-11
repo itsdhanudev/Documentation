@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # OHDataBase
 
 Complete API reference for `OHDataBase`, including constructors, attributes, virtual attributes, and methods.
@@ -14,26 +16,76 @@ Complete API reference for `OHDataBase`, including constructors, attributes, vir
 public class OHDataBase
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| OHDataBase() | Creates a new instance of OHDataBase. |
-| OHDataBase([Engine]) | Creates a new instance of OHDataBase. |
-| OHDataBase([int]) | Creates a new instance of OHDataBase. |
-
-## Methods (11)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `incrementSize(int)` | `void` | Performs the incrementSize operation using the provided parameters (size). |
-| `decrementSize(int)` | `void` | Performs the decrementSize operation using the provided parameters (size). |
-| `resize(int)` | `void` | Performs the resize operation using the provided parameters (newCapacity). |
-| `resize(int, boolean)` | `void` | Performs the resize operation using the provided parameters (newCapacity, copyData). |
-| `position(int)` | `void` | Performs the position operation using the provided parameters (position). |
-| `put(byte[])` | `void` | Sets or updates the the value. |
-| `set(int, byte)` | `void` | Sets or updates the the value. |
-| `get(int)` | `byte` | Returns the current value. |
-| `getBytes()` | [byte][] | Returns the current bytes. |
-| `size()` | `int` | Executes `size` and returns after the underlying engine call finishes. |
-| `capacity()` | `int` | Executes `capacity` and returns after the underlying engine call finishes. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "OHDataBase()",
+      description: <>Creates a new instance of OHDataBase.</>
+    },
+    {
+      signature: "OHDataBase(Engine)",
+      description: <>Creates a new instance of OHDataBase.</>
+    },
+    {
+      signature: "OHDataBase(int)",
+      description: <>Creates a new instance of OHDataBase.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "incrementSize(int)",
+      returns: "void",
+      description: <>Performs the incrementSize operation using the provided parameters (size).</>
+    },
+    {
+      signature: "decrementSize(int)",
+      returns: "void",
+      description: <>Performs the decrementSize operation using the provided parameters (size).</>
+    },
+    {
+      signature: "resize(int)",
+      returns: "void",
+      description: <>Performs the resize operation using the provided parameters (newCapacity).</>
+    },
+    {
+      signature: "resize(int, boolean)",
+      returns: "void",
+      description: <>Performs the resize operation using the provided parameters (newCapacity, copyData).</>
+    },
+    {
+      signature: "position(int)",
+      returns: "void",
+      description: <>Performs the position operation using the provided parameters (position).</>
+    },
+    {
+      signature: "put(byte[])",
+      returns: "void",
+      description: <>Sets or updates the the value.</>
+    },
+    {
+      signature: "set(int, byte)",
+      returns: "void",
+      description: <>Sets or updates the the value.</>
+    },
+    {
+      signature: "get(int)",
+      returns: "byte",
+      description: <>Returns the current value.</>
+    },
+    {
+      signature: "getBytes()",
+      returns: "byte[]",
+      description: <>Returns the current bytes.</>
+    },
+    {
+      signature: "size()",
+      returns: "int",
+      description: <>Executes <code>size</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "capacity()",
+      returns: "int",
+      description: <>Executes <code>capacity</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

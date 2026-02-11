@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # MicrophoneReader
 
 Complete API reference for `MicrophoneReader`, including constructors, attributes, virtual attributes, and methods.
@@ -14,25 +16,52 @@ Complete API reference for `MicrophoneReader`, including constructors, attribute
 public class MicrophoneReader extends Component
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| MicrophoneReader([MicrophoneReader]) | Executes `MicrophoneReader` and returns after the underlying engine call finishes. |
-| MicrophoneReader([Engine]) | Executes `MicrophoneReader` and returns after the underlying engine call finishes. |
-| MicrophoneReader() | Creates a new instance of MicrophoneReader. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [MicrophoneReader] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (4)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `enableRecord` | [boolean] | `get/set` | Virtual attribute exposed by `isEnableRecord`. Access it like a field to read or write the underlying value. |
-| `frameLength` | [int] | `get` | Virtual attribute exposed by `getFrameLength`. Access it like a field to read or write the underlying value. |
-| `framePCM` | [float][] | `get` | Virtual attribute exposed by `getFramePCM`. Access it like a field to read or write the underlying value. |
-| `sampleRate` | [int] | `get` | Virtual attribute exposed by `getSampleRate`. Access it like a field to read or write the underlying value. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "MicrophoneReader(MicrophoneReader)",
+      description: <>Executes <code>MicrophoneReader</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "MicrophoneReader(Engine)",
+      description: <>Executes <code>MicrophoneReader</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "MicrophoneReader()",
+      description: <>Creates a new instance of MicrophoneReader.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "MicrophoneReader",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "enableRecord",
+      type: "boolean",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>isEnableRecord</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "frameLength",
+      type: "int",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>getFrameLength</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "framePCM",
+      type: "float[]",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>getFramePCM</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "sampleRate",
+      type: "int",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>getSampleRate</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+/>

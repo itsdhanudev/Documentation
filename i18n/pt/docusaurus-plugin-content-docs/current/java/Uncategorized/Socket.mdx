@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Socket
 
 Referência completa da API de `Socket`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,65 +16,264 @@ Referência completa da API de `Socket`, incluindo construtores, atributos, atri
 public class Socket extends Socket
 ```
 
-## Construtores (10)
-
-| Signature | Description |
-| --- | --- |
-| Socket() | Cria uma nova instância de Socket. |
-| Socket([Socket]) | Executa `Socket` e retorna quando a chamada do motor termina. |
-| Socket([Proxy]) | Cria uma nova instância de Socket. |
-| Socket([SocketImpl]) | Executa `Socket` e retorna quando a chamada do motor termina. |
-| Socket([String], [int]) | Executa `Socket` e retorna quando a chamada do motor termina. |
-| Socket([InetAddress], [int]) | Executa `Socket` e retorna quando a chamada do motor termina. |
-| Socket([String], [int], [InetAddress], [int]) | Executa `Socket` e retorna quando a chamada do motor termina. |
-| Socket([InetAddress], [int], [InetAddress], [int]) | Executa `Socket` e retorna quando a chamada do motor termina. |
-| Socket([String], [int], [boolean]) | Executa `Socket` e retorna quando a chamada do motor termina. |
-| Socket([InetAddress], [int], [boolean]) | Executa `Socket` e retorna quando a chamada do motor termina. |
-
-## Métodos (43)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `connect(SocketAddress)` | `void` | Executa `connect` e retorna quando a chamada do motor termina. |
-| `connect(SocketAddress, int)` | `void` | Executa `connect` e retorna quando a chamada do motor termina. |
-| `bind(SocketAddress)` | `void` | Executa `bind` e retorna quando a chamada do motor termina. |
-| `getInetAddress()` | `InetAddress` | Retorna a propriedade `propriedade `inet address atual``. |
-| `getLocalAddress()` | `InetAddress` | Retorna a propriedade `propriedade `local address atual``. |
-| `getPort()` | `int` | Retorna a propriedade `propriedade `port atual``. |
-| `getLocalPort()` | `int` | Retorna a propriedade `propriedade `local port atual``. |
-| `getRemoteSocketAddress()` | `SocketAddress` | Retorna a propriedade `propriedade `remote socket address atual``. |
-| `getLocalSocketAddress()` | `SocketAddress` | Retorna a propriedade `propriedade `local socket address atual``. |
-| `getChannel()` | `SocketChannel` | Retorna a propriedade `propriedade `channel atual``. |
-| `getInputStream()` | `InputStream` | Executa `getInputStream` e retorna quando a chamada do motor termina. |
-| `getOutputStream()` | `OutputStream` | Executa `getOutputStream` e retorna quando a chamada do motor termina. |
-| `setTcpNoDelay(boolean)` | `void` | Executa `setTcpNoDelay` e retorna quando a chamada do motor termina. |
-| `getTcpNoDelay()` | `boolean` | Executa `getTcpNoDelay` e retorna quando a chamada do motor termina. |
-| `setSoLinger(boolean, int)` | `void` | Executa `setSoLinger` e retorna quando a chamada do motor termina. |
-| `getSoLinger()` | `int` | Executa `getSoLinger` e retorna quando a chamada do motor termina. |
-| `sendUrgentData(int)` | `void` | Executa `sendUrgentData` e retorna quando a chamada do motor termina. |
-| `setOOBInline(boolean)` | `void` | Executa `setOOBInline` e retorna quando a chamada do motor termina. |
-| `getOOBInline()` | `boolean` | Executa `getOOBInline` e retorna quando a chamada do motor termina. |
-| `setSoTimeout(int)` | `void` | Executa `setSoTimeout` e retorna quando a chamada do motor termina. |
-| `getSoTimeout()` | `int` | Executa `getSoTimeout` e retorna quando a chamada do motor termina. |
-| `setSendBufferSize(int)` | `void` | Executa `setSendBufferSize` e retorna quando a chamada do motor termina. |
-| `getSendBufferSize()` | `int` | Executa `getSendBufferSize` e retorna quando a chamada do motor termina. |
-| `setReceiveBufferSize(int)` | `void` | Executa `setReceiveBufferSize` e retorna quando a chamada do motor termina. |
-| `getReceiveBufferSize()` | `int` | Executa `getReceiveBufferSize` e retorna quando a chamada do motor termina. |
-| `setKeepAlive(boolean)` | `void` | Executa `setKeepAlive` e retorna quando a chamada do motor termina. |
-| `getKeepAlive()` | `boolean` | Executa `getKeepAlive` e retorna quando a chamada do motor termina. |
-| `setTrafficClass(int)` | `void` | Executa `setTrafficClass` e retorna quando a chamada do motor termina. |
-| `getTrafficClass()` | `int` | Executa `getTrafficClass` e retorna quando a chamada do motor termina. |
-| `setReuseAddress(boolean)` | `void` | Executa `setReuseAddress` e retorna quando a chamada do motor termina. |
-| `getReuseAddress()` | `boolean` | Executa `getReuseAddress` e retorna quando a chamada do motor termina. |
-| `close()` | `void` | Executa `close` e retorna quando a chamada do motor termina. |
-| `shutdownInput()` | `void` | Executa `shutdownInput` e retorna quando a chamada do motor termina. |
-| `shutdownOutput()` | `void` | Executa `shutdownOutput` e retorna quando a chamada do motor termina. |
-| `toString()` | `String` | Retorna a propriedade `representação em string`. |
-| `isConnected()` | `boolean` | Retorna se connected é verdadeiro. |
-| `isBound()` | `boolean` | Retorna se bound é verdadeiro. |
-| `isClosed()` | `boolean` | Retorna se closed é verdadeiro. |
-| `isInputShutdown()` | `boolean` | Retorna se input shutdown é verdadeiro. |
-| `isOutputShutdown()` | `boolean` | Retorna se output shutdown é verdadeiro. |
-| `setPerformancePreferences(int, int, int)` | `void` | Define ou atualiza a propriedade `propriedade `performance preferences``. |
-| `hashCode()` | `int` | Retorna se code é verdadeiro. |
-| `equals(Object)` | `boolean` | Compara esta instância com outra para igualdade/ordem. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "Socket()",
+      description: <>Cria uma nova instância de Socket.</>
+    },
+    {
+      signature: "Socket(Socket)",
+      description: <>Executa <code>Socket</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "Socket(Proxy)",
+      description: <>Cria uma nova instância de Socket.</>
+    },
+    {
+      signature: "Socket(SocketImpl)",
+      description: <>Executa <code>Socket</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "Socket(String, int)",
+      description: <>Executa <code>Socket</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "Socket(InetAddress, int)",
+      description: <>Executa <code>Socket</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "Socket(String, int, InetAddress, int)",
+      description: <>Executa <code>Socket</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "Socket(InetAddress, int, InetAddress, int)",
+      description: <>Executa <code>Socket</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "Socket(String, int, boolean)",
+      description: <>Executa <code>Socket</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "Socket(InetAddress, int, boolean)",
+      description: <>Executa <code>Socket</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "connect(SocketAddress)",
+      returns: "void",
+      description: <>Executa <code>connect</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "connect(SocketAddress, int)",
+      returns: "void",
+      description: <>Executa <code>connect</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "bind(SocketAddress)",
+      returns: "void",
+      description: <>Executa <code>bind</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "getInetAddress()",
+      returns: "InetAddress",
+      description: <>Retorna a propriedade <code>propriedade </code>inet address atual``.</>
+    },
+    {
+      signature: "getLocalAddress()",
+      returns: "InetAddress",
+      description: <>Retorna a propriedade <code>propriedade </code>local address atual``.</>
+    },
+    {
+      signature: "getPort()",
+      returns: "int",
+      description: <>Retorna a propriedade <code>propriedade </code>port atual``.</>
+    },
+    {
+      signature: "getLocalPort()",
+      returns: "int",
+      description: <>Retorna a propriedade <code>propriedade </code>local port atual``.</>
+    },
+    {
+      signature: "getRemoteSocketAddress()",
+      returns: "SocketAddress",
+      description: <>Retorna a propriedade <code>propriedade </code>remote socket address atual``.</>
+    },
+    {
+      signature: "getLocalSocketAddress()",
+      returns: "SocketAddress",
+      description: <>Retorna a propriedade <code>propriedade </code>local socket address atual``.</>
+    },
+    {
+      signature: "getChannel()",
+      returns: "SocketChannel",
+      description: <>Retorna a propriedade <code>propriedade </code>channel atual``.</>
+    },
+    {
+      signature: "getInputStream()",
+      returns: "InputStream",
+      description: <>Executa <code>getInputStream</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "getOutputStream()",
+      returns: "OutputStream",
+      description: <>Executa <code>getOutputStream</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "setTcpNoDelay(boolean)",
+      returns: "void",
+      description: <>Executa <code>setTcpNoDelay</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "getTcpNoDelay()",
+      returns: "boolean",
+      description: <>Executa <code>getTcpNoDelay</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "setSoLinger(boolean, int)",
+      returns: "void",
+      description: <>Executa <code>setSoLinger</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "getSoLinger()",
+      returns: "int",
+      description: <>Executa <code>getSoLinger</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "sendUrgentData(int)",
+      returns: "void",
+      description: <>Executa <code>sendUrgentData</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "setOOBInline(boolean)",
+      returns: "void",
+      description: <>Executa <code>setOOBInline</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "getOOBInline()",
+      returns: "boolean",
+      description: <>Executa <code>getOOBInline</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "setSoTimeout(int)",
+      returns: "void",
+      description: <>Executa <code>setSoTimeout</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "getSoTimeout()",
+      returns: "int",
+      description: <>Executa <code>getSoTimeout</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "setSendBufferSize(int)",
+      returns: "void",
+      description: <>Executa <code>setSendBufferSize</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "getSendBufferSize()",
+      returns: "int",
+      description: <>Executa <code>getSendBufferSize</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "setReceiveBufferSize(int)",
+      returns: "void",
+      description: <>Executa <code>setReceiveBufferSize</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "getReceiveBufferSize()",
+      returns: "int",
+      description: <>Executa <code>getReceiveBufferSize</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "setKeepAlive(boolean)",
+      returns: "void",
+      description: <>Executa <code>setKeepAlive</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "getKeepAlive()",
+      returns: "boolean",
+      description: <>Executa <code>getKeepAlive</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "setTrafficClass(int)",
+      returns: "void",
+      description: <>Executa <code>setTrafficClass</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "getTrafficClass()",
+      returns: "int",
+      description: <>Executa <code>getTrafficClass</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "setReuseAddress(boolean)",
+      returns: "void",
+      description: <>Executa <code>setReuseAddress</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "getReuseAddress()",
+      returns: "boolean",
+      description: <>Executa <code>getReuseAddress</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "close()",
+      returns: "void",
+      description: <>Executa <code>close</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "shutdownInput()",
+      returns: "void",
+      description: <>Executa <code>shutdownInput</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "shutdownOutput()",
+      returns: "void",
+      description: <>Executa <code>shutdownOutput</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "toString()",
+      returns: "String",
+      description: <>Retorna a propriedade <code>representação em string</code>.</>
+    },
+    {
+      signature: "isConnected()",
+      returns: "boolean",
+      description: <>Retorna se connected é verdadeiro.</>
+    },
+    {
+      signature: "isBound()",
+      returns: "boolean",
+      description: <>Retorna se bound é verdadeiro.</>
+    },
+    {
+      signature: "isClosed()",
+      returns: "boolean",
+      description: <>Retorna se closed é verdadeiro.</>
+    },
+    {
+      signature: "isInputShutdown()",
+      returns: "boolean",
+      description: <>Retorna se input shutdown é verdadeiro.</>
+    },
+    {
+      signature: "isOutputShutdown()",
+      returns: "boolean",
+      description: <>Retorna se output shutdown é verdadeiro.</>
+    },
+    {
+      signature: "setPerformancePreferences(int, int, int)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>performance preferences``.</>
+    },
+    {
+      signature: "hashCode()",
+      returns: "int",
+      description: <>Retorna se code é verdadeiro.</>
+    },
+    {
+      signature: "equals(Object)",
+      returns: "boolean",
+      description: <>Compara esta instância com outra para igualdade/ordem.</>
+    }
+  ]}
+/>

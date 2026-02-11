@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # FontLoader
 
 Complete API reference for `FontLoader`, including constructors, attributes, virtual attributes, and methods.
@@ -14,23 +16,39 @@ Complete API reference for `FontLoader`, including constructors, attributes, vir
 public class FontLoader
 ```
 
-## Constructors (2)
-
-| Signature | Description |
-| --- | --- |
-| FontLoader([Font]) | Executes `FontLoader` and returns after the underlying engine call finishes. |
-| FontLoader([Engine]) | Executes `FontLoader` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `font` | [Font] | Represents the `font` value stored on this instance. Read or assign to update the property. |
-
-## Static Methods (3)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `load(int)` | `Font` | Loads data into the object. |
-| `load(FontFile, int)` | `Font` | Loads data into the object. |
-| `load(File, int)` | `Font` | Loads data into the object. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "FontLoader(Font)",
+      description: <>Executes <code>FontLoader</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "FontLoader(Engine)",
+      description: <>Executes <code>FontLoader</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "font",
+      type: "Font",
+      description: <>Represents the <code>font</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  staticMethods={[
+    {
+      signature: "load(int)",
+      returns: "Font",
+      description: <>Loads data into the object.</>
+    },
+    {
+      signature: "load(FontFile, int)",
+      returns: "Font",
+      description: <>Loads data into the object.</>
+    },
+    {
+      signature: "load(File, int)",
+      returns: "Font",
+      description: <>Loads data into the object.</>
+    }
+  ]}
+/>

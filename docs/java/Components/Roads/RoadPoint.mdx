@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # RoadPoint
 
 Complete API reference for `RoadPoint`, including constructors, attributes, virtual attributes, and methods.
@@ -14,16 +16,26 @@ Complete API reference for `RoadPoint`, including constructors, attributes, virt
 public class RoadPoint extends Component
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| RoadPoint([RoadPoint]) | Executes `RoadPoint` and returns after the underlying engine call finishes. |
-| RoadPoint([Engine]) | Executes `RoadPoint` and returns after the underlying engine call finishes. |
-| RoadPoint() | Creates a new instance of RoadPoint. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [RoadPoint] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "RoadPoint(RoadPoint)",
+      description: <>Executes <code>RoadPoint</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "RoadPoint(Engine)",
+      description: <>Executes <code>RoadPoint</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "RoadPoint()",
+      description: <>Creates a new instance of RoadPoint.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "RoadPoint",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+/>

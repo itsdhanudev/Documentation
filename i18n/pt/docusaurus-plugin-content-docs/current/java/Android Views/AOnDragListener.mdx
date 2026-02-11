@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # AOnDragListener
 
 Referência completa da API de `AOnDragListener`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,9 +16,17 @@ Referência completa da API de `AOnDragListener`, incluindo construtores, atribu
 public class AOnDragListener
 ```
 
-## Métodos (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `onDrag(View, DragEvent)` | `boolean` | Executa a operação onDrag usando os parâmetros informados (v, event). |
-| `onDragEvent(View, DragEvent)` | `boolean` | Executa `onDragEvent` e retorna quando a chamada do motor termina. |
+<ApiDoc
+  methods={[
+    {
+      signature: "onDrag(View, DragEvent)",
+      returns: "boolean",
+      description: <>Executa a operação onDrag usando os parâmetros informados (v, event).</>
+    },
+    {
+      signature: "onDragEvent(View, DragEvent)",
+      returns: "boolean",
+      description: <>Executa <code>onDragEvent</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+/>

@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # HingeConstraint
 
 Complete API reference for `HingeConstraint`, including constructors, attributes, virtual attributes, and methods.
@@ -14,29 +16,48 @@ Complete API reference for `HingeConstraint`, including constructors, attributes
 public class HingeConstraint extends Component
 ```
 
-## Constructors (2)
-
-| Signature | Description |
-| --- | --- |
-| HingeConstraint([HingeConstraint]) | Executes `HingeConstraint` and returns after the underlying engine call finishes. |
-| HingeConstraint() | Executes `HingeConstraint` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `component` | [HingeConstraint] | Represents the `component` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (2)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `pivot` | [SpatialObject] | `get` | Virtual attribute exposed by `getPivot`. Access it like a field to read or write the underlying value. |
-| `target` | [SpatialObject] | `get/set` | Virtual attribute exposed by `getTarget`. Access it like a field to read or write the underlying value. |
-
-## Methods (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `componentClassMatch(Component, Component)` | `boolean` | Executes `componentClassMatch` and returns after the underlying engine call finishes. |
-| `getEngineComponent()` | `Component` | Executes `getEngineComponent` and returns after the underlying engine call finishes. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "HingeConstraint(HingeConstraint)",
+      description: <>Executes <code>HingeConstraint</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "HingeConstraint()",
+      description: <>Executes <code>HingeConstraint</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "component",
+      type: "HingeConstraint",
+      description: <>Represents the <code>component</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "pivot",
+      type: "SpatialObject",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>getPivot</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "target",
+      type: "SpatialObject",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getTarget</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "componentClassMatch(Component, Component)",
+      returns: "boolean",
+      description: <>Executes <code>componentClassMatch</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "getEngineComponent()",
+      returns: "Component",
+      description: <>Executes <code>getEngineComponent</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

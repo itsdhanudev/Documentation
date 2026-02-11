@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # GizmoElement
 
 Complete API reference for `GizmoElement`, including constructors, attributes, virtual attributes, and methods.
@@ -14,38 +16,162 @@ Complete API reference for `GizmoElement`, including constructors, attributes, v
 public class GizmoElement
 ```
 
-## Methods (31)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getUserPointer()` | `Object` | Returns the current user pointer. |
-| `setUserPointer(Object)` | `void` | Sets or updates the user pointer. |
-| `getVertex()` | `Vertex` | Returns the current vertex. |
-| `getColor()` | `Color` | Returns the current color. |
-| `getTexture()` | `Texture` | Returns the current texture. |
-| `getRenderMode()` | `RenderMode` | Returns the current render mode. |
-| `getMatrix()` | [float][] | Returns the current matrix. |
-| `getWireFrameWidth()` | `int` | Returns the current wire frame width. |
-| `getOutlineScale()` | `float` | Returns the current outline scale. |
-| `isDualFaceRender()` | `boolean` | Executes `isDualFaceRender` and returns after the underlying engine call finishes. |
-| `isEnableTransparency()` | `boolean` | Returns whether enable transparency is true. |
-| `setEnableTransparency(boolean)` | `void` | Sets or updates the enable transparency. |
-| `isBillboard()` | `boolean` | Executes `isBillboard` and returns after the underlying engine call finishes. |
-| `setBillboard(boolean)` | `void` | Executes `setBillboard` and returns after the underlying engine call finishes. |
-| `isDrawInFront()` | `boolean` | Returns whether draw in front is true. |
-| `setDrawInFront(boolean)` | `void` | Sets or updates the draw in front. |
-| `isAdditiveMode()` | `boolean` | Returns whether additive mode is true. |
-| `setAdditiveMode(boolean)` | `void` | Sets or updates the additive mode. |
-| `isEnableLight()` | `boolean` | Returns whether enable light is true. |
-| `setEnableLight(boolean)` | `void` | Sets or updates the enable light. |
-| `getMaxScaleBasedCameraSize()` | `float` | Returns the current max scale based camera size. |
-| `setMaxScaleBasedCameraSize(float)` | `void` | Sets or updates the max scale based camera size. |
-| `getLightIntensity()` | `float` | Returns the current light intensity. |
-| `setLightIntensity(float)` | `void` | Sets or updates the light intensity. |
-| `getVisibleDistance()` | `float` | Executes `getVisibleDistance` and returns after the underlying engine call finishes. |
-| `setVisibleDistance(float)` | `void` | Executes `setVisibleDistance` and returns after the underlying engine call finishes. |
-| `getFadeOutRange()` | `float` | Executes `getFadeOutRange` and returns after the underlying engine call finishes. |
-| `setFadeOutRange(float)` | `void` | Executes `setFadeOutRange` and returns after the underlying engine call finishes. |
-| `isPooling()` | `boolean` | Executes `isPooling` and returns after the underlying engine call finishes. |
-| `setPooling(boolean)` | `void` | Executes `setPooling` and returns after the underlying engine call finishes. |
-| `isScaleBasedCamera()` | `boolean` | Returns whether scale based camera is true. |
+<ApiDoc
+  methods={[
+    {
+      signature: "getUserPointer()",
+      returns: "Object",
+      description: <>Returns the current user pointer.</>
+    },
+    {
+      signature: "setUserPointer(Object)",
+      returns: "void",
+      description: <>Sets or updates the user pointer.</>
+    },
+    {
+      signature: "getVertex()",
+      returns: "Vertex",
+      description: <>Returns the current vertex.</>
+    },
+    {
+      signature: "getColor()",
+      returns: "Color",
+      description: <>Returns the current color.</>
+    },
+    {
+      signature: "getTexture()",
+      returns: "Texture",
+      description: <>Returns the current texture.</>
+    },
+    {
+      signature: "getRenderMode()",
+      returns: "RenderMode",
+      description: <>Returns the current render mode.</>
+    },
+    {
+      signature: "getMatrix()",
+      returns: "float[]",
+      description: <>Returns the current matrix.</>
+    },
+    {
+      signature: "getWireFrameWidth()",
+      returns: "int",
+      description: <>Returns the current wire frame width.</>
+    },
+    {
+      signature: "getOutlineScale()",
+      returns: "float",
+      description: <>Returns the current outline scale.</>
+    },
+    {
+      signature: "isDualFaceRender()",
+      returns: "boolean",
+      description: <>Executes <code>isDualFaceRender</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "isEnableTransparency()",
+      returns: "boolean",
+      description: <>Returns whether enable transparency is true.</>
+    },
+    {
+      signature: "setEnableTransparency(boolean)",
+      returns: "void",
+      description: <>Sets or updates the enable transparency.</>
+    },
+    {
+      signature: "isBillboard()",
+      returns: "boolean",
+      description: <>Executes <code>isBillboard</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "setBillboard(boolean)",
+      returns: "void",
+      description: <>Executes <code>setBillboard</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "isDrawInFront()",
+      returns: "boolean",
+      description: <>Returns whether draw in front is true.</>
+    },
+    {
+      signature: "setDrawInFront(boolean)",
+      returns: "void",
+      description: <>Sets or updates the draw in front.</>
+    },
+    {
+      signature: "isAdditiveMode()",
+      returns: "boolean",
+      description: <>Returns whether additive mode is true.</>
+    },
+    {
+      signature: "setAdditiveMode(boolean)",
+      returns: "void",
+      description: <>Sets or updates the additive mode.</>
+    },
+    {
+      signature: "isEnableLight()",
+      returns: "boolean",
+      description: <>Returns whether enable light is true.</>
+    },
+    {
+      signature: "setEnableLight(boolean)",
+      returns: "void",
+      description: <>Sets or updates the enable light.</>
+    },
+    {
+      signature: "getMaxScaleBasedCameraSize()",
+      returns: "float",
+      description: <>Returns the current max scale based camera size.</>
+    },
+    {
+      signature: "setMaxScaleBasedCameraSize(float)",
+      returns: "void",
+      description: <>Sets or updates the max scale based camera size.</>
+    },
+    {
+      signature: "getLightIntensity()",
+      returns: "float",
+      description: <>Returns the current light intensity.</>
+    },
+    {
+      signature: "setLightIntensity(float)",
+      returns: "void",
+      description: <>Sets or updates the light intensity.</>
+    },
+    {
+      signature: "getVisibleDistance()",
+      returns: "float",
+      description: <>Executes <code>getVisibleDistance</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "setVisibleDistance(float)",
+      returns: "void",
+      description: <>Executes <code>setVisibleDistance</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "getFadeOutRange()",
+      returns: "float",
+      description: <>Executes <code>getFadeOutRange</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "setFadeOutRange(float)",
+      returns: "void",
+      description: <>Executes <code>setFadeOutRange</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "isPooling()",
+      returns: "boolean",
+      description: <>Executes <code>isPooling</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "setPooling(boolean)",
+      returns: "void",
+      description: <>Executes <code>setPooling</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "isScaleBasedCamera()",
+      returns: "boolean",
+      description: <>Returns whether scale based camera is true.</>
+    }
+  ]}
+/>

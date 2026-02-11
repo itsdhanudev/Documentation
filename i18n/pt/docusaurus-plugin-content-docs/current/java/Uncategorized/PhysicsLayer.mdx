@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # PhysicsLayer
 
 Referência completa da API de `PhysicsLayer`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,24 +16,44 @@ Referência completa da API de `PhysicsLayer`, incluindo construtores, atributos
 public class PhysicsLayer
 ```
 
-## Construtores (2)
-
-| Signature | Description |
-| --- | --- |
-| PhysicsLayer([Layer]) | Executa `PhysicsLayer` e retorna quando a chamada do motor termina. |
-| PhysicsLayer([String]) | Executa `PhysicsLayer` e retorna quando a chamada do motor termina. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `layer` | [Layer] | Representa o valor de `layer` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Métodos (4)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `addIgnoreLayer(PhysicsLayer)` | `void` | Adiciona a PhysicsLayer especificada à lista de ignorados desta layer. |
-| `removeIgnoreLayer(PhysicsLayer)` | `void` | Remove a PhysicsLayer especificada da lista de ignorados desta layer. |
-| `getIgnoreAt(int)` | `PhysicsLayer` | Retorna a propriedade `PhysicsLayer no índice especificado da lista de ignorados`. |
-| `ignoreCount()` | `int` | Retorna a propriedade `propriedade `número de PhysicsLayers na lista de ignorados``. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "PhysicsLayer(Layer)",
+      description: <>Executa <code>PhysicsLayer</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "PhysicsLayer(String)",
+      description: <>Executa <code>PhysicsLayer</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "layer",
+      type: "Layer",
+      description: <>Representa o valor de <code>layer</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "addIgnoreLayer(PhysicsLayer)",
+      returns: "void",
+      description: <>Adiciona a PhysicsLayer especificada à lista de ignorados desta layer.</>
+    },
+    {
+      signature: "removeIgnoreLayer(PhysicsLayer)",
+      returns: "void",
+      description: <>Remove a PhysicsLayer especificada da lista de ignorados desta layer.</>
+    },
+    {
+      signature: "getIgnoreAt(int)",
+      returns: "PhysicsLayer",
+      description: <>Retorna a propriedade <code>PhysicsLayer no índice especificado da lista de ignorados</code>.</>
+    },
+    {
+      signature: "ignoreCount()",
+      returns: "int",
+      description: <>Retorna a propriedade <code>propriedade </code>número de PhysicsLayers na lista de ignorados``.</>
+    }
+  ]}
+/>

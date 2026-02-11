@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # ProjectFile
 
 Complete API reference for `ProjectFile`, including constructors, attributes, virtual attributes, and methods.
@@ -14,26 +16,54 @@ Complete API reference for `ProjectFile`, including constructors, attributes, vi
 public class ProjectFile
 ```
 
-## Constructors (2)
-
-| Signature | Description |
-| --- | --- |
-| ProjectFile([String], [String]) | Executes `ProjectFile` and returns after the underlying engine call finishes. |
-| ProjectFile([String]) | Creates a new instance of ProjectFile. |
-
-## Methods (5)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getFormat()` | `String` | Returns the current format. |
-| `getInputStream()` | `InputStream` | Returns the current input stream. |
-| `loadText()` | `String` | Loads text into the object. |
-| `toString()` | `String` | Returns the string representation. |
-| `copyTo(File)` | `boolean` | Returns a copy of this ProjectFile instance. |
-
-## Static Methods (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `genericInterface()` | `GenericClassInspectorEntry` | Executes `genericInterface` and returns after the underlying engine call finishes. |
-| `inspectorController()` | `ClassInspectorEntry` | Executes `inspectorController` and returns after the underlying engine call finishes. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "ProjectFile(String, String)",
+      description: <>Executes <code>ProjectFile</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "ProjectFile(String)",
+      description: <>Creates a new instance of ProjectFile.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "getFormat()",
+      returns: "String",
+      description: <>Returns the current format.</>
+    },
+    {
+      signature: "getInputStream()",
+      returns: "InputStream",
+      description: <>Returns the current input stream.</>
+    },
+    {
+      signature: "loadText()",
+      returns: "String",
+      description: <>Loads text into the object.</>
+    },
+    {
+      signature: "toString()",
+      returns: "String",
+      description: <>Returns the string representation.</>
+    },
+    {
+      signature: "copyTo(File)",
+      returns: "boolean",
+      description: <>Returns a copy of this ProjectFile instance.</>
+    }
+  ]}
+  staticMethods={[
+    {
+      signature: "genericInterface()",
+      returns: "GenericClassInspectorEntry",
+      description: <>Executes <code>genericInterface</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "inspectorController()",
+      returns: "ClassInspectorEntry",
+      description: <>Executes <code>inspectorController</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # ListStream
 
 Referência completa da API de `ListStream`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,28 +16,61 @@ Referência completa da API de `ListStream`, incluindo construtores, atributos, 
 public class ListStream
 ```
 
-## Construtores (5)
-
-| Signature | Description |
-| --- | --- |
-| ListStream([List]) | Executa `ListStream` e retorna quando a chamada do motor termina. |
-| ListStream([List], [int], [ListStreamListener]) | Cria uma nova instância de ListStream. |
-| ListStream([Object], [List], [int], [ListStreamListener]) | Cria uma nova instância de ListStream. |
-| ListStream([List], [int], [int], [ListStreamListener]) | Cria uma nova instância de ListStream. |
-| ListStream([Object], [List], [int], [int], [ListStreamListener]) | Cria uma nova instância de ListStream. |
-
-## Atributos (3)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `HALF_THREADS` | [int] | Representa o valor de `HALF_THREADS` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `MAX_THREADS` | [int] | Representa o valor de `MAX_THREADS` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `FIXED_THREADS` | [int] | Representa o valor de `FIXED_THREADS` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Métodos (3)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `setThreadsSequence(int)` | `void` | Define ou atualiza a propriedade `propriedade `threads sequence``. |
-| `setThreadsCount(int)` | `void` | Define ou atualiza a propriedade `propriedade `threads count``. |
-| `setListStreamListener(ListStreamListener)` | `void` | Define ou atualiza a propriedade `propriedade `list stream listener``. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "ListStream(List)",
+      description: <>Executa <code>ListStream</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "ListStream(List, int, ListStreamListener)",
+      description: <>Cria uma nova instância de ListStream.</>
+    },
+    {
+      signature: "ListStream(Object, List, int, ListStreamListener)",
+      description: <>Cria uma nova instância de ListStream.</>
+    },
+    {
+      signature: "ListStream(List, int, int, ListStreamListener)",
+      description: <>Cria uma nova instância de ListStream.</>
+    },
+    {
+      signature: "ListStream(Object, List, int, int, ListStreamListener)",
+      description: <>Cria uma nova instância de ListStream.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "HALF_THREADS",
+      type: "int",
+      description: <>Representa o valor de <code>HALF_THREADS</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "MAX_THREADS",
+      type: "int",
+      description: <>Representa o valor de <code>MAX_THREADS</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "FIXED_THREADS",
+      type: "int",
+      description: <>Representa o valor de <code>FIXED_THREADS</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "setThreadsSequence(int)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>threads sequence``.</>
+    },
+    {
+      signature: "setThreadsCount(int)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>threads count``.</>
+    },
+    {
+      signature: "setListStreamListener(ListStreamListener)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>list stream listener``.</>
+    }
+  ]}
+/>

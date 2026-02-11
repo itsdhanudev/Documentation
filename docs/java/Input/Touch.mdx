@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Touch
 
 Complete API reference for `Touch`, including constructors, attributes, virtual attributes, and methods.
@@ -14,37 +16,96 @@ Complete API reference for `Touch`, including constructors, attributes, virtual 
 public class Touch
 ```
 
-## Constructors (2)
-
-| Signature | Description |
-| --- | --- |
-| Touch([Touch]) | Executes `Touch` and returns after the underlying engine call finishes. |
-| Touch() | Executes `Touch` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `touch` | [Touch] | Represents the `touch` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (10)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `down` | [boolean] | `get/set` | Checks whether the touch was just pressed. This returns true only on the first frame it was pressed. |
-| `fromMouse` | [boolean] | `get` | Returns whether this touch came from a mouse click. |
-| `isFromMouse` | [boolean] | `set` | Sets whether this touch came from a mouse click. |
-| `longDown` | [boolean] | `get/set` | Checks whether the touch was just long-pressed. This returns true only on the first frame it was long-pressed. |
-| `longPressed` | [boolean] | `get/set` | Checks whether the touch is being long-pressed. This returns true on every frame while it remains pressed for a long duration. |
-| `position` | [Vector2] | `get/set` | Returns the position of the touch. |
-| `pressed` | [boolean] | `get/set` | Checks whether the touch is currently being held down. This returns true on every frame while it remains pressed. |
-| `slide` | [Vector2] | `get/set` | Returns the slide vector of the touch. |
-| `slided` | [boolean] | `get/set` | Checks if the touch is slided. |
-| `up` | [boolean] | `get/set` | Checks whether the touch was just released. This returns true only on the first frame after it was released. |
-
-## Methods (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `isPerformClick()` | `boolean` | Executes `isPerformClick` and returns after the underlying engine call finishes. |
-| `setPerformClick()` | `void` | Executes `setPerformClick` and returns after the underlying engine call finishes. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "Touch(Touch)",
+      description: <>Executes <code>Touch</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "Touch()",
+      description: <>Executes <code>Touch</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "touch",
+      type: "Touch",
+      description: <>Represents the <code>touch</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "down",
+      type: "boolean",
+      access: "get/set",
+      description: <>Checks whether the touch was just pressed. This returns true only on the first frame it was pressed.</>
+    },
+    {
+      name: "fromMouse",
+      type: "boolean",
+      access: "get",
+      description: <>Returns whether this touch came from a mouse click.</>
+    },
+    {
+      name: "isFromMouse",
+      type: "boolean",
+      access: "set",
+      description: <>Sets whether this touch came from a mouse click.</>
+    },
+    {
+      name: "longDown",
+      type: "boolean",
+      access: "get/set",
+      description: <>Checks whether the touch was just long-pressed. This returns true only on the first frame it was long-pressed.</>
+    },
+    {
+      name: "longPressed",
+      type: "boolean",
+      access: "get/set",
+      description: <>Checks whether the touch is being long-pressed. This returns true on every frame while it remains pressed for a long duration.</>
+    },
+    {
+      name: "position",
+      type: "Vector2",
+      access: "get/set",
+      description: <>Returns the position of the touch.</>
+    },
+    {
+      name: "pressed",
+      type: "boolean",
+      access: "get/set",
+      description: <>Checks whether the touch is currently being held down. This returns true on every frame while it remains pressed.</>
+    },
+    {
+      name: "slide",
+      type: "Vector2",
+      access: "get/set",
+      description: <>Returns the slide vector of the touch.</>
+    },
+    {
+      name: "slided",
+      type: "boolean",
+      access: "get/set",
+      description: <>Checks if the touch is slided.</>
+    },
+    {
+      name: "up",
+      type: "boolean",
+      access: "get/set",
+      description: <>Checks whether the touch was just released. This returns true only on the first frame after it was released.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "isPerformClick()",
+      returns: "boolean",
+      description: <>Executes <code>isPerformClick</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "setPerformClick()",
+      returns: "void",
+      description: <>Executes <code>setPerformClick</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

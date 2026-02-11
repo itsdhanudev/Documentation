@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # VoxelGenerator
 
 Referência completa da API de `VoxelGenerator`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,24 +16,44 @@ Referência completa da API de `VoxelGenerator`, incluindo construtores, atribut
 public class VoxelGenerator extends Component
 ```
 
-## Construtores (2)
-
-| Signature | Description |
-| --- | --- |
-| VoxelGenerator([VoxelGenerator]) | Executa `VoxelGenerator` e retorna quando a chamada do motor termina. |
-| VoxelGenerator() | Executa `VoxelGenerator` e retorna quando a chamada do motor termina. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `component` | [VoxelGenerator] | Representa o valor de `component` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Métodos (4)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `setListener(Component)` | `void` | Define ou atualiza a propriedade `propriedade `listener``. |
-| `removeListener()` | `void` | Remove listener da coleção. |
-| `componentClassMatch(Component, Component)` | `boolean` | Executa `componentClassMatch` e retorna quando a chamada do motor termina. |
-| `getEngineComponent()` | `Component` | Executa `getEngineComponent` e retorna quando a chamada do motor termina. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "VoxelGenerator(VoxelGenerator)",
+      description: <>Executa <code>VoxelGenerator</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "VoxelGenerator()",
+      description: <>Executa <code>VoxelGenerator</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "component",
+      type: "VoxelGenerator",
+      description: <>Representa o valor de <code>component</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "setListener(Component)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>listener``.</>
+    },
+    {
+      signature: "removeListener()",
+      returns: "void",
+      description: <>Remove listener da coleção.</>
+    },
+    {
+      signature: "componentClassMatch(Component, Component)",
+      returns: "boolean",
+      description: <>Executa <code>componentClassMatch</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "getEngineComponent()",
+      returns: "Component",
+      description: <>Executa <code>getEngineComponent</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+/>

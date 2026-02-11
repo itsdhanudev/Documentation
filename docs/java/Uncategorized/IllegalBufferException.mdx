@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # IllegalBufferException
 
 Complete API reference for `IllegalBufferException`, including constructors, attributes, virtual attributes, and methods.
@@ -14,11 +16,23 @@ Complete API reference for `IllegalBufferException`, including constructors, att
 public class IllegalBufferException extends RuntimeException
 ```
 
-## Constructors (4)
-
-| Signature | Description |
-| --- | --- |
-| IllegalBufferException() | Creates a new instance of IllegalBufferException. |
-| IllegalBufferException([String]) | Creates a new instance of IllegalBufferException. |
-| IllegalBufferException([String], [Throwable]) | Creates a new instance of IllegalBufferException. |
-| IllegalBufferException([Throwable]) | Creates a new instance of IllegalBufferException. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "IllegalBufferException()",
+      description: <>Creates a new instance of IllegalBufferException.</>
+    },
+    {
+      signature: "IllegalBufferException(String)",
+      description: <>Creates a new instance of IllegalBufferException.</>
+    },
+    {
+      signature: "IllegalBufferException(String, Throwable)",
+      description: <>Creates a new instance of IllegalBufferException.</>
+    },
+    {
+      signature: "IllegalBufferException(Throwable)",
+      description: <>Creates a new instance of IllegalBufferException.</>
+    }
+  ]}
+/>

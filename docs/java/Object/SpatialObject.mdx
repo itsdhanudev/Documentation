@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # SpatialObject
 
 Complete API reference for `SpatialObject`, including constructors, attributes, virtual attributes, and methods.
@@ -14,201 +16,901 @@ Complete API reference for `SpatialObject`, including constructors, attributes, 
 public class SpatialObject
 ```
 
-## Constructors (6)
-
-| Signature | Description |
-| --- | --- |
-| SpatialObject([GameObject]) | Executes `SpatialObject` and returns after the underlying engine call finishes. |
-| SpatialObject([Engine]) | Executes `SpatialObject` and returns after the underlying engine call finishes. |
-| SpatialObject() | Executes `SpatialObject` and returns after the underlying engine call finishes. |
-| SpatialObject([SpatialObject]) | Creates a new instance of SpatialObject. |
-| SpatialObject([String]) | Creates a new instance of SpatialObject. |
-| SpatialObject([String], [SpatialObject]) | Creates a new instance of SpatialObject. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [WeakReference]&[lt];[GameObject]&[gt]; | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (22)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `allowAnimations` | [boolean] | `get/set` | Virtual attribute exposed by `isAllowAnimations`. Access it like a field to read or write the underlying value. |
-| `childCount` | [int] | `get` | Virtual attribute exposed by `getChildCount`. Access it like a field to read or write the underlying value. |
-| `childList` | [List]&[lt];[SpatialObject]&[gt]; | `get` | Virtual attribute exposed by `getChildList`. Access it like a field to read or write the underlying value. |
-| `componentsList` | [List]&[lt];[Component]&[gt]; | `get` | Virtual attribute exposed by `getComponentsList`. Access it like a field to read or write the underlying value. |
-| `dontDestroyOnLoad` | [boolean] | `get/set` | Virtual attribute exposed by `isDontDestroyOnLoad`. Access it like a field to read or write the underlying value. |
-| `enabled` | [boolean] | `get/set` | Virtual attribute exposed by `isEnabled`. Access it like a field to read or write the underlying value. |
-| `gUID` | [GUID] | `get` | Virtual attribute exposed by `getGUID`. Access it like a field to read or write the underlying value. |
-| `globalMatrix` | [float][] | `get` | Virtual attribute exposed by `getGlobalMatrix`. Access it like a field to read or write the underlying value. |
-| `globalPosition` | [Vector3] | `get/set` | Virtual attribute exposed by `getGlobalPosition`. Access it like a field to read or write the underlying value. |
-| `globalRotation` | [Quaternion] | `get/set` | Virtual attribute exposed by `getGlobalRotation`. Access it like a field to read or write the underlying value. |
-| `globalScale` | [Vector3] | `get/set` | Virtual attribute exposed by `getGlobalScale`. Access it like a field to read or write the underlying value. |
-| `localMatrix` | [float][] | `get` | Virtual attribute exposed by `getLocalMatrix`. Access it like a field to read or write the underlying value. |
-| `mainParent` | [SpatialObject] | `get` | Virtual attribute exposed by `getMainParent`. Access it like a field to read or write the underlying value. |
-| `metaID` | [String] | `get/set` | Virtual attribute exposed by `getMetaID`. Access it like a field to read or write the underlying value. |
-| `name` | [String] | `get/set` | Virtual attribute exposed by `getName`. Access it like a field to read or write the underlying value. |
-| `parent` | [SpatialObject] | `get/set` | Virtual attribute exposed by `getParent`. Access it like a field to read or write the underlying value. |
-| `position` | [Vector3] | `get/set` | Virtual attribute exposed by `getPosition`. Access it like a field to read or write the underlying value. |
-| `rotation` | [Quaternion] | `get/set` | Virtual attribute exposed by `getRotation`. Access it like a field to read or write the underlying value. |
-| `scale` | [Vector3] | `get/set` | Virtual attribute exposed by `getScale`. Access it like a field to read or write the underlying value. |
-| `static` | [boolean] | `get/set` | Virtual attribute exposed by `isStatic`. Access it like a field to read or write the underlying value. |
-| `tag` | [String] | `get/set` | Virtual attribute exposed by `getTag`. Access it like a field to read or write the underlying value. |
-| `transform` | [Transform] | `get` | Virtual attribute exposed by `getTransform`. Access it like a field to read or write the underlying value. |
-
-## Methods (143)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `setNameOH(JAVARuntime.OHString)` | `void` | Sets or updates the name oh. |
-| `compareName(String)` | `boolean` | Compares this instance with another for equality/order. |
-| `duplicate()` | `SpatialObject` | Executes `duplicate` and returns after the underlying engine call finishes. |
-| `destroy()` | `void` | Executes `destroy` and returns after the underlying engine call finishes. |
-| `sendEvent(String)` | `void` | Executes `sendEvent` and returns after the underlying engine call finishes. |
-| `sendEvent(String, int)` | `void` | Executes `sendEvent` and returns after the underlying engine call finishes. |
-| `sendEvent(String, float)` | `void` | Executes `sendEvent` and returns after the underlying engine call finishes. |
-| `sendEvent(String, String)` | `void` | Executes `sendEvent` and returns after the underlying engine call finishes. |
-| `sendEvent(String, boolean)` | `void` | Executes `sendEvent` and returns after the underlying engine call finishes. |
-| `sendEvent(String, Object...)` | `void` | Executes `sendEvent` and returns after the underlying engine call finishes. |
-| `sendEventToHierarchy(String)` | `void` | Executes `sendEventToHierarchy` and returns after the underlying engine call finishes. |
-| `sendEventToHierarchy(String, int)` | `void` | Executes `sendEventToHierarchy` and returns after the underlying engine call finishes. |
-| `sendEventToHierarchy(String, float)` | `void` | Executes `sendEventToHierarchy` and returns after the underlying engine call finishes. |
-| `sendEventToHierarchy(String, String)` | `void` | Executes `sendEventToHierarchy` and returns after the underlying engine call finishes. |
-| `sendEventToHierarchy(String, boolean)` | `void` | Executes `sendEventToHierarchy` and returns after the underlying engine call finishes. |
-| `sendEventToHierarchy(String, Object...)` | `void` | Executes `sendEventToHierarchy` and returns after the underlying engine call finishes. |
-| `callFunction(String)` | `void` | Performs the callFunction operation using the provided parameters (name). |
-| `callFunction(String, int)` | `void` | Performs the callFunction operation using the provided parameters (name, args). |
-| `callFunction(String, float)` | `void` | Performs the callFunction operation using the provided parameters (name, args). |
-| `callFunction(String, String)` | `void` | Performs the callFunction operation using the provided parameters (name, args). |
-| `callFunction(String, boolean)` | `void` | Performs the callFunction operation using the provided parameters (name, args). |
-| `callFunction(String, Object...)` | `void` | Performs the callFunction operation using the provided parameters (name, args). |
-| `instantiate(ObjectFile)` | `SpatialObject` | Performs the instantiate operation using the provided parameters (pFile). |
-| `instantiate(ObjectFile, Vector3)` | `SpatialObject` | Performs the instantiate operation using the provided parameters (pFile, position). |
-| `instantiate(ObjectFile, Vector3, Quaternion)` | `SpatialObject` | Performs the instantiate operation using the provided parameters (pFile, position, rotation). |
-| `instantiate(ObjectFile, Vector3, Quaternion, Vector3)` | `SpatialObject` | Performs the instantiate operation using the provided parameters (pFile, position, rotation, scale). |
-| `instantiateHasChild(ObjectFile)` | `SpatialObject` | Performs the instantiateHasChild operation using the provided parameters (pFile). |
-| `instantiateHasChild(ObjectFile, SpatialObject)` | `SpatialObject` | Performs the instantiateHasChild operation using the provided parameters (pFile, parent). |
-| `instantiateAsChild(ObjectFile)` | `SpatialObject` | Performs the instantiateAsChild operation using the provided parameters (pFile). |
-| `instantiateAsChild(ObjectFile, SpatialObject)` | `SpatialObject` | Performs the instantiateAsChild operation using the provided parameters (pFile, parent). |
-| `findComponent(String)` | `<T extends Component> T` | Performs the findComponent operation using the provided parameters (tittle). |
-| `findComponents(String)` | [List]&[lt];[Component]&[gt]; | Performs the findComponents operation using the provided parameters (tittle). |
-| `findComponent(Class)` | `<T extends Component> T` | Performs the findComponent operation using the provided parameters (classReference). |
-| `findComponents(Class)` | [List]&[lt];[Component]&[gt]; | Performs the findComponents operation using the provided parameters (classReference). |
-| `findComponentInChildren(String)` | `<T extends Component> T` | Performs the findComponentInChildren operation using the provided parameters (tittle). |
-| `findComponentInChildren(Class)` | `<T extends Component> T` | Performs the findComponentInChildren operation using the provided parameters (classReference). |
-| `findComponentInParent(String)` | `<T extends Component> T` | Executes `findComponentInParent` and returns after the underlying engine call finishes. |
-| `findComponentInParent(Class)` | `<T extends Component> T` | Executes `findComponentInParent` and returns after the underlying engine call finishes. |
-| `removeComponent(Component)` | `void` | Removes component from the collection. |
-| `addComponent(Component)` | `void` | Adds component to the collection. |
-| `addComponent(Component, Class)` | `void` | Adds component to the collection. |
-| `addComponent(Component)` | `void` | Adds component to the collection. |
-| `removeParent()` | `void` | Removes parent from the collection. |
-| `findChildObject(String)` | `SpatialObject` | Performs the findChildObject operation using the provided parameters (name). |
-| `findChildObject(JAVARuntime.OHString)` | `SpatialObject` | Performs the findChildObject operation using the provided parameters (name). |
-| `getChildAt(int)` | `SpatialObject` | Returns the current child at. |
-| `getChildIndex(SpatialObject)` | `int` | Returns the current child index. |
-| `swapChildrenPosition(SpatialObject, SpatialObject)` | `void` | Performs the swapChildrenPosition operation using the provided parameters (a, b). |
-| `componentCount()` | `int` | Executes `componentCount` and returns after the underlying engine call finishes. |
-| `getComponentAt(int)` | `Component` | Returns the current component at. |
-| `getComponentsAt(int)` | `Component` | Returns the current components at. |
-| `componentAt(int)` | `Component` | Performs the componentAt operation using the provided parameters (idx). |
-| `distance(SpatialObject)` | `float` | Performs the distance operation using the provided parameters (other). |
-| `distance(Transform)` | `float` | Performs the distance operation using the provided parameters (other). |
-| `distance(Vector3)` | `float` | Performs the distance operation using the provided parameters (other). |
-| `sqrtDistance(SpatialObject)` | `float` | Performs the sqrtDistance operation using the provided parameters (other). |
-| `sqrtDistance(Transform)` | `float` | Performs the sqrtDistance operation using the provided parameters (other). |
-| `sqrtDistance(Vector3)` | `float` | Performs the sqrtDistance operation using the provided parameters (other). |
-| `setPosition(float, float, float)` | `void` | Sets or updates the position. |
-| `setPositionX(float)` | `void` | Sets or updates the position x. |
-| `setPositionY(float)` | `void` | Sets or updates the position y. |
-| `setPositionZ(float)` | `void` | Sets or updates the position z. |
-| `setRotation(float, float, float)` | `void` | Sets or updates the rotation. |
-| `setRotation(float, float, float, float)` | `void` | Sets or updates the rotation. |
-| `setScale(float, float, float)` | `void` | Sets or updates the scale. |
-| `setScale(float)` | `void` | Sets or updates the scale. |
-| `getGlobalPosition(Vector3)` | `Vector3` | Returns the current global position. |
-| `getGlobalRotation(Quaternion)` | `Quaternion` | Returns the current global rotation. |
-| `getGlobalScale(Vector3)` | `Vector3` | Returns the current global scale. |
-| `translate(float, float, float)` | `void` | Transforms or moves the object accordingly. |
-| `move(float, float, float)` | `void` | Transforms or moves the object accordingly. |
-| `rotate(float, float, float)` | `void` | Transforms or moves the object accordingly. |
-| `translateInSeconds(float, float, float)` | `void` | Transforms or moves in seconds accordingly. |
-| `moveInSeconds(float, float, float)` | `void` | Transforms or moves in seconds accordingly. |
-| `rotateInSeconds(float, float, float)` | `void` | Transforms or moves in seconds accordingly. |
-| `translateInSeconds(int, int, int)` | `void` | Executes `translateInSeconds` and returns after the underlying engine call finishes. |
-| `translateInSeconds(int, int, float)` | `void` | Executes `translateInSeconds` and returns after the underlying engine call finishes. |
-| `translateInSeconds(int, float, int)` | `void` | Executes `translateInSeconds` and returns after the underlying engine call finishes. |
-| `translateInSeconds(int, float, float)` | `void` | Executes `translateInSeconds` and returns after the underlying engine call finishes. |
-| `translateInSeconds(float, int, int)` | `void` | Executes `translateInSeconds` and returns after the underlying engine call finishes. |
-| `translateInSeconds(float, int, float)` | `void` | Executes `translateInSeconds` and returns after the underlying engine call finishes. |
-| `translateInSeconds(float, float, int)` | `void` | Executes `translateInSeconds` and returns after the underlying engine call finishes. |
-| `moveInSeconds(int, int, int)` | `void` | Executes `moveInSeconds` and returns after the underlying engine call finishes. |
-| `moveInSeconds(int, int, float)` | `void` | Executes `moveInSeconds` and returns after the underlying engine call finishes. |
-| `moveInSeconds(int, float, int)` | `void` | Executes `moveInSeconds` and returns after the underlying engine call finishes. |
-| `moveInSeconds(int, float, float)` | `void` | Executes `moveInSeconds` and returns after the underlying engine call finishes. |
-| `moveInSeconds(float, int, int)` | `void` | Executes `moveInSeconds` and returns after the underlying engine call finishes. |
-| `moveInSeconds(float, int, float)` | `void` | Executes `moveInSeconds` and returns after the underlying engine call finishes. |
-| `moveInSeconds(float, float, int)` | `void` | Executes `moveInSeconds` and returns after the underlying engine call finishes. |
-| `rotateInSeconds(int, int, int)` | `void` | Executes `rotateInSeconds` and returns after the underlying engine call finishes. |
-| `rotateInSeconds(int, int, float)` | `void` | Executes `rotateInSeconds` and returns after the underlying engine call finishes. |
-| `rotateInSeconds(int, float, int)` | `void` | Executes `rotateInSeconds` and returns after the underlying engine call finishes. |
-| `rotateInSeconds(int, float, float)` | `void` | Executes `rotateInSeconds` and returns after the underlying engine call finishes. |
-| `rotateInSeconds(float, int, int)` | `void` | Executes `rotateInSeconds` and returns after the underlying engine call finishes. |
-| `rotateInSeconds(float, int, float)` | `void` | Executes `rotateInSeconds` and returns after the underlying engine call finishes. |
-| `rotateInSeconds(float, float, int)` | `void` | Executes `rotateInSeconds` and returns after the underlying engine call finishes. |
-| `lookTo(SpatialObject)` | `void` | Executes `lookTo` and returns after the underlying engine call finishes. |
-| `lookTo(Vector3)` | `void` | Performs the lookTo operation using the provided parameters (position). |
-| `lookTo(float, float, float)` | `void` | Performs the lookTo operation using the provided parameters (x, y, z). |
-| `lookTo(SpatialObject, boolean, boolean)` | `void` | Executes `lookTo` and returns after the underlying engine call finishes. |
-| `lookTo(Vector3, boolean, boolean)` | `void` | Executes `lookTo` and returns after the underlying engine call finishes. |
-| `lookTo(float, float, float, boolean, boolean)` | `void` | Executes `lookTo` and returns after the underlying engine call finishes. |
-| `lookToIgnoreY(SpatialObject)` | `void` | Performs the lookToIgnoreY operation using the provided parameters (object). |
-| `lookToIgnoreY(Vector3)` | `void` | Performs the lookToIgnoreY operation using the provided parameters (position). |
-| `teleportTo(SpatialObject)` | `void` | Performs the teleportTo operation using the provided parameters (object). |
-| `teleportTo(Vector3)` | `void` | Performs the teleportTo operation using the provided parameters (position). |
-| `smoothLookTo(SpatialObject, float)` | `void` | Performs the smoothLookTo operation using the provided parameters (other, lerpSpeed). |
-| `smoothLookTo(Vector3, float)` | `void` | Performs the smoothLookTo operation using the provided parameters (other, lerpSpeed). |
-| `lerpLookTo(SpatialObject, float)` | `void` | Performs the lerpLookTo operation using the provided parameters (other, lerpSpeed). |
-| `lerpLookTo(Vector3, float)` | `void` | Performs the lerpLookTo operation using the provided parameters (other, lerpSpeed). |
-| `lerpLookToIgnoreY(SpatialObject, float)` | `void` | Performs the lerpLookToIgnoreY operation using the provided parameters (other, lerpSpeed). |
-| `lerpLookToIgnoreY(Vector3, float)` | `void` | Performs the lerpLookToIgnoreY operation using the provided parameters (other, lerpSpeed). |
-| `transformPoint(Vector3)` | `Vector3` | Performs the transformPoint operation using the provided parameters (vector3). |
-| `transformPoint(Vector3, Vector3)` | `void` | Performs the transformPoint operation using the provided parameters (vector3, out). |
-| `inverseTransformPoint(Vector3)` | `Vector3` | Performs the inverseTransformPoint operation using the provided parameters (vector3). |
-| `inverseTransformPoint(Vector3, Vector3)` | `void` | Performs the inverseTransformPoint operation using the provided parameters (vector3, out). |
-| `transformDirection(Vector3)` | `Vector3` | Performs the transformDirection operation using the provided parameters (vector3). |
-| `transformDirection(Vector3, Vector3)` | `void` | Performs the transformDirection operation using the provided parameters (vector3, out). |
-| `inverseTransformDirection(Vector3)` | `Vector3` | Performs the inverseTransformDirection operation using the provided parameters (vector3). |
-| `inverseTransformDirection(Vector3, Vector3)` | `void` | Performs the inverseTransformDirection operation using the provided parameters (vector3, out). |
-| `forward()` | `Vector3` | Executes `forward` and returns after the underlying engine call finishes. |
-| `back()` | `Vector3` | Executes `back` and returns after the underlying engine call finishes. |
-| `right()` | `Vector3` | Executes `right` and returns after the underlying engine call finishes. |
-| `left()` | `Vector3` | Executes `left` and returns after the underlying engine call finishes. |
-| `up()` | `Vector3` | Executes `up` and returns after the underlying engine call finishes. |
-| `down()` | `Vector3` | Executes `down` and returns after the underlying engine call finishes. |
-| `forward(Vector3)` | `Vector3` | Performs the forward operation using the provided parameters (out). |
-| `back(Vector3)` | `Vector3` | Performs the back operation using the provided parameters (out). |
-| `right(Vector3)` | `Vector3` | Performs the right operation using the provided parameters (out). |
-| `left(Vector3)` | `Vector3` | Performs the left operation using the provided parameters (out). |
-| `up(Vector3)` | `Vector3` | Performs the up operation using the provided parameters (out). |
-| `down(Vector3)` | `Vector3` | Performs the down operation using the provided parameters (out). |
-| `getState()` | `int` | Returns the current state. |
-| `setState(int)` | `void` | Sets or updates the state. |
-| `getGlobalMatrix(float[])` | [float][] | Returns the current global matrix. |
-| `getLocalMatrix(float[])` | [float][] | Returns the current local matrix. |
-| `mulGlobalVector3(Vector3)` | `Vector3` | Performs the mulGlobalVector3 operation using the provided parameters (vector3). |
-| `mulLocalVector3(Vector3)` | `Vector3` | Performs the mulLocalVector3 operation using the provided parameters (vector3). |
-| `recalculateMatrices()` | `void` | Executes `recalculateMatrices` and returns after the underlying engine call finishes. |
-| `toJson()` | `String` | Executes `toJson` and returns after the underlying engine call finishes. |
-| `exists()` | `boolean` | Executes `exists` and returns after the underlying engine call finishes. |
-| `compareTag(String)` | `boolean` | Compares this instance with another for equality/order. |
-| `validate()` | `boolean` | Executes `validate` and returns after the underlying engine call finishes. |
-
-## Static Methods (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `inspectorController()` | `ClassInspectorEntry` | Executes `inspectorController` and returns after the underlying engine call finishes. |
-| `loadFile(ObjectFile)` | `SpatialObject` | Loads file into the object. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "SpatialObject(GameObject)",
+      description: <>Executes <code>SpatialObject</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "SpatialObject(Engine)",
+      description: <>Executes <code>SpatialObject</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "SpatialObject()",
+      description: <>Executes <code>SpatialObject</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "SpatialObject(SpatialObject)",
+      description: <>Creates a new instance of SpatialObject.</>
+    },
+    {
+      signature: "SpatialObject(String)",
+      description: <>Creates a new instance of SpatialObject.</>
+    },
+    {
+      signature: "SpatialObject(String, SpatialObject)",
+      description: <>Creates a new instance of SpatialObject.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "WeakReference&lt;GameObject&gt;",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "allowAnimations",
+      type: "boolean",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>isAllowAnimations</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "childCount",
+      type: "int",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>getChildCount</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "childList",
+      type: "List&lt;SpatialObject&gt;",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>getChildList</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "componentsList",
+      type: "List&lt;Component&gt;",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>getComponentsList</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "dontDestroyOnLoad",
+      type: "boolean",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>isDontDestroyOnLoad</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "enabled",
+      type: "boolean",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>isEnabled</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "gUID",
+      type: "GUID",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>getGUID</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "globalMatrix",
+      type: "float[]",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>getGlobalMatrix</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "globalPosition",
+      type: "Vector3",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getGlobalPosition</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "globalRotation",
+      type: "Quaternion",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getGlobalRotation</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "globalScale",
+      type: "Vector3",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getGlobalScale</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "localMatrix",
+      type: "float[]",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>getLocalMatrix</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "mainParent",
+      type: "SpatialObject",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>getMainParent</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "metaID",
+      type: "String",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getMetaID</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "name",
+      type: "String",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getName</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "parent",
+      type: "SpatialObject",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getParent</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "position",
+      type: "Vector3",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getPosition</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "rotation",
+      type: "Quaternion",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getRotation</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "scale",
+      type: "Vector3",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getScale</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "static",
+      type: "boolean",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>isStatic</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "tag",
+      type: "String",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getTag</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "transform",
+      type: "Transform",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>getTransform</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "setNameOH(JAVARuntime.OHString)",
+      returns: "void",
+      description: <>Sets or updates the name oh.</>
+    },
+    {
+      signature: "compareName(String)",
+      returns: "boolean",
+      description: <>Compares this instance with another for equality/order.</>
+    },
+    {
+      signature: "duplicate()",
+      returns: "SpatialObject",
+      description: <>Executes <code>duplicate</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "destroy()",
+      returns: "void",
+      description: <>Executes <code>destroy</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "sendEvent(String)",
+      returns: "void",
+      description: <>Executes <code>sendEvent</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "sendEvent(String, int)",
+      returns: "void",
+      description: <>Executes <code>sendEvent</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "sendEvent(String, float)",
+      returns: "void",
+      description: <>Executes <code>sendEvent</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "sendEvent(String, String)",
+      returns: "void",
+      description: <>Executes <code>sendEvent</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "sendEvent(String, boolean)",
+      returns: "void",
+      description: <>Executes <code>sendEvent</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "sendEvent(String, Object...)",
+      returns: "void",
+      description: <>Executes <code>sendEvent</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "sendEventToHierarchy(String)",
+      returns: "void",
+      description: <>Executes <code>sendEventToHierarchy</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "sendEventToHierarchy(String, int)",
+      returns: "void",
+      description: <>Executes <code>sendEventToHierarchy</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "sendEventToHierarchy(String, float)",
+      returns: "void",
+      description: <>Executes <code>sendEventToHierarchy</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "sendEventToHierarchy(String, String)",
+      returns: "void",
+      description: <>Executes <code>sendEventToHierarchy</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "sendEventToHierarchy(String, boolean)",
+      returns: "void",
+      description: <>Executes <code>sendEventToHierarchy</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "sendEventToHierarchy(String, Object...)",
+      returns: "void",
+      description: <>Executes <code>sendEventToHierarchy</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "callFunction(String)",
+      returns: "void",
+      description: <>Performs the callFunction operation using the provided parameters (name).</>
+    },
+    {
+      signature: "callFunction(String, int)",
+      returns: "void",
+      description: <>Performs the callFunction operation using the provided parameters (name, args).</>
+    },
+    {
+      signature: "callFunction(String, float)",
+      returns: "void",
+      description: <>Performs the callFunction operation using the provided parameters (name, args).</>
+    },
+    {
+      signature: "callFunction(String, String)",
+      returns: "void",
+      description: <>Performs the callFunction operation using the provided parameters (name, args).</>
+    },
+    {
+      signature: "callFunction(String, boolean)",
+      returns: "void",
+      description: <>Performs the callFunction operation using the provided parameters (name, args).</>
+    },
+    {
+      signature: "callFunction(String, Object...)",
+      returns: "void",
+      description: <>Performs the callFunction operation using the provided parameters (name, args).</>
+    },
+    {
+      signature: "instantiate(ObjectFile)",
+      returns: "SpatialObject",
+      description: <>Performs the instantiate operation using the provided parameters (pFile).</>
+    },
+    {
+      signature: "instantiate(ObjectFile, Vector3)",
+      returns: "SpatialObject",
+      description: <>Performs the instantiate operation using the provided parameters (pFile, position).</>
+    },
+    {
+      signature: "instantiate(ObjectFile, Vector3, Quaternion)",
+      returns: "SpatialObject",
+      description: <>Performs the instantiate operation using the provided parameters (pFile, position, rotation).</>
+    },
+    {
+      signature: "instantiate(ObjectFile, Vector3, Quaternion, Vector3)",
+      returns: "SpatialObject",
+      description: <>Performs the instantiate operation using the provided parameters (pFile, position, rotation, scale).</>
+    },
+    {
+      signature: "instantiateHasChild(ObjectFile)",
+      returns: "SpatialObject",
+      description: <>Performs the instantiateHasChild operation using the provided parameters (pFile).</>
+    },
+    {
+      signature: "instantiateHasChild(ObjectFile, SpatialObject)",
+      returns: "SpatialObject",
+      description: <>Performs the instantiateHasChild operation using the provided parameters (pFile, parent).</>
+    },
+    {
+      signature: "instantiateAsChild(ObjectFile)",
+      returns: "SpatialObject",
+      description: <>Performs the instantiateAsChild operation using the provided parameters (pFile).</>
+    },
+    {
+      signature: "instantiateAsChild(ObjectFile, SpatialObject)",
+      returns: "SpatialObject",
+      description: <>Performs the instantiateAsChild operation using the provided parameters (pFile, parent).</>
+    },
+    {
+      signature: "findComponent(String)",
+      returns: "<T extends Component> T",
+      description: <>Performs the findComponent operation using the provided parameters (tittle).</>
+    },
+    {
+      signature: "findComponents(String)",
+      returns: "List&lt;Component&gt;",
+      description: <>Performs the findComponents operation using the provided parameters (tittle).</>
+    },
+    {
+      signature: "findComponent(Class)",
+      returns: "<T extends Component> T",
+      description: <>Performs the findComponent operation using the provided parameters (classReference).</>
+    },
+    {
+      signature: "findComponents(Class)",
+      returns: "List&lt;Component&gt;",
+      description: <>Performs the findComponents operation using the provided parameters (classReference).</>
+    },
+    {
+      signature: "findComponentInChildren(String)",
+      returns: "<T extends Component> T",
+      description: <>Performs the findComponentInChildren operation using the provided parameters (tittle).</>
+    },
+    {
+      signature: "findComponentInChildren(Class)",
+      returns: "<T extends Component> T",
+      description: <>Performs the findComponentInChildren operation using the provided parameters (classReference).</>
+    },
+    {
+      signature: "findComponentInParent(String)",
+      returns: "<T extends Component> T",
+      description: <>Executes <code>findComponentInParent</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "findComponentInParent(Class)",
+      returns: "<T extends Component> T",
+      description: <>Executes <code>findComponentInParent</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "removeComponent(Component)",
+      returns: "void",
+      description: <>Removes component from the collection.</>
+    },
+    {
+      signature: "addComponent(Component)",
+      returns: "void",
+      description: <>Adds component to the collection.</>
+    },
+    {
+      signature: "addComponent(Component, Class)",
+      returns: "void",
+      description: <>Adds component to the collection.</>
+    },
+    {
+      signature: "addComponent(Component)",
+      returns: "void",
+      description: <>Adds component to the collection.</>
+    },
+    {
+      signature: "removeParent()",
+      returns: "void",
+      description: <>Removes parent from the collection.</>
+    },
+    {
+      signature: "findChildObject(String)",
+      returns: "SpatialObject",
+      description: <>Performs the findChildObject operation using the provided parameters (name).</>
+    },
+    {
+      signature: "findChildObject(JAVARuntime.OHString)",
+      returns: "SpatialObject",
+      description: <>Performs the findChildObject operation using the provided parameters (name).</>
+    },
+    {
+      signature: "getChildAt(int)",
+      returns: "SpatialObject",
+      description: <>Returns the current child at.</>
+    },
+    {
+      signature: "getChildIndex(SpatialObject)",
+      returns: "int",
+      description: <>Returns the current child index.</>
+    },
+    {
+      signature: "swapChildrenPosition(SpatialObject, SpatialObject)",
+      returns: "void",
+      description: <>Performs the swapChildrenPosition operation using the provided parameters (a, b).</>
+    },
+    {
+      signature: "componentCount()",
+      returns: "int",
+      description: <>Executes <code>componentCount</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "getComponentAt(int)",
+      returns: "Component",
+      description: <>Returns the current component at.</>
+    },
+    {
+      signature: "getComponentsAt(int)",
+      returns: "Component",
+      description: <>Returns the current components at.</>
+    },
+    {
+      signature: "componentAt(int)",
+      returns: "Component",
+      description: <>Performs the componentAt operation using the provided parameters (idx).</>
+    },
+    {
+      signature: "distance(SpatialObject)",
+      returns: "float",
+      description: <>Performs the distance operation using the provided parameters (other).</>
+    },
+    {
+      signature: "distance(Transform)",
+      returns: "float",
+      description: <>Performs the distance operation using the provided parameters (other).</>
+    },
+    {
+      signature: "distance(Vector3)",
+      returns: "float",
+      description: <>Performs the distance operation using the provided parameters (other).</>
+    },
+    {
+      signature: "sqrtDistance(SpatialObject)",
+      returns: "float",
+      description: <>Performs the sqrtDistance operation using the provided parameters (other).</>
+    },
+    {
+      signature: "sqrtDistance(Transform)",
+      returns: "float",
+      description: <>Performs the sqrtDistance operation using the provided parameters (other).</>
+    },
+    {
+      signature: "sqrtDistance(Vector3)",
+      returns: "float",
+      description: <>Performs the sqrtDistance operation using the provided parameters (other).</>
+    },
+    {
+      signature: "setPosition(float, float, float)",
+      returns: "void",
+      description: <>Sets or updates the position.</>
+    },
+    {
+      signature: "setPositionX(float)",
+      returns: "void",
+      description: <>Sets or updates the position x.</>
+    },
+    {
+      signature: "setPositionY(float)",
+      returns: "void",
+      description: <>Sets or updates the position y.</>
+    },
+    {
+      signature: "setPositionZ(float)",
+      returns: "void",
+      description: <>Sets or updates the position z.</>
+    },
+    {
+      signature: "setRotation(float, float, float)",
+      returns: "void",
+      description: <>Sets or updates the rotation.</>
+    },
+    {
+      signature: "setRotation(float, float, float, float)",
+      returns: "void",
+      description: <>Sets or updates the rotation.</>
+    },
+    {
+      signature: "setScale(float, float, float)",
+      returns: "void",
+      description: <>Sets or updates the scale.</>
+    },
+    {
+      signature: "setScale(float)",
+      returns: "void",
+      description: <>Sets or updates the scale.</>
+    },
+    {
+      signature: "getGlobalPosition(Vector3)",
+      returns: "Vector3",
+      description: <>Returns the current global position.</>
+    },
+    {
+      signature: "getGlobalRotation(Quaternion)",
+      returns: "Quaternion",
+      description: <>Returns the current global rotation.</>
+    },
+    {
+      signature: "getGlobalScale(Vector3)",
+      returns: "Vector3",
+      description: <>Returns the current global scale.</>
+    },
+    {
+      signature: "translate(float, float, float)",
+      returns: "void",
+      description: <>Transforms or moves the object accordingly.</>
+    },
+    {
+      signature: "move(float, float, float)",
+      returns: "void",
+      description: <>Transforms or moves the object accordingly.</>
+    },
+    {
+      signature: "rotate(float, float, float)",
+      returns: "void",
+      description: <>Transforms or moves the object accordingly.</>
+    },
+    {
+      signature: "translateInSeconds(float, float, float)",
+      returns: "void",
+      description: <>Transforms or moves in seconds accordingly.</>
+    },
+    {
+      signature: "moveInSeconds(float, float, float)",
+      returns: "void",
+      description: <>Transforms or moves in seconds accordingly.</>
+    },
+    {
+      signature: "rotateInSeconds(float, float, float)",
+      returns: "void",
+      description: <>Transforms or moves in seconds accordingly.</>
+    },
+    {
+      signature: "translateInSeconds(int, int, int)",
+      returns: "void",
+      description: <>Executes <code>translateInSeconds</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "translateInSeconds(int, int, float)",
+      returns: "void",
+      description: <>Executes <code>translateInSeconds</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "translateInSeconds(int, float, int)",
+      returns: "void",
+      description: <>Executes <code>translateInSeconds</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "translateInSeconds(int, float, float)",
+      returns: "void",
+      description: <>Executes <code>translateInSeconds</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "translateInSeconds(float, int, int)",
+      returns: "void",
+      description: <>Executes <code>translateInSeconds</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "translateInSeconds(float, int, float)",
+      returns: "void",
+      description: <>Executes <code>translateInSeconds</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "translateInSeconds(float, float, int)",
+      returns: "void",
+      description: <>Executes <code>translateInSeconds</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "moveInSeconds(int, int, int)",
+      returns: "void",
+      description: <>Executes <code>moveInSeconds</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "moveInSeconds(int, int, float)",
+      returns: "void",
+      description: <>Executes <code>moveInSeconds</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "moveInSeconds(int, float, int)",
+      returns: "void",
+      description: <>Executes <code>moveInSeconds</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "moveInSeconds(int, float, float)",
+      returns: "void",
+      description: <>Executes <code>moveInSeconds</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "moveInSeconds(float, int, int)",
+      returns: "void",
+      description: <>Executes <code>moveInSeconds</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "moveInSeconds(float, int, float)",
+      returns: "void",
+      description: <>Executes <code>moveInSeconds</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "moveInSeconds(float, float, int)",
+      returns: "void",
+      description: <>Executes <code>moveInSeconds</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "rotateInSeconds(int, int, int)",
+      returns: "void",
+      description: <>Executes <code>rotateInSeconds</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "rotateInSeconds(int, int, float)",
+      returns: "void",
+      description: <>Executes <code>rotateInSeconds</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "rotateInSeconds(int, float, int)",
+      returns: "void",
+      description: <>Executes <code>rotateInSeconds</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "rotateInSeconds(int, float, float)",
+      returns: "void",
+      description: <>Executes <code>rotateInSeconds</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "rotateInSeconds(float, int, int)",
+      returns: "void",
+      description: <>Executes <code>rotateInSeconds</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "rotateInSeconds(float, int, float)",
+      returns: "void",
+      description: <>Executes <code>rotateInSeconds</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "rotateInSeconds(float, float, int)",
+      returns: "void",
+      description: <>Executes <code>rotateInSeconds</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "lookTo(SpatialObject)",
+      returns: "void",
+      description: <>Executes <code>lookTo</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "lookTo(Vector3)",
+      returns: "void",
+      description: <>Performs the lookTo operation using the provided parameters (position).</>
+    },
+    {
+      signature: "lookTo(float, float, float)",
+      returns: "void",
+      description: <>Performs the lookTo operation using the provided parameters (x, y, z).</>
+    },
+    {
+      signature: "lookTo(SpatialObject, boolean, boolean)",
+      returns: "void",
+      description: <>Executes <code>lookTo</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "lookTo(Vector3, boolean, boolean)",
+      returns: "void",
+      description: <>Executes <code>lookTo</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "lookTo(float, float, float, boolean, boolean)",
+      returns: "void",
+      description: <>Executes <code>lookTo</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "lookToIgnoreY(SpatialObject)",
+      returns: "void",
+      description: <>Performs the lookToIgnoreY operation using the provided parameters (object).</>
+    },
+    {
+      signature: "lookToIgnoreY(Vector3)",
+      returns: "void",
+      description: <>Performs the lookToIgnoreY operation using the provided parameters (position).</>
+    },
+    {
+      signature: "teleportTo(SpatialObject)",
+      returns: "void",
+      description: <>Performs the teleportTo operation using the provided parameters (object).</>
+    },
+    {
+      signature: "teleportTo(Vector3)",
+      returns: "void",
+      description: <>Performs the teleportTo operation using the provided parameters (position).</>
+    },
+    {
+      signature: "smoothLookTo(SpatialObject, float)",
+      returns: "void",
+      description: <>Performs the smoothLookTo operation using the provided parameters (other, lerpSpeed).</>
+    },
+    {
+      signature: "smoothLookTo(Vector3, float)",
+      returns: "void",
+      description: <>Performs the smoothLookTo operation using the provided parameters (other, lerpSpeed).</>
+    },
+    {
+      signature: "lerpLookTo(SpatialObject, float)",
+      returns: "void",
+      description: <>Performs the lerpLookTo operation using the provided parameters (other, lerpSpeed).</>
+    },
+    {
+      signature: "lerpLookTo(Vector3, float)",
+      returns: "void",
+      description: <>Performs the lerpLookTo operation using the provided parameters (other, lerpSpeed).</>
+    },
+    {
+      signature: "lerpLookToIgnoreY(SpatialObject, float)",
+      returns: "void",
+      description: <>Performs the lerpLookToIgnoreY operation using the provided parameters (other, lerpSpeed).</>
+    },
+    {
+      signature: "lerpLookToIgnoreY(Vector3, float)",
+      returns: "void",
+      description: <>Performs the lerpLookToIgnoreY operation using the provided parameters (other, lerpSpeed).</>
+    },
+    {
+      signature: "transformPoint(Vector3)",
+      returns: "Vector3",
+      description: <>Performs the transformPoint operation using the provided parameters (vector3).</>
+    },
+    {
+      signature: "transformPoint(Vector3, Vector3)",
+      returns: "void",
+      description: <>Performs the transformPoint operation using the provided parameters (vector3, out).</>
+    },
+    {
+      signature: "inverseTransformPoint(Vector3)",
+      returns: "Vector3",
+      description: <>Performs the inverseTransformPoint operation using the provided parameters (vector3).</>
+    },
+    {
+      signature: "inverseTransformPoint(Vector3, Vector3)",
+      returns: "void",
+      description: <>Performs the inverseTransformPoint operation using the provided parameters (vector3, out).</>
+    },
+    {
+      signature: "transformDirection(Vector3)",
+      returns: "Vector3",
+      description: <>Performs the transformDirection operation using the provided parameters (vector3).</>
+    },
+    {
+      signature: "transformDirection(Vector3, Vector3)",
+      returns: "void",
+      description: <>Performs the transformDirection operation using the provided parameters (vector3, out).</>
+    },
+    {
+      signature: "inverseTransformDirection(Vector3)",
+      returns: "Vector3",
+      description: <>Performs the inverseTransformDirection operation using the provided parameters (vector3).</>
+    },
+    {
+      signature: "inverseTransformDirection(Vector3, Vector3)",
+      returns: "void",
+      description: <>Performs the inverseTransformDirection operation using the provided parameters (vector3, out).</>
+    },
+    {
+      signature: "forward()",
+      returns: "Vector3",
+      description: <>Executes <code>forward</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "back()",
+      returns: "Vector3",
+      description: <>Executes <code>back</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "right()",
+      returns: "Vector3",
+      description: <>Executes <code>right</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "left()",
+      returns: "Vector3",
+      description: <>Executes <code>left</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "up()",
+      returns: "Vector3",
+      description: <>Executes <code>up</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "down()",
+      returns: "Vector3",
+      description: <>Executes <code>down</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "forward(Vector3)",
+      returns: "Vector3",
+      description: <>Performs the forward operation using the provided parameters (out).</>
+    },
+    {
+      signature: "back(Vector3)",
+      returns: "Vector3",
+      description: <>Performs the back operation using the provided parameters (out).</>
+    },
+    {
+      signature: "right(Vector3)",
+      returns: "Vector3",
+      description: <>Performs the right operation using the provided parameters (out).</>
+    },
+    {
+      signature: "left(Vector3)",
+      returns: "Vector3",
+      description: <>Performs the left operation using the provided parameters (out).</>
+    },
+    {
+      signature: "up(Vector3)",
+      returns: "Vector3",
+      description: <>Performs the up operation using the provided parameters (out).</>
+    },
+    {
+      signature: "down(Vector3)",
+      returns: "Vector3",
+      description: <>Performs the down operation using the provided parameters (out).</>
+    },
+    {
+      signature: "getState()",
+      returns: "int",
+      description: <>Returns the current state.</>
+    },
+    {
+      signature: "setState(int)",
+      returns: "void",
+      description: <>Sets or updates the state.</>
+    },
+    {
+      signature: "getGlobalMatrix(float[])",
+      returns: "float[]",
+      description: <>Returns the current global matrix.</>
+    },
+    {
+      signature: "getLocalMatrix(float[])",
+      returns: "float[]",
+      description: <>Returns the current local matrix.</>
+    },
+    {
+      signature: "mulGlobalVector3(Vector3)",
+      returns: "Vector3",
+      description: <>Performs the mulGlobalVector3 operation using the provided parameters (vector3).</>
+    },
+    {
+      signature: "mulLocalVector3(Vector3)",
+      returns: "Vector3",
+      description: <>Performs the mulLocalVector3 operation using the provided parameters (vector3).</>
+    },
+    {
+      signature: "recalculateMatrices()",
+      returns: "void",
+      description: <>Executes <code>recalculateMatrices</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "toJson()",
+      returns: "String",
+      description: <>Executes <code>toJson</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "exists()",
+      returns: "boolean",
+      description: <>Executes <code>exists</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "compareTag(String)",
+      returns: "boolean",
+      description: <>Compares this instance with another for equality/order.</>
+    },
+    {
+      signature: "validate()",
+      returns: "boolean",
+      description: <>Executes <code>validate</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  staticMethods={[
+    {
+      signature: "inspectorController()",
+      returns: "ClassInspectorEntry",
+      description: <>Executes <code>inspectorController</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "loadFile(ObjectFile)",
+      returns: "SpatialObject",
+      description: <>Loads file into the object.</>
+    }
+  ]}
+/>

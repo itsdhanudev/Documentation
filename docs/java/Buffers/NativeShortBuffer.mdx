@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # NativeShortBuffer
 
 Complete API reference for `NativeShortBuffer`, including constructors, attributes, virtual attributes, and methods.
@@ -14,34 +16,71 @@ Complete API reference for `NativeShortBuffer`, including constructors, attribut
 public class NativeShortBuffer
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| NativeShortBuffer([NativeShortBuffer]) | Executes `NativeShortBuffer` and returns after the underlying engine call finishes. |
-| NativeShortBuffer([Engine]) | Executes `NativeShortBuffer` and returns after the underlying engine call finishes. |
-| NativeShortBuffer([int]) | Creates a new instance of NativeShortBuffer. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `buffer` | [NativeShortBuffer] | Represents the `buffer` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (1)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `vboEnabled` | [boolean] | `get/set` | Virtual attribute exposed by `isVboEnabled`. Access it like a field to read or write the underlying value. |
-
-## Methods (7)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `get(int)` | `short` | Returns the current value. |
-| `set(int, short)` | `void` | Sets or updates the the value. |
-| `put(short)` | `void` | Sets or updates the the value. |
-| `capacity()` | `int` | Executes `capacity` and returns after the underlying engine call finishes. |
-| `getPosition()` | `int` | Returns the current position. |
-| `position(int)` | `int` | Performs the position operation using the provided parameters (idx). |
-| `setPosition(int)` | `void` | Sets or updates the position. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "NativeShortBuffer(NativeShortBuffer)",
+      description: <>Executes <code>NativeShortBuffer</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "NativeShortBuffer(Engine)",
+      description: <>Executes <code>NativeShortBuffer</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "NativeShortBuffer(int)",
+      description: <>Creates a new instance of NativeShortBuffer.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "buffer",
+      type: "NativeShortBuffer",
+      description: <>Represents the <code>buffer</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "vboEnabled",
+      type: "boolean",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>isVboEnabled</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "get(int)",
+      returns: "short",
+      description: <>Returns the current value.</>
+    },
+    {
+      signature: "set(int, short)",
+      returns: "void",
+      description: <>Sets or updates the the value.</>
+    },
+    {
+      signature: "put(short)",
+      returns: "void",
+      description: <>Sets or updates the the value.</>
+    },
+    {
+      signature: "capacity()",
+      returns: "int",
+      description: <>Executes <code>capacity</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "getPosition()",
+      returns: "int",
+      description: <>Returns the current position.</>
+    },
+    {
+      signature: "position(int)",
+      returns: "int",
+      description: <>Performs the position operation using the provided parameters (idx).</>
+    },
+    {
+      signature: "setPosition(int)",
+      returns: "void",
+      description: <>Sets or updates the position.</>
+    }
+  ]}
+/>

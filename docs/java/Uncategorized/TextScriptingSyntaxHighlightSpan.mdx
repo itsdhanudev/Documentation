@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # TextScriptingSyntaxHighlightSpan
 
 Complete API reference for `TextScriptingSyntaxHighlightSpan`, including constructors, attributes, virtual attributes, and methods.
@@ -14,28 +16,64 @@ Complete API reference for `TextScriptingSyntaxHighlightSpan`, including constru
 public class TextScriptingSyntaxHighlightSpan
 ```
 
-## Constructors (2)
-
-| Signature | Description |
-| --- | --- |
-| TextScriptingSyntaxHighlightSpan() | Creates a new instance of TextScriptingSyntaxHighlightSpan. |
-| TextScriptingSyntaxHighlightSpan([TextScriptingStyleSpan], [int], [int]) | Creates a new instance of TextScriptingSyntaxHighlightSpan. |
-
-## Attributes (3)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `span` | [TextScriptingStyleSpan] | Represents the `span` value stored on this instance. Read or assign to update the property. |
-| `start` | [int] | Represents the `start` value stored on this instance. Read or assign to update the property. |
-| `end` | [int] | Represents the `end` value stored on this instance. Read or assign to update the property. |
-
-## Methods (6)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getSpan()` | `TextScriptingStyleSpan` | Returns the current span. |
-| `setSpan(TextScriptingStyleSpan)` | `void` | Sets or updates the span. |
-| `getStart()` | `int` | Returns the current start. |
-| `setStart(int)` | `void` | Sets or updates the start. |
-| `getEnd()` | `int` | Returns the current end. |
-| `setEnd(int)` | `void` | Sets or updates the end. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "TextScriptingSyntaxHighlightSpan()",
+      description: <>Creates a new instance of TextScriptingSyntaxHighlightSpan.</>
+    },
+    {
+      signature: "TextScriptingSyntaxHighlightSpan(TextScriptingStyleSpan, int, int)",
+      description: <>Creates a new instance of TextScriptingSyntaxHighlightSpan.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "span",
+      type: "TextScriptingStyleSpan",
+      description: <>Represents the <code>span</code> value stored on this instance. Read or assign to update the property.</>
+    },
+    {
+      name: "start",
+      type: "int",
+      description: <>Represents the <code>start</code> value stored on this instance. Read or assign to update the property.</>
+    },
+    {
+      name: "end",
+      type: "int",
+      description: <>Represents the <code>end</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "getSpan()",
+      returns: "TextScriptingStyleSpan",
+      description: <>Returns the current span.</>
+    },
+    {
+      signature: "setSpan(TextScriptingStyleSpan)",
+      returns: "void",
+      description: <>Sets or updates the span.</>
+    },
+    {
+      signature: "getStart()",
+      returns: "int",
+      description: <>Returns the current start.</>
+    },
+    {
+      signature: "setStart(int)",
+      returns: "void",
+      description: <>Sets or updates the start.</>
+    },
+    {
+      signature: "getEnd()",
+      returns: "int",
+      description: <>Returns the current end.</>
+    },
+    {
+      signature: "setEnd(int)",
+      returns: "void",
+      description: <>Sets or updates the end.</>
+    }
+  ]}
+/>

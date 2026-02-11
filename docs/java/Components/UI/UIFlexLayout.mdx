@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # UIFlexLayout
 
 Complete API reference for `UIFlexLayout`, including constructors, attributes, virtual attributes, and methods.
@@ -14,28 +16,41 @@ Complete API reference for `UIFlexLayout`, including constructors, attributes, v
 public class UIFlexLayout extends Component
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| UIFlexLayout([UIFlexLayout]) | Executes `UIFlexLayout` and returns after the underlying engine call finishes. |
-| UIFlexLayout([Engine]) | Executes `UIFlexLayout` and returns after the underlying engine call finishes. |
-| UIFlexLayout() | Executes `UIFlexLayout` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [UIFlexLayout] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (1)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `spacing` | [int] | `set` | Virtual attribute exposed by `setSpacing`. Access it like a field to read or write the underlying value. |
-
-## Methods (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getSpacing()` | `int` | Executes `getSpacing` and returns after the underlying engine call finishes. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "UIFlexLayout(UIFlexLayout)",
+      description: <>Executes <code>UIFlexLayout</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "UIFlexLayout(Engine)",
+      description: <>Executes <code>UIFlexLayout</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "UIFlexLayout()",
+      description: <>Executes <code>UIFlexLayout</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "UIFlexLayout",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "spacing",
+      type: "int",
+      access: "set",
+      description: <>Virtual attribute exposed by <code>setSpacing</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "getSpacing()",
+      returns: "int",
+      description: <>Executes <code>getSpacing</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

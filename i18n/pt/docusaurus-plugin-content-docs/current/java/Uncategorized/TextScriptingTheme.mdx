@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # TextScriptingTheme
 
 Referência completa da API de `TextScriptingTheme`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,36 +16,154 @@ Referência completa da API de `TextScriptingTheme`, incluindo construtores, atr
 public class TextScriptingTheme
 ```
 
-## Métodos (29)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `Color(["#ABB7C5"])` | [Color] [textColor] = [new] | Executa `Color` e retorna quando a chamada do motor termina. |
-| `Color(["#1f1f1f"])` | [Color] [backgroundColor] = [new] | Executa `Color` e retorna quando a chamada do motor termina. |
-| `Color(["#2e2e2e"])` | [Color] [gutterColor] = [new] | Executa `Color` e retorna quando a chamada do motor termina. |
-| `Color(["#555555"])` | [Color] [gutterDividerColor] = [new] | Executa `Color` e retorna quando a chamada do motor termina. |
-| `Color(["#A4A3A3"])` | [Color] [gutterCurrentLineNumberColor] = [new] | Executa `Color` e retorna quando a chamada do motor termina. |
-| `Color(["#616366"])` | [Color] [gutterTextColor] = [new] | Executa `Color` e retorna quando a chamada do motor termina. |
-| `Color(["#3A3A3A"])` | [Color] [selectedLineColor] = [new] | Executa `Color` e retorna quando a chamada do motor termina. |
-| `Color(["#28427F"])` | [Color] [selectionColor] = [new] | Executa `Color` e retorna quando a chamada do motor termina. |
-| `Color(["#987DAC"])` | [Color] [suggestionQueryColor] = [new] | Executa `Color` e retorna quando a chamada do motor termina. |
-| `Color(["#33654B"])` | [Color] [findResultBackgroundColor] = [new] | Executa `Color` e retorna quando a chamada do motor termina. |
-| `Color(["#33654B"])` | [Color] [delimiterBackgroundColor] = [new] | Executa `Color` e retorna quando a chamada do motor termina. |
-| `Color(["#6897BB"])` | [Color] [numberColor] = [new] | Executa `Color` e retorna quando a chamada do motor termina. |
-| `Color(["#E8E2B7"])` | [Color] [operatorColor] = [new] | Executa `Color` e retorna quando a chamada do motor termina. |
-| `Color(["#EC7600"])` | [Color] [keywordColor] = [new] | Executa `Color` e retorna quando a chamada do motor termina. |
-| `Color(["#EC7600"])` | [Color] [typeColor] = [new] | Executa `Color` e retorna quando a chamada do motor termina. |
-| `Color(["#EC7600"])` | [Color] [langConstColor] = [new] | Executa `Color` e retorna quando a chamada do motor termina. |
-| `Color(["#C9C54E"])` | [Color] [preprocessorColor] = [new] | Executa `Color` e retorna quando a chamada do motor termina. |
-| `Color(["#9378A7"])` | [Color] [variableColor] = [new] | Executa `Color` e retorna quando a chamada do motor termina. |
-| `Color(["#FEC76C"])` | [Color] [methodColor] = [new] | Executa `Color` e retorna quando a chamada do motor termina. |
-| `Color(["#6E875A"])` | [Color] [stringColor] = [new] | Executa `Color` e retorna quando a chamada do motor termina. |
-| `Color(["#66747B"])` | [Color] [commentColor] = [new] | Executa `Color` e retorna quando a chamada do motor termina. |
-| `Color(["#E2C077"])` | [Color] [tagColor] = [new] | Executa `Color` e retorna quando a chamada do motor termina. |
-| `Color(["#E2C077"])` | [Color] [tagNameColor] = [new] | Executa `Color` e retorna quando a chamada do motor termina. |
-| `Color(["#BABABA"])` | [Color] [attrNameColor] = [new] | Executa `Color` e retorna quando a chamada do motor termina. |
-| `Color(["#ABC16D"])` | [Color] [attrValueColor] = [new] | Executa `Color` e retorna quando a chamada do motor termina. |
-| `Color(["#6897BB"])` | [Color] [entityRefColor] = [new] | Executa `Color` e retorna quando a chamada do motor termina. |
-| `Color(["#ff0000"])` | [Color] [gutterLineError] = [new] | Executa `Color` e retorna quando a chamada do motor termina. |
-| `Color(["#f1c40f"])` | [Color] [gutterLineAlert] = [new] | Executa `Color` e retorna quando a chamada do motor termina. |
-| `convertInternal()` | `ColorScheme` | Executa `convertInternal` e retorna quando a chamada do motor termina. |
+<ApiDoc
+  attributes={[
+    {
+      name: "textColor",
+      type: "Color",
+      description: <>A cor usada para o texto.</>
+    },
+    {
+      name: "backgroundColor",
+      type: "Color",
+      description: <>A cor usada para o fundo.</>
+    },
+    {
+      name: "gutterColor",
+      type: "Color",
+      description: <>A cor usada para a margem.</>
+    },
+    {
+      name: "gutterDividerColor",
+      type: "Color",
+      description: <>A cor usada para o divisor da margem.</>
+    },
+    {
+      name: "gutterCurrentLineNumberColor",
+      type: "Color",
+      description: <>A cor usada para o número da linha atual na margem.</>
+    },
+    {
+      name: "gutterTextColor",
+      type: "Color",
+      description: <>A cor usada para o texto da margem.</>
+    },
+    {
+      name: "selectedLineColor",
+      type: "Color",
+      description: <>A cor usada para a linha selecionada.</>
+    },
+    {
+      name: "selectionColor",
+      type: "Color",
+      description: <>A cor usada para a seleção de texto.</>
+    },
+    {
+      name: "suggestionQueryColor",
+      type: "Color",
+      description: <>A cor usada para consultas de sugestão.</>
+    },
+    {
+      name: "findResultBackgroundColor",
+      type: "Color",
+      description: <>A cor usada para o fundo do resultado da pesquisa.</>
+    },
+    {
+      name: "delimiterBackgroundColor",
+      type: "Color",
+      description: <>A cor usada para o fundo do delimitador.</>
+    },
+    {
+      name: "numberColor",
+      type: "Color",
+      description: <>A cor usada para números.</>
+    },
+    {
+      name: "operatorColor",
+      type: "Color",
+      description: <>A cor usada para operadores.</>
+    },
+    {
+      name: "keywordColor",
+      type: "Color",
+      description: <>A cor usada para palavras-chave.</>
+    },
+    {
+      name: "typeColor",
+      type: "Color",
+      description: <>A cor usada para tipos.</>
+    },
+    {
+      name: "langConstColor",
+      type: "Color",
+      description: <>A cor usada para constantes da linguagem.</>
+    },
+    {
+      name: "preprocessorColor",
+      type: "Color",
+      description: <>A cor usada para diretivas de pré-processamento.</>
+    },
+    {
+      name: "variableColor",
+      type: "Color",
+      description: <>A cor usada para variáveis.</>
+    },
+    {
+      name: "methodColor",
+      type: "Color",
+      description: <>A cor usada para métodos.</>
+    },
+    {
+      name: "stringColor",
+      type: "Color",
+      description: <>A cor usada para strings.</>
+    },
+    {
+      name: "commentColor",
+      type: "Color",
+      description: <>A cor usada para comentários.</>
+    },
+    {
+      name: "tagColor",
+      type: "Color",
+      description: <>A cor usada para tags.</>
+    },
+    {
+      name: "tagNameColor",
+      type: "Color",
+      description: <>A cor usada para nomes de tags.</>
+    },
+    {
+      name: "attrNameColor",
+      type: "Color",
+      description: <>A cor usada para nomes de atributos.</>
+    },
+    {
+      name: "attrValueColor",
+      type: "Color",
+      description: <>A cor usada para valores de atributos.</>
+    },
+    {
+      name: "entityRefColor",
+      type: "Color",
+      description: <>A cor usada para referências de entidades.</>
+    },
+    {
+      name: "gutterLineError",
+      type: "Color",
+      description: <>A cor usada para linhas de erro na margem.</>
+    },
+    {
+      name: "gutterLineAlert",
+      type: "Color",
+      description: <>A cor usada para linhas de alerta na margem.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "convertInternal()",
+      returns: "ColorScheme",
+      description: <>Executa <code>convertInternal</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+/>

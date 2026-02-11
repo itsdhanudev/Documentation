@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # VoxelHand
 
 Referência completa da API de `VoxelHand`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,40 +16,110 @@ Referência completa da API de `VoxelHand`, incluindo construtores, atributos, a
 public class VoxelHand extends Component
 ```
 
-## Construtores (3)
-
-| Signature | Description |
-| --- | --- |
-| VoxelHand([VoxelHand]) | Executa `VoxelHand` e retorna quando a chamada do motor termina. |
-| VoxelHand([Engine]) | Executa `VoxelHand` e retorna quando a chamada do motor termina. |
-| VoxelHand() | Cria uma nova instância de VoxelHand. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `component` | [VoxelHand] | Representa o valor de `component` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (10)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `blockBroken` | [boolean] | `get` | Atributo virtual exposto por `isBlockBroken`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `blockPlaced` | [boolean] | `get` | Atributo virtual exposto por `isBlockPlaced`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `crossHairColor` | [Color] | `get` | Atributo virtual exposto por `getCrossHairColor`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `crossHairSize` | [Color] | `get/set` | Atributo virtual exposto por `getCrossHairSize`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `crossHairTexture` | [Texture] | `get/set` | Atributo virtual exposto por `getCrossHairTexture`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `distance` | [float] | `get/set` | Atributo virtual exposto por `getDistance`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `lastHitBlockID` | [int] | `get` | Atributo virtual exposto por `getLastHitBlockID`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `listener` | [Listener] | `set` | Atributo virtual exposto por `setListener`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `selectedBlockID` | [int] | `get/set` | Atributo virtual exposto por `getSelectedBlockID`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `showCrosshair` | [boolean] | `get/set` | Atributo virtual exposto por `isShowCrosshair`. Acesse como um campo para ler ou escrever o valor subjacente. |
-
-## Métodos (4)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `requestPut()` | `void` | Executa a operação requestPut. |
-| `requestBreak()` | `void` | Executa a operação requestBreak. |
-| `componentClassMatch(Component, Component)` | `boolean` | Executa `componentClassMatch` e retorna quando a chamada do motor termina. |
-| `getEngineComponent()` | `Component` | Executa `getEngineComponent` e retorna quando a chamada do motor termina. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "VoxelHand(VoxelHand)",
+      description: <>Executa <code>VoxelHand</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "VoxelHand(Engine)",
+      description: <>Executa <code>VoxelHand</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "VoxelHand()",
+      description: <>Cria uma nova instância de VoxelHand.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "component",
+      type: "VoxelHand",
+      description: <>Representa o valor de <code>component</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "blockBroken",
+      type: "boolean",
+      access: "get",
+      description: <>Atributo virtual exposto por <code>isBlockBroken</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "blockPlaced",
+      type: "boolean",
+      access: "get",
+      description: <>Atributo virtual exposto por <code>isBlockPlaced</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "crossHairColor",
+      type: "Color",
+      access: "get",
+      description: <>Atributo virtual exposto por <code>getCrossHairColor</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "crossHairSize",
+      type: "Color",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getCrossHairSize</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "crossHairTexture",
+      type: "Texture",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getCrossHairTexture</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "distance",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getDistance</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "lastHitBlockID",
+      type: "int",
+      access: "get",
+      description: <>Atributo virtual exposto por <code>getLastHitBlockID</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "listener",
+      type: "Listener",
+      access: "set",
+      description: <>Atributo virtual exposto por <code>setListener</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "selectedBlockID",
+      type: "int",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getSelectedBlockID</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "showCrosshair",
+      type: "boolean",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>isShowCrosshair</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "requestPut()",
+      returns: "void",
+      description: <>Executa a operação requestPut.</>
+    },
+    {
+      signature: "requestBreak()",
+      returns: "void",
+      description: <>Executa a operação requestBreak.</>
+    },
+    {
+      signature: "componentClassMatch(Component, Component)",
+      returns: "boolean",
+      description: <>Executa <code>componentClassMatch</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "getEngineComponent()",
+      returns: "Component",
+      description: <>Executa <code>getEngineComponent</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+/>

@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Fog
 
 Referência completa da API de `Fog`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,36 +16,89 @@ Referência completa da API de `Fog`, incluindo construtores, atributos, atribut
 public class Fog extends Component
 ```
 
-## Construtores (3)
-
-| Signature | Description |
-| --- | --- |
-| Fog([Fog]) | Executa `Fog` e retorna quando a chamada do motor termina. |
-| Fog([Engine]) | Executa `Fog` e retorna quando a chamada do motor termina. |
-| Fog() | Executa `Fog` e retorna quando a chamada do motor termina. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [Fog] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (9)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `color` | [Color] | `get/set` | Atributo virtual exposto por `getColor`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `cutOffDistance` | [float] | `get/set` | Atributo virtual exposto por `getCutOffDistance`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `density` | [float] | `get/set` | Atributo virtual exposto por `getDensity`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `distance` | [float] | `get/set` | Atributo virtual exposto por `getDistance`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `fogColorFromIbl` | [boolean] | `set` | Atributo virtual exposto por `setFogColorFromIbl`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `height` | [float] | `get/set` | Atributo virtual exposto por `getHeight`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `heightFalloff` | [float] | `get/set` | Atributo virtual exposto por `getHeightFalloff`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `inScatteringSize` | [float] | `get/set` | Atributo virtual exposto por `getInScatteringSize`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `inScatteringStart` | [float] | `get/set` | Atributo virtual exposto por `getInScatteringStart`. Acesse como um campo para ler ou escrever o valor subjacente. |
-
-## Métodos (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `isFogColorFromIbl()` | `boolean` | Executa `isFogColorFromIbl` e retorna quando a chamada do motor termina. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "Fog(Fog)",
+      description: <>Executa <code>Fog</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "Fog(Engine)",
+      description: <>Executa <code>Fog</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "Fog()",
+      description: <>Executa <code>Fog</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "Fog",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "color",
+      type: "Color",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getColor</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "cutOffDistance",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getCutOffDistance</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "density",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getDensity</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "distance",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getDistance</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "fogColorFromIbl",
+      type: "boolean",
+      access: "set",
+      description: <>Atributo virtual exposto por <code>setFogColorFromIbl</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "height",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getHeight</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "heightFalloff",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getHeightFalloff</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "inScatteringSize",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getInScatteringSize</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "inScatteringStart",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getInScatteringStart</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "isFogColorFromIbl()",
+      returns: "boolean",
+      description: <>Executa <code>isFogColorFromIbl</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+/>

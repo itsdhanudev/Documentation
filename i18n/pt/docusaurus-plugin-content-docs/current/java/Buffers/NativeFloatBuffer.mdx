@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # NativeFloatBuffer
 
 Referência completa da API de `NativeFloatBuffer`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,41 +16,127 @@ Referência completa da API de `NativeFloatBuffer`, incluindo construtores, atri
 public class NativeFloatBuffer
 ```
 
-## Construtores (4)
-
-| Signature | Description |
-| --- | --- |
-| NativeFloatBuffer([NativeFloatBuffer]) | Executa `NativeFloatBuffer` e retorna quando a chamada do motor termina. |
-| NativeFloatBuffer([Engine]) | Executa `NativeFloatBuffer` e retorna quando a chamada do motor termina. |
-| NativeFloatBuffer([int]) | Cria uma nova instância de NativeFloatBuffer. |
-| NativeFloatBuffer([int], [Precision]) | Cria uma nova instância de NativeFloatBuffer. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `buffer` | [NativeFloatBuffer] | Representa o valor de `buffer` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Métodos (19)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `get(int)` | `float` | Retorna a propriedade `propriedade `valor value atual``. |
-| `get(float[])` | `void` | Retorna a propriedade `propriedade `valor value atual``. |
-| `get(float[], int)` | `void` | Retorna a propriedade `propriedade `valor value atual``. |
-| `get(int, float[])` | `void` | Retorna a propriedade `propriedade `valor value atual``. |
-| `get(int, float[], int, int)` | `void` | Retorna a propriedade `propriedade `valor value atual``. |
-| `set(int, float)` | `void` | Define ou atualiza the value. |
-| `put(float)` | `void` | Define ou atualiza the value. |
-| `put(float[])` | `void` | Define ou atualiza the value. |
-| `put(short[])` | `void` | Define ou atualiza the value. |
-| `put(NativeFloatBuffer)` | `void` | Executa `put` e retorna quando a chamada do motor termina. |
-| `capacity()` | `int` | Executa a operação capacity. |
-| `getPosition()` | `int` | Retorna a propriedade `propriedade `position atual``. |
-| `position(int)` | `int` | Executa a operação position usando os parâmetros informados (idx). |
-| `setPosition(int)` | `void` | Define ou atualiza a propriedade `propriedade `position``. |
-| `set(float[])` | `void` | Define ou atualiza the value. |
-| `set(float[], int)` | `void` | Define ou atualiza the value. |
-| `set(int, float[])` | `void` | Define ou atualiza the value. |
-| `set(int, float[], int, int)` | `void` | Define ou atualiza the value. |
-| `getPrecision()` | `Precision` | Retorna a propriedade `propriedade `precision atual``. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "NativeFloatBuffer(NativeFloatBuffer)",
+      description: <>Executa <code>NativeFloatBuffer</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "NativeFloatBuffer(Engine)",
+      description: <>Executa <code>NativeFloatBuffer</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "NativeFloatBuffer(int)",
+      description: <>Cria uma nova instância de NativeFloatBuffer.</>
+    },
+    {
+      signature: "NativeFloatBuffer(int, Precision)",
+      description: <>Cria uma nova instância de NativeFloatBuffer.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "buffer",
+      type: "NativeFloatBuffer",
+      description: <>Representa o valor de <code>buffer</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "get(int)",
+      returns: "float",
+      description: <>Retorna a propriedade <code>propriedade </code>valor value atual``.</>
+    },
+    {
+      signature: "get(float[])",
+      returns: "void",
+      description: <>Retorna a propriedade <code>propriedade </code>valor value atual``.</>
+    },
+    {
+      signature: "get(float[], int)",
+      returns: "void",
+      description: <>Retorna a propriedade <code>propriedade </code>valor value atual``.</>
+    },
+    {
+      signature: "get(int, float[])",
+      returns: "void",
+      description: <>Retorna a propriedade <code>propriedade </code>valor value atual``.</>
+    },
+    {
+      signature: "get(int, float[], int, int)",
+      returns: "void",
+      description: <>Retorna a propriedade <code>propriedade </code>valor value atual``.</>
+    },
+    {
+      signature: "set(int, float)",
+      returns: "void",
+      description: <>Define ou atualiza the value.</>
+    },
+    {
+      signature: "put(float)",
+      returns: "void",
+      description: <>Define ou atualiza the value.</>
+    },
+    {
+      signature: "put(float[])",
+      returns: "void",
+      description: <>Define ou atualiza the value.</>
+    },
+    {
+      signature: "put(short[])",
+      returns: "void",
+      description: <>Define ou atualiza the value.</>
+    },
+    {
+      signature: "put(NativeFloatBuffer)",
+      returns: "void",
+      description: <>Executa <code>put</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "capacity()",
+      returns: "int",
+      description: <>Executa a operação capacity.</>
+    },
+    {
+      signature: "getPosition()",
+      returns: "int",
+      description: <>Retorna a propriedade <code>propriedade </code>position atual``.</>
+    },
+    {
+      signature: "position(int)",
+      returns: "int",
+      description: <>Executa a operação position usando os parâmetros informados (idx).</>
+    },
+    {
+      signature: "setPosition(int)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>position``.</>
+    },
+    {
+      signature: "set(float[])",
+      returns: "void",
+      description: <>Define ou atualiza the value.</>
+    },
+    {
+      signature: "set(float[], int)",
+      returns: "void",
+      description: <>Define ou atualiza the value.</>
+    },
+    {
+      signature: "set(int, float[])",
+      returns: "void",
+      description: <>Define ou atualiza the value.</>
+    },
+    {
+      signature: "set(int, float[], int, int)",
+      returns: "void",
+      description: <>Define ou atualiza the value.</>
+    },
+    {
+      signature: "getPrecision()",
+      returns: "Precision",
+      description: <>Retorna a propriedade <code>propriedade </code>precision atual``.</>
+    }
+  ]}
+/>

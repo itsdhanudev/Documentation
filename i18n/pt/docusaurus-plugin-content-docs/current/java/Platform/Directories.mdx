@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Directories
 
 Referência completa da API de `Directories`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,9 +16,29 @@ Referência completa da API de `Directories`, incluindo construtores, atributos,
 public class Directories
 ```
 
-## Métodos Estáticos (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `internal()` | `String` | Executa a operação internal. |
-| `getProjectFolder()` | `String` | Retorna a propriedade `propriedade `project folder atual``. |
+<ApiDoc
+  methods={[
+    {
+      signature: "internal()",
+      returns: "String",
+      description: <>Executa a operação internal.</>
+    },
+    {
+      signature: "getProjectFolder()",
+      returns: "String",
+      description: <>Retorna a propriedade <code>propriedade </code>project folder atual``.</>
+    }
+  ]}
+  staticMethods={[
+    {
+      signature: "internal()",
+      returns: "String",
+      description: <>Executa a operação internal.</>
+    },
+    {
+      signature: "getProjectFolder()",
+      returns: "String",
+      description: <>Retorna a propriedade <code>propriedade </code>project folder atual``.</>
+    }
+  ]}
+/>

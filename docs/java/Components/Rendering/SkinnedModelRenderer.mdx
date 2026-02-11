@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # SkinnedModelRenderer
 
 Complete API reference for `SkinnedModelRenderer`, including constructors, attributes, virtual attributes, and methods.
@@ -14,37 +16,109 @@ Complete API reference for `SkinnedModelRenderer`, including constructors, attri
 public class SkinnedModelRenderer extends Component
 ```
 
-## Constructors (2)
-
-| Signature | Description |
-| --- | --- |
-| SkinnedModelRenderer([SkinnedModelRenderer]) | Executes `SkinnedModelRenderer` and returns after the underlying engine call finishes. |
-| SkinnedModelRenderer() | Executes `SkinnedModelRenderer` and returns after the underlying engine call finishes. |
-
-## Attributes (9)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `CUBE` | [int] | Represents the `CUBE` value stored on this instance. Read or assign to update the property. |
-| `SPHERE` | [int] | Represents the `SPHERE` value stored on this instance. Read or assign to update the property. |
-| `CONE` | [int] | Represents the `CONE` value stored on this instance. Read or assign to update the property. |
-| `CYLINDER` | [int] | Represents the `CYLINDER` value stored on this instance. Read or assign to update the property. |
-| `CIRCLE` | [int] | Represents the `CIRCLE` value stored on this instance. Read or assign to update the property. |
-| `TORUS` | [int] | Represents the `TORUS` value stored on this instance. Read or assign to update the property. |
-| `SQUARE` | [int] | Represents the `SQUARE` value stored on this instance. Read or assign to update the property. |
-| `SQUARE90` | [int] | Represents the `SQUARE90` value stored on this instance. Read or assign to update the property. |
-| `component` | [SkinnedModelRenderer] | Represents the `component` value stored on this instance. Read or assign to update the property. |
-
-## Methods (9)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `setModelFile(VertexFile)` | `void` | Sets or updates the model file. |
-| `setMaterialFile(MaterialFile)` | `void` | Sets or updates the material file. |
-| `getMaterial()` | `Material` | Returns the current material. |
-| `setMaterial(Material)` | `void` | Sets or updates the material. |
-| `getVertex()` | `Vertex` | Returns the current vertex. |
-| `setVertex(Vertex)` | `void` | Sets or updates the vertex. |
-| `attachPrimitive(int)` | `void` | Performs the attachPrimitive operation using the provided parameters (primitive). |
-| `componentClassMatch(Component, Component)` | `boolean` | Executes `componentClassMatch` and returns after the underlying engine call finishes. |
-| `getEngineComponent()` | `Component` | Executes `getEngineComponent` and returns after the underlying engine call finishes. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "SkinnedModelRenderer(SkinnedModelRenderer)",
+      description: <>Executes <code>SkinnedModelRenderer</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "SkinnedModelRenderer()",
+      description: <>Executes <code>SkinnedModelRenderer</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "CUBE",
+      type: "int",
+      description: <>Represents the <code>CUBE</code> value stored on this instance. Read or assign to update the property.</>
+    },
+    {
+      name: "SPHERE",
+      type: "int",
+      description: <>Represents the <code>SPHERE</code> value stored on this instance. Read or assign to update the property.</>
+    },
+    {
+      name: "CONE",
+      type: "int",
+      description: <>Represents the <code>CONE</code> value stored on this instance. Read or assign to update the property.</>
+    },
+    {
+      name: "CYLINDER",
+      type: "int",
+      description: <>Represents the <code>CYLINDER</code> value stored on this instance. Read or assign to update the property.</>
+    },
+    {
+      name: "CIRCLE",
+      type: "int",
+      description: <>Represents the <code>CIRCLE</code> value stored on this instance. Read or assign to update the property.</>
+    },
+    {
+      name: "TORUS",
+      type: "int",
+      description: <>Represents the <code>TORUS</code> value stored on this instance. Read or assign to update the property.</>
+    },
+    {
+      name: "SQUARE",
+      type: "int",
+      description: <>Represents the <code>SQUARE</code> value stored on this instance. Read or assign to update the property.</>
+    },
+    {
+      name: "SQUARE90",
+      type: "int",
+      description: <>Represents the <code>SQUARE90</code> value stored on this instance. Read or assign to update the property.</>
+    },
+    {
+      name: "component",
+      type: "SkinnedModelRenderer",
+      description: <>Represents the <code>component</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "setModelFile(VertexFile)",
+      returns: "void",
+      description: <>Sets or updates the model file.</>
+    },
+    {
+      signature: "setMaterialFile(MaterialFile)",
+      returns: "void",
+      description: <>Sets or updates the material file.</>
+    },
+    {
+      signature: "getMaterial()",
+      returns: "Material",
+      description: <>Returns the current material.</>
+    },
+    {
+      signature: "setMaterial(Material)",
+      returns: "void",
+      description: <>Sets or updates the material.</>
+    },
+    {
+      signature: "getVertex()",
+      returns: "Vertex",
+      description: <>Returns the current vertex.</>
+    },
+    {
+      signature: "setVertex(Vertex)",
+      returns: "void",
+      description: <>Sets or updates the vertex.</>
+    },
+    {
+      signature: "attachPrimitive(int)",
+      returns: "void",
+      description: <>Performs the attachPrimitive operation using the provided parameters (primitive).</>
+    },
+    {
+      signature: "componentClassMatch(Component, Component)",
+      returns: "boolean",
+      description: <>Executes <code>componentClassMatch</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "getEngineComponent()",
+      returns: "Component",
+      description: <>Executes <code>getEngineComponent</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

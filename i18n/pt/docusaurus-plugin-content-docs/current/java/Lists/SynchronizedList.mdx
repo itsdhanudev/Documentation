@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # SynchronizedList
 
 Referência completa da API de `SynchronizedList`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,39 +16,142 @@ Referência completa da API de `SynchronizedList`, incluindo construtores, atrib
 public class SynchronizedList
 ```
 
-## Construtores (2)
-
-| Signature | Description |
-| --- | --- |
-| SynchronizedList() | Executa `SynchronizedList` e retorna quando a chamada do motor termina. |
-| SynchronizedList([List]) | Cria uma nova instância de SynchronizedList. |
-
-## Métodos (25)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `size()` | `int` | Executa a operação size. |
-| `isEmpty()` | `boolean` | Retorna se empty é verdadeiro. |
-| `contains(Object)` | `boolean` | Executa a operação contains usando os parâmetros informados (o). |
-| `iterator()` | `Iterator` | Executa a operação iterator. |
-| `toArray()` | [Object][] | Executa a operação toArray. |
-| `add(Object)` | `boolean` | Adiciona an item à coleção. |
-| `remove(Object)` | `boolean` | Remove an item da coleção. |
-| `addAll(Collection)` | `boolean` | Adiciona all à coleção. |
-| `addAll(int, Collection)` | `boolean` | Adiciona all à coleção. |
-| `clear()` | `void` | Limpa ou redefine o estado do objeto. |
-| `equals(Object)` | `boolean` | Compara esta instância com outra para igualdade/ordem. |
-| `hashCode()` | `int` | Retorna se code é verdadeiro. |
-| `get(int)` | `Object` | Retorna a propriedade `propriedade `valor value atual``. |
-| `set(int, Object)` | `Object` | Define ou atualiza the value. |
-| `add(int, Object)` | `void` | Adiciona an item à coleção. |
-| `remove(int)` | `Object` | Remove an item da coleção. |
-| `indexOf(Object)` | `int` | Executa a operação indexOf usando os parâmetros informados (o). |
-| `lastIndexOf(Object)` | `int` | Executa a operação lastIndexOf usando os parâmetros informados (o). |
-| `listIterator()` | `ListIterator` | Executa a operação listIterator. |
-| `listIterator(int)` | `ListIterator` | Executa a operação listIterator usando os parâmetros informados (i). |
-| `subList(int, int)` | `List` | Executa a operação subList usando os parâmetros informados (i, i1). |
-| `retainAll(Collection)` | `boolean` | Executa a operação retainAll usando os parâmetros informados (collection). |
-| `removeAll(Collection)` | `boolean` | Remove all da coleção. |
-| `containsAll(Collection)` | `boolean` | Executa a operação containsAll usando os parâmetros informados (collection). |
-| `toArray(Object[])` | [Object][] | Executa a operação toArray usando os parâmetros informados (objects). |
+<ApiDoc
+  constructors={[
+    {
+      signature: "SynchronizedList()",
+      description: <>Executa <code>SynchronizedList</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "SynchronizedList(List)",
+      description: <>Cria uma nova instância de SynchronizedList.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "size()",
+      returns: "int",
+      description: <>Executa a operação size.</>
+    },
+    {
+      signature: "isEmpty()",
+      returns: "boolean",
+      description: <>Retorna se empty é verdadeiro.</>
+    },
+    {
+      signature: "contains(Object)",
+      returns: "boolean",
+      description: <>Executa a operação contains usando os parâmetros informados (o).</>
+    },
+    {
+      signature: "iterator()",
+      returns: "Iterator",
+      description: <>Executa a operação iterator.</>
+    },
+    {
+      signature: "toArray()",
+      returns: "Object[]",
+      description: <>Executa a operação toArray.</>
+    },
+    {
+      signature: "add(Object)",
+      returns: "boolean",
+      description: <>Adiciona an item à coleção.</>
+    },
+    {
+      signature: "remove(Object)",
+      returns: "boolean",
+      description: <>Remove an item da coleção.</>
+    },
+    {
+      signature: "addAll(Collection)",
+      returns: "boolean",
+      description: <>Adiciona all à coleção.</>
+    },
+    {
+      signature: "addAll(int, Collection)",
+      returns: "boolean",
+      description: <>Adiciona all à coleção.</>
+    },
+    {
+      signature: "clear()",
+      returns: "void",
+      description: <>Limpa ou redefine o estado do objeto.</>
+    },
+    {
+      signature: "equals(Object)",
+      returns: "boolean",
+      description: <>Compara esta instância com outra para igualdade/ordem.</>
+    },
+    {
+      signature: "hashCode()",
+      returns: "int",
+      description: <>Retorna se code é verdadeiro.</>
+    },
+    {
+      signature: "get(int)",
+      returns: "Object",
+      description: <>Retorna a propriedade <code>propriedade </code>valor value atual``.</>
+    },
+    {
+      signature: "set(int, Object)",
+      returns: "Object",
+      description: <>Define ou atualiza the value.</>
+    },
+    {
+      signature: "add(int, Object)",
+      returns: "void",
+      description: <>Adiciona an item à coleção.</>
+    },
+    {
+      signature: "remove(int)",
+      returns: "Object",
+      description: <>Remove an item da coleção.</>
+    },
+    {
+      signature: "indexOf(Object)",
+      returns: "int",
+      description: <>Executa a operação indexOf usando os parâmetros informados (o).</>
+    },
+    {
+      signature: "lastIndexOf(Object)",
+      returns: "int",
+      description: <>Executa a operação lastIndexOf usando os parâmetros informados (o).</>
+    },
+    {
+      signature: "listIterator()",
+      returns: "ListIterator",
+      description: <>Executa a operação listIterator.</>
+    },
+    {
+      signature: "listIterator(int)",
+      returns: "ListIterator",
+      description: <>Executa a operação listIterator usando os parâmetros informados (i).</>
+    },
+    {
+      signature: "subList(int, int)",
+      returns: "List",
+      description: <>Executa a operação subList usando os parâmetros informados (i, i1).</>
+    },
+    {
+      signature: "retainAll(Collection)",
+      returns: "boolean",
+      description: <>Executa a operação retainAll usando os parâmetros informados (collection).</>
+    },
+    {
+      signature: "removeAll(Collection)",
+      returns: "boolean",
+      description: <>Remove all da coleção.</>
+    },
+    {
+      signature: "containsAll(Collection)",
+      returns: "boolean",
+      description: <>Executa a operação containsAll usando os parâmetros informados (collection).</>
+    },
+    {
+      signature: "toArray(Object[])",
+      returns: "Object[]",
+      description: <>Executa a operação toArray usando os parâmetros informados (objects).</>
+    }
+  ]}
+/>

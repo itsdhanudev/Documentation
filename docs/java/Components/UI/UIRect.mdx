@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # UIRect
 
 Complete API reference for `UIRect`, including constructors, attributes, virtual attributes, and methods.
@@ -14,44 +16,136 @@ Complete API reference for `UIRect`, including constructors, attributes, virtual
 public class UIRect extends Component
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| UIRect([UIRect]) | Executes `UIRect` and returns after the underlying engine call finishes. |
-| UIRect([Engine]) | Executes `UIRect` and returns after the underlying engine call finishes. |
-| UIRect() | Creates a new instance of UIRect. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [UIRect] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (16)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `autoSH` | [boolean] | `set` | Virtual attribute exposed by `setAutoSH`. Access it like a field to read or write the underlying value. |
-| `autoSW` | [boolean] | `set` | Virtual attribute exposed by `setAutoSW`. Access it like a field to read or write the underlying value. |
-| `marginBottom` | [int] | `get/set` | Virtual attribute exposed by `getMarginBottom`. Access it like a field to read or write the underlying value. |
-| `marginLeft` | [int] | `get/set` | Virtual attribute exposed by `getMarginLeft`. Access it like a field to read or write the underlying value. |
-| `marginRight` | [int] | `get/set` | Virtual attribute exposed by `getMarginRight`. Access it like a field to read or write the underlying value. |
-| `marginTop` | [int] | `get/set` | Virtual attribute exposed by `getMarginTop`. Access it like a field to read or write the underlying value. |
-| `paddingBottom` | [int] | `get/set` | Virtual attribute exposed by `getPaddingBottom`. Access it like a field to read or write the underlying value. |
-| `paddingLeft` | [int] | `get/set` | Virtual attribute exposed by `getPaddingLeft`. Access it like a field to read or write the underlying value. |
-| `paddingRight` | [int] | `get/set` | Virtual attribute exposed by `getPaddingRight`. Access it like a field to read or write the underlying value. |
-| `paddingTop` | [int] | `get/set` | Virtual attribute exposed by `getPaddingTop`. Access it like a field to read or write the underlying value. |
-| `position` | [int] | `get/set` | Virtual attribute exposed by `getPosition`. Access it like a field to read or write the underlying value. |
-| `positionX` | [int] | `get/set` | Virtual attribute exposed by `getPositionX`. Access it like a field to read or write the underlying value. |
-| `positionY` | [int] | `get/set` | Virtual attribute exposed by `getPositionY`. Access it like a field to read or write the underlying value. |
-| `size` | [int] | `get/set` | Virtual attribute exposed by `getSize`. Access it like a field to read or write the underlying value. |
-| `sizeX` | [int] | `get/set` | Virtual attribute exposed by `getSizeX`. Access it like a field to read or write the underlying value. |
-| `sizeY` | [int] | `get/set` | Virtual attribute exposed by `getSizeY`. Access it like a field to read or write the underlying value. |
-
-## Methods (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `isAutoSH()` | `boolean` | Returns whether auto sh is true. |
-| `isAutoSW()` | `boolean` | Returns whether auto sw is true. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "UIRect(UIRect)",
+      description: <>Executes <code>UIRect</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "UIRect(Engine)",
+      description: <>Executes <code>UIRect</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "UIRect()",
+      description: <>Creates a new instance of UIRect.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "UIRect",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "autoSH",
+      type: "boolean",
+      access: "set",
+      description: <>Virtual attribute exposed by <code>setAutoSH</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "autoSW",
+      type: "boolean",
+      access: "set",
+      description: <>Virtual attribute exposed by <code>setAutoSW</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "marginBottom",
+      type: "int",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getMarginBottom</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "marginLeft",
+      type: "int",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getMarginLeft</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "marginRight",
+      type: "int",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getMarginRight</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "marginTop",
+      type: "int",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getMarginTop</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "paddingBottom",
+      type: "int",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getPaddingBottom</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "paddingLeft",
+      type: "int",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getPaddingLeft</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "paddingRight",
+      type: "int",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getPaddingRight</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "paddingTop",
+      type: "int",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getPaddingTop</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "position",
+      type: "int",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getPosition</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "positionX",
+      type: "int",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getPositionX</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "positionY",
+      type: "int",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getPositionY</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "size",
+      type: "int",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getSize</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "sizeX",
+      type: "int",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getSizeX</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "sizeY",
+      type: "int",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getSizeY</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "isAutoSH()",
+      returns: "boolean",
+      description: <>Returns whether auto sh is true.</>
+    },
+    {
+      signature: "isAutoSW()",
+      returns: "boolean",
+      description: <>Returns whether auto sw is true.</>
+    }
+  ]}
+/>

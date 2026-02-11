@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # GizmoTransform
 
 Complete API reference for `GizmoTransform`, including constructors, attributes, virtual attributes, and methods.
@@ -14,37 +16,88 @@ Complete API reference for `GizmoTransform`, including constructors, attributes,
 public class GizmoTransform extends GizmoElement
 ```
 
-## Constructors (4)
-
-| Signature | Description |
-| --- | --- |
-| GizmoTransform() | Creates a new instance of GizmoTransform. |
-| GizmoTransform([Vector3]) | Creates a new instance of GizmoTransform. |
-| GizmoTransform([Vector3], [Quaternion]) | Creates a new instance of GizmoTransform. |
-| GizmoTransform([Vector3], [Quaternion], [Vector3]) | Creates a new instance of GizmoTransform. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `rotMatrix` | [float][] | Represents the `rotMatrix` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (4)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `matrix` | [float][] | `get/set` | Virtual attribute exposed by `getMatrix`. Access it like a field to read or write the underlying value. |
-| `position` | [Vector3] | `get/set` | Virtual attribute exposed by `getPosition`. Access it like a field to read or write the underlying value. |
-| `rotation` | [Quaternion] | `get/set` | Virtual attribute exposed by `getRotation`. Access it like a field to read or write the underlying value. |
-| `scale` | [Vector3] | `get/set` | Virtual attribute exposed by `getScale`. Access it like a field to read or write the underlying value. |
-
-## Methods (6)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `setPosition(float, float, float)` | `void` | Sets or updates the position. |
-| `setPosition(float)` | `void` | Sets or updates the position. |
-| `setRotation(float, float, float)` | `void` | Sets or updates the rotation. |
-| `setRotation(float, float, float, float)` | `void` | Sets or updates the rotation. |
-| `setScale(float, float, float)` | `void` | Sets or updates the scale. |
-| `setScale(float)` | `void` | Sets or updates the scale. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "GizmoTransform()",
+      description: <>Creates a new instance of GizmoTransform.</>
+    },
+    {
+      signature: "GizmoTransform(Vector3)",
+      description: <>Creates a new instance of GizmoTransform.</>
+    },
+    {
+      signature: "GizmoTransform(Vector3, Quaternion)",
+      description: <>Creates a new instance of GizmoTransform.</>
+    },
+    {
+      signature: "GizmoTransform(Vector3, Quaternion, Vector3)",
+      description: <>Creates a new instance of GizmoTransform.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "rotMatrix",
+      type: "float[]",
+      description: <>Represents the <code>rotMatrix</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "matrix",
+      type: "float[]",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getMatrix</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "position",
+      type: "Vector3",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getPosition</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "rotation",
+      type: "Quaternion",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getRotation</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "scale",
+      type: "Vector3",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getScale</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "setPosition(float, float, float)",
+      returns: "void",
+      description: <>Sets or updates the position.</>
+    },
+    {
+      signature: "setPosition(float)",
+      returns: "void",
+      description: <>Sets or updates the position.</>
+    },
+    {
+      signature: "setRotation(float, float, float)",
+      returns: "void",
+      description: <>Sets or updates the rotation.</>
+    },
+    {
+      signature: "setRotation(float, float, float, float)",
+      returns: "void",
+      description: <>Sets or updates the rotation.</>
+    },
+    {
+      signature: "setScale(float, float, float)",
+      returns: "void",
+      description: <>Sets or updates the scale.</>
+    },
+    {
+      signature: "setScale(float)",
+      returns: "void",
+      description: <>Sets or updates the scale.</>
+    }
+  ]}
+/>

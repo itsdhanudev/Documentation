@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # ATextView
 
 Complete API reference for `ATextView`, including constructors, attributes, virtual attributes, and methods.
@@ -14,25 +16,73 @@ Complete API reference for `ATextView`, including constructors, attributes, virt
 public class ATextView extends TextView
 ```
 
-## Constructors (1)
-
-| Signature | Description |
-| --- | --- |
-| ATextView() | Creates a new instance of ATextView. |
-
-## Methods (12)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getViewID()` | `String` | Returns the current view id. |
-| `findByID(String)` | `<T extends View> T` | Performs the findByID operation using the provided parameters (id). |
-| `setOnGenericMotionListener(OnGenericMotionListener)` | `void` | Sets or updates the on generic motion listener. |
-| `setOnLongClickListener(OnLongClickListener)` | `void` | Sets or updates the on long click listener. |
-| `setOnClickListener(OnClickListener)` | `void` | Sets or updates the on click listener. |
-| `setOnTouchListener(OnTouchListener)` | `void` | Sets or updates the on touch listener. |
-| `setOnHoverListener(OnHoverListener)` | `void` | Sets or updates the on hover listener. |
-| `setOnDragListener(OnDragListener)` | `void` | Sets or updates the on drag listener. |
-| `setOnKeyListener(OnKeyListener)` | `void` | Sets or updates the on key listener. |
-| `setOnScrollChangeListener(OnScrollChangeListener)` | `void` | Sets or updates the on scroll change listener. |
-| `setOnFocusChangeListener(OnFocusChangeListener)` | `void` | Sets or updates the on focus change listener. |
-| `setOnCreateContextMenuListener(OnCreateContextMenuListener)` | `void` | Sets or updates the on create context menu listener. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "ATextView()",
+      description: <>Creates a new instance of ATextView.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "getViewID()",
+      returns: "String",
+      description: <>Returns the current view id.</>
+    },
+    {
+      signature: "findByID(String)",
+      returns: "<T extends View> T",
+      description: <>Performs the findByID operation using the provided parameters (id).</>
+    },
+    {
+      signature: "setOnGenericMotionListener(OnGenericMotionListener)",
+      returns: "void",
+      description: <>Sets or updates the on generic motion listener.</>
+    },
+    {
+      signature: "setOnLongClickListener(OnLongClickListener)",
+      returns: "void",
+      description: <>Sets or updates the on long click listener.</>
+    },
+    {
+      signature: "setOnClickListener(OnClickListener)",
+      returns: "void",
+      description: <>Sets or updates the on click listener.</>
+    },
+    {
+      signature: "setOnTouchListener(OnTouchListener)",
+      returns: "void",
+      description: <>Sets or updates the on touch listener.</>
+    },
+    {
+      signature: "setOnHoverListener(OnHoverListener)",
+      returns: "void",
+      description: <>Sets or updates the on hover listener.</>
+    },
+    {
+      signature: "setOnDragListener(OnDragListener)",
+      returns: "void",
+      description: <>Sets or updates the on drag listener.</>
+    },
+    {
+      signature: "setOnKeyListener(OnKeyListener)",
+      returns: "void",
+      description: <>Sets or updates the on key listener.</>
+    },
+    {
+      signature: "setOnScrollChangeListener(OnScrollChangeListener)",
+      returns: "void",
+      description: <>Sets or updates the on scroll change listener.</>
+    },
+    {
+      signature: "setOnFocusChangeListener(OnFocusChangeListener)",
+      returns: "void",
+      description: <>Sets or updates the on focus change listener.</>
+    },
+    {
+      signature: "setOnCreateContextMenuListener(OnCreateContextMenuListener)",
+      returns: "void",
+      description: <>Sets or updates the on create context menu listener.</>
+    }
+  ]}
+/>

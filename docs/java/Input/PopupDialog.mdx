@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # PopupDialog
 
 Complete API reference for `PopupDialog`, including constructors, attributes, virtual attributes, and methods.
@@ -14,39 +16,117 @@ Complete API reference for `PopupDialog`, including constructors, attributes, vi
 public class PopupDialog
 ```
 
-## Constructors (4)
-
-| Signature | Description |
-| --- | --- |
-| PopupDialog([SweetAlertDialog]) | Executes `PopupDialog` and returns after the underlying engine call finishes. |
-| PopupDialog([int]) | Executes `PopupDialog` and returns after the underlying engine call finishes. |
-| PopupDialog([String], [String]) | Creates a new instance of PopupDialog. |
-| PopupDialog([int], [String], [String]) | Creates a new instance of PopupDialog. |
-
-## Attributes (5)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `SUCCESS` | [int] | Represents the `SUCCESS` value stored on this instance. Read or assign to update the property. |
-| `ERROR` | [int] | Represents the `ERROR` value stored on this instance. Read or assign to update the property. |
-| `ALERT` | [int] | Represents the `ALERT` value stored on this instance. Read or assign to update the property. |
-| `PROGRESS` | [int] | Represents the `PROGRESS` value stored on this instance. Read or assign to update the property. |
-| `dialog` | [SweetAlertDialog] | Represents the `dialog` value stored on this instance. Read or assign to update the property. |
-
-## Methods (13)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `setConfirmButton(String, PopupDialogListener)` | `void` | Sets or updates the confirm button. |
-| `setCancelButton(String, PopupDialogListener)` | `void` | Sets or updates the cancel button. |
-| `setMidButton(String, PopupDialogListener)` | `void` | Sets or updates the mid button. |
-| `setConfirmButton(String, Listener)` | `void` | Sets or updates the confirm button. |
-| `setCancelButton(String, Listener)` | `void` | Sets or updates the cancel button. |
-| `setMidButton(String, Listener)` | `void` | Sets or updates the mid button. |
-| `getTittle()` | `String` | Returns the current tittle. |
-| `setName(String)` | `void` | Sets or updates the name. |
-| `getMessage()` | `String` | Returns the current message. |
-| `setMessage(String)` | `void` | Sets or updates the message. |
-| `changeType(int)` | `void` | Performs the changeType operation using the provided parameters (type). |
-| `show()` | `void` | Executes `show` and returns after the underlying engine call finishes. |
-| `dismiss()` | `void` | Executes `dismiss` and returns after the underlying engine call finishes. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "PopupDialog(SweetAlertDialog)",
+      description: <>Executes <code>PopupDialog</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "PopupDialog(int)",
+      description: <>Executes <code>PopupDialog</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "PopupDialog(String, String)",
+      description: <>Creates a new instance of PopupDialog.</>
+    },
+    {
+      signature: "PopupDialog(int, String, String)",
+      description: <>Creates a new instance of PopupDialog.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "SUCCESS",
+      type: "int",
+      description: <>Represents the <code>SUCCESS</code> value stored on this instance. Read or assign to update the property.</>
+    },
+    {
+      name: "ERROR",
+      type: "int",
+      description: <>Represents the <code>ERROR</code> value stored on this instance. Read or assign to update the property.</>
+    },
+    {
+      name: "ALERT",
+      type: "int",
+      description: <>Represents the <code>ALERT</code> value stored on this instance. Read or assign to update the property.</>
+    },
+    {
+      name: "PROGRESS",
+      type: "int",
+      description: <>Represents the <code>PROGRESS</code> value stored on this instance. Read or assign to update the property.</>
+    },
+    {
+      name: "dialog",
+      type: "SweetAlertDialog",
+      description: <>Represents the <code>dialog</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "setConfirmButton(String, PopupDialogListener)",
+      returns: "void",
+      description: <>Sets or updates the confirm button.</>
+    },
+    {
+      signature: "setCancelButton(String, PopupDialogListener)",
+      returns: "void",
+      description: <>Sets or updates the cancel button.</>
+    },
+    {
+      signature: "setMidButton(String, PopupDialogListener)",
+      returns: "void",
+      description: <>Sets or updates the mid button.</>
+    },
+    {
+      signature: "setConfirmButton(String, Listener)",
+      returns: "void",
+      description: <>Sets or updates the confirm button.</>
+    },
+    {
+      signature: "setCancelButton(String, Listener)",
+      returns: "void",
+      description: <>Sets or updates the cancel button.</>
+    },
+    {
+      signature: "setMidButton(String, Listener)",
+      returns: "void",
+      description: <>Sets or updates the mid button.</>
+    },
+    {
+      signature: "getTittle()",
+      returns: "String",
+      description: <>Returns the current tittle.</>
+    },
+    {
+      signature: "setName(String)",
+      returns: "void",
+      description: <>Sets or updates the name.</>
+    },
+    {
+      signature: "getMessage()",
+      returns: "String",
+      description: <>Returns the current message.</>
+    },
+    {
+      signature: "setMessage(String)",
+      returns: "void",
+      description: <>Sets or updates the message.</>
+    },
+    {
+      signature: "changeType(int)",
+      returns: "void",
+      description: <>Performs the changeType operation using the provided parameters (type).</>
+    },
+    {
+      signature: "show()",
+      returns: "void",
+      description: <>Executes <code>show</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "dismiss()",
+      returns: "void",
+      description: <>Executes <code>dismiss</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

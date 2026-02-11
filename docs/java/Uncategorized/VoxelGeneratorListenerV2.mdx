@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # VoxelGeneratorListenerV2
 
 Complete API reference for `VoxelGeneratorListenerV2`, including constructors, attributes, virtual attributes, and methods.
@@ -14,16 +16,52 @@ Complete API reference for `VoxelGeneratorListenerV2`, including constructors, a
 public interface VoxelGeneratorListenerV2
 ```
 
-## Methods (9)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getGroundHeight(int, int)` | `int` | Executes `getGroundHeight` and returns after the underlying engine call finishes. |
-| `getBlockType(int, int, int, int)` | `int` | Executes `getBlockType` and returns after the underlying engine call finishes. |
-| `storeChunk(OH3LevelIntArray, int, int)` | `void` | Executes `storeChunk` and returns after the underlying engine call finishes. |
-| `loadChunk(int, int)` | `OH3LevelIntArray` | Executes `loadChunk` and returns after the underlying engine call finishes. |
-| `onChunkCreated(SpatialObject, VoxelChunk)` | `void` | Executes `onChunkCreated` and returns after the underlying engine call finishes. |
-| `onChunkBuilt(SpatialObject, VoxelChunk)` | `void` | Executes `onChunkBuilt` and returns after the underlying engine call finishes. |
-| `drawFace(int, int, int, Point3)` | `boolean` | Executes `drawFace` and returns after the underlying engine call finishes. |
-| `getTextureIndex(int, int, int)` | `int` | Executes `getTextureIndex` and returns after the underlying engine call finishes. |
-| `onFaceBuilt(SpatialObject, VoxelChunk, int, int, int, Point3, int, int, int, int)` | `void` | Executes `onFaceBuilt` and returns after the underlying engine call finishes. |
+<ApiDoc
+  methods={[
+    {
+      signature: "getGroundHeight(int, int)",
+      returns: "int",
+      description: <>Executes <code>getGroundHeight</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "getBlockType(int, int, int, int)",
+      returns: "int",
+      description: <>Executes <code>getBlockType</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "storeChunk(OH3LevelIntArray, int, int)",
+      returns: "void",
+      description: <>Executes <code>storeChunk</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "loadChunk(int, int)",
+      returns: "OH3LevelIntArray",
+      description: <>Executes <code>loadChunk</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "onChunkCreated(SpatialObject, VoxelChunk)",
+      returns: "void",
+      description: <>Executes <code>onChunkCreated</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "onChunkBuilt(SpatialObject, VoxelChunk)",
+      returns: "void",
+      description: <>Executes <code>onChunkBuilt</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "drawFace(int, int, int, Point3)",
+      returns: "boolean",
+      description: <>Executes <code>drawFace</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "getTextureIndex(int, int, int)",
+      returns: "int",
+      description: <>Executes <code>getTextureIndex</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "onFaceBuilt(SpatialObject, VoxelChunk, int, int, int, Point3, int, int, int, int)",
+      returns: "void",
+      description: <>Executes <code>onFaceBuilt</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # AOnScrollChangeListener
 
 Complete API reference for `AOnScrollChangeListener`, including constructors, attributes, virtual attributes, and methods.
@@ -14,9 +16,17 @@ Complete API reference for `AOnScrollChangeListener`, including constructors, at
 public class AOnScrollChangeListener
 ```
 
-## Methods (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `onScrollChange(View, int, int, int, int)` | `void` | Performs the onScrollChange operation using the provided parameters (v, scrollX, scrollY, oldScrollX, oldScrollY). |
-| `onScrollChangeEvent(View, int, int, int, int)` | `void` | Executes `onScrollChangeEvent` and returns after the underlying engine call finishes. |
+<ApiDoc
+  methods={[
+    {
+      signature: "onScrollChange(View, int, int, int, int)",
+      returns: "void",
+      description: <>Performs the onScrollChange operation using the provided parameters (v, scrollX, scrollY, oldScrollX, oldScrollY).</>
+    },
+    {
+      signature: "onScrollChangeEvent(View, int, int, int, int)",
+      returns: "void",
+      description: <>Executes <code>onScrollChangeEvent</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

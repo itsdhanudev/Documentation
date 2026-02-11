@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # AnimationTransition
 
 Complete API reference for `AnimationTransition`, including constructors, attributes, virtual attributes, and methods.
@@ -14,20 +16,25 @@ Complete API reference for `AnimationTransition`, including constructors, attrib
 public class AnimationTransition
 ```
 
-## Constructors (1)
-
-| Signature | Description |
-| --- | --- |
-| AnimationTransition([AnimationTransition]) | Executes `AnimationTransition` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [AnimationTransition] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Methods (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `isFinished()` | `boolean` | Returns whether the AnimationTransition has finished. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "AnimationTransition(AnimationTransition)",
+      description: <>Executes <code>AnimationTransition</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "AnimationTransition",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "isFinished()",
+      returns: "boolean",
+      description: <>Returns whether the AnimationTransition has finished.</>
+    }
+  ]}
+/>

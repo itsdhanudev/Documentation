@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # RenderTextureExtractor
 
 Complete API reference for `RenderTextureExtractor`, including constructors, attributes, virtual attributes, and methods.
@@ -14,16 +16,26 @@ Complete API reference for `RenderTextureExtractor`, including constructors, att
 public class RenderTextureExtractor extends Component
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| RenderTextureExtractor([RenderTextureExtractor]) | Executes `RenderTextureExtractor` and returns after the underlying engine call finishes. |
-| RenderTextureExtractor([Engine]) | Executes `RenderTextureExtractor` and returns after the underlying engine call finishes. |
-| RenderTextureExtractor() | Executes `RenderTextureExtractor` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [RenderTextureExtractor] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "RenderTextureExtractor(RenderTextureExtractor)",
+      description: <>Executes <code>RenderTextureExtractor</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "RenderTextureExtractor(Engine)",
+      description: <>Executes <code>RenderTextureExtractor</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "RenderTextureExtractor()",
+      description: <>Executes <code>RenderTextureExtractor</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "RenderTextureExtractor",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+/>

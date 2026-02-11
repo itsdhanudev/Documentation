@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # LessThanComparator
 
 Complete API reference for `LessThanComparator`, including constructors, attributes, virtual attributes, and methods.
@@ -14,27 +16,57 @@ Complete API reference for `LessThanComparator`, including constructors, attribu
 public interface LessThanComparator
 ```
 
-## Methods (20)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `@MethodArgs([{"otherObject"}])` | `void` | Checks if the current object is less than the given object. |
-| `lessThan(Object)` | `boolean` | Executes `lessThan` and returns after the underlying engine call finishes. |
-| `@MethodArgs([{"value"}])` | `void` | Checks if the current object is less than the given float value. |
-| `lessThan(float)` | `boolean` | Executes `lessThan` and returns after the underlying engine call finishes. |
-| `@MethodArgs([{"value"}])` | `void` | Checks if the current object is less than the given integer value. |
-| `lessThan(int)` | `boolean` | Executes `lessThan` and returns after the underlying engine call finishes. |
-| `@MethodArgs([{"value"}])` | `void` | Checks if the current object is less than the given long value. |
-| `lessThan(long)` | `boolean` | Executes `lessThan` and returns after the underlying engine call finishes. |
-| `@MethodArgs([{"value"}])` | `void` | Checks if the current object is less than the given double value. |
-| `lessThan(double)` | `boolean` | Executes `lessThan` and returns after the underlying engine call finishes. |
-| `@MethodArgs([{"otherObject"}])` | `void` | Checks if the current object is less than or equal to the given object. |
-| `lessOrEqualsThan(Object)` | `boolean` | Executes `lessOrEqualsThan` and returns after the underlying engine call finishes. |
-| `@MethodArgs([{"value"}])` | `void` | Checks if the current object is less than or equal to the given float value. |
-| `lessOrEqualsThan(float)` | `boolean` | Executes `lessOrEqualsThan` and returns after the underlying engine call finishes. |
-| `@MethodArgs([{"value"}])` | `void` | Checks if the current object is less than or equal to the given integer value. |
-| `lessOrEqualsThan(int)` | `boolean` | Executes `lessOrEqualsThan` and returns after the underlying engine call finishes. |
-| `@MethodArgs([{"value"}])` | `void` | Checks if the current object is less than or equal to the given long value. |
-| `lessOrEqualsThan(long)` | `boolean` | Executes `lessOrEqualsThan` and returns after the underlying engine call finishes. |
-| `@MethodArgs([{"value"}])` | `void` | Checks if the current object is less than or equal to the given double value. |
-| `lessOrEqualsThan(double)` | `boolean` | Executes `lessOrEqualsThan` and returns after the underlying engine call finishes. |
+<ApiDoc
+  methods={[
+    {
+      signature: "lessThan(Object)",
+      returns: "boolean",
+      description: <>Checks if the current object is less than the given object.</>
+    },
+    {
+      signature: "lessThan(float)",
+      returns: "boolean",
+      description: <>Checks if the current object is less than the given float value.</>
+    },
+    {
+      signature: "lessThan(int)",
+      returns: "boolean",
+      description: <>Checks if the current object is less than the given integer value.</>
+    },
+    {
+      signature: "lessThan(long)",
+      returns: "boolean",
+      description: <>Checks if the current object is less than the given long value.</>
+    },
+    {
+      signature: "lessThan(double)",
+      returns: "boolean",
+      description: <>Checks if the current object is less than the given double value.</>
+    },
+    {
+      signature: "lessOrEqualsThan(Object)",
+      returns: "boolean",
+      description: <>Checks if the current object is less than or equal to the given object.</>
+    },
+    {
+      signature: "lessOrEqualsThan(float)",
+      returns: "boolean",
+      description: <>Checks if the current object is less than or equal to the given float value.</>
+    },
+    {
+      signature: "lessOrEqualsThan(int)",
+      returns: "boolean",
+      description: <>Checks if the current object is less than or equal to the given integer value.</>
+    },
+    {
+      signature: "lessOrEqualsThan(long)",
+      returns: "boolean",
+      description: <>Checks if the current object is less than or equal to the given long value.</>
+    },
+    {
+      signature: "lessOrEqualsThan(double)",
+      returns: "boolean",
+      description: <>Checks if the current object is less than or equal to the given double value.</>
+    }
+  ]}
+/>

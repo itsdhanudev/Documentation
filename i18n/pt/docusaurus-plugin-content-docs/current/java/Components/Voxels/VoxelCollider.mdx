@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # VoxelCollider
 
 Referência completa da API de `VoxelCollider`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,24 +16,46 @@ Referência completa da API de `VoxelCollider`, incluindo construtores, atributo
 public class VoxelCollider extends Component
 ```
 
-## Construtores (3)
-
-| Signature | Description |
-| --- | --- |
-| VoxelCollider([VoxelCollider]) | Executa `VoxelCollider` e retorna quando a chamada do motor termina. |
-| VoxelCollider([Engine]) | Executa `VoxelCollider` e retorna quando a chamada do motor termina. |
-| VoxelCollider() | Cria uma nova instância de VoxelCollider. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [VoxelCollider] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (3)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `horizontalSize` | [float] | `get/set` | Atributo virtual exposto por `getHorizontalSize`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `positionOffset` | [Vector3] | `get/set` | Atributo virtual exposto por `getPositionOffset`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `verticalSize` | [float] | `get/set` | Atributo virtual exposto por `getVerticalSize`. Acesse como um campo para ler ou escrever o valor subjacente. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "VoxelCollider(VoxelCollider)",
+      description: <>Executa <code>VoxelCollider</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "VoxelCollider(Engine)",
+      description: <>Executa <code>VoxelCollider</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "VoxelCollider()",
+      description: <>Cria uma nova instância de VoxelCollider.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "VoxelCollider",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "horizontalSize",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getHorizontalSize</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "positionOffset",
+      type: "Vector3",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getPositionOffset</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "verticalSize",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getVerticalSize</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+/>

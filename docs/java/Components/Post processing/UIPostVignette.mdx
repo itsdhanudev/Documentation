@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # UIPostVignette
 
 Complete API reference for `UIPostVignette`, including constructors, attributes, virtual attributes, and methods.
@@ -14,25 +16,52 @@ Complete API reference for `UIPostVignette`, including constructors, attributes,
 public class UIPostVignette extends Component
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| UIPostVignette([UIPostVignette]) | Executes `UIPostVignette` and returns after the underlying engine call finishes. |
-| UIPostVignette([Engine]) | Executes `UIPostVignette` and returns after the underlying engine call finishes. |
-| UIPostVignette() | Executes `UIPostVignette` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [UIPostVignette] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (4)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `color` | [Color] | `get/set` | Virtual attribute exposed by `getColor`. Access it like a field to read or write the underlying value. |
-| `feather` | [float] | `get/set` | Virtual attribute exposed by `getFeather`. Access it like a field to read or write the underlying value. |
-| `midPoint` | [float] | `get/set` | Virtual attribute exposed by `getMidPoint`. Access it like a field to read or write the underlying value. |
-| `roundness` | [float] | `get/set` | Virtual attribute exposed by `getRoundness`. Access it like a field to read or write the underlying value. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "UIPostVignette(UIPostVignette)",
+      description: <>Executes <code>UIPostVignette</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "UIPostVignette(Engine)",
+      description: <>Executes <code>UIPostVignette</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "UIPostVignette()",
+      description: <>Executes <code>UIPostVignette</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "UIPostVignette",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "color",
+      type: "Color",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getColor</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "feather",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getFeather</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "midPoint",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getMidPoint</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "roundness",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getRoundness</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+/>

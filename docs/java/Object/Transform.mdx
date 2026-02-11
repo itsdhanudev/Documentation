@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Transform
 
 Complete API reference for `Transform`, including constructors, attributes, virtual attributes, and methods.
@@ -14,124 +16,529 @@ Complete API reference for `Transform`, including constructors, attributes, virt
 public class Transform
 ```
 
-## Constructors (2)
-
-| Signature | Description |
-| --- | --- |
-| Transform([Transform]) | Executes `Transform` and returns after the underlying engine call finishes. |
-| Transform() | Executes `Transform` and returns after the underlying engine call finishes. |
-
-## Attributes (3)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `STATE_DYNAMIC` | [int] | Represents the `STATE_DYNAMIC` value stored on this instance. Read or assign to update the property. |
-| `STATE_STATIC` | [int] | Represents the `STATE_STATIC` value stored on this instance. Read or assign to update the property. |
-| `transform` | [Transform] | Represents the `transform` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (8)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `globalPosition` | [Vector3] | `get/set` | Virtual attribute exposed by `getGlobalPosition`. Access it like a field to read or write the underlying value. |
-| `globalRotation` | [Quaternion] | `get/set` | Virtual attribute exposed by `getGlobalRotation`. Access it like a field to read or write the underlying value. |
-| `globalScale` | [Vector3] | `get/set` | Virtual attribute exposed by `getGlobalScale`. Access it like a field to read or write the underlying value. |
-| `ignoreParent` | [boolean] | `get/set` | Virtual attribute exposed by `isIgnoreParent`. Access it like a field to read or write the underlying value. |
-| `position` | [Vector3] | `get/set` | Virtual attribute exposed by `getPosition`. Access it like a field to read or write the underlying value. |
-| `rotation` | [Quaternion] | `get/set` | Virtual attribute exposed by `getRotation`. Access it like a field to read or write the underlying value. |
-| `scale` | [Vector3] | `get/set` | Virtual attribute exposed by `getScale`. Access it like a field to read or write the underlying value. |
-| `static` | [boolean] | `get/set` | Virtual attribute exposed by `isStatic`. Access it like a field to read or write the underlying value. |
-
-## Methods (89)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `setPosition(float, float, float)` | `void` | Sets or updates the position. |
-| `setPositionX(float)` | `void` | Sets or updates the position x. |
-| `setPositionY(float)` | `void` | Sets or updates the position y. |
-| `setPositionZ(float)` | `void` | Sets or updates the position z. |
-| `setRotation(float, float, float)` | `void` | Sets or updates the rotation. |
-| `setRotation(float, float, float, float)` | `void` | Sets or updates the rotation. |
-| `setScale(float, float, float)` | `void` | Sets or updates the scale. |
-| `setScale(float)` | `void` | Sets or updates the scale. |
-| `getGlobalPosition(Vector3)` | `Vector3` | Returns the current global position. |
-| `getGlobalRotation(Quaternion)` | `Quaternion` | Returns the current global rotation. |
-| `getGlobalScale(Vector3)` | `Vector3` | Returns the current global scale. |
-| `translate(float, float, float)` | `void` | Transforms or moves the object accordingly. |
-| `move(float, float, float)` | `void` | Transforms or moves the object accordingly. |
-| `rotate(float, float, float)` | `void` | Transforms or moves the object accordingly. |
-| `translateInSeconds(float, float, float)` | `void` | Transforms or moves in seconds accordingly. |
-| `moveInSeconds(float, float, float)` | `void` | Transforms or moves in seconds accordingly. |
-| `rotateInSeconds(float, float, float)` | `void` | Transforms or moves in seconds accordingly. |
-| `translateInSeconds(int, int, int)` | `void` | Executes `translateInSeconds` and returns after the underlying engine call finishes. |
-| `translateInSeconds(int, int, float)` | `void` | Executes `translateInSeconds` and returns after the underlying engine call finishes. |
-| `translateInSeconds(int, float, int)` | `void` | Executes `translateInSeconds` and returns after the underlying engine call finishes. |
-| `translateInSeconds(int, float, float)` | `void` | Executes `translateInSeconds` and returns after the underlying engine call finishes. |
-| `translateInSeconds(float, int, int)` | `void` | Executes `translateInSeconds` and returns after the underlying engine call finishes. |
-| `translateInSeconds(float, int, float)` | `void` | Executes `translateInSeconds` and returns after the underlying engine call finishes. |
-| `translateInSeconds(float, float, int)` | `void` | Executes `translateInSeconds` and returns after the underlying engine call finishes. |
-| `moveInSeconds(int, int, int)` | `void` | Executes `moveInSeconds` and returns after the underlying engine call finishes. |
-| `moveInSeconds(int, int, float)` | `void` | Executes `moveInSeconds` and returns after the underlying engine call finishes. |
-| `moveInSeconds(int, float, int)` | `void` | Executes `moveInSeconds` and returns after the underlying engine call finishes. |
-| `moveInSeconds(int, float, float)` | `void` | Executes `moveInSeconds` and returns after the underlying engine call finishes. |
-| `moveInSeconds(float, int, int)` | `void` | Executes `moveInSeconds` and returns after the underlying engine call finishes. |
-| `moveInSeconds(float, int, float)` | `void` | Executes `moveInSeconds` and returns after the underlying engine call finishes. |
-| `moveInSeconds(float, float, int)` | `void` | Executes `moveInSeconds` and returns after the underlying engine call finishes. |
-| `rotateInSeconds(int, int, int)` | `void` | Executes `rotateInSeconds` and returns after the underlying engine call finishes. |
-| `rotateInSeconds(int, int, float)` | `void` | Executes `rotateInSeconds` and returns after the underlying engine call finishes. |
-| `rotateInSeconds(int, float, int)` | `void` | Executes `rotateInSeconds` and returns after the underlying engine call finishes. |
-| `rotateInSeconds(int, float, float)` | `void` | Executes `rotateInSeconds` and returns after the underlying engine call finishes. |
-| `rotateInSeconds(float, int, int)` | `void` | Executes `rotateInSeconds` and returns after the underlying engine call finishes. |
-| `rotateInSeconds(float, int, float)` | `void` | Executes `rotateInSeconds` and returns after the underlying engine call finishes. |
-| `rotateInSeconds(float, float, int)` | `void` | Executes `rotateInSeconds` and returns after the underlying engine call finishes. |
-| `lookTo(SpatialObject)` | `void` | Performs the lookTo operation using the provided parameters (object). |
-| `lookTo(Vector3)` | `void` | Performs the lookTo operation using the provided parameters (position). |
-| `lookTo(float, float, float)` | `void` | Performs the lookTo operation using the provided parameters (x, y, z). |
-| `lookTo(SpatialObject, boolean, boolean)` | `void` | Executes `lookTo` and returns after the underlying engine call finishes. |
-| `lookTo(Vector3, boolean, boolean)` | `void` | Executes `lookTo` and returns after the underlying engine call finishes. |
-| `lookTo(float, float, float, boolean, boolean)` | `void` | Executes `lookTo` and returns after the underlying engine call finishes. |
-| `lookToIgnoreY(SpatialObject)` | `void` | Performs the lookToIgnoreY operation using the provided parameters (object). |
-| `lookToIgnoreY(Vector3)` | `void` | Performs the lookToIgnoreY operation using the provided parameters (position). |
-| `teleportTo(SpatialObject)` | `void` | Performs the teleportTo operation using the provided parameters (object). |
-| `teleportTo(Vector3)` | `void` | Performs the teleportTo operation using the provided parameters (position). |
-| `smoothLookTo(SpatialObject, float)` | `void` | Performs the smoothLookTo operation using the provided parameters (other, lerpSpeed). |
-| `smoothLookTo(Vector3, float)` | `void` | Performs the smoothLookTo operation using the provided parameters (other, lerpSpeed). |
-| `lerpLookTo(SpatialObject, float)` | `void` | Performs the lerpLookTo operation using the provided parameters (other, lerpSpeed). |
-| `lerpLookTo(Vector3, float)` | `void` | Performs the lerpLookTo operation using the provided parameters (other, lerpSpeed). |
-| `lerpLookToIgnoreY(SpatialObject, float)` | `void` | Performs the lerpLookToIgnoreY operation using the provided parameters (other, lerpSpeed). |
-| `lerpLookToIgnoreY(Vector3, float)` | `void` | Performs the lerpLookToIgnoreY operation using the provided parameters (other, lerpSpeed). |
-| `transformPoint(Vector3)` | `Vector3` | Performs the transformPoint operation using the provided parameters (vector3). |
-| `transformPoint(Vector3, Vector3)` | `void` | Performs the transformPoint operation using the provided parameters (vector3, out). |
-| `inverseTransformPoint(Vector3)` | `Vector3` | Performs the inverseTransformPoint operation using the provided parameters (vector3). |
-| `inverseTransformPoint(Vector3, Vector3)` | `void` | Performs the inverseTransformPoint operation using the provided parameters (vector3, out). |
-| `transformDirection(Vector3)` | `Vector3` | Performs the transformDirection operation using the provided parameters (vector3). |
-| `transformDirection(Vector3, Vector3)` | `void` | Performs the transformDirection operation using the provided parameters (vector3, out). |
-| `inverseTransformDirection(Vector3)` | `Vector3` | Performs the inverseTransformDirection operation using the provided parameters (vector3). |
-| `inverseTransformDirection(Vector3, Vector3)` | `void` | Performs the inverseTransformDirection operation using the provided parameters (vector3, out). |
-| `forward()` | `Vector3` | Executes `forward` and returns after the underlying engine call finishes. |
-| `back()` | `Vector3` | Executes `back` and returns after the underlying engine call finishes. |
-| `right()` | `Vector3` | Executes `right` and returns after the underlying engine call finishes. |
-| `left()` | `Vector3` | Executes `left` and returns after the underlying engine call finishes. |
-| `up()` | `Vector3` | Executes `up` and returns after the underlying engine call finishes. |
-| `down()` | `Vector3` | Executes `down` and returns after the underlying engine call finishes. |
-| `forward(Vector3)` | `Vector3` | Performs the forward operation using the provided parameters (out). |
-| `back(Vector3)` | `Vector3` | Performs the back operation using the provided parameters (out). |
-| `right(Vector3)` | `Vector3` | Performs the right operation using the provided parameters (out). |
-| `left(Vector3)` | `Vector3` | Performs the left operation using the provided parameters (out). |
-| `up(Vector3)` | `Vector3` | Performs the up operation using the provided parameters (out). |
-| `down(Vector3)` | `Vector3` | Performs the down operation using the provided parameters (out). |
-| `globalDistance(SpatialObject)` | `float` | Performs the globalDistance operation using the provided parameters (other). |
-| `globalDistance(Transform)` | `float` | Performs the globalDistance operation using the provided parameters (other). |
-| `globalDistance(Vector3)` | `float` | Performs the globalDistance operation using the provided parameters (other). |
-| `globalSqrtDistance(SpatialObject)` | `float` | Performs the globalSqrtDistance operation using the provided parameters (other). |
-| `globalSqrtDistance(Transform)` | `float` | Performs the globalSqrtDistance operation using the provided parameters (other). |
-| `globalSqrtDistance(Vector3)` | `float` | Performs the globalSqrtDistance operation using the provided parameters (other). |
-| `getState()` | `int` | Returns the current state. |
-| `setState(int)` | `void` | Sets or updates the state. |
-| `getGlobalMatrix()` | [float][] | Returns the current global matrix. |
-| `getGlobalMatrix(float[])` | [float][] | Returns the current global matrix. |
-| `getLocalMatrix()` | [float][] | Returns the current local matrix. |
-| `getLocalMatrix(float[])` | [float][] | Returns the current local matrix. |
-| `mulGlobalVector3(Vector3)` | `Vector3` | Performs the mulGlobalVector3 operation using the provided parameters (vector3). |
-| `mulLocalVector3(Vector3)` | `Vector3` | Performs the mulLocalVector3 operation using the provided parameters (vector3). |
-| `recalculateMatrices()` | `void` | Executes `recalculateMatrices` and returns after the underlying engine call finishes. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "Transform(Transform)",
+      description: <>Executes <code>Transform</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "Transform()",
+      description: <>Executes <code>Transform</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "STATE_DYNAMIC",
+      type: "int",
+      description: <>Represents the <code>STATE_DYNAMIC</code> value stored on this instance. Read or assign to update the property.</>
+    },
+    {
+      name: "STATE_STATIC",
+      type: "int",
+      description: <>Represents the <code>STATE_STATIC</code> value stored on this instance. Read or assign to update the property.</>
+    },
+    {
+      name: "transform",
+      type: "Transform",
+      description: <>Represents the <code>transform</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "globalPosition",
+      type: "Vector3",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getGlobalPosition</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "globalRotation",
+      type: "Quaternion",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getGlobalRotation</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "globalScale",
+      type: "Vector3",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getGlobalScale</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "ignoreParent",
+      type: "boolean",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>isIgnoreParent</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "position",
+      type: "Vector3",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getPosition</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "rotation",
+      type: "Quaternion",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getRotation</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "scale",
+      type: "Vector3",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getScale</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "static",
+      type: "boolean",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>isStatic</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "setPosition(float, float, float)",
+      returns: "void",
+      description: <>Sets or updates the position.</>
+    },
+    {
+      signature: "setPositionX(float)",
+      returns: "void",
+      description: <>Sets or updates the position x.</>
+    },
+    {
+      signature: "setPositionY(float)",
+      returns: "void",
+      description: <>Sets or updates the position y.</>
+    },
+    {
+      signature: "setPositionZ(float)",
+      returns: "void",
+      description: <>Sets or updates the position z.</>
+    },
+    {
+      signature: "setRotation(float, float, float)",
+      returns: "void",
+      description: <>Sets or updates the rotation.</>
+    },
+    {
+      signature: "setRotation(float, float, float, float)",
+      returns: "void",
+      description: <>Sets or updates the rotation.</>
+    },
+    {
+      signature: "setScale(float, float, float)",
+      returns: "void",
+      description: <>Sets or updates the scale.</>
+    },
+    {
+      signature: "setScale(float)",
+      returns: "void",
+      description: <>Sets or updates the scale.</>
+    },
+    {
+      signature: "getGlobalPosition(Vector3)",
+      returns: "Vector3",
+      description: <>Returns the current global position.</>
+    },
+    {
+      signature: "getGlobalRotation(Quaternion)",
+      returns: "Quaternion",
+      description: <>Returns the current global rotation.</>
+    },
+    {
+      signature: "getGlobalScale(Vector3)",
+      returns: "Vector3",
+      description: <>Returns the current global scale.</>
+    },
+    {
+      signature: "translate(float, float, float)",
+      returns: "void",
+      description: <>Transforms or moves the object accordingly.</>
+    },
+    {
+      signature: "move(float, float, float)",
+      returns: "void",
+      description: <>Transforms or moves the object accordingly.</>
+    },
+    {
+      signature: "rotate(float, float, float)",
+      returns: "void",
+      description: <>Transforms or moves the object accordingly.</>
+    },
+    {
+      signature: "translateInSeconds(float, float, float)",
+      returns: "void",
+      description: <>Transforms or moves in seconds accordingly.</>
+    },
+    {
+      signature: "moveInSeconds(float, float, float)",
+      returns: "void",
+      description: <>Transforms or moves in seconds accordingly.</>
+    },
+    {
+      signature: "rotateInSeconds(float, float, float)",
+      returns: "void",
+      description: <>Transforms or moves in seconds accordingly.</>
+    },
+    {
+      signature: "translateInSeconds(int, int, int)",
+      returns: "void",
+      description: <>Executes <code>translateInSeconds</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "translateInSeconds(int, int, float)",
+      returns: "void",
+      description: <>Executes <code>translateInSeconds</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "translateInSeconds(int, float, int)",
+      returns: "void",
+      description: <>Executes <code>translateInSeconds</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "translateInSeconds(int, float, float)",
+      returns: "void",
+      description: <>Executes <code>translateInSeconds</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "translateInSeconds(float, int, int)",
+      returns: "void",
+      description: <>Executes <code>translateInSeconds</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "translateInSeconds(float, int, float)",
+      returns: "void",
+      description: <>Executes <code>translateInSeconds</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "translateInSeconds(float, float, int)",
+      returns: "void",
+      description: <>Executes <code>translateInSeconds</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "moveInSeconds(int, int, int)",
+      returns: "void",
+      description: <>Executes <code>moveInSeconds</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "moveInSeconds(int, int, float)",
+      returns: "void",
+      description: <>Executes <code>moveInSeconds</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "moveInSeconds(int, float, int)",
+      returns: "void",
+      description: <>Executes <code>moveInSeconds</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "moveInSeconds(int, float, float)",
+      returns: "void",
+      description: <>Executes <code>moveInSeconds</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "moveInSeconds(float, int, int)",
+      returns: "void",
+      description: <>Executes <code>moveInSeconds</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "moveInSeconds(float, int, float)",
+      returns: "void",
+      description: <>Executes <code>moveInSeconds</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "moveInSeconds(float, float, int)",
+      returns: "void",
+      description: <>Executes <code>moveInSeconds</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "rotateInSeconds(int, int, int)",
+      returns: "void",
+      description: <>Executes <code>rotateInSeconds</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "rotateInSeconds(int, int, float)",
+      returns: "void",
+      description: <>Executes <code>rotateInSeconds</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "rotateInSeconds(int, float, int)",
+      returns: "void",
+      description: <>Executes <code>rotateInSeconds</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "rotateInSeconds(int, float, float)",
+      returns: "void",
+      description: <>Executes <code>rotateInSeconds</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "rotateInSeconds(float, int, int)",
+      returns: "void",
+      description: <>Executes <code>rotateInSeconds</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "rotateInSeconds(float, int, float)",
+      returns: "void",
+      description: <>Executes <code>rotateInSeconds</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "rotateInSeconds(float, float, int)",
+      returns: "void",
+      description: <>Executes <code>rotateInSeconds</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "lookTo(SpatialObject)",
+      returns: "void",
+      description: <>Performs the lookTo operation using the provided parameters (object).</>
+    },
+    {
+      signature: "lookTo(Vector3)",
+      returns: "void",
+      description: <>Performs the lookTo operation using the provided parameters (position).</>
+    },
+    {
+      signature: "lookTo(float, float, float)",
+      returns: "void",
+      description: <>Performs the lookTo operation using the provided parameters (x, y, z).</>
+    },
+    {
+      signature: "lookTo(SpatialObject, boolean, boolean)",
+      returns: "void",
+      description: <>Executes <code>lookTo</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "lookTo(Vector3, boolean, boolean)",
+      returns: "void",
+      description: <>Executes <code>lookTo</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "lookTo(float, float, float, boolean, boolean)",
+      returns: "void",
+      description: <>Executes <code>lookTo</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "lookToIgnoreY(SpatialObject)",
+      returns: "void",
+      description: <>Performs the lookToIgnoreY operation using the provided parameters (object).</>
+    },
+    {
+      signature: "lookToIgnoreY(Vector3)",
+      returns: "void",
+      description: <>Performs the lookToIgnoreY operation using the provided parameters (position).</>
+    },
+    {
+      signature: "teleportTo(SpatialObject)",
+      returns: "void",
+      description: <>Performs the teleportTo operation using the provided parameters (object).</>
+    },
+    {
+      signature: "teleportTo(Vector3)",
+      returns: "void",
+      description: <>Performs the teleportTo operation using the provided parameters (position).</>
+    },
+    {
+      signature: "smoothLookTo(SpatialObject, float)",
+      returns: "void",
+      description: <>Performs the smoothLookTo operation using the provided parameters (other, lerpSpeed).</>
+    },
+    {
+      signature: "smoothLookTo(Vector3, float)",
+      returns: "void",
+      description: <>Performs the smoothLookTo operation using the provided parameters (other, lerpSpeed).</>
+    },
+    {
+      signature: "lerpLookTo(SpatialObject, float)",
+      returns: "void",
+      description: <>Performs the lerpLookTo operation using the provided parameters (other, lerpSpeed).</>
+    },
+    {
+      signature: "lerpLookTo(Vector3, float)",
+      returns: "void",
+      description: <>Performs the lerpLookTo operation using the provided parameters (other, lerpSpeed).</>
+    },
+    {
+      signature: "lerpLookToIgnoreY(SpatialObject, float)",
+      returns: "void",
+      description: <>Performs the lerpLookToIgnoreY operation using the provided parameters (other, lerpSpeed).</>
+    },
+    {
+      signature: "lerpLookToIgnoreY(Vector3, float)",
+      returns: "void",
+      description: <>Performs the lerpLookToIgnoreY operation using the provided parameters (other, lerpSpeed).</>
+    },
+    {
+      signature: "transformPoint(Vector3)",
+      returns: "Vector3",
+      description: <>Performs the transformPoint operation using the provided parameters (vector3).</>
+    },
+    {
+      signature: "transformPoint(Vector3, Vector3)",
+      returns: "void",
+      description: <>Performs the transformPoint operation using the provided parameters (vector3, out).</>
+    },
+    {
+      signature: "inverseTransformPoint(Vector3)",
+      returns: "Vector3",
+      description: <>Performs the inverseTransformPoint operation using the provided parameters (vector3).</>
+    },
+    {
+      signature: "inverseTransformPoint(Vector3, Vector3)",
+      returns: "void",
+      description: <>Performs the inverseTransformPoint operation using the provided parameters (vector3, out).</>
+    },
+    {
+      signature: "transformDirection(Vector3)",
+      returns: "Vector3",
+      description: <>Performs the transformDirection operation using the provided parameters (vector3).</>
+    },
+    {
+      signature: "transformDirection(Vector3, Vector3)",
+      returns: "void",
+      description: <>Performs the transformDirection operation using the provided parameters (vector3, out).</>
+    },
+    {
+      signature: "inverseTransformDirection(Vector3)",
+      returns: "Vector3",
+      description: <>Performs the inverseTransformDirection operation using the provided parameters (vector3).</>
+    },
+    {
+      signature: "inverseTransformDirection(Vector3, Vector3)",
+      returns: "void",
+      description: <>Performs the inverseTransformDirection operation using the provided parameters (vector3, out).</>
+    },
+    {
+      signature: "forward()",
+      returns: "Vector3",
+      description: <>Executes <code>forward</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "back()",
+      returns: "Vector3",
+      description: <>Executes <code>back</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "right()",
+      returns: "Vector3",
+      description: <>Executes <code>right</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "left()",
+      returns: "Vector3",
+      description: <>Executes <code>left</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "up()",
+      returns: "Vector3",
+      description: <>Executes <code>up</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "down()",
+      returns: "Vector3",
+      description: <>Executes <code>down</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "forward(Vector3)",
+      returns: "Vector3",
+      description: <>Performs the forward operation using the provided parameters (out).</>
+    },
+    {
+      signature: "back(Vector3)",
+      returns: "Vector3",
+      description: <>Performs the back operation using the provided parameters (out).</>
+    },
+    {
+      signature: "right(Vector3)",
+      returns: "Vector3",
+      description: <>Performs the right operation using the provided parameters (out).</>
+    },
+    {
+      signature: "left(Vector3)",
+      returns: "Vector3",
+      description: <>Performs the left operation using the provided parameters (out).</>
+    },
+    {
+      signature: "up(Vector3)",
+      returns: "Vector3",
+      description: <>Performs the up operation using the provided parameters (out).</>
+    },
+    {
+      signature: "down(Vector3)",
+      returns: "Vector3",
+      description: <>Performs the down operation using the provided parameters (out).</>
+    },
+    {
+      signature: "globalDistance(SpatialObject)",
+      returns: "float",
+      description: <>Performs the globalDistance operation using the provided parameters (other).</>
+    },
+    {
+      signature: "globalDistance(Transform)",
+      returns: "float",
+      description: <>Performs the globalDistance operation using the provided parameters (other).</>
+    },
+    {
+      signature: "globalDistance(Vector3)",
+      returns: "float",
+      description: <>Performs the globalDistance operation using the provided parameters (other).</>
+    },
+    {
+      signature: "globalSqrtDistance(SpatialObject)",
+      returns: "float",
+      description: <>Performs the globalSqrtDistance operation using the provided parameters (other).</>
+    },
+    {
+      signature: "globalSqrtDistance(Transform)",
+      returns: "float",
+      description: <>Performs the globalSqrtDistance operation using the provided parameters (other).</>
+    },
+    {
+      signature: "globalSqrtDistance(Vector3)",
+      returns: "float",
+      description: <>Performs the globalSqrtDistance operation using the provided parameters (other).</>
+    },
+    {
+      signature: "getState()",
+      returns: "int",
+      description: <>Returns the current state.</>
+    },
+    {
+      signature: "setState(int)",
+      returns: "void",
+      description: <>Sets or updates the state.</>
+    },
+    {
+      signature: "getGlobalMatrix()",
+      returns: "float[]",
+      description: <>Returns the current global matrix.</>
+    },
+    {
+      signature: "getGlobalMatrix(float[])",
+      returns: "float[]",
+      description: <>Returns the current global matrix.</>
+    },
+    {
+      signature: "getLocalMatrix()",
+      returns: "float[]",
+      description: <>Returns the current local matrix.</>
+    },
+    {
+      signature: "getLocalMatrix(float[])",
+      returns: "float[]",
+      description: <>Returns the current local matrix.</>
+    },
+    {
+      signature: "mulGlobalVector3(Vector3)",
+      returns: "Vector3",
+      description: <>Performs the mulGlobalVector3 operation using the provided parameters (vector3).</>
+    },
+    {
+      signature: "mulLocalVector3(Vector3)",
+      returns: "Vector3",
+      description: <>Performs the mulLocalVector3 operation using the provided parameters (vector3).</>
+    },
+    {
+      signature: "recalculateMatrices()",
+      returns: "void",
+      description: <>Executes <code>recalculateMatrices</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Order
 
 Complete API reference for `Order`, including constructors, attributes, virtual attributes, and methods.
@@ -14,8 +16,12 @@ Complete API reference for `Order`, including constructors, attributes, virtual 
 public interface Order
 ```
 
-## Methods (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `idx()` | [int][] | Executes `idx` and returns after the underlying engine call finishes. |
+<ApiDoc
+  methods={[
+    {
+      signature: "idx()",
+      returns: "int[]",
+      description: <>Executes <code>idx</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

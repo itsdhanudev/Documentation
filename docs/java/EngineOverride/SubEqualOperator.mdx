@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # SubEqualOperator
 
 Complete API reference for `SubEqualOperator`, including constructors, attributes, virtual attributes, and methods.
@@ -14,9 +16,12 @@ Complete API reference for `SubEqualOperator`, including constructors, attribute
 public interface SubEqualOperator
 ```
 
-## Methods (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `@MethodArgs([{"otherObject"}])` | `void` | Subtracts the given object from the current value and assigns the result. |
-| `subEqual(Object)` | `void` | Executes `subEqual` and returns after the underlying engine call finishes. |
+<ApiDoc
+  methods={[
+    {
+      signature: "subEqual(Object)",
+      returns: "void",
+      description: <>Subtracts the given object from the current value and assigns the result.</>
+    }
+  ]}
+/>

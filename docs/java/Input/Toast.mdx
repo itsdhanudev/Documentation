@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Toast
 
 Complete API reference for `Toast`, including constructors, attributes, virtual attributes, and methods.
@@ -14,15 +16,24 @@ Complete API reference for `Toast`, including constructors, attributes, virtual 
 public class Toast
 ```
 
-## Attributes (2)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `LENGTH_LONG` | [int] | Represents the `LENGTH_LONG` value stored on this instance. Read or assign to update the property. |
-| `LENGTH_SHORT` | [int] | Represents the `LENGTH_SHORT` value stored on this instance. Read or assign to update the property. |
-
-## Static Methods (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `showText(String, int)` | `void` | Shows a toast message on the screen with the given text and duration (use Toast.LENGTH_SHORT or Toast.LENGTH_LONG for length). |
+<ApiDoc
+  attributes={[
+    {
+      name: "LENGTH_LONG",
+      type: "int",
+      description: <>Represents the <code>LENGTH_LONG</code> value stored on this instance. Read or assign to update the property.</>
+    },
+    {
+      name: "LENGTH_SHORT",
+      type: "int",
+      description: <>Represents the <code>LENGTH_SHORT</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  staticMethods={[
+    {
+      signature: "showText(String, int)",
+      returns: "void",
+      description: <>Shows a toast message on the screen with the given text and duration (use Toast.LENGTH_SHORT or Toast.LENGTH_LONG for length).</>
+    }
+  ]}
+/>

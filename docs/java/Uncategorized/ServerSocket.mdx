@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # ServerSocket
 
 Complete API reference for `ServerSocket`, including constructors, attributes, virtual attributes, and methods.
@@ -14,19 +16,40 @@ Complete API reference for `ServerSocket`, including constructors, attributes, v
 public class ServerSocket extends ServerSocket
 ```
 
-## Constructors (4)
-
-| Signature | Description |
-| --- | --- |
-| ServerSocket() | Executes `ServerSocket` and returns after the underlying engine call finishes. |
-| ServerSocket([int]) | Executes `ServerSocket` and returns after the underlying engine call finishes. |
-| ServerSocket([int], [int]) | Executes `ServerSocket` and returns after the underlying engine call finishes. |
-| ServerSocket([int], [int], [InetAddress]) | Executes `ServerSocket` and returns after the underlying engine call finishes. |
-
-## Methods (3)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `bind(SocketAddress)` | `void` | Executes `bind` and returns after the underlying engine call finishes. |
-| `bind(SocketAddress, int)` | `void` | Executes `bind` and returns after the underlying engine call finishes. |
-| `accept()` | `Socket` | Executes `accept` and returns after the underlying engine call finishes. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "ServerSocket()",
+      description: <>Executes <code>ServerSocket</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "ServerSocket(int)",
+      description: <>Executes <code>ServerSocket</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "ServerSocket(int, int)",
+      description: <>Executes <code>ServerSocket</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "ServerSocket(int, int, InetAddress)",
+      description: <>Executes <code>ServerSocket</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "bind(SocketAddress)",
+      returns: "void",
+      description: <>Executes <code>bind</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "bind(SocketAddress, int)",
+      returns: "void",
+      description: <>Executes <code>bind</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "accept()",
+      returns: "Socket",
+      description: <>Executes <code>accept</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

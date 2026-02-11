@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # DatagramSocket
 
 Referência completa da API de `DatagramSocket`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,20 +16,44 @@ Referência completa da API de `DatagramSocket`, incluindo construtores, atribut
 public class DatagramSocket extends DatagramSocket
 ```
 
-## Construtores (5)
-
-| Signature | Description |
-| --- | --- |
-| DatagramSocket() | Executa `DatagramSocket` e retorna quando a chamada do motor termina. |
-| DatagramSocket([DatagramSocketImpl]) | Cria uma nova instância de DatagramSocket. |
-| DatagramSocket([SocketAddress]) | Executa `DatagramSocket` e retorna quando a chamada do motor termina. |
-| DatagramSocket([int]) | Executa `DatagramSocket` e retorna quando a chamada do motor termina. |
-| DatagramSocket([int], [InetAddress]) | Executa `DatagramSocket` e retorna quando a chamada do motor termina. |
-
-## Métodos (3)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `bind(SocketAddress)` | `void` | Executa `bind` e retorna quando a chamada do motor termina. |
-| `connect(InetAddress, int)` | `void` | Executa a operação connect usando os parâmetros informados (address, port). |
-| `connect(SocketAddress)` | `void` | Executa `connect` e retorna quando a chamada do motor termina. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "DatagramSocket()",
+      description: <>Executa <code>DatagramSocket</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "DatagramSocket(DatagramSocketImpl)",
+      description: <>Cria uma nova instância de DatagramSocket.</>
+    },
+    {
+      signature: "DatagramSocket(SocketAddress)",
+      description: <>Executa <code>DatagramSocket</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "DatagramSocket(int)",
+      description: <>Executa <code>DatagramSocket</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "DatagramSocket(int, InetAddress)",
+      description: <>Executa <code>DatagramSocket</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "bind(SocketAddress)",
+      returns: "void",
+      description: <>Executa <code>bind</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "connect(InetAddress, int)",
+      returns: "void",
+      description: <>Executa a operação connect usando os parâmetros informados (address, port).</>
+    },
+    {
+      signature: "connect(SocketAddress)",
+      returns: "void",
+      description: <>Executa <code>connect</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+/>

@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # SunLight
 
 Complete API reference for `SunLight`, including constructors, attributes, virtual attributes, and methods.
@@ -14,32 +16,94 @@ Complete API reference for `SunLight`, including constructors, attributes, virtu
 public class SunLight extends Component
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| SunLight([SunLight]) | Executes `SunLight` and returns after the underlying engine call finishes. |
-| SunLight([Engine]) | Executes `SunLight` and returns after the underlying engine call finishes. |
-| SunLight() | Executes `SunLight` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [SunLight] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (11)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `allowShadow` | [boolean] | `get/set` | Virtual attribute exposed by `isAllowShadow`. Access it like a field to read or write the underlying value. |
-| `cascadeFarHint` | [float] | `get/set` | Virtual attribute exposed by `getCascadeFarHint`. Access it like a field to read or write the underlying value. |
-| `cascadeNearHint` | [float] | `get/set` | Virtual attribute exposed by `getCascadeNearHint`. Access it like a field to read or write the underlying value. |
-| `color` | [Color] | `get/set` | Virtual attribute exposed by `getColor`. Access it like a field to read or write the underlying value. |
-| `lux` | [float] | `get/set` | Virtual attribute exposed by `getLux`. Access it like a field to read or write the underlying value. |
-| `shadowBias` | [float] | `get/set` | Virtual attribute exposed by `getShadowBias`. Access it like a field to read or write the underlying value. |
-| `shadowCascades` | [int] | `get/set` | Virtual attribute exposed by `getShadowCascades`. Access it like a field to read or write the underlying value. |
-| `shadowFarDistance` | [float] | `get/set` | Virtual attribute exposed by `getShadowFarDistance`. Access it like a field to read or write the underlying value. |
-| `shadowNormalBias` | [float] | `get/set` | Virtual attribute exposed by `getShadowNormalBias`. Access it like a field to read or write the underlying value. |
-| `shadowResolutionID` | [int] | `get/set` | Virtual attribute exposed by `getShadowResolutionID`. Access it like a field to read or write the underlying value. |
-| `stableCascades` | [boolean] | `get/set` | Virtual attribute exposed by `isStableCascades`. Access it like a field to read or write the underlying value. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "SunLight(SunLight)",
+      description: <>Executes <code>SunLight</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "SunLight(Engine)",
+      description: <>Executes <code>SunLight</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "SunLight()",
+      description: <>Executes <code>SunLight</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "SunLight",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "allowShadow",
+      type: "boolean",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>isAllowShadow</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "cascadeFarHint",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getCascadeFarHint</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "cascadeNearHint",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getCascadeNearHint</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "color",
+      type: "Color",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getColor</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "lux",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getLux</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "shadowBias",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getShadowBias</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "shadowCascades",
+      type: "int",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getShadowCascades</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "shadowFarDistance",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getShadowFarDistance</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "shadowNormalBias",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getShadowNormalBias</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "shadowResolutionID",
+      type: "int",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getShadowResolutionID</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "stableCascades",
+      type: "boolean",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>isStableCascades</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+/>

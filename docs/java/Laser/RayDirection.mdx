@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # RayDirection
 
 Complete API reference for `RayDirection`, including constructors, attributes, virtual attributes, and methods.
@@ -14,25 +16,48 @@ Complete API reference for `RayDirection`, including constructors, attributes, v
 public class RayDirection
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| RayDirection([RayDirection]) | Executes `RayDirection` and returns after the underlying engine call finishes. |
-| RayDirection() | Executes `RayDirection` and returns after the underlying engine call finishes. |
-| RayDirection([Vector3], [Vector3]) | Creates a new instance of RayDirection. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `rayDirection` | [RayDirection] | Represents the `rayDirection` value stored on this instance. Read or assign to update the property. |
-
-## Methods (4)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getOrigin()` | `Vector3` | Returns the origin position of this RayDirection. |
-| `setOrigin(Vector3)` | `void` | Sets the origin position of this RayDirection. |
-| `getDirection()` | `Vector3` | Returns the direction of this RayDirection. |
-| `setDirection(Vector3)` | `void` | Sets the direction of this RayDirection. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "RayDirection(RayDirection)",
+      description: <>Executes <code>RayDirection</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "RayDirection()",
+      description: <>Executes <code>RayDirection</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "RayDirection(Vector3, Vector3)",
+      description: <>Creates a new instance of RayDirection.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "rayDirection",
+      type: "RayDirection",
+      description: <>Represents the <code>rayDirection</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "getOrigin()",
+      returns: "Vector3",
+      description: <>Returns the origin position of this RayDirection.</>
+    },
+    {
+      signature: "setOrigin(Vector3)",
+      returns: "void",
+      description: <>Sets the origin position of this RayDirection.</>
+    },
+    {
+      signature: "getDirection()",
+      returns: "Vector3",
+      description: <>Returns the direction of this RayDirection.</>
+    },
+    {
+      signature: "setDirection(Vector3)",
+      returns: "void",
+      description: <>Sets the direction of this RayDirection.</>
+    }
+  ]}
+/>

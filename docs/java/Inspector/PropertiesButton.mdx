@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # PropertiesButton
 
 Complete API reference for `PropertiesButton`, including constructors, attributes, virtual attributes, and methods.
@@ -14,21 +16,29 @@ Complete API reference for `PropertiesButton`, including constructors, attribute
 public class PropertiesButton
 ```
 
-## Constructors (2)
-
-| Signature | Description |
-| --- | --- |
-| PropertiesButton([Engine]) | Executes `PropertiesButton` and returns after the underlying engine call finishes. |
-| PropertiesButton([PropertiesButtonListener]) | Creates a new instance of PropertiesButton. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `runOnEngineThread` | [boolean] | Represents the `runOnEngineThread` value stored on this instance. Read or assign to update the property. |
-
-## Static Methods (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `inspectorController()` | `ClassInspectorEntry` | Executes `inspectorController` and returns after the underlying engine call finishes. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "PropertiesButton(Engine)",
+      description: <>Executes <code>PropertiesButton</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "PropertiesButton(PropertiesButtonListener)",
+      description: <>Creates a new instance of PropertiesButton.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "runOnEngineThread",
+      type: "boolean",
+      description: <>Represents the <code>runOnEngineThread</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  staticMethods={[
+    {
+      signature: "inspectorController()",
+      returns: "ClassInspectorEntry",
+      description: <>Executes <code>inspectorController</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

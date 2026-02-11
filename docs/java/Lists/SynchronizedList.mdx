@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # SynchronizedList
 
 Complete API reference for `SynchronizedList`, including constructors, attributes, virtual attributes, and methods.
@@ -14,39 +16,142 @@ Complete API reference for `SynchronizedList`, including constructors, attribute
 public class SynchronizedList
 ```
 
-## Constructors (2)
-
-| Signature | Description |
-| --- | --- |
-| SynchronizedList() | Executes `SynchronizedList` and returns after the underlying engine call finishes. |
-| SynchronizedList([List]) | Creates a new instance of SynchronizedList. |
-
-## Methods (25)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `size()` | `int` | Executes `size` and returns after the underlying engine call finishes. |
-| `isEmpty()` | `boolean` | Returns whether empty is true. |
-| `contains(Object)` | `boolean` | Performs the contains operation using the provided parameters (o). |
-| `iterator()` | `Iterator` | Executes `iterator` and returns after the underlying engine call finishes. |
-| `toArray()` | [Object][] | Executes `toArray` and returns after the underlying engine call finishes. |
-| `add(Object)` | `boolean` | Adds an item to the collection. |
-| `remove(Object)` | `boolean` | Removes an item from the collection. |
-| `addAll(Collection)` | `boolean` | Adds all to the collection. |
-| `addAll(int, Collection)` | `boolean` | Adds all to the collection. |
-| `clear()` | `void` | Clears or resets the object's state. |
-| `equals(Object)` | `boolean` | Compares this instance with another for equality/order. |
-| `hashCode()` | `int` | Returns whether code is true. |
-| `get(int)` | `Object` | Returns the current value. |
-| `set(int, Object)` | `Object` | Sets or updates the the value. |
-| `add(int, Object)` | `void` | Adds an item to the collection. |
-| `remove(int)` | `Object` | Removes an item from the collection. |
-| `indexOf(Object)` | `int` | Performs the indexOf operation using the provided parameters (o). |
-| `lastIndexOf(Object)` | `int` | Performs the lastIndexOf operation using the provided parameters (o). |
-| `listIterator()` | `ListIterator` | Executes `listIterator` and returns after the underlying engine call finishes. |
-| `listIterator(int)` | `ListIterator` | Performs the listIterator operation using the provided parameters (i). |
-| `subList(int, int)` | `List` | Performs the subList operation using the provided parameters (i, i1). |
-| `retainAll(Collection)` | `boolean` | Performs the retainAll operation using the provided parameters (collection). |
-| `removeAll(Collection)` | `boolean` | Removes all from the collection. |
-| `containsAll(Collection)` | `boolean` | Performs the containsAll operation using the provided parameters (collection). |
-| `toArray(Object[])` | [Object][] | Performs the toArray operation using the provided parameters (objects). |
+<ApiDoc
+  constructors={[
+    {
+      signature: "SynchronizedList()",
+      description: <>Executes <code>SynchronizedList</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "SynchronizedList(List)",
+      description: <>Creates a new instance of SynchronizedList.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "size()",
+      returns: "int",
+      description: <>Executes <code>size</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "isEmpty()",
+      returns: "boolean",
+      description: <>Returns whether empty is true.</>
+    },
+    {
+      signature: "contains(Object)",
+      returns: "boolean",
+      description: <>Performs the contains operation using the provided parameters (o).</>
+    },
+    {
+      signature: "iterator()",
+      returns: "Iterator",
+      description: <>Executes <code>iterator</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "toArray()",
+      returns: "Object[]",
+      description: <>Executes <code>toArray</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "add(Object)",
+      returns: "boolean",
+      description: <>Adds an item to the collection.</>
+    },
+    {
+      signature: "remove(Object)",
+      returns: "boolean",
+      description: <>Removes an item from the collection.</>
+    },
+    {
+      signature: "addAll(Collection)",
+      returns: "boolean",
+      description: <>Adds all to the collection.</>
+    },
+    {
+      signature: "addAll(int, Collection)",
+      returns: "boolean",
+      description: <>Adds all to the collection.</>
+    },
+    {
+      signature: "clear()",
+      returns: "void",
+      description: <>Clears or resets the object's state.</>
+    },
+    {
+      signature: "equals(Object)",
+      returns: "boolean",
+      description: <>Compares this instance with another for equality/order.</>
+    },
+    {
+      signature: "hashCode()",
+      returns: "int",
+      description: <>Returns whether code is true.</>
+    },
+    {
+      signature: "get(int)",
+      returns: "Object",
+      description: <>Returns the current value.</>
+    },
+    {
+      signature: "set(int, Object)",
+      returns: "Object",
+      description: <>Sets or updates the the value.</>
+    },
+    {
+      signature: "add(int, Object)",
+      returns: "void",
+      description: <>Adds an item to the collection.</>
+    },
+    {
+      signature: "remove(int)",
+      returns: "Object",
+      description: <>Removes an item from the collection.</>
+    },
+    {
+      signature: "indexOf(Object)",
+      returns: "int",
+      description: <>Performs the indexOf operation using the provided parameters (o).</>
+    },
+    {
+      signature: "lastIndexOf(Object)",
+      returns: "int",
+      description: <>Performs the lastIndexOf operation using the provided parameters (o).</>
+    },
+    {
+      signature: "listIterator()",
+      returns: "ListIterator",
+      description: <>Executes <code>listIterator</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "listIterator(int)",
+      returns: "ListIterator",
+      description: <>Performs the listIterator operation using the provided parameters (i).</>
+    },
+    {
+      signature: "subList(int, int)",
+      returns: "List",
+      description: <>Performs the subList operation using the provided parameters (i, i1).</>
+    },
+    {
+      signature: "retainAll(Collection)",
+      returns: "boolean",
+      description: <>Performs the retainAll operation using the provided parameters (collection).</>
+    },
+    {
+      signature: "removeAll(Collection)",
+      returns: "boolean",
+      description: <>Removes all from the collection.</>
+    },
+    {
+      signature: "containsAll(Collection)",
+      returns: "boolean",
+      description: <>Performs the containsAll operation using the provided parameters (collection).</>
+    },
+    {
+      signature: "toArray(Object[])",
+      returns: "Object[]",
+      description: <>Performs the toArray operation using the provided parameters (objects).</>
+    }
+  ]}
+/>

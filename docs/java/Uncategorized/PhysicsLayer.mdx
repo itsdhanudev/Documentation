@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # PhysicsLayer
 
 Complete API reference for `PhysicsLayer`, including constructors, attributes, virtual attributes, and methods.
@@ -14,24 +16,44 @@ Complete API reference for `PhysicsLayer`, including constructors, attributes, v
 public class PhysicsLayer
 ```
 
-## Constructors (2)
-
-| Signature | Description |
-| --- | --- |
-| PhysicsLayer([Layer]) | Executes `PhysicsLayer` and returns after the underlying engine call finishes. |
-| PhysicsLayer([String]) | Executes `PhysicsLayer` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `layer` | [Layer] | Represents the `layer` value stored on this instance. Read or assign to update the property. |
-
-## Methods (4)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `addIgnoreLayer(PhysicsLayer)` | `void` | Adds the specified PhysicsLayer to the ignore list of this layer. |
-| `removeIgnoreLayer(PhysicsLayer)` | `void` | Removes the specified PhysicsLayer from the ignore list of this layer. |
-| `getIgnoreAt(int)` | `PhysicsLayer` | Returns the PhysicsLayer at the specified index in the ignore list. |
-| `ignoreCount()` | `int` | Returns the number of PhysicsLayers in the ignore list. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "PhysicsLayer(Layer)",
+      description: <>Executes <code>PhysicsLayer</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "PhysicsLayer(String)",
+      description: <>Executes <code>PhysicsLayer</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "layer",
+      type: "Layer",
+      description: <>Represents the <code>layer</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "addIgnoreLayer(PhysicsLayer)",
+      returns: "void",
+      description: <>Adds the specified PhysicsLayer to the ignore list of this layer.</>
+    },
+    {
+      signature: "removeIgnoreLayer(PhysicsLayer)",
+      returns: "void",
+      description: <>Removes the specified PhysicsLayer from the ignore list of this layer.</>
+    },
+    {
+      signature: "getIgnoreAt(int)",
+      returns: "PhysicsLayer",
+      description: <>Returns the PhysicsLayer at the specified index in the ignore list.</>
+    },
+    {
+      signature: "ignoreCount()",
+      returns: "int",
+      description: <>Returns the number of PhysicsLayers in the ignore list.</>
+    }
+  ]}
+/>

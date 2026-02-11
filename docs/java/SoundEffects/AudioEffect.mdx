@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # AudioEffect
 
 Complete API reference for `AudioEffect`, including constructors, attributes, virtual attributes, and methods.
@@ -14,21 +16,30 @@ Complete API reference for `AudioEffect`, including constructors, attributes, vi
 public class AudioEffect
 ```
 
-## Constructors (2)
-
-| Signature | Description |
-| --- | --- |
-| AudioEffect([AudioEffect]) | Executes `AudioEffect` and returns after the underlying engine call finishes. |
-| AudioEffect([String]) | Executes `AudioEffect` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [AudioEffect] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (1)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `tittle` | [String] | `get/set` | Virtual attribute exposed by `getTittle`. Access it like a field to read or write the underlying value. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "AudioEffect(AudioEffect)",
+      description: <>Executes <code>AudioEffect</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "AudioEffect(String)",
+      description: <>Executes <code>AudioEffect</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "AudioEffect",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "tittle",
+      type: "String",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getTittle</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+/>

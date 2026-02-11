@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # UIDynamicJoystick
 
 Complete API reference for `UIDynamicJoystick`, including constructors, attributes, virtual attributes, and methods.
@@ -14,33 +16,71 @@ Complete API reference for `UIDynamicJoystick`, including constructors, attribut
 public class UIDynamicJoystick extends Component
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| UIDynamicJoystick([UIDynamicJoystick]) | Executes `UIDynamicJoystick` and returns after the underlying engine call finishes. |
-| UIDynamicJoystick([Engine]) | Executes `UIDynamicJoystick` and returns after the underlying engine call finishes. |
-| UIDynamicJoystick() | Creates a new instance of UIDynamicJoystick. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [UIDynamicJoystick] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (6)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `backgroundColor` | [Color] | `get/set` | Virtual attribute exposed by `getBackgroundColor`. Access it like a field to read or write the underlying value. |
-| `backgroundTexture` | [Texture] | `get/set` | Virtual attribute exposed by `getBackgroundTexture`. Access it like a field to read or write the underlying value. |
-| `handleSize` | [int] | `get/set` | Virtual attribute exposed by `getHandleSize`. Access it like a field to read or write the underlying value. |
-| `handlerColor` | [Color] | `get/set` | Virtual attribute exposed by `getHandlerColor`. Access it like a field to read or write the underlying value. |
-| `handlerTexture` | [Texture] | `get/set` | Virtual attribute exposed by `getHandlerTexture`. Access it like a field to read or write the underlying value. |
-| `size` | [int] | `get/set` | Virtual attribute exposed by `getSize`. Access it like a field to read or write the underlying value. |
-
-## Methods (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getValue()` | `Vector2` | Executes `getValue` and returns after the underlying engine call finishes. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "UIDynamicJoystick(UIDynamicJoystick)",
+      description: <>Executes <code>UIDynamicJoystick</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "UIDynamicJoystick(Engine)",
+      description: <>Executes <code>UIDynamicJoystick</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "UIDynamicJoystick()",
+      description: <>Creates a new instance of UIDynamicJoystick.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "UIDynamicJoystick",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "backgroundColor",
+      type: "Color",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getBackgroundColor</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "backgroundTexture",
+      type: "Texture",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getBackgroundTexture</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "handleSize",
+      type: "int",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getHandleSize</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "handlerColor",
+      type: "Color",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getHandlerColor</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "handlerTexture",
+      type: "Texture",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getHandlerTexture</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "size",
+      type: "int",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getSize</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "getValue()",
+      returns: "Vector2",
+      description: <>Executes <code>getValue</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # TextScriptingStyleSpan
 
 Complete API reference for `TextScriptingStyleSpan`, including constructors, attributes, virtual attributes, and methods.
@@ -14,35 +16,99 @@ Complete API reference for `TextScriptingStyleSpan`, including constructors, att
 public class TextScriptingStyleSpan
 ```
 
-## Constructors (2)
-
-| Signature | Description |
-| --- | --- |
-| TextScriptingStyleSpan([Color]) | Creates a new instance of TextScriptingStyleSpan. |
-| TextScriptingStyleSpan([Color], [boolean], [boolean], [boolean], [boolean]) | Creates a new instance of TextScriptingStyleSpan. |
-
-## Attributes (5)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `color` | [Color] | Represents the `color` value stored on this instance. Read or assign to update the property. |
-| `bold` | [boolean] | Represents the `bold` value stored on this instance. Read or assign to update the property. |
-| `italic` | [boolean] | Represents the `italic` value stored on this instance. Read or assign to update the property. |
-| `underline` | [boolean] | Represents the `underline` value stored on this instance. Read or assign to update the property. |
-| `strikethrough` | [boolean] | Represents the `strikethrough` value stored on this instance. Read or assign to update the property. |
-
-## Methods (11)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getColor()` | `Color` | Returns the current color. |
-| `setColor(Color)` | `void` | Sets or updates the color. |
-| `isBold()` | `boolean` | Returns whether bold is true. |
-| `setBold(boolean)` | `void` | Sets or updates the bold. |
-| `isItalic()` | `boolean` | Returns whether italic is true. |
-| `setItalic(boolean)` | `void` | Sets or updates the italic. |
-| `isUnderline()` | `boolean` | Returns whether underline is true. |
-| `setUnderline(boolean)` | `void` | Sets or updates the underline. |
-| `isStrikethrough()` | `boolean` | Returns whether strikethrough is true. |
-| `setStrikethrough(boolean)` | `void` | Sets or updates the strikethrough. |
-| `convertInternal()` | `StyleSpan` | Executes `convertInternal` and returns after the underlying engine call finishes. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "TextScriptingStyleSpan(Color)",
+      description: <>Creates a new instance of TextScriptingStyleSpan.</>
+    },
+    {
+      signature: "TextScriptingStyleSpan(Color, boolean, boolean, boolean, boolean)",
+      description: <>Creates a new instance of TextScriptingStyleSpan.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "color",
+      type: "Color",
+      description: <>Represents the <code>color</code> value stored on this instance. Read or assign to update the property.</>
+    },
+    {
+      name: "bold",
+      type: "boolean",
+      description: <>Represents the <code>bold</code> value stored on this instance. Read or assign to update the property.</>
+    },
+    {
+      name: "italic",
+      type: "boolean",
+      description: <>Represents the <code>italic</code> value stored on this instance. Read or assign to update the property.</>
+    },
+    {
+      name: "underline",
+      type: "boolean",
+      description: <>Represents the <code>underline</code> value stored on this instance. Read or assign to update the property.</>
+    },
+    {
+      name: "strikethrough",
+      type: "boolean",
+      description: <>Represents the <code>strikethrough</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "getColor()",
+      returns: "Color",
+      description: <>Returns the current color.</>
+    },
+    {
+      signature: "setColor(Color)",
+      returns: "void",
+      description: <>Sets or updates the color.</>
+    },
+    {
+      signature: "isBold()",
+      returns: "boolean",
+      description: <>Returns whether bold is true.</>
+    },
+    {
+      signature: "setBold(boolean)",
+      returns: "void",
+      description: <>Sets or updates the bold.</>
+    },
+    {
+      signature: "isItalic()",
+      returns: "boolean",
+      description: <>Returns whether italic is true.</>
+    },
+    {
+      signature: "setItalic(boolean)",
+      returns: "void",
+      description: <>Sets or updates the italic.</>
+    },
+    {
+      signature: "isUnderline()",
+      returns: "boolean",
+      description: <>Returns whether underline is true.</>
+    },
+    {
+      signature: "setUnderline(boolean)",
+      returns: "void",
+      description: <>Sets or updates the underline.</>
+    },
+    {
+      signature: "isStrikethrough()",
+      returns: "boolean",
+      description: <>Returns whether strikethrough is true.</>
+    },
+    {
+      signature: "setStrikethrough(boolean)",
+      returns: "void",
+      description: <>Sets or updates the strikethrough.</>
+    },
+    {
+      signature: "convertInternal()",
+      returns: "StyleSpan",
+      description: <>Executes <code>convertInternal</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

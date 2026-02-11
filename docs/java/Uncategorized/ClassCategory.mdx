@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # ClassCategory
 
 Complete API reference for `ClassCategory`, including constructors, attributes, virtual attributes, and methods.
@@ -14,8 +16,12 @@ Complete API reference for `ClassCategory`, including constructors, attributes, 
 public interface ClassCategory
 ```
 
-## Methods (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `cat()` | [String][] | Executes `cat` and returns after the underlying engine call finishes. |
+<ApiDoc
+  methods={[
+    {
+      signature: "cat()",
+      returns: "String[]",
+      description: <>Executes <code>cat</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

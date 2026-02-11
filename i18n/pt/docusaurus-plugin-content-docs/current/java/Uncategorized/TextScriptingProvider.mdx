@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # TextScriptingProvider
 
 Referência completa da API de `TextScriptingProvider`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,11 +16,27 @@ Referência completa da API de `TextScriptingProvider`, incluindo construtores, 
 public class TextScriptingProvider
 ```
 
-## Métodos (4)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getAll()` | [List]&[lt];[TextScriptingSuggestion]&[gt]; | Retorna a propriedade `propriedade `all atual``. |
-| `processLine(int, String)` | `void` | Executa a operação processLine usando os parâmetros informados (lineNumber, text). |
-| `deleteLine(int)` | `void` | Remove line da coleção. |
-| `clearLines()` | `void` | Limpa ou redefine o estado do objeto. |
+<ApiDoc
+  methods={[
+    {
+      signature: "getAll()",
+      returns: "List&lt;TextScriptingSuggestion&gt;",
+      description: <>Retorna a propriedade <code>propriedade </code>all atual``.</>
+    },
+    {
+      signature: "processLine(int, String)",
+      returns: "void",
+      description: <>Executa a operação processLine usando os parâmetros informados (lineNumber, text).</>
+    },
+    {
+      signature: "deleteLine(int)",
+      returns: "void",
+      description: <>Remove line da coleção.</>
+    },
+    {
+      signature: "clearLines()",
+      returns: "void",
+      description: <>Limpa ou redefine o estado do objeto.</>
+    }
+  ]}
+/>

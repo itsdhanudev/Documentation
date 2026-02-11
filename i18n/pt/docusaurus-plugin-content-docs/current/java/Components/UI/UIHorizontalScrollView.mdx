@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # UIHorizontalScrollView
 
 Referência completa da API de `UIHorizontalScrollView`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,22 +16,34 @@ Referência completa da API de `UIHorizontalScrollView`, incluindo construtores,
 public class UIHorizontalScrollView extends Component
 ```
 
-## Construtores (3)
-
-| Signature | Description |
-| --- | --- |
-| UIHorizontalScrollView([UIHorizontalScrollView]) | Executa `UIHorizontalScrollView` e retorna quando a chamada do motor termina. |
-| UIHorizontalScrollView([Engine]) | Executa `UIHorizontalScrollView` e retorna quando a chamada do motor termina. |
-| UIHorizontalScrollView() | Cria uma nova instância de UIHorizontalScrollView. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [UIHorizontalScrollView] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (1)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `scroll` | [int] | `get/set` | Atributo virtual exposto por `getScroll`. Acesse como um campo para ler ou escrever o valor subjacente. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "UIHorizontalScrollView(UIHorizontalScrollView)",
+      description: <>Executa <code>UIHorizontalScrollView</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "UIHorizontalScrollView(Engine)",
+      description: <>Executa <code>UIHorizontalScrollView</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "UIHorizontalScrollView()",
+      description: <>Cria uma nova instância de UIHorizontalScrollView.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "UIHorizontalScrollView",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "scroll",
+      type: "int",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getScroll</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+/>

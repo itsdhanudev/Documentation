@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # TextScriptingExtension
 
 Referência completa da API de `TextScriptingExtension`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,26 +16,102 @@ Referência completa da API de `TextScriptingExtension`, incluindo construtores,
 public class TextScriptingExtension extends ScriptingExtension
 ```
 
-## Métodos (19)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getScriptingInterface()` | `ScriptingInterface` | Executa `getScriptingInterface` e retorna quando a chamada do motor termina. |
-| `getText()` | `String` | Retorna a propriedade `propriedade `text atual``. |
-| `setText(String)` | `void` | Define ou atualiza a propriedade `propriedade `text``. |
-| `setTheme(TextScriptingTheme)` | `void` | Define ou atualiza theme. |
-| `setProvider(TextScriptingProvider)` | `void` | Define ou atualiza a propriedade `propriedade `provider``. |
-| `setStyler(TextScriptingStyler)` | `void` | Define ou atualiza a propriedade `propriedade `styler``. |
-| `getTipForLine(int)` | `LineTip` | Retorna a propriedade `propriedade `tip for line atual``. |
-| `getTipTextForLine(int)` | `String` | Retorna a propriedade `propriedade `tip text for line atual``. |
-| `replaceScript(File)` | `void` | Executa a operação replaceScript usando os parâmetros informados (newScript). |
-| `openScript(File)` | `void` | Executa a operação openScript usando os parâmetros informados (script). |
-| `onClose()` | `void` | Executa a operação onClose. |
-| `init()` | `void` | Inicializa o estado interno do objeto. |
-| `unload()` | `void` | Executa a operação unload. |
-| `saveScript()` | `boolean` | Salva script do objeto. |
-| `hasScript()` | `boolean` | Retorna se script é verdadeiro. |
-| `supportFile(File)` | `boolean` | Executa a operação supportFile usando os parâmetros informados (file). |
-| `beforeTextChanged(CharSequence, int, int, int)` | `void` | Executa a operação beforeTextChanged usando os parâmetros informados (charSequence, start, before, count). |
-| `onTextChanged(CharSequence, int, int, int)` | `void` | Executa a operação onTextChanged usando os parâmetros informados (charSequence, start, before, count). |
-| `afterTextChanged(Editable)` | `void` | Executa a operação afterTextChanged usando os parâmetros informados (editable). |
+<ApiDoc
+  methods={[
+    {
+      signature: "getScriptingInterface()",
+      returns: "ScriptingInterface",
+      description: <>Executa <code>getScriptingInterface</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "getText()",
+      returns: "String",
+      description: <>Retorna a propriedade <code>propriedade </code>text atual``.</>
+    },
+    {
+      signature: "setText(String)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>text``.</>
+    },
+    {
+      signature: "setTheme(TextScriptingTheme)",
+      returns: "void",
+      description: <>Define ou atualiza theme.</>
+    },
+    {
+      signature: "setProvider(TextScriptingProvider)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>provider``.</>
+    },
+    {
+      signature: "setStyler(TextScriptingStyler)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>styler``.</>
+    },
+    {
+      signature: "getTipForLine(int)",
+      returns: "LineTip",
+      description: <>Retorna a propriedade <code>propriedade </code>tip for line atual``.</>
+    },
+    {
+      signature: "getTipTextForLine(int)",
+      returns: "String",
+      description: <>Retorna a propriedade <code>propriedade </code>tip text for line atual``.</>
+    },
+    {
+      signature: "replaceScript(File)",
+      returns: "void",
+      description: <>Executa a operação replaceScript usando os parâmetros informados (newScript).</>
+    },
+    {
+      signature: "openScript(File)",
+      returns: "void",
+      description: <>Executa a operação openScript usando os parâmetros informados (script).</>
+    },
+    {
+      signature: "onClose()",
+      returns: "void",
+      description: <>Executa a operação onClose.</>
+    },
+    {
+      signature: "init()",
+      returns: "void",
+      description: <>Inicializa o estado interno do objeto.</>
+    },
+    {
+      signature: "unload()",
+      returns: "void",
+      description: <>Executa a operação unload.</>
+    },
+    {
+      signature: "saveScript()",
+      returns: "boolean",
+      description: <>Salva script do objeto.</>
+    },
+    {
+      signature: "hasScript()",
+      returns: "boolean",
+      description: <>Retorna se script é verdadeiro.</>
+    },
+    {
+      signature: "supportFile(File)",
+      returns: "boolean",
+      description: <>Executa a operação supportFile usando os parâmetros informados (file).</>
+    },
+    {
+      signature: "beforeTextChanged(CharSequence, int, int, int)",
+      returns: "void",
+      description: <>Executa a operação beforeTextChanged usando os parâmetros informados (charSequence, start, before, count).</>
+    },
+    {
+      signature: "onTextChanged(CharSequence, int, int, int)",
+      returns: "void",
+      description: <>Executa a operação onTextChanged usando os parâmetros informados (charSequence, start, before, count).</>
+    },
+    {
+      signature: "afterTextChanged(Editable)",
+      returns: "void",
+      description: <>Executa a operação afterTextChanged usando os parâmetros informados (editable).</>
+    }
+  ]}
+/>

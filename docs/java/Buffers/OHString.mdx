@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # OHString
 
 Complete API reference for `OHString`, including constructors, attributes, virtual attributes, and methods.
@@ -14,98 +16,388 @@ Complete API reference for `OHString`, including constructors, attributes, virtu
 public class OHString
 ```
 
-## Constructors (5)
-
-| Signature | Description |
-| --- | --- |
-| OHString([OHString]) | Creates a new instance of OHString. |
-| OHString() | Executes `OHString` and returns after the underlying engine call finishes. |
-| OHString([String]) | Creates a new instance of OHString. |
-| OHString([char][]) | Creates a new instance of OHString. |
-| OHString([OHString]) | Creates a new instance of OHString. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `ohString` | [OHString] | Represents the `ohString` value stored on this instance. Read or assign to update the property. |
-
-## Methods (69)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `set(String)` | `void` | Sets or updates the the value. |
-| `set(OHString)` | `void` | Sets or updates the the value. |
-| `set(float)` | `void` | Sets or updates the the value. |
-| `set(int)` | `void` | Sets or updates the the value. |
-| `set(boolean)` | `void` | Sets or updates the the value. |
-| `set(double)` | `void` | Sets or updates the the value. |
-| `set(long)` | `void` | Sets or updates the the value. |
-| `set(short)` | `void` | Sets or updates the the value. |
-| `set(char)` | `void` | Sets or updates the the value. |
-| `set(char[], int, int)` | `void` | Sets or updates the the value. |
-| `concatLocal(String)` | `void` | Performs the concatLocal operation using the provided parameters (str). |
-| `concatLocal(OHString)` | `void` | Performs the concatLocal operation using the provided parameters (str). |
-| `concatLocalAtStart(String)` | `void` | Performs the concatLocalAtStart operation using the provided parameters (str). |
-| `concatLocalAtStart(OHString)` | `void` | Performs the concatLocalAtStart operation using the provided parameters (str). |
-| `concat(String)` | `OHString` | Performs the concat operation using the provided parameters (str). |
-| `concat(OHString)` | `OHString` | Performs the concat operation using the provided parameters (str). |
-| `concatAtStart(String)` | `OHString` | Performs the concatAtStart operation using the provided parameters (str). |
-| `concatAtStart(OHString)` | `OHString` | Performs the concatAtStart operation using the provided parameters (str). |
-| `subString(int)` | `OHString` | Performs the subString operation using the provided parameters (startIdx). |
-| `subString(int, int)` | `OHString` | Performs the subString operation using the provided parameters (startIdx, endIndex). |
-| `subStringLocal(int)` | `void` | Performs the subStringLocal operation using the provided parameters (startIdx). |
-| `subStringLocal(int, int)` | `void` | Performs the subStringLocal operation using the provided parameters (startIdx, endIndex). |
-| `trim()` | `OHString` | Executes `trim` and returns after the underlying engine call finishes. |
-| `equals(String)` | `boolean` | Compares this instance with another for equality/order. |
-| `equals(OHString)` | `boolean` | Compares this instance with another for equality/order. |
-| `equalsIgnoreCase(String)` | `boolean` | Compares this instance with another for equality/order. |
-| `equalsIgnoreCase(OHString)` | `boolean` | Compares this instance with another for equality/order. |
-| `contains(String)` | `boolean` | Performs the contains operation using the provided parameters (str). |
-| `contains(OHString)` | `boolean` | Performs the contains operation using the provided parameters (str). |
-| `split(String)` | [OHString][] | Performs the split operation using the provided parameters (str). |
-| `split(OHString)` | [OHString][] | Performs the split operation using the provided parameters (str). |
-| `replace(String, String)` | `OHString` | Performs the replace operation using the provided parameters (str, replacement). |
-| `replace(OHString, OHString)` | `OHString` | Performs the replace operation using the provided parameters (str, replacement). |
-| `replaceLocal(String, String)` | `void` | Performs the replaceLocal operation using the provided parameters (str, replacement). |
-| `replaceLocal(OHString, OHString)` | `void` | Performs the replaceLocal operation using the provided parameters (str, replacement). |
-| `isEmpty()` | `boolean` | Returns whether empty is true. |
-| `length()` | `int` | Executes `length` and returns after the underlying engine call finishes. |
-| `toString()` | `String` | Returns the string representation. |
-| `copy()` | `OHString` | Returns a copy of this OHString instance. |
-| `equals(Object)` | `boolean` | Compares this instance with another for equality/order. |
-| `pointerEquals(Object)` | `boolean` | Performs the pointerEquals operation using the provided parameters (otherObject). |
-| `notEquals(Object)` | `boolean` | Performs the notEquals operation using the provided parameters (otherObject). |
-| `greaterThan(Object)` | `boolean` | Performs the greaterThan operation using the provided parameters (otherObject). |
-| `greaterThan(float)` | `boolean` | Performs the greaterThan operation using the provided parameters (v). |
-| `greaterThan(int)` | `boolean` | Performs the greaterThan operation using the provided parameters (v). |
-| `greaterThan(long)` | `boolean` | Performs the greaterThan operation using the provided parameters (v). |
-| `greaterThan(double)` | `boolean` | Performs the greaterThan operation using the provided parameters (v). |
-| `greaterOrEqualsThan(Object)` | `boolean` | Performs the greaterOrEqualsThan operation using the provided parameters (otherObject). |
-| `greaterOrEqualsThan(float)` | `boolean` | Performs the greaterOrEqualsThan operation using the provided parameters (v). |
-| `greaterOrEqualsThan(int)` | `boolean` | Performs the greaterOrEqualsThan operation using the provided parameters (v). |
-| `greaterOrEqualsThan(long)` | `boolean` | Performs the greaterOrEqualsThan operation using the provided parameters (v). |
-| `greaterOrEqualsThan(double)` | `boolean` | Performs the greaterOrEqualsThan operation using the provided parameters (v). |
-| `lessThan(Object)` | `boolean` | Performs the lessThan operation using the provided parameters (otherObject). |
-| `lessThan(float)` | `boolean` | Performs the lessThan operation using the provided parameters (v). |
-| `lessThan(int)` | `boolean` | Performs the lessThan operation using the provided parameters (v). |
-| `lessThan(long)` | `boolean` | Performs the lessThan operation using the provided parameters (v). |
-| `lessThan(double)` | `boolean` | Performs the lessThan operation using the provided parameters (v). |
-| `lessOrEqualsThan(Object)` | `boolean` | Performs the lessOrEqualsThan operation using the provided parameters (otherObject). |
-| `lessOrEqualsThan(float)` | `boolean` | Performs the lessOrEqualsThan operation using the provided parameters (v). |
-| `lessOrEqualsThan(int)` | `boolean` | Performs the lessOrEqualsThan operation using the provided parameters (v). |
-| `lessOrEqualsThan(long)` | `boolean` | Performs the lessOrEqualsThan operation using the provided parameters (v). |
-| `lessOrEqualsThan(double)` | `boolean` | Performs the lessOrEqualsThan operation using the provided parameters (v). |
-| `sum(Object)` | `T` | Performs the sum operation using the provided parameters (otherObject). |
-| `sumEqual(Object)` | `void` | Performs the sumEqual operation using the provided parameters (otherObject). |
-| `div(Object)` | `T` | Performs the div operation using the provided parameters (otherObject). |
-| `divEqual(Object)` | `void` | Performs the divEqual operation using the provided parameters (otherObject). |
-| `sub(Object)` | `T` | Performs the sub operation using the provided parameters (otherObject). |
-| `subEqual(Object)` | `void` | Performs the subEqual operation using the provided parameters (otherObject). |
-| `removeRemove()` | `void` | Removes remove from the collection. |
-
-## Static Methods (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `isNull(Object)` | `boolean` | Returns whether null is true. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "OHString(OHString)",
+      description: <>Creates a new instance of OHString.</>
+    },
+    {
+      signature: "OHString()",
+      description: <>Executes <code>OHString</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "OHString(String)",
+      description: <>Creates a new instance of OHString.</>
+    },
+    {
+      signature: "OHString(char[])",
+      description: <>Creates a new instance of OHString.</>
+    },
+    {
+      signature: "OHString(OHString)",
+      description: <>Creates a new instance of OHString.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "ohString",
+      type: "OHString",
+      description: <>Represents the <code>ohString</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "set(String)",
+      returns: "void",
+      description: <>Sets or updates the the value.</>
+    },
+    {
+      signature: "set(OHString)",
+      returns: "void",
+      description: <>Sets or updates the the value.</>
+    },
+    {
+      signature: "set(float)",
+      returns: "void",
+      description: <>Sets or updates the the value.</>
+    },
+    {
+      signature: "set(int)",
+      returns: "void",
+      description: <>Sets or updates the the value.</>
+    },
+    {
+      signature: "set(boolean)",
+      returns: "void",
+      description: <>Sets or updates the the value.</>
+    },
+    {
+      signature: "set(double)",
+      returns: "void",
+      description: <>Sets or updates the the value.</>
+    },
+    {
+      signature: "set(long)",
+      returns: "void",
+      description: <>Sets or updates the the value.</>
+    },
+    {
+      signature: "set(short)",
+      returns: "void",
+      description: <>Sets or updates the the value.</>
+    },
+    {
+      signature: "set(char)",
+      returns: "void",
+      description: <>Sets or updates the the value.</>
+    },
+    {
+      signature: "set(char[], int, int)",
+      returns: "void",
+      description: <>Sets or updates the the value.</>
+    },
+    {
+      signature: "concatLocal(String)",
+      returns: "void",
+      description: <>Performs the concatLocal operation using the provided parameters (str).</>
+    },
+    {
+      signature: "concatLocal(OHString)",
+      returns: "void",
+      description: <>Performs the concatLocal operation using the provided parameters (str).</>
+    },
+    {
+      signature: "concatLocalAtStart(String)",
+      returns: "void",
+      description: <>Performs the concatLocalAtStart operation using the provided parameters (str).</>
+    },
+    {
+      signature: "concatLocalAtStart(OHString)",
+      returns: "void",
+      description: <>Performs the concatLocalAtStart operation using the provided parameters (str).</>
+    },
+    {
+      signature: "concat(String)",
+      returns: "OHString",
+      description: <>Performs the concat operation using the provided parameters (str).</>
+    },
+    {
+      signature: "concat(OHString)",
+      returns: "OHString",
+      description: <>Performs the concat operation using the provided parameters (str).</>
+    },
+    {
+      signature: "concatAtStart(String)",
+      returns: "OHString",
+      description: <>Performs the concatAtStart operation using the provided parameters (str).</>
+    },
+    {
+      signature: "concatAtStart(OHString)",
+      returns: "OHString",
+      description: <>Performs the concatAtStart operation using the provided parameters (str).</>
+    },
+    {
+      signature: "subString(int)",
+      returns: "OHString",
+      description: <>Performs the subString operation using the provided parameters (startIdx).</>
+    },
+    {
+      signature: "subString(int, int)",
+      returns: "OHString",
+      description: <>Performs the subString operation using the provided parameters (startIdx, endIndex).</>
+    },
+    {
+      signature: "subStringLocal(int)",
+      returns: "void",
+      description: <>Performs the subStringLocal operation using the provided parameters (startIdx).</>
+    },
+    {
+      signature: "subStringLocal(int, int)",
+      returns: "void",
+      description: <>Performs the subStringLocal operation using the provided parameters (startIdx, endIndex).</>
+    },
+    {
+      signature: "trim()",
+      returns: "OHString",
+      description: <>Executes <code>trim</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "equals(String)",
+      returns: "boolean",
+      description: <>Compares this instance with another for equality/order.</>
+    },
+    {
+      signature: "equals(OHString)",
+      returns: "boolean",
+      description: <>Compares this instance with another for equality/order.</>
+    },
+    {
+      signature: "equalsIgnoreCase(String)",
+      returns: "boolean",
+      description: <>Compares this instance with another for equality/order.</>
+    },
+    {
+      signature: "equalsIgnoreCase(OHString)",
+      returns: "boolean",
+      description: <>Compares this instance with another for equality/order.</>
+    },
+    {
+      signature: "contains(String)",
+      returns: "boolean",
+      description: <>Performs the contains operation using the provided parameters (str).</>
+    },
+    {
+      signature: "contains(OHString)",
+      returns: "boolean",
+      description: <>Performs the contains operation using the provided parameters (str).</>
+    },
+    {
+      signature: "split(String)",
+      returns: "OHString[]",
+      description: <>Performs the split operation using the provided parameters (str).</>
+    },
+    {
+      signature: "split(OHString)",
+      returns: "OHString[]",
+      description: <>Performs the split operation using the provided parameters (str).</>
+    },
+    {
+      signature: "replace(String, String)",
+      returns: "OHString",
+      description: <>Performs the replace operation using the provided parameters (str, replacement).</>
+    },
+    {
+      signature: "replace(OHString, OHString)",
+      returns: "OHString",
+      description: <>Performs the replace operation using the provided parameters (str, replacement).</>
+    },
+    {
+      signature: "replaceLocal(String, String)",
+      returns: "void",
+      description: <>Performs the replaceLocal operation using the provided parameters (str, replacement).</>
+    },
+    {
+      signature: "replaceLocal(OHString, OHString)",
+      returns: "void",
+      description: <>Performs the replaceLocal operation using the provided parameters (str, replacement).</>
+    },
+    {
+      signature: "isEmpty()",
+      returns: "boolean",
+      description: <>Returns whether empty is true.</>
+    },
+    {
+      signature: "length()",
+      returns: "int",
+      description: <>Executes <code>length</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "toString()",
+      returns: "String",
+      description: <>Returns the string representation.</>
+    },
+    {
+      signature: "copy()",
+      returns: "OHString",
+      description: <>Returns a copy of this OHString instance.</>
+    },
+    {
+      signature: "equals(Object)",
+      returns: "boolean",
+      description: <>Compares this instance with another for equality/order.</>
+    },
+    {
+      signature: "pointerEquals(Object)",
+      returns: "boolean",
+      description: <>Performs the pointerEquals operation using the provided parameters (otherObject).</>
+    },
+    {
+      signature: "notEquals(Object)",
+      returns: "boolean",
+      description: <>Performs the notEquals operation using the provided parameters (otherObject).</>
+    },
+    {
+      signature: "greaterThan(Object)",
+      returns: "boolean",
+      description: <>Performs the greaterThan operation using the provided parameters (otherObject).</>
+    },
+    {
+      signature: "greaterThan(float)",
+      returns: "boolean",
+      description: <>Performs the greaterThan operation using the provided parameters (v).</>
+    },
+    {
+      signature: "greaterThan(int)",
+      returns: "boolean",
+      description: <>Performs the greaterThan operation using the provided parameters (v).</>
+    },
+    {
+      signature: "greaterThan(long)",
+      returns: "boolean",
+      description: <>Performs the greaterThan operation using the provided parameters (v).</>
+    },
+    {
+      signature: "greaterThan(double)",
+      returns: "boolean",
+      description: <>Performs the greaterThan operation using the provided parameters (v).</>
+    },
+    {
+      signature: "greaterOrEqualsThan(Object)",
+      returns: "boolean",
+      description: <>Performs the greaterOrEqualsThan operation using the provided parameters (otherObject).</>
+    },
+    {
+      signature: "greaterOrEqualsThan(float)",
+      returns: "boolean",
+      description: <>Performs the greaterOrEqualsThan operation using the provided parameters (v).</>
+    },
+    {
+      signature: "greaterOrEqualsThan(int)",
+      returns: "boolean",
+      description: <>Performs the greaterOrEqualsThan operation using the provided parameters (v).</>
+    },
+    {
+      signature: "greaterOrEqualsThan(long)",
+      returns: "boolean",
+      description: <>Performs the greaterOrEqualsThan operation using the provided parameters (v).</>
+    },
+    {
+      signature: "greaterOrEqualsThan(double)",
+      returns: "boolean",
+      description: <>Performs the greaterOrEqualsThan operation using the provided parameters (v).</>
+    },
+    {
+      signature: "lessThan(Object)",
+      returns: "boolean",
+      description: <>Performs the lessThan operation using the provided parameters (otherObject).</>
+    },
+    {
+      signature: "lessThan(float)",
+      returns: "boolean",
+      description: <>Performs the lessThan operation using the provided parameters (v).</>
+    },
+    {
+      signature: "lessThan(int)",
+      returns: "boolean",
+      description: <>Performs the lessThan operation using the provided parameters (v).</>
+    },
+    {
+      signature: "lessThan(long)",
+      returns: "boolean",
+      description: <>Performs the lessThan operation using the provided parameters (v).</>
+    },
+    {
+      signature: "lessThan(double)",
+      returns: "boolean",
+      description: <>Performs the lessThan operation using the provided parameters (v).</>
+    },
+    {
+      signature: "lessOrEqualsThan(Object)",
+      returns: "boolean",
+      description: <>Performs the lessOrEqualsThan operation using the provided parameters (otherObject).</>
+    },
+    {
+      signature: "lessOrEqualsThan(float)",
+      returns: "boolean",
+      description: <>Performs the lessOrEqualsThan operation using the provided parameters (v).</>
+    },
+    {
+      signature: "lessOrEqualsThan(int)",
+      returns: "boolean",
+      description: <>Performs the lessOrEqualsThan operation using the provided parameters (v).</>
+    },
+    {
+      signature: "lessOrEqualsThan(long)",
+      returns: "boolean",
+      description: <>Performs the lessOrEqualsThan operation using the provided parameters (v).</>
+    },
+    {
+      signature: "lessOrEqualsThan(double)",
+      returns: "boolean",
+      description: <>Performs the lessOrEqualsThan operation using the provided parameters (v).</>
+    },
+    {
+      signature: "sum(Object)",
+      returns: "T",
+      description: <>Performs the sum operation using the provided parameters (otherObject).</>
+    },
+    {
+      signature: "sumEqual(Object)",
+      returns: "void",
+      description: <>Performs the sumEqual operation using the provided parameters (otherObject).</>
+    },
+    {
+      signature: "div(Object)",
+      returns: "T",
+      description: <>Performs the div operation using the provided parameters (otherObject).</>
+    },
+    {
+      signature: "divEqual(Object)",
+      returns: "void",
+      description: <>Performs the divEqual operation using the provided parameters (otherObject).</>
+    },
+    {
+      signature: "sub(Object)",
+      returns: "T",
+      description: <>Performs the sub operation using the provided parameters (otherObject).</>
+    },
+    {
+      signature: "subEqual(Object)",
+      returns: "void",
+      description: <>Performs the subEqual operation using the provided parameters (otherObject).</>
+    },
+    {
+      signature: "removeRemove()",
+      returns: "void",
+      description: <>Removes remove from the collection.</>
+    }
+  ]}
+  staticMethods={[
+    {
+      signature: "isNull(Object)",
+      returns: "boolean",
+      description: <>Returns whether null is true.</>
+    }
+  ]}
+/>

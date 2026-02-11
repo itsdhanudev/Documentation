@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # EqualsComparator
 
 Complete API reference for `EqualsComparator`, including constructors, attributes, virtual attributes, and methods.
@@ -14,13 +16,22 @@ Complete API reference for `EqualsComparator`, including constructors, attribute
 public interface EqualsComparator
 ```
 
-## Methods (6)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `@MethodArgs([{"otherObject"}])` | `void` | Checks if the current object is equal to the given object. |
-| `equals(Object)` | `boolean` | Executes `equals` and returns after the underlying engine call finishes. |
-| `@MethodArgs([{"otherObject"}])` | `void` | Checks if the current object is the same instance as the given object. |
-| `pointerEquals(Object)` | `boolean` | Executes `pointerEquals` and returns after the underlying engine call finishes. |
-| `@MethodArgs([{"otherObject"}])` | `void` | Checks if the current object is not equal to the given object. |
-| `notEquals(Object)` | `boolean` | Executes `notEquals` and returns after the underlying engine call finishes. |
+<ApiDoc
+  methods={[
+    {
+      signature: "equals(Object)",
+      returns: "boolean",
+      description: <>Checks if the current object is equal to the given object.</>
+    },
+    {
+      signature: "pointerEquals(Object)",
+      returns: "boolean",
+      description: <>Checks if the current object is the same instance as the given object.</>
+    },
+    {
+      signature: "notEquals(Object)",
+      returns: "boolean",
+      description: <>Checks if the current object is not equal to the given object.</>
+    }
+  ]}
+/>

@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # VoxelVertexGeneratorListener
 
 Referência completa da API de `VoxelVertexGeneratorListener`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,8 +16,12 @@ Referência completa da API de `VoxelVertexGeneratorListener`, incluindo constru
 public interface VoxelVertexGeneratorListener
 ```
 
-## Métodos (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `drawFace(int, int, int)` | `boolean` | Executa `drawFace` e retorna quando a chamada do motor termina. |
+<ApiDoc
+  methods={[
+    {
+      signature: "drawFace(int, int, int)",
+      returns: "boolean",
+      description: <>Executa <code>drawFace</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+/>

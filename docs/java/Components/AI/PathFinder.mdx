@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # PathFinder
 
 Complete API reference for `PathFinder`, including constructors, attributes, virtual attributes, and methods.
@@ -14,33 +16,68 @@ Complete API reference for `PathFinder`, including constructors, attributes, vir
 public class PathFinder extends Component
 ```
 
-## Constructors (2)
-
-| Signature | Description |
-| --- | --- |
-| PathFinder([PathFinder]) | Executes `PathFinder` and returns after the underlying engine call finishes. |
-| PathFinder() | Executes `PathFinder` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `component` | [PathFinder] | Represents the `component` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (2)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `searchDelay` | [float] | `get/set` | Virtual attribute exposed by `getSearchDelay`. Access it like a field to read or write the underlying value. |
-| `target` | [SpatialObject] | `get/set` | Virtual attribute exposed by `getTarget`. Access it like a field to read or write the underlying value. |
-
-## Methods (6)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getTargetDistance()` | `float` | Returns the current target distance. |
-| `getTargetDistanceInPath()` | `float` | Returns the current target distance in path. |
-| `hasPath()` | `boolean` | Returns whether path is true. |
-| `hasTarget()` | `boolean` | Returns whether target is true. |
-| `componentClassMatch(Component, Component)` | `boolean` | Executes `componentClassMatch` and returns after the underlying engine call finishes. |
-| `getEngineComponent()` | `Component` | Executes `getEngineComponent` and returns after the underlying engine call finishes. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "PathFinder(PathFinder)",
+      description: <>Executes <code>PathFinder</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "PathFinder()",
+      description: <>Executes <code>PathFinder</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "component",
+      type: "PathFinder",
+      description: <>Represents the <code>component</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "searchDelay",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getSearchDelay</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "target",
+      type: "SpatialObject",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getTarget</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "getTargetDistance()",
+      returns: "float",
+      description: <>Returns the current target distance.</>
+    },
+    {
+      signature: "getTargetDistanceInPath()",
+      returns: "float",
+      description: <>Returns the current target distance in path.</>
+    },
+    {
+      signature: "hasPath()",
+      returns: "boolean",
+      description: <>Returns whether path is true.</>
+    },
+    {
+      signature: "hasTarget()",
+      returns: "boolean",
+      description: <>Returns whether target is true.</>
+    },
+    {
+      signature: "componentClassMatch(Component, Component)",
+      returns: "boolean",
+      description: <>Executes <code>componentClassMatch</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "getEngineComponent()",
+      returns: "Component",
+      description: <>Executes <code>getEngineComponent</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

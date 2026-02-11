@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Matcap
 
 Complete API reference for `Matcap`, including constructors, attributes, virtual attributes, and methods.
@@ -14,28 +16,63 @@ Complete API reference for `Matcap`, including constructors, attributes, virtual
 public class Matcap
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| Matcap([Engine]) | Creates a new instance of Matcap. |
-| Matcap([String]) | Creates a new instance of Matcap. |
-| Matcap() | Creates a new instance of Matcap. |
-
-## Methods (5)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getFile()` | `String` | Returns the current file. |
-| `getTextureFile()` | `String` | Returns the current texture file. |
-| `setTextureFile(String)` | `void` | Sets or updates the texture file. |
-| `toJson()` | `String` | Executes `toJson` and returns after the underlying engine call finishes. |
-| `getTexture()` | `Texture` | Returns the current texture. |
-
-## Static Methods (3)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `genericInterface()` | `GenericClassInspectorEntry` | Executes `genericInterface` and returns after the underlying engine call finishes. |
-| `inspectorController()` | `ClassInspectorEntry` | Executes `inspectorController` and returns after the underlying engine call finishes. |
-| `fromJson(String)` | `Matcap` | Performs the fromJson operation using the provided parameters (json). |
+<ApiDoc
+  constructors={[
+    {
+      signature: "Matcap(Engine)",
+      description: <>Creates a new instance of Matcap.</>
+    },
+    {
+      signature: "Matcap(String)",
+      description: <>Creates a new instance of Matcap.</>
+    },
+    {
+      signature: "Matcap()",
+      description: <>Creates a new instance of Matcap.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "getFile()",
+      returns: "String",
+      description: <>Returns the current file.</>
+    },
+    {
+      signature: "getTextureFile()",
+      returns: "String",
+      description: <>Returns the current texture file.</>
+    },
+    {
+      signature: "setTextureFile(String)",
+      returns: "void",
+      description: <>Sets or updates the texture file.</>
+    },
+    {
+      signature: "toJson()",
+      returns: "String",
+      description: <>Executes <code>toJson</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "getTexture()",
+      returns: "Texture",
+      description: <>Returns the current texture.</>
+    }
+  ]}
+  staticMethods={[
+    {
+      signature: "genericInterface()",
+      returns: "GenericClassInspectorEntry",
+      description: <>Executes <code>genericInterface</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "inspectorController()",
+      returns: "ClassInspectorEntry",
+      description: <>Executes <code>inspectorController</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "fromJson(String)",
+      returns: "Matcap",
+      description: <>Performs the fromJson operation using the provided parameters (json).</>
+    }
+  ]}
+/>

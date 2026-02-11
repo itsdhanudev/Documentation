@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # FixedFrameListener
 
 Referência completa da API de `FixedFrameListener`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,9 +16,12 @@ Referência completa da API de `FixedFrameListener`, incluindo construtores, atr
 public interface FixedFrameListener
 ```
 
-## Métodos (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `@MethodArgs([{"deltaTime"}])` | `void` | Executa a operação @MethodArgs. |
-| `repeat(float)` | `void` | Executa `repeat` e retorna quando a chamada do motor termina. |
+<ApiDoc
+  methods={[
+    {
+      signature: "repeat(float)",
+      returns: "void",
+      description: <>Executa <code>repeat</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+/>

@@ -1,53 +1,44 @@
-# Vector3.cross()
+# Vector3.Vector3(Vector3)
 
-Instance method on `Vector3`.
-
-## Description
-
-- Returns the cross product of this Vector3 and the specified Vector3. |
-- Returns the cross product of this Vector3 and the specified X, Y and Z values. |
+Creates a new `Vector3` by copying another vector.
 
 ## Method Signature
 
 ```java
-cross(Vector3)
-cross(float, float, float)
+Vector3(Vector3 value)
 ```
 
-## Mathematical Definition
+## Description
 
-`\mathbf{a}\times\mathbf{b}`
+Copies all components from `value` into a new instance. Use this when you need a defensive copy before mutation.
 
 ## Parameters
 
-- `Vector3`: 3D vector input.
-- `float`: scalar numeric input.
+- `value` (`Vector3`): source vector.
 
 ## Returns
 
-- `Vector3`: returned by overloads of this method.
+- `Vector3`: new instance with identical component values.
 
 ## Mutability
 
-- Does not modify the current vector unless explicitly using a `Local`/`Equal` variant.
+- Does not modify the source vector.
 
 ## Edge Cases
 
-- Zero vectors can produce degenerate outputs for geometric methods.
-- `NaN` and `Infinity` inputs propagate according to IEEE-754 floating-point behavior.
-- Repeated operations may accumulate floating-point precision error.
+- If `value` is null, constructor behavior depends on runtime validation.
 
 ## Usage Example
 
 ```java
-Vector3 edgeA = p1.subtract(p0);
-Vector3 edgeB = p2.subtract(p0);
-Vector3 normal = edgeA.cross(edgeB).normalize();
+Vector3 original = new Vector3(3f, 4f, 5f);
+Vector3 copy = new Vector3(original);
+copy.lerp(new Vector3(0f, 0f, 0f), 0.5f);
 ```
 
 ## Mathematical Example
 
-Example input/output depends on overload; for vector arithmetic operations this is typically computed per-component.
+Input `(3, 4, 5)` -> new instance `(3, 4, 5)`.
 
 ## Visualization
 
@@ -84,7 +75,7 @@ Example input/output depends on overload; for vector arithmetic operations this 
           p.background('#0b1020');
           p.fill('#dbeafe');
           p.noStroke();
-          p.text('Vector3 topic: vector3.cross', 16, 24);
+          p.text('Vector3 topic: Vector3_copy', 16, 24);
           p.text('Generic before/after vector visualization', 16, 42);
 
           const ox = 140, oy = 250;
@@ -125,7 +116,7 @@ Example input/output depends on overload; for vector arithmetic operations this 
 ### Live p5.js Preview
 
 <iframe
-  title="p5-vector3-cross"
+  title="p5-Vector3-copy"
   style={ { width: "100%", height: "360px", border: "1px solid #1f2937", borderRadius: "8px", background: "#0b1020" } }
   srcDoc={`<!doctype html>
 <html>
@@ -157,7 +148,7 @@ Example input/output depends on overload; for vector arithmetic operations this 
           p.background('#0b1020');
           p.fill('#dbeafe');
           p.noStroke();
-          p.text('Vector3 topic: vector3.cross', 16, 24);
+          p.text('Vector3 topic: Vector3_copy', 16, 24);
           p.text('Generic before/after vector visualization', 16, 42);
 
           const ox = 140, oy = 250;

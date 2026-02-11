@@ -1,53 +1,44 @@
-# Vector3.cross()
+# Vector3.Vector3(int, float, int)
 
-Instance method on `Vector3`.
-
-## Description
-
-- Returns the cross product of this Vector3 and the specified Vector3. |
-- Returns the cross product of this Vector3 and the specified X, Y and Z values. |
+Creates a vector from mixed numeric types.
 
 ## Method Signature
 
 ```java
-cross(Vector3)
-cross(float, float, float)
+Vector3(int x, float y, int z)
 ```
 
-## Mathematical Definition
+## Description
 
-`\mathbf{a}\times\mathbf{b}`
+Useful when horizontal axes are grid-based and vertical axis is continuous.
 
 ## Parameters
 
-- `Vector3`: 3D vector input.
-- `float`: scalar numeric input.
+- `x` (`int`): X component.
+- `y` (`float`): Y component.
+- `z` (`int`): Z component.
 
 ## Returns
 
-- `Vector3`: returned by overloads of this method.
+- `Vector3`: new vector `(x, y, z)`.
 
 ## Mutability
 
-- Does not modify the current vector unless explicitly using a `Local`/`Equal` variant.
+- New instance creation only.
 
 ## Edge Cases
 
-- Zero vectors can produce degenerate outputs for geometric methods.
-- `NaN` and `Infinity` inputs propagate according to IEEE-754 floating-point behavior.
-- Repeated operations may accumulate floating-point precision error.
+- Integer parameters convert to float components.
 
 ## Usage Example
 
 ```java
-Vector3 edgeA = p1.subtract(p0);
-Vector3 edgeB = p2.subtract(p0);
-Vector3 normal = edgeA.cross(edgeB).normalize();
+Vector3 tilePos = new Vector3(8, 1.2f, 16);
 ```
 
 ## Mathematical Example
 
-Example input/output depends on overload; for vector arithmetic operations this is typically computed per-component.
+`(8, 1.2, 16)`.
 
 ## Visualization
 
@@ -84,7 +75,7 @@ Example input/output depends on overload; for vector arithmetic operations this 
           p.background('#0b1020');
           p.fill('#dbeafe');
           p.noStroke();
-          p.text('Vector3 topic: vector3.cross', 16, 24);
+          p.text('Vector3 topic: Vector3_int_float_int', 16, 24);
           p.text('Generic before/after vector visualization', 16, 42);
 
           const ox = 140, oy = 250;
@@ -125,7 +116,7 @@ Example input/output depends on overload; for vector arithmetic operations this 
 ### Live p5.js Preview
 
 <iframe
-  title="p5-vector3-cross"
+  title="p5-Vector3-int-float-int"
   style={ { width: "100%", height: "360px", border: "1px solid #1f2937", borderRadius: "8px", background: "#0b1020" } }
   srcDoc={`<!doctype html>
 <html>
@@ -157,7 +148,7 @@ Example input/output depends on overload; for vector arithmetic operations this 
           p.background('#0b1020');
           p.fill('#dbeafe');
           p.noStroke();
-          p.text('Vector3 topic: vector3.cross', 16, 24);
+          p.text('Vector3 topic: Vector3_int_float_int', 16, 24);
           p.text('Generic before/after vector visualization', 16, 42);
 
           const ox = 140, oy = 250;

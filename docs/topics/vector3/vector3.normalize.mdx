@@ -1,27 +1,24 @@
-# Vector3.cross()
+# Vector3.normalize()
 
 Instance method on `Vector3`.
 
 ## Description
 
-- Returns the cross product of this Vector3 and the specified Vector3. |
-- Returns the cross product of this Vector3 and the specified X, Y and Z values. |
+- Returns a normalized copy of this Vector3 (length equals 1). |
 
 ## Method Signature
 
 ```java
-cross(Vector3)
-cross(float, float, float)
+normalize()
 ```
 
 ## Mathematical Definition
 
-`\mathbf{a}\times\mathbf{b}`
+`\hat{v}=v/||v||`
 
 ## Parameters
 
-- `Vector3`: 3D vector input.
-- `float`: scalar numeric input.
+- None.
 
 ## Returns
 
@@ -33,16 +30,15 @@ cross(float, float, float)
 
 ## Edge Cases
 
-- Zero vectors can produce degenerate outputs for geometric methods.
-- `NaN` and `Infinity` inputs propagate according to IEEE-754 floating-point behavior.
-- Repeated operations may accumulate floating-point precision error.
+- Normalizing a zero-length vector is mathematically undefined.
+- Implementations may return zero, unchanged value, or `NaN` components.
+- Very small magnitudes can create unstable normalized directions.
 
 ## Usage Example
 
 ```java
-Vector3 edgeA = p1.subtract(p0);
-Vector3 edgeB = p2.subtract(p0);
-Vector3 normal = edgeA.cross(edgeB).normalize();
+Vector3 direction = target.getPosition().subtract(myTransform.getPosition()).normalize();
+myTransform.setPosition(myTransform.getPosition().add(direction.multiply(speed)));
 ```
 
 ## Mathematical Example
@@ -84,7 +80,7 @@ Example input/output depends on overload; for vector arithmetic operations this 
           p.background('#0b1020');
           p.fill('#dbeafe');
           p.noStroke();
-          p.text('Vector3 topic: vector3.cross', 16, 24);
+          p.text('Vector3 topic: vector3.normalize', 16, 24);
           p.text('Generic before/after vector visualization', 16, 42);
 
           const ox = 140, oy = 250;
@@ -125,7 +121,7 @@ Example input/output depends on overload; for vector arithmetic operations this 
 ### Live p5.js Preview
 
 <iframe
-  title="p5-vector3-cross"
+  title="p5-vector3-normalize"
   style={ { width: "100%", height: "360px", border: "1px solid #1f2937", borderRadius: "8px", background: "#0b1020" } }
   srcDoc={`<!doctype html>
 <html>
@@ -157,7 +153,7 @@ Example input/output depends on overload; for vector arithmetic operations this 
           p.background('#0b1020');
           p.fill('#dbeafe');
           p.noStroke();
-          p.text('Vector3 topic: vector3.cross', 16, 24);
+          p.text('Vector3 topic: vector3.normalize', 16, 24);
           p.text('Generic before/after vector visualization', 16, 42);
 
           const ox = 140, oy = 250;

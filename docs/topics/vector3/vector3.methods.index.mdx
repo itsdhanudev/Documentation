@@ -1,53 +1,98 @@
-# Vector3.cross()
+# Vector3 Method Topics Index
 
-Instance method on `Vector3`.
+This index lists generated per-method topics using the `vector3.<topicname>.mdx` naming format.
 
-## Description
+Total topics: **87**.
 
-- Returns the cross product of this Vector3 and the specified Vector3. |
-- Returns the cross product of this Vector3 and the specified X, Y and Z values. |
+## Files
 
-## Method Signature
-
-```java
-cross(Vector3)
-cross(float, float, float)
-```
-
-## Mathematical Definition
-
-`\mathbf{a}\times\mathbf{b}`
-
-## Parameters
-
-- `Vector3`: 3D vector input.
-- `float`: scalar numeric input.
-
-## Returns
-
-- `Vector3`: returned by overloads of this method.
-
-## Mutability
-
-- Does not modify the current vector unless explicitly using a `Local`/`Equal` variant.
-
-## Edge Cases
-
-- Zero vectors can produce degenerate outputs for geometric methods.
-- `NaN` and `Infinity` inputs propagate according to IEEE-754 floating-point behavior.
-- Repeated operations may accumulate floating-point precision error.
-
-## Usage Example
-
-```java
-Vector3 edgeA = p1.subtract(p0);
-Vector3 edgeB = p2.subtract(p0);
-Vector3 normal = edgeA.cross(edgeB).normalize();
-```
-
-## Mathematical Example
-
-Example input/output depends on overload; for vector arithmetic operations this is typically computed per-component.
+- `vector3.add.mdx`
+- `vector3.addadd.mdx`
+- `vector3.angle.mdx`
+- `vector3.back.mdx`
+- `vector3.blend.mdx`
+- `vector3.blendlocal.mdx`
+- `vector3.copy.mdx`
+- `vector3.cross.mdx`
+- `vector3.deserializelocal.mdx`
+- `vector3.distance.mdx`
+- `vector3.div.mdx`
+- `vector3.divequal.mdx`
+- `vector3.divide.mdx`
+- `vector3.divlocal.mdx`
+- `vector3.divx.mdx`
+- `vector3.divy.mdx`
+- `vector3.divz.mdx`
+- `vector3.dot.mdx`
+- `vector3.down.mdx`
+- `vector3.equals.mdx`
+- `vector3.forward.mdx`
+- `vector3.genericinterface.mdx`
+- `vector3.getxy.mdx`
+- `vector3.getxz.mdx`
+- `vector3.getyx.mdx`
+- `vector3.getyz.mdx`
+- `vector3.getzx.mdx`
+- `vector3.getzy.mdx`
+- `vector3.greaterorequalsthan.mdx`
+- `vector3.greaterthan.mdx`
+- `vector3.inspectorcontroller.mdx`
+- `vector3.isnull.mdx`
+- `vector3.left.mdx`
+- `vector3.length.mdx`
+- `vector3.lerp.mdx`
+- `vector3.lerpinseconds.mdx`
+- `vector3.lessorequalsthan.mdx`
+- `vector3.lessthan.mdx`
+- `vector3.magnitude.mdx`
+- `vector3.max.mdx`
+- `vector3.min.mdx`
+- `vector3.mul.mdx`
+- `vector3.mulequal.mdx`
+- `vector3.mullocal.mdx`
+- `vector3.multiply.mdx`
+- `vector3.mulx.mdx`
+- `vector3.muly.mdx`
+- `vector3.mulz.mdx`
+- `vector3.negate.mdx`
+- `vector3.normalize.mdx`
+- `vector3.normalizelocal.mdx`
+- `vector3.notequals.mdx`
+- `vector3.one.mdx`
+- `vector3.pointerequals.mdx`
+- `vector3.reflect.mdx`
+- `vector3.removeremove.mdx`
+- `vector3.right.mdx`
+- `vector3.rotate.mdx`
+- `vector3.rotatearoundpivot.mdx`
+- `vector3.serializetostring.mdx`
+- `vector3.set.mdx`
+- `vector3.setxy.mdx`
+- `vector3.setxz.mdx`
+- `vector3.setyx.mdx`
+- `vector3.setyz.mdx`
+- `vector3.setzx.mdx`
+- `vector3.setzy.mdx`
+- `vector3.smoothdamp.mdx`
+- `vector3.sqrdistance.mdx`
+- `vector3.sqrlength.mdx`
+- `vector3.sqrmagnitude.mdx`
+- `vector3.sub.mdx`
+- `vector3.subequal.mdx`
+- `vector3.sublocal.mdx`
+- `vector3.subtract.mdx`
+- `vector3.subx.mdx`
+- `vector3.suby.mdx`
+- `vector3.subz.mdx`
+- `vector3.sum.mdx`
+- `vector3.sumequal.mdx`
+- `vector3.sumlocal.mdx`
+- `vector3.sumx.mdx`
+- `vector3.sumy.mdx`
+- `vector3.sumz.mdx`
+- `vector3.tostring.mdx`
+- `vector3.trianglenormal.mdx`
+- `vector3.zero.mdx`
 
 ## Visualization
 
@@ -84,7 +129,7 @@ Example input/output depends on overload; for vector arithmetic operations this 
           p.background('#0b1020');
           p.fill('#dbeafe');
           p.noStroke();
-          p.text('Vector3 topic: vector3.cross', 16, 24);
+          p.text('Vector3 topic: vector3.methods.index', 16, 24);
           p.text('Generic before/after vector visualization', 16, 42);
 
           const ox = 140, oy = 250;
@@ -125,7 +170,7 @@ Example input/output depends on overload; for vector arithmetic operations this 
 ### Live p5.js Preview
 
 <iframe
-  title="p5-vector3-cross"
+  title="p5-vector3-methods-index"
   style={ { width: "100%", height: "360px", border: "1px solid #1f2937", borderRadius: "8px", background: "#0b1020" } }
   srcDoc={`<!doctype html>
 <html>
@@ -157,7 +202,7 @@ Example input/output depends on overload; for vector arithmetic operations this 
           p.background('#0b1020');
           p.fill('#dbeafe');
           p.noStroke();
-          p.text('Vector3 topic: vector3.cross', 16, 24);
+          p.text('Vector3 topic: vector3.methods.index', 16, 24);
           p.text('Generic before/after vector visualization', 16, 42);
 
           const ox = 140, oy = 250;

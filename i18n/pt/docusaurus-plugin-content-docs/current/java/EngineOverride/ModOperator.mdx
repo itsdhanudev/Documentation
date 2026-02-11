@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # ModOperator
 
 Referência completa da API de `ModOperator`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,9 +16,12 @@ Referência completa da API de `ModOperator`, incluindo construtores, atributos,
 public interface ModOperator
 ```
 
-## Métodos (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `@MethodArgs([{"otherObject"}])` | `void` | Aplica a operação de módulo com o objeto fornecido. |
-| `mod(Object)` | `T` | Executa `mod` e retorna quando a chamada do motor termina. |
+<ApiDoc
+  methods={[
+    {
+      signature: "mod(Object)",
+      returns: "T",
+      description: <>Aplica a operação de módulo com o objeto fornecido.</>
+    }
+  ]}
+/>

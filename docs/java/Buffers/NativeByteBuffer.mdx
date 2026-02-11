@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # NativeByteBuffer
 
 Complete API reference for `NativeByteBuffer`, including constructors, attributes, virtual attributes, and methods.
@@ -14,28 +16,63 @@ Complete API reference for `NativeByteBuffer`, including constructors, attribute
 public class NativeByteBuffer
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| NativeByteBuffer([NativeByteBuffer]) | Executes `NativeByteBuffer` and returns after the underlying engine call finishes. |
-| NativeByteBuffer([Engine]) | Executes `NativeByteBuffer` and returns after the underlying engine call finishes. |
-| NativeByteBuffer([int]) | Creates a new instance of NativeByteBuffer. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `buffer` | [NativeByteBuffer] | Represents the `buffer` value stored on this instance. Read or assign to update the property. |
-
-## Methods (7)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `get(int)` | `byte` | Returns the current value. |
-| `set(int, byte)` | `void` | Sets or updates the the value. |
-| `put(byte)` | `void` | Sets or updates the the value. |
-| `capacity()` | `int` | Executes `capacity` and returns after the underlying engine call finishes. |
-| `getPosition()` | `int` | Returns the current position. |
-| `Position(int)` | `void` | Performs the Position operation using the provided parameters (idx). |
-| `setPosition(int)` | `void` | Sets or updates the position. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "NativeByteBuffer(NativeByteBuffer)",
+      description: <>Executes <code>NativeByteBuffer</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "NativeByteBuffer(Engine)",
+      description: <>Executes <code>NativeByteBuffer</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "NativeByteBuffer(int)",
+      description: <>Creates a new instance of NativeByteBuffer.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "buffer",
+      type: "NativeByteBuffer",
+      description: <>Represents the <code>buffer</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "get(int)",
+      returns: "byte",
+      description: <>Returns the current value.</>
+    },
+    {
+      signature: "set(int, byte)",
+      returns: "void",
+      description: <>Sets or updates the the value.</>
+    },
+    {
+      signature: "put(byte)",
+      returns: "void",
+      description: <>Sets or updates the the value.</>
+    },
+    {
+      signature: "capacity()",
+      returns: "int",
+      description: <>Executes <code>capacity</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "getPosition()",
+      returns: "int",
+      description: <>Returns the current position.</>
+    },
+    {
+      signature: "Position(int)",
+      returns: "void",
+      description: <>Performs the Position operation using the provided parameters (idx).</>
+    },
+    {
+      signature: "setPosition(int)",
+      returns: "void",
+      description: <>Sets or updates the position.</>
+    }
+  ]}
+/>

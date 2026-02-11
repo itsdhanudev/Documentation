@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # GameController
 
 Referência completa da API de `GameController`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,16 +16,55 @@ Referência completa da API de `GameController`, incluindo construtores, atribut
 public class GameController
 ```
 
-## Atributos Virtuais (2)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `enableFrameLimit` | [boolean] | `get/set` | Verifica se o limite de frames está ativado. |
-| `limitFrames` | [int] | `get/set` | Retorna a propriedade `propriedade `número máximo de frames por segundo permitido``. |
-
-## Métodos Estáticos (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `quit()` | `void` | Encerra o jogo e fecha a aplicação (Somente no APK). |
-| `getState()` | `State` | Retorna a propriedade `propriedade `estado atual do jogo (Parado, Pausado ou Rodando)``. |
+<ApiDoc
+  attributes={[
+    {
+      name: "enableFrameLimit",
+      type: "boolean",
+      description: <><code>get/set</code></>
+    },
+    {
+      name: "limitFrames",
+      type: "int",
+      description: <><code>get/set</code></>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "enableFrameLimit",
+      type: "boolean",
+      access: "get/set",
+      description: <>Verifica se o limite de frames está ativado.</>
+    },
+    {
+      name: "limitFrames",
+      type: "int",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>propriedade </code>número máximo de frames por segundo permitido``.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "quit()",
+      returns: "void",
+      description: <>Encerra o jogo e fecha a aplicação (Somente no APK).</>
+    },
+    {
+      signature: "getState()",
+      returns: "State",
+      description: <>Retorna a propriedade <code>propriedade </code>estado atual do jogo (Parado, Pausado ou Rodando)``.</>
+    }
+  ]}
+  staticMethods={[
+    {
+      signature: "quit()",
+      returns: "void",
+      description: <>Encerra o jogo e fecha a aplicação (Somente no APK).</>
+    },
+    {
+      signature: "getState()",
+      returns: "State",
+      description: <>Retorna a propriedade <code>propriedade </code>estado atual do jogo (Parado, Pausado ou Rodando)``.</>
+    }
+  ]}
+/>

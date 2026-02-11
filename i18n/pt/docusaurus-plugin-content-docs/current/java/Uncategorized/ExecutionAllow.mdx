@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # ExecutionAllow
 
 Referência completa da API de `ExecutionAllow`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,17 +16,33 @@ Referência completa da API de `ExecutionAllow`, incluindo construtores, atribut
 public class ExecutionAllow
 ```
 
-## Construtores (1)
-
-| Signature | Description |
-| --- | --- |
-| ExecutionAllow([boolean], [boolean]) | Cria uma nova instância de ExecutionAllow. |
-
-## Métodos (4)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `onGameStopped()` | `boolean` | Executa a operação onGameStopped. |
-| `setOnGameStopped(boolean)` | `void` | Define ou atualiza a propriedade `propriedade `on game stopped``. |
-| `onGameRunning()` | `boolean` | Executa a operação onGameRunning. |
-| `setOnGameRunning(boolean)` | `void` | Define ou atualiza a propriedade `propriedade `on game running``. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "ExecutionAllow(boolean, boolean)",
+      description: <>Cria uma nova instância de ExecutionAllow.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "onGameStopped()",
+      returns: "boolean",
+      description: <>Executa a operação onGameStopped.</>
+    },
+    {
+      signature: "setOnGameStopped(boolean)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>on game stopped``.</>
+    },
+    {
+      signature: "onGameRunning()",
+      returns: "boolean",
+      description: <>Executa a operação onGameRunning.</>
+    },
+    {
+      signature: "setOnGameRunning(boolean)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>on game running``.</>
+    }
+  ]}
+/>

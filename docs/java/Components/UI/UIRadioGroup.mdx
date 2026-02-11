@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # UIRadioGroup
 
 Complete API reference for `UIRadioGroup`, including constructors, attributes, virtual attributes, and methods.
@@ -14,21 +16,26 @@ Complete API reference for `UIRadioGroup`, including constructors, attributes, v
 public class UIRadioGroup extends Component
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| UIRadioGroup([UIRadioGroup]) | Executes `UIRadioGroup` and returns after the underlying engine call finishes. |
-| UIRadioGroup([Engine]) | Executes `UIRadioGroup` and returns after the underlying engine call finishes. |
-| UIRadioGroup() | Creates a new instance of UIRadioGroup. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [UIRadioGroup] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (1)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
+<ApiDoc
+  constructors={[
+    {
+      signature: "UIRadioGroup(UIRadioGroup)",
+      description: <>Executes <code>UIRadioGroup</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "UIRadioGroup(Engine)",
+      description: <>Executes <code>UIRadioGroup</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "UIRadioGroup()",
+      description: <>Creates a new instance of UIRadioGroup.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "UIRadioGroup",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+/>

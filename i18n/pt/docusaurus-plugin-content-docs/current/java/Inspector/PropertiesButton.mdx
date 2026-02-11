@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # PropertiesButton
 
 Referência completa da API de `PropertiesButton`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,21 +16,36 @@ Referência completa da API de `PropertiesButton`, incluindo construtores, atrib
 public class PropertiesButton
 ```
 
-## Construtores (2)
-
-| Signature | Description |
-| --- | --- |
-| PropertiesButton([Engine]) | Executa `PropertiesButton` e retorna quando a chamada do motor termina. |
-| PropertiesButton([PropertiesButtonListener]) | Cria uma nova instância de PropertiesButton. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `runOnEngineThread` | [boolean] | Representa o valor de `runOnEngineThread` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Métodos Estáticos (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `inspectorController()` | `ClassInspectorEntry` | Executa `inspectorController` e retorna quando a chamada do motor termina. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "PropertiesButton(Engine)",
+      description: <>Executa <code>PropertiesButton</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "PropertiesButton(PropertiesButtonListener)",
+      description: <>Cria uma nova instância de PropertiesButton.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "runOnEngineThread",
+      type: "boolean",
+      description: <>Representa o valor de <code>runOnEngineThread</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "inspectorController()",
+      returns: "ClassInspectorEntry",
+      description: <>Executa <code>inspectorController</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+  staticMethods={[
+    {
+      signature: "inspectorController()",
+      returns: "ClassInspectorEntry",
+      description: <>Executa <code>inspectorController</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+/>

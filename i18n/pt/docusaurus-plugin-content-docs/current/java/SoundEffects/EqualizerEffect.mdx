@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # EqualizerEffect
 
 Referência completa da API de `EqualizerEffect`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,22 +16,34 @@ Referência completa da API de `EqualizerEffect`, incluindo construtores, atribu
 public class EqualizerEffect extends AudioEffect
 ```
 
-## Construtores (2)
-
-| Signature | Description |
-| --- | --- |
-| EqualizerEffect([Equalizer]) | Executa `EqualizerEffect` e retorna quando a chamada do motor termina. |
-| EqualizerEffect() | Executa `EqualizerEffect` e retorna quando a chamada do motor termina. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `effect` | [Equalizer] | Representa o valor de `effect` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Métodos (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getBandGain(int)` | `float` | Retorna a propriedade `propriedade `band gain atual``. |
-| `setBandGain(int, float)` | `void` | Define ou atualiza a propriedade `propriedade `band gain``. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "EqualizerEffect(Equalizer)",
+      description: <>Executa <code>EqualizerEffect</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "EqualizerEffect()",
+      description: <>Executa <code>EqualizerEffect</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "effect",
+      type: "Equalizer",
+      description: <>Representa o valor de <code>effect</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "getBandGain(int)",
+      returns: "float",
+      description: <>Retorna a propriedade <code>propriedade </code>band gain atual``.</>
+    },
+    {
+      signature: "setBandGain(int, float)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>band gain``.</>
+    }
+  ]}
+/>

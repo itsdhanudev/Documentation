@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # FilesPanelCustomIcon
 
 Complete API reference for `FilesPanelCustomIcon`, including constructors, attributes, virtual attributes, and methods.
@@ -14,16 +16,28 @@ Complete API reference for `FilesPanelCustomIcon`, including constructors, attri
 public class FilesPanelCustomIcon
 ```
 
-## Constructors (1)
-
-| Signature | Description |
-| --- | --- |
-| FilesPanelCustomIcon() | Creates a new instance of FilesPanelCustomIcon. |
-
-## Methods (3)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getIconForFile(File)` | `File` | Returns the current icon for file. |
-| `applyIcon(File, ImageView)` | `boolean` | Performs the applyIcon operation using the provided parameters (file, imageView). |
-| `supportFile(File)` | `boolean` | Performs the supportFile operation using the provided parameters (file). |
+<ApiDoc
+  constructors={[
+    {
+      signature: "FilesPanelCustomIcon()",
+      description: <>Creates a new instance of FilesPanelCustomIcon.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "getIconForFile(File)",
+      returns: "File",
+      description: <>Returns the current icon for file.</>
+    },
+    {
+      signature: "applyIcon(File, ImageView)",
+      returns: "boolean",
+      description: <>Performs the applyIcon operation using the provided parameters (file, imageView).</>
+    },
+    {
+      signature: "supportFile(File)",
+      returns: "boolean",
+      description: <>Performs the supportFile operation using the provided parameters (file).</>
+    }
+  ]}
+/>

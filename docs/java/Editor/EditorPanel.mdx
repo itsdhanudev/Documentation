@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # EditorPanel
 
 Complete API reference for `EditorPanel`, including constructors, attributes, virtual attributes, and methods.
@@ -14,49 +16,157 @@ Complete API reference for `EditorPanel`, including constructors, attributes, vi
 public class EditorPanel
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| EditorPanel([EditorPanel]) | Executes `EditorPanel` and returns after the underlying engine call finishes. |
-| EditorPanel([Engine]) | Executes `EditorPanel` and returns after the underlying engine call finishes. |
-| EditorPanel() | Executes `EditorPanel` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `panel` | [EditorPanel] | Represents the `panel` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (12)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `contentHeightPixels` | [int] | `get` | Virtual attribute exposed by `getContentHeightPixels`. Access it like a field to read or write the underlying value. |
-| `contentWidthPixels` | [int] | `get` | Virtual attribute exposed by `getContentWidthPixels`. Access it like a field to read or write the underlying value. |
-| `contentXPixels` | [int] | `get` | Virtual attribute exposed by `getContentXPixels`. Access it like a field to read or write the underlying value. |
-| `contentYPixels` | [int] | `get` | Virtual attribute exposed by `getContentYPixels`. Access it like a field to read or write the underlying value. |
-| `floating` | [boolean] | `get` | Virtual attribute exposed by `isFloating`. Access it like a field to read or write the underlying value. |
-| `requestCloseConfirmation` | [boolean] | `get/set` | Virtual attribute exposed by `isRequestCloseConfirmation`. Access it like a field to read or write the underlying value. |
-| `tittle` | [String] | `get/set` | Virtual attribute exposed by `getTittle`. Access it like a field to read or write the underlying value. |
-| `totalHeightPixels` | [int] | `get` | Virtual attribute exposed by `getTotalHeightPixels`. Access it like a field to read or write the underlying value. |
-| `totalWidthPixels` | [int] | `get` | Virtual attribute exposed by `getTotalWidthPixels`. Access it like a field to read or write the underlying value. |
-| `totalXPixels` | [int] | `get` | Virtual attribute exposed by `getTotalXPixels`. Access it like a field to read or write the underlying value. |
-| `totalYPixels` | [int] | `get` | Virtual attribute exposed by `getTotalYPixels`. Access it like a field to read or write the underlying value. |
-| `visible` | [boolean] | `get` | Virtual attribute exposed by `isVisible`. Access it like a field to read or write the underlying value. |
-
-## Methods (11)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `setPanel(EditorPanel)` | `void` | Executes `setPanel` and returns after the underlying engine call finishes. |
-| `isTouchInside(Touch)` | `boolean` | Returns whether touch inside is true. |
-| `determineTouch(GUIUtils.TouchFilter)` | `Touch` | Performs the determineTouch operation using the provided parameters (touchFilter). |
-| `determineTouch(GUIUtils.TouchFilter, int)` | `Touch` | Performs the determineTouch operation using the provided parameters (touchFilter, offset). |
-| `determineTouchPosition(Touch)` | `Vector2` | Performs the determineTouchPosition operation using the provided parameters (touch). |
-| `determineTouchPosition(Touch, Vector2)` | `Vector2` | Performs the determineTouchPosition operation using the provided parameters (touch, out). |
-| `requestDetach()` | `void` | Executes `requestDetach` and returns after the underlying engine call finishes. |
-| `blink()` | `void` | Executes `blink` and returns after the underlying engine call finishes. |
-| `isAllowCloseX()` | `boolean` | Returns whether allow close x is true. |
-| `setAllowCloseX(boolean)` | `void` | Sets or updates the allow close x. |
-| `copy()` | `EditorPanel` | Returns a copy of this EditorPanel instance. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "EditorPanel(EditorPanel)",
+      description: <>Executes <code>EditorPanel</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "EditorPanel(Engine)",
+      description: <>Executes <code>EditorPanel</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "EditorPanel()",
+      description: <>Executes <code>EditorPanel</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "panel",
+      type: "EditorPanel",
+      description: <>Represents the <code>panel</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "contentHeightPixels",
+      type: "int",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>getContentHeightPixels</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "contentWidthPixels",
+      type: "int",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>getContentWidthPixels</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "contentXPixels",
+      type: "int",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>getContentXPixels</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "contentYPixels",
+      type: "int",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>getContentYPixels</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "floating",
+      type: "boolean",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>isFloating</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "requestCloseConfirmation",
+      type: "boolean",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>isRequestCloseConfirmation</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "tittle",
+      type: "String",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getTittle</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "totalHeightPixels",
+      type: "int",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>getTotalHeightPixels</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "totalWidthPixels",
+      type: "int",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>getTotalWidthPixels</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "totalXPixels",
+      type: "int",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>getTotalXPixels</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "totalYPixels",
+      type: "int",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>getTotalYPixels</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "visible",
+      type: "boolean",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>isVisible</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "setPanel(EditorPanel)",
+      returns: "void",
+      description: <>Executes <code>setPanel</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "isTouchInside(Touch)",
+      returns: "boolean",
+      description: <>Returns whether touch inside is true.</>
+    },
+    {
+      signature: "determineTouch(GUIUtils.TouchFilter)",
+      returns: "Touch",
+      description: <>Performs the determineTouch operation using the provided parameters (touchFilter).</>
+    },
+    {
+      signature: "determineTouch(GUIUtils.TouchFilter, int)",
+      returns: "Touch",
+      description: <>Performs the determineTouch operation using the provided parameters (touchFilter, offset).</>
+    },
+    {
+      signature: "determineTouchPosition(Touch)",
+      returns: "Vector2",
+      description: <>Performs the determineTouchPosition operation using the provided parameters (touch).</>
+    },
+    {
+      signature: "determineTouchPosition(Touch, Vector2)",
+      returns: "Vector2",
+      description: <>Performs the determineTouchPosition operation using the provided parameters (touch, out).</>
+    },
+    {
+      signature: "requestDetach()",
+      returns: "void",
+      description: <>Executes <code>requestDetach</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "blink()",
+      returns: "void",
+      description: <>Executes <code>blink</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "isAllowCloseX()",
+      returns: "boolean",
+      description: <>Returns whether allow close x is true.</>
+    },
+    {
+      signature: "setAllowCloseX(boolean)",
+      returns: "void",
+      description: <>Sets or updates the allow close x.</>
+    },
+    {
+      signature: "copy()",
+      returns: "EditorPanel",
+      description: <>Returns a copy of this EditorPanel instance.</>
+    }
+  ]}
+/>

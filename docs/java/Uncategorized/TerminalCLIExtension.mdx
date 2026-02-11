@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # TerminalCLIExtension
 
 Complete API reference for `TerminalCLIExtension`, including constructors, attributes, virtual attributes, and methods.
@@ -14,37 +16,132 @@ Complete API reference for `TerminalCLIExtension`, including constructors, attri
 public class TerminalCLIExtension
 ```
 
-## Constructors (2)
-
-| Signature | Description |
-| --- | --- |
-| TerminalCLIExtension([JavaTerminalCLIExtension]) | Executes `TerminalCLIExtension` and returns after the underlying engine call finishes. |
-| TerminalCLIExtension() | Executes `TerminalCLIExtension` and returns after the underlying engine call finishes. |
-
-## Methods (23)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `setInstance(JavaTerminalCLIExtension)` | `void` | Executes `setInstance` and returns after the underlying engine call finishes. |
-| `getCommand()` | `String` | Executes `getCommand` and returns after the underlying engine call finishes. |
-| `getInfo()` | `String` | Returns the current info. |
-| `start(String[])` | `void` | Executes `start` and returns after the underlying engine call finishes. |
-| `run(String)` | `void` | Executes `run` and returns after the underlying engine call finishes. |
-| `exit()` | `void` | Executes `exit` and returns after the underlying engine call finishes. |
-| `log(Object)` | `void` | Performs the log operation using the provided parameters (message). |
-| `log(String)` | `void` | Performs the log operation using the provided parameters (message). |
-| `log(Vector3)` | `void` | Performs the log operation using the provided parameters (message). |
-| `log(Quaternion)` | `void` | Performs the log operation using the provided parameters (message). |
-| `log(Vector2)` | `void` | Performs the log operation using the provided parameters (message). |
-| `log(float)` | `void` | Performs the log operation using the provided parameters (message). |
-| `log(int)` | `void` | Performs the log operation using the provided parameters (message). |
-| `log(long)` | `void` | Performs the log operation using the provided parameters (message). |
-| `log(double)` | `void` | Performs the log operation using the provided parameters (message). |
-| `log(char)` | `void` | Performs the log operation using the provided parameters (message). |
-| `log(byte)` | `void` | Performs the log operation using the provided parameters (message). |
-| `log(Error)` | `void` | Performs the log operation using the provided parameters (e). |
-| `log(Exception)` | `void` | Performs the log operation using the provided parameters (e). |
-| `log(Throwable)` | `void` | Performs the log operation using the provided parameters (e). |
-| `log(Log)` | `void` | Performs the log operation using the provided parameters (log). |
-| `log(String[])` | `void` | Performs the log operation using the provided parameters (log). |
-| `log([List&lt;String&gt;])` | `void` | Performs the log operation using the provided parameters (log). |
+<ApiDoc
+  constructors={[
+    {
+      signature: "TerminalCLIExtension(JavaTerminalCLIExtension)",
+      description: <>Executes <code>TerminalCLIExtension</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "TerminalCLIExtension()",
+      description: <>Executes <code>TerminalCLIExtension</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "setInstance(JavaTerminalCLIExtension)",
+      returns: "void",
+      description: <>Executes <code>setInstance</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "getCommand()",
+      returns: "String",
+      description: <>Executes <code>getCommand</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "getInfo()",
+      returns: "String",
+      description: <>Returns the current info.</>
+    },
+    {
+      signature: "start(String[])",
+      returns: "void",
+      description: <>Executes <code>start</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "run(String)",
+      returns: "void",
+      description: <>Executes <code>run</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "exit()",
+      returns: "void",
+      description: <>Executes <code>exit</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "log(Object)",
+      returns: "void",
+      description: <>Performs the log operation using the provided parameters (message).</>
+    },
+    {
+      signature: "log(String)",
+      returns: "void",
+      description: <>Performs the log operation using the provided parameters (message).</>
+    },
+    {
+      signature: "log(Vector3)",
+      returns: "void",
+      description: <>Performs the log operation using the provided parameters (message).</>
+    },
+    {
+      signature: "log(Quaternion)",
+      returns: "void",
+      description: <>Performs the log operation using the provided parameters (message).</>
+    },
+    {
+      signature: "log(Vector2)",
+      returns: "void",
+      description: <>Performs the log operation using the provided parameters (message).</>
+    },
+    {
+      signature: "log(float)",
+      returns: "void",
+      description: <>Performs the log operation using the provided parameters (message).</>
+    },
+    {
+      signature: "log(int)",
+      returns: "void",
+      description: <>Performs the log operation using the provided parameters (message).</>
+    },
+    {
+      signature: "log(long)",
+      returns: "void",
+      description: <>Performs the log operation using the provided parameters (message).</>
+    },
+    {
+      signature: "log(double)",
+      returns: "void",
+      description: <>Performs the log operation using the provided parameters (message).</>
+    },
+    {
+      signature: "log(char)",
+      returns: "void",
+      description: <>Performs the log operation using the provided parameters (message).</>
+    },
+    {
+      signature: "log(byte)",
+      returns: "void",
+      description: <>Performs the log operation using the provided parameters (message).</>
+    },
+    {
+      signature: "log(Error)",
+      returns: "void",
+      description: <>Performs the log operation using the provided parameters (e).</>
+    },
+    {
+      signature: "log(Exception)",
+      returns: "void",
+      description: <>Performs the log operation using the provided parameters (e).</>
+    },
+    {
+      signature: "log(Throwable)",
+      returns: "void",
+      description: <>Performs the log operation using the provided parameters (e).</>
+    },
+    {
+      signature: "log(Log)",
+      returns: "void",
+      description: <>Performs the log operation using the provided parameters (log).</>
+    },
+    {
+      signature: "log(String[])",
+      returns: "void",
+      description: <>Performs the log operation using the provided parameters (log).</>
+    },
+    {
+      signature: "log(List&lt;String&gt;)",
+      returns: "void",
+      description: <>Performs the log operation using the provided parameters (log).</>
+    }
+  ]}
+/>

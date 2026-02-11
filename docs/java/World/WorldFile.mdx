@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # WorldFile
 
 Complete API reference for `WorldFile`, including constructors, attributes, virtual attributes, and methods.
@@ -14,22 +16,34 @@ Complete API reference for `WorldFile`, including constructors, attributes, virt
 public class WorldFile
 ```
 
-## Constructors (2)
-
-| Signature | Description |
-| --- | --- |
-| WorldFile([String]) | Executes `WorldFile` and returns after the underlying engine call finishes. |
-| WorldFile() | Executes `WorldFile` and returns after the underlying engine call finishes. |
-
-## Methods (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `toString()` | `String` | Returns the string representation. |
-
-## Static Methods (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `genericInterface()` | `GenericClassInspectorEntry` | Executes `genericInterface` and returns after the underlying engine call finishes. |
-| `inspectorController()` | `ClassInspectorEntry` | Executes `inspectorController` and returns after the underlying engine call finishes. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "WorldFile(String)",
+      description: <>Executes <code>WorldFile</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "WorldFile()",
+      description: <>Executes <code>WorldFile</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "toString()",
+      returns: "String",
+      description: <>Returns the string representation.</>
+    }
+  ]}
+  staticMethods={[
+    {
+      signature: "genericInterface()",
+      returns: "GenericClassInspectorEntry",
+      description: <>Executes <code>genericInterface</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "inspectorController()",
+      returns: "ClassInspectorEntry",
+      description: <>Executes <code>inspectorController</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

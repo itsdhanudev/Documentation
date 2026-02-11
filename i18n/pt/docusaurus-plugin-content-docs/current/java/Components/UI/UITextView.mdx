@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # UITextView
 
 Referência completa da API de `UITextView`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,25 +16,52 @@ Referência completa da API de `UITextView`, incluindo construtores, atributos, 
 public class UITextView extends Component
 ```
 
-## Construtores (3)
-
-| Signature | Description |
-| --- | --- |
-| UITextView([UITextView]) | Executa `UITextView` e retorna quando a chamada do motor termina. |
-| UITextView([Engine]) | Executa `UITextView` e retorna quando a chamada do motor termina. |
-| UITextView() | Cria uma nova instância de UITextView. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [UITextView] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (4)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `color` | [Color] | `get/set` | Atributo virtual exposto por `getColor`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `font` | [Font] | `get/set` | Atributo virtual exposto por `getFont`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `text` | [String] | `get/set` | Atributo virtual exposto por `getText`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `textSize` | [float] | `get/set` | Atributo virtual exposto por `getTextSize`. Acesse como um campo para ler ou escrever o valor subjacente. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "UITextView(UITextView)",
+      description: <>Executa <code>UITextView</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "UITextView(Engine)",
+      description: <>Executa <code>UITextView</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "UITextView()",
+      description: <>Cria uma nova instância de UITextView.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "UITextView",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "color",
+      type: "Color",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getColor</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "font",
+      type: "Font",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getFont</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "text",
+      type: "String",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getText</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "textSize",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getTextSize</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+/>

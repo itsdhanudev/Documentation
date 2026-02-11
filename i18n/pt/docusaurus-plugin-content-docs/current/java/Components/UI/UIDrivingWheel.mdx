@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # UIDrivingWheel
 
 Referencia completa da API de `UIDrivingWheel`, incluindo construtores, atributos, atributos virtuais e metodos.
@@ -14,30 +16,82 @@ Referencia completa da API de `UIDrivingWheel`, incluindo construtores, atributo
 public class UIDrivingWheel extends Component
 ```
 
-## Construtores (3)
-
-| Signature | Description |
-| --- | --- |
-| UIDrivingWheel([UIDrivingWheel]) | Executa `UIDrivingWheel` e retorna quando a chamada do motor termina. |
-| UIDrivingWheel([Engine]) | Executa `UIDrivingWheel` e retorna quando a chamada do motor termina. |
-| UIDrivingWheel() | Cria uma nova instancia de UIDrivingWheel. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [UIDrivingWheel] | Representa o valor de `instance` armazenado nesta instancia. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (9)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `value` | [float] | `get` | Atributo virtual exposto por `getValue`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `angle` | [float] | `get` | Atributo virtual exposto por `getAngle`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `lerp` | [float] | `get/set` | Atributo virtual exposto por `getLerp`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `maxAngle` | [float] | `get/set` | Atributo virtual exposto por `getMaxAngle`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `pressed` | [boolean] | `get` | Atributo virtual exposto por `isPressed`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `down` | [boolean] | `get` | Atributo virtual exposto por `isDown`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `up` | [boolean] | `get` | Atributo virtual exposto por `isUp`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `color` | [Color] | `get/set` | Atributo virtual exposto por `getColor`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `texture` | [Texture] | `get/set` | Atributo virtual exposto por `getTexture`. Acesse como um campo para ler ou escrever o valor subjacente. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "UIDrivingWheel(UIDrivingWheel)",
+      description: <>Executa <code>UIDrivingWheel</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "UIDrivingWheel(Engine)",
+      description: <>Executa <code>UIDrivingWheel</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "UIDrivingWheel()",
+      description: <>Cria uma nova instancia de UIDrivingWheel.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "UIDrivingWheel",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta instancia. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "value",
+      type: "float",
+      access: "get",
+      description: <>Atributo virtual exposto por <code>getValue</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "angle",
+      type: "float",
+      access: "get",
+      description: <>Atributo virtual exposto por <code>getAngle</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "lerp",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getLerp</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "maxAngle",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getMaxAngle</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "pressed",
+      type: "boolean",
+      access: "get",
+      description: <>Atributo virtual exposto por <code>isPressed</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "down",
+      type: "boolean",
+      access: "get",
+      description: <>Atributo virtual exposto por <code>isDown</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "up",
+      type: "boolean",
+      access: "get",
+      description: <>Atributo virtual exposto por <code>isUp</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "color",
+      type: "Color",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getColor</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "texture",
+      type: "Texture",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getTexture</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+/>

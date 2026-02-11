@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Texture
 
 Complete API reference for `Texture`, including constructors, attributes, virtual attributes, and methods.
@@ -14,87 +16,311 @@ Complete API reference for `Texture`, including constructors, attributes, virtua
 public class Texture
 ```
 
-## Constructors (8)
-
-| Signature | Description |
-| --- | --- |
-| Texture([TextureInstance]) | Executes `Texture` and returns after the underlying engine call finishes. |
-| Texture([Engine]) | Executes `Texture` and returns after the underlying engine call finishes. |
-| Texture([int], [int]) | Executes `Texture` and returns after the underlying engine call finishes. |
-| Texture([int], [int], [boolean]) | Creates a new instance of Texture. |
-| Texture([int], [int], [boolean], [boolean]) | Executes `Texture` and returns after the underlying engine call finishes. |
-| Texture([int], [int], [Format]) | Creates a new instance of Texture. |
-| Texture([int], [int], [boolean], [Format]) | Creates a new instance of Texture. |
-| Texture([int], [int], [boolean], [boolean], [Format]) | Executes `Texture` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [TextureInstance] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (4)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `height` | [int] | `get` | Virtual attribute exposed by `getHeight`. Access it like a field to read or write the underlying value. |
-| `mipmapEnabled` | [boolean] | `get/set` | Virtual attribute exposed by `isMipmapEnabled`. Access it like a field to read or write the underlying value. |
-| `width` | [int] | `get` | Virtual attribute exposed by `getWidth`. Access it like a field to read or write the underlying value. |
-| `writable` | [boolean] | `get` | Virtual attribute exposed by `isWritable`. Access it like a field to read or write the underlying value. |
-
-## Methods (35)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `exportToFile(JAVARuntime.File)` | `void` | Performs the exportToFile operation using the provided parameters (file). |
-| `exportToFile(JAVARuntime.File, int)` | `void` | Performs the exportToFile operation using the provided parameters (file, quality). |
-| `exportToFile(JAVARuntime.File, int, ExportFormat)` | `void` | Executes `exportToFile` and returns after the underlying engine call finishes. |
-| `apply()` | `void` | Executes `apply` and returns after the underlying engine call finishes. |
-| `getPixel(int, int)` | `Color` | Returns the current pixel. |
-| `getPixel(Vector2)` | `Color` | Returns the current pixel. |
-| `setPixel(int, int, Color)` | `void` | Sets or updates the pixel. |
-| `setPixel(Vector2, Color)` | `void` | Sets or updates the pixel. |
-| `get(int, int)` | `Color` | Returns the current value. |
-| `get(int, int, Color)` | `Color` | Returns the current value. |
-| `getFloatRed(int, int)` | `float` | Returns the current float red. |
-| `getFloatGreen(int, int)` | `float` | Returns the current float green. |
-| `getFloatBlue(int, int)` | `float` | Returns the current float blue. |
-| `getFloatAlpha(int, int)` | `float` | Returns the current float alpha. |
-| `getIntRed(int, int)` | `int` | Returns the current int red. |
-| `getIntGreen(int, int)` | `int` | Returns the current int green. |
-| `getIntBlue(int, int)` | `int` | Returns the current int blue. |
-| `getIntAlpha(int, int)` | `int` | Returns the current int alpha. |
-| `set(int, int, Color)` | `void` | Sets or updates the the value. |
-| `set(int, int, float, float, float, float)` | `void` | Sets or updates the the value. |
-| `set(int, int, float, float, float)` | `void` | Sets or updates the the value. |
-| `setR(int, int, float)` | `void` | Sets or updates the r. |
-| `setG(int, int, float)` | `void` | Sets or updates the g. |
-| `setB(int, int, float)` | `void` | Sets or updates the b. |
-| `setA(int, int, float)` | `void` | Sets or updates the a. |
-| `set(int, int, int, int, int, int)` | `void` | Sets or updates the the value. |
-| `set(int, int, int, int, int)` | `void` | Sets or updates the the value. |
-| `setR(int, int, int)` | `void` | Sets or updates the r. |
-| `setG(int, int, int)` | `void` | Sets or updates the g. |
-| `setB(int, int, int)` | `void` | Sets or updates the b. |
-| `setA(int, int, int)` | `void` | Sets or updates the a. |
-| `copyPixels(Texture)` | `void` | Returns a copy of this Texture instance. |
-| `extractGPUImageToBtm(ExtractCallback)` | `void` | Executes `extractGPUImageToBtm` and returns after the underlying engine call finishes. |
-| `saveGPUImageToFile(File)` | `void` | Executes `saveGPUImageToFile` and returns after the underlying engine call finishes. |
-| `saveGPUImageToFile(File, Runnable)` | `void` | Executes `saveGPUImageToFile` and returns after the underlying engine call finishes. |
-
-## Static Methods (12)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `genericInterface()` | `GenericClassInspectorEntry` | Executes `genericInterface` and returns after the underlying engine call finishes. |
-| `inspectorController()` | `ClassInspectorEntry` | Executes `inspectorController` and returns after the underlying engine call finishes. |
-| `loadFile(TextureFile)` | `Texture` | Loads file into the object. |
-| `loadFile(JAVARuntime.File)` | `Texture` | Loads file into the object. |
-| `loadInputStream(InputStream)` | `Texture` | Loads input stream into the object. |
-| `loadURL(String)` | `Texture` | Executes `loadURL` and returns after the underlying engine call finishes. |
-| `newDepth(int, int)` | `Texture` | Creates a new depth. |
-| `white()` | `Texture` | Executes `white` and returns after the underlying engine call finishes. |
-| `empty()` | `Texture` | Executes `empty` and returns after the underlying engine call finishes. |
-| `black()` | `Texture` | Executes `black` and returns after the underlying engine call finishes. |
-| `isRenderable(Texture)` | `boolean` | Returns whether renderable is true. |
-| `isRenderable(TextureInstance)` | `boolean` | Returns whether renderable is true. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "Texture(TextureInstance)",
+      description: <>Executes <code>Texture</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "Texture(Engine)",
+      description: <>Executes <code>Texture</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "Texture(int, int)",
+      description: <>Executes <code>Texture</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "Texture(int, int, boolean)",
+      description: <>Creates a new instance of Texture.</>
+    },
+    {
+      signature: "Texture(int, int, boolean, boolean)",
+      description: <>Executes <code>Texture</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "Texture(int, int, Format)",
+      description: <>Creates a new instance of Texture.</>
+    },
+    {
+      signature: "Texture(int, int, boolean, Format)",
+      description: <>Creates a new instance of Texture.</>
+    },
+    {
+      signature: "Texture(int, int, boolean, boolean, Format)",
+      description: <>Executes <code>Texture</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "TextureInstance",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "height",
+      type: "int",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>getHeight</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "mipmapEnabled",
+      type: "boolean",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>isMipmapEnabled</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "width",
+      type: "int",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>getWidth</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "writable",
+      type: "boolean",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>isWritable</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "exportToFile(JAVARuntime.File)",
+      returns: "void",
+      description: <>Performs the exportToFile operation using the provided parameters (file).</>
+    },
+    {
+      signature: "exportToFile(JAVARuntime.File, int)",
+      returns: "void",
+      description: <>Performs the exportToFile operation using the provided parameters (file, quality).</>
+    },
+    {
+      signature: "exportToFile(JAVARuntime.File, int, ExportFormat)",
+      returns: "void",
+      description: <>Executes <code>exportToFile</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "apply()",
+      returns: "void",
+      description: <>Executes <code>apply</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "getPixel(int, int)",
+      returns: "Color",
+      description: <>Returns the current pixel.</>
+    },
+    {
+      signature: "getPixel(Vector2)",
+      returns: "Color",
+      description: <>Returns the current pixel.</>
+    },
+    {
+      signature: "setPixel(int, int, Color)",
+      returns: "void",
+      description: <>Sets or updates the pixel.</>
+    },
+    {
+      signature: "setPixel(Vector2, Color)",
+      returns: "void",
+      description: <>Sets or updates the pixel.</>
+    },
+    {
+      signature: "get(int, int)",
+      returns: "Color",
+      description: <>Returns the current value.</>
+    },
+    {
+      signature: "get(int, int, Color)",
+      returns: "Color",
+      description: <>Returns the current value.</>
+    },
+    {
+      signature: "getFloatRed(int, int)",
+      returns: "float",
+      description: <>Returns the current float red.</>
+    },
+    {
+      signature: "getFloatGreen(int, int)",
+      returns: "float",
+      description: <>Returns the current float green.</>
+    },
+    {
+      signature: "getFloatBlue(int, int)",
+      returns: "float",
+      description: <>Returns the current float blue.</>
+    },
+    {
+      signature: "getFloatAlpha(int, int)",
+      returns: "float",
+      description: <>Returns the current float alpha.</>
+    },
+    {
+      signature: "getIntRed(int, int)",
+      returns: "int",
+      description: <>Returns the current int red.</>
+    },
+    {
+      signature: "getIntGreen(int, int)",
+      returns: "int",
+      description: <>Returns the current int green.</>
+    },
+    {
+      signature: "getIntBlue(int, int)",
+      returns: "int",
+      description: <>Returns the current int blue.</>
+    },
+    {
+      signature: "getIntAlpha(int, int)",
+      returns: "int",
+      description: <>Returns the current int alpha.</>
+    },
+    {
+      signature: "set(int, int, Color)",
+      returns: "void",
+      description: <>Sets or updates the the value.</>
+    },
+    {
+      signature: "set(int, int, float, float, float, float)",
+      returns: "void",
+      description: <>Sets or updates the the value.</>
+    },
+    {
+      signature: "set(int, int, float, float, float)",
+      returns: "void",
+      description: <>Sets or updates the the value.</>
+    },
+    {
+      signature: "setR(int, int, float)",
+      returns: "void",
+      description: <>Sets or updates the r.</>
+    },
+    {
+      signature: "setG(int, int, float)",
+      returns: "void",
+      description: <>Sets or updates the g.</>
+    },
+    {
+      signature: "setB(int, int, float)",
+      returns: "void",
+      description: <>Sets or updates the b.</>
+    },
+    {
+      signature: "setA(int, int, float)",
+      returns: "void",
+      description: <>Sets or updates the a.</>
+    },
+    {
+      signature: "set(int, int, int, int, int, int)",
+      returns: "void",
+      description: <>Sets or updates the the value.</>
+    },
+    {
+      signature: "set(int, int, int, int, int)",
+      returns: "void",
+      description: <>Sets or updates the the value.</>
+    },
+    {
+      signature: "setR(int, int, int)",
+      returns: "void",
+      description: <>Sets or updates the r.</>
+    },
+    {
+      signature: "setG(int, int, int)",
+      returns: "void",
+      description: <>Sets or updates the g.</>
+    },
+    {
+      signature: "setB(int, int, int)",
+      returns: "void",
+      description: <>Sets or updates the b.</>
+    },
+    {
+      signature: "setA(int, int, int)",
+      returns: "void",
+      description: <>Sets or updates the a.</>
+    },
+    {
+      signature: "copyPixels(Texture)",
+      returns: "void",
+      description: <>Returns a copy of this Texture instance.</>
+    },
+    {
+      signature: "extractGPUImageToBtm(ExtractCallback)",
+      returns: "void",
+      description: <>Executes <code>extractGPUImageToBtm</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "saveGPUImageToFile(File)",
+      returns: "void",
+      description: <>Executes <code>saveGPUImageToFile</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "saveGPUImageToFile(File, Runnable)",
+      returns: "void",
+      description: <>Executes <code>saveGPUImageToFile</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  staticMethods={[
+    {
+      signature: "genericInterface()",
+      returns: "GenericClassInspectorEntry",
+      description: <>Executes <code>genericInterface</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "inspectorController()",
+      returns: "ClassInspectorEntry",
+      description: <>Executes <code>inspectorController</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "loadFile(TextureFile)",
+      returns: "Texture",
+      description: <>Loads file into the object.</>
+    },
+    {
+      signature: "loadFile(JAVARuntime.File)",
+      returns: "Texture",
+      description: <>Loads file into the object.</>
+    },
+    {
+      signature: "loadInputStream(InputStream)",
+      returns: "Texture",
+      description: <>Loads input stream into the object.</>
+    },
+    {
+      signature: "loadURL(String)",
+      returns: "Texture",
+      description: <>Executes <code>loadURL</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "newDepth(int, int)",
+      returns: "Texture",
+      description: <>Creates a new depth.</>
+    },
+    {
+      signature: "white()",
+      returns: "Texture",
+      description: <>Executes <code>white</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "empty()",
+      returns: "Texture",
+      description: <>Executes <code>empty</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "black()",
+      returns: "Texture",
+      description: <>Executes <code>black</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "isRenderable(Texture)",
+      returns: "boolean",
+      description: <>Returns whether renderable is true.</>
+    },
+    {
+      signature: "isRenderable(TextureInstance)",
+      returns: "boolean",
+      description: <>Returns whether renderable is true.</>
+    }
+  ]}
+/>

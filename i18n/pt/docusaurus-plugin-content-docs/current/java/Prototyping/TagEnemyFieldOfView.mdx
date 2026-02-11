@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # TagEnemyFieldOfView
 
 Referência completa da API de `TagEnemyFieldOfView`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,27 +16,64 @@ Referência completa da API de `TagEnemyFieldOfView`, incluindo construtores, at
 public class TagEnemyFieldOfView
 ```
 
-## Construtores (3)
-
-| Signature | Description |
-| --- | --- |
-| TagEnemyFieldOfView([TagEnemyFieldOfView]) | Executa `TagEnemyFieldOfView` e retorna quando a chamada do motor termina. |
-| TagEnemyFieldOfView([Engine]) | Executa `TagEnemyFieldOfView` e retorna quando a chamada do motor termina. |
-| TagEnemyFieldOfView() | Cria uma nova instância de TagEnemyFieldOfView. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [TagEnemyFieldOfView] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (6)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `active` | [boolean] | `get/set` | Atributo virtual exposto por `isActive`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `fov` | [float] | `get/set` | Atributo virtual exposto por `getFov`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `maxDistance` | [float] | `get/set` | Atributo virtual exposto por `getMaxDistance`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `minDistance` | [float] | `get/set` | Atributo virtual exposto por `getMinDistance`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `targetTag` | [String] | `get` | Atributo virtual exposto por `getTargetTag`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `targetsTag` | [String] | `set` | Atributo virtual exposto por `setTargetsTag`. Acesse como um campo para ler ou escrever o valor subjacente. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "TagEnemyFieldOfView(TagEnemyFieldOfView)",
+      description: <>Executa <code>TagEnemyFieldOfView</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "TagEnemyFieldOfView(Engine)",
+      description: <>Executa <code>TagEnemyFieldOfView</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "TagEnemyFieldOfView()",
+      description: <>Cria uma nova instância de TagEnemyFieldOfView.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "TagEnemyFieldOfView",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "active",
+      type: "boolean",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>isActive</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "fov",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getFov</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "maxDistance",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getMaxDistance</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "minDistance",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getMinDistance</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "targetTag",
+      type: "String",
+      access: "get",
+      description: <>Atributo virtual exposto por <code>getTargetTag</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "targetsTag",
+      type: "String",
+      access: "set",
+      description: <>Atributo virtual exposto por <code>setTargetsTag</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+/>

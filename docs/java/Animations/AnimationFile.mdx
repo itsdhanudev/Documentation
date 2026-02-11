@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # AnimationFile
 
 Complete API reference for `AnimationFile`, including constructors, attributes, virtual attributes, and methods.
@@ -14,22 +16,34 @@ Complete API reference for `AnimationFile`, including constructors, attributes, 
 public class AnimationFile
 ```
 
-## Constructors (2)
-
-| Signature | Description |
-| --- | --- |
-| AnimationFile([String]) | Executes `AnimationFile` and returns after the underlying engine call finishes. |
-| AnimationFile() | Executes `AnimationFile` and returns after the underlying engine call finishes. |
-
-## Methods (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `toString()` | `String` | Returns the name of the class. |
-
-## Static Methods (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `genericInterface()` | `GenericClassInspectorEntry` | Executes `genericInterface` and returns after the underlying engine call finishes. |
-| `inspectorController()` | `ClassInspectorEntry` | Executes `inspectorController` and returns after the underlying engine call finishes. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "AnimationFile(String)",
+      description: <>Executes <code>AnimationFile</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "AnimationFile()",
+      description: <>Executes <code>AnimationFile</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "toString()",
+      returns: "String",
+      description: <>Returns the name of the class.</>
+    }
+  ]}
+  staticMethods={[
+    {
+      signature: "genericInterface()",
+      returns: "GenericClassInspectorEntry",
+      description: <>Executes <code>genericInterface</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "inspectorController()",
+      returns: "ClassInspectorEntry",
+      description: <>Executes <code>inspectorController</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

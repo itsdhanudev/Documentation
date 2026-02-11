@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # CompoundVertex
 
 Referência completa da API de `CompoundVertex`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,25 +16,49 @@ Referência completa da API de `CompoundVertex`, incluindo construtores, atribut
 public class CompoundVertex
 ```
 
-## Construtores (2)
-
-| Signature | Description |
-| --- | --- |
-| CompoundVertex([CompoundVertex]) | Executa `CompoundVertex` e retorna quando a chamada do motor termina. |
-| CompoundVertex() | Executa `CompoundVertex` e retorna quando a chamada do motor termina. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [CompoundVertex] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Métodos (5)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `addVertex(Vertex, Transform)` | `Part` | Adiciona vertex à coleção. |
-| `refreshMatrix(Part)` | `void` | Executa a operação refreshMatrix usando os parâmetros informados (part). |
-| `remove(Part)` | `void` | Remove an item da coleção. |
-| `removeAll([List&lt;Part&gt;])` | `void` | Remove all da coleção. |
-| `getBake()` | `Vertex` | Retorna a propriedade `propriedade `bake atual``. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "CompoundVertex(CompoundVertex)",
+      description: <>Executa <code>CompoundVertex</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "CompoundVertex()",
+      description: <>Executa <code>CompoundVertex</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "CompoundVertex",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "addVertex(Vertex, Transform)",
+      returns: "Part",
+      description: <>Adiciona vertex à coleção.</>
+    },
+    {
+      signature: "refreshMatrix(Part)",
+      returns: "void",
+      description: <>Executa a operação refreshMatrix usando os parâmetros informados (part).</>
+    },
+    {
+      signature: "remove(Part)",
+      returns: "void",
+      description: <>Remove an item da coleção.</>
+    },
+    {
+      signature: "removeAll(List&lt;Part&gt;)",
+      returns: "void",
+      description: <>Remove all da coleção.</>
+    },
+    {
+      signature: "getBake()",
+      returns: "Vertex",
+      description: <>Retorna a propriedade <code>propriedade </code>bake atual``.</>
+    }
+  ]}
+/>

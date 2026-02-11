@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # GUID
 
 Complete API reference for `GUID`, including constructors, attributes, virtual attributes, and methods.
@@ -14,28 +16,43 @@ Complete API reference for `GUID`, including constructors, attributes, virtual a
 public class GUID
 ```
 
-## Constructors (2)
-
-| Signature | Description |
-| --- | --- |
-| GUID([GUID]) | Executes `GUID` and returns after the underlying engine call finishes. |
-| GUID() | Executes `GUID` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `guid` | [GUID] | Represents the `guid` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (2)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `duplicableGUID` | [String] | `get/set` | Virtual attribute exposed by `getDuplicableGUID`. Access it like a field to read or write the underlying value. |
-| `metaID` | [String] | `get/set` | Virtual attribute exposed by `getMetaID`. Access it like a field to read or write the underlying value. |
-
-## Methods (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getUniqueGUID()` | `String` | Returns the current unique guid. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "GUID(GUID)",
+      description: <>Executes <code>GUID</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "GUID()",
+      description: <>Executes <code>GUID</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "guid",
+      type: "GUID",
+      description: <>Represents the <code>guid</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "duplicableGUID",
+      type: "String",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getDuplicableGUID</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "metaID",
+      type: "String",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getMetaID</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "getUniqueGUID()",
+      returns: "String",
+      description: <>Returns the current unique guid.</>
+    }
+  ]}
+/>

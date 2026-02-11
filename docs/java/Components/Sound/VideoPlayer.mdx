@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # VideoPlayer
 
 Complete API reference for `VideoPlayer`, including constructors, attributes, virtual attributes, and methods.
@@ -14,40 +16,105 @@ Complete API reference for `VideoPlayer`, including constructors, attributes, vi
 public class VideoPlayer extends Component
 ```
 
-## Constructors (2)
-
-| Signature | Description |
-| --- | --- |
-| VideoPlayer([VideoPlayer]) | Executes `VideoPlayer` and returns after the underlying engine call finishes. |
-| VideoPlayer() | Executes `VideoPlayer` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `component` | [VideoPlayer] | Represents the `component` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (4)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `loop` | [boolean] | `get/set` | Virtual attribute exposed by `isLoop`. Access it like a field to read or write the underlying value. |
-| `paused` | [boolean] | `get` | Virtual attribute exposed by `isPaused`. Access it like a field to read or write the underlying value. |
-| `playing` | [boolean] | `get` | Virtual attribute exposed by `isPlaying`. Access it like a field to read or write the underlying value. |
-| `stopped` | [boolean] | `get` | Virtual attribute exposed by `isStopped`. Access it like a field to read or write the underlying value. |
-
-## Methods (11)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `setVideoFile(VideoFile)` | `void` | Sets or updates the video file. |
-| `setVideoFile(File)` | `void` | Sets or updates the video file. |
-| `setOutputVideoFile(OutputVideoFile)` | `void` | Sets or updates the output video file. |
-| `setOutputVideoFile(File)` | `void` | Sets or updates the output video file. |
-| `play()` | `void` | Executes `play` and returns after the underlying engine call finishes. |
-| `stop()` | `void` | Executes `stop` and returns after the underlying engine call finishes. |
-| `pause()` | `void` | Executes `pause` and returns after the underlying engine call finishes. |
-| `unPause()` | `void` | Executes `unPause` and returns after the underlying engine call finishes. |
-| `seekTo(int)` | `void` | Performs the seekTo operation using the provided parameters (miliSeconds). |
-| `componentClassMatch(Component, Component)` | `boolean` | Executes `componentClassMatch` and returns after the underlying engine call finishes. |
-| `getEngineComponent()` | `Component` | Executes `getEngineComponent` and returns after the underlying engine call finishes. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "VideoPlayer(VideoPlayer)",
+      description: <>Executes <code>VideoPlayer</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "VideoPlayer()",
+      description: <>Executes <code>VideoPlayer</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "component",
+      type: "VideoPlayer",
+      description: <>Represents the <code>component</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "loop",
+      type: "boolean",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>isLoop</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "paused",
+      type: "boolean",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>isPaused</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "playing",
+      type: "boolean",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>isPlaying</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "stopped",
+      type: "boolean",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>isStopped</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "setVideoFile(VideoFile)",
+      returns: "void",
+      description: <>Sets or updates the video file.</>
+    },
+    {
+      signature: "setVideoFile(File)",
+      returns: "void",
+      description: <>Sets or updates the video file.</>
+    },
+    {
+      signature: "setOutputVideoFile(OutputVideoFile)",
+      returns: "void",
+      description: <>Sets or updates the output video file.</>
+    },
+    {
+      signature: "setOutputVideoFile(File)",
+      returns: "void",
+      description: <>Sets or updates the output video file.</>
+    },
+    {
+      signature: "play()",
+      returns: "void",
+      description: <>Executes <code>play</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "stop()",
+      returns: "void",
+      description: <>Executes <code>stop</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "pause()",
+      returns: "void",
+      description: <>Executes <code>pause</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "unPause()",
+      returns: "void",
+      description: <>Executes <code>unPause</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "seekTo(int)",
+      returns: "void",
+      description: <>Performs the seekTo operation using the provided parameters (miliSeconds).</>
+    },
+    {
+      signature: "componentClassMatch(Component, Component)",
+      returns: "boolean",
+      description: <>Executes <code>componentClassMatch</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "getEngineComponent()",
+      returns: "Component",
+      description: <>Executes <code>getEngineComponent</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # UIAlignment
 
 Referência completa da API de `UIAlignment`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,30 +16,82 @@ Referência completa da API de `UIAlignment`, incluindo construtores, atributos,
 public class UIAlignment extends Component
 ```
 
-## Construtores (3)
-
-| Signature | Description |
-| --- | --- |
-| UIAlignment([UIAlignment]) | Executa `UIAlignment` e retorna quando a chamada do motor termina. |
-| UIAlignment([Engine]) | Executa `UIAlignment` e retorna quando a chamada do motor termina. |
-| UIAlignment() | Cria uma nova instância de UIAlignment. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [UIAlignment] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (9)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `bottomCenterEnabled` | [boolean] | `get/set` | Atributo virtual exposto por `isBottomCenterEnabled`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `bottomLeftEnabled` | [boolean] | `get/set` | Atributo virtual exposto por `isBottomLeftEnabled`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `bottomRightEnabled` | [boolean] | `get/set` | Atributo virtual exposto por `isBottomRightEnabled`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `centerEnabled` | [boolean] | `get/set` | Atributo virtual exposto por `isCenterEnabled`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `centerLeftEnabled` | [boolean] | `get/set` | Atributo virtual exposto por `isCenterLeftEnabled`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `centerRightEnabled` | [boolean] | `get/set` | Atributo virtual exposto por `isCenterRightEnabled`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `topCenterEnabled` | [boolean] | `get/set` | Atributo virtual exposto por `isTopCenterEnabled`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `topLeftEnabled` | [boolean] | `get/set` | Atributo virtual exposto por `isTopLeftEnabled`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `topRightEnabled` | [boolean] | `get/set` | Atributo virtual exposto por `isTopRightEnabled`. Acesse como um campo para ler ou escrever o valor subjacente. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "UIAlignment(UIAlignment)",
+      description: <>Executa <code>UIAlignment</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "UIAlignment(Engine)",
+      description: <>Executa <code>UIAlignment</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "UIAlignment()",
+      description: <>Cria uma nova instância de UIAlignment.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "UIAlignment",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "bottomCenterEnabled",
+      type: "boolean",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>isBottomCenterEnabled</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "bottomLeftEnabled",
+      type: "boolean",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>isBottomLeftEnabled</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "bottomRightEnabled",
+      type: "boolean",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>isBottomRightEnabled</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "centerEnabled",
+      type: "boolean",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>isCenterEnabled</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "centerLeftEnabled",
+      type: "boolean",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>isCenterLeftEnabled</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "centerRightEnabled",
+      type: "boolean",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>isCenterRightEnabled</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "topCenterEnabled",
+      type: "boolean",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>isTopCenterEnabled</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "topLeftEnabled",
+      type: "boolean",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>isTopLeftEnabled</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "topRightEnabled",
+      type: "boolean",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>isTopRightEnabled</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+/>

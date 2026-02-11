@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # GreaterThanComparator
 
 Referência completa da API de `GreaterThanComparator`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,27 +16,57 @@ Referência completa da API de `GreaterThanComparator`, incluindo construtores, 
 public interface GreaterThanComparator
 ```
 
-## Métodos (20)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `@MethodArgs([{"otherObject"}])` | `void` | Verifica se o objeto atual é maior que o objeto fornecido. |
-| `greaterThan(Object)` | `boolean` | Executa `greaterThan` e retorna quando a chamada do motor termina. |
-| `@MethodArgs([{"v"}])` | `void` | Verifica se o objeto atual é maior que o valor float fornecido. |
-| `greaterThan(float)` | `boolean` | Executa `greaterThan` e retorna quando a chamada do motor termina. |
-| `@MethodArgs([{"v"}])` | `void` | Verifica se o objeto atual é maior que o valor inteiro fornecido. |
-| `greaterThan(int)` | `boolean` | Executa `greaterThan` e retorna quando a chamada do motor termina. |
-| `@MethodArgs([{"v"}])` | `void` | Verifica se o objeto atual é maior que o valor long fornecido. |
-| `greaterThan(long)` | `boolean` | Executa `greaterThan` e retorna quando a chamada do motor termina. |
-| `@MethodArgs([{"v"}])` | `void` | Verifica se o objeto atual é maior que o valor double fornecido. |
-| `greaterThan(double)` | `boolean` | Executa `greaterThan` e retorna quando a chamada do motor termina. |
-| `@MethodArgs([{"otherObject"}])` | `void` | Verifica se o objeto atual é maior ou igual ao objeto fornecido. |
-| `greaterOrEqualsThan(Object)` | `boolean` | Executa `greaterOrEqualsThan` e retorna quando a chamada do motor termina. |
-| `@MethodArgs([{"v"}])` | `void` | Verifica se o objeto atual é maior ou igual ao valor float fornecido. |
-| `greaterOrEqualsThan(float)` | `boolean` | Executa `greaterOrEqualsThan` e retorna quando a chamada do motor termina. |
-| `@MethodArgs([{"v"}])` | `void` | Verifica se o objeto atual é maior ou igual ao valor inteiro fornecido. |
-| `greaterOrEqualsThan(int)` | `boolean` | Executa `greaterOrEqualsThan` e retorna quando a chamada do motor termina. |
-| `@MethodArgs([{"v"}])` | `void` | Verifica se o objeto atual é maior ou igual ao valor long fornecido. |
-| `greaterOrEqualsThan(long)` | `boolean` | Executa `greaterOrEqualsThan` e retorna quando a chamada do motor termina. |
-| `@MethodArgs([{"v"}])` | `void` | Verifica se o objeto atual é maior ou igual ao valor double fornecido. |
-| `greaterOrEqualsThan(double)` | `boolean` | Executa `greaterOrEqualsThan` e retorna quando a chamada do motor termina. |
+<ApiDoc
+  methods={[
+    {
+      signature: "greaterThan(Object)",
+      returns: "boolean",
+      description: <>Verifica se o objeto atual é maior que o objeto fornecido.</>
+    },
+    {
+      signature: "greaterThan(float)",
+      returns: "boolean",
+      description: <>Verifica se o objeto atual é maior que o valor float fornecido.</>
+    },
+    {
+      signature: "greaterThan(int)",
+      returns: "boolean",
+      description: <>Verifica se o objeto atual é maior que o valor inteiro fornecido.</>
+    },
+    {
+      signature: "greaterThan(long)",
+      returns: "boolean",
+      description: <>Verifica se o objeto atual é maior que o valor long fornecido.</>
+    },
+    {
+      signature: "greaterThan(double)",
+      returns: "boolean",
+      description: <>Verifica se o objeto atual é maior que o valor double fornecido.</>
+    },
+    {
+      signature: "greaterOrEqualsThan(Object)",
+      returns: "boolean",
+      description: <>Verifica se o objeto atual é maior ou igual ao objeto fornecido.</>
+    },
+    {
+      signature: "greaterOrEqualsThan(float)",
+      returns: "boolean",
+      description: <>Verifica se o objeto atual é maior ou igual ao valor float fornecido.</>
+    },
+    {
+      signature: "greaterOrEqualsThan(int)",
+      returns: "boolean",
+      description: <>Verifica se o objeto atual é maior ou igual ao valor inteiro fornecido.</>
+    },
+    {
+      signature: "greaterOrEqualsThan(long)",
+      returns: "boolean",
+      description: <>Verifica se o objeto atual é maior ou igual ao valor long fornecido.</>
+    },
+    {
+      signature: "greaterOrEqualsThan(double)",
+      returns: "boolean",
+      description: <>Verifica se o objeto atual é maior ou igual ao valor double fornecido.</>
+    }
+  ]}
+/>

@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Matrix4
 
 Complete API reference for `Matrix4`, including constructors, attributes, virtual attributes, and methods.
@@ -14,58 +16,192 @@ Complete API reference for `Matrix4`, including constructors, attributes, virtua
 public class Matrix4
 ```
 
-## Constructors (4)
-
-| Signature | Description |
-| --- | --- |
-| Matrix4([Matrix4]) | Executes `Matrix4` and returns after the underlying engine call finishes. |
-| Matrix4() | Executes `Matrix4` and returns after the underlying engine call finishes. |
-| Matrix4([float][]) | Creates a new instance of Matrix4. |
-| Matrix4([float], [float], [float], [float], [float], [float], [float], [float], [float], [float], [float], [float], [float], [float], [float], [float]) | Executes `Matrix4` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `matrix4` | [Matrix4] | Represents the `matrix4` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (3)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `rotation` | [JAVARuntime].[Quaternion] | `get/set` | Virtual attribute exposed by `getRotation`. Access it like a field to read or write the underlying value. |
-| `scale` | [JAVARuntime].[Vector3] | `get/set` | Virtual attribute exposed by `getScale`. Access it like a field to read or write the underlying value. |
-| `translation` | [JAVARuntime].[Vector3] | `get/set` | Virtual attribute exposed by `getTranslation`. Access it like a field to read or write the underlying value. |
-
-## Methods (28)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `mul(Matrix4)` | `Matrix4` | Performs the mul operation using the provided parameters (value). |
-| `mul(Matrix4, Matrix4)` | `void` | Performs the mul operation using the provided parameters (value, out). |
-| `inverse()` | `Matrix4` | Executes `inverse` and returns after the underlying engine call finishes. |
-| `inverse(Matrix4)` | `void` | Performs the inverse operation using the provided parameters (out). |
-| `mul(JAVARuntime.Vector3)` | [JAVARuntime].[Vector3] | Performs the mul operation using the provided parameters (vector3). |
-| `mul(JAVARuntime.Vector3, JAVARuntime.Vector3)` | [JAVARuntime].[Vector3] | Performs the mul operation using the provided parameters (vector3, out). |
-| `mul(float, float, float)` | [JAVARuntime].[Vector3] | Performs the mul operation using the provided parameters (x, y, z). |
-| `mul(float, float, float, JAVARuntime.Vector3)` | [JAVARuntime].[Vector3] | Performs the mul operation using the provided parameters (x, y, z, out). |
-| `mulNormal(JAVARuntime.Vector3)` | [JAVARuntime].[Vector3] | Performs the mulNormal operation using the provided parameters (vector3). |
-| `mulNormal(JAVARuntime.Vector3, JAVARuntime.Vector3)` | [JAVARuntime].[Vector3] | Performs the mulNormal operation using the provided parameters (vector3, out). |
-| `mulAcross(JAVARuntime.Vector3)` | [JAVARuntime].[Vector3] | Performs the mulAcross operation using the provided parameters (vector3). |
-| `mulAcross(JAVARuntime.Vector3, JAVARuntime.Vector3)` | [JAVARuntime].[Vector3] | Performs the mulAcross operation using the provided parameters (vector3, out). |
-| `getTranslation(JAVARuntime.Vector3)` | [JAVARuntime].[Vector3] | Returns the current translation. |
-| `setTranslation(float, float, float)` | `void` | Sets or updates the translation. |
-| `getScale(JAVARuntime.Vector3)` | [JAVARuntime].[Vector3] | Returns the current scale. |
-| `setScale(float, float, float)` | `void` | Sets or updates the scale. |
-| `getRotation(Quaternion)` | [JAVARuntime].[Quaternion] | Returns the current rotation. |
-| `setRotation(float, float, float, float)` | `void` | Sets or updates the rotation. |
-| `set(float[])` | `void` | Sets or updates the the value. |
-| `setTransform(JAVARuntime.Vector3, Quaternion, JAVARuntime.Vector3)` | `void` | Sets or updates the transform. |
-| `toTranslationVector()` | [JAVARuntime].[Vector3] | Executes `toTranslationVector` and returns after the underlying engine call finishes. |
-| `toTranslationVector(JAVARuntime.Vector3)` | [JAVARuntime].[Vector3] | Performs the toTranslationVector operation using the provided parameters (out). |
-| `toRotationQuat()` | [JAVARuntime].[Quaternion] | Executes `toRotationQuat` and returns after the underlying engine call finishes. |
-| `toRotationQuat(Quaternion)` | [JAVARuntime].[Quaternion] | Performs the toRotationQuat operation using the provided parameters (out). |
-| `toScaleVector()` | [JAVARuntime].[Vector3] | Executes `toScaleVector` and returns after the underlying engine call finishes. |
-| `toScaleVector(JAVARuntime.Vector3)` | [JAVARuntime].[Vector3] | Performs the toScaleVector operation using the provided parameters (out). |
-| `fillFloatArray(float[])` | `void` | Performs the fillFloatArray operation using the provided parameters (floatArray). |
-| `fillFloatArray(float[], boolean)` | `void` | Performs the fillFloatArray operation using the provided parameters (floatArray, columnMajor). |
+<ApiDoc
+  constructors={[
+    {
+      signature: "Matrix4(Matrix4)",
+      description: <>Executes <code>Matrix4</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "Matrix4()",
+      description: <>Executes <code>Matrix4</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "Matrix4(float[])",
+      description: <>Creates a new instance of Matrix4.</>
+    },
+    {
+      signature: "Matrix4(float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float)",
+      description: <>Executes <code>Matrix4</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "matrix4",
+      type: "Matrix4",
+      description: <>Represents the <code>matrix4</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "rotation",
+      type: "JAVARuntime.Quaternion",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getRotation</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "scale",
+      type: "JAVARuntime.Vector3",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getScale</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "translation",
+      type: "JAVARuntime.Vector3",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getTranslation</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "mul(Matrix4)",
+      returns: "Matrix4",
+      description: <>Performs the mul operation using the provided parameters (value).</>
+    },
+    {
+      signature: "mul(Matrix4, Matrix4)",
+      returns: "void",
+      description: <>Performs the mul operation using the provided parameters (value, out).</>
+    },
+    {
+      signature: "inverse()",
+      returns: "Matrix4",
+      description: <>Executes <code>inverse</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "inverse(Matrix4)",
+      returns: "void",
+      description: <>Performs the inverse operation using the provided parameters (out).</>
+    },
+    {
+      signature: "mul(JAVARuntime.Vector3)",
+      returns: "JAVARuntime.Vector3",
+      description: <>Performs the mul operation using the provided parameters (vector3).</>
+    },
+    {
+      signature: "mul(JAVARuntime.Vector3, JAVARuntime.Vector3)",
+      returns: "JAVARuntime.Vector3",
+      description: <>Performs the mul operation using the provided parameters (vector3, out).</>
+    },
+    {
+      signature: "mul(float, float, float)",
+      returns: "JAVARuntime.Vector3",
+      description: <>Performs the mul operation using the provided parameters (x, y, z).</>
+    },
+    {
+      signature: "mul(float, float, float, JAVARuntime.Vector3)",
+      returns: "JAVARuntime.Vector3",
+      description: <>Performs the mul operation using the provided parameters (x, y, z, out).</>
+    },
+    {
+      signature: "mulNormal(JAVARuntime.Vector3)",
+      returns: "JAVARuntime.Vector3",
+      description: <>Performs the mulNormal operation using the provided parameters (vector3).</>
+    },
+    {
+      signature: "mulNormal(JAVARuntime.Vector3, JAVARuntime.Vector3)",
+      returns: "JAVARuntime.Vector3",
+      description: <>Performs the mulNormal operation using the provided parameters (vector3, out).</>
+    },
+    {
+      signature: "mulAcross(JAVARuntime.Vector3)",
+      returns: "JAVARuntime.Vector3",
+      description: <>Performs the mulAcross operation using the provided parameters (vector3).</>
+    },
+    {
+      signature: "mulAcross(JAVARuntime.Vector3, JAVARuntime.Vector3)",
+      returns: "JAVARuntime.Vector3",
+      description: <>Performs the mulAcross operation using the provided parameters (vector3, out).</>
+    },
+    {
+      signature: "getTranslation(JAVARuntime.Vector3)",
+      returns: "JAVARuntime.Vector3",
+      description: <>Returns the current translation.</>
+    },
+    {
+      signature: "setTranslation(float, float, float)",
+      returns: "void",
+      description: <>Sets or updates the translation.</>
+    },
+    {
+      signature: "getScale(JAVARuntime.Vector3)",
+      returns: "JAVARuntime.Vector3",
+      description: <>Returns the current scale.</>
+    },
+    {
+      signature: "setScale(float, float, float)",
+      returns: "void",
+      description: <>Sets or updates the scale.</>
+    },
+    {
+      signature: "getRotation(Quaternion)",
+      returns: "JAVARuntime.Quaternion",
+      description: <>Returns the current rotation.</>
+    },
+    {
+      signature: "setRotation(float, float, float, float)",
+      returns: "void",
+      description: <>Sets or updates the rotation.</>
+    },
+    {
+      signature: "set(float[])",
+      returns: "void",
+      description: <>Sets or updates the the value.</>
+    },
+    {
+      signature: "setTransform(JAVARuntime.Vector3, Quaternion, JAVARuntime.Vector3)",
+      returns: "void",
+      description: <>Sets or updates the transform.</>
+    },
+    {
+      signature: "toTranslationVector()",
+      returns: "JAVARuntime.Vector3",
+      description: <>Executes <code>toTranslationVector</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "toTranslationVector(JAVARuntime.Vector3)",
+      returns: "JAVARuntime.Vector3",
+      description: <>Performs the toTranslationVector operation using the provided parameters (out).</>
+    },
+    {
+      signature: "toRotationQuat()",
+      returns: "JAVARuntime.Quaternion",
+      description: <>Executes <code>toRotationQuat</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "toRotationQuat(Quaternion)",
+      returns: "JAVARuntime.Quaternion",
+      description: <>Performs the toRotationQuat operation using the provided parameters (out).</>
+    },
+    {
+      signature: "toScaleVector()",
+      returns: "JAVARuntime.Vector3",
+      description: <>Executes <code>toScaleVector</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "toScaleVector(JAVARuntime.Vector3)",
+      returns: "JAVARuntime.Vector3",
+      description: <>Performs the toScaleVector operation using the provided parameters (out).</>
+    },
+    {
+      signature: "fillFloatArray(float[])",
+      returns: "void",
+      description: <>Performs the fillFloatArray operation using the provided parameters (floatArray).</>
+    },
+    {
+      signature: "fillFloatArray(float[], boolean)",
+      returns: "void",
+      description: <>Performs the fillFloatArray operation using the provided parameters (floatArray, columnMajor).</>
+    }
+  ]}
+/>

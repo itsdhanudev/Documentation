@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # CustomAmbientLight
 
 Complete API reference for `CustomAmbientLight`, including constructors, attributes, virtual attributes, and methods.
@@ -14,24 +16,46 @@ Complete API reference for `CustomAmbientLight`, including constructors, attribu
 public class CustomAmbientLight extends Component
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| CustomAmbientLight([CustomAmbientLight]) | Executes `CustomAmbientLight` and returns after the underlying engine call finishes. |
-| CustomAmbientLight([Engine]) | Executes `CustomAmbientLight` and returns after the underlying engine call finishes. |
-| CustomAmbientLight() | Executes `CustomAmbientLight` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [CustomAmbientLight] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (3)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `ambientLight` | [boolean] | `get/set` | Virtual attribute exposed by `isAmbientLight`. Access it like a field to read or write the underlying value. |
-| `ambientLightResolutionID` | [int] | `get/set` | Virtual attribute exposed by `getAmbientLightResolutionID`. Access it like a field to read or write the underlying value. |
-| `lux` | [float] | `get/set` | Virtual attribute exposed by `getLux`. Access it like a field to read or write the underlying value. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "CustomAmbientLight(CustomAmbientLight)",
+      description: <>Executes <code>CustomAmbientLight</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "CustomAmbientLight(Engine)",
+      description: <>Executes <code>CustomAmbientLight</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "CustomAmbientLight()",
+      description: <>Executes <code>CustomAmbientLight</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "CustomAmbientLight",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "ambientLight",
+      type: "boolean",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>isAmbientLight</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "ambientLightResolutionID",
+      type: "int",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getAmbientLightResolutionID</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "lux",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getLux</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+/>

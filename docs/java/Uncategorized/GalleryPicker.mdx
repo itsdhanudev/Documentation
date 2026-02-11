@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # GalleryPicker
 
 Complete API reference for `GalleryPicker`, including constructors, attributes, virtual attributes, and methods.
@@ -14,8 +16,12 @@ Complete API reference for `GalleryPicker`, including constructors, attributes, 
 public class GalleryPicker
 ```
 
-## Static Methods (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `open(Listener)` | `void` | Performs the open operation using the provided parameters (listener). |
+<ApiDoc
+  staticMethods={[
+    {
+      signature: "open(Listener)",
+      returns: "void",
+      description: <>Performs the open operation using the provided parameters (listener).</>
+    }
+  ]}
+/>

@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # ParticleConeShapeOptions
 
 Referência completa da API de `ParticleConeShapeOptions`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,24 +16,46 @@ Referência completa da API de `ParticleConeShapeOptions`, incluindo construtore
 public class ParticleConeShapeOptions
 ```
 
-## Construtores (3)
-
-| Signature | Description |
-| --- | --- |
-| ParticleConeShapeOptions([ParticleConeShapeOptions]) | Executa `ParticleConeShapeOptions` e retorna quando a chamada do motor termina. |
-| ParticleConeShapeOptions([Engine]) | Executa `ParticleConeShapeOptions` e retorna quando a chamada do motor termina. |
-| ParticleConeShapeOptions() | Cria uma nova instância de ParticleConeShapeOptions. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [ParticleConeShapeOptions] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (3)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `maxAngle` | [float] | `get/set` | Atributo virtual exposto por `getMaxAngle`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `minAngle` | [float] | `get/set` | Atributo virtual exposto por `getMinAngle`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `radius` | [float] | `get/set` | Atributo virtual exposto por `getRadius`. Acesse como um campo para ler ou escrever o valor subjacente. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "ParticleConeShapeOptions(ParticleConeShapeOptions)",
+      description: <>Executa <code>ParticleConeShapeOptions</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "ParticleConeShapeOptions(Engine)",
+      description: <>Executa <code>ParticleConeShapeOptions</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "ParticleConeShapeOptions()",
+      description: <>Cria uma nova instância de ParticleConeShapeOptions.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "ParticleConeShapeOptions",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "maxAngle",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getMaxAngle</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "minAngle",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getMinAngle</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "radius",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getRadius</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+/>

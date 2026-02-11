@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # AABB
 
 Referência completa da API de `AABB`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,45 +16,132 @@ Referência completa da API de `AABB`, incluindo construtores, atributos, atribu
 public class AABB
 ```
 
-## Construtores (6)
-
-| Signature | Description |
-| --- | --- |
-| AABB([AABB]) | Executa `AABB` e retorna quando a chamada do motor termina. |
-| AABB() | Executa `AABB` e retorna quando a chamada do motor termina. |
-| AABB([float], [float], [float], [float], [float], [float]) | Cria uma nova instância de AABB. |
-| AABB([float], [float], [float], [float], [float], [float], [float], [float], [float]) | Cria uma nova instância de AABB. |
-| AABB([Vector3], [Vector3]) | Cria uma nova instância de AABB. |
-| AABB([Vector3], [Vector3], [Vector3]) | Cria uma nova instância de AABB. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [AABB] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (10)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `lengthMax` | [float] | `get` | Retorna a propriedade `propriedade `comprimento do máximo das bordas/limites``. |
-| `lengthMin` | [float] | `get` | Retorna a propriedade `propriedade `comprimento do mínimo das bordas/limites``. |
-| `max` | [Vector3] | `get/set` | Retorna a propriedade `propriedade `máximo das bordas/limites``. |
-| `min` | [Vector3] | `get/set` | Retorna a propriedade `propriedade `mínimo das bordas/limites``. |
-| `x` | [float] | `get/set` | Retorna a propriedade `propriedade `X do máximo das bordas``. |
-| `xn` | [float] | `get/set` | Retorna a propriedade `propriedade `X do mínimo das bordas``. |
-| `y` | [float] | `get/set` | Retorna a propriedade `propriedade `Y do máximo das bordas``. |
-| `yn` | [float] | `get/set` | Retorna a propriedade `propriedade `Y do mínimo das bordas``. |
-| `z` | [float] | `get/set` | Retorna a propriedade `propriedade `Z do máximo das bordas``. |
-| `zn` | [float] | `get/set` | Retorna a propriedade `propriedade `Z do mínimo das bordas``. |
-
-## Métodos (6)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `lengthMax()` | `float` | Retorna a propriedade `propriedade `comprimento do máximo das bordas/limites``. |
-| `lengthMin()` | `float` | Retorna a propriedade `propriedade `comprimento do mínimo das bordas/limites``. |
-| `maxDistanceFromCenter()` | `float` | Retorna a propriedade `distância máxima do centro`. |
-| `isInside(Vector3)` | `boolean` | Retorna verdadeiro se o ponto estiver dentro do AABB, caso contrário, retorna falso. |
-| `getCenter()` | `Vector3` | Retorna a propriedade `posição central do AABB`. |
-| `copy()` | `AABB` | Retorna uma cópia da instância da classe atual. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "AABB(AABB)",
+      description: <>Executa <code>AABB</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "AABB()",
+      description: <>Executa <code>AABB</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "AABB(float, float, float, float, float, float)",
+      description: <>Cria uma nova instância de AABB.</>
+    },
+    {
+      signature: "AABB(float, float, float, float, float, float, float, float, float)",
+      description: <>Cria uma nova instância de AABB.</>
+    },
+    {
+      signature: "AABB(Vector3, Vector3)",
+      description: <>Cria uma nova instância de AABB.</>
+    },
+    {
+      signature: "AABB(Vector3, Vector3, Vector3)",
+      description: <>Cria uma nova instância de AABB.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "AABB",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "lengthMax",
+      type: "float",
+      access: "get",
+      description: <>Retorna a propriedade <code>propriedade </code>comprimento do máximo das bordas/limites``.</>
+    },
+    {
+      name: "lengthMin",
+      type: "float",
+      access: "get",
+      description: <>Retorna a propriedade <code>propriedade </code>comprimento do mínimo das bordas/limites``.</>
+    },
+    {
+      name: "max",
+      type: "Vector3",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>propriedade </code>máximo das bordas/limites``.</>
+    },
+    {
+      name: "min",
+      type: "Vector3",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>propriedade </code>mínimo das bordas/limites``.</>
+    },
+    {
+      name: "x",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>propriedade </code>X do máximo das bordas``.</>
+    },
+    {
+      name: "xn",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>propriedade </code>X do mínimo das bordas``.</>
+    },
+    {
+      name: "y",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>propriedade </code>Y do máximo das bordas``.</>
+    },
+    {
+      name: "yn",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>propriedade </code>Y do mínimo das bordas``.</>
+    },
+    {
+      name: "z",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>propriedade </code>Z do máximo das bordas``.</>
+    },
+    {
+      name: "zn",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>propriedade </code>Z do mínimo das bordas``.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "lengthMax()",
+      returns: "float",
+      description: <>Retorna a propriedade <code>propriedade </code>comprimento do máximo das bordas/limites``.</>
+    },
+    {
+      signature: "lengthMin()",
+      returns: "float",
+      description: <>Retorna a propriedade <code>propriedade </code>comprimento do mínimo das bordas/limites``.</>
+    },
+    {
+      signature: "maxDistanceFromCenter()",
+      returns: "float",
+      description: <>Retorna a propriedade <code>distância máxima do centro</code>.</>
+    },
+    {
+      signature: "isInside(Vector3)",
+      returns: "boolean",
+      description: <>Retorna verdadeiro se o ponto estiver dentro do AABB, caso contrário, retorna falso.</>
+    },
+    {
+      signature: "getCenter()",
+      returns: "Vector3",
+      description: <>Retorna a propriedade <code>posição central do AABB</code>.</>
+    },
+    {
+      signature: "copy()",
+      returns: "AABB",
+      description: <>Retorna uma cópia da instância da classe atual.</>
+    }
+  ]}
+/>

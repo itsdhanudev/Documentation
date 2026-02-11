@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # OH3LevelFloatArray
 
 Complete API reference for `OH3LevelFloatArray`, including constructors, attributes, virtual attributes, and methods.
@@ -14,27 +16,57 @@ Complete API reference for `OH3LevelFloatArray`, including constructors, attribu
 public class OH3LevelFloatArray extends OHFloatDataBase
 ```
 
-## Constructors (4)
-
-| Signature | Description |
-| --- | --- |
-| OH3LevelFloatArray([OH3LevelFloatArray]) | Executes `OH3LevelFloatArray` and returns after the underlying engine call finishes. |
-| OH3LevelFloatArray([Engine]) | Executes `OH3LevelFloatArray` and returns after the underlying engine call finishes. |
-| OH3LevelFloatArray([int], [int], [int]) | Creates a new instance of OH3LevelFloatArray. |
-| OH3LevelFloatArray([int], [int], [int], [boolean]) | Creates a new instance of OH3LevelFloatArray. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `buffer` | [OH3LevelFloatArray] | Represents the `buffer` value stored on this instance. Read or assign to update the property. |
-
-## Methods (5)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `get(int, int, int)` | `float` | Returns the current value. |
-| `set(int, int, int, float)` | `void` | Sets or updates the the value. |
-| `getSizeX()` | `int` | Returns the current size x. |
-| `getSizeY()` | `int` | Returns the current size y. |
-| `getSizeZ()` | `int` | Returns the current size z. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "OH3LevelFloatArray(OH3LevelFloatArray)",
+      description: <>Executes <code>OH3LevelFloatArray</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "OH3LevelFloatArray(Engine)",
+      description: <>Executes <code>OH3LevelFloatArray</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "OH3LevelFloatArray(int, int, int)",
+      description: <>Creates a new instance of OH3LevelFloatArray.</>
+    },
+    {
+      signature: "OH3LevelFloatArray(int, int, int, boolean)",
+      description: <>Creates a new instance of OH3LevelFloatArray.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "buffer",
+      type: "OH3LevelFloatArray",
+      description: <>Represents the <code>buffer</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "get(int, int, int)",
+      returns: "float",
+      description: <>Returns the current value.</>
+    },
+    {
+      signature: "set(int, int, int, float)",
+      returns: "void",
+      description: <>Sets or updates the the value.</>
+    },
+    {
+      signature: "getSizeX()",
+      returns: "int",
+      description: <>Returns the current size x.</>
+    },
+    {
+      signature: "getSizeY()",
+      returns: "int",
+      description: <>Returns the current size y.</>
+    },
+    {
+      signature: "getSizeZ()",
+      returns: "int",
+      description: <>Returns the current size z.</>
+    }
+  ]}
+/>

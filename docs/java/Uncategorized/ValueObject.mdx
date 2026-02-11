@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # ValueObject
 
 Complete API reference for `ValueObject`, including constructors, attributes, virtual attributes, and methods.
@@ -14,32 +16,107 @@ Complete API reference for `ValueObject`, including constructors, attributes, vi
 public class ValueObject
 ```
 
-## Constructors (2)
-
-| Signature | Description |
-| --- | --- |
-| ValueObject() | Creates a new instance of ValueObject. |
-| ValueObject([LuaValue]) | Creates a new instance of ValueObject. |
-
-## Methods (18)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getCriticalValue()` | `LuaValue` | Returns the current critical value. |
-| `typename()` | `String` | Executes `typename` and returns after the underlying engine call finishes. |
-| `get(String)` | `ValueObject` | Returns the current value. |
-| `put(String, ValueObject)` | `void` | Sets or updates the the value. |
-| `put(String, Object)` | `void` | Sets or updates the the value. |
-| `toJava(Class)` | `Object` | Performs the toJava operation using the provided parameters (var1). |
-| `toBoolean()` | `boolean` | Executes `toBoolean` and returns after the underlying engine call finishes. |
-| `toByte()` | `byte` | Executes `toByte` and returns after the underlying engine call finishes. |
-| `toChar()` | `char` | Executes `toChar` and returns after the underlying engine call finishes. |
-| `toShort()` | `short` | Executes `toShort` and returns after the underlying engine call finishes. |
-| `toInt()` | `int` | Executes `toInt` and returns after the underlying engine call finishes. |
-| `toLong()` | `long` | Executes `toLong` and returns after the underlying engine call finishes. |
-| `toFloat()` | `float` | Executes `toFloat` and returns after the underlying engine call finishes. |
-| `toDouble()` | `double` | Executes `toDouble` and returns after the underlying engine call finishes. |
-| `equals(Object)` | `boolean` | Compares this instance with another for equality/order. |
-| `toString()` | `String` | Returns the string representation. |
-| `hashCode()` | `int` | Returns whether code is true. |
-| `getObjectCritical()` | `LuaValue` | Returns the current object critical. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "ValueObject()",
+      description: <>Creates a new instance of ValueObject.</>
+    },
+    {
+      signature: "ValueObject(LuaValue)",
+      description: <>Creates a new instance of ValueObject.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "getCriticalValue()",
+      returns: "LuaValue",
+      description: <>Returns the current critical value.</>
+    },
+    {
+      signature: "typename()",
+      returns: "String",
+      description: <>Executes <code>typename</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "get(String)",
+      returns: "ValueObject",
+      description: <>Returns the current value.</>
+    },
+    {
+      signature: "put(String, ValueObject)",
+      returns: "void",
+      description: <>Sets or updates the the value.</>
+    },
+    {
+      signature: "put(String, Object)",
+      returns: "void",
+      description: <>Sets or updates the the value.</>
+    },
+    {
+      signature: "toJava(Class)",
+      returns: "Object",
+      description: <>Performs the toJava operation using the provided parameters (var1).</>
+    },
+    {
+      signature: "toBoolean()",
+      returns: "boolean",
+      description: <>Executes <code>toBoolean</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "toByte()",
+      returns: "byte",
+      description: <>Executes <code>toByte</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "toChar()",
+      returns: "char",
+      description: <>Executes <code>toChar</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "toShort()",
+      returns: "short",
+      description: <>Executes <code>toShort</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "toInt()",
+      returns: "int",
+      description: <>Executes <code>toInt</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "toLong()",
+      returns: "long",
+      description: <>Executes <code>toLong</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "toFloat()",
+      returns: "float",
+      description: <>Executes <code>toFloat</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "toDouble()",
+      returns: "double",
+      description: <>Executes <code>toDouble</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "equals(Object)",
+      returns: "boolean",
+      description: <>Compares this instance with another for equality/order.</>
+    },
+    {
+      signature: "toString()",
+      returns: "String",
+      description: <>Returns the string representation.</>
+    },
+    {
+      signature: "hashCode()",
+      returns: "int",
+      description: <>Returns whether code is true.</>
+    },
+    {
+      signature: "getObjectCritical()",
+      returns: "LuaValue",
+      description: <>Returns the current object critical.</>
+    }
+  ]}
+/>

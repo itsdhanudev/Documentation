@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # AOnTouchListener
 
 Referência completa da API de `AOnTouchListener`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,9 +16,17 @@ Referência completa da API de `AOnTouchListener`, incluindo construtores, atrib
 public class AOnTouchListener
 ```
 
-## Métodos (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `onTouch(View, MotionEvent)` | `boolean` | Executa a operação onTouch usando os parâmetros informados (v, event). |
-| `onTouchEvent(View, MotionEvent)` | `boolean` | Executa `onTouchEvent` e retorna quando a chamada do motor termina. |
+<ApiDoc
+  methods={[
+    {
+      signature: "onTouch(View, MotionEvent)",
+      returns: "boolean",
+      description: <>Executa a operação onTouch usando os parâmetros informados (v, event).</>
+    },
+    {
+      signature: "onTouchEvent(View, MotionEvent)",
+      returns: "boolean",
+      description: <>Executa <code>onTouchEvent</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+/>

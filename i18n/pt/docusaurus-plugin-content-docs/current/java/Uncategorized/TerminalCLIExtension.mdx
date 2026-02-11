@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # TerminalCLIExtension
 
 Referência completa da API de `TerminalCLIExtension`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,37 +16,132 @@ Referência completa da API de `TerminalCLIExtension`, incluindo construtores, a
 public class TerminalCLIExtension
 ```
 
-## Construtores (2)
-
-| Signature | Description |
-| --- | --- |
-| TerminalCLIExtension([JavaTerminalCLIExtension]) | Executa `TerminalCLIExtension` e retorna quando a chamada do motor termina. |
-| TerminalCLIExtension() | Executa `TerminalCLIExtension` e retorna quando a chamada do motor termina. |
-
-## Métodos (23)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `setInstance(JavaTerminalCLIExtension)` | `void` | Executa `setInstance` e retorna quando a chamada do motor termina. |
-| `getCommand()` | `String` | Executa `getCommand` e retorna quando a chamada do motor termina. |
-| `getInfo()` | `String` | Retorna a propriedade `propriedade `info atual``. |
-| `start(String[])` | `void` | Executa `start` e retorna quando a chamada do motor termina. |
-| `run(String)` | `void` | Executa `run` e retorna quando a chamada do motor termina. |
-| `exit()` | `void` | Executa a operação exit. |
-| `log(Object)` | `void` | Executa a operação log usando os parâmetros informados (message). |
-| `log(String)` | `void` | Executa a operação log usando os parâmetros informados (message). |
-| `log(Vector3)` | `void` | Executa a operação log usando os parâmetros informados (message). |
-| `log(Quaternion)` | `void` | Executa a operação log usando os parâmetros informados (message). |
-| `log(Vector2)` | `void` | Executa a operação log usando os parâmetros informados (message). |
-| `log(float)` | `void` | Executa a operação log usando os parâmetros informados (message). |
-| `log(int)` | `void` | Executa a operação log usando os parâmetros informados (message). |
-| `log(long)` | `void` | Executa a operação log usando os parâmetros informados (message). |
-| `log(double)` | `void` | Executa a operação log usando os parâmetros informados (message). |
-| `log(char)` | `void` | Executa a operação log usando os parâmetros informados (message). |
-| `log(byte)` | `void` | Executa a operação log usando os parâmetros informados (message). |
-| `log(Error)` | `void` | Executa a operação log usando os parâmetros informados (e). |
-| `log(Exception)` | `void` | Executa a operação log usando os parâmetros informados (e). |
-| `log(Throwable)` | `void` | Executa a operação log usando os parâmetros informados (e). |
-| `log(Log)` | `void` | Executa a operação log usando os parâmetros informados (log). |
-| `log(String[])` | `void` | Executa a operação log usando os parâmetros informados (log). |
-| `log([List&lt;String&gt;])` | `void` | Executa a operação log usando os parâmetros informados (log). |
+<ApiDoc
+  constructors={[
+    {
+      signature: "TerminalCLIExtension(JavaTerminalCLIExtension)",
+      description: <>Executa <code>TerminalCLIExtension</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "TerminalCLIExtension()",
+      description: <>Executa <code>TerminalCLIExtension</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "setInstance(JavaTerminalCLIExtension)",
+      returns: "void",
+      description: <>Executa <code>setInstance</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "getCommand()",
+      returns: "String",
+      description: <>Executa <code>getCommand</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "getInfo()",
+      returns: "String",
+      description: <>Retorna a propriedade <code>propriedade </code>info atual``.</>
+    },
+    {
+      signature: "start(String[])",
+      returns: "void",
+      description: <>Executa <code>start</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "run(String)",
+      returns: "void",
+      description: <>Executa <code>run</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "exit()",
+      returns: "void",
+      description: <>Executa a operação exit.</>
+    },
+    {
+      signature: "log(Object)",
+      returns: "void",
+      description: <>Executa a operação log usando os parâmetros informados (message).</>
+    },
+    {
+      signature: "log(String)",
+      returns: "void",
+      description: <>Executa a operação log usando os parâmetros informados (message).</>
+    },
+    {
+      signature: "log(Vector3)",
+      returns: "void",
+      description: <>Executa a operação log usando os parâmetros informados (message).</>
+    },
+    {
+      signature: "log(Quaternion)",
+      returns: "void",
+      description: <>Executa a operação log usando os parâmetros informados (message).</>
+    },
+    {
+      signature: "log(Vector2)",
+      returns: "void",
+      description: <>Executa a operação log usando os parâmetros informados (message).</>
+    },
+    {
+      signature: "log(float)",
+      returns: "void",
+      description: <>Executa a operação log usando os parâmetros informados (message).</>
+    },
+    {
+      signature: "log(int)",
+      returns: "void",
+      description: <>Executa a operação log usando os parâmetros informados (message).</>
+    },
+    {
+      signature: "log(long)",
+      returns: "void",
+      description: <>Executa a operação log usando os parâmetros informados (message).</>
+    },
+    {
+      signature: "log(double)",
+      returns: "void",
+      description: <>Executa a operação log usando os parâmetros informados (message).</>
+    },
+    {
+      signature: "log(char)",
+      returns: "void",
+      description: <>Executa a operação log usando os parâmetros informados (message).</>
+    },
+    {
+      signature: "log(byte)",
+      returns: "void",
+      description: <>Executa a operação log usando os parâmetros informados (message).</>
+    },
+    {
+      signature: "log(Error)",
+      returns: "void",
+      description: <>Executa a operação log usando os parâmetros informados (e).</>
+    },
+    {
+      signature: "log(Exception)",
+      returns: "void",
+      description: <>Executa a operação log usando os parâmetros informados (e).</>
+    },
+    {
+      signature: "log(Throwable)",
+      returns: "void",
+      description: <>Executa a operação log usando os parâmetros informados (e).</>
+    },
+    {
+      signature: "log(Log)",
+      returns: "void",
+      description: <>Executa a operação log usando os parâmetros informados (log).</>
+    },
+    {
+      signature: "log(String[])",
+      returns: "void",
+      description: <>Executa a operação log usando os parâmetros informados (log).</>
+    },
+    {
+      signature: "log(List&lt;String&gt;)",
+      returns: "void",
+      description: <>Executa a operação log usando os parâmetros informados (log).</>
+    }
+  ]}
+/>

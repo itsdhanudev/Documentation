@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # VoxelGenerator
 
 Complete API reference for `VoxelGenerator`, including constructors, attributes, virtual attributes, and methods.
@@ -14,24 +16,44 @@ Complete API reference for `VoxelGenerator`, including constructors, attributes,
 public class VoxelGenerator extends Component
 ```
 
-## Constructors (2)
-
-| Signature | Description |
-| --- | --- |
-| VoxelGenerator([VoxelGenerator]) | Executes `VoxelGenerator` and returns after the underlying engine call finishes. |
-| VoxelGenerator() | Executes `VoxelGenerator` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `component` | [VoxelGenerator] | Represents the `component` value stored on this instance. Read or assign to update the property. |
-
-## Methods (4)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `setListener(Component)` | `void` | Sets or updates the listener. |
-| `removeListener()` | `void` | Removes listener from the collection. |
-| `componentClassMatch(Component, Component)` | `boolean` | Executes `componentClassMatch` and returns after the underlying engine call finishes. |
-| `getEngineComponent()` | `Component` | Executes `getEngineComponent` and returns after the underlying engine call finishes. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "VoxelGenerator(VoxelGenerator)",
+      description: <>Executes <code>VoxelGenerator</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "VoxelGenerator()",
+      description: <>Executes <code>VoxelGenerator</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "component",
+      type: "VoxelGenerator",
+      description: <>Represents the <code>component</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "setListener(Component)",
+      returns: "void",
+      description: <>Sets or updates the listener.</>
+    },
+    {
+      signature: "removeListener()",
+      returns: "void",
+      description: <>Removes listener from the collection.</>
+    },
+    {
+      signature: "componentClassMatch(Component, Component)",
+      returns: "boolean",
+      description: <>Executes <code>componentClassMatch</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "getEngineComponent()",
+      returns: "Component",
+      description: <>Executes <code>getEngineComponent</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

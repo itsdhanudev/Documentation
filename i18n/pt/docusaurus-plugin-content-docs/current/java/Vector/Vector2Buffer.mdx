@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Vector2Buffer
 
 Referência completa da API de `Vector2Buffer`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,34 +16,92 @@ Referência completa da API de `Vector2Buffer`, incluindo construtores, atributo
 public class Vector2Buffer
 ```
 
-## Construtores (4)
-
-| Signature | Description |
-| --- | --- |
-| Vector2Buffer([Vector2Buffer]) | Executa `Vector2Buffer` e retorna quando a chamada do motor termina. |
-| Vector2Buffer([Engine]) | Executa `Vector2Buffer` e retorna quando a chamada do motor termina. |
-| Vector2Buffer([int]) | Cria uma nova instância de Vector2Buffer. |
-| Vector2Buffer([NativeFloatBuffer]) | Cria uma nova instância de Vector2Buffer. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `buffer` | [Vector2Buffer] | Representa o valor de `buffer` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Métodos (12)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `get(int)` | `Vector2` | Retorna a propriedade `propriedade `valor value atual``. |
-| `getX(int)` | `float` | Retorna a propriedade `propriedade `x atual``. |
-| `getY(int)` | `float` | Retorna a propriedade `propriedade `y atual``. |
-| `put(Vector2)` | `void` | Define ou atualiza the value. |
-| `put(float, float)` | `void` | Define ou atualiza the value. |
-| `set(int, Vector2)` | `void` | Define ou atualiza the value. |
-| `set(int, float, float)` | `void` | Define ou atualiza the value. |
-| `capacity()` | `int` | Executa a operação capacity. |
-| `array()` | [Vector2][] | Executa a operação array. |
-| `position(int)` | `void` | Executa a operação position usando os parâmetros informados (idx). |
-| `copy()` | `Vector2Buffer` | Retorna uma cópia da instância de Vector2Buffer. |
-| `getFloatBuffer()` | [JAVARuntime].[NativeFloatBuffer] | Retorna a propriedade `propriedade `float buffer atual``. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "Vector2Buffer(Vector2Buffer)",
+      description: <>Executa <code>Vector2Buffer</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "Vector2Buffer(Engine)",
+      description: <>Executa <code>Vector2Buffer</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "Vector2Buffer(int)",
+      description: <>Cria uma nova instância de Vector2Buffer.</>
+    },
+    {
+      signature: "Vector2Buffer(NativeFloatBuffer)",
+      description: <>Cria uma nova instância de Vector2Buffer.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "buffer",
+      type: "Vector2Buffer",
+      description: <>Representa o valor de <code>buffer</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "get(int)",
+      returns: "Vector2",
+      description: <>Retorna a propriedade <code>propriedade </code>valor value atual``.</>
+    },
+    {
+      signature: "getX(int)",
+      returns: "float",
+      description: <>Retorna a propriedade <code>propriedade </code>x atual``.</>
+    },
+    {
+      signature: "getY(int)",
+      returns: "float",
+      description: <>Retorna a propriedade <code>propriedade </code>y atual``.</>
+    },
+    {
+      signature: "put(Vector2)",
+      returns: "void",
+      description: <>Define ou atualiza the value.</>
+    },
+    {
+      signature: "put(float, float)",
+      returns: "void",
+      description: <>Define ou atualiza the value.</>
+    },
+    {
+      signature: "set(int, Vector2)",
+      returns: "void",
+      description: <>Define ou atualiza the value.</>
+    },
+    {
+      signature: "set(int, float, float)",
+      returns: "void",
+      description: <>Define ou atualiza the value.</>
+    },
+    {
+      signature: "capacity()",
+      returns: "int",
+      description: <>Executa a operação capacity.</>
+    },
+    {
+      signature: "array()",
+      returns: "Vector2[]",
+      description: <>Executa a operação array.</>
+    },
+    {
+      signature: "position(int)",
+      returns: "void",
+      description: <>Executa a operação position usando os parâmetros informados (idx).</>
+    },
+    {
+      signature: "copy()",
+      returns: "Vector2Buffer",
+      description: <>Retorna uma cópia da instância de Vector2Buffer.</>
+    },
+    {
+      signature: "getFloatBuffer()",
+      returns: "JAVARuntime.NativeFloatBuffer",
+      description: <>Retorna a propriedade <code>propriedade </code>float buffer atual``.</>
+    }
+  ]}
+/>

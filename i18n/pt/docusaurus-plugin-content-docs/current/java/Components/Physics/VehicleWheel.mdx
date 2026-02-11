@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # VehicleWheel
 
 Referência completa da API de `VehicleWheel`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,41 +16,115 @@ Referência completa da API de `VehicleWheel`, incluindo construtores, atributos
 public class VehicleWheel extends Component
 ```
 
-## Construtores (2)
-
-| Signature | Description |
-| --- | --- |
-| VehicleWheel([VehicleWheel]) | Executa `VehicleWheel` e retorna quando a chamada do motor termina. |
-| VehicleWheel() | Executa `VehicleWheel` e retorna quando a chamada do motor termina. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `component` | [VehicleWheel] | Representa o valor de `component` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (9)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `blockRotation` | [float] | `set` | Atributo virtual exposto por `setBlockRotation`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `frictionSlip` | [float] | `get/set` | Atributo virtual exposto por `getFrictionSlip`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `modelPosition` | [Vector3] | `get` | Atributo virtual exposto por `getModelPosition`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `modelRotation` | [Quaternion] | `get` | Atributo virtual exposto por `getModelRotation`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `posPhysicsFunctionEnabled` | [boolean] | `get/set` | Atributo virtual exposto por `getPosPhysicsFunctionEnabled`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `radius` | [float] | `get/set` | Atributo virtual exposto por `getRadius`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `rotation` | [float] | `get/set` | Atributo virtual exposto por `getRotation`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `skidding` | [float] | `get` | Atributo virtual exposto por `getSkidding`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `suspensionRestLength` | [float] | `get/set` | Atributo virtual exposto por `getSuspensionRestLength`. Acesse como um campo para ler ou escrever o valor subjacente. |
-
-## Métodos (7)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `isGrounded()` | `boolean` | Retorna se grounded é verdadeiro. |
-| `incrementRotation(float)` | `void` | Executa a operação incrementRotation usando os parâmetros informados (r). |
-| `setTorque(float)` | `void` | Define ou atualiza a propriedade `propriedade `torque``. |
-| `setBrake(float)` | `void` | Define ou atualiza a propriedade `propriedade `brake``. |
-| `setSteer(float)` | `void` | Define ou atualiza a propriedade `propriedade `steer``. |
-| `componentClassMatch(Component, Component)` | `boolean` | Executa `componentClassMatch` e retorna quando a chamada do motor termina. |
-| `getEngineComponent()` | `Component` | Executa `getEngineComponent` e retorna quando a chamada do motor termina. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "VehicleWheel(VehicleWheel)",
+      description: <>Executa <code>VehicleWheel</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "VehicleWheel()",
+      description: <>Executa <code>VehicleWheel</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "component",
+      type: "VehicleWheel",
+      description: <>Representa o valor de <code>component</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "blockRotation",
+      type: "float",
+      access: "set",
+      description: <>Atributo virtual exposto por <code>setBlockRotation</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "frictionSlip",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getFrictionSlip</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "modelPosition",
+      type: "Vector3",
+      access: "get",
+      description: <>Atributo virtual exposto por <code>getModelPosition</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "modelRotation",
+      type: "Quaternion",
+      access: "get",
+      description: <>Atributo virtual exposto por <code>getModelRotation</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "posPhysicsFunctionEnabled",
+      type: "boolean",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getPosPhysicsFunctionEnabled</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "radius",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getRadius</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "rotation",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getRotation</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "skidding",
+      type: "float",
+      access: "get",
+      description: <>Atributo virtual exposto por <code>getSkidding</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "suspensionRestLength",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getSuspensionRestLength</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "isGrounded()",
+      returns: "boolean",
+      description: <>Retorna se grounded é verdadeiro.</>
+    },
+    {
+      signature: "incrementRotation(float)",
+      returns: "void",
+      description: <>Executa a operação incrementRotation usando os parâmetros informados (r).</>
+    },
+    {
+      signature: "setTorque(float)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>torque``.</>
+    },
+    {
+      signature: "setBrake(float)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>brake``.</>
+    },
+    {
+      signature: "setSteer(float)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>steer``.</>
+    },
+    {
+      signature: "componentClassMatch(Component, Component)",
+      returns: "boolean",
+      description: <>Executa <code>componentClassMatch</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "getEngineComponent()",
+      returns: "Component",
+      description: <>Executa <code>getEngineComponent</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+/>

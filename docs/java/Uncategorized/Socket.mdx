@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Socket
 
 Complete API reference for `Socket`, including constructors, attributes, virtual attributes, and methods.
@@ -14,65 +16,264 @@ Complete API reference for `Socket`, including constructors, attributes, virtual
 public class Socket extends Socket
 ```
 
-## Constructors (10)
-
-| Signature | Description |
-| --- | --- |
-| Socket() | Creates a new instance of Socket. |
-| Socket([Socket]) | Executes `Socket` and returns after the underlying engine call finishes. |
-| Socket([Proxy]) | Creates a new instance of Socket. |
-| Socket([SocketImpl]) | Executes `Socket` and returns after the underlying engine call finishes. |
-| Socket([String], [int]) | Executes `Socket` and returns after the underlying engine call finishes. |
-| Socket([InetAddress], [int]) | Executes `Socket` and returns after the underlying engine call finishes. |
-| Socket([String], [int], [InetAddress], [int]) | Executes `Socket` and returns after the underlying engine call finishes. |
-| Socket([InetAddress], [int], [InetAddress], [int]) | Executes `Socket` and returns after the underlying engine call finishes. |
-| Socket([String], [int], [boolean]) | Executes `Socket` and returns after the underlying engine call finishes. |
-| Socket([InetAddress], [int], [boolean]) | Executes `Socket` and returns after the underlying engine call finishes. |
-
-## Methods (43)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `connect(SocketAddress)` | `void` | Executes `connect` and returns after the underlying engine call finishes. |
-| `connect(SocketAddress, int)` | `void` | Executes `connect` and returns after the underlying engine call finishes. |
-| `bind(SocketAddress)` | `void` | Executes `bind` and returns after the underlying engine call finishes. |
-| `getInetAddress()` | `InetAddress` | Returns the current inet address. |
-| `getLocalAddress()` | `InetAddress` | Returns the current local address. |
-| `getPort()` | `int` | Returns the current port. |
-| `getLocalPort()` | `int` | Returns the current local port. |
-| `getRemoteSocketAddress()` | `SocketAddress` | Returns the current remote socket address. |
-| `getLocalSocketAddress()` | `SocketAddress` | Returns the current local socket address. |
-| `getChannel()` | `SocketChannel` | Returns the current channel. |
-| `getInputStream()` | `InputStream` | Executes `getInputStream` and returns after the underlying engine call finishes. |
-| `getOutputStream()` | `OutputStream` | Executes `getOutputStream` and returns after the underlying engine call finishes. |
-| `setTcpNoDelay(boolean)` | `void` | Executes `setTcpNoDelay` and returns after the underlying engine call finishes. |
-| `getTcpNoDelay()` | `boolean` | Executes `getTcpNoDelay` and returns after the underlying engine call finishes. |
-| `setSoLinger(boolean, int)` | `void` | Executes `setSoLinger` and returns after the underlying engine call finishes. |
-| `getSoLinger()` | `int` | Executes `getSoLinger` and returns after the underlying engine call finishes. |
-| `sendUrgentData(int)` | `void` | Executes `sendUrgentData` and returns after the underlying engine call finishes. |
-| `setOOBInline(boolean)` | `void` | Executes `setOOBInline` and returns after the underlying engine call finishes. |
-| `getOOBInline()` | `boolean` | Executes `getOOBInline` and returns after the underlying engine call finishes. |
-| `setSoTimeout(int)` | `void` | Executes `setSoTimeout` and returns after the underlying engine call finishes. |
-| `getSoTimeout()` | `int` | Executes `getSoTimeout` and returns after the underlying engine call finishes. |
-| `setSendBufferSize(int)` | `void` | Executes `setSendBufferSize` and returns after the underlying engine call finishes. |
-| `getSendBufferSize()` | `int` | Executes `getSendBufferSize` and returns after the underlying engine call finishes. |
-| `setReceiveBufferSize(int)` | `void` | Executes `setReceiveBufferSize` and returns after the underlying engine call finishes. |
-| `getReceiveBufferSize()` | `int` | Executes `getReceiveBufferSize` and returns after the underlying engine call finishes. |
-| `setKeepAlive(boolean)` | `void` | Executes `setKeepAlive` and returns after the underlying engine call finishes. |
-| `getKeepAlive()` | `boolean` | Executes `getKeepAlive` and returns after the underlying engine call finishes. |
-| `setTrafficClass(int)` | `void` | Executes `setTrafficClass` and returns after the underlying engine call finishes. |
-| `getTrafficClass()` | `int` | Executes `getTrafficClass` and returns after the underlying engine call finishes. |
-| `setReuseAddress(boolean)` | `void` | Executes `setReuseAddress` and returns after the underlying engine call finishes. |
-| `getReuseAddress()` | `boolean` | Executes `getReuseAddress` and returns after the underlying engine call finishes. |
-| `close()` | `void` | Executes `close` and returns after the underlying engine call finishes. |
-| `shutdownInput()` | `void` | Executes `shutdownInput` and returns after the underlying engine call finishes. |
-| `shutdownOutput()` | `void` | Executes `shutdownOutput` and returns after the underlying engine call finishes. |
-| `toString()` | `String` | Returns the string representation. |
-| `isConnected()` | `boolean` | Returns whether connected is true. |
-| `isBound()` | `boolean` | Returns whether bound is true. |
-| `isClosed()` | `boolean` | Returns whether closed is true. |
-| `isInputShutdown()` | `boolean` | Returns whether input shutdown is true. |
-| `isOutputShutdown()` | `boolean` | Returns whether output shutdown is true. |
-| `setPerformancePreferences(int, int, int)` | `void` | Sets or updates the performance preferences. |
-| `hashCode()` | `int` | Returns whether code is true. |
-| `equals(Object)` | `boolean` | Compares this instance with another for equality/order. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "Socket()",
+      description: <>Creates a new instance of Socket.</>
+    },
+    {
+      signature: "Socket(Socket)",
+      description: <>Executes <code>Socket</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "Socket(Proxy)",
+      description: <>Creates a new instance of Socket.</>
+    },
+    {
+      signature: "Socket(SocketImpl)",
+      description: <>Executes <code>Socket</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "Socket(String, int)",
+      description: <>Executes <code>Socket</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "Socket(InetAddress, int)",
+      description: <>Executes <code>Socket</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "Socket(String, int, InetAddress, int)",
+      description: <>Executes <code>Socket</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "Socket(InetAddress, int, InetAddress, int)",
+      description: <>Executes <code>Socket</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "Socket(String, int, boolean)",
+      description: <>Executes <code>Socket</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "Socket(InetAddress, int, boolean)",
+      description: <>Executes <code>Socket</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "connect(SocketAddress)",
+      returns: "void",
+      description: <>Executes <code>connect</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "connect(SocketAddress, int)",
+      returns: "void",
+      description: <>Executes <code>connect</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "bind(SocketAddress)",
+      returns: "void",
+      description: <>Executes <code>bind</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "getInetAddress()",
+      returns: "InetAddress",
+      description: <>Returns the current inet address.</>
+    },
+    {
+      signature: "getLocalAddress()",
+      returns: "InetAddress",
+      description: <>Returns the current local address.</>
+    },
+    {
+      signature: "getPort()",
+      returns: "int",
+      description: <>Returns the current port.</>
+    },
+    {
+      signature: "getLocalPort()",
+      returns: "int",
+      description: <>Returns the current local port.</>
+    },
+    {
+      signature: "getRemoteSocketAddress()",
+      returns: "SocketAddress",
+      description: <>Returns the current remote socket address.</>
+    },
+    {
+      signature: "getLocalSocketAddress()",
+      returns: "SocketAddress",
+      description: <>Returns the current local socket address.</>
+    },
+    {
+      signature: "getChannel()",
+      returns: "SocketChannel",
+      description: <>Returns the current channel.</>
+    },
+    {
+      signature: "getInputStream()",
+      returns: "InputStream",
+      description: <>Executes <code>getInputStream</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "getOutputStream()",
+      returns: "OutputStream",
+      description: <>Executes <code>getOutputStream</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "setTcpNoDelay(boolean)",
+      returns: "void",
+      description: <>Executes <code>setTcpNoDelay</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "getTcpNoDelay()",
+      returns: "boolean",
+      description: <>Executes <code>getTcpNoDelay</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "setSoLinger(boolean, int)",
+      returns: "void",
+      description: <>Executes <code>setSoLinger</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "getSoLinger()",
+      returns: "int",
+      description: <>Executes <code>getSoLinger</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "sendUrgentData(int)",
+      returns: "void",
+      description: <>Executes <code>sendUrgentData</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "setOOBInline(boolean)",
+      returns: "void",
+      description: <>Executes <code>setOOBInline</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "getOOBInline()",
+      returns: "boolean",
+      description: <>Executes <code>getOOBInline</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "setSoTimeout(int)",
+      returns: "void",
+      description: <>Executes <code>setSoTimeout</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "getSoTimeout()",
+      returns: "int",
+      description: <>Executes <code>getSoTimeout</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "setSendBufferSize(int)",
+      returns: "void",
+      description: <>Executes <code>setSendBufferSize</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "getSendBufferSize()",
+      returns: "int",
+      description: <>Executes <code>getSendBufferSize</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "setReceiveBufferSize(int)",
+      returns: "void",
+      description: <>Executes <code>setReceiveBufferSize</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "getReceiveBufferSize()",
+      returns: "int",
+      description: <>Executes <code>getReceiveBufferSize</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "setKeepAlive(boolean)",
+      returns: "void",
+      description: <>Executes <code>setKeepAlive</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "getKeepAlive()",
+      returns: "boolean",
+      description: <>Executes <code>getKeepAlive</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "setTrafficClass(int)",
+      returns: "void",
+      description: <>Executes <code>setTrafficClass</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "getTrafficClass()",
+      returns: "int",
+      description: <>Executes <code>getTrafficClass</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "setReuseAddress(boolean)",
+      returns: "void",
+      description: <>Executes <code>setReuseAddress</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "getReuseAddress()",
+      returns: "boolean",
+      description: <>Executes <code>getReuseAddress</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "close()",
+      returns: "void",
+      description: <>Executes <code>close</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "shutdownInput()",
+      returns: "void",
+      description: <>Executes <code>shutdownInput</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "shutdownOutput()",
+      returns: "void",
+      description: <>Executes <code>shutdownOutput</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "toString()",
+      returns: "String",
+      description: <>Returns the string representation.</>
+    },
+    {
+      signature: "isConnected()",
+      returns: "boolean",
+      description: <>Returns whether connected is true.</>
+    },
+    {
+      signature: "isBound()",
+      returns: "boolean",
+      description: <>Returns whether bound is true.</>
+    },
+    {
+      signature: "isClosed()",
+      returns: "boolean",
+      description: <>Returns whether closed is true.</>
+    },
+    {
+      signature: "isInputShutdown()",
+      returns: "boolean",
+      description: <>Returns whether input shutdown is true.</>
+    },
+    {
+      signature: "isOutputShutdown()",
+      returns: "boolean",
+      description: <>Returns whether output shutdown is true.</>
+    },
+    {
+      signature: "setPerformancePreferences(int, int, int)",
+      returns: "void",
+      description: <>Sets or updates the performance preferences.</>
+    },
+    {
+      signature: "hashCode()",
+      returns: "int",
+      description: <>Returns whether code is true.</>
+    },
+    {
+      signature: "equals(Object)",
+      returns: "boolean",
+      description: <>Compares this instance with another for equality/order.</>
+    }
+  ]}
+/>

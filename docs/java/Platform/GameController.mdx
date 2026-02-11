@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # GameController
 
 Complete API reference for `GameController`, including constructors, attributes, virtual attributes, and methods.
@@ -14,16 +16,31 @@ Complete API reference for `GameController`, including constructors, attributes,
 public class GameController
 ```
 
-## Virtual Attributes (2)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `enableFrameLimit` | [boolean] | `get/set` | Checks if frame limit is enabled. |
-| `limitFrames` | [int] | `get/set` | Returns the maximum number of frames per second allowed. |
-
-## Static Methods (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `quit()` | `void` | Quits the game and closes the application (Only in APK). |
-| `getState()` | `State` | Returns the current state of the game (Stopped, Paused, or Running). |
+<ApiDoc
+  virtualAttributes={[
+    {
+      name: "enableFrameLimit",
+      type: "boolean",
+      access: "get/set",
+      description: <>Checks if frame limit is enabled.</>
+    },
+    {
+      name: "limitFrames",
+      type: "int",
+      access: "get/set",
+      description: <>Returns the maximum number of frames per second allowed.</>
+    }
+  ]}
+  staticMethods={[
+    {
+      signature: "quit()",
+      returns: "void",
+      description: <>Quits the game and closes the application (Only in APK).</>
+    },
+    {
+      signature: "getState()",
+      returns: "State",
+      description: <>Returns the current state of the game (Stopped, Paused, or Running).</>
+    }
+  ]}
+/>

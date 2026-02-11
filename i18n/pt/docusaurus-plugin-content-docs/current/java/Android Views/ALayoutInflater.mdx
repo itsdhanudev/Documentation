@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # ALayoutInflater
 
 Referência completa da API de `ALayoutInflater`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,11 +16,49 @@ Referência completa da API de `ALayoutInflater`, incluindo construtores, atribu
 public class ALayoutInflater
 ```
 
-## Métodos Estáticos (4)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `inflate(String)` | `View` | Executa a operação inflate usando os parâmetros informados (inProjectPath). |
-| `inflate(File)` | `View` | Executa `inflate` e retorna quando a chamada do motor termina. |
-| `inflate(Resources.File)` | `View` | Executa a operação inflate usando os parâmetros informados (file). |
-| `inflateXML(String)` | `View` | Executa a operação inflateXML usando os parâmetros informados (xml). |
+<ApiDoc
+  methods={[
+    {
+      signature: "inflate(String)",
+      returns: "View",
+      description: <>Executa a operação inflate usando os parâmetros informados (inProjectPath).</>
+    },
+    {
+      signature: "inflate(File)",
+      returns: "View",
+      description: <>Executa <code>inflate</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "inflate(Resources.File)",
+      returns: "View",
+      description: <>Executa a operação inflate usando os parâmetros informados (file).</>
+    },
+    {
+      signature: "inflateXML(String)",
+      returns: "View",
+      description: <>Executa a operação inflateXML usando os parâmetros informados (xml).</>
+    }
+  ]}
+  staticMethods={[
+    {
+      signature: "inflate(String)",
+      returns: "View",
+      description: <>Executa a operação inflate usando os parâmetros informados (inProjectPath).</>
+    },
+    {
+      signature: "inflate(File)",
+      returns: "View",
+      description: <>Executa <code>inflate</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "inflate(Resources.File)",
+      returns: "View",
+      description: <>Executa a operação inflate usando os parâmetros informados (file).</>
+    },
+    {
+      signature: "inflateXML(String)",
+      returns: "View",
+      description: <>Executa a operação inflateXML usando os parâmetros informados (xml).</>
+    }
+  ]}
+/>

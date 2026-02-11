@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # SynchronizedArrayList
 
 Referência completa da API de `SynchronizedArrayList`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,8 +16,11 @@ Referência completa da API de `SynchronizedArrayList`, incluindo construtores, 
 public class SynchronizedArrayList extends SynchronizedList
 ```
 
-## Construtores (1)
-
-| Signature | Description |
-| --- | --- |
-| SynchronizedArrayList() | Cria uma nova instância de SynchronizedArrayList. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "SynchronizedArrayList()",
+      description: <>Cria uma nova instância de SynchronizedArrayList.</>
+    }
+  ]}
+/>

@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # AABB
 
 Complete API reference for `AABB`, including constructors, attributes, virtual attributes, and methods.
@@ -14,45 +16,132 @@ Complete API reference for `AABB`, including constructors, attributes, virtual a
 public class AABB
 ```
 
-## Constructors (6)
-
-| Signature | Description |
-| --- | --- |
-| AABB([AABB]) | Executes `AABB` and returns after the underlying engine call finishes. |
-| AABB() | Executes `AABB` and returns after the underlying engine call finishes. |
-| AABB([float], [float], [float], [float], [float], [float]) | Creates a new instance of AABB. |
-| AABB([float], [float], [float], [float], [float], [float], [float], [float], [float]) | Creates a new instance of AABB. |
-| AABB([Vector3], [Vector3]) | Creates a new instance of AABB. |
-| AABB([Vector3], [Vector3], [Vector3]) | Creates a new instance of AABB. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [AABB] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (10)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `lengthMax` | [float] | `get` | Returns the length of the maximum of the bounds. |
-| `lengthMin` | [float] | `get` | Returns the length of the minimum of the bounds. |
-| `max` | [Vector3] | `get/set` | Returns the maximum of the bounds. |
-| `min` | [Vector3] | `get/set` | Returns the minimum of the bounds. |
-| `x` | [float] | `get/set` | Returns the X of the maximum of the bounds. |
-| `xn` | [float] | `get/set` | Returns the X of the minimum of the bounds. |
-| `y` | [float] | `get/set` | Returns the Y of the maximum of the bounds. |
-| `yn` | [float] | `get/set` | Returns the Y of the minimum of the bounds. |
-| `z` | [float] | `get/set` | Returns the Z of the maximum of the bounds. |
-| `zn` | [float] | `get/set` | Returns the Z of the minimum of the bounds. |
-
-## Methods (6)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `lengthMax()` | `float` | Returns the length of the maximum of the bounds. |
-| `lengthMin()` | `float` | Returns the length of the minimum of the bounds. |
-| `maxDistanceFromCenter()` | `float` | Returns the maximum distance from the center. |
-| `isInside(Vector3)` | `boolean` | Returns true if the point is inside the AABB, otherwise returns false. |
-| `getCenter()` | `Vector3` | Returns the center position of the AABB. |
-| `copy()` | `AABB` | Returns a copy of the current class instance. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "AABB(AABB)",
+      description: <>Executes <code>AABB</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "AABB()",
+      description: <>Executes <code>AABB</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "AABB(float, float, float, float, float, float)",
+      description: <>Creates a new instance of AABB.</>
+    },
+    {
+      signature: "AABB(float, float, float, float, float, float, float, float, float)",
+      description: <>Creates a new instance of AABB.</>
+    },
+    {
+      signature: "AABB(Vector3, Vector3)",
+      description: <>Creates a new instance of AABB.</>
+    },
+    {
+      signature: "AABB(Vector3, Vector3, Vector3)",
+      description: <>Creates a new instance of AABB.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "AABB",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "lengthMax",
+      type: "float",
+      access: "get",
+      description: <>Returns the length of the maximum of the bounds.</>
+    },
+    {
+      name: "lengthMin",
+      type: "float",
+      access: "get",
+      description: <>Returns the length of the minimum of the bounds.</>
+    },
+    {
+      name: "max",
+      type: "Vector3",
+      access: "get/set",
+      description: <>Returns the maximum of the bounds.</>
+    },
+    {
+      name: "min",
+      type: "Vector3",
+      access: "get/set",
+      description: <>Returns the minimum of the bounds.</>
+    },
+    {
+      name: "x",
+      type: "float",
+      access: "get/set",
+      description: <>Returns the X of the maximum of the bounds.</>
+    },
+    {
+      name: "xn",
+      type: "float",
+      access: "get/set",
+      description: <>Returns the X of the minimum of the bounds.</>
+    },
+    {
+      name: "y",
+      type: "float",
+      access: "get/set",
+      description: <>Returns the Y of the maximum of the bounds.</>
+    },
+    {
+      name: "yn",
+      type: "float",
+      access: "get/set",
+      description: <>Returns the Y of the minimum of the bounds.</>
+    },
+    {
+      name: "z",
+      type: "float",
+      access: "get/set",
+      description: <>Returns the Z of the maximum of the bounds.</>
+    },
+    {
+      name: "zn",
+      type: "float",
+      access: "get/set",
+      description: <>Returns the Z of the minimum of the bounds.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "lengthMax()",
+      returns: "float",
+      description: <>Returns the length of the maximum of the bounds.</>
+    },
+    {
+      signature: "lengthMin()",
+      returns: "float",
+      description: <>Returns the length of the minimum of the bounds.</>
+    },
+    {
+      signature: "maxDistanceFromCenter()",
+      returns: "float",
+      description: <>Returns the maximum distance from the center.</>
+    },
+    {
+      signature: "isInside(Vector3)",
+      returns: "boolean",
+      description: <>Returns true if the point is inside the AABB, otherwise returns false.</>
+    },
+    {
+      signature: "getCenter()",
+      returns: "Vector3",
+      description: <>Returns the center position of the AABB.</>
+    },
+    {
+      signature: "copy()",
+      returns: "AABB",
+      description: <>Returns a copy of the current class instance.</>
+    }
+  ]}
+/>

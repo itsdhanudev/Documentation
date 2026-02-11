@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # OH2LevelFloatArray
 
 Complete API reference for `OH2LevelFloatArray`, including constructors, attributes, virtual attributes, and methods.
@@ -14,17 +16,31 @@ Complete API reference for `OH2LevelFloatArray`, including constructors, attribu
 public class OH2LevelFloatArray extends OHFloatDataBase
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| OH2LevelFloatArray([Engine]) | Creates a new instance of OH2LevelFloatArray. |
-| OH2LevelFloatArray([int], [int]) | Creates a new instance of OH2LevelFloatArray. |
-| OH2LevelFloatArray([int], [int], [boolean]) | Creates a new instance of OH2LevelFloatArray. |
-
-## Methods (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `get(int, int)` | `float` | Returns the current value. |
-| `set(int, int, float)` | `void` | Sets or updates the the value. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "OH2LevelFloatArray(Engine)",
+      description: <>Creates a new instance of OH2LevelFloatArray.</>
+    },
+    {
+      signature: "OH2LevelFloatArray(int, int)",
+      description: <>Creates a new instance of OH2LevelFloatArray.</>
+    },
+    {
+      signature: "OH2LevelFloatArray(int, int, boolean)",
+      description: <>Creates a new instance of OH2LevelFloatArray.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "get(int, int)",
+      returns: "float",
+      description: <>Returns the current value.</>
+    },
+    {
+      signature: "set(int, int, float)",
+      returns: "void",
+      description: <>Sets or updates the the value.</>
+    }
+  ]}
+/>

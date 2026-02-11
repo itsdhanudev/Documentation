@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # TextureFile
 
 Complete API reference for `TextureFile`, including constructors, attributes, virtual attributes, and methods.
@@ -14,22 +16,34 @@ Complete API reference for `TextureFile`, including constructors, attributes, vi
 public class TextureFile
 ```
 
-## Constructors (2)
-
-| Signature | Description |
-| --- | --- |
-| TextureFile([String]) | Executes `TextureFile` and returns after the underlying engine call finishes. |
-| TextureFile() | Executes `TextureFile` and returns after the underlying engine call finishes. |
-
-## Methods (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `toString()` | `String` | Returns the string representation. |
-
-## Static Methods (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `genericInterface()` | `GenericClassInspectorEntry` | Executes `genericInterface` and returns after the underlying engine call finishes. |
-| `inspectorController()` | `ClassInspectorEntry` | Executes `inspectorController` and returns after the underlying engine call finishes. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "TextureFile(String)",
+      description: <>Executes <code>TextureFile</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "TextureFile()",
+      description: <>Executes <code>TextureFile</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "toString()",
+      returns: "String",
+      description: <>Returns the string representation.</>
+    }
+  ]}
+  staticMethods={[
+    {
+      signature: "genericInterface()",
+      returns: "GenericClassInspectorEntry",
+      description: <>Executes <code>genericInterface</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "inspectorController()",
+      returns: "ClassInspectorEntry",
+      description: <>Executes <code>inspectorController</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

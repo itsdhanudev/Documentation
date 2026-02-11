@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # PostVignette
 
 Referência completa da API de `PostVignette`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,25 +16,52 @@ Referência completa da API de `PostVignette`, incluindo construtores, atributos
 public class PostVignette extends Component
 ```
 
-## Construtores (3)
-
-| Signature | Description |
-| --- | --- |
-| PostVignette([PostVignette]) | Executa `PostVignette` e retorna quando a chamada do motor termina. |
-| PostVignette([Engine]) | Executa `PostVignette` e retorna quando a chamada do motor termina. |
-| PostVignette() | Executa `PostVignette` e retorna quando a chamada do motor termina. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [PostVignette] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (4)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `color` | [Color] | `get/set` | Atributo virtual exposto por `getColor`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `feather` | [float] | `get/set` | Atributo virtual exposto por `getFeather`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `midPoint` | [float] | `get/set` | Atributo virtual exposto por `getMidPoint`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `roundness` | [float] | `get/set` | Atributo virtual exposto por `getRoundness`. Acesse como um campo para ler ou escrever o valor subjacente. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "PostVignette(PostVignette)",
+      description: <>Executa <code>PostVignette</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "PostVignette(Engine)",
+      description: <>Executa <code>PostVignette</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "PostVignette()",
+      description: <>Executa <code>PostVignette</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "PostVignette",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "color",
+      type: "Color",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getColor</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "feather",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getFeather</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "midPoint",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getMidPoint</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "roundness",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getRoundness</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+/>

@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Time
 
 Referência completa da API de `Time`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,21 +16,109 @@ Referência completa da API de `Time`, incluindo construtores, atributos, atribu
 public class Time
 ```
 
-## Atributos Virtuais (6)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `deltaTime` | [float] | `get` | Retorna a propriedade `propriedade `tempo (em segundos) que passou entre o último frame e o atual``. |
-| `frameTime` | [float] | `get` | Retorna a propriedade `propriedade `tempo (em segundos) que passou entre o último frame e o atual``. |
-| `timeScale` | [float] | `get/set` | Retorna a propriedade `escala de tempo atual`. |
-| `timeSpeed` | [float] | `get/set` | Retorna a propriedade `velocidade atual da escala de tempo`. |
-| `unscaledDeltaTime` | [float] | `get` | Retorna a propriedade `propriedade `tempo (em segundos) que passou entre o último frame e o atual sem escala de tempo (tempo real)``. |
-| `unscaledFrameTime` | [float] | `get` | Retorna a propriedade `propriedade `tempo (em segundos) que passou entre o último frame e o atual sem escala de tempo (tempo real)``. |
-
-## Métodos Estáticos (3)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `deltaTime()` | `float` | Retorna a propriedade `propriedade `tempo (em segundos) que passou entre o último frame e o atual``. |
-| `frameTime()` | `float` | Retorna a propriedade `propriedade `tempo (em segundos) que passou entre o último frame e o atual``. |
-| `unscaledDeltaTime()` | `float` | Retorna a propriedade `propriedade `tempo (em segundos) que passou entre o último frame e o atual sem escala de tempo (tempo real)``. |
+<ApiDoc
+  attributes={[
+    {
+      name: "deltaTime",
+      type: "float",
+      description: <><code>get</code></>
+    },
+    {
+      name: "frameTime",
+      type: "float",
+      description: <><code>get</code></>
+    },
+    {
+      name: "timeScale",
+      type: "float",
+      description: <><code>get/set</code></>
+    },
+    {
+      name: "timeSpeed",
+      type: "float",
+      description: <><code>get/set</code></>
+    },
+    {
+      name: "unscaledDeltaTime",
+      type: "float",
+      description: <><code>get</code></>
+    },
+    {
+      name: "unscaledFrameTime",
+      type: "float",
+      description: <><code>get</code></>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "deltaTime",
+      type: "float",
+      access: "get",
+      description: <>Retorna a propriedade <code>propriedade </code>tempo (em segundos) que passou entre o último frame e o atual``.</>
+    },
+    {
+      name: "frameTime",
+      type: "float",
+      access: "get",
+      description: <>Retorna a propriedade <code>propriedade </code>tempo (em segundos) que passou entre o último frame e o atual``.</>
+    },
+    {
+      name: "timeScale",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>escala de tempo atual</code>.</>
+    },
+    {
+      name: "timeSpeed",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>velocidade atual da escala de tempo</code>.</>
+    },
+    {
+      name: "unscaledDeltaTime",
+      type: "float",
+      access: "get",
+      description: <>Retorna a propriedade <code>propriedade </code>tempo (em segundos) que passou entre o último frame e o atual sem escala de tempo (tempo real)``.</>
+    },
+    {
+      name: "unscaledFrameTime",
+      type: "float",
+      access: "get",
+      description: <>Retorna a propriedade <code>propriedade </code>tempo (em segundos) que passou entre o último frame e o atual sem escala de tempo (tempo real)``.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "deltaTime()",
+      returns: "float",
+      description: <>Retorna a propriedade <code>propriedade </code>tempo (em segundos) que passou entre o último frame e o atual``.</>
+    },
+    {
+      signature: "frameTime()",
+      returns: "float",
+      description: <>Retorna a propriedade <code>propriedade </code>tempo (em segundos) que passou entre o último frame e o atual``.</>
+    },
+    {
+      signature: "unscaledDeltaTime()",
+      returns: "float",
+      description: <>Retorna a propriedade <code>propriedade </code>tempo (em segundos) que passou entre o último frame e o atual sem escala de tempo (tempo real)``.</>
+    }
+  ]}
+  staticMethods={[
+    {
+      signature: "deltaTime()",
+      returns: "float",
+      description: <>Retorna a propriedade <code>propriedade </code>tempo (em segundos) que passou entre o último frame e o atual``.</>
+    },
+    {
+      signature: "frameTime()",
+      returns: "float",
+      description: <>Retorna a propriedade <code>propriedade </code>tempo (em segundos) que passou entre o último frame e o atual``.</>
+    },
+    {
+      signature: "unscaledDeltaTime()",
+      returns: "float",
+      description: <>Retorna a propriedade <code>propriedade </code>tempo (em segundos) que passou entre o último frame e o atual sem escala de tempo (tempo real)``.</>
+    }
+  ]}
+/>

@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # OH2LevelIntArray
 
 Referência completa da API de `OH2LevelIntArray`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,17 +16,31 @@ Referência completa da API de `OH2LevelIntArray`, incluindo construtores, atrib
 public class OH2LevelIntArray extends OHIntDataBase
 ```
 
-## Construtores (3)
-
-| Signature | Description |
-| --- | --- |
-| OH2LevelIntArray([Engine]) | Cria uma nova instância de OH2LevelIntArray. |
-| OH2LevelIntArray([int], [int]) | Cria uma nova instância de OH2LevelIntArray. |
-| OH2LevelIntArray([int], [int], [boolean]) | Cria uma nova instância de OH2LevelIntArray. |
-
-## Métodos (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `get(int, int)` | `int` | Retorna a propriedade `propriedade `valor value atual``. |
-| `set(int, int, int)` | `void` | Define ou atualiza the value. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "OH2LevelIntArray(Engine)",
+      description: <>Cria uma nova instância de OH2LevelIntArray.</>
+    },
+    {
+      signature: "OH2LevelIntArray(int, int)",
+      description: <>Cria uma nova instância de OH2LevelIntArray.</>
+    },
+    {
+      signature: "OH2LevelIntArray(int, int, boolean)",
+      description: <>Cria uma nova instância de OH2LevelIntArray.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "get(int, int)",
+      returns: "int",
+      description: <>Retorna a propriedade <code>propriedade </code>valor value atual``.</>
+    },
+    {
+      signature: "set(int, int, int)",
+      returns: "void",
+      description: <>Define ou atualiza the value.</>
+    }
+  ]}
+/>

@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Material
 
 Complete API reference for `Material`, including constructors, attributes, virtual attributes, and methods.
@@ -14,74 +16,249 @@ Complete API reference for `Material`, including constructors, attributes, virtu
 public class Material
 ```
 
-## Constructors (2)
-
-| Signature | Description |
-| --- | --- |
-| Material([Material]) | Executes `Material` and returns after the underlying engine call finishes. |
-| Material() | Executes `Material` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `material` | [Material] | Represents the `material` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (1)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `shader` | [String] | `get/set` | Virtual attribute exposed by `getShader`. Access it like a field to read or write the underlying value. |
-
-## Methods (42)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getColor(String)` | `Color` | Returns the current color. |
-| `findColor(String)` | `Color` | Performs the findColor operation using the provided parameters (entryName). |
-| `setColor(String, Color)` | `void` | Sets or updates the color. |
-| `setDiffuse(Color)` | `void` | Sets or updates the diffuse. |
-| `getVector2(String)` | [JAVARuntime].[Vector2] | Returns the current vector2. |
-| `findVector2(String)` | [JAVARuntime].[Vector2] | Performs the findVector2 operation using the provided parameters (entryName). |
-| `setVector2(String, JAVARuntime.Vector2)` | `void` | Sets or updates the vector2. |
-| `getBoolean(String)` | `boolean` | Returns the current boolean. |
-| `findBoolean(String)` | `boolean` | Performs the findBoolean operation using the provided parameters (entryName). |
-| `setBoolean(String, boolean)` | `void` | Sets or updates the boolean. |
-| `setReceiveLight(boolean)` | `void` | Sets or updates the receive light. |
-| `getFloat(String)` | `float` | Returns the current float. |
-| `findFloat(String)` | `float` | Performs the findFloat operation using the provided parameters (entryName). |
-| `setFloat(String, float)` | `void` | Sets or updates the float. |
-| `setMinimalAlphaIntensity(float)` | `void` | Sets or updates the minimal alpha intensity. |
-| `setHeightIntensity(float)` | `void` | Sets or updates the height intensity. |
-| `setUvSize(float)` | `void` | Sets or updates the uv size. |
-| `setAlphaCutout(float)` | `void` | Sets or updates the alpha cutout. |
-| `setSpecular(float)` | `void` | Sets or updates the specular. |
-| `getTexture(String)` | `Texture` | Returns the current texture. |
-| `findTexture(String)` | `Texture` | Performs the findTexture operation using the provided parameters (entryName). |
-| `setTexture(String, Texture)` | `void` | Sets or updates the texture. |
-| `setTextureFile(String, TextureFile)` | `void` | Sets or updates the texture file. |
-| `setAlbedo(Texture)` | `void` | Sets or updates the albedo. |
-| `setAlbedo(TextureFile)` | `void` | Sets or updates the albedo. |
-| `setNormalMap(Texture)` | `void` | Sets or updates the normal map. |
-| `setNormalMap(TextureFile)` | `void` | Sets or updates the normal map. |
-| `setRoughness(Texture)` | `void` | Sets or updates the roughness. |
-| `setRoughness(TextureFile)` | `void` | Sets or updates the roughness. |
-| `setMetallic(Texture)` | `void` | Sets or updates the metallic. |
-| `setMetallic(TextureFile)` | `void` | Sets or updates the metallic. |
-| `setAoMap(Texture)` | `void` | Sets or updates the ao map. |
-| `setAoMap(TextureFile)` | `void` | Sets or updates the ao map. |
-| `setHeightMap(Texture)` | `void` | Sets or updates the height map. |
-| `setHeightMap(TextureFile)` | `void` | Sets or updates the height map. |
-| `setEmissiveMap(Texture)` | `void` | Sets or updates the emissive map. |
-| `setEmissiveMap(TextureFile)` | `void` | Sets or updates the emissive map. |
-| `setAlphaMap(Texture)` | `void` | Sets or updates the alpha map. |
-| `setAlphaMap(TextureFile)` | `void` | Sets or updates the alpha map. |
-| `setMatcap(Matcap)` | `void` | Sets or updates the matcap. |
-| `reloadEntries()` | `void` | Executes `reloadEntries` and returns after the underlying engine call finishes. |
-| `toJson()` | `String` | Executes `toJson` and returns after the underlying engine call finishes. |
-
-## Static Methods (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `loadFile(MaterialFile)` | `Material` | Loads file into the object. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "Material(Material)",
+      description: <>Executes <code>Material</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "Material()",
+      description: <>Executes <code>Material</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "material",
+      type: "Material",
+      description: <>Represents the <code>material</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "shader",
+      type: "String",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getShader</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "getColor(String)",
+      returns: "Color",
+      description: <>Returns the current color.</>
+    },
+    {
+      signature: "findColor(String)",
+      returns: "Color",
+      description: <>Performs the findColor operation using the provided parameters (entryName).</>
+    },
+    {
+      signature: "setColor(String, Color)",
+      returns: "void",
+      description: <>Sets or updates the color.</>
+    },
+    {
+      signature: "setDiffuse(Color)",
+      returns: "void",
+      description: <>Sets or updates the diffuse.</>
+    },
+    {
+      signature: "getVector2(String)",
+      returns: "JAVARuntime.Vector2",
+      description: <>Returns the current vector2.</>
+    },
+    {
+      signature: "findVector2(String)",
+      returns: "JAVARuntime.Vector2",
+      description: <>Performs the findVector2 operation using the provided parameters (entryName).</>
+    },
+    {
+      signature: "setVector2(String, JAVARuntime.Vector2)",
+      returns: "void",
+      description: <>Sets or updates the vector2.</>
+    },
+    {
+      signature: "getBoolean(String)",
+      returns: "boolean",
+      description: <>Returns the current boolean.</>
+    },
+    {
+      signature: "findBoolean(String)",
+      returns: "boolean",
+      description: <>Performs the findBoolean operation using the provided parameters (entryName).</>
+    },
+    {
+      signature: "setBoolean(String, boolean)",
+      returns: "void",
+      description: <>Sets or updates the boolean.</>
+    },
+    {
+      signature: "setReceiveLight(boolean)",
+      returns: "void",
+      description: <>Sets or updates the receive light.</>
+    },
+    {
+      signature: "getFloat(String)",
+      returns: "float",
+      description: <>Returns the current float.</>
+    },
+    {
+      signature: "findFloat(String)",
+      returns: "float",
+      description: <>Performs the findFloat operation using the provided parameters (entryName).</>
+    },
+    {
+      signature: "setFloat(String, float)",
+      returns: "void",
+      description: <>Sets or updates the float.</>
+    },
+    {
+      signature: "setMinimalAlphaIntensity(float)",
+      returns: "void",
+      description: <>Sets or updates the minimal alpha intensity.</>
+    },
+    {
+      signature: "setHeightIntensity(float)",
+      returns: "void",
+      description: <>Sets or updates the height intensity.</>
+    },
+    {
+      signature: "setUvSize(float)",
+      returns: "void",
+      description: <>Sets or updates the uv size.</>
+    },
+    {
+      signature: "setAlphaCutout(float)",
+      returns: "void",
+      description: <>Sets or updates the alpha cutout.</>
+    },
+    {
+      signature: "setSpecular(float)",
+      returns: "void",
+      description: <>Sets or updates the specular.</>
+    },
+    {
+      signature: "getTexture(String)",
+      returns: "Texture",
+      description: <>Returns the current texture.</>
+    },
+    {
+      signature: "findTexture(String)",
+      returns: "Texture",
+      description: <>Performs the findTexture operation using the provided parameters (entryName).</>
+    },
+    {
+      signature: "setTexture(String, Texture)",
+      returns: "void",
+      description: <>Sets or updates the texture.</>
+    },
+    {
+      signature: "setTextureFile(String, TextureFile)",
+      returns: "void",
+      description: <>Sets or updates the texture file.</>
+    },
+    {
+      signature: "setAlbedo(Texture)",
+      returns: "void",
+      description: <>Sets or updates the albedo.</>
+    },
+    {
+      signature: "setAlbedo(TextureFile)",
+      returns: "void",
+      description: <>Sets or updates the albedo.</>
+    },
+    {
+      signature: "setNormalMap(Texture)",
+      returns: "void",
+      description: <>Sets or updates the normal map.</>
+    },
+    {
+      signature: "setNormalMap(TextureFile)",
+      returns: "void",
+      description: <>Sets or updates the normal map.</>
+    },
+    {
+      signature: "setRoughness(Texture)",
+      returns: "void",
+      description: <>Sets or updates the roughness.</>
+    },
+    {
+      signature: "setRoughness(TextureFile)",
+      returns: "void",
+      description: <>Sets or updates the roughness.</>
+    },
+    {
+      signature: "setMetallic(Texture)",
+      returns: "void",
+      description: <>Sets or updates the metallic.</>
+    },
+    {
+      signature: "setMetallic(TextureFile)",
+      returns: "void",
+      description: <>Sets or updates the metallic.</>
+    },
+    {
+      signature: "setAoMap(Texture)",
+      returns: "void",
+      description: <>Sets or updates the ao map.</>
+    },
+    {
+      signature: "setAoMap(TextureFile)",
+      returns: "void",
+      description: <>Sets or updates the ao map.</>
+    },
+    {
+      signature: "setHeightMap(Texture)",
+      returns: "void",
+      description: <>Sets or updates the height map.</>
+    },
+    {
+      signature: "setHeightMap(TextureFile)",
+      returns: "void",
+      description: <>Sets or updates the height map.</>
+    },
+    {
+      signature: "setEmissiveMap(Texture)",
+      returns: "void",
+      description: <>Sets or updates the emissive map.</>
+    },
+    {
+      signature: "setEmissiveMap(TextureFile)",
+      returns: "void",
+      description: <>Sets or updates the emissive map.</>
+    },
+    {
+      signature: "setAlphaMap(Texture)",
+      returns: "void",
+      description: <>Sets or updates the alpha map.</>
+    },
+    {
+      signature: "setAlphaMap(TextureFile)",
+      returns: "void",
+      description: <>Sets or updates the alpha map.</>
+    },
+    {
+      signature: "setMatcap(Matcap)",
+      returns: "void",
+      description: <>Sets or updates the matcap.</>
+    },
+    {
+      signature: "reloadEntries()",
+      returns: "void",
+      description: <>Executes <code>reloadEntries</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "toJson()",
+      returns: "String",
+      description: <>Executes <code>toJson</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  staticMethods={[
+    {
+      signature: "loadFile(MaterialFile)",
+      returns: "Material",
+      description: <>Loads file into the object.</>
+    }
+  ]}
+/>

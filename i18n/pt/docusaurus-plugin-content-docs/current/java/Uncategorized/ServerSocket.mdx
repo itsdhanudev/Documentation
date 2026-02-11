@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # ServerSocket
 
 Referência completa da API de `ServerSocket`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,19 +16,40 @@ Referência completa da API de `ServerSocket`, incluindo construtores, atributos
 public class ServerSocket extends ServerSocket
 ```
 
-## Construtores (4)
-
-| Signature | Description |
-| --- | --- |
-| ServerSocket() | Executa `ServerSocket` e retorna quando a chamada do motor termina. |
-| ServerSocket([int]) | Executa `ServerSocket` e retorna quando a chamada do motor termina. |
-| ServerSocket([int], [int]) | Executa `ServerSocket` e retorna quando a chamada do motor termina. |
-| ServerSocket([int], [int], [InetAddress]) | Executa `ServerSocket` e retorna quando a chamada do motor termina. |
-
-## Métodos (3)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `bind(SocketAddress)` | `void` | Executa `bind` e retorna quando a chamada do motor termina. |
-| `bind(SocketAddress, int)` | `void` | Executa `bind` e retorna quando a chamada do motor termina. |
-| `accept()` | `Socket` | Executa `accept` e retorna quando a chamada do motor termina. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "ServerSocket()",
+      description: <>Executa <code>ServerSocket</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "ServerSocket(int)",
+      description: <>Executa <code>ServerSocket</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "ServerSocket(int, int)",
+      description: <>Executa <code>ServerSocket</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "ServerSocket(int, int, InetAddress)",
+      description: <>Executa <code>ServerSocket</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "bind(SocketAddress)",
+      returns: "void",
+      description: <>Executa <code>bind</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "bind(SocketAddress, int)",
+      returns: "void",
+      description: <>Executa <code>bind</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "accept()",
+      returns: "Socket",
+      description: <>Executa <code>accept</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+/>

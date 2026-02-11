@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Vector3
 
 Referência completa da API de `Vector3`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,206 +16,903 @@ Referência completa da API de `Vector3`, incluindo construtores, atributos, atr
 public class Vector3
 ```
 
-## Construtores (10)
-
-| Signature | Description |
-| --- | --- |
-| Vector3([Vector3]) | Executa `Vector3` e retorna quando a chamada do motor termina. |
-| Vector3() | Executa `Vector3` e retorna quando a chamada do motor termina. |
-| Vector3([float]) | Cria uma nova instância de Vector3. |
-| Vector3([int]) | Cria uma nova instância de Vector3. |
-| Vector3([float], [float], [float]) | Cria uma nova instância de Vector3. |
-| Vector3([int], [int], [int]) | Cria uma nova instância de Vector3. |
-| Vector3([float], [float], [int]) | Cria uma nova instância de Vector3. |
-| Vector3([int], [float], [int]) | Cria uma nova instância de Vector3. |
-| Vector3([int], [float], [float]) | Cria uma nova instância de Vector3. |
-| Vector3([int], [int], [float]) | Cria uma nova instância de Vector3. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [Vector3] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (3)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `x` | [float] | `get/set` | Retorna a propriedade `propriedade `componente X deste Vector3``. |
-| `y` | [float] | `get/set` | Retorna a propriedade `propriedade `componente Y deste Vector3``. |
-| `z` | [float] | `get/set` | Retorna a propriedade `propriedade `componente Z deste Vector3``. |
-
-## Métodos (145)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getXY()` | `Vector2` | Retorna um Vector2 com os componentes X e Y deste Vector3. |
-| `getXZ()` | `Vector2` | Retorna um Vector2 com os componentes X e Z deste Vector3. |
-| `getYZ()` | `Vector2` | Retorna um Vector2 com os componentes Y e Z deste Vector3. |
-| `getYX()` | `Vector2` | Retorna um Vector2 com os componentes Y e X deste Vector3. |
-| `getZX()` | `Vector2` | Retorna um Vector2 com os componentes Z e X deste Vector3. |
-| `getZY()` | `Vector2` | Retorna um Vector2 com os componentes Z e Y deste Vector3. |
-| `setXY(Vector2)` | `void` | Define os componentes X e Y deste Vector3 com os valores do Vector2 especificado. |
-| `setXZ(Vector2)` | `void` | Define os componentes X e Z deste Vector3 com os valores do Vector2 especificado. |
-| `setYZ(Vector2)` | `void` | Define os componentes Y e Z deste Vector3 com os valores do Vector2 especificado. |
-| `setYX(Vector2)` | `void` | Define os componentes Y e X deste Vector3 com os valores do Vector2 especificado. |
-| `setZX(Vector2)` | `void` | Define os componentes Z e X deste Vector3 com os valores do Vector2 especificado. |
-| `setZY(Vector2)` | `void` | Define os componentes Z e Y deste Vector3 com os valores do Vector2 especificado. |
-| `setXY(float, float)` | `void` | Define os componentes X e Y deste Vector3. |
-| `setXZ(float, float)` | `void` | Define os componentes X e Z deste Vector3. |
-| `setYZ(float, float)` | `void` | Define os componentes Y e Z deste Vector3. |
-| `setYX(float, float)` | `void` | Define os componentes Y e X deste Vector3. |
-| `setZX(float, float)` | `void` | Define os componentes Z e X deste Vector3. |
-| `setZY(float, float)` | `void` | Define os componentes Z e Y deste Vector3. |
-| `sumX(float)` | `void` | Soma o valor especificado ao componente X deste Vector3. |
-| `sumY(float)` | `void` | Soma o valor especificado ao componente Y deste Vector3. |
-| `sumZ(float)` | `void` | Soma o valor especificado ao componente Z deste Vector3. |
-| `subX(float)` | `void` | Subtrai o valor especificado do componente X deste Vector3. |
-| `subY(float)` | `void` | Subtrai o valor especificado do componente Y deste Vector3. |
-| `subZ(float)` | `void` | Subtrai o valor especificado do componente Z deste Vector3. |
-| `mulX(float)` | `void` | Multiplica o componente X deste Vector3 pelo valor especificado. |
-| `mulY(float)` | `void` | Multiplica o componente Y deste Vector3 pelo valor especificado. |
-| `mulZ(float)` | `void` | Multiplica o componente Z deste Vector3 pelo valor especificado. |
-| `divX(float)` | `void` | Divide o componente X deste Vector3 pelo valor especificado. |
-| `divY(float)` | `void` | Divide o componente Y deste Vector3 pelo valor especificado. |
-| `divZ(float)` | `void` | Divide o componente Z deste Vector3 pelo valor especificado. |
-| `mul(Vector3)` | `Vector3` | Multiplica este Vector3 pelo Vector3 especificado e retorna um novo Vector3. |
-| `mul(float, float, float)` | `Vector3` | Multiplica este Vector3 pelos valores X, Y e Z especificados e retorna um novo Vector3. |
-| `mul(float)` | `Vector3` | Multiplica este Vector3 pelo valor especificado e retorna um novo Vector3. |
-| `mulLocal(Vector3)` | `void` | Multiplica este Vector3 pelo Vector3 especificado e atualiza este Vector3. |
-| `mulLocal(Vector2)` | `void` | Multiplica este Vector3 pelo Vector2 especificado e atualiza este Vector3. |
-| `mulLocal(float, float, float)` | `void` | Multiplica este Vector3 pelos valores X, Y e Z especificados e atualiza este Vector3. |
-| `mulLocal(float)` | `void` | Multiplica este Vector3 pelo valor especificado e atualiza este Vector3. |
-| `multiply(Vector3)` | `Vector3` | Multiplica este Vector3 pelo Vector3 especificado e retorna um novo Vector3. |
-| `multiply(float, float, float)` | `Vector3` | Multiplica este Vector3 pelos valores X, Y e Z especificados e retorna um novo Vector3. |
-| `multiply(float)` | `Vector3` | Multiplica este Vector3 pelo valor especificado e retorna um novo Vector3. |
-| `div(Vector3)` | `Vector3` | Divide este Vector3 pelo Vector3 especificado e retorna um novo Vector3. |
-| `div(float, float, float)` | `Vector3` | Divide este Vector3 pelos valores X, Y e Z especificados e retorna um novo Vector3. |
-| `div(float)` | `Vector3` | Divide este Vector3 pelo valor especificado e retorna um novo Vector3. |
-| `divLocal(Vector3)` | `void` | Divide este Vector3 pelo Vector3 especificado e atualiza este Vector3. |
-| `divLocal(Vector2)` | `void` | Divide este Vector3 pelo Vector2 especificado e atualiza este Vector3. |
-| `divLocal(float, float, float)` | `void` | Divide este Vector3 pelos valores X, Y e Z especificados e atualiza este Vector3. |
-| `divLocal(float)` | `void` | Divide este Vector3 pelo valor especificado e atualiza este Vector3. |
-| `divide(Vector3)` | `Vector3` | Divide este Vector3 pelo Vector3 especificado e retorna um novo Vector3. |
-| `divide(float, float, float)` | `Vector3` | Divide este Vector3 pelos valores X, Y e Z especificados e retorna um novo Vector3. |
-| `divide(float)` | `Vector3` | Divide este Vector3 pelo valor especificado e retorna um novo Vector3. |
-| `sum(Vector3)` | `Vector3` | Soma o Vector3 especificado a este Vector3 e retorna um novo Vector3. |
-| `sum(float, float, float)` | `Vector3` | Soma os valores X, Y e Z especificados a este Vector3 e retorna um novo Vector3. |
-| `sum(float)` | `Vector3` | Soma o valor especificado a este Vector3 e retorna um novo Vector3. |
-| `sumLocal(Vector3)` | `void` | Soma o Vector3 especificado a este Vector3 e atualiza este Vector3. |
-| `sumLocal(Vector2)` | `void` | Soma o Vector2 especificado a este Vector3 e atualiza este Vector3. |
-| `sumLocal(float, float, float)` | `void` | Soma os valores X, Y e Z especificados a este Vector3 e atualiza este Vector3. |
-| `sumLocal(float)` | `void` | Soma o valor especificado a este Vector3 e atualiza este Vector3. |
-| `add(Vector3)` | `Vector3` | Soma o Vector3 especificado a este Vector3 e retorna um novo Vector3. |
-| `add(float, float, float)` | `Vector3` | Soma os valores X, Y e Z especificados a este Vector3 e retorna um novo Vector3. |
-| `add(float)` | `Vector3` | Soma o valor especificado a este Vector3 e retorna um novo Vector3. |
-| `sub(Vector3)` | `Vector3` | Subtrai o Vector3 especificado deste Vector3 e retorna um novo Vector3. |
-| `sub(float, float, float)` | `Vector3` | Subtrai os valores X, Y e Z especificados deste Vector3 e retorna um novo Vector3. |
-| `sub(float)` | `Vector3` | Subtrai o valor especificado deste Vector3 e retorna um novo Vector3. |
-| `subLocal(Vector3)` | `void` | Subtrai o Vector3 especificado deste Vector3 e atualiza este Vector3. |
-| `subLocal(Vector2)` | `void` | Subtrai o Vector2 especificado deste Vector3 e atualiza este Vector3. |
-| `subLocal(float, float, float)` | `void` | Subtrai os valores X, Y e Z especificados deste Vector3 e atualiza este Vector3. |
-| `subLocal(float)` | `void` | Subtrai o valor especificado deste Vector3 e atualiza este Vector3. |
-| `subtract(Vector3)` | `Vector3` | Subtrai o Vector3 especificado deste Vector3 e retorna um novo Vector3. |
-| `subtract(float, float, float)` | `Vector3` | Subtrai os valores X, Y e Z especificados deste Vector3 e retorna um novo Vector3. |
-| `subtract(float)` | `Vector3` | Subtrai o valor especificado deste Vector3 e retorna um novo Vector3. |
-| `equals(Vector3)` | `boolean` | Verifica se este Vector3 é igual ao Vector3 especificado. |
-| `equals(float, float, float)` | `boolean` | Verifica se este Vector3 é igual aos valores X, Y e Z especificados. |
-| `equals(float)` | `boolean` | Verifica se todos os componentes este Vector3 é igual ao valor especificado. |
-| `set(Vector3)` | `void` | Define os componentes deste Vector3 para o Vector3 especificado. |
-| `set(float, float, float)` | `void` | Define os componentes deste Vector3 para os valores X, Y e Z especificados. |
-| `set(float)` | `void` | Define todos os componentes deste Vector3 para o valor especificado. |
-| `lerp(Vector3, float)` | `void` | Faz uma interpolação/suavização entre este Vector3 e o Vector3 especificado com base na velocidade/intervalo fornecido e atualiza este Vector3. |
-| `lerp(float, float, float, float)` | `void` | Faz uma interpolação/suavização entre este Vector3 e os valores X, Y e Z especificados com base na velocidade/intervalo fornecido e atualiza este Vector3. |
-| `lerp(float, float)` | `void` | Faz uma interpolação/suavização entre este Vector3 e o valor especificado com base na velocidade/intervalo fornecido e atualiza este Vector3. |
-| `lerpInSeconds(Vector3, float)` | `void` | Faz uma interpolação/suavização entre este Vector3 e o Vector3 especificado com base na velocidade/intervalo fornecido em um segundo e atualiza esse Vector3. |
-| `lerpInSeconds(float, float, float, float)` | `void` | Faz uma interpolação/suavização entre este Vector3 e os valores X, Y e Z especificados com base na velocidade/intervalo fornecido em um segundo e atualiza esse Vector3. |
-| `lerpInSeconds(float, float)` | `void` | Faz uma interpolação/suavização entre este Vector3 e o valor especificado com base na velocidade/intervalo fornecido em um segundo e atualiza esse Vector3. |
-| `blend(Vector3, float)` | `Vector3` | Faz uma mistura entre este Vector3 e o Vector3 especificado com base no fator de mistura fornecido (0 a 1) e atualiza este Vector3. |
-| `blend(float, float, float, float)` | `Vector3` | Faz uma mistura entre este Vector3 e os valores X, Y e Z especificados com base no fator de mistura fornecido (0 a 1) e atualiza este Vector3. |
-| `blend(float, float)` | `Vector3` | Faz uma mistura entre este Vector3 e o valor especificado com base no fator de mistura fornecido (0 a 1) e atualiza este Vector3. |
-| `blendLocal(Vector3, float)` | `void` | Faz uma mistura entre este Vector3 e o Vector3 especificado com base no fator de mistura fornecido (0 a 1) e atualiza este Vector3. |
-| `blendLocal(float, float, float, float)` | `void` | Faz uma mistura entre este Vector3 e os valores X, Y e Z especificados com base no fator de mistura fornecido (0 a 1) e atualiza este Vector3. |
-| `blendLocal(float, float)` | `void` | Faz uma mistura entre este Vector3 e o valor especificado com base no fator de mistura fornecido (0 a 1) e atualiza este Vector3. |
-| `normalize()` | `Vector3` | Retorna uma cópia normalizada deste Vector3 (comprimento igual a 1). |
-| `normalizeLocal()` | `void` | Normaliza este Vector3 (define seu comprimento para 1). |
-| `length()` | `float` | Retorna a propriedade `propriedade `comprimento (magnitude) deste Vector3``. |
-| `sqrLength()` | `float` | Retorna a propriedade `propriedade `comprimento ao quadrado deste Vector3``. Mais rápido que length() pois não usa raiz quadrada; útil para comparar distâncias. |
-| `magnitude()` | `float` | Retorna a propriedade `magnitude deste Vector3`. |
-| `sqrMagnitude()` | `float` | Retorna a propriedade `magnitude ao quadrado deste Vector3`. Mais rápido que magnitude() pois não usa raiz quadrada; útil para comparar distâncias. |
-| `rotate(float, float, float)` | `Vector3` | Rotaciona este Vector3 pelos ângulos especificados (em graus) e Retorna a propriedade `propriedade `Vector3 resultante``. |
-| `rotate(Vector3)` | `Vector3` | Rotaciona este Vector3 pelo Vector3 de rotação especificado (em graus) e Retorna a propriedade `propriedade `Vector3 resultante``. |
-| `rotate(Quaternion)` | `Vector3` | Rotaciona este Vector3 pela rotação do Quaternion especificado e Retorna a propriedade `propriedade `Vector3 resultante``. |
-| `rotateAroundPivot(float, float, float, Vector3)` | `Vector3` | Rotaciona este Vector3 ao redor do ponto de pivô especificado usando os ângulos da rotação fornecidos (em graus) e Retorna a propriedade `propriedade `Vector3 resultante``. |
-| `rotateAroundPivot(Vector3, Vector3)` | `Vector3` | Rotaciona este Vector3 ao redor do ponto de pivô especificado usando o Vector3 de rotação fornecido (em graus) e Retorna a propriedade `propriedade `Vector3 resultante``. |
-| `rotateAroundPivot(Quaternion, Vector3)` | `Vector3` | Rotaciona este Vector3 ao redor do ponto de pivô especificado usando a rotação do Quaternion fornecido e Retorna a propriedade `propriedade `Vector3 resultante``. |
-| `distance(Vector3)` | `float` | Retorna a propriedade `distância entre este Vector3 e o Vector3 especificado`. |
-| `sqrDistance(Vector3)` | `float` | Retorna a propriedade `distância ao quadrado entre este Vector3 e o Vector3 especificado`. Mais rápido que distance() pois não usa raiz quadrada; útil para comparar distâncias. |
-| `dot(Vector3)` | `float` | Retorna a propriedade `propriedade `produto escalar deste Vector3 e do Vector3 especificado``. |
-| `dot(float, float, float)` | `float` | Retorna a propriedade `propriedade `produto escalar deste Vector3 e dos valores X, Y e Z especificados``. |
-| `dot(float)` | `float` | Retorna a propriedade `propriedade `produto escalar deste Vector3 com o valor especificado, usado para todos os componentes``. |
-| `cross(Vector3)` | `Vector3` | Retorna a propriedade `propriedade `produto vetorial deste Vector3 e do Vector3 especificado``. |
-| `cross(float, float, float)` | `Vector3` | Retorna a propriedade `propriedade `produto vetorial deste Vector3 e dos valores X, Y e Z especificados``. |
-| `copy()` | `Vector3` | Retorna uma cópia deste Vector3. |
-| `toString()` | `String` | Retorna uma representação em String deste Vector3. |
-| `toString(int)` | `String` | Retorna uma representação em String deste Vector3 com o número especificado de casas decimais. |
-| `equals(Object)` | `boolean` | Verifica se este Vector3 é igual ao objeto especificado. |
-| `pointerEquals(Object)` | `boolean` | Verifica se este Vector3 é a mesma instância do objeto especificado. |
-| `notEquals(Object)` | `boolean` | Verifica se este Vector3 não é igual ao objeto especificado. |
-| `greaterThan(Object)` | `boolean` | Verifica se este Vector3 é maior que o objeto especificado (pela magnitude). |
-| `greaterThan(float)` | `boolean` | Verifica se este Vector3 é maior que o valor especificado (pela magnitude). |
-| `greaterThan(int)` | `boolean` | Verifica se este Vector3 é maior que o valor especificado (pela magnitude). |
-| `greaterThan(long)` | `boolean` | Verifica se este Vector3 é maior que o valor especificado (pela magnitude). |
-| `greaterThan(double)` | `boolean` | Verifica se este Vector3 é maior que o valor especificado (pela magnitude). |
-| `greaterOrEqualsThan(Object)` | `boolean` | Verifica se este Vector3 é maior ou igual ao objeto especificado (pela magnitude). |
-| `greaterOrEqualsThan(float)` | `boolean` | Verifica se este Vector3 é maior ou igual ao valor especificado (pela magnitude). |
-| `greaterOrEqualsThan(int)` | `boolean` | Verifica se este Vector3 é maior ou igual ao valor especificado (pela magnitude). |
-| `greaterOrEqualsThan(long)` | `boolean` | Verifica se este Vector3 é maior ou igual ao valor especificado (pela magnitude). |
-| `greaterOrEqualsThan(double)` | `boolean` | Verifica se este Vector3 é maior ou igual ao valor especificado (pela magnitude). |
-| `lessThan(Object)` | `boolean` | Verifica se este Vector3 é menor que o objeto especificado (pela magnitude). |
-| `lessThan(float)` | `boolean` | Verifica se este Vector3 é menor que o valor especificado (pela magnitude). |
-| `lessThan(int)` | `boolean` | Verifica se este Vector3 é menor que o valor especificado (pela magnitude). |
-| `lessThan(long)` | `boolean` | Verifica se este Vector3 é menor que o valor especificado (pela magnitude). |
-| `lessThan(double)` | `boolean` | Verifica se este Vector3 é menor que o valor especificado (pela magnitude). |
-| `lessOrEqualsThan(Object)` | `boolean` | Verifica se este Vector3 é menor ou igual ao objeto especificado (pela magnitude). |
-| `lessOrEqualsThan(float)` | `boolean` | Verifica se este Vector3 é menor ou igual ao valor especificado (pela magnitude). |
-| `lessOrEqualsThan(int)` | `boolean` | Verifica se este Vector3 é menor ou igual ao valor especificado (pela magnitude). |
-| `lessOrEqualsThan(long)` | `boolean` | Verifica se este Vector3 é menor ou igual ao valor especificado (pela magnitude). |
-| `lessOrEqualsThan(double)` | `boolean` | Verifica se este Vector3 é menor ou igual ao valor especificado (pela magnitude). |
-| `sum(Object)` | `T` | Retorna a propriedade `soma deste Vector3 e do objeto especificado`. |
-| `sumEqual(Object)` | `void` | Soma o objeto especificado a este Vector3. |
-| `div(Object)` | `T` | Retorna a propriedade `divisão deste Vector3 pelo objeto especificado`. |
-| `divEqual(Object)` | `void` | Divide este Vector3 pelo objeto especificado. |
-| `mul(Object)` | `T` | Retorna a propriedade `multiplicação deste Vector3 pelo objeto especificado`. |
-| `mulEqual(Object)` | `void` | Multiplica este Vector3 pelo objeto especificado. |
-| `sub(Object)` | `T` | Retorna a propriedade `subtração deste Vector3 e do objeto especificado`. |
-| `subEqual(Object)` | `void` | Subtrai o objeto especificado deste Vector3. |
-| `addAdd()` | `void` | Incrementa este Vector3 em 1. |
-| `removeRemove()` | `void` | Decrementa este Vector3 em 1. |
-| `serializeToString()` | `String` | Retorna uma representação em String deste Vector3 no formato '[X;Y;Z]'. |
-| `deserializeLocal(String)` | `void` | Desserializa uma String no formato '[X;Y;Z]' e define os valores neste Vector3. |
-
-## Métodos Estáticos (20)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `genericInterface()` | `GenericClassInspectorEntry` | Executa `genericInterface` e retorna quando a chamada do motor termina. |
-| `inspectorController()` | `ClassInspectorEntry` | Executa `inspectorController` e retorna quando a chamada do motor termina. |
-| `zero()` | `Vector3` | Retorna um Vector3 com todos os componentes definidos como zero (0, 0, 0). |
-| `one()` | `Vector3` | Retorna um Vector3 com todos os componentes definidos como um (1, 1, 1). |
-| `smoothDamp(Vector3, Vector3, Vector3, float, float, float)` | `Vector3` | Move o vetor current suavemente em direção ao target com controle de suavização, velocidade máxima, no intervalo definido. |
-| `smoothDamp(Vector3, Vector3, Vector3, float, float, float, Vector3)` | `Vector3` | Move o vetor current suavemente em direção ao target com controle de suavização, velocidade máxima, no intervalo definido e armazena o resultado no vetor especificado. |
-| `reflect(Vector3, Vector3)` | `Vector3` | Reflete o vetor de direção em um plano definido pela normal. |
-| `reflect(Vector3, Vector3, Vector3)` | `Vector3` | Reflete o vetor de direção em um plano definido pela normal e armazena o resultado no vetor especificado. |
-| `angle(Vector3, Vector3)` | `float` | Retorna a propriedade `propriedade `ângulo em graus entre os dois vetores especificados``. |
-| `triangleNormal(Vector3, Vector3, Vector3)` | `Vector3` | Calcula a normal do triângulo definido pelos três vértices especificados. |
-| `triangleNormal(Vector3, Vector3, Vector3, Vector3)` | `Vector3` | Calcula a normal do triângulo definido pelos três vértices especificados e armazena o resultado no vetor especificado. |
-| `Max(Vector3, Vector3)` | `Vector3` | Retorna um novo Vector3 com os maiores valores de cada componente entre os dois vetores fornecidos. |
-| `Min(Vector3, Vector3)` | `Vector3` | Retorna um novo Vector3 com os menores valores de cada componente entre os dois vetores fornecidos. |
-| `Negate(Vector3)` | `Vector3` | Retorna um Vector3 apontando para cima (0, 1, 0). |
-| `down()` | `Vector3` | Retorna um Vector3 apontando para baixo (0, -1, 0). |
-| `back()` | `Vector3` | Retorna um Vector3 apontando para trás (0, 0, -1). |
-| `forward()` | `Vector3` | Retorna um Vector3 apontando para frente (0, 0, 1). |
-| `left()` | `Vector3` | Retorna um Vector3 apontando para a esquerda (-1, 0, 0). |
-| `right()` | `Vector3` | Retorna um Vector3 apontando para a direita (1, 0, 0). |
-| `isNull(Object)` | `boolean` | Verifica se o objeto especificado é nulo. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "Vector3(Vector3)",
+      description: <>Executa <code>Vector3</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "Vector3()",
+      description: <>Executa <code>Vector3</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "Vector3(float)",
+      description: <>Cria uma nova instância de Vector3.</>
+    },
+    {
+      signature: "Vector3(int)",
+      description: <>Cria uma nova instância de Vector3.</>
+    },
+    {
+      signature: "Vector3(float, float, float)",
+      description: <>Cria uma nova instância de Vector3.</>
+    },
+    {
+      signature: "Vector3(int, int, int)",
+      description: <>Cria uma nova instância de Vector3.</>
+    },
+    {
+      signature: "Vector3(float, float, int)",
+      description: <>Cria uma nova instância de Vector3.</>
+    },
+    {
+      signature: "Vector3(int, float, int)",
+      description: <>Cria uma nova instância de Vector3.</>
+    },
+    {
+      signature: "Vector3(int, float, float)",
+      description: <>Cria uma nova instância de Vector3.</>
+    },
+    {
+      signature: "Vector3(int, int, float)",
+      description: <>Cria uma nova instância de Vector3.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "Vector3",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "x",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>propriedade </code>componente X deste Vector3``.</>
+    },
+    {
+      name: "y",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>propriedade </code>componente Y deste Vector3``.</>
+    },
+    {
+      name: "z",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>propriedade </code>componente Z deste Vector3``.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "getXY()",
+      returns: "Vector2",
+      description: <>Retorna um Vector2 com os componentes X e Y deste Vector3.</>
+    },
+    {
+      signature: "getXZ()",
+      returns: "Vector2",
+      description: <>Retorna um Vector2 com os componentes X e Z deste Vector3.</>
+    },
+    {
+      signature: "getYZ()",
+      returns: "Vector2",
+      description: <>Retorna um Vector2 com os componentes Y e Z deste Vector3.</>
+    },
+    {
+      signature: "getYX()",
+      returns: "Vector2",
+      description: <>Retorna um Vector2 com os componentes Y e X deste Vector3.</>
+    },
+    {
+      signature: "getZX()",
+      returns: "Vector2",
+      description: <>Retorna um Vector2 com os componentes Z e X deste Vector3.</>
+    },
+    {
+      signature: "getZY()",
+      returns: "Vector2",
+      description: <>Retorna um Vector2 com os componentes Z e Y deste Vector3.</>
+    },
+    {
+      signature: "setXY(Vector2)",
+      returns: "void",
+      description: <>Define os componentes X e Y deste Vector3 com os valores do Vector2 especificado.</>
+    },
+    {
+      signature: "setXZ(Vector2)",
+      returns: "void",
+      description: <>Define os componentes X e Z deste Vector3 com os valores do Vector2 especificado.</>
+    },
+    {
+      signature: "setYZ(Vector2)",
+      returns: "void",
+      description: <>Define os componentes Y e Z deste Vector3 com os valores do Vector2 especificado.</>
+    },
+    {
+      signature: "setYX(Vector2)",
+      returns: "void",
+      description: <>Define os componentes Y e X deste Vector3 com os valores do Vector2 especificado.</>
+    },
+    {
+      signature: "setZX(Vector2)",
+      returns: "void",
+      description: <>Define os componentes Z e X deste Vector3 com os valores do Vector2 especificado.</>
+    },
+    {
+      signature: "setZY(Vector2)",
+      returns: "void",
+      description: <>Define os componentes Z e Y deste Vector3 com os valores do Vector2 especificado.</>
+    },
+    {
+      signature: "setXY(float, float)",
+      returns: "void",
+      description: <>Define os componentes X e Y deste Vector3.</>
+    },
+    {
+      signature: "setXZ(float, float)",
+      returns: "void",
+      description: <>Define os componentes X e Z deste Vector3.</>
+    },
+    {
+      signature: "setYZ(float, float)",
+      returns: "void",
+      description: <>Define os componentes Y e Z deste Vector3.</>
+    },
+    {
+      signature: "setYX(float, float)",
+      returns: "void",
+      description: <>Define os componentes Y e X deste Vector3.</>
+    },
+    {
+      signature: "setZX(float, float)",
+      returns: "void",
+      description: <>Define os componentes Z e X deste Vector3.</>
+    },
+    {
+      signature: "setZY(float, float)",
+      returns: "void",
+      description: <>Define os componentes Z e Y deste Vector3.</>
+    },
+    {
+      signature: "sumX(float)",
+      returns: "void",
+      description: <>Soma o valor especificado ao componente X deste Vector3.</>
+    },
+    {
+      signature: "sumY(float)",
+      returns: "void",
+      description: <>Soma o valor especificado ao componente Y deste Vector3.</>
+    },
+    {
+      signature: "sumZ(float)",
+      returns: "void",
+      description: <>Soma o valor especificado ao componente Z deste Vector3.</>
+    },
+    {
+      signature: "subX(float)",
+      returns: "void",
+      description: <>Subtrai o valor especificado do componente X deste Vector3.</>
+    },
+    {
+      signature: "subY(float)",
+      returns: "void",
+      description: <>Subtrai o valor especificado do componente Y deste Vector3.</>
+    },
+    {
+      signature: "subZ(float)",
+      returns: "void",
+      description: <>Subtrai o valor especificado do componente Z deste Vector3.</>
+    },
+    {
+      signature: "mulX(float)",
+      returns: "void",
+      description: <>Multiplica o componente X deste Vector3 pelo valor especificado.</>
+    },
+    {
+      signature: "mulY(float)",
+      returns: "void",
+      description: <>Multiplica o componente Y deste Vector3 pelo valor especificado.</>
+    },
+    {
+      signature: "mulZ(float)",
+      returns: "void",
+      description: <>Multiplica o componente Z deste Vector3 pelo valor especificado.</>
+    },
+    {
+      signature: "divX(float)",
+      returns: "void",
+      description: <>Divide o componente X deste Vector3 pelo valor especificado.</>
+    },
+    {
+      signature: "divY(float)",
+      returns: "void",
+      description: <>Divide o componente Y deste Vector3 pelo valor especificado.</>
+    },
+    {
+      signature: "divZ(float)",
+      returns: "void",
+      description: <>Divide o componente Z deste Vector3 pelo valor especificado.</>
+    },
+    {
+      signature: "mul(Vector3)",
+      returns: "Vector3",
+      description: <>Multiplica este Vector3 pelo Vector3 especificado e retorna um novo Vector3.</>
+    },
+    {
+      signature: "mul(float, float, float)",
+      returns: "Vector3",
+      description: <>Multiplica este Vector3 pelos valores X, Y e Z especificados e retorna um novo Vector3.</>
+    },
+    {
+      signature: "mul(float)",
+      returns: "Vector3",
+      description: <>Multiplica este Vector3 pelo valor especificado e retorna um novo Vector3.</>
+    },
+    {
+      signature: "mulLocal(Vector3)",
+      returns: "void",
+      description: <>Multiplica este Vector3 pelo Vector3 especificado e atualiza este Vector3.</>
+    },
+    {
+      signature: "mulLocal(Vector2)",
+      returns: "void",
+      description: <>Multiplica este Vector3 pelo Vector2 especificado e atualiza este Vector3.</>
+    },
+    {
+      signature: "mulLocal(float, float, float)",
+      returns: "void",
+      description: <>Multiplica este Vector3 pelos valores X, Y e Z especificados e atualiza este Vector3.</>
+    },
+    {
+      signature: "mulLocal(float)",
+      returns: "void",
+      description: <>Multiplica este Vector3 pelo valor especificado e atualiza este Vector3.</>
+    },
+    {
+      signature: "multiply(Vector3)",
+      returns: "Vector3",
+      description: <>Multiplica este Vector3 pelo Vector3 especificado e retorna um novo Vector3.</>
+    },
+    {
+      signature: "multiply(float, float, float)",
+      returns: "Vector3",
+      description: <>Multiplica este Vector3 pelos valores X, Y e Z especificados e retorna um novo Vector3.</>
+    },
+    {
+      signature: "multiply(float)",
+      returns: "Vector3",
+      description: <>Multiplica este Vector3 pelo valor especificado e retorna um novo Vector3.</>
+    },
+    {
+      signature: "div(Vector3)",
+      returns: "Vector3",
+      description: <>Divide este Vector3 pelo Vector3 especificado e retorna um novo Vector3.</>
+    },
+    {
+      signature: "div(float, float, float)",
+      returns: "Vector3",
+      description: <>Divide este Vector3 pelos valores X, Y e Z especificados e retorna um novo Vector3.</>
+    },
+    {
+      signature: "div(float)",
+      returns: "Vector3",
+      description: <>Divide este Vector3 pelo valor especificado e retorna um novo Vector3.</>
+    },
+    {
+      signature: "divLocal(Vector3)",
+      returns: "void",
+      description: <>Divide este Vector3 pelo Vector3 especificado e atualiza este Vector3.</>
+    },
+    {
+      signature: "divLocal(Vector2)",
+      returns: "void",
+      description: <>Divide este Vector3 pelo Vector2 especificado e atualiza este Vector3.</>
+    },
+    {
+      signature: "divLocal(float, float, float)",
+      returns: "void",
+      description: <>Divide este Vector3 pelos valores X, Y e Z especificados e atualiza este Vector3.</>
+    },
+    {
+      signature: "divLocal(float)",
+      returns: "void",
+      description: <>Divide este Vector3 pelo valor especificado e atualiza este Vector3.</>
+    },
+    {
+      signature: "divide(Vector3)",
+      returns: "Vector3",
+      description: <>Divide este Vector3 pelo Vector3 especificado e retorna um novo Vector3.</>
+    },
+    {
+      signature: "divide(float, float, float)",
+      returns: "Vector3",
+      description: <>Divide este Vector3 pelos valores X, Y e Z especificados e retorna um novo Vector3.</>
+    },
+    {
+      signature: "divide(float)",
+      returns: "Vector3",
+      description: <>Divide este Vector3 pelo valor especificado e retorna um novo Vector3.</>
+    },
+    {
+      signature: "sum(Vector3)",
+      returns: "Vector3",
+      description: <>Soma o Vector3 especificado a este Vector3 e retorna um novo Vector3.</>
+    },
+    {
+      signature: "sum(float, float, float)",
+      returns: "Vector3",
+      description: <>Soma os valores X, Y e Z especificados a este Vector3 e retorna um novo Vector3.</>
+    },
+    {
+      signature: "sum(float)",
+      returns: "Vector3",
+      description: <>Soma o valor especificado a este Vector3 e retorna um novo Vector3.</>
+    },
+    {
+      signature: "sumLocal(Vector3)",
+      returns: "void",
+      description: <>Soma o Vector3 especificado a este Vector3 e atualiza este Vector3.</>
+    },
+    {
+      signature: "sumLocal(Vector2)",
+      returns: "void",
+      description: <>Soma o Vector2 especificado a este Vector3 e atualiza este Vector3.</>
+    },
+    {
+      signature: "sumLocal(float, float, float)",
+      returns: "void",
+      description: <>Soma os valores X, Y e Z especificados a este Vector3 e atualiza este Vector3.</>
+    },
+    {
+      signature: "sumLocal(float)",
+      returns: "void",
+      description: <>Soma o valor especificado a este Vector3 e atualiza este Vector3.</>
+    },
+    {
+      signature: "add(Vector3)",
+      returns: "Vector3",
+      description: <>Soma o Vector3 especificado a este Vector3 e retorna um novo Vector3.</>
+    },
+    {
+      signature: "add(float, float, float)",
+      returns: "Vector3",
+      description: <>Soma os valores X, Y e Z especificados a este Vector3 e retorna um novo Vector3.</>
+    },
+    {
+      signature: "add(float)",
+      returns: "Vector3",
+      description: <>Soma o valor especificado a este Vector3 e retorna um novo Vector3.</>
+    },
+    {
+      signature: "sub(Vector3)",
+      returns: "Vector3",
+      description: <>Subtrai o Vector3 especificado deste Vector3 e retorna um novo Vector3.</>
+    },
+    {
+      signature: "sub(float, float, float)",
+      returns: "Vector3",
+      description: <>Subtrai os valores X, Y e Z especificados deste Vector3 e retorna um novo Vector3.</>
+    },
+    {
+      signature: "sub(float)",
+      returns: "Vector3",
+      description: <>Subtrai o valor especificado deste Vector3 e retorna um novo Vector3.</>
+    },
+    {
+      signature: "subLocal(Vector3)",
+      returns: "void",
+      description: <>Subtrai o Vector3 especificado deste Vector3 e atualiza este Vector3.</>
+    },
+    {
+      signature: "subLocal(Vector2)",
+      returns: "void",
+      description: <>Subtrai o Vector2 especificado deste Vector3 e atualiza este Vector3.</>
+    },
+    {
+      signature: "subLocal(float, float, float)",
+      returns: "void",
+      description: <>Subtrai os valores X, Y e Z especificados deste Vector3 e atualiza este Vector3.</>
+    },
+    {
+      signature: "subLocal(float)",
+      returns: "void",
+      description: <>Subtrai o valor especificado deste Vector3 e atualiza este Vector3.</>
+    },
+    {
+      signature: "subtract(Vector3)",
+      returns: "Vector3",
+      description: <>Subtrai o Vector3 especificado deste Vector3 e retorna um novo Vector3.</>
+    },
+    {
+      signature: "subtract(float, float, float)",
+      returns: "Vector3",
+      description: <>Subtrai os valores X, Y e Z especificados deste Vector3 e retorna um novo Vector3.</>
+    },
+    {
+      signature: "subtract(float)",
+      returns: "Vector3",
+      description: <>Subtrai o valor especificado deste Vector3 e retorna um novo Vector3.</>
+    },
+    {
+      signature: "equals(Vector3)",
+      returns: "boolean",
+      description: <>Verifica se este Vector3 é igual ao Vector3 especificado.</>
+    },
+    {
+      signature: "equals(float, float, float)",
+      returns: "boolean",
+      description: <>Verifica se este Vector3 é igual aos valores X, Y e Z especificados.</>
+    },
+    {
+      signature: "equals(float)",
+      returns: "boolean",
+      description: <>Verifica se todos os componentes este Vector3 é igual ao valor especificado.</>
+    },
+    {
+      signature: "set(Vector3)",
+      returns: "void",
+      description: <>Define os componentes deste Vector3 para o Vector3 especificado.</>
+    },
+    {
+      signature: "set(float, float, float)",
+      returns: "void",
+      description: <>Define os componentes deste Vector3 para os valores X, Y e Z especificados.</>
+    },
+    {
+      signature: "set(float)",
+      returns: "void",
+      description: <>Define todos os componentes deste Vector3 para o valor especificado.</>
+    },
+    {
+      signature: "lerp(Vector3, float)",
+      returns: "void",
+      description: <>Faz uma interpolação/suavização entre este Vector3 e o Vector3 especificado com base na velocidade/intervalo fornecido e atualiza este Vector3.</>
+    },
+    {
+      signature: "lerp(float, float, float, float)",
+      returns: "void",
+      description: <>Faz uma interpolação/suavização entre este Vector3 e os valores X, Y e Z especificados com base na velocidade/intervalo fornecido e atualiza este Vector3.</>
+    },
+    {
+      signature: "lerp(float, float)",
+      returns: "void",
+      description: <>Faz uma interpolação/suavização entre este Vector3 e o valor especificado com base na velocidade/intervalo fornecido e atualiza este Vector3.</>
+    },
+    {
+      signature: "lerpInSeconds(Vector3, float)",
+      returns: "void",
+      description: <>Faz uma interpolação/suavização entre este Vector3 e o Vector3 especificado com base na velocidade/intervalo fornecido em um segundo e atualiza esse Vector3.</>
+    },
+    {
+      signature: "lerpInSeconds(float, float, float, float)",
+      returns: "void",
+      description: <>Faz uma interpolação/suavização entre este Vector3 e os valores X, Y e Z especificados com base na velocidade/intervalo fornecido em um segundo e atualiza esse Vector3.</>
+    },
+    {
+      signature: "lerpInSeconds(float, float)",
+      returns: "void",
+      description: <>Faz uma interpolação/suavização entre este Vector3 e o valor especificado com base na velocidade/intervalo fornecido em um segundo e atualiza esse Vector3.</>
+    },
+    {
+      signature: "blend(Vector3, float)",
+      returns: "Vector3",
+      description: <>Faz uma mistura entre este Vector3 e o Vector3 especificado com base no fator de mistura fornecido (0 a 1) e atualiza este Vector3.</>
+    },
+    {
+      signature: "blend(float, float, float, float)",
+      returns: "Vector3",
+      description: <>Faz uma mistura entre este Vector3 e os valores X, Y e Z especificados com base no fator de mistura fornecido (0 a 1) e atualiza este Vector3.</>
+    },
+    {
+      signature: "blend(float, float)",
+      returns: "Vector3",
+      description: <>Faz uma mistura entre este Vector3 e o valor especificado com base no fator de mistura fornecido (0 a 1) e atualiza este Vector3.</>
+    },
+    {
+      signature: "blendLocal(Vector3, float)",
+      returns: "void",
+      description: <>Faz uma mistura entre este Vector3 e o Vector3 especificado com base no fator de mistura fornecido (0 a 1) e atualiza este Vector3.</>
+    },
+    {
+      signature: "blendLocal(float, float, float, float)",
+      returns: "void",
+      description: <>Faz uma mistura entre este Vector3 e os valores X, Y e Z especificados com base no fator de mistura fornecido (0 a 1) e atualiza este Vector3.</>
+    },
+    {
+      signature: "blendLocal(float, float)",
+      returns: "void",
+      description: <>Faz uma mistura entre este Vector3 e o valor especificado com base no fator de mistura fornecido (0 a 1) e atualiza este Vector3.</>
+    },
+    {
+      signature: "normalize()",
+      returns: "Vector3",
+      description: <>Retorna uma cópia normalizada deste Vector3 (comprimento igual a 1).</>
+    },
+    {
+      signature: "normalizeLocal()",
+      returns: "void",
+      description: <>Normaliza este Vector3 (define seu comprimento para 1).</>
+    },
+    {
+      signature: "length()",
+      returns: "float",
+      description: <>Retorna a propriedade <code>propriedade </code>comprimento (magnitude) deste Vector3``.</>
+    },
+    {
+      signature: "sqrLength()",
+      returns: "float",
+      description: <>Retorna a propriedade <code>propriedade </code>comprimento ao quadrado deste Vector3``. Mais rápido que length() pois não usa raiz quadrada; útil para comparar distâncias.</>
+    },
+    {
+      signature: "magnitude()",
+      returns: "float",
+      description: <>Retorna a propriedade <code>magnitude deste Vector3</code>.</>
+    },
+    {
+      signature: "sqrMagnitude()",
+      returns: "float",
+      description: <>Retorna a propriedade <code>magnitude ao quadrado deste Vector3</code>. Mais rápido que magnitude() pois não usa raiz quadrada; útil para comparar distâncias.</>
+    },
+    {
+      signature: "rotate(float, float, float)",
+      returns: "Vector3",
+      description: <>Rotaciona este Vector3 pelos ângulos especificados (em graus) e Retorna a propriedade <code>propriedade </code>Vector3 resultante``.</>
+    },
+    {
+      signature: "rotate(Vector3)",
+      returns: "Vector3",
+      description: <>Rotaciona este Vector3 pelo Vector3 de rotação especificado (em graus) e Retorna a propriedade <code>propriedade </code>Vector3 resultante``.</>
+    },
+    {
+      signature: "rotate(Quaternion)",
+      returns: "Vector3",
+      description: <>Rotaciona este Vector3 pela rotação do Quaternion especificado e Retorna a propriedade <code>propriedade </code>Vector3 resultante``.</>
+    },
+    {
+      signature: "rotateAroundPivot(float, float, float, Vector3)",
+      returns: "Vector3",
+      description: <>Rotaciona este Vector3 ao redor do ponto de pivô especificado usando os ângulos da rotação fornecidos (em graus) e Retorna a propriedade <code>propriedade </code>Vector3 resultante``.</>
+    },
+    {
+      signature: "rotateAroundPivot(Vector3, Vector3)",
+      returns: "Vector3",
+      description: <>Rotaciona este Vector3 ao redor do ponto de pivô especificado usando o Vector3 de rotação fornecido (em graus) e Retorna a propriedade <code>propriedade </code>Vector3 resultante``.</>
+    },
+    {
+      signature: "rotateAroundPivot(Quaternion, Vector3)",
+      returns: "Vector3",
+      description: <>Rotaciona este Vector3 ao redor do ponto de pivô especificado usando a rotação do Quaternion fornecido e Retorna a propriedade <code>propriedade </code>Vector3 resultante``.</>
+    },
+    {
+      signature: "distance(Vector3)",
+      returns: "float",
+      description: <>Retorna a propriedade <code>distância entre este Vector3 e o Vector3 especificado</code>.</>
+    },
+    {
+      signature: "sqrDistance(Vector3)",
+      returns: "float",
+      description: <>Retorna a propriedade <code>distância ao quadrado entre este Vector3 e o Vector3 especificado</code>. Mais rápido que distance() pois não usa raiz quadrada; útil para comparar distâncias.</>
+    },
+    {
+      signature: "dot(Vector3)",
+      returns: "float",
+      description: <>Retorna a propriedade <code>propriedade </code>produto escalar deste Vector3 e do Vector3 especificado``.</>
+    },
+    {
+      signature: "dot(float, float, float)",
+      returns: "float",
+      description: <>Retorna a propriedade <code>propriedade </code>produto escalar deste Vector3 e dos valores X, Y e Z especificados``.</>
+    },
+    {
+      signature: "dot(float)",
+      returns: "float",
+      description: <>Retorna a propriedade <code>propriedade </code>produto escalar deste Vector3 com o valor especificado, usado para todos os componentes``.</>
+    },
+    {
+      signature: "cross(Vector3)",
+      returns: "Vector3",
+      description: <>Retorna a propriedade <code>propriedade </code>produto vetorial deste Vector3 e do Vector3 especificado``.</>
+    },
+    {
+      signature: "cross(float, float, float)",
+      returns: "Vector3",
+      description: <>Retorna a propriedade <code>propriedade </code>produto vetorial deste Vector3 e dos valores X, Y e Z especificados``.</>
+    },
+    {
+      signature: "copy()",
+      returns: "Vector3",
+      description: <>Retorna uma cópia deste Vector3.</>
+    },
+    {
+      signature: "toString()",
+      returns: "String",
+      description: <>Retorna uma representação em String deste Vector3.</>
+    },
+    {
+      signature: "toString(int)",
+      returns: "String",
+      description: <>Retorna uma representação em String deste Vector3 com o número especificado de casas decimais.</>
+    },
+    {
+      signature: "equals(Object)",
+      returns: "boolean",
+      description: <>Verifica se este Vector3 é igual ao objeto especificado.</>
+    },
+    {
+      signature: "pointerEquals(Object)",
+      returns: "boolean",
+      description: <>Verifica se este Vector3 é a mesma instância do objeto especificado.</>
+    },
+    {
+      signature: "notEquals(Object)",
+      returns: "boolean",
+      description: <>Verifica se este Vector3 não é igual ao objeto especificado.</>
+    },
+    {
+      signature: "greaterThan(Object)",
+      returns: "boolean",
+      description: <>Verifica se este Vector3 é maior que o objeto especificado (pela magnitude).</>
+    },
+    {
+      signature: "greaterThan(float)",
+      returns: "boolean",
+      description: <>Verifica se este Vector3 é maior que o valor especificado (pela magnitude).</>
+    },
+    {
+      signature: "greaterThan(int)",
+      returns: "boolean",
+      description: <>Verifica se este Vector3 é maior que o valor especificado (pela magnitude).</>
+    },
+    {
+      signature: "greaterThan(long)",
+      returns: "boolean",
+      description: <>Verifica se este Vector3 é maior que o valor especificado (pela magnitude).</>
+    },
+    {
+      signature: "greaterThan(double)",
+      returns: "boolean",
+      description: <>Verifica se este Vector3 é maior que o valor especificado (pela magnitude).</>
+    },
+    {
+      signature: "greaterOrEqualsThan(Object)",
+      returns: "boolean",
+      description: <>Verifica se este Vector3 é maior ou igual ao objeto especificado (pela magnitude).</>
+    },
+    {
+      signature: "greaterOrEqualsThan(float)",
+      returns: "boolean",
+      description: <>Verifica se este Vector3 é maior ou igual ao valor especificado (pela magnitude).</>
+    },
+    {
+      signature: "greaterOrEqualsThan(int)",
+      returns: "boolean",
+      description: <>Verifica se este Vector3 é maior ou igual ao valor especificado (pela magnitude).</>
+    },
+    {
+      signature: "greaterOrEqualsThan(long)",
+      returns: "boolean",
+      description: <>Verifica se este Vector3 é maior ou igual ao valor especificado (pela magnitude).</>
+    },
+    {
+      signature: "greaterOrEqualsThan(double)",
+      returns: "boolean",
+      description: <>Verifica se este Vector3 é maior ou igual ao valor especificado (pela magnitude).</>
+    },
+    {
+      signature: "lessThan(Object)",
+      returns: "boolean",
+      description: <>Verifica se este Vector3 é menor que o objeto especificado (pela magnitude).</>
+    },
+    {
+      signature: "lessThan(float)",
+      returns: "boolean",
+      description: <>Verifica se este Vector3 é menor que o valor especificado (pela magnitude).</>
+    },
+    {
+      signature: "lessThan(int)",
+      returns: "boolean",
+      description: <>Verifica se este Vector3 é menor que o valor especificado (pela magnitude).</>
+    },
+    {
+      signature: "lessThan(long)",
+      returns: "boolean",
+      description: <>Verifica se este Vector3 é menor que o valor especificado (pela magnitude).</>
+    },
+    {
+      signature: "lessThan(double)",
+      returns: "boolean",
+      description: <>Verifica se este Vector3 é menor que o valor especificado (pela magnitude).</>
+    },
+    {
+      signature: "lessOrEqualsThan(Object)",
+      returns: "boolean",
+      description: <>Verifica se este Vector3 é menor ou igual ao objeto especificado (pela magnitude).</>
+    },
+    {
+      signature: "lessOrEqualsThan(float)",
+      returns: "boolean",
+      description: <>Verifica se este Vector3 é menor ou igual ao valor especificado (pela magnitude).</>
+    },
+    {
+      signature: "lessOrEqualsThan(int)",
+      returns: "boolean",
+      description: <>Verifica se este Vector3 é menor ou igual ao valor especificado (pela magnitude).</>
+    },
+    {
+      signature: "lessOrEqualsThan(long)",
+      returns: "boolean",
+      description: <>Verifica se este Vector3 é menor ou igual ao valor especificado (pela magnitude).</>
+    },
+    {
+      signature: "lessOrEqualsThan(double)",
+      returns: "boolean",
+      description: <>Verifica se este Vector3 é menor ou igual ao valor especificado (pela magnitude).</>
+    },
+    {
+      signature: "sum(Object)",
+      returns: "T",
+      description: <>Retorna a propriedade <code>soma deste Vector3 e do objeto especificado</code>.</>
+    },
+    {
+      signature: "sumEqual(Object)",
+      returns: "void",
+      description: <>Soma o objeto especificado a este Vector3.</>
+    },
+    {
+      signature: "div(Object)",
+      returns: "T",
+      description: <>Retorna a propriedade <code>divisão deste Vector3 pelo objeto especificado</code>.</>
+    },
+    {
+      signature: "divEqual(Object)",
+      returns: "void",
+      description: <>Divide este Vector3 pelo objeto especificado.</>
+    },
+    {
+      signature: "mul(Object)",
+      returns: "T",
+      description: <>Retorna a propriedade <code>multiplicação deste Vector3 pelo objeto especificado</code>.</>
+    },
+    {
+      signature: "mulEqual(Object)",
+      returns: "void",
+      description: <>Multiplica este Vector3 pelo objeto especificado.</>
+    },
+    {
+      signature: "sub(Object)",
+      returns: "T",
+      description: <>Retorna a propriedade <code>subtração deste Vector3 e do objeto especificado</code>.</>
+    },
+    {
+      signature: "subEqual(Object)",
+      returns: "void",
+      description: <>Subtrai o objeto especificado deste Vector3.</>
+    },
+    {
+      signature: "addAdd()",
+      returns: "void",
+      description: <>Incrementa este Vector3 em 1.</>
+    },
+    {
+      signature: "removeRemove()",
+      returns: "void",
+      description: <>Decrementa este Vector3 em 1.</>
+    },
+    {
+      signature: "serializeToString()",
+      returns: "String",
+      description: <>Retorna uma representação em String deste Vector3 no formato '[X;Y;Z]'.</>
+    },
+    {
+      signature: "deserializeLocal(String)",
+      returns: "void",
+      description: <>Desserializa uma String no formato '[X;Y;Z]' e define os valores neste Vector3.</>
+    }
+  ]}
+  staticMethods={[
+    {
+      signature: "genericInterface()",
+      returns: "GenericClassInspectorEntry",
+      description: <>Executa <code>genericInterface</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "inspectorController()",
+      returns: "ClassInspectorEntry",
+      description: <>Executa <code>inspectorController</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "zero()",
+      returns: "Vector3",
+      description: <>Retorna um Vector3 com todos os componentes definidos como zero (0, 0, 0).</>
+    },
+    {
+      signature: "one()",
+      returns: "Vector3",
+      description: <>Retorna um Vector3 com todos os componentes definidos como um (1, 1, 1).</>
+    },
+    {
+      signature: "smoothDamp(Vector3, Vector3, Vector3, float, float, float)",
+      returns: "Vector3",
+      description: <>Move o vetor current suavemente em direção ao target com controle de suavização, velocidade máxima, no intervalo definido.</>
+    },
+    {
+      signature: "smoothDamp(Vector3, Vector3, Vector3, float, float, float, Vector3)",
+      returns: "Vector3",
+      description: <>Move o vetor current suavemente em direção ao target com controle de suavização, velocidade máxima, no intervalo definido e armazena o resultado no vetor especificado.</>
+    },
+    {
+      signature: "reflect(Vector3, Vector3)",
+      returns: "Vector3",
+      description: <>Reflete o vetor de direção em um plano definido pela normal.</>
+    },
+    {
+      signature: "reflect(Vector3, Vector3, Vector3)",
+      returns: "Vector3",
+      description: <>Reflete o vetor de direção em um plano definido pela normal e armazena o resultado no vetor especificado.</>
+    },
+    {
+      signature: "angle(Vector3, Vector3)",
+      returns: "float",
+      description: <>Retorna a propriedade <code>propriedade </code>ângulo em graus entre os dois vetores especificados``.</>
+    },
+    {
+      signature: "triangleNormal(Vector3, Vector3, Vector3)",
+      returns: "Vector3",
+      description: <>Calcula a normal do triângulo definido pelos três vértices especificados.</>
+    },
+    {
+      signature: "triangleNormal(Vector3, Vector3, Vector3, Vector3)",
+      returns: "Vector3",
+      description: <>Calcula a normal do triângulo definido pelos três vértices especificados e armazena o resultado no vetor especificado.</>
+    },
+    {
+      signature: "Max(Vector3, Vector3)",
+      returns: "Vector3",
+      description: <>Retorna um novo Vector3 com os maiores valores de cada componente entre os dois vetores fornecidos.</>
+    },
+    {
+      signature: "Min(Vector3, Vector3)",
+      returns: "Vector3",
+      description: <>Retorna um novo Vector3 com os menores valores de cada componente entre os dois vetores fornecidos.</>
+    },
+    {
+      signature: "Negate(Vector3)",
+      returns: "Vector3",
+      description: <>Retorna um Vector3 apontando para cima (0, 1, 0).</>
+    },
+    {
+      signature: "down()",
+      returns: "Vector3",
+      description: <>Retorna um Vector3 apontando para baixo (0, -1, 0).</>
+    },
+    {
+      signature: "back()",
+      returns: "Vector3",
+      description: <>Retorna um Vector3 apontando para trás (0, 0, -1).</>
+    },
+    {
+      signature: "forward()",
+      returns: "Vector3",
+      description: <>Retorna um Vector3 apontando para frente (0, 0, 1).</>
+    },
+    {
+      signature: "left()",
+      returns: "Vector3",
+      description: <>Retorna um Vector3 apontando para a esquerda (-1, 0, 0).</>
+    },
+    {
+      signature: "right()",
+      returns: "Vector3",
+      description: <>Retorna um Vector3 apontando para a direita (1, 0, 0).</>
+    },
+    {
+      signature: "isNull(Object)",
+      returns: "boolean",
+      description: <>Verifica se o objeto especificado é nulo.</>
+    }
+  ]}
+/>

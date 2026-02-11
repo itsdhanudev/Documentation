@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # GizmoMatrix
 
 Complete API reference for `GizmoMatrix`, including constructors, attributes, virtual attributes, and methods.
@@ -14,14 +16,19 @@ Complete API reference for `GizmoMatrix`, including constructors, attributes, vi
 public class GizmoMatrix extends GizmoElement
 ```
 
-## Constructors (1)
-
-| Signature | Description |
-| --- | --- |
-| GizmoMatrix() | Creates a new instance of GizmoMatrix. |
-
-## Virtual Attributes (1)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `matrix` | [float][] | `get/set` | Virtual attribute exposed by `getMatrix`. Access it like a field to read or write the underlying value. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "GizmoMatrix()",
+      description: <>Creates a new instance of GizmoMatrix.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "matrix",
+      type: "float[]",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getMatrix</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+/>

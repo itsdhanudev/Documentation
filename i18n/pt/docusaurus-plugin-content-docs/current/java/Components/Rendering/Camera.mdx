@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Camera
 
 Referência completa da API de `Camera`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,94 +16,404 @@ Referência completa da API de `Camera`, incluindo construtores, atributos, atri
 public class Camera extends Component
 ```
 
-## Construtores (2)
-
-| Signature | Description |
-| --- | --- |
-| Camera([Camera]) | Executa `Camera` e retorna quando a chamada do motor termina. |
-| Camera() | Cria uma nova instância de Camera. |
-
-## Atributos (5)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `PROJECTION_3D` | [int] | Representa o valor de `PROJECTION_3D` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `PROJECTION_2D` | [int] | Representa o valor de `PROJECTION_2D` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `BACKGROUND_SKYBOX` | [int] | Representa o valor de `BACKGROUND_SKYBOX` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `BACKGROUND_ALPHA` | [int] | Representa o valor de `BACKGROUND_ALPHA` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `instance` | [Camera] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (33)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `background` | [int] | `get/set` | Retorna a propriedade `propriedade `modo de fundo da câmera (Skybox ou Alpha)``. |
-| `farPlane` | [float] | `get` | Retorna a propriedade `propriedade `far plane da câmera``. |
-| `fixedResolutionPixelsHeight` | [int] | `get/set` | Retorna a propriedade `altura da resolução fixa em pixels`. |
-| `fixedResolutionPixelsWidth` | [int] | `get/set` | Retorna a propriedade `largura da resolução fixa em pixels`. |
-| `fov` | [float] | `get/set` | Retorna a propriedade `propriedade `campo de visão (FOV) da câmera``. |
-| `frameBuffer` | [FrameBuffer] | `get` | Retorna a propriedade `propriedade `framebuffer atual da câmera``. |
-| `freeResolutionPixels` | [int] | `get/set` | Retorna a propriedade `resolução em pixels utilizada no modo de resolução livre`. |
-| `frustumMatrix` | [float][] | `get` | Retorna a propriedade `matriz de frustum de visão`. |
-| `hierarchyCameraMatrix` | [float][] | `get` | Retorna a propriedade `matriz hierárquica da câmera`. |
-| `imageHeight` | [int] | `get` | Retorna a propriedade `altura da imagem em pixels`. |
-| `imageRatio` | [float] | `get` | Retorna a propriedade `proporção da imagem`. |
-| `imageWidth` | [int] | `get` | Retorna a propriedade `largura da imagem em pixels`. |
-| `inverseFrustumMatrix` | [float][] | `get` | Retorna a propriedade `matriz de frustum de visão invertida`. |
-| `inverseViewMatrix` | [float][] | `get` | Retorna a propriedade `matriz de visão invertida`. |
-| `layer` | [int] | `get/set` | Retorna a propriedade `camada de renderização da câmera`. |
-| `minimalDistance` | [float] | `get/set` | Retorna a propriedade `distância mínima de renderização`. |
-| `nearPlane` | [float] | `get` | Retorna a propriedade `propriedade `near plane da câmera``. |
-| `objectFilter` | [CameraObjectFilter] | `get/set` | Retorna a propriedade `propriedade `filtro de objetos aplicado à câmera``. |
-| `orthoDiameter` | [float] | `get/set` | Retorna a propriedade `propriedade `diâmetro da projeção ortográfica (2D)``. |
-| `projection` | [int] | `get/set` | Retorna a propriedade `propriedade `modo de projeção da câmera (2D ou 3D)``. |
-| `rectHeight` | [float] | `get/set` | Retorna a propriedade `altura do Rect da câmera`. |
-| `rectPosX` | [float] | `get/set` | Retorna a propriedade `posição X do Rect da câmera`. |
-| `rectPosY` | [float] | `get/set` | Retorna a propriedade `posição Y do Rect da câmera`. |
-| `rectWidth` | [float] | `get/set` | Retorna a propriedade `largura do Rect da câmera`. |
-| `renderCameraDirection` | [Vector3] | `get` | Retorna a propriedade `direção de renderização da camera`. |
-| `renderCameraPosition` | [Vector3] | `get` | Retorna a propriedade `posição de renderização da camera`. |
-| `renderDistance` | [float] | `get/set` | Retorna a propriedade `distância de renderização da câmera`. |
-| `renderPercentage` | [float] | `get/set` | Retorna a propriedade `porcentagem de resolução da renderização da câmera`. |
-| `resolutionMode` | [ResolutionMode] | `get/set` | Retorna a propriedade `propriedade `modo de resolução``. |
-| `scaledRectHeight` | [float] | `get` | Retorna a propriedade `escala da altura do Rect da câmera`. |
-| `scaledRectPosX` | [float] | `get` | Retorna a propriedade `escala da posição X do Rect da câmera`. |
-| `scaledRectPosY` | [float] | `get` | Retorna a propriedade `escala da posição Y do Rect da câmera`. |
-| `scaledRectWidth` | [float] | `get` | Retorna a propriedade `escala da largura do Rect da câmera`. |
-
-## Métodos (32)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getInternalFiltering()` | `InternalFiltering` | Retorna a propriedade `propriedade `controlador de filtragem interna, usado para verificar se a câmera deve renderizar determinados objetos``. Útil para renderização personalizada e shaders. |
-| `worldToScreenCoordinates(Vector3)` | `Point2` | Converte uma posição no mundo para coordenadas de tela. |
-| `screenPointRay(int, int)` | `RayDirection` | Retorna um raio que sai da câmera e aponta na direção das coordenadas especificadas. |
-| `screenPointRay(Point2)` | `RayDirection` | Retorna um raio que sai da câmera e aponta na direção do Point2 especificado. |
-| `screenPointRay(float, float)` | `RayDirection` | Retorna um raio que sai da câmera e aponta na direção das coordenadas especificadas. |
-| `screenPointRay(Vector2)` | `RayDirection` | Retorna um raio que sai da câmera e aponta na direção do Vector2 especificado. |
-| `screenPointNormal(int, int)` | `Vector3` | Retorna a propriedade `propriedade `vetor normal da câmera na posição das coordenadas especificadas``. |
-| `screenPointNormal(Point2)` | `Vector3` | Retorna a propriedade `propriedade `vetor normal da câmera na posição do Point2 especificado``. |
-| `screenPointNormal(float, float)` | `Vector3` | Retorna a propriedade `propriedade `vetor normal da câmera na posição das coordenadas especificadas``. |
-| `screenPointNormal(Vector2)` | `Vector3` | Retorna a propriedade `propriedade `vetor normal da câmera na posição do Vector2 especificado``. |
-| `takeScreenShot(String, String)` | `void` | Tira uma captura de tela e salva na pasta e nome de arquivo especificados. |
-| `takeScreenShot(String, String, boolean)` | `void` | Tira uma captura de tela e salva na pasta e nome de arquivo especificados. Se 'bypassFileChecking' for falso, verifica se o local existe e é acessível antes de salvar. |
-| `takeScreenShot(File, String)` | `void` | Tira uma captura de tela e salva na pasta e nome de arquivo especificados. |
-| `isVisible(ModelRenderer)` | `boolean` | Verifica se um modelo está visível na visão da câmera. |
-| `isVisible(Vertex, SpatialObject)` | `boolean` | Verifica se um vertex está visível em um SpatialObject especificado na visão da câmera. |
-| `isVisible(Vertex, Transform)` | `boolean` | Verifica se um vertex está visível na posição de um Transform especificado na visão da câmera. |
-| `isVisible(Vertex, float[])` | `boolean` | Verifica se um vertex está visível na matriz de renderização especificada na visão da câmera. |
-| `isSphereVisible(Vector3, float)` | `boolean` | Verifica se a posição com o raio da esfera especificado está visível na visão da câmera. |
-| `isSphereVisible(float, float, float, float)` | `boolean` | Verifica se a posição com o raio da esfera especificado está visível na visão da câmera. |
-| `isSphereVisible(Transform, float)` | `boolean` | Verifica se a posição do Transform com o raio da esfera especificado está visível na visão da câmera. |
-| `isCubeVisible(Vector3, float)` | `boolean` | Verifica se a posição com o tamanho do cubo especificado está visível na visão da câmera. |
-| `isCubeVisible(float, float, float, float)` | `boolean` | Verifica se a posição com o tamanho do cubo especificado está visível na visão da câmera. |
-| `isPointVisible(SpatialObject)` | `boolean` | Verifica se o centro do objeto especificado está visível na visão da câmera. |
-| `isPointVisible(Transform)` | `boolean` | Verifica se o transform especificado está visível na visão da câmera. |
-| `isPointVisible(Vector3)` | `boolean` | Verifica se a posição especificada está visível na visão da câmera. |
-| `isPointVisible(float, float, float)` | `boolean` | Verifica se a posição especificada está visível na visão da câmera. |
-| `getViewMatrix()` | [float][] | Retorna a propriedade `matriz de visão da câmera`. |
-| `getProjectionMatrix()` | [float][] | Retorna a propriedade `matriz de projeção da câmera`. |
-| `recalculateMatrices()` | `void` | Recalcula as matrizes da câmera. |
-| `determineImageResolutionPercentage()` | `int` | Define a propriedade `porcentagem da resolução da imagem da câmera`. |
-| `componentClassMatch(Component, Component)` | `boolean` | Executa `componentClassMatch` e retorna quando a chamada do motor termina. |
-| `getEngineComponent()` | `Component` | Executa `getEngineComponent` e retorna quando a chamada do motor termina. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "Camera(Camera)",
+      description: <>Executa <code>Camera</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "Camera()",
+      description: <>Cria uma nova instância de Camera.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "PROJECTION_3D",
+      type: "int",
+      description: <>Representa o valor de <code>PROJECTION_3D</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "PROJECTION_2D",
+      type: "int",
+      description: <>Representa o valor de <code>PROJECTION_2D</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "BACKGROUND_SKYBOX",
+      type: "int",
+      description: <>Representa o valor de <code>BACKGROUND_SKYBOX</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "BACKGROUND_ALPHA",
+      type: "int",
+      description: <>Representa o valor de <code>BACKGROUND_ALPHA</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "instance",
+      type: "Camera",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "background",
+      type: "int",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>propriedade </code>modo de fundo da câmera (Skybox ou Alpha)``.</>
+    },
+    {
+      name: "farPlane",
+      type: "float",
+      access: "get",
+      description: <>Retorna a propriedade <code>propriedade </code>far plane da câmera``.</>
+    },
+    {
+      name: "fixedResolutionPixelsHeight",
+      type: "int",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>altura da resolução fixa em pixels</code>.</>
+    },
+    {
+      name: "fixedResolutionPixelsWidth",
+      type: "int",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>largura da resolução fixa em pixels</code>.</>
+    },
+    {
+      name: "fov",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>propriedade </code>campo de visão (FOV) da câmera``.</>
+    },
+    {
+      name: "frameBuffer",
+      type: "FrameBuffer",
+      access: "get",
+      description: <>Retorna a propriedade <code>propriedade </code>framebuffer atual da câmera``.</>
+    },
+    {
+      name: "freeResolutionPixels",
+      type: "int",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>resolução em pixels utilizada no modo de resolução livre</code>.</>
+    },
+    {
+      name: "frustumMatrix",
+      type: "float[]",
+      access: "get",
+      description: <>Retorna a propriedade <code>matriz de frustum de visão</code>.</>
+    },
+    {
+      name: "hierarchyCameraMatrix",
+      type: "float[]",
+      access: "get",
+      description: <>Retorna a propriedade <code>matriz hierárquica da câmera</code>.</>
+    },
+    {
+      name: "imageHeight",
+      type: "int",
+      access: "get",
+      description: <>Retorna a propriedade <code>altura da imagem em pixels</code>.</>
+    },
+    {
+      name: "imageRatio",
+      type: "float",
+      access: "get",
+      description: <>Retorna a propriedade <code>proporção da imagem</code>.</>
+    },
+    {
+      name: "imageWidth",
+      type: "int",
+      access: "get",
+      description: <>Retorna a propriedade <code>largura da imagem em pixels</code>.</>
+    },
+    {
+      name: "inverseFrustumMatrix",
+      type: "float[]",
+      access: "get",
+      description: <>Retorna a propriedade <code>matriz de frustum de visão invertida</code>.</>
+    },
+    {
+      name: "inverseViewMatrix",
+      type: "float[]",
+      access: "get",
+      description: <>Retorna a propriedade <code>matriz de visão invertida</code>.</>
+    },
+    {
+      name: "layer",
+      type: "int",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>camada de renderização da câmera</code>.</>
+    },
+    {
+      name: "minimalDistance",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>distância mínima de renderização</code>.</>
+    },
+    {
+      name: "nearPlane",
+      type: "float",
+      access: "get",
+      description: <>Retorna a propriedade <code>propriedade </code>near plane da câmera``.</>
+    },
+    {
+      name: "objectFilter",
+      type: "CameraObjectFilter",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>propriedade </code>filtro de objetos aplicado à câmera``.</>
+    },
+    {
+      name: "orthoDiameter",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>propriedade </code>diâmetro da projeção ortográfica (2D)``.</>
+    },
+    {
+      name: "projection",
+      type: "int",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>propriedade </code>modo de projeção da câmera (2D ou 3D)``.</>
+    },
+    {
+      name: "rectHeight",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>altura do Rect da câmera</code>.</>
+    },
+    {
+      name: "rectPosX",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>posição X do Rect da câmera</code>.</>
+    },
+    {
+      name: "rectPosY",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>posição Y do Rect da câmera</code>.</>
+    },
+    {
+      name: "rectWidth",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>largura do Rect da câmera</code>.</>
+    },
+    {
+      name: "renderCameraDirection",
+      type: "Vector3",
+      access: "get",
+      description: <>Retorna a propriedade <code>direção de renderização da camera</code>.</>
+    },
+    {
+      name: "renderCameraPosition",
+      type: "Vector3",
+      access: "get",
+      description: <>Retorna a propriedade <code>posição de renderização da camera</code>.</>
+    },
+    {
+      name: "renderDistance",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>distância de renderização da câmera</code>.</>
+    },
+    {
+      name: "renderPercentage",
+      type: "float",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>porcentagem de resolução da renderização da câmera</code>.</>
+    },
+    {
+      name: "resolutionMode",
+      type: "ResolutionMode",
+      access: "get/set",
+      description: <>Retorna a propriedade <code>propriedade </code>modo de resolução``.</>
+    },
+    {
+      name: "scaledRectHeight",
+      type: "float",
+      access: "get",
+      description: <>Retorna a propriedade <code>escala da altura do Rect da câmera</code>.</>
+    },
+    {
+      name: "scaledRectPosX",
+      type: "float",
+      access: "get",
+      description: <>Retorna a propriedade <code>escala da posição X do Rect da câmera</code>.</>
+    },
+    {
+      name: "scaledRectPosY",
+      type: "float",
+      access: "get",
+      description: <>Retorna a propriedade <code>escala da posição Y do Rect da câmera</code>.</>
+    },
+    {
+      name: "scaledRectWidth",
+      type: "float",
+      access: "get",
+      description: <>Retorna a propriedade <code>escala da largura do Rect da câmera</code>.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "getInternalFiltering()",
+      returns: "InternalFiltering",
+      description: <>Retorna a propriedade <code>propriedade </code>controlador de filtragem interna, usado para verificar se a câmera deve renderizar determinados objetos``. Útil para renderização personalizada e shaders.</>
+    },
+    {
+      signature: "worldToScreenCoordinates(Vector3)",
+      returns: "Point2",
+      description: <>Converte uma posição no mundo para coordenadas de tela.</>
+    },
+    {
+      signature: "screenPointRay(int, int)",
+      returns: "RayDirection",
+      description: <>Retorna um raio que sai da câmera e aponta na direção das coordenadas especificadas.</>
+    },
+    {
+      signature: "screenPointRay(Point2)",
+      returns: "RayDirection",
+      description: <>Retorna um raio que sai da câmera e aponta na direção do Point2 especificado.</>
+    },
+    {
+      signature: "screenPointRay(float, float)",
+      returns: "RayDirection",
+      description: <>Retorna um raio que sai da câmera e aponta na direção das coordenadas especificadas.</>
+    },
+    {
+      signature: "screenPointRay(Vector2)",
+      returns: "RayDirection",
+      description: <>Retorna um raio que sai da câmera e aponta na direção do Vector2 especificado.</>
+    },
+    {
+      signature: "screenPointNormal(int, int)",
+      returns: "Vector3",
+      description: <>Retorna a propriedade <code>propriedade </code>vetor normal da câmera na posição das coordenadas especificadas``.</>
+    },
+    {
+      signature: "screenPointNormal(Point2)",
+      returns: "Vector3",
+      description: <>Retorna a propriedade <code>propriedade </code>vetor normal da câmera na posição do Point2 especificado``.</>
+    },
+    {
+      signature: "screenPointNormal(float, float)",
+      returns: "Vector3",
+      description: <>Retorna a propriedade <code>propriedade </code>vetor normal da câmera na posição das coordenadas especificadas``.</>
+    },
+    {
+      signature: "screenPointNormal(Vector2)",
+      returns: "Vector3",
+      description: <>Retorna a propriedade <code>propriedade </code>vetor normal da câmera na posição do Vector2 especificado``.</>
+    },
+    {
+      signature: "takeScreenShot(String, String)",
+      returns: "void",
+      description: <>Tira uma captura de tela e salva na pasta e nome de arquivo especificados.</>
+    },
+    {
+      signature: "takeScreenShot(String, String, boolean)",
+      returns: "void",
+      description: <>Tira uma captura de tela e salva na pasta e nome de arquivo especificados. Se 'bypassFileChecking' for falso, verifica se o local existe e é acessível antes de salvar.</>
+    },
+    {
+      signature: "takeScreenShot(File, String)",
+      returns: "void",
+      description: <>Tira uma captura de tela e salva na pasta e nome de arquivo especificados.</>
+    },
+    {
+      signature: "isVisible(ModelRenderer)",
+      returns: "boolean",
+      description: <>Verifica se um modelo está visível na visão da câmera.</>
+    },
+    {
+      signature: "isVisible(Vertex, SpatialObject)",
+      returns: "boolean",
+      description: <>Verifica se um vertex está visível em um SpatialObject especificado na visão da câmera.</>
+    },
+    {
+      signature: "isVisible(Vertex, Transform)",
+      returns: "boolean",
+      description: <>Verifica se um vertex está visível na posição de um Transform especificado na visão da câmera.</>
+    },
+    {
+      signature: "isVisible(Vertex, float[])",
+      returns: "boolean",
+      description: <>Verifica se um vertex está visível na matriz de renderização especificada na visão da câmera.</>
+    },
+    {
+      signature: "isSphereVisible(Vector3, float)",
+      returns: "boolean",
+      description: <>Verifica se a posição com o raio da esfera especificado está visível na visão da câmera.</>
+    },
+    {
+      signature: "isSphereVisible(float, float, float, float)",
+      returns: "boolean",
+      description: <>Verifica se a posição com o raio da esfera especificado está visível na visão da câmera.</>
+    },
+    {
+      signature: "isSphereVisible(Transform, float)",
+      returns: "boolean",
+      description: <>Verifica se a posição do Transform com o raio da esfera especificado está visível na visão da câmera.</>
+    },
+    {
+      signature: "isCubeVisible(Vector3, float)",
+      returns: "boolean",
+      description: <>Verifica se a posição com o tamanho do cubo especificado está visível na visão da câmera.</>
+    },
+    {
+      signature: "isCubeVisible(float, float, float, float)",
+      returns: "boolean",
+      description: <>Verifica se a posição com o tamanho do cubo especificado está visível na visão da câmera.</>
+    },
+    {
+      signature: "isPointVisible(SpatialObject)",
+      returns: "boolean",
+      description: <>Verifica se o centro do objeto especificado está visível na visão da câmera.</>
+    },
+    {
+      signature: "isPointVisible(Transform)",
+      returns: "boolean",
+      description: <>Verifica se o transform especificado está visível na visão da câmera.</>
+    },
+    {
+      signature: "isPointVisible(Vector3)",
+      returns: "boolean",
+      description: <>Verifica se a posição especificada está visível na visão da câmera.</>
+    },
+    {
+      signature: "isPointVisible(float, float, float)",
+      returns: "boolean",
+      description: <>Verifica se a posição especificada está visível na visão da câmera.</>
+    },
+    {
+      signature: "getViewMatrix()",
+      returns: "float[]",
+      description: <>Retorna a propriedade <code>matriz de visão da câmera</code>.</>
+    },
+    {
+      signature: "getProjectionMatrix()",
+      returns: "float[]",
+      description: <>Retorna a propriedade <code>matriz de projeção da câmera</code>.</>
+    },
+    {
+      signature: "recalculateMatrices()",
+      returns: "void",
+      description: <>Recalcula as matrizes da câmera.</>
+    },
+    {
+      signature: "determineImageResolutionPercentage()",
+      returns: "int",
+      description: <>Define a propriedade <code>porcentagem da resolução da imagem da câmera</code>.</>
+    },
+    {
+      signature: "componentClassMatch(Component, Component)",
+      returns: "boolean",
+      description: <>Executa <code>componentClassMatch</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "getEngineComponent()",
+      returns: "Component",
+      description: <>Executa <code>getEngineComponent</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+/>

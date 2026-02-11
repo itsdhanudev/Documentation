@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # CompoundVertex
 
 Complete API reference for `CompoundVertex`, including constructors, attributes, virtual attributes, and methods.
@@ -14,25 +16,49 @@ Complete API reference for `CompoundVertex`, including constructors, attributes,
 public class CompoundVertex
 ```
 
-## Constructors (2)
-
-| Signature | Description |
-| --- | --- |
-| CompoundVertex([CompoundVertex]) | Executes `CompoundVertex` and returns after the underlying engine call finishes. |
-| CompoundVertex() | Executes `CompoundVertex` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [CompoundVertex] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Methods (5)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `addVertex(Vertex, Transform)` | `Part` | Adds vertex to the collection. |
-| `refreshMatrix(Part)` | `void` | Performs the refreshMatrix operation using the provided parameters (part). |
-| `remove(Part)` | `void` | Removes an item from the collection. |
-| `removeAll([List&lt;Part&gt;])` | `void` | Removes all from the collection. |
-| `getBake()` | `Vertex` | Returns the current bake. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "CompoundVertex(CompoundVertex)",
+      description: <>Executes <code>CompoundVertex</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "CompoundVertex()",
+      description: <>Executes <code>CompoundVertex</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "CompoundVertex",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "addVertex(Vertex, Transform)",
+      returns: "Part",
+      description: <>Adds vertex to the collection.</>
+    },
+    {
+      signature: "refreshMatrix(Part)",
+      returns: "void",
+      description: <>Performs the refreshMatrix operation using the provided parameters (part).</>
+    },
+    {
+      signature: "remove(Part)",
+      returns: "void",
+      description: <>Removes an item from the collection.</>
+    },
+    {
+      signature: "removeAll(List&lt;Part&gt;)",
+      returns: "void",
+      description: <>Removes all from the collection.</>
+    },
+    {
+      signature: "getBake()",
+      returns: "Vertex",
+      description: <>Returns the current bake.</>
+    }
+  ]}
+/>

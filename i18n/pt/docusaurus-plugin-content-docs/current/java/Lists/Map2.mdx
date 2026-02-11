@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Map2
 
 Referência completa da API de `Map2`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,33 +16,90 @@ Referência completa da API de `Map2`, incluindo construtores, atributos, atribu
 public class Map2
 ```
 
-## Construtores (1)
-
-| Signature | Description |
-| --- | --- |
-| Map2([Class], [Class]) | Cria uma nova instância de Map2. |
-
-## Métodos (13)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `put(Object, Object)` | `void` | Define ou atualiza the value. |
-| `get(Object)` | `Object` | Retorna a propriedade `propriedade `valor value atual``. |
-| `replace(Object, Object)` | `void` | Executa a operação replace usando os parâmetros informados (key, newValue). |
-| `remove(Object)` | `void` | Remove an item da coleção. |
-| `getKeyClass()` | `Class` | Retorna a propriedade `propriedade `key class atual``. |
-| `getValueClass()` | `Class` | Retorna a propriedade `propriedade `value class atual``. |
-| `getKeyList()` | `List` | Retorna a propriedade `propriedade `key list atual``. |
-| `getDirectKeyList()` | `List` | Retorna a propriedade `propriedade `direct key list atual``. |
-| `getValueList()` | `List` | Retorna a propriedade `propriedade `value list atual``. |
-| `getDirectValueList()` | `List` | Retorna a propriedade `propriedade `direct value list atual``. |
-| `toJson()` | `String` | Executa a operação toJson. |
-| `clear()` | `void` | Limpa ou redefine o estado do objeto. |
-| `getSize()` | `int` | Retorna a propriedade `propriedade `size atual``. |
-
-## Métodos Estáticos (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `inspectorController()` | `ClassInspectorEntry` | Executa `inspectorController` e retorna quando a chamada do motor termina. |
-| `fromJson(String)` | `Map2` | Executa a operação fromJson usando os parâmetros informados (json). |
+<ApiDoc
+  constructors={[
+    {
+      signature: "Map2(Class, Class)",
+      description: <>Cria uma nova instância de Map2.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "put(Object, Object)",
+      returns: "void",
+      description: <>Define ou atualiza the value.</>
+    },
+    {
+      signature: "get(Object)",
+      returns: "Object",
+      description: <>Retorna a propriedade <code>propriedade </code>valor value atual``.</>
+    },
+    {
+      signature: "replace(Object, Object)",
+      returns: "void",
+      description: <>Executa a operação replace usando os parâmetros informados (key, newValue).</>
+    },
+    {
+      signature: "remove(Object)",
+      returns: "void",
+      description: <>Remove an item da coleção.</>
+    },
+    {
+      signature: "getKeyClass()",
+      returns: "Class",
+      description: <>Retorna a propriedade <code>propriedade </code>key class atual``.</>
+    },
+    {
+      signature: "getValueClass()",
+      returns: "Class",
+      description: <>Retorna a propriedade <code>propriedade </code>value class atual``.</>
+    },
+    {
+      signature: "getKeyList()",
+      returns: "List",
+      description: <>Retorna a propriedade <code>propriedade </code>key list atual``.</>
+    },
+    {
+      signature: "getDirectKeyList()",
+      returns: "List",
+      description: <>Retorna a propriedade <code>propriedade </code>direct key list atual``.</>
+    },
+    {
+      signature: "getValueList()",
+      returns: "List",
+      description: <>Retorna a propriedade <code>propriedade </code>value list atual``.</>
+    },
+    {
+      signature: "getDirectValueList()",
+      returns: "List",
+      description: <>Retorna a propriedade <code>propriedade </code>direct value list atual``.</>
+    },
+    {
+      signature: "toJson()",
+      returns: "String",
+      description: <>Executa a operação toJson.</>
+    },
+    {
+      signature: "clear()",
+      returns: "void",
+      description: <>Limpa ou redefine o estado do objeto.</>
+    },
+    {
+      signature: "getSize()",
+      returns: "int",
+      description: <>Retorna a propriedade <code>propriedade </code>size atual``.</>
+    }
+  ]}
+  staticMethods={[
+    {
+      signature: "inspectorController()",
+      returns: "ClassInspectorEntry",
+      description: <>Executa <code>inspectorController</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "fromJson(String)",
+      returns: "Map2",
+      description: <>Executa a operação fromJson usando os parâmetros informados (json).</>
+    }
+  ]}
+/>

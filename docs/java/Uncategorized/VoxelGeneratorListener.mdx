@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # VoxelGeneratorListener
 
 Complete API reference for `VoxelGeneratorListener`, including constructors, attributes, virtual attributes, and methods.
@@ -14,11 +16,27 @@ Complete API reference for `VoxelGeneratorListener`, including constructors, att
 public interface VoxelGeneratorListener
 ```
 
-## Methods (4)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getGroundHeight(int, int)` | `int` | Executes `getGroundHeight` and returns after the underlying engine call finishes. |
-| `getBlockType(int, int, int, int)` | `int` | Executes `getBlockType` and returns after the underlying engine call finishes. |
-| `storeChunk(OH3LevelIntArray, int, int)` | `void` | Executes `storeChunk` and returns after the underlying engine call finishes. |
-| `loadChunk(int, int)` | `OH3LevelIntArray` | Executes `loadChunk` and returns after the underlying engine call finishes. |
+<ApiDoc
+  methods={[
+    {
+      signature: "getGroundHeight(int, int)",
+      returns: "int",
+      description: <>Executes <code>getGroundHeight</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "getBlockType(int, int, int, int)",
+      returns: "int",
+      description: <>Executes <code>getBlockType</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "storeChunk(OH3LevelIntArray, int, int)",
+      returns: "void",
+      description: <>Executes <code>storeChunk</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "loadChunk(int, int)",
+      returns: "OH3LevelIntArray",
+      description: <>Executes <code>loadChunk</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # FixedFraming
 
 Complete API reference for `FixedFraming`, including constructors, attributes, virtual attributes, and methods.
@@ -14,24 +16,46 @@ Complete API reference for `FixedFraming`, including constructors, attributes, v
 public class FixedFraming
 ```
 
-## Constructors (1)
-
-| Signature | Description |
-| --- | --- |
-| FixedFraming([int], [FixedFrameListener]) | Executes `FixedFraming` and returns after the underlying engine call finishes. |
-
-## Virtual Attributes (1)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `fixedFrames` | [int] | `get/set` | Virtual attribute exposed by `getFixedFrames`. Access it like a field to read or write the underlying value. |
-
-## Methods (5)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `engineRepeat()` | `void` | Executes `engineRepeat` and returns after the underlying engine call finishes. |
-| `setAllowTimeScale(boolean)` | `void` | Sets or updates the allow time scale. |
-| `setDesyncLowFrameRate(boolean)` | `void` | Sets or updates the desync low frame rate. |
-| `setDesyncHighFrameRate(boolean)` | `void` | Sets or updates the desync high frame rate. |
-| `setFixedFrameListener(FixedFrameListener)` | `void` | Sets or updates the fixed frame listener. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "FixedFraming(int, FixedFrameListener)",
+      description: <>Executes <code>FixedFraming</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "fixedFrames",
+      type: "int",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getFixedFrames</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "engineRepeat()",
+      returns: "void",
+      description: <>Executes <code>engineRepeat</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "setAllowTimeScale(boolean)",
+      returns: "void",
+      description: <>Sets or updates the allow time scale.</>
+    },
+    {
+      signature: "setDesyncLowFrameRate(boolean)",
+      returns: "void",
+      description: <>Sets or updates the desync low frame rate.</>
+    },
+    {
+      signature: "setDesyncHighFrameRate(boolean)",
+      returns: "void",
+      description: <>Sets or updates the desync high frame rate.</>
+    },
+    {
+      signature: "setFixedFrameListener(FixedFrameListener)",
+      returns: "void",
+      description: <>Sets or updates the fixed frame listener.</>
+    }
+  ]}
+/>

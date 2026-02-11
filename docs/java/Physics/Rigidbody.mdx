@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Rigidbody
 
 Complete API reference for `Rigidbody`, including constructors, attributes, virtual attributes, and methods.
@@ -14,49 +16,162 @@ Complete API reference for `Rigidbody`, including constructors, attributes, virt
 public class Rigidbody extends PhysicsComponent
 ```
 
-## Constructors (2)
-
-| Signature | Description |
-| --- | --- |
-| Rigidbody([Rigidbody]) | Executes `Rigidbody` and returns after the underlying engine call finishes. |
-| Rigidbody() | Executes `Rigidbody` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [Rigidbody] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (16)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `angularDamping` | [float] | `get/set` | Returns the angular damping of the Rigidbody. |
-| `angularVelocity` | [Vector3] | `get/set` | Returns the current angular velocity of the Rigidbody. |
-| `bounciness` | [float] | `get/set` | Returns the bounciness of the Rigidbody. |
-| `freezePX` | [boolean] | `get/set` | Returns whether movement on the X axis is frozen. |
-| `freezePY` | [boolean] | `get/set` | Returns whether movement on the Y axis is frozen. |
-| `freezePZ` | [boolean] | `get/set` | Returns whether movement on the Z axis is frozen. |
-| `freezeRX` | [boolean] | `get/set` | Returns whether rotation on the X axis is frozen. |
-| `freezeRY` | [boolean] | `get/set` | Returns whether rotation on the Y axis is frozen. |
-| `freezeRZ` | [boolean] | `get/set` | Returns whether rotation on the Z axis is frozen. |
-| `friction` | [float] | `get/set` | Returns the friction of the Rigidbody. |
-| `gravityEnabled` | [boolean] | `get/set` | Checks whether gravity is enabled for the Rigidbody. |
-| `gravityMultiplier` | [Vector3] | `get/set` | Returns the gravity multiplier of the Rigidbody. |
-| `linearDamping` | [float] | `get/set` | Returns the linear damping of the Rigidbody. |
-| `mass` | [float] | `get/set` | Returns the mass of the Rigidbody. |
-| `physicsLayer` | [PhysicsLayer] | `get/set` | Returns the PhysicsLayer of the Rigidbody. |
-| `velocity` | [Vector3] | `get/set` | Returns the current velocity of the Rigidbody. |
-
-## Methods (8)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `addForce(Vector3)` | `void` | Applies a force to the Rigidbody in the specified direction. |
-| `addForce(float, float, float)` | `void` | Applies a force to the Rigidbody with the specified x, y and z values. |
-| `addForce(Vector3, Vector3)` | `void` | Applies a force to the Rigidbody at a specific relative position. |
-| `addVelocity(Vector3)` | `void` | Adds velocity to the Rigidbody in the specified direction. |
-| `addVelocity(float, float, float)` | `void` | Adds velocity to the Rigidbody with the specified x, y and z values. |
-| `addVelocityBySecond(Vector3)` | `void` | Adds velocity per second to the Rigidbody in the specified direction. |
-| `addVelocityBySecond(float, float, float)` | `void` | Adds velocity per second to the Rigidbody with the specified x, y and z values. |
-| `setVelocity(float, float, float)` | `void` | Sets the current velocity of the Rigidbody. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "Rigidbody(Rigidbody)",
+      description: <>Executes <code>Rigidbody</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "Rigidbody()",
+      description: <>Executes <code>Rigidbody</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "Rigidbody",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "angularDamping",
+      type: "float",
+      access: "get/set",
+      description: <>Returns the angular damping of the Rigidbody.</>
+    },
+    {
+      name: "angularVelocity",
+      type: "Vector3",
+      access: "get/set",
+      description: <>Returns the current angular velocity of the Rigidbody.</>
+    },
+    {
+      name: "bounciness",
+      type: "float",
+      access: "get/set",
+      description: <>Returns the bounciness of the Rigidbody.</>
+    },
+    {
+      name: "freezePX",
+      type: "boolean",
+      access: "get/set",
+      description: <>Returns whether movement on the X axis is frozen.</>
+    },
+    {
+      name: "freezePY",
+      type: "boolean",
+      access: "get/set",
+      description: <>Returns whether movement on the Y axis is frozen.</>
+    },
+    {
+      name: "freezePZ",
+      type: "boolean",
+      access: "get/set",
+      description: <>Returns whether movement on the Z axis is frozen.</>
+    },
+    {
+      name: "freezeRX",
+      type: "boolean",
+      access: "get/set",
+      description: <>Returns whether rotation on the X axis is frozen.</>
+    },
+    {
+      name: "freezeRY",
+      type: "boolean",
+      access: "get/set",
+      description: <>Returns whether rotation on the Y axis is frozen.</>
+    },
+    {
+      name: "freezeRZ",
+      type: "boolean",
+      access: "get/set",
+      description: <>Returns whether rotation on the Z axis is frozen.</>
+    },
+    {
+      name: "friction",
+      type: "float",
+      access: "get/set",
+      description: <>Returns the friction of the Rigidbody.</>
+    },
+    {
+      name: "gravityEnabled",
+      type: "boolean",
+      access: "get/set",
+      description: <>Checks whether gravity is enabled for the Rigidbody.</>
+    },
+    {
+      name: "gravityMultiplier",
+      type: "Vector3",
+      access: "get/set",
+      description: <>Returns the gravity multiplier of the Rigidbody.</>
+    },
+    {
+      name: "linearDamping",
+      type: "float",
+      access: "get/set",
+      description: <>Returns the linear damping of the Rigidbody.</>
+    },
+    {
+      name: "mass",
+      type: "float",
+      access: "get/set",
+      description: <>Returns the mass of the Rigidbody.</>
+    },
+    {
+      name: "physicsLayer",
+      type: "PhysicsLayer",
+      access: "get/set",
+      description: <>Returns the PhysicsLayer of the Rigidbody.</>
+    },
+    {
+      name: "velocity",
+      type: "Vector3",
+      access: "get/set",
+      description: <>Returns the current velocity of the Rigidbody.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "addForce(Vector3)",
+      returns: "void",
+      description: <>Applies a force to the Rigidbody in the specified direction.</>
+    },
+    {
+      signature: "addForce(float, float, float)",
+      returns: "void",
+      description: <>Applies a force to the Rigidbody with the specified x, y and z values.</>
+    },
+    {
+      signature: "addForce(Vector3, Vector3)",
+      returns: "void",
+      description: <>Applies a force to the Rigidbody at a specific relative position.</>
+    },
+    {
+      signature: "addVelocity(Vector3)",
+      returns: "void",
+      description: <>Adds velocity to the Rigidbody in the specified direction.</>
+    },
+    {
+      signature: "addVelocity(float, float, float)",
+      returns: "void",
+      description: <>Adds velocity to the Rigidbody with the specified x, y and z values.</>
+    },
+    {
+      signature: "addVelocityBySecond(Vector3)",
+      returns: "void",
+      description: <>Adds velocity per second to the Rigidbody in the specified direction.</>
+    },
+    {
+      signature: "addVelocityBySecond(float, float, float)",
+      returns: "void",
+      description: <>Adds velocity per second to the Rigidbody with the specified x, y and z values.</>
+    },
+    {
+      signature: "setVelocity(float, float, float)",
+      returns: "void",
+      description: <>Sets the current velocity of the Rigidbody.</>
+    }
+  ]}
+/>

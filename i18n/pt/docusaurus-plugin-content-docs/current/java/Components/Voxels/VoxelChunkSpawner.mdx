@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # VoxelChunkSpawner
 
 Referência completa da API de `VoxelChunkSpawner`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,33 +16,71 @@ Referência completa da API de `VoxelChunkSpawner`, incluindo construtores, atri
 public class VoxelChunkSpawner extends Component
 ```
 
-## Construtores (3)
-
-| Signature | Description |
-| --- | --- |
-| VoxelChunkSpawner([VoxelChunkSpawner]) | Executa `VoxelChunkSpawner` e retorna quando a chamada do motor termina. |
-| VoxelChunkSpawner([Engine]) | Executa `VoxelChunkSpawner` e retorna quando a chamada do motor termina. |
-| VoxelChunkSpawner() | Cria uma nova instância de VoxelChunkSpawner. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [VoxelChunkSpawner] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (6)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `camera` | [SpatialObject] | `get/set` | Atributo virtual exposto por `getCamera`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `chunkBlueprint` | [VoxelChunk] | `get/set` | Atributo virtual exposto por `getChunkBlueprint`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `onlyVisibleChunks` | [boolean] | `set` | Atributo virtual exposto por `setOnlyVisibleChunks`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `renderChunks` | [int] | `get/set` | Atributo virtual exposto por `getRenderChunks`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `updateDelay` | [float] | `get/set` | Atributo virtual exposto por `getUpdateDelay`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `visibleDot` | [float] | `get/set` | Atributo virtual exposto por `getVisibleDot`. Acesse como um campo para ler ou escrever o valor subjacente. |
-
-## Métodos (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `isOnlyVisibleChunks()` | `boolean` | Retorna se only visible chunks é verdadeiro. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "VoxelChunkSpawner(VoxelChunkSpawner)",
+      description: <>Executa <code>VoxelChunkSpawner</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "VoxelChunkSpawner(Engine)",
+      description: <>Executa <code>VoxelChunkSpawner</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "VoxelChunkSpawner()",
+      description: <>Cria uma nova instância de VoxelChunkSpawner.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "VoxelChunkSpawner",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "camera",
+      type: "SpatialObject",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getCamera</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "chunkBlueprint",
+      type: "VoxelChunk",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getChunkBlueprint</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "onlyVisibleChunks",
+      type: "boolean",
+      access: "set",
+      description: <>Atributo virtual exposto por <code>setOnlyVisibleChunks</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "renderChunks",
+      type: "int",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getRenderChunks</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "updateDelay",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getUpdateDelay</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "visibleDot",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getVisibleDot</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "isOnlyVisibleChunks()",
+      returns: "boolean",
+      description: <>Retorna se only visible chunks é verdadeiro.</>
+    }
+  ]}
+/>

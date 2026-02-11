@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # ConnectionListener
 
 Referência completa da API de `ConnectionListener`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,11 +16,22 @@ Referência completa da API de `ConnectionListener`, incluindo construtores, atr
 public interface ConnectionListener
 ```
 
-## Métodos (4)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `onConnected()` | `void` | Executa `onConnected` e retorna quando a chamada do motor termina. |
-| `onDisconnected()` | `void` | Executa `onDisconnected` e retorna quando a chamada do motor termina. |
-| `@MethodArgs([\{"error"], ["code"\}])` | `void` | Executa a operação @MethodArgs. |
-| `onError(String, int)` | `void` | Executa `onError` e retorna quando a chamada do motor termina. |
+<ApiDoc
+  methods={[
+    {
+      signature: "onConnected()",
+      returns: "void",
+      description: <>Executa <code>onConnected</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "onDisconnected()",
+      returns: "void",
+      description: <>Executa <code>onDisconnected</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "onError(String, int)",
+      returns: "void",
+      description: <>Executa <code>onError</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+/>

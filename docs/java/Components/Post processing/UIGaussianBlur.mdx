@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # UIGaussianBlur
 
 Complete API reference for `UIGaussianBlur`, including constructors, attributes, virtual attributes, and methods.
@@ -14,23 +16,40 @@ Complete API reference for `UIGaussianBlur`, including constructors, attributes,
 public class UIGaussianBlur extends Component
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| UIGaussianBlur([UIGaussianBlur]) | Executes `UIGaussianBlur` and returns after the underlying engine call finishes. |
-| UIGaussianBlur([Engine]) | Executes `UIGaussianBlur` and returns after the underlying engine call finishes. |
-| UIGaussianBlur() | Executes `UIGaussianBlur` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [UIGaussianBlur] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (2)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `blurRadius` | [float] | `get/set` | Virtual attribute exposed by `getBlurRadius`. Access it like a field to read or write the underlying value. |
-| `quality` | [Quality] | `get/set` | Virtual attribute exposed by `getQuality`. Access it like a field to read or write the underlying value. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "UIGaussianBlur(UIGaussianBlur)",
+      description: <>Executes <code>UIGaussianBlur</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "UIGaussianBlur(Engine)",
+      description: <>Executes <code>UIGaussianBlur</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "UIGaussianBlur()",
+      description: <>Executes <code>UIGaussianBlur</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "UIGaussianBlur",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "blurRadius",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getBlurRadius</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "quality",
+      type: "Quality",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getQuality</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+/>

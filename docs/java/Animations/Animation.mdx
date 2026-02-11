@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Animation
 
 Complete API reference for `Animation`, including constructors, attributes, virtual attributes, and methods.
@@ -14,48 +16,122 @@ Complete API reference for `Animation`, including constructors, attributes, virt
 public class Animation
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| Animation([AnimationInstance]) | Executes `Animation` and returns after the underlying engine call finishes. |
-| Animation([Engine]) | Executes `Animation` and returns after the underlying engine call finishes. |
-| Animation() | Executes `Animation` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [AnimationInstance] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (5)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `fps` | [int] | `get/set` | Returns the fps of the animation. |
-| `frameTime` | [float] | `get/set` | Returns the current frame of the animation. |
-| `speed` | [float] | `get/set` | Returns the speed of the animation. |
-| `timeLineCount` | [int] | `get` | Returns the timeline count of the animation. |
-| `weight` | [float] | `get/set` | Returns the speed of the animation. |
-
-## Methods (11)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `play()` | `void` | Plays the animation. |
-| `playInLoop()` | `void` | Plays the animation in a loop. |
-| `stop()` | `void` | Stops the animation. |
-| `stopLoop()` | `void` | Stops the looping animation. |
-| `isPlaying()` | `boolean` | Returns whether the animation is playing. |
-| `isLoop()` | `boolean` | Returns whether the animation is looping. |
-| `getTimeLineAt(int)` | `TimeLine` | Returns the animation timeline at the specified index. |
-| `addTimeLine(TimeLine)` | `void` | Adds a timeline to the animation. |
-| `removeTimeLine(TimeLine)` | `void` | Removes a timeline from the animation. |
-| `getLength()` | `int` | Returns the length of the animation. |
-| `sortFrames()` | `void` | Sorts animation frames. Call after modifying an animation. |
-
-## Static Methods (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `loadFile(AnimationFile)` | `Animation` | Load an AnimationFile. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "Animation(AnimationInstance)",
+      description: <>Executes <code>Animation</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "Animation(Engine)",
+      description: <>Executes <code>Animation</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "Animation()",
+      description: <>Executes <code>Animation</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "AnimationInstance",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "fps",
+      type: "int",
+      access: "get/set",
+      description: <>Returns the fps of the animation.</>
+    },
+    {
+      name: "frameTime",
+      type: "float",
+      access: "get/set",
+      description: <>Returns the current frame of the animation.</>
+    },
+    {
+      name: "speed",
+      type: "float",
+      access: "get/set",
+      description: <>Returns the speed of the animation.</>
+    },
+    {
+      name: "timeLineCount",
+      type: "int",
+      access: "get",
+      description: <>Returns the timeline count of the animation.</>
+    },
+    {
+      name: "weight",
+      type: "float",
+      access: "get/set",
+      description: <>Returns the speed of the animation.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "play()",
+      returns: "void",
+      description: <>Plays the animation.</>
+    },
+    {
+      signature: "playInLoop()",
+      returns: "void",
+      description: <>Plays the animation in a loop.</>
+    },
+    {
+      signature: "stop()",
+      returns: "void",
+      description: <>Stops the animation.</>
+    },
+    {
+      signature: "stopLoop()",
+      returns: "void",
+      description: <>Stops the looping animation.</>
+    },
+    {
+      signature: "isPlaying()",
+      returns: "boolean",
+      description: <>Returns whether the animation is playing.</>
+    },
+    {
+      signature: "isLoop()",
+      returns: "boolean",
+      description: <>Returns whether the animation is looping.</>
+    },
+    {
+      signature: "getTimeLineAt(int)",
+      returns: "TimeLine",
+      description: <>Returns the animation timeline at the specified index.</>
+    },
+    {
+      signature: "addTimeLine(TimeLine)",
+      returns: "void",
+      description: <>Adds a timeline to the animation.</>
+    },
+    {
+      signature: "removeTimeLine(TimeLine)",
+      returns: "void",
+      description: <>Removes a timeline from the animation.</>
+    },
+    {
+      signature: "getLength()",
+      returns: "int",
+      description: <>Returns the length of the animation.</>
+    },
+    {
+      signature: "sortFrames()",
+      returns: "void",
+      description: <>Sorts animation frames. Call after modifying an animation.</>
+    }
+  ]}
+  staticMethods={[
+    {
+      signature: "loadFile(AnimationFile)",
+      returns: "Animation",
+      description: <>Load an AnimationFile.</>
+    }
+  ]}
+/>

@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Key
 
 Referência completa da API de `Key`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,31 +16,60 @@ Referência completa da API de `Key`, incluindo construtores, atributos, atribut
 public class Key
 ```
 
-## Construtores (2)
-
-| Signature | Description |
-| --- | --- |
-| Key([Key]) | Executa `Key` e retorna quando a chamada do motor termina. |
-| Key([String]) | Executa `Key` e retorna quando a chamada do motor termina. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `key` | [Key] | Representa o valor de `key` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (4)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `down` | [boolean] | `get` | Verifica se a Key acabou de ser pressionada. Retorna verdadeiro apenas no primeiro quadro em que ela foi pressionada. |
-| `name` | [String] | `get` | Retorna a propriedade `propriedade `nome da Key``. |
-| `pressed` | [boolean] | `get` | Verifica se a Key está sendo mantida pressionada. Retorna verdadeiro em todos os quadros enquanto ela permanecer pressionada. |
-| `up` | [boolean] | `get` | Verifica se a Key acabou de ser liberada. Retorna verdadeiro apenas no primeiro quadro após ela ser liberada. |
-
-## Métodos (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `requestPress(Object)` | `void` | Registra que a tecla está sendo mantida pressionada pela referência especificada. |
-| `releasePress(Object)` | `void` | Cancela o registro da tecla pressionada pela referência especificada. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "Key(Key)",
+      description: <>Executa <code>Key</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "Key(String)",
+      description: <>Executa <code>Key</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "key",
+      type: "Key",
+      description: <>Representa o valor de <code>key</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "down",
+      type: "boolean",
+      access: "get",
+      description: <>Verifica se a Key acabou de ser pressionada. Retorna verdadeiro apenas no primeiro quadro em que ela foi pressionada.</>
+    },
+    {
+      name: "name",
+      type: "String",
+      access: "get",
+      description: <>Retorna a propriedade <code>propriedade </code>nome da Key``.</>
+    },
+    {
+      name: "pressed",
+      type: "boolean",
+      access: "get",
+      description: <>Verifica se a Key está sendo mantida pressionada. Retorna verdadeiro em todos os quadros enquanto ela permanecer pressionada.</>
+    },
+    {
+      name: "up",
+      type: "boolean",
+      access: "get",
+      description: <>Verifica se a Key acabou de ser liberada. Retorna verdadeiro apenas no primeiro quadro após ela ser liberada.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "requestPress(Object)",
+      returns: "void",
+      description: <>Registra que a tecla está sendo mantida pressionada pela referência especificada.</>
+    },
+    {
+      signature: "releasePress(Object)",
+      returns: "void",
+      description: <>Cancela o registro da tecla pressionada pela referência especificada.</>
+    }
+  ]}
+/>

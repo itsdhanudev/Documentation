@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # UISlideArea
 
 Complete API reference for `UISlideArea`, including constructors, attributes, virtual attributes, and methods.
@@ -14,22 +16,33 @@ Complete API reference for `UISlideArea`, including constructors, attributes, vi
 public class UISlideArea extends Component
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| UISlideArea([UISlideArea]) | Executes `UISlideArea` and returns after the underlying engine call finishes. |
-| UISlideArea([Engine]) | Executes `UISlideArea` and returns after the underlying engine call finishes. |
-| UISlideArea() | Creates a new instance of UISlideArea. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [UISlideArea] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Methods (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getValue()` | `Vector2` | Returns the current value. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "UISlideArea(UISlideArea)",
+      description: <>Executes <code>UISlideArea</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "UISlideArea(Engine)",
+      description: <>Executes <code>UISlideArea</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "UISlideArea()",
+      description: <>Creates a new instance of UISlideArea.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "UISlideArea",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "getValue()",
+      returns: "Vector2",
+      description: <>Returns the current value.</>
+    }
+  ]}
+/>

@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Ray
 
 Complete API reference for `Ray`, including constructors, attributes, virtual attributes, and methods.
@@ -14,32 +16,60 @@ Complete API reference for `Ray`, including constructors, attributes, virtual at
 public class Ray
 ```
 
-## Constructors (4)
-
-| Signature | Description |
-| --- | --- |
-| Ray([Ray]) | Executes `Ray` and returns after the underlying engine call finishes. |
-| Ray() | Executes `Ray` and returns after the underlying engine call finishes. |
-| Ray([JAVARuntime.RayDirection], [float]) | Creates a new instance of Ray. |
-| Ray([Vector3], [Vector3], [float]) | Creates a new instance of Ray. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `ray` | [Ray] | Represents the `ray` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (1)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `physicsLayer` | [PhysicsLayer] | `get/set` | Returns the PhysicsLayer of this Ray. |
-
-## Methods (4)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getRayDirection()` | [JAVARuntime].[RayDirection] | Returns the RayDirection of this Ray. |
-| `setRayDirection(JAVARuntime.RayDirection)` | `void` | Sets the RayDirection of this Ray. |
-| `getDistance()` | `float` | Returns the distance of this Ray. |
-| `setDistance(float)` | `void` | Sets the distance of this Ray. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "Ray(Ray)",
+      description: <>Executes <code>Ray</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "Ray()",
+      description: <>Executes <code>Ray</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "Ray(JAVARuntime.RayDirection, float)",
+      description: <>Creates a new instance of Ray.</>
+    },
+    {
+      signature: "Ray(Vector3, Vector3, float)",
+      description: <>Creates a new instance of Ray.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "ray",
+      type: "Ray",
+      description: <>Represents the <code>ray</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "physicsLayer",
+      type: "PhysicsLayer",
+      access: "get/set",
+      description: <>Returns the PhysicsLayer of this Ray.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "getRayDirection()",
+      returns: "JAVARuntime.RayDirection",
+      description: <>Returns the RayDirection of this Ray.</>
+    },
+    {
+      signature: "setRayDirection(JAVARuntime.RayDirection)",
+      returns: "void",
+      description: <>Sets the RayDirection of this Ray.</>
+    },
+    {
+      signature: "getDistance()",
+      returns: "float",
+      description: <>Returns the distance of this Ray.</>
+    },
+    {
+      signature: "setDistance(float)",
+      returns: "void",
+      description: <>Sets the distance of this Ray.</>
+    }
+  ]}
+/>

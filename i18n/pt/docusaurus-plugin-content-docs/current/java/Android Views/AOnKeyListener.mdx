@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # AOnKeyListener
 
 Referência completa da API de `AOnKeyListener`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,9 +16,17 @@ Referência completa da API de `AOnKeyListener`, incluindo construtores, atribut
 public class AOnKeyListener
 ```
 
-## Métodos (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `onKey(View, int, KeyEvent)` | `boolean` | Executa a operação onKey usando os parâmetros informados (v, keyCode, event). |
-| `onKeyEvent(View, int, KeyEvent)` | `boolean` | Executa `onKeyEvent` e retorna quando a chamada do motor termina. |
+<ApiDoc
+  methods={[
+    {
+      signature: "onKey(View, int, KeyEvent)",
+      returns: "boolean",
+      description: <>Executa a operação onKey usando os parâmetros informados (v, keyCode, event).</>
+    },
+    {
+      signature: "onKeyEvent(View, int, KeyEvent)",
+      returns: "boolean",
+      description: <>Executa <code>onKeyEvent</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+/>

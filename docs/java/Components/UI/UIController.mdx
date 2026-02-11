@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # UIController
 
 Complete API reference for `UIController`, including constructors, attributes, virtual attributes, and methods.
@@ -14,46 +16,145 @@ Complete API reference for `UIController`, including constructors, attributes, v
 public class UIController extends Component
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| UIController([UIController]) | Executes `UIController` and returns after the underlying engine call finishes. |
-| UIController([Engine]) | Executes `UIController` and returns after the underlying engine call finishes. |
-| UIController() | Creates a new instance of UIController. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [UIController] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (15)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `allowScreenTouch` | [boolean] | `get/set` | Virtual attribute exposed by `isAllowScreenTouch`. Access it like a field to read or write the underlying value. |
-| `drawToScreen` | [boolean] | `get/set` | Virtual attribute exposed by `isDrawToScreen`. Access it like a field to read or write the underlying value. |
-| `fixedResolutionPixelsHeight` | [int] | `get/set` | Virtual attribute exposed by `getFixedResolutionPixelsHeight`. Access it like a field to read or write the underlying value. |
-| `fixedResolutionPixelsWidth` | [int] | `get/set` | Virtual attribute exposed by `getFixedResolutionPixelsWidth`. Access it like a field to read or write the underlying value. |
-| `frameBuffer` | [FrameBuffer] | `get` | Virtual attribute exposed by `getFrameBuffer`. Access it like a field to read or write the underlying value. |
-| `frameBufferH` | [int] | `get` | Virtual attribute exposed by `getFrameBufferH`. Access it like a field to read or write the underlying value. |
-| `frameBufferW` | [int] | `get` | Virtual attribute exposed by `getFrameBufferW`. Access it like a field to read or write the underlying value. |
-| `freeResolutionPixels` | [int] | `get/set` | Virtual attribute exposed by `getFreeResolutionPixels`. Access it like a field to read or write the underlying value. |
-| `imageRatio` | [float] | `get` | Virtual attribute exposed by `getImageRatio`. Access it like a field to read or write the underlying value. |
-| `pxSize` | [float] | `get/set` | Virtual attribute exposed by `getPxSize`. Access it like a field to read or write the underlying value. |
-| `renderTextureFile` | [String] | `get/set` | Virtual attribute exposed by `getRenderTextureFile`. Access it like a field to read or write the underlying value. |
-| `resolutionMode` | [ResolutionMode] | `get/set` | Virtual attribute exposed by `getResolutionMode`. Access it like a field to read or write the underlying value. |
-| `resolutionPercentage` | [float] | `get/set` | Virtual attribute exposed by `getResolutionPercentage`. Access it like a field to read or write the underlying value. |
-| `touchPos` | [Vector2] | `get` | Virtual attribute exposed by `getTouchPos`. Access it like a field to read or write the underlying value. |
-| `virtualToucheAt` | [Touch] | `get` | Virtual attribute exposed by `getVirtualToucheAt`. Access it like a field to read or write the underlying value. |
-
-## Methods (5)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `emitVirtualTouch()` | `Touch` | Executes `emitVirtualTouch` and returns after the underlying engine call finishes. |
-| `pxToDP(float)` | `float` | Executes `pxToDP` and returns after the underlying engine call finishes. |
-| `pxToDP(int)` | `int` | Executes `pxToDP` and returns after the underlying engine call finishes. |
-| `releaseVirtualTouch(Touch)` | `void` | Executes `releaseVirtualTouch` and returns after the underlying engine call finishes. |
-| `virtualTouchsCount()` | `int` | Executes `virtualTouchsCount` and returns after the underlying engine call finishes. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "UIController(UIController)",
+      description: <>Executes <code>UIController</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "UIController(Engine)",
+      description: <>Executes <code>UIController</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "UIController()",
+      description: <>Creates a new instance of UIController.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "UIController",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "allowScreenTouch",
+      type: "boolean",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>isAllowScreenTouch</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "drawToScreen",
+      type: "boolean",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>isDrawToScreen</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "fixedResolutionPixelsHeight",
+      type: "int",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getFixedResolutionPixelsHeight</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "fixedResolutionPixelsWidth",
+      type: "int",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getFixedResolutionPixelsWidth</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "frameBuffer",
+      type: "FrameBuffer",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>getFrameBuffer</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "frameBufferH",
+      type: "int",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>getFrameBufferH</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "frameBufferW",
+      type: "int",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>getFrameBufferW</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "freeResolutionPixels",
+      type: "int",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getFreeResolutionPixels</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "imageRatio",
+      type: "float",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>getImageRatio</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "pxSize",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getPxSize</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "renderTextureFile",
+      type: "String",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getRenderTextureFile</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "resolutionMode",
+      type: "ResolutionMode",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getResolutionMode</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "resolutionPercentage",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getResolutionPercentage</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "touchPos",
+      type: "Vector2",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>getTouchPos</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "virtualToucheAt",
+      type: "Touch",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>getVirtualToucheAt</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "emitVirtualTouch()",
+      returns: "Touch",
+      description: <>Executes <code>emitVirtualTouch</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "pxToDP(float)",
+      returns: "float",
+      description: <>Executes <code>pxToDP</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "pxToDP(int)",
+      returns: "int",
+      description: <>Executes <code>pxToDP</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "releaseVirtualTouch(Touch)",
+      returns: "void",
+      description: <>Executes <code>releaseVirtualTouch</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "virtualTouchsCount()",
+      returns: "int",
+      description: <>Executes <code>virtualTouchsCount</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

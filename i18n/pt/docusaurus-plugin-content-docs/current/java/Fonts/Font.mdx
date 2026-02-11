@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Font
 
 Referência completa da API de `Font`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,21 +16,29 @@ Referência completa da API de `Font`, incluindo construtores, atributos, atribu
 public class Font
 ```
 
-## Construtores (2)
-
-| Signature | Description |
-| --- | --- |
-| Font([Font]) | Executa `Font` e retorna quando a chamada do motor termina. |
-| Font([Engine]) | Executa `Font` e retorna quando a chamada do motor termina. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `font` | [Font] | Representa o valor de `font` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Métodos (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getResolution()` | `int` | Retorna a propriedade `resolução da fonte`. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "Font(Font)",
+      description: <>Executa <code>Font</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "Font(Engine)",
+      description: <>Executa <code>Font</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "font",
+      type: "Font",
+      description: <>Representa o valor de <code>font</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "getResolution()",
+      returns: "int",
+      description: <>Retorna a propriedade <code>resolução da fonte</code>.</>
+    }
+  ]}
+/>

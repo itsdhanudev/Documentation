@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # EqualizerEffect
 
 Complete API reference for `EqualizerEffect`, including constructors, attributes, virtual attributes, and methods.
@@ -14,22 +16,34 @@ Complete API reference for `EqualizerEffect`, including constructors, attributes
 public class EqualizerEffect extends AudioEffect
 ```
 
-## Constructors (2)
-
-| Signature | Description |
-| --- | --- |
-| EqualizerEffect([Equalizer]) | Executes `EqualizerEffect` and returns after the underlying engine call finishes. |
-| EqualizerEffect() | Executes `EqualizerEffect` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `effect` | [Equalizer] | Represents the `effect` value stored on this instance. Read or assign to update the property. |
-
-## Methods (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getBandGain(int)` | `float` | Returns the current band gain. |
-| `setBandGain(int, float)` | `void` | Sets or updates the band gain. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "EqualizerEffect(Equalizer)",
+      description: <>Executes <code>EqualizerEffect</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "EqualizerEffect()",
+      description: <>Executes <code>EqualizerEffect</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "effect",
+      type: "Equalizer",
+      description: <>Represents the <code>effect</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "getBandGain(int)",
+      returns: "float",
+      description: <>Returns the current band gain.</>
+    },
+    {
+      signature: "setBandGain(int, float)",
+      returns: "void",
+      description: <>Sets or updates the band gain.</>
+    }
+  ]}
+/>

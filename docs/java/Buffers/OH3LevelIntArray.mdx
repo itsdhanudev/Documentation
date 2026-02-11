@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # OH3LevelIntArray
 
 Complete API reference for `OH3LevelIntArray`, including constructors, attributes, virtual attributes, and methods.
@@ -14,27 +16,57 @@ Complete API reference for `OH3LevelIntArray`, including constructors, attribute
 public class OH3LevelIntArray extends OHIntDataBase
 ```
 
-## Constructors (4)
-
-| Signature | Description |
-| --- | --- |
-| OH3LevelIntArray([OH3LevelIntArray]) | Executes `OH3LevelIntArray` and returns after the underlying engine call finishes. |
-| OH3LevelIntArray([Engine]) | Executes `OH3LevelIntArray` and returns after the underlying engine call finishes. |
-| OH3LevelIntArray([int], [int], [int]) | Creates a new instance of OH3LevelIntArray. |
-| OH3LevelIntArray([int], [int], [int], [boolean]) | Creates a new instance of OH3LevelIntArray. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `buffer` | [OH3LevelIntArray] | Represents the `buffer` value stored on this instance. Read or assign to update the property. |
-
-## Methods (5)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `get(int, int, int)` | `int` | Returns the current value. |
-| `set(int, int, int, int)` | `void` | Sets or updates the the value. |
-| `getSizeX()` | `int` | Returns the current size x. |
-| `getSizeY()` | `int` | Returns the current size y. |
-| `getSizeZ()` | `int` | Returns the current size z. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "OH3LevelIntArray(OH3LevelIntArray)",
+      description: <>Executes <code>OH3LevelIntArray</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "OH3LevelIntArray(Engine)",
+      description: <>Executes <code>OH3LevelIntArray</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "OH3LevelIntArray(int, int, int)",
+      description: <>Creates a new instance of OH3LevelIntArray.</>
+    },
+    {
+      signature: "OH3LevelIntArray(int, int, int, boolean)",
+      description: <>Creates a new instance of OH3LevelIntArray.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "buffer",
+      type: "OH3LevelIntArray",
+      description: <>Represents the <code>buffer</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "get(int, int, int)",
+      returns: "int",
+      description: <>Returns the current value.</>
+    },
+    {
+      signature: "set(int, int, int, int)",
+      returns: "void",
+      description: <>Sets or updates the the value.</>
+    },
+    {
+      signature: "getSizeX()",
+      returns: "int",
+      description: <>Returns the current size x.</>
+    },
+    {
+      signature: "getSizeY()",
+      returns: "int",
+      description: <>Returns the current size y.</>
+    },
+    {
+      signature: "getSizeZ()",
+      returns: "int",
+      description: <>Returns the current size z.</>
+    }
+  ]}
+/>

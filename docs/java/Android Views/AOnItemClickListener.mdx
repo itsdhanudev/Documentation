@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # AOnItemClickListener
 
 Complete API reference for `AOnItemClickListener`, including constructors, attributes, virtual attributes, and methods.
@@ -14,9 +16,17 @@ Complete API reference for `AOnItemClickListener`, including constructors, attri
 public class AOnItemClickListener
 ```
 
-## Methods (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `onItemClick([AdapterView&lt;?&gt;], View, int, long)` | `void` | Performs the onItemClick operation using the provided parameters (parent, view, position, id). |
-| `onItemClickEvent([AdapterView&lt;?&gt;], View, int, long)` | `void` | Executes `onItemClickEvent` and returns after the underlying engine call finishes. |
+<ApiDoc
+  methods={[
+    {
+      signature: "onItemClick(AdapterView&lt;?&gt;, View, int, long)",
+      returns: "void",
+      description: <>Performs the onItemClick operation using the provided parameters (parent, view, position, id).</>
+    },
+    {
+      signature: "onItemClickEvent(AdapterView&lt;?&gt;, View, int, long)",
+      returns: "void",
+      description: <>Executes <code>onItemClickEvent</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

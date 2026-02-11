@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # VideoFile
 
 Referência completa da API de `VideoFile`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,22 +16,34 @@ Referência completa da API de `VideoFile`, incluindo construtores, atributos, a
 public class VideoFile
 ```
 
-## Construtores (2)
-
-| Signature | Description |
-| --- | --- |
-| VideoFile([String]) | Executa `VideoFile` e retorna quando a chamada do motor termina. |
-| VideoFile() | Executa `VideoFile` e retorna quando a chamada do motor termina. |
-
-## Métodos (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `toString()` | `String` | Retorna a propriedade `representação em string`. |
-
-## Métodos Estáticos (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `genericInterface()` | `GenericClassInspectorEntry` | Executa `genericInterface` e retorna quando a chamada do motor termina. |
-| `inspectorController()` | `ClassInspectorEntry` | Executa `inspectorController` e retorna quando a chamada do motor termina. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "VideoFile(String)",
+      description: <>Executa <code>VideoFile</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "VideoFile()",
+      description: <>Executa <code>VideoFile</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "toString()",
+      returns: "String",
+      description: <>Retorna a propriedade <code>representação em string</code>.</>
+    }
+  ]}
+  staticMethods={[
+    {
+      signature: "genericInterface()",
+      returns: "GenericClassInspectorEntry",
+      description: <>Executa <code>genericInterface</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "inspectorController()",
+      returns: "ClassInspectorEntry",
+      description: <>Executa <code>inspectorController</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+/>

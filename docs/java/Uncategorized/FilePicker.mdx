@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # FilePicker
 
 Complete API reference for `FilePicker`, including constructors, attributes, virtual attributes, and methods.
@@ -14,9 +16,17 @@ Complete API reference for `FilePicker`, including constructors, attributes, vir
 public class FilePicker
 ```
 
-## Static Methods (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `open(Listener)` | `void` | Performs the open operation using the provided parameters (listener). |
-| `importFile(DFile, File)` | `boolean` | Performs the importFile operation using the provided parameters (documentFile, destination). |
+<ApiDoc
+  staticMethods={[
+    {
+      signature: "open(Listener)",
+      returns: "void",
+      description: <>Performs the open operation using the provided parameters (listener).</>
+    },
+    {
+      signature: "importFile(DFile, File)",
+      returns: "boolean",
+      description: <>Performs the importFile operation using the provided parameters (documentFile, destination).</>
+    }
+  ]}
+/>

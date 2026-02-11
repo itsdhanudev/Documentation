@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # AddAddOperator
 
 Complete API reference for `AddAddOperator`, including constructors, attributes, virtual attributes, and methods.
@@ -14,8 +16,12 @@ Complete API reference for `AddAddOperator`, including constructors, attributes,
 public interface AddAddOperator
 ```
 
-## Methods (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `addAdd()` | `void` | Add +1 to value. |
+<ApiDoc
+  methods={[
+    {
+      signature: "addAdd()",
+      returns: "void",
+      description: <>Add +1 to value.</>
+    }
+  ]}
+/>

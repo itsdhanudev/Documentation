@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # ParticleSphereShapeOptions
 
 Referência completa da API de `ParticleSphereShapeOptions`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,25 +16,52 @@ Referência completa da API de `ParticleSphereShapeOptions`, incluindo construto
 public class ParticleSphereShapeOptions
 ```
 
-## Construtores (3)
-
-| Signature | Description |
-| --- | --- |
-| ParticleSphereShapeOptions([ParticleSphereShapeOptions]) | Executa `ParticleSphereShapeOptions` e retorna quando a chamada do motor termina. |
-| ParticleSphereShapeOptions([Engine]) | Executa `ParticleSphereShapeOptions` e retorna quando a chamada do motor termina. |
-| ParticleSphereShapeOptions() | Cria uma nova instância de ParticleSphereShapeOptions. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [ParticleSphereShapeOptions] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (4)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `radius` | [float] | `get/set` | Atributo virtual exposto por `getRadius`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `randomizeRotation` | [float] | `get/set` | Atributo virtual exposto por `getRandomizeRotation`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `spherizeRotation` | [float] | `get/set` | Atributo virtual exposto por `getSpherizeRotation`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `volume` | [float] | `get/set` | Atributo virtual exposto por `getVolume`. Acesse como um campo para ler ou escrever o valor subjacente. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "ParticleSphereShapeOptions(ParticleSphereShapeOptions)",
+      description: <>Executa <code>ParticleSphereShapeOptions</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "ParticleSphereShapeOptions(Engine)",
+      description: <>Executa <code>ParticleSphereShapeOptions</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "ParticleSphereShapeOptions()",
+      description: <>Cria uma nova instância de ParticleSphereShapeOptions.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "ParticleSphereShapeOptions",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "radius",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getRadius</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "randomizeRotation",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getRandomizeRotation</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "spherizeRotation",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getSpherizeRotation</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "volume",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getVolume</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+/>

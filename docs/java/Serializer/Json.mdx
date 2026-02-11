@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Json
 
 Complete API reference for `Json`, including constructors, attributes, virtual attributes, and methods.
@@ -14,38 +16,97 @@ Complete API reference for `Json`, including constructors, attributes, virtual a
 public class Json
 ```
 
-## Constructors (1)
-
-| Signature | Description |
-| --- | --- |
-| Json() | Creates a new instance of Json. |
-
-## Virtual Attributes (5)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `ignorePrivateFields` | [boolean] | `get/set` | Virtual attribute exposed by `isIgnorePrivateFields`. Access it like a field to read or write the underlying value. |
-| `ignoreProtectedFields` | [boolean] | `get/set` | Virtual attribute exposed by `isIgnoreProtectedFields`. Access it like a field to read or write the underlying value. |
-| `ignorePublicFields` | [boolean] | `get/set` | Virtual attribute exposed by `isIgnorePublicFields`. Access it like a field to read or write the underlying value. |
-| `lenient` | [boolean] | `get/set` | Virtual attribute exposed by `isLenient`. Access it like a field to read or write the underlying value. |
-| `prettyPrinting` | [boolean] | `get/set` | Virtual attribute exposed by `isPrettyPrinting`. Access it like a field to read or write the underlying value. |
-
-## Methods (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `toJsonString(Object)` | `String` | Returns the string representation. |
-| `fromJsonString(String, Class)` | `Object` | Performs the fromJsonString operation using the provided parameters (json, classType). |
-
-## Static Methods (8)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `toJson(Object)` | `String` | Performs the toJson operation using the provided parameters (object). |
-| `toJson(Object, boolean)` | `String` | Performs the toJson operation using the provided parameters (object, prettyPrinting). |
-| `toJson(Object, boolean, boolean)` | `String` | Performs the toJson operation using the provided parameters (object, prettyPrinting, lenient). |
-| `toJson(Object, boolean, boolean, boolean)` | `String` | Performs the toJson operation using the provided parameters (object, prettyPrinting, lenient, ignorePrivateFields). |
-| `toJson(Object, boolean, boolean, boolean, boolean)` | `String` | Performs the toJson operation using the provided parameters (object, prettyPrinting, lenient, ignorePrivateFields, ignoreProtectedFields). |
-| `toJson(Object, boolean, boolean, boolean, boolean, boolean)` | `String` | Performs the toJson operation using the provided parameters (object, prettyPrinting, lenient, ignorePrivateFields, ignoreProtectedFields, ignorePublicFields). |
-| `fromJson(String, Class)` | `Object` | Performs the fromJson operation using the provided parameters (json, classType). |
-| `fromJson(String, Class, boolean)` | `Object` | Performs the fromJson operation using the provided parameters (json, classType, lenient). |
+<ApiDoc
+  constructors={[
+    {
+      signature: "Json()",
+      description: <>Creates a new instance of Json.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "ignorePrivateFields",
+      type: "boolean",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>isIgnorePrivateFields</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "ignoreProtectedFields",
+      type: "boolean",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>isIgnoreProtectedFields</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "ignorePublicFields",
+      type: "boolean",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>isIgnorePublicFields</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "lenient",
+      type: "boolean",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>isLenient</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "prettyPrinting",
+      type: "boolean",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>isPrettyPrinting</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "toJsonString(Object)",
+      returns: "String",
+      description: <>Returns the string representation.</>
+    },
+    {
+      signature: "fromJsonString(String, Class)",
+      returns: "Object",
+      description: <>Performs the fromJsonString operation using the provided parameters (json, classType).</>
+    }
+  ]}
+  staticMethods={[
+    {
+      signature: "toJson(Object)",
+      returns: "String",
+      description: <>Performs the toJson operation using the provided parameters (object).</>
+    },
+    {
+      signature: "toJson(Object, boolean)",
+      returns: "String",
+      description: <>Performs the toJson operation using the provided parameters (object, prettyPrinting).</>
+    },
+    {
+      signature: "toJson(Object, boolean, boolean)",
+      returns: "String",
+      description: <>Performs the toJson operation using the provided parameters (object, prettyPrinting, lenient).</>
+    },
+    {
+      signature: "toJson(Object, boolean, boolean, boolean)",
+      returns: "String",
+      description: <>Performs the toJson operation using the provided parameters (object, prettyPrinting, lenient, ignorePrivateFields).</>
+    },
+    {
+      signature: "toJson(Object, boolean, boolean, boolean, boolean)",
+      returns: "String",
+      description: <>Performs the toJson operation using the provided parameters (object, prettyPrinting, lenient, ignorePrivateFields, ignoreProtectedFields).</>
+    },
+    {
+      signature: "toJson(Object, boolean, boolean, boolean, boolean, boolean)",
+      returns: "String",
+      description: <>Performs the toJson operation using the provided parameters (object, prettyPrinting, lenient, ignorePrivateFields, ignoreProtectedFields, ignorePublicFields).</>
+    },
+    {
+      signature: "fromJson(String, Class)",
+      returns: "Object",
+      description: <>Performs the fromJson operation using the provided parameters (json, classType).</>
+    },
+    {
+      signature: "fromJson(String, Class, boolean)",
+      returns: "Object",
+      description: <>Performs the fromJson operation using the provided parameters (json, classType, lenient).</>
+    }
+  ]}
+/>

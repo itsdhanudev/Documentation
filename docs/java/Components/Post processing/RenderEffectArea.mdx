@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # RenderEffectArea
 
 Complete API reference for `RenderEffectArea`, including constructors, attributes, virtual attributes, and methods.
@@ -14,16 +16,26 @@ Complete API reference for `RenderEffectArea`, including constructors, attribute
 public class RenderEffectArea extends Component
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| RenderEffectArea([RenderEffectArea]) | Executes `RenderEffectArea` and returns after the underlying engine call finishes. |
-| RenderEffectArea([Engine]) | Executes `RenderEffectArea` and returns after the underlying engine call finishes. |
-| RenderEffectArea() | Executes `RenderEffectArea` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [RenderEffectArea] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "RenderEffectArea(RenderEffectArea)",
+      description: <>Executes <code>RenderEffectArea</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "RenderEffectArea(Engine)",
+      description: <>Executes <code>RenderEffectArea</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "RenderEffectArea()",
+      description: <>Executes <code>RenderEffectArea</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "RenderEffectArea",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+/>

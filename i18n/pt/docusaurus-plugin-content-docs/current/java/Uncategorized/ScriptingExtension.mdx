@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # ScriptingExtension
 
 Referência completa da API de `ScriptingExtension`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,16 +16,52 @@ Referência completa da API de `ScriptingExtension`, incluindo construtores, atr
 public class ScriptingExtension
 ```
 
-## Métodos (9)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getScriptingInterface()` | `ScriptingInterface` | Executa `getScriptingInterface` e retorna quando a chamada do motor termina. |
-| `replaceScript(File)` | `void` | Executa `replaceScript` e retorna quando a chamada do motor termina. |
-| `openScript(File)` | `void` | Executa a operação openScript usando os parâmetros informados (script). |
-| `onClose()` | `void` | Executa a operação onClose. |
-| `init()` | `void` | Inicializa o estado interno do objeto. |
-| `unload()` | `void` | Executa a operação unload. |
-| `saveScript()` | `boolean` | Salva script do objeto. |
-| `hasScript()` | `boolean` | Retorna se script é verdadeiro. |
-| `supportFile(File)` | `boolean` | Executa a operação supportFile usando os parâmetros informados (file). |
+<ApiDoc
+  methods={[
+    {
+      signature: "getScriptingInterface()",
+      returns: "ScriptingInterface",
+      description: <>Executa <code>getScriptingInterface</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "replaceScript(File)",
+      returns: "void",
+      description: <>Executa <code>replaceScript</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "openScript(File)",
+      returns: "void",
+      description: <>Executa a operação openScript usando os parâmetros informados (script).</>
+    },
+    {
+      signature: "onClose()",
+      returns: "void",
+      description: <>Executa a operação onClose.</>
+    },
+    {
+      signature: "init()",
+      returns: "void",
+      description: <>Inicializa o estado interno do objeto.</>
+    },
+    {
+      signature: "unload()",
+      returns: "void",
+      description: <>Executa a operação unload.</>
+    },
+    {
+      signature: "saveScript()",
+      returns: "boolean",
+      description: <>Salva script do objeto.</>
+    },
+    {
+      signature: "hasScript()",
+      returns: "boolean",
+      description: <>Retorna se script é verdadeiro.</>
+    },
+    {
+      signature: "supportFile(File)",
+      returns: "boolean",
+      description: <>Executa a operação supportFile usando os parâmetros informados (file).</>
+    }
+  ]}
+/>

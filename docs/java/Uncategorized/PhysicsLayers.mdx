@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # PhysicsLayers
 
 Complete API reference for `PhysicsLayers`, including constructors, attributes, virtual attributes, and methods.
@@ -14,14 +16,42 @@ Complete API reference for `PhysicsLayers`, including constructors, attributes, 
 public class PhysicsLayers
 ```
 
-## Static Methods (7)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `findByName(String)` | `PhysicsLayer` | Finds the PhysicsLayer with the specified name. |
-| `add(PhysicsLayer)` | `void` | Adds the specified PhysicsLayer. Limited to 16 layers. |
-| `remove(PhysicsLayer)` | `void` | Removes the specified PhysicsLayer. |
-| `apply()` | `void` | Applies the changes. Call after adding or removing Layers. |
-| `getLayersList()` | [List]&[lt];[PhysicsLayer]&[gt]; | Returns a list of all PhysicsLayers. |
-| `layersCount()` | `int` | Returns the number of PhysicsLayers. |
-| `layerAt(int)` | `PhysicsLayer` | Returns the PhysicsLayer at the specified index. |
+<ApiDoc
+  staticMethods={[
+    {
+      signature: "findByName(String)",
+      returns: "PhysicsLayer",
+      description: <>Finds the PhysicsLayer with the specified name.</>
+    },
+    {
+      signature: "add(PhysicsLayer)",
+      returns: "void",
+      description: <>Adds the specified PhysicsLayer. Limited to 16 layers.</>
+    },
+    {
+      signature: "remove(PhysicsLayer)",
+      returns: "void",
+      description: <>Removes the specified PhysicsLayer.</>
+    },
+    {
+      signature: "apply()",
+      returns: "void",
+      description: <>Applies the changes. Call after adding or removing Layers.</>
+    },
+    {
+      signature: "getLayersList()",
+      returns: "List&lt;PhysicsLayer&gt;",
+      description: <>Returns a list of all PhysicsLayers.</>
+    },
+    {
+      signature: "layersCount()",
+      returns: "int",
+      description: <>Returns the number of PhysicsLayers.</>
+    },
+    {
+      signature: "layerAt(int)",
+      returns: "PhysicsLayer",
+      description: <>Returns the PhysicsLayer at the specified index.</>
+    }
+  ]}
+/>

@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # InvokeListener
 
 Referência completa da API de `InvokeListener`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,8 +16,12 @@ Referência completa da API de `InvokeListener`, incluindo construtores, atribut
 public interface InvokeListener
 ```
 
-## Métodos (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `run()` | `void` | Executa `run` e retorna quando a chamada do motor termina. |
+<ApiDoc
+  methods={[
+    {
+      signature: "run()",
+      returns: "void",
+      description: <>Executa <code>run</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+/>

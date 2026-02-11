@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # OH2LevelFloatArray
 
 Referência completa da API de `OH2LevelFloatArray`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,17 +16,31 @@ Referência completa da API de `OH2LevelFloatArray`, incluindo construtores, atr
 public class OH2LevelFloatArray extends OHFloatDataBase
 ```
 
-## Construtores (3)
-
-| Signature | Description |
-| --- | --- |
-| OH2LevelFloatArray([Engine]) | Cria uma nova instância de OH2LevelFloatArray. |
-| OH2LevelFloatArray([int], [int]) | Cria uma nova instância de OH2LevelFloatArray. |
-| OH2LevelFloatArray([int], [int], [boolean]) | Cria uma nova instância de OH2LevelFloatArray. |
-
-## Métodos (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `get(int, int)` | `float` | Retorna a propriedade `propriedade `valor value atual``. |
-| `set(int, int, float)` | `void` | Define ou atualiza the value. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "OH2LevelFloatArray(Engine)",
+      description: <>Cria uma nova instância de OH2LevelFloatArray.</>
+    },
+    {
+      signature: "OH2LevelFloatArray(int, int)",
+      description: <>Cria uma nova instância de OH2LevelFloatArray.</>
+    },
+    {
+      signature: "OH2LevelFloatArray(int, int, boolean)",
+      description: <>Cria uma nova instância de OH2LevelFloatArray.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "get(int, int)",
+      returns: "float",
+      description: <>Retorna a propriedade <code>propriedade </code>valor value atual``.</>
+    },
+    {
+      signature: "set(int, int, float)",
+      returns: "void",
+      description: <>Define ou atualiza the value.</>
+    }
+  ]}
+/>

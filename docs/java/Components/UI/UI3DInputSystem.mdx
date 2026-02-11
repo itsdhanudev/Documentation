@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # UI3DInputSystem
 
 Complete API reference for `UI3DInputSystem`, including constructors, attributes, virtual attributes, and methods.
@@ -14,22 +16,34 @@ Complete API reference for `UI3DInputSystem`, including constructors, attributes
 public class UI3DInputSystem extends Component
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| UI3DInputSystem([UI3DInputSystem]) | Executes `UI3DInputSystem` and returns after the underlying engine call finishes. |
-| UI3DInputSystem([Engine]) | Executes `UI3DInputSystem` and returns after the underlying engine call finishes. |
-| UI3DInputSystem() | Executes `UI3DInputSystem` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [UI3DInputSystem] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (1)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `maxHitDistance` | [float] | `get/set` | Virtual attribute exposed by `getMaxHitDistance`. Access it like a field to read or write the underlying value. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "UI3DInputSystem(UI3DInputSystem)",
+      description: <>Executes <code>UI3DInputSystem</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "UI3DInputSystem(Engine)",
+      description: <>Executes <code>UI3DInputSystem</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "UI3DInputSystem()",
+      description: <>Executes <code>UI3DInputSystem</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "UI3DInputSystem",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "maxHitDistance",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getMaxHitDistance</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+/>

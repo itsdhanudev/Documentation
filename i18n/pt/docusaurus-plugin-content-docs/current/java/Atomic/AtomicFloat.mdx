@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # AtomicFloat
 
 Referência completa da API de `AtomicFloat`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,24 +16,67 @@ Referência completa da API de `AtomicFloat`, incluindo construtores, atributos,
 public class AtomicFloat extends Number
 ```
 
-## Construtores (2)
-
-| Signature | Description |
-| --- | --- |
-| AtomicFloat() | Cria uma nova instância de AtomicFloat. |
-| AtomicFloat([float]) | Cria uma nova instância de AtomicFloat. |
-
-## Métodos (10)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `compareAndSet(float, float)` | `boolean` | Compara esta instância com outra para igualdade/ordem. |
-| `set(float)` | `void` | Define ou atualiza the value. |
-| `get()` | `float` | Retorna a propriedade `propriedade `valor value atual``. |
-| `floatValue()` | `float` | Executa a operação floatValue. |
-| `getAndSet(float)` | `float` | Retorna a propriedade `propriedade `and set atual``. |
-| `weakCompareAndSet(float, float)` | `boolean` | Executa a operação weakCompareAndSet usando os parâmetros informados (expect, update). |
-| `doubleValue()` | `double` | Executa a operação doubleValue. |
-| `intValue()` | `int` | Executa a operação intValue. |
-| `longValue()` | `long` | Executa a operação longValue. |
-| `toString()` | `String` | Retorna a propriedade `representação em string`. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "AtomicFloat()",
+      description: <>Cria uma nova instância de AtomicFloat.</>
+    },
+    {
+      signature: "AtomicFloat(float)",
+      description: <>Cria uma nova instância de AtomicFloat.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "compareAndSet(float, float)",
+      returns: "boolean",
+      description: <>Compara esta instância com outra para igualdade/ordem.</>
+    },
+    {
+      signature: "set(float)",
+      returns: "void",
+      description: <>Define ou atualiza the value.</>
+    },
+    {
+      signature: "get()",
+      returns: "float",
+      description: <>Retorna a propriedade <code>propriedade </code>valor value atual``.</>
+    },
+    {
+      signature: "floatValue()",
+      returns: "float",
+      description: <>Executa a operação floatValue.</>
+    },
+    {
+      signature: "getAndSet(float)",
+      returns: "float",
+      description: <>Retorna a propriedade <code>propriedade </code>and set atual``.</>
+    },
+    {
+      signature: "weakCompareAndSet(float, float)",
+      returns: "boolean",
+      description: <>Executa a operação weakCompareAndSet usando os parâmetros informados (expect, update).</>
+    },
+    {
+      signature: "doubleValue()",
+      returns: "double",
+      description: <>Executa a operação doubleValue.</>
+    },
+    {
+      signature: "intValue()",
+      returns: "int",
+      description: <>Executa a operação intValue.</>
+    },
+    {
+      signature: "longValue()",
+      returns: "long",
+      description: <>Executa a operação longValue.</>
+    },
+    {
+      signature: "toString()",
+      returns: "String",
+      description: <>Retorna a propriedade <code>representação em string</code>.</>
+    }
+  ]}
+/>

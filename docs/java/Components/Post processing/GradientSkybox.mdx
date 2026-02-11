@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # GradientSkybox
 
 Complete API reference for `GradientSkybox`, including constructors, attributes, virtual attributes, and methods.
@@ -14,26 +16,58 @@ Complete API reference for `GradientSkybox`, including constructors, attributes,
 public class GradientSkybox extends Component
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| GradientSkybox([GradientSkybox]) | Executes `GradientSkybox` and returns after the underlying engine call finishes. |
-| GradientSkybox([Engine]) | Executes `GradientSkybox` and returns after the underlying engine call finishes. |
-| GradientSkybox() | Executes `GradientSkybox` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [GradientSkybox] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (5)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `ambientLight` | [boolean] | `get/set` | Virtual attribute exposed by `isAmbientLight`. Access it like a field to read or write the underlying value. |
-| `ambientLightResolutionID` | [int] | `get/set` | Virtual attribute exposed by `getAmbientLightResolutionID`. Access it like a field to read or write the underlying value. |
-| `colorGradient` | [ColorGradient] | `get/set` | Virtual attribute exposed by `getColorGradient`. Access it like a field to read or write the underlying value. |
-| `lux` | [float] | `get/set` | Virtual attribute exposed by `getLux`. Access it like a field to read or write the underlying value. |
-| `maxResolutionID` | [int] | `get/set` | Virtual attribute exposed by `getMaxResolutionID`. Access it like a field to read or write the underlying value. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "GradientSkybox(GradientSkybox)",
+      description: <>Executes <code>GradientSkybox</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "GradientSkybox(Engine)",
+      description: <>Executes <code>GradientSkybox</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "GradientSkybox()",
+      description: <>Executes <code>GradientSkybox</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "GradientSkybox",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "ambientLight",
+      type: "boolean",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>isAmbientLight</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "ambientLightResolutionID",
+      type: "int",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getAmbientLightResolutionID</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "colorGradient",
+      type: "ColorGradient",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getColorGradient</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "lux",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getLux</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "maxResolutionID",
+      type: "int",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getMaxResolutionID</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+/>

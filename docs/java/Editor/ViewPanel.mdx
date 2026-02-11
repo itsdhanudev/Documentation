@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # ViewPanel
 
 Complete API reference for `ViewPanel`, including constructors, attributes, virtual attributes, and methods.
@@ -14,29 +16,69 @@ Complete API reference for `ViewPanel`, including constructors, attributes, virt
 public class ViewPanel extends EditorPanel
 ```
 
-## Constructors (2)
-
-| Signature | Description |
-| --- | --- |
-| ViewPanel([JavaViewPanel]) | Executes `ViewPanel` and returns after the underlying engine call finishes. |
-| ViewPanel() | Executes `ViewPanel` and returns after the underlying engine call finishes. |
-
-## Methods (7)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `updateUI()` | `void` | Sets or updates the ui. |
-| `updateUIVisible()` | `void` | Sets or updates the uivisible. |
-| `minimizedUpdate()` | `void` | Executes `minimizedUpdate` and returns after the underlying engine call finishes. |
-| `onBindView()` | `void` | Executes `onBindView` and returns after the underlying engine call finishes. |
-| `onUnbindView()` | `void` | Executes `onUnbindView` and returns after the underlying engine call finishes. |
-| `onAttach()` | `View` | Executes `onAttach` and returns after the underlying engine call finishes. |
-| `onDetach()` | `void` | Executes `onDetach` and returns after the underlying engine call finishes. |
-
-## Static Methods (3)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `findViewByID(View, String)` | `<T extends View> T` | Performs the findViewByID operation using the provided parameters (view, id). |
-| `toView(Object)` | `View` | Performs the toView operation using the provided parameters (o). |
-| `getIdOf(View)` | `String` | Returns the current id of. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "ViewPanel(JavaViewPanel)",
+      description: <>Executes <code>ViewPanel</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "ViewPanel()",
+      description: <>Executes <code>ViewPanel</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "updateUI()",
+      returns: "void",
+      description: <>Sets or updates the ui.</>
+    },
+    {
+      signature: "updateUIVisible()",
+      returns: "void",
+      description: <>Sets or updates the uivisible.</>
+    },
+    {
+      signature: "minimizedUpdate()",
+      returns: "void",
+      description: <>Executes <code>minimizedUpdate</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "onBindView()",
+      returns: "void",
+      description: <>Executes <code>onBindView</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "onUnbindView()",
+      returns: "void",
+      description: <>Executes <code>onUnbindView</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "onAttach()",
+      returns: "View",
+      description: <>Executes <code>onAttach</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "onDetach()",
+      returns: "void",
+      description: <>Executes <code>onDetach</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  staticMethods={[
+    {
+      signature: "findViewByID(View, String)",
+      returns: "<T extends View> T",
+      description: <>Performs the findViewByID operation using the provided parameters (view, id).</>
+    },
+    {
+      signature: "toView(Object)",
+      returns: "View",
+      description: <>Performs the toView operation using the provided parameters (o).</>
+    },
+    {
+      signature: "getIdOf(View)",
+      returns: "String",
+      description: <>Returns the current id of.</>
+    }
+  ]}
+/>

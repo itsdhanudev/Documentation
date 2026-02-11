@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # JavaPool
 
 Referência completa da API de `JavaPool`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,12 +16,59 @@ Referência completa da API de `JavaPool`, incluindo construtores, atributos, at
 public class JavaPool
 ```
 
-## Métodos Estáticos (5)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `acquire(Class)` | `T` | Executa `acquire` e retorna quando a chamada do motor termina. |
-| `release(Object)` | `void` | Executa `release` e retorna quando a chamada do motor termina. |
-| `acquireFloatArray(int)` | [float][] | Executa `acquireFloatArray` e retorna quando a chamada do motor termina. |
-| `acquireFloatArray(int, boolean)` | [float][] | Executa `acquireFloatArray` e retorna quando a chamada do motor termina. |
-| `releaseFloatArray(float[])` | `void` | Executa `releaseFloatArray` e retorna quando a chamada do motor termina. |
+<ApiDoc
+  methods={[
+    {
+      signature: "acquire(Class)",
+      returns: "T",
+      description: <>Executa <code>acquire</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "release(Object)",
+      returns: "void",
+      description: <>Executa <code>release</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "acquireFloatArray(int)",
+      returns: "float[]",
+      description: <>Executa <code>acquireFloatArray</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "acquireFloatArray(int, boolean)",
+      returns: "float[]",
+      description: <>Executa <code>acquireFloatArray</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "releaseFloatArray(float[])",
+      returns: "void",
+      description: <>Executa <code>releaseFloatArray</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+  staticMethods={[
+    {
+      signature: "acquire(Class)",
+      returns: "T",
+      description: <>Executa <code>acquire</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "release(Object)",
+      returns: "void",
+      description: <>Executa <code>release</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "acquireFloatArray(int)",
+      returns: "float[]",
+      description: <>Executa <code>acquireFloatArray</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "acquireFloatArray(int, boolean)",
+      returns: "float[]",
+      description: <>Executa <code>acquireFloatArray</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "releaseFloatArray(float[])",
+      returns: "void",
+      description: <>Executa <code>releaseFloatArray</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+/>

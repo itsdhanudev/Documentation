@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # GizmoTransform
 
 Referência completa da API de `GizmoTransform`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,37 +16,88 @@ Referência completa da API de `GizmoTransform`, incluindo construtores, atribut
 public class GizmoTransform extends GizmoElement
 ```
 
-## Construtores (4)
-
-| Signature | Description |
-| --- | --- |
-| GizmoTransform() | Cria uma nova instância de GizmoTransform. |
-| GizmoTransform([Vector3]) | Cria uma nova instância de GizmoTransform. |
-| GizmoTransform([Vector3], [Quaternion]) | Cria uma nova instância de GizmoTransform. |
-| GizmoTransform([Vector3], [Quaternion], [Vector3]) | Cria uma nova instância de GizmoTransform. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `rotMatrix` | [float][] | Representa o valor de `rotMatrix` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (4)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `matrix` | [float][] | `get/set` | Atributo virtual exposto por `getMatrix`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `position` | [Vector3] | `get/set` | Atributo virtual exposto por `getPosition`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `rotation` | [Quaternion] | `get/set` | Atributo virtual exposto por `getRotation`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `scale` | [Vector3] | `get/set` | Atributo virtual exposto por `getScale`. Acesse como um campo para ler ou escrever o valor subjacente. |
-
-## Métodos (6)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `setPosition(float, float, float)` | `void` | Define ou atualiza a propriedade `propriedade `position``. |
-| `setPosition(float)` | `void` | Define ou atualiza a propriedade `propriedade `position``. |
-| `setRotation(float, float, float)` | `void` | Define ou atualiza a propriedade `propriedade `rotation``. |
-| `setRotation(float, float, float, float)` | `void` | Define ou atualiza a propriedade `propriedade `rotation``. |
-| `setScale(float, float, float)` | `void` | Define ou atualiza a propriedade `propriedade `scale``. |
-| `setScale(float)` | `void` | Define ou atualiza a propriedade `propriedade `scale``. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "GizmoTransform()",
+      description: <>Cria uma nova instância de GizmoTransform.</>
+    },
+    {
+      signature: "GizmoTransform(Vector3)",
+      description: <>Cria uma nova instância de GizmoTransform.</>
+    },
+    {
+      signature: "GizmoTransform(Vector3, Quaternion)",
+      description: <>Cria uma nova instância de GizmoTransform.</>
+    },
+    {
+      signature: "GizmoTransform(Vector3, Quaternion, Vector3)",
+      description: <>Cria uma nova instância de GizmoTransform.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "rotMatrix",
+      type: "float[]",
+      description: <>Representa o valor de <code>rotMatrix</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "matrix",
+      type: "float[]",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getMatrix</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "position",
+      type: "Vector3",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getPosition</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "rotation",
+      type: "Quaternion",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getRotation</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "scale",
+      type: "Vector3",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getScale</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "setPosition(float, float, float)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>position``.</>
+    },
+    {
+      signature: "setPosition(float)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>position``.</>
+    },
+    {
+      signature: "setRotation(float, float, float)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>rotation``.</>
+    },
+    {
+      signature: "setRotation(float, float, float, float)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>rotation``.</>
+    },
+    {
+      signature: "setScale(float, float, float)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>scale``.</>
+    },
+    {
+      signature: "setScale(float)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>scale``.</>
+    }
+  ]}
+/>

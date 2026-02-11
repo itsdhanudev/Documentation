@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # UIFitParent
 
 Referência completa da API de `UIFitParent`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,30 +16,52 @@ Referência completa da API de `UIFitParent`, incluindo construtores, atributos,
 public class UIFitParent extends Component
 ```
 
-## Construtores (3)
-
-| Signature | Description |
-| --- | --- |
-| UIFitParent([UIFitParent]) | Executa `UIFitParent` e retorna quando a chamada do motor termina. |
-| UIFitParent([Engine]) | Executa `UIFitParent` e retorna quando a chamada do motor termina. |
-| UIFitParent() | Cria uma nova instância de UIFitParent. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [UIFitParent] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (2)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `fitHeight` | [boolean] | `set` | Atributo virtual exposto por `setFitHeight`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `fitWidth` | [boolean] | `set` | Atributo virtual exposto por `setFitWidth`. Acesse como um campo para ler ou escrever o valor subjacente. |
-
-## Métodos (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `isFitHeight()` | `boolean` | Retorna se fit height é verdadeiro. |
-| `isFitWidth()` | `boolean` | Retorna se fit width é verdadeiro. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "UIFitParent(UIFitParent)",
+      description: <>Executa <code>UIFitParent</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "UIFitParent(Engine)",
+      description: <>Executa <code>UIFitParent</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "UIFitParent()",
+      description: <>Cria uma nova instância de UIFitParent.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "UIFitParent",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "fitHeight",
+      type: "boolean",
+      access: "set",
+      description: <>Atributo virtual exposto por <code>setFitHeight</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "fitWidth",
+      type: "boolean",
+      access: "set",
+      description: <>Atributo virtual exposto por <code>setFitWidth</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "isFitHeight()",
+      returns: "boolean",
+      description: <>Retorna se fit height é verdadeiro.</>
+    },
+    {
+      signature: "isFitWidth()",
+      returns: "boolean",
+      description: <>Retorna se fit width é verdadeiro.</>
+    }
+  ]}
+/>

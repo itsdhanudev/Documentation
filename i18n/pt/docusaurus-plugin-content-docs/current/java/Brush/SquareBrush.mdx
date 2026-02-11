@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # SquareBrush
 
 Referência completa da API de `SquareBrush`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,8 +16,12 @@ Referência completa da API de `SquareBrush`, incluindo construtores, atributos,
 public class SquareBrush
 ```
 
-## Métodos (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getIntensity(float, float)` | `float` | Retorna a propriedade `propriedade `intensity atual``. |
+<ApiDoc
+  methods={[
+    {
+      signature: "getIntensity(float, float)",
+      returns: "float",
+      description: <>Retorna a propriedade <code>propriedade </code>intensity atual``.</>
+    }
+  ]}
+/>

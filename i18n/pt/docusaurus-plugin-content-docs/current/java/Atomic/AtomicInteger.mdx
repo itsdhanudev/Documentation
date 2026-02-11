@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # AtomicInteger
 
 Referência completa da API de `AtomicInteger`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,33 +16,88 @@ Referência completa da API de `AtomicInteger`, incluindo construtores, atributo
 public class AtomicInteger
 ```
 
-## Construtores (3)
-
-| Signature | Description |
-| --- | --- |
-| AtomicInteger([AtomicInteger]) | Executa `AtomicInteger` e retorna quando a chamada do motor termina. |
-| AtomicInteger() | Executa `AtomicInteger` e retorna quando a chamada do motor termina. |
-| AtomicInteger([int]) | Cria uma nova instância de AtomicInteger. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [AtomicInteger] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Métodos (12)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `get()` | `int` | Retorna a propriedade `propriedade `valor value atual``. |
-| `set(int)` | `void` | Define ou atualiza the value. |
-| `lazySet(int)` | `void` | Executa a operação lazySet usando os parâmetros informados (value). |
-| `getAndSet(int)` | `int` | Retorna a propriedade `propriedade `and set atual``. |
-| `getAndIncrement()` | `int` | Retorna a propriedade `propriedade `and increment atual``. |
-| `getAndDecrement()` | `int` | Retorna a propriedade `propriedade `and decrement atual``. |
-| `incrementAndGet()` | `int` | Executa a operação incrementAndGet. |
-| `decrementAndGet()` | `int` | Executa a operação decrementAndGet. |
-| `getAndAdd(int)` | `int` | Retorna a propriedade `propriedade `and add atual``. |
-| `addAndGet(int)` | `int` | Adiciona and get à coleção. |
-| `compareAndSet(int, int)` | `boolean` | Compara esta instância com outra para igualdade/ordem. |
-| `weakCompareAndSet(int, int)` | `boolean` | Executa a operação weakCompareAndSet usando os parâmetros informados (expect, update). |
+<ApiDoc
+  constructors={[
+    {
+      signature: "AtomicInteger(AtomicInteger)",
+      description: <>Executa <code>AtomicInteger</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "AtomicInteger()",
+      description: <>Executa <code>AtomicInteger</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "AtomicInteger(int)",
+      description: <>Cria uma nova instância de AtomicInteger.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "AtomicInteger",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "get()",
+      returns: "int",
+      description: <>Retorna a propriedade <code>propriedade </code>valor value atual``.</>
+    },
+    {
+      signature: "set(int)",
+      returns: "void",
+      description: <>Define ou atualiza the value.</>
+    },
+    {
+      signature: "lazySet(int)",
+      returns: "void",
+      description: <>Executa a operação lazySet usando os parâmetros informados (value).</>
+    },
+    {
+      signature: "getAndSet(int)",
+      returns: "int",
+      description: <>Retorna a propriedade <code>propriedade </code>and set atual``.</>
+    },
+    {
+      signature: "getAndIncrement()",
+      returns: "int",
+      description: <>Retorna a propriedade <code>propriedade </code>and increment atual``.</>
+    },
+    {
+      signature: "getAndDecrement()",
+      returns: "int",
+      description: <>Retorna a propriedade <code>propriedade </code>and decrement atual``.</>
+    },
+    {
+      signature: "incrementAndGet()",
+      returns: "int",
+      description: <>Executa a operação incrementAndGet.</>
+    },
+    {
+      signature: "decrementAndGet()",
+      returns: "int",
+      description: <>Executa a operação decrementAndGet.</>
+    },
+    {
+      signature: "getAndAdd(int)",
+      returns: "int",
+      description: <>Retorna a propriedade <code>propriedade </code>and add atual``.</>
+    },
+    {
+      signature: "addAndGet(int)",
+      returns: "int",
+      description: <>Adiciona and get à coleção.</>
+    },
+    {
+      signature: "compareAndSet(int, int)",
+      returns: "boolean",
+      description: <>Compara esta instância com outra para igualdade/ordem.</>
+    },
+    {
+      signature: "weakCompareAndSet(int, int)",
+      returns: "boolean",
+      description: <>Executa a operação weakCompareAndSet usando os parâmetros informados (expect, update).</>
+    }
+  ]}
+/>

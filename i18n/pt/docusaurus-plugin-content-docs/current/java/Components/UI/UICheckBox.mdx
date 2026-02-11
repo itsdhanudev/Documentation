@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # UICheckBox
 
 Referencia completa da API de `UICheckBox`, incluindo construtores, atributos, atributos virtuais e metodos.
@@ -14,28 +16,70 @@ Referencia completa da API de `UICheckBox`, incluindo construtores, atributos, a
 public class UICheckBox extends Component
 ```
 
-## Construtores (3)
-
-| Signature | Description |
-| --- | --- |
-| UICheckBox([UICheckBox]) | Executa `UICheckBox` e retorna quando a chamada do motor termina. |
-| UICheckBox([Engine]) | Executa `UICheckBox` e retorna quando a chamada do motor termina. |
-| UICheckBox() | Cria uma nova instancia de UICheckBox. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [UICheckBox] | Representa o valor de `instance` armazenado nesta instancia. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (7)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `checked` | [boolean] | `get/set` | Atributo virtual exposto por `isChecked`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `pressed` | [boolean] | `get` | Atributo virtual exposto por `isPressed`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `down` | [boolean] | `get` | Atributo virtual exposto por `isDown`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `up` | [boolean] | `get` | Atributo virtual exposto por `isUp`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `color` | [Color] | `get/set` | Atributo virtual exposto por `getColor`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `checkedTexture` | [Texture] | `get/set` | Atributo virtual exposto por `getCheckedTexture`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `uncheckedTexture` | [Texture] | `get/set` | Atributo virtual exposto por `getUncheckedTexture`. Acesse como um campo para ler ou escrever o valor subjacente. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "UICheckBox(UICheckBox)",
+      description: <>Executa <code>UICheckBox</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "UICheckBox(Engine)",
+      description: <>Executa <code>UICheckBox</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "UICheckBox()",
+      description: <>Cria uma nova instancia de UICheckBox.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "UICheckBox",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta instancia. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "checked",
+      type: "boolean",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>isChecked</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "pressed",
+      type: "boolean",
+      access: "get",
+      description: <>Atributo virtual exposto por <code>isPressed</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "down",
+      type: "boolean",
+      access: "get",
+      description: <>Atributo virtual exposto por <code>isDown</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "up",
+      type: "boolean",
+      access: "get",
+      description: <>Atributo virtual exposto por <code>isUp</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "color",
+      type: "Color",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getColor</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "checkedTexture",
+      type: "Texture",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getCheckedTexture</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "uncheckedTexture",
+      type: "Texture",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getUncheckedTexture</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+/>

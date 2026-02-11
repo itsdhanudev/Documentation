@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # ShortVector3Buffer
 
 Referência completa da API de `ShortVector3Buffer`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,43 +16,115 @@ Referência completa da API de `ShortVector3Buffer`, incluindo construtores, atr
 public class ShortVector3Buffer
 ```
 
-## Construtores (4)
-
-| Signature | Description |
-| --- | --- |
-| ShortVector3Buffer([ShortVector3Buffer]) | Executa `ShortVector3Buffer` e retorna quando a chamada do motor termina. |
-| ShortVector3Buffer([Engine]) | Executa `ShortVector3Buffer` e retorna quando a chamada do motor termina. |
-| ShortVector3Buffer([int]) | Cria uma nova instância de ShortVector3Buffer. |
-| ShortVector3Buffer([NativeShortBuffer]) | Cria uma nova instância de ShortVector3Buffer. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `buffer` | [ShortVector3Buffer] | Representa o valor de `buffer` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (1)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `vboEnabled` | [boolean] | `get/set` | Atributo virtual exposto por `isVboEnabled`. Acesse como um campo para ler ou escrever o valor subjacente. |
-
-## Métodos (15)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `get(int)` | `Vector3` | Retorna a propriedade `propriedade `valor value atual``. |
-| `getX(int)` | `float` | Retorna a propriedade `propriedade `x atual``. |
-| `getY(int)` | `float` | Retorna a propriedade `propriedade `y atual``. |
-| `getZ(int)` | `float` | Retorna a propriedade `propriedade `z atual``. |
-| `put(Vector3)` | `void` | Define ou atualiza the value. |
-| `put(float, float, float)` | `void` | Define ou atualiza the value. |
-| `set(int, Vector3)` | `void` | Define ou atualiza the value. |
-| `set(int, float, float, float)` | `void` | Define ou atualiza the value. |
-| `capacity()` | `int` | Executa a operação capacity. |
-| `array()` | [Vector3][] | Executa a operação array. |
-| `getPosition()` | `int` | Retorna a propriedade `propriedade `position atual``. |
-| `position(int)` | `int` | Executa a operação position usando os parâmetros informados (idx). |
-| `setPosition(int)` | `void` | Define ou atualiza a propriedade `propriedade `position``. |
-| `copy()` | `ShortVector3Buffer` | Retorna uma cópia da instância de ShortVector3Buffer. |
-| `getFloatBuffer()` | `NativeShortBuffer` | Retorna a propriedade `propriedade `float buffer atual``. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "ShortVector3Buffer(ShortVector3Buffer)",
+      description: <>Executa <code>ShortVector3Buffer</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "ShortVector3Buffer(Engine)",
+      description: <>Executa <code>ShortVector3Buffer</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "ShortVector3Buffer(int)",
+      description: <>Cria uma nova instância de ShortVector3Buffer.</>
+    },
+    {
+      signature: "ShortVector3Buffer(NativeShortBuffer)",
+      description: <>Cria uma nova instância de ShortVector3Buffer.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "buffer",
+      type: "ShortVector3Buffer",
+      description: <>Representa o valor de <code>buffer</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "vboEnabled",
+      type: "boolean",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>isVboEnabled</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "get(int)",
+      returns: "Vector3",
+      description: <>Retorna a propriedade <code>propriedade </code>valor value atual``.</>
+    },
+    {
+      signature: "getX(int)",
+      returns: "float",
+      description: <>Retorna a propriedade <code>propriedade </code>x atual``.</>
+    },
+    {
+      signature: "getY(int)",
+      returns: "float",
+      description: <>Retorna a propriedade <code>propriedade </code>y atual``.</>
+    },
+    {
+      signature: "getZ(int)",
+      returns: "float",
+      description: <>Retorna a propriedade <code>propriedade </code>z atual``.</>
+    },
+    {
+      signature: "put(Vector3)",
+      returns: "void",
+      description: <>Define ou atualiza the value.</>
+    },
+    {
+      signature: "put(float, float, float)",
+      returns: "void",
+      description: <>Define ou atualiza the value.</>
+    },
+    {
+      signature: "set(int, Vector3)",
+      returns: "void",
+      description: <>Define ou atualiza the value.</>
+    },
+    {
+      signature: "set(int, float, float, float)",
+      returns: "void",
+      description: <>Define ou atualiza the value.</>
+    },
+    {
+      signature: "capacity()",
+      returns: "int",
+      description: <>Executa a operação capacity.</>
+    },
+    {
+      signature: "array()",
+      returns: "Vector3[]",
+      description: <>Executa a operação array.</>
+    },
+    {
+      signature: "getPosition()",
+      returns: "int",
+      description: <>Retorna a propriedade <code>propriedade </code>position atual``.</>
+    },
+    {
+      signature: "position(int)",
+      returns: "int",
+      description: <>Executa a operação position usando os parâmetros informados (idx).</>
+    },
+    {
+      signature: "setPosition(int)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>position``.</>
+    },
+    {
+      signature: "copy()",
+      returns: "ShortVector3Buffer",
+      description: <>Retorna uma cópia da instância de ShortVector3Buffer.</>
+    },
+    {
+      signature: "getFloatBuffer()",
+      returns: "NativeShortBuffer",
+      description: <>Retorna a propriedade <code>propriedade </code>float buffer atual``.</>
+    }
+  ]}
+/>

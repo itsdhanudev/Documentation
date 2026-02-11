@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # UIWeight
 
 Complete API reference for `UIWeight`, including constructors, attributes, virtual attributes, and methods.
@@ -14,28 +16,41 @@ Complete API reference for `UIWeight`, including constructors, attributes, virtu
 public class UIWeight extends Component
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| UIWeight([UIWeight]) | Executes `UIWeight` and returns after the underlying engine call finishes. |
-| UIWeight([Engine]) | Executes `UIWeight` and returns after the underlying engine call finishes. |
-| UIWeight() | Executes `UIWeight` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [UIWeight] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (1)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `weight` | [float] | `set` | Virtual attribute exposed by `setWeight`. Access it like a field to read or write the underlying value. |
-
-## Methods (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getWeight()` | `float` | Executes `getWeight` and returns after the underlying engine call finishes. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "UIWeight(UIWeight)",
+      description: <>Executes <code>UIWeight</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "UIWeight(Engine)",
+      description: <>Executes <code>UIWeight</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "UIWeight()",
+      description: <>Executes <code>UIWeight</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "UIWeight",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "weight",
+      type: "float",
+      access: "set",
+      description: <>Virtual attribute exposed by <code>setWeight</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "getWeight()",
+      returns: "float",
+      description: <>Executes <code>getWeight</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

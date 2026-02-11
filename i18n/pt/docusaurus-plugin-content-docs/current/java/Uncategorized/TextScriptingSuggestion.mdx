@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # TextScriptingSuggestion
 
 Referência completa da API de `TextScriptingSuggestion`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,26 +16,54 @@ Referência completa da API de `TextScriptingSuggestion`, incluindo construtores
 public class TextScriptingSuggestion
 ```
 
-## Construtores (2)
-
-| Signature | Description |
-| --- | --- |
-| TextScriptingSuggestion([String]) | Cria uma nova instância de TextScriptingSuggestion. |
-| TextScriptingSuggestion([String], [String]) | Cria uma nova instância de TextScriptingSuggestion. |
-
-## Atributos (2)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `text` | [String] | Representa o valor de `text` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `returnType` | [String] | Representa o valor de `returnType` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Métodos (5)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getText()` | `String` | Retorna a propriedade `propriedade `text atual``. |
-| `setText(String)` | `void` | Define ou atualiza a propriedade `propriedade `text``. |
-| `getReturnType()` | `String` | Retorna a propriedade `propriedade `return type atual``. |
-| `setReturnType(String)` | `void` | Define ou atualiza a propriedade `propriedade `return type``. |
-| `convertInternal()` | `Suggestion` | Executa `convertInternal` e retorna quando a chamada do motor termina. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "TextScriptingSuggestion(String)",
+      description: <>Cria uma nova instância de TextScriptingSuggestion.</>
+    },
+    {
+      signature: "TextScriptingSuggestion(String, String)",
+      description: <>Cria uma nova instância de TextScriptingSuggestion.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "text",
+      type: "String",
+      description: <>Representa o valor de <code>text</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "returnType",
+      type: "String",
+      description: <>Representa o valor de <code>returnType</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "getText()",
+      returns: "String",
+      description: <>Retorna a propriedade <code>propriedade </code>text atual``.</>
+    },
+    {
+      signature: "setText(String)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>text``.</>
+    },
+    {
+      signature: "getReturnType()",
+      returns: "String",
+      description: <>Retorna a propriedade <code>propriedade </code>return type atual``.</>
+    },
+    {
+      signature: "setReturnType(String)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>return type``.</>
+    },
+    {
+      signature: "convertInternal()",
+      returns: "Suggestion",
+      description: <>Executa <code>convertInternal</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+/>

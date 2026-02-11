@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # ModEqualOperator
 
 Complete API reference for `ModEqualOperator`, including constructors, attributes, virtual attributes, and methods.
@@ -14,9 +16,12 @@ Complete API reference for `ModEqualOperator`, including constructors, attribute
 public interface ModEqualOperator
 ```
 
-## Methods (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `@MethodArgs([{"otherObject"}])` | `void` | Applies the modulus and assigns the result to the current value. |
-| `modEqual(Object)` | `void` | Executes `modEqual` and returns after the underlying engine call finishes. |
+<ApiDoc
+  methods={[
+    {
+      signature: "modEqual(Object)",
+      returns: "void",
+      description: <>Applies the modulus and assigns the result to the current value.</>
+    }
+  ]}
+/>

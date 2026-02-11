@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # PointConstraint
 
 Referência completa da API de `PointConstraint`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,29 +16,48 @@ Referência completa da API de `PointConstraint`, incluindo construtores, atribu
 public class PointConstraint extends Component
 ```
 
-## Construtores (2)
-
-| Signature | Description |
-| --- | --- |
-| PointConstraint([PointConstraint]) | Executa `PointConstraint` e retorna quando a chamada do motor termina. |
-| PointConstraint() | Executa `PointConstraint` e retorna quando a chamada do motor termina. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `component` | [PointConstraint] | Representa o valor de `component` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (2)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `pivot` | [SpatialObject] | `get` | Atributo virtual exposto por `getPivot`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `target` | [SpatialObject] | `get/set` | Atributo virtual exposto por `getTarget`. Acesse como um campo para ler ou escrever o valor subjacente. |
-
-## Métodos (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `componentClassMatch(Component, Component)` | `boolean` | Executa `componentClassMatch` e retorna quando a chamada do motor termina. |
-| `getEngineComponent()` | `Component` | Executa `getEngineComponent` e retorna quando a chamada do motor termina. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "PointConstraint(PointConstraint)",
+      description: <>Executa <code>PointConstraint</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "PointConstraint()",
+      description: <>Executa <code>PointConstraint</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "component",
+      type: "PointConstraint",
+      description: <>Representa o valor de <code>component</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "pivot",
+      type: "SpatialObject",
+      access: "get",
+      description: <>Atributo virtual exposto por <code>getPivot</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "target",
+      type: "SpatialObject",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getTarget</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "componentClassMatch(Component, Component)",
+      returns: "boolean",
+      description: <>Executa <code>componentClassMatch</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "getEngineComponent()",
+      returns: "Component",
+      description: <>Executa <code>getEngineComponent</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+/>

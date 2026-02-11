@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # JClass
 
 Complete API reference for `JClass`, including constructors, attributes, virtual attributes, and methods.
@@ -14,23 +16,40 @@ Complete API reference for `JClass`, including constructors, attributes, virtual
 public class JClass
 ```
 
-## Constructors (1)
-
-| Signature | Description |
-| --- | --- |
-| JClass([Class], [String], [boolean]) | Creates a new instance of JClass. |
-
-## Attributes (2)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `name` | [String] | Represents the `name` value stored on this instance. Read or assign to update the property. |
-| `isEngineNative` | [boolean] | Represents the `isEngineNative` value stored on this instance. Read or assign to update the property. |
-
-## Methods (3)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getClassAddress()` | `Class` | Returns the current class address. |
-| `getName()` | `String` | Returns the current name. |
-| `isEngineNative()` | `boolean` | Returns whether engine native is true. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "JClass(Class, String, boolean)",
+      description: <>Creates a new instance of JClass.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "name",
+      type: "String",
+      description: <>Represents the <code>name</code> value stored on this instance. Read or assign to update the property.</>
+    },
+    {
+      name: "isEngineNative",
+      type: "boolean",
+      description: <>Represents the <code>isEngineNative</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "getClassAddress()",
+      returns: "Class",
+      description: <>Returns the current class address.</>
+    },
+    {
+      signature: "getName()",
+      returns: "String",
+      description: <>Returns the current name.</>
+    },
+    {
+      signature: "isEngineNative()",
+      returns: "boolean",
+      description: <>Returns whether engine native is true.</>
+    }
+  ]}
+/>

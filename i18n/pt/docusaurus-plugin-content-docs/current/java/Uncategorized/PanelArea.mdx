@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # PanelArea
 
 Referência completa da API de `PanelArea`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,32 +16,84 @@ Referência completa da API de `PanelArea`, incluindo construtores, atributos, a
 public class PanelArea
 ```
 
-## Construtores (2)
-
-| Signature | Description |
-| --- | --- |
-| PanelArea([PanelArea]) | Executa `PanelArea` e retorna quando a chamada do motor termina. |
-| PanelArea() | Executa `PanelArea` e retorna quando a chamada do motor termina. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [PanelArea] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Métodos (12)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `setInstance(PanelArea)` | `void` | Executa `setInstance` e retorna quando a chamada do motor termina. |
-| `addPanel(EditorPanel)` | `void` | Adiciona panel à coleção. |
-| `removePanel(EditorPanel)` | `void` | Remove panel da coleção. |
-| `requestDetach()` | `void` | Executa a operação requestDetach. |
-| `getX()` | `float` | Retorna a propriedade `propriedade `x atual``. |
-| `setX(float)` | `void` | Define ou atualiza a propriedade `propriedade `x``. |
-| `getY()` | `float` | Retorna a propriedade `propriedade `y atual``. |
-| `setY(float)` | `void` | Define ou atualiza a propriedade `propriedade `y``. |
-| `getWidth()` | `float` | Retorna a propriedade `propriedade `width atual``. |
-| `setWidth(float)` | `void` | Define ou atualiza a propriedade `propriedade `width``. |
-| `getHeight()` | `float` | Retorna a propriedade `propriedade `height atual``. |
-| `setHeight(float)` | `void` | Define ou atualiza a propriedade `propriedade `height``. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "PanelArea(PanelArea)",
+      description: <>Executa <code>PanelArea</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "PanelArea()",
+      description: <>Executa <code>PanelArea</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "PanelArea",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "setInstance(PanelArea)",
+      returns: "void",
+      description: <>Executa <code>setInstance</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "addPanel(EditorPanel)",
+      returns: "void",
+      description: <>Adiciona panel à coleção.</>
+    },
+    {
+      signature: "removePanel(EditorPanel)",
+      returns: "void",
+      description: <>Remove panel da coleção.</>
+    },
+    {
+      signature: "requestDetach()",
+      returns: "void",
+      description: <>Executa a operação requestDetach.</>
+    },
+    {
+      signature: "getX()",
+      returns: "float",
+      description: <>Retorna a propriedade <code>propriedade </code>x atual``.</>
+    },
+    {
+      signature: "setX(float)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>x``.</>
+    },
+    {
+      signature: "getY()",
+      returns: "float",
+      description: <>Retorna a propriedade <code>propriedade </code>y atual``.</>
+    },
+    {
+      signature: "setY(float)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>y``.</>
+    },
+    {
+      signature: "getWidth()",
+      returns: "float",
+      description: <>Retorna a propriedade <code>propriedade </code>width atual``.</>
+    },
+    {
+      signature: "setWidth(float)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>width``.</>
+    },
+    {
+      signature: "getHeight()",
+      returns: "float",
+      description: <>Retorna a propriedade <code>propriedade </code>height atual``.</>
+    },
+    {
+      signature: "setHeight(float)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>height``.</>
+    }
+  ]}
+/>

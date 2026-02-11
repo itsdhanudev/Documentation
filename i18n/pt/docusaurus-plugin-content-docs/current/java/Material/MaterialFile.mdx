@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # MaterialFile
 
 Referência completa da API de `MaterialFile`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,28 +16,41 @@ Referência completa da API de `MaterialFile`, incluindo construtores, atributos
 public class MaterialFile
 ```
 
-## Construtores (2)
-
-| Signature | Description |
-| --- | --- |
-| MaterialFile([String]) | Executa `MaterialFile` e retorna quando a chamada do motor termina. |
-| MaterialFile() | Executa `MaterialFile` e retorna quando a chamada do motor termina. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `cache` | [Material] | Representa o valor de `cache` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Métodos (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `toString()` | `String` | Retorna a propriedade `representação em string`. |
-
-## Métodos Estáticos (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `genericInterface()` | `GenericClassInspectorEntry` | Executa `genericInterface` e retorna quando a chamada do motor termina. |
-| `inspectorController()` | `ClassInspectorEntry` | Executa `inspectorController` e retorna quando a chamada do motor termina. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "MaterialFile(String)",
+      description: <>Executa <code>MaterialFile</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "MaterialFile()",
+      description: <>Executa <code>MaterialFile</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "cache",
+      type: "Material",
+      description: <>Representa o valor de <code>cache</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "toString()",
+      returns: "String",
+      description: <>Retorna a propriedade <code>representação em string</code>.</>
+    }
+  ]}
+  staticMethods={[
+    {
+      signature: "genericInterface()",
+      returns: "GenericClassInspectorEntry",
+      description: <>Executa <code>genericInterface</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "inspectorController()",
+      returns: "ClassInspectorEntry",
+      description: <>Executa <code>inspectorController</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+/>

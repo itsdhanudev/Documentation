@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # VoxelCollider
 
 Complete API reference for `VoxelCollider`, including constructors, attributes, virtual attributes, and methods.
@@ -14,24 +16,46 @@ Complete API reference for `VoxelCollider`, including constructors, attributes, 
 public class VoxelCollider extends Component
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| VoxelCollider([VoxelCollider]) | Executes `VoxelCollider` and returns after the underlying engine call finishes. |
-| VoxelCollider([Engine]) | Executes `VoxelCollider` and returns after the underlying engine call finishes. |
-| VoxelCollider() | Creates a new instance of VoxelCollider. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [VoxelCollider] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (3)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `horizontalSize` | [float] | `get/set` | Virtual attribute exposed by `getHorizontalSize`. Access it like a field to read or write the underlying value. |
-| `positionOffset` | [Vector3] | `get/set` | Virtual attribute exposed by `getPositionOffset`. Access it like a field to read or write the underlying value. |
-| `verticalSize` | [float] | `get/set` | Virtual attribute exposed by `getVerticalSize`. Access it like a field to read or write the underlying value. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "VoxelCollider(VoxelCollider)",
+      description: <>Executes <code>VoxelCollider</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "VoxelCollider(Engine)",
+      description: <>Executes <code>VoxelCollider</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "VoxelCollider()",
+      description: <>Creates a new instance of VoxelCollider.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "VoxelCollider",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "horizontalSize",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getHorizontalSize</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "positionOffset",
+      type: "Vector3",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getPositionOffset</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "verticalSize",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getVerticalSize</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+/>

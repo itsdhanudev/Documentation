@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # AtomicFloat
 
 Complete API reference for `AtomicFloat`, including constructors, attributes, virtual attributes, and methods.
@@ -14,24 +16,67 @@ Complete API reference for `AtomicFloat`, including constructors, attributes, vi
 public class AtomicFloat extends Number
 ```
 
-## Constructors (2)
-
-| Signature | Description |
-| --- | --- |
-| AtomicFloat() | Creates a new instance of AtomicFloat. |
-| AtomicFloat([float]) | Creates a new instance of AtomicFloat. |
-
-## Methods (10)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `compareAndSet(float, float)` | `boolean` | Compares this instance with another for equality/order. |
-| `set(float)` | `void` | Sets or updates the the value. |
-| `get()` | `float` | Returns the current value. |
-| `floatValue()` | `float` | Executes `floatValue` and returns after the underlying engine call finishes. |
-| `getAndSet(float)` | `float` | Returns the current and set. |
-| `weakCompareAndSet(float, float)` | `boolean` | Performs the weakCompareAndSet operation using the provided parameters (expect, update). |
-| `doubleValue()` | `double` | Executes `doubleValue` and returns after the underlying engine call finishes. |
-| `intValue()` | `int` | Executes `intValue` and returns after the underlying engine call finishes. |
-| `longValue()` | `long` | Executes `longValue` and returns after the underlying engine call finishes. |
-| `toString()` | `String` | Returns the string representation. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "AtomicFloat()",
+      description: <>Creates a new instance of AtomicFloat.</>
+    },
+    {
+      signature: "AtomicFloat(float)",
+      description: <>Creates a new instance of AtomicFloat.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "compareAndSet(float, float)",
+      returns: "boolean",
+      description: <>Compares this instance with another for equality/order.</>
+    },
+    {
+      signature: "set(float)",
+      returns: "void",
+      description: <>Sets or updates the the value.</>
+    },
+    {
+      signature: "get()",
+      returns: "float",
+      description: <>Returns the current value.</>
+    },
+    {
+      signature: "floatValue()",
+      returns: "float",
+      description: <>Executes <code>floatValue</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "getAndSet(float)",
+      returns: "float",
+      description: <>Returns the current and set.</>
+    },
+    {
+      signature: "weakCompareAndSet(float, float)",
+      returns: "boolean",
+      description: <>Performs the weakCompareAndSet operation using the provided parameters (expect, update).</>
+    },
+    {
+      signature: "doubleValue()",
+      returns: "double",
+      description: <>Executes <code>doubleValue</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "intValue()",
+      returns: "int",
+      description: <>Executes <code>intValue</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "longValue()",
+      returns: "long",
+      description: <>Executes <code>longValue</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "toString()",
+      returns: "String",
+      description: <>Returns the string representation.</>
+    }
+  ]}
+/>

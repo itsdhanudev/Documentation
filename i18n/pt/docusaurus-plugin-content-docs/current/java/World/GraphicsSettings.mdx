@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # GraphicsSettings
 
 Referência completa da API de `GraphicsSettings`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,15 +16,22 @@ Referência completa da API de `GraphicsSettings`, incluindo construtores, atrib
 public class GraphicsSettings
 ```
 
-## Construtores (2)
-
-| Signature | Description |
-| --- | --- |
-| GraphicsSettings([GraphicsSettings]) | Executa `GraphicsSettings` e retorna quando a chamada do motor termina. |
-| GraphicsSettings() | Executa `GraphicsSettings` e retorna quando a chamada do motor termina. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `graphicsSettings` | [GraphicsSettings] | Representa o valor de `graphicsSettings` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "GraphicsSettings(GraphicsSettings)",
+      description: <>Executa <code>GraphicsSettings</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "GraphicsSettings()",
+      description: <>Executa <code>GraphicsSettings</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "graphicsSettings",
+      type: "GraphicsSettings",
+      description: <>Representa o valor de <code>graphicsSettings</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+/>

@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Resources
 
 Complete API reference for `Resources`, including constructors, attributes, virtual attributes, and methods.
@@ -14,9 +16,17 @@ Complete API reference for `Resources`, including constructors, attributes, virt
 public class Resources
 ```
 
-## Static Methods (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getFile(String)` | `File` | Returns the current file. |
-| `isFolder(String)` | `boolean` | Returns whether folder is true. |
+<ApiDoc
+  staticMethods={[
+    {
+      signature: "getFile(String)",
+      returns: "File",
+      description: <>Returns the current file.</>
+    },
+    {
+      signature: "isFolder(String)",
+      returns: "boolean",
+      description: <>Returns whether folder is true.</>
+    }
+  ]}
+/>

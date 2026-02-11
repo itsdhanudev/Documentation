@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # ComponentInspector
 
 Referência completa da API de `ComponentInspector`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,29 +16,47 @@ Referência completa da API de `ComponentInspector`, incluindo construtores, atr
 public class ComponentInspector
 ```
 
-## Construtores (1)
-
-| Signature | Description |
-| --- | --- |
-| ComponentInspector() | Cria uma nova instância de ComponentInspector. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `myComponent` | [T] | Representa o valor de `myComponent` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Métodos (2)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `updateUIVisible()` | `void` | Define ou atualiza a propriedade `propriedade `uivisible``. |
-| `onAttach()` | `View` | Executa a operação onAttach. |
-
-## Métodos Estáticos (3)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `findViewByID(View, String)` | `<T extends View> T` | Executa a operação findViewByID usando os parâmetros informados (view, id). |
-| `toView(Object)` | `View` | Executa a operação toView usando os parâmetros informados (o). |
-| `getIdOf(View)` | `String` | Retorna a propriedade `propriedade `id of atual``. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "ComponentInspector()",
+      description: <>Cria uma nova instância de ComponentInspector.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "myComponent",
+      type: "T",
+      description: <>Representa o valor de <code>myComponent</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "updateUIVisible()",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>uivisible``.</>
+    },
+    {
+      signature: "onAttach()",
+      returns: "View",
+      description: <>Executa a operação onAttach.</>
+    }
+  ]}
+  staticMethods={[
+    {
+      signature: "findViewByID(View, String)",
+      returns: "<T extends View> T",
+      description: <>Executa a operação findViewByID usando os parâmetros informados (view, id).</>
+    },
+    {
+      signature: "toView(Object)",
+      returns: "View",
+      description: <>Executa a operação toView usando os parâmetros informados (o).</>
+    },
+    {
+      signature: "getIdOf(View)",
+      returns: "String",
+      description: <>Retorna a propriedade <code>propriedade </code>id of atual``.</>
+    }
+  ]}
+/>

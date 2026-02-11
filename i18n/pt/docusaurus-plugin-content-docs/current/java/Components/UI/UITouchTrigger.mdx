@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # UITouchTrigger
 
 Referência completa da API de `UITouchTrigger`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,30 +16,51 @@ Referência completa da API de `UITouchTrigger`, incluindo construtores, atribut
 public class UITouchTrigger extends Component
 ```
 
-## Construtores (3)
-
-| Signature | Description |
-| --- | --- |
-| UITouchTrigger([UITouchTrigger]) | Executa `UITouchTrigger` e retorna quando a chamada do motor termina. |
-| UITouchTrigger([Engine]) | Executa `UITouchTrigger` e retorna quando a chamada do motor termina. |
-| UITouchTrigger() | Cria uma nova instância de UITouchTrigger. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [UITouchTrigger] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (1)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `selectedTouch` | [Touch] | `get` | Atributo virtual exposto por `getSelectedTouch`. Acesse como um campo para ler ou escrever o valor subjacente. |
-
-## Métodos (3)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `isDown()` | `boolean` | Retorna se down é verdadeiro. |
-| `isPressed()` | `boolean` | Retorna se pressed é verdadeiro. |
-| `isUp()` | `boolean` | Retorna se up é verdadeiro. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "UITouchTrigger(UITouchTrigger)",
+      description: <>Executa <code>UITouchTrigger</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "UITouchTrigger(Engine)",
+      description: <>Executa <code>UITouchTrigger</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "UITouchTrigger()",
+      description: <>Cria uma nova instância de UITouchTrigger.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "UITouchTrigger",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "selectedTouch",
+      type: "Touch",
+      access: "get",
+      description: <>Atributo virtual exposto por <code>getSelectedTouch</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "isDown()",
+      returns: "boolean",
+      description: <>Retorna se down é verdadeiro.</>
+    },
+    {
+      signature: "isPressed()",
+      returns: "boolean",
+      description: <>Retorna se pressed é verdadeiro.</>
+    },
+    {
+      signature: "isUp()",
+      returns: "boolean",
+      description: <>Retorna se up é verdadeiro.</>
+    }
+  ]}
+/>

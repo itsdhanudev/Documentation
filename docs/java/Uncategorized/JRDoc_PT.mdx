@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # JRDoc_PT
 
 Complete API reference for `JRDoc_PT`, including constructors, attributes, virtual attributes, and methods.
@@ -14,8 +16,12 @@ Complete API reference for `JRDoc_PT`, including constructors, attributes, virtu
 public interface JRDoc_PT
 ```
 
-## Methods (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `value()` | `String` | Executes `value` and returns after the underlying engine call finishes. |
+<ApiDoc
+  methods={[
+    {
+      signature: "value()",
+      returns: "String",
+      description: <>Executes <code>value</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # OHIntDataBase
 
 Referência completa da API de `OHIntDataBase`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,33 +16,88 @@ Referência completa da API de `OHIntDataBase`, incluindo construtores, atributo
 public class OHIntDataBase
 ```
 
-## Construtores (3)
-
-| Signature | Description |
-| --- | --- |
-| OHIntDataBase([OHIntDataBase]) | Executa `OHIntDataBase` e retorna quando a chamada do motor termina. |
-| OHIntDataBase([Engine]) | Executa `OHIntDataBase` e retorna quando a chamada do motor termina. |
-| OHIntDataBase([int]) | Cria uma nova instância de OHIntDataBase. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `buffer` | [OHIntDataBase] | Representa o valor de `buffer` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Métodos (12)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `incrementSize(int)` | `void` | Executa a operação incrementSize usando os parâmetros informados (size). |
-| `decrementSize(int)` | `void` | Executa a operação decrementSize usando os parâmetros informados (size). |
-| `resize(int)` | `void` | Executa a operação resize usando os parâmetros informados (newCapacity). |
-| `resize(int, boolean)` | `void` | Executa a operação resize usando os parâmetros informados (newCapacity, copyData). |
-| `position(int)` | `void` | Executa a operação position usando os parâmetros informados (position). |
-| `put(int[])` | `void` | Define ou atualiza the value. |
-| `put(int)` | `void` | Define ou atualiza the value. |
-| `set(int, int)` | `void` | Define ou atualiza the value. |
-| `get(int)` | `int` | Retorna a propriedade `propriedade `valor value atual``. |
-| `getBytes()` | [int][] | Retorna a propriedade `propriedade `bytes atual``. |
-| `size()` | `int` | Executa a operação size. |
-| `capacity()` | `int` | Executa a operação capacity. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "OHIntDataBase(OHIntDataBase)",
+      description: <>Executa <code>OHIntDataBase</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "OHIntDataBase(Engine)",
+      description: <>Executa <code>OHIntDataBase</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "OHIntDataBase(int)",
+      description: <>Cria uma nova instância de OHIntDataBase.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "buffer",
+      type: "OHIntDataBase",
+      description: <>Representa o valor de <code>buffer</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "incrementSize(int)",
+      returns: "void",
+      description: <>Executa a operação incrementSize usando os parâmetros informados (size).</>
+    },
+    {
+      signature: "decrementSize(int)",
+      returns: "void",
+      description: <>Executa a operação decrementSize usando os parâmetros informados (size).</>
+    },
+    {
+      signature: "resize(int)",
+      returns: "void",
+      description: <>Executa a operação resize usando os parâmetros informados (newCapacity).</>
+    },
+    {
+      signature: "resize(int, boolean)",
+      returns: "void",
+      description: <>Executa a operação resize usando os parâmetros informados (newCapacity, copyData).</>
+    },
+    {
+      signature: "position(int)",
+      returns: "void",
+      description: <>Executa a operação position usando os parâmetros informados (position).</>
+    },
+    {
+      signature: "put(int[])",
+      returns: "void",
+      description: <>Define ou atualiza the value.</>
+    },
+    {
+      signature: "put(int)",
+      returns: "void",
+      description: <>Define ou atualiza the value.</>
+    },
+    {
+      signature: "set(int, int)",
+      returns: "void",
+      description: <>Define ou atualiza the value.</>
+    },
+    {
+      signature: "get(int)",
+      returns: "int",
+      description: <>Retorna a propriedade <code>propriedade </code>valor value atual``.</>
+    },
+    {
+      signature: "getBytes()",
+      returns: "int[]",
+      description: <>Retorna a propriedade <code>propriedade </code>bytes atual``.</>
+    },
+    {
+      signature: "size()",
+      returns: "int",
+      description: <>Executa a operação size.</>
+    },
+    {
+      signature: "capacity()",
+      returns: "int",
+      description: <>Executa a operação capacity.</>
+    }
+  ]}
+/>

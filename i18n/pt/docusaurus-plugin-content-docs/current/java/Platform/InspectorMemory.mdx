@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # InspectorMemory
 
 Referência completa da API de `InspectorMemory`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,11 +16,27 @@ Referência completa da API de `InspectorMemory`, incluindo construtores, atribu
 public class InspectorMemory
 ```
 
-## Métodos (4)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| HashMap&lt;&gt;() | [Map]&[lt];[String], [String]&[gt]; [dataBase] = [new] | Executa a operação HashMap&lt;&gt;. |
-| `store(String, String)` | `void` | Executa `store` e retorna quando a chamada do motor termina. |
-| `load(String)` | `String` | Executa `load` e retorna quando a chamada do motor termina. |
-| `clear()` | `void` | Executa `clear` e retorna quando a chamada do motor termina. |
+<ApiDoc
+  methods={[
+    {
+      signature: "HashMap&lt;&gt;()",
+      returns: "Map&lt;String, String&gt; dataBase = new",
+      description: <>Executa a operação HashMap&lt;&gt;.</>
+    },
+    {
+      signature: "store(String, String)",
+      returns: "void",
+      description: <>Executa <code>store</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "load(String)",
+      returns: "String",
+      description: <>Executa <code>load</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "clear()",
+      returns: "void",
+      description: <>Executa <code>clear</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+/>

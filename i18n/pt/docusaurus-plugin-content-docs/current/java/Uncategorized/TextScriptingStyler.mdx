@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # TextScriptingStyler
 
 Referência completa da API de `TextScriptingStyler`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,8 +16,12 @@ Referência completa da API de `TextScriptingStyler`, incluindo construtores, at
 public class TextScriptingStyler
 ```
 
-## Métodos (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `execute(String, TextScriptingTheme, [List&lt;TextScriptingSyntaxHighlightSpan&gt;])` | `void` | Executa a operação execute usando os parâmetros informados (source, theme, highlightSpans). |
+<ApiDoc
+  methods={[
+    {
+      signature: "execute(String, TextScriptingTheme, List&lt;TextScriptingSyntaxHighlightSpan&gt;)",
+      returns: "void",
+      description: <>Executa a operação execute usando os parâmetros informados (source, theme, highlightSpans).</>
+    }
+  ]}
+/>

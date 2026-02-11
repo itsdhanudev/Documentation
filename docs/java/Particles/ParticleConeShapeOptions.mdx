@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # ParticleConeShapeOptions
 
 Complete API reference for `ParticleConeShapeOptions`, including constructors, attributes, virtual attributes, and methods.
@@ -14,24 +16,46 @@ Complete API reference for `ParticleConeShapeOptions`, including constructors, a
 public class ParticleConeShapeOptions
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| ParticleConeShapeOptions([ParticleConeShapeOptions]) | Executes `ParticleConeShapeOptions` and returns after the underlying engine call finishes. |
-| ParticleConeShapeOptions([Engine]) | Executes `ParticleConeShapeOptions` and returns after the underlying engine call finishes. |
-| ParticleConeShapeOptions() | Creates a new instance of ParticleConeShapeOptions. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [ParticleConeShapeOptions] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (3)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `maxAngle` | [float] | `get/set` | Virtual attribute exposed by `getMaxAngle`. Access it like a field to read or write the underlying value. |
-| `minAngle` | [float] | `get/set` | Virtual attribute exposed by `getMinAngle`. Access it like a field to read or write the underlying value. |
-| `radius` | [float] | `get/set` | Virtual attribute exposed by `getRadius`. Access it like a field to read or write the underlying value. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "ParticleConeShapeOptions(ParticleConeShapeOptions)",
+      description: <>Executes <code>ParticleConeShapeOptions</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "ParticleConeShapeOptions(Engine)",
+      description: <>Executes <code>ParticleConeShapeOptions</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "ParticleConeShapeOptions()",
+      description: <>Creates a new instance of ParticleConeShapeOptions.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "ParticleConeShapeOptions",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "maxAngle",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getMaxAngle</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "minAngle",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getMinAngle</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "radius",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getRadius</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+/>

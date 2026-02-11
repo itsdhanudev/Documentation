@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # ALayoutInflater
 
 Complete API reference for `ALayoutInflater`, including constructors, attributes, virtual attributes, and methods.
@@ -14,11 +16,27 @@ Complete API reference for `ALayoutInflater`, including constructors, attributes
 public class ALayoutInflater
 ```
 
-## Static Methods (4)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `inflate(String)` | `View` | Performs the inflate operation using the provided parameters (inProjectPath). |
-| `inflate(File)` | `View` | Executes `inflate` and returns after the underlying engine call finishes. |
-| `inflate(Resources.File)` | `View` | Performs the inflate operation using the provided parameters (file). |
-| `inflateXML(String)` | `View` | Performs the inflateXML operation using the provided parameters (xml). |
+<ApiDoc
+  staticMethods={[
+    {
+      signature: "inflate(String)",
+      returns: "View",
+      description: <>Performs the inflate operation using the provided parameters (inProjectPath).</>
+    },
+    {
+      signature: "inflate(File)",
+      returns: "View",
+      description: <>Executes <code>inflate</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "inflate(Resources.File)",
+      returns: "View",
+      description: <>Performs the inflate operation using the provided parameters (file).</>
+    },
+    {
+      signature: "inflateXML(String)",
+      returns: "View",
+      description: <>Performs the inflateXML operation using the provided parameters (xml).</>
+    }
+  ]}
+/>

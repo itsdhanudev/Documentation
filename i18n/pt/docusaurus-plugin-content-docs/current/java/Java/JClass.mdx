@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # JClass
 
 Referência completa da API de `JClass`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,23 +16,40 @@ Referência completa da API de `JClass`, incluindo construtores, atributos, atri
 public class JClass
 ```
 
-## Construtores (1)
-
-| Signature | Description |
-| --- | --- |
-| JClass([Class], [String], [boolean]) | Cria uma nova instância de JClass. |
-
-## Atributos (2)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `name` | [String] | Representa o valor de `name` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-| `isEngineNative` | [boolean] | Representa o valor de `isEngineNative` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Métodos (3)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getClassAddress()` | `Class` | Retorna a propriedade `propriedade `class address atual``. |
-| `getName()` | `String` | Retorna a propriedade `propriedade `name atual``. |
-| `isEngineNative()` | `boolean` | Retorna se engine native é verdadeiro. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "JClass(Class, String, boolean)",
+      description: <>Cria uma nova instância de JClass.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "name",
+      type: "String",
+      description: <>Representa o valor de <code>name</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    },
+    {
+      name: "isEngineNative",
+      type: "boolean",
+      description: <>Representa o valor de <code>isEngineNative</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "getClassAddress()",
+      returns: "Class",
+      description: <>Retorna a propriedade <code>propriedade </code>class address atual``.</>
+    },
+    {
+      signature: "getName()",
+      returns: "String",
+      description: <>Retorna a propriedade <code>propriedade </code>name atual``.</>
+    },
+    {
+      signature: "isEngineNative()",
+      returns: "boolean",
+      description: <>Retorna se engine native é verdadeiro.</>
+    }
+  ]}
+/>

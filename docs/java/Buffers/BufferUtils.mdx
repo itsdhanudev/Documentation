@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # BufferUtils
 
 Complete API reference for `BufferUtils`, including constructors, attributes, virtual attributes, and methods.
@@ -14,19 +16,67 @@ Complete API reference for `BufferUtils`, including constructors, attributes, vi
 public class BufferUtils
 ```
 
-## Static Methods (12)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `createByteBuffer(int)` | `ByteBuffer` | Creates a new byte buffer. |
-| `createByteBuffer(byte[])` | `ByteBuffer` | Creates a new byte buffer. |
-| `createFloatBuffer(int)` | `FloatBuffer` | Creates a new float buffer. |
-| `createFloatBuffer(float[])` | `FloatBuffer` | Creates a new float buffer. |
-| `createIntBuffer(int)` | `IntBuffer` | Creates a new int buffer. |
-| `createIntBuffer(int[])` | `IntBuffer` | Creates a new int buffer. |
-| `createVector3Buffer(int)` | `Vector3Buffer` | Creates a new vector3 buffer. |
-| `createVector3Buffer([Vector3[]])` | `Vector3Buffer` | Creates a new vector3 buffer. |
-| `createVector2Buffer(int)` | `Vector2Buffer` | Creates a new vector2 buffer. |
-| `createVector2Buffer([Vector2[]])` | `Vector2Buffer` | Creates a new vector2 buffer. |
-| `createPoint3Buffer(int)` | `Point3Buffer` | Creates a new point3 buffer. |
-| `createPoint3Buffer([Point3[]])` | `Point3Buffer` | Creates a new point3 buffer. |
+<ApiDoc
+  staticMethods={[
+    {
+      signature: "createByteBuffer(int)",
+      returns: "ByteBuffer",
+      description: <>Creates a new byte buffer.</>
+    },
+    {
+      signature: "createByteBuffer(byte[])",
+      returns: "ByteBuffer",
+      description: <>Creates a new byte buffer.</>
+    },
+    {
+      signature: "createFloatBuffer(int)",
+      returns: "FloatBuffer",
+      description: <>Creates a new float buffer.</>
+    },
+    {
+      signature: "createFloatBuffer(float[])",
+      returns: "FloatBuffer",
+      description: <>Creates a new float buffer.</>
+    },
+    {
+      signature: "createIntBuffer(int)",
+      returns: "IntBuffer",
+      description: <>Creates a new int buffer.</>
+    },
+    {
+      signature: "createIntBuffer(int[])",
+      returns: "IntBuffer",
+      description: <>Creates a new int buffer.</>
+    },
+    {
+      signature: "createVector3Buffer(int)",
+      returns: "Vector3Buffer",
+      description: <>Creates a new vector3 buffer.</>
+    },
+    {
+      signature: "createVector3Buffer(Vector3[])",
+      returns: "Vector3Buffer",
+      description: <>Creates a new vector3 buffer.</>
+    },
+    {
+      signature: "createVector2Buffer(int)",
+      returns: "Vector2Buffer",
+      description: <>Creates a new vector2 buffer.</>
+    },
+    {
+      signature: "createVector2Buffer(Vector2[])",
+      returns: "Vector2Buffer",
+      description: <>Creates a new vector2 buffer.</>
+    },
+    {
+      signature: "createPoint3Buffer(int)",
+      returns: "Point3Buffer",
+      description: <>Creates a new point3 buffer.</>
+    },
+    {
+      signature: "createPoint3Buffer(Point3[])",
+      returns: "Point3Buffer",
+      description: <>Creates a new point3 buffer.</>
+    }
+  ]}
+/>

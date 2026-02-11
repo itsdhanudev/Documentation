@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # GUID
 
 Referência completa da API de `GUID`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,28 +16,43 @@ Referência completa da API de `GUID`, incluindo construtores, atributos, atribu
 public class GUID
 ```
 
-## Construtores (2)
-
-| Signature | Description |
-| --- | --- |
-| GUID([GUID]) | Executa `GUID` e retorna quando a chamada do motor termina. |
-| GUID() | Executa `GUID` e retorna quando a chamada do motor termina. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `guid` | [GUID] | Representa o valor de `guid` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (2)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `duplicableGUID` | [String] | `get/set` | Atributo virtual exposto por `getDuplicableGUID`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `metaID` | [String] | `get/set` | Atributo virtual exposto por `getMetaID`. Acesse como um campo para ler ou escrever o valor subjacente. |
-
-## Métodos (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getUniqueGUID()` | `String` | Retorna a propriedade `propriedade `unique guid atual``. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "GUID(GUID)",
+      description: <>Executa <code>GUID</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "GUID()",
+      description: <>Executa <code>GUID</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "guid",
+      type: "GUID",
+      description: <>Representa o valor de <code>guid</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "duplicableGUID",
+      type: "String",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getDuplicableGUID</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "metaID",
+      type: "String",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getMetaID</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "getUniqueGUID()",
+      returns: "String",
+      description: <>Retorna a propriedade <code>propriedade </code>unique guid atual``.</>
+    }
+  ]}
+/>

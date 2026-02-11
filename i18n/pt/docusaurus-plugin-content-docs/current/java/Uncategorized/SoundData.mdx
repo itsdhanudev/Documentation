@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # SoundData
 
 Referência completa da API de `SoundData`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,17 +16,45 @@ Referência completa da API de `SoundData`, incluindo construtores, atributos, a
 public class SoundData
 ```
 
-## Construtores (3)
-
-| Signature | Description |
-| --- | --- |
-| SoundData() | Cria uma nova instância de SoundData. |
-| SoundData([NativeFloatBuffer], [int]) | Cria uma nova instância de SoundData. |
-| SoundData([float][], [int]) | Cria uma nova instância de SoundData. |
-
-## Atributos Virtuais (2)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `dataBuffer` | [NativeFloatBuffer] | `get/set` | Atributo virtual exposto por `getDataBuffer`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `sampleRate` | [int] | `get/set` | Atributo virtual exposto por `getSampleRate`. Acesse como um campo para ler ou escrever o valor subjacente. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "SoundData()",
+      description: <>Cria uma nova instância de SoundData.</>
+    },
+    {
+      signature: "SoundData(NativeFloatBuffer, int)",
+      description: <>Cria uma nova instância de SoundData.</>
+    },
+    {
+      signature: "SoundData(float[], int)",
+      description: <>Cria uma nova instância de SoundData.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "dataBuffer",
+      type: "NativeFloatBuffer",
+      description: <><code>get/set</code></>
+    },
+    {
+      name: "sampleRate",
+      type: "int",
+      description: <><code>get/set</code></>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "dataBuffer",
+      type: "NativeFloatBuffer",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getDataBuffer</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "sampleRate",
+      type: "int",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getSampleRate</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+/>

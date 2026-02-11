@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Axis
 
 Complete API reference for `Axis`, including constructors, attributes, virtual attributes, and methods.
@@ -14,22 +16,36 @@ Complete API reference for `Axis`, including constructors, attributes, virtual a
 public class Axis
 ```
 
-## Constructors (2)
-
-| Signature | Description |
-| --- | --- |
-| Axis([Axis]) | Executes `Axis` and returns after the underlying engine call finishes. |
-| Axis([String]) | Executes `Axis` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `axis` | [Axis] | Represents the `axis` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (2)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `name` | [String] | `get` | Returns the name of the Axis. |
-| `value` | [Vector2] | `get/set` | Returns the value of the Axis. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "Axis(Axis)",
+      description: <>Executes <code>Axis</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "Axis(String)",
+      description: <>Executes <code>Axis</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "axis",
+      type: "Axis",
+      description: <>Represents the <code>axis</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "name",
+      type: "String",
+      access: "get",
+      description: <>Returns the name of the Axis.</>
+    },
+    {
+      name: "value",
+      type: "Vector2",
+      access: "get/set",
+      description: <>Returns the value of the Axis.</>
+    }
+  ]}
+/>

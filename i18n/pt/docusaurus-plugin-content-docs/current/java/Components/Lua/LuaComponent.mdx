@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # LuaComponent
 
 Referência completa da API de `LuaComponent`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,49 +16,168 @@ Referência completa da API de `LuaComponent`, incluindo construtores, atributos
 public class LuaComponent extends Component
 ```
 
-## Construtores (3)
-
-| Signature | Description |
-| --- | --- |
-| LuaComponent([LuaComponent]) | Executa `LuaComponent` e retorna quando a chamada do motor termina. |
-| LuaComponent([Engine]) | Executa `LuaComponent` e retorna quando a chamada do motor termina. |
-| LuaComponent() | Cria uma nova instância de LuaComponent. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [LuaComponent] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Métodos (28)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `get(String)` | `LuaValue` | Retorna a propriedade `propriedade `valor value atual``. |
-| `set(String, LuaValue)` | `void` | Define ou atualiza the value. |
-| `set(String, float)` | `void` | Define ou atualiza the value. |
-| `set(String, double)` | `void` | Define ou atualiza the value. |
-| `set(String, int)` | `void` | Define ou atualiza the value. |
-| `set(String, long)` | `void` | Define ou atualiza the value. |
-| `set(String, String)` | `void` | Define ou atualiza the value. |
-| `set(String, boolean)` | `void` | Define ou atualiza the value. |
-| `getFloat(String)` | `float` | Retorna a propriedade `propriedade `float atual``. |
-| `getDouble(String)` | `double` | Retorna a propriedade `propriedade `double atual``. |
-| `getInt(String)` | `float` | Retorna a propriedade `propriedade `int atual``. |
-| `getLong(String)` | `long` | Retorna a propriedade `propriedade `long atual``. |
-| `getString(String)` | `String` | Retorna a propriedade `propriedade `string atual``. |
-| `getBoolean(String)` | `boolean` | Retorna a propriedade `propriedade `boolean atual``. |
-| `getVar(String)` | `ValueObject` | Retorna a propriedade `propriedade `var atual``. |
-| `setVar(String, ValueObject)` | `void` | Define ou atualiza a propriedade `propriedade `var``. |
-| `setFloat(String, float)` | `void` | Define ou atualiza a propriedade `propriedade `float``. |
-| `setDouble(String, double)` | `void` | Define ou atualiza a propriedade `propriedade `double``. |
-| `setInt(String, int)` | `void` | Define ou atualiza a propriedade `propriedade `int``. |
-| `setLong(String, long)` | `void` | Define ou atualiza a propriedade `propriedade `long``. |
-| `setString(String, String)` | `void` | Define ou atualiza a propriedade `propriedade `string``. |
-| `setBoolean(String, boolean)` | `void` | Define ou atualiza a propriedade `propriedade `boolean``. |
-| `call(String)` | `void` | Executa a operação call usando os parâmetros informados (name). |
-| `call(String, int)` | `void` | Executa a operação call usando os parâmetros informados (name, args). |
-| `call(String, float)` | `void` | Executa a operação call usando os parâmetros informados (name, args). |
-| `call(String, String)` | `void` | Executa a operação call usando os parâmetros informados (name, args). |
-| `call(String, boolean)` | `void` | Executa a operação call usando os parâmetros informados (name, args). |
-| `call(String, Object...)` | `void` | Executa a operação call usando os parâmetros informados (name, args). |
+<ApiDoc
+  constructors={[
+    {
+      signature: "LuaComponent(LuaComponent)",
+      description: <>Executa <code>LuaComponent</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "LuaComponent(Engine)",
+      description: <>Executa <code>LuaComponent</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "LuaComponent()",
+      description: <>Cria uma nova instância de LuaComponent.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "LuaComponent",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "get(String)",
+      returns: "LuaValue",
+      description: <>Retorna a propriedade <code>propriedade </code>valor value atual``.</>
+    },
+    {
+      signature: "set(String, LuaValue)",
+      returns: "void",
+      description: <>Define ou atualiza the value.</>
+    },
+    {
+      signature: "set(String, float)",
+      returns: "void",
+      description: <>Define ou atualiza the value.</>
+    },
+    {
+      signature: "set(String, double)",
+      returns: "void",
+      description: <>Define ou atualiza the value.</>
+    },
+    {
+      signature: "set(String, int)",
+      returns: "void",
+      description: <>Define ou atualiza the value.</>
+    },
+    {
+      signature: "set(String, long)",
+      returns: "void",
+      description: <>Define ou atualiza the value.</>
+    },
+    {
+      signature: "set(String, String)",
+      returns: "void",
+      description: <>Define ou atualiza the value.</>
+    },
+    {
+      signature: "set(String, boolean)",
+      returns: "void",
+      description: <>Define ou atualiza the value.</>
+    },
+    {
+      signature: "getFloat(String)",
+      returns: "float",
+      description: <>Retorna a propriedade <code>propriedade </code>float atual``.</>
+    },
+    {
+      signature: "getDouble(String)",
+      returns: "double",
+      description: <>Retorna a propriedade <code>propriedade </code>double atual``.</>
+    },
+    {
+      signature: "getInt(String)",
+      returns: "float",
+      description: <>Retorna a propriedade <code>propriedade </code>int atual``.</>
+    },
+    {
+      signature: "getLong(String)",
+      returns: "long",
+      description: <>Retorna a propriedade <code>propriedade </code>long atual``.</>
+    },
+    {
+      signature: "getString(String)",
+      returns: "String",
+      description: <>Retorna a propriedade <code>propriedade </code>string atual``.</>
+    },
+    {
+      signature: "getBoolean(String)",
+      returns: "boolean",
+      description: <>Retorna a propriedade <code>propriedade </code>boolean atual``.</>
+    },
+    {
+      signature: "getVar(String)",
+      returns: "ValueObject",
+      description: <>Retorna a propriedade <code>propriedade </code>var atual``.</>
+    },
+    {
+      signature: "setVar(String, ValueObject)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>var``.</>
+    },
+    {
+      signature: "setFloat(String, float)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>float``.</>
+    },
+    {
+      signature: "setDouble(String, double)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>double``.</>
+    },
+    {
+      signature: "setInt(String, int)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>int``.</>
+    },
+    {
+      signature: "setLong(String, long)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>long``.</>
+    },
+    {
+      signature: "setString(String, String)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>string``.</>
+    },
+    {
+      signature: "setBoolean(String, boolean)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>boolean``.</>
+    },
+    {
+      signature: "call(String)",
+      returns: "void",
+      description: <>Executa a operação call usando os parâmetros informados (name).</>
+    },
+    {
+      signature: "call(String, int)",
+      returns: "void",
+      description: <>Executa a operação call usando os parâmetros informados (name, args).</>
+    },
+    {
+      signature: "call(String, float)",
+      returns: "void",
+      description: <>Executa a operação call usando os parâmetros informados (name, args).</>
+    },
+    {
+      signature: "call(String, String)",
+      returns: "void",
+      description: <>Executa a operação call usando os parâmetros informados (name, args).</>
+    },
+    {
+      signature: "call(String, boolean)",
+      returns: "void",
+      description: <>Executa a operação call usando os parâmetros informados (name, args).</>
+    },
+    {
+      signature: "call(String, Object...)",
+      returns: "void",
+      description: <>Executa a operação call usando os parâmetros informados (name, args).</>
+    }
+  ]}
+/>

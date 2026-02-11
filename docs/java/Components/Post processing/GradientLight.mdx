@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # GradientLight
 
 Complete API reference for `GradientLight`, including constructors, attributes, virtual attributes, and methods.
@@ -14,26 +16,58 @@ Complete API reference for `GradientLight`, including constructors, attributes, 
 public class GradientLight extends Component
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| GradientLight([GradientLight]) | Executes `GradientLight` and returns after the underlying engine call finishes. |
-| GradientLight([Engine]) | Executes `GradientLight` and returns after the underlying engine call finishes. |
-| GradientLight() | Executes `GradientLight` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [GradientLight] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (5)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `ambientLight` | [boolean] | `get/set` | Virtual attribute exposed by `isAmbientLight`. Access it like a field to read or write the underlying value. |
-| `ambientLightResolutionID` | [int] | `get/set` | Virtual attribute exposed by `getAmbientLightResolutionID`. Access it like a field to read or write the underlying value. |
-| `colorGradient` | [ColorGradient] | `get/set` | Virtual attribute exposed by `getColorGradient`. Access it like a field to read or write the underlying value. |
-| `lux` | [float] | `get/set` | Virtual attribute exposed by `getLux`. Access it like a field to read or write the underlying value. |
-| `maxResolutionID` | [int] | `get/set` | Virtual attribute exposed by `getMaxResolutionID`. Access it like a field to read or write the underlying value. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "GradientLight(GradientLight)",
+      description: <>Executes <code>GradientLight</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "GradientLight(Engine)",
+      description: <>Executes <code>GradientLight</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "GradientLight()",
+      description: <>Executes <code>GradientLight</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "GradientLight",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "ambientLight",
+      type: "boolean",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>isAmbientLight</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "ambientLightResolutionID",
+      type: "int",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getAmbientLightResolutionID</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "colorGradient",
+      type: "ColorGradient",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getColorGradient</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "lux",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getLux</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "maxResolutionID",
+      type: "int",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getMaxResolutionID</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+/>

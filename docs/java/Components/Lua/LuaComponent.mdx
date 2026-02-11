@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # LuaComponent
 
 Complete API reference for `LuaComponent`, including constructors, attributes, virtual attributes, and methods.
@@ -14,49 +16,168 @@ Complete API reference for `LuaComponent`, including constructors, attributes, v
 public class LuaComponent extends Component
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| LuaComponent([LuaComponent]) | Executes `LuaComponent` and returns after the underlying engine call finishes. |
-| LuaComponent([Engine]) | Executes `LuaComponent` and returns after the underlying engine call finishes. |
-| LuaComponent() | Creates a new instance of LuaComponent. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [LuaComponent] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Methods (28)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `get(String)` | `LuaValue` | Returns the current value. |
-| `set(String, LuaValue)` | `void` | Sets or updates the the value. |
-| `set(String, float)` | `void` | Sets or updates the the value. |
-| `set(String, double)` | `void` | Sets or updates the the value. |
-| `set(String, int)` | `void` | Sets or updates the the value. |
-| `set(String, long)` | `void` | Sets or updates the the value. |
-| `set(String, String)` | `void` | Sets or updates the the value. |
-| `set(String, boolean)` | `void` | Sets or updates the the value. |
-| `getFloat(String)` | `float` | Returns the current float. |
-| `getDouble(String)` | `double` | Returns the current double. |
-| `getInt(String)` | `float` | Returns the current int. |
-| `getLong(String)` | `long` | Returns the current long. |
-| `getString(String)` | `String` | Returns the current string. |
-| `getBoolean(String)` | `boolean` | Returns the current boolean. |
-| `getVar(String)` | `ValueObject` | Returns the current var. |
-| `setVar(String, ValueObject)` | `void` | Sets or updates the var. |
-| `setFloat(String, float)` | `void` | Sets or updates the float. |
-| `setDouble(String, double)` | `void` | Sets or updates the double. |
-| `setInt(String, int)` | `void` | Sets or updates the int. |
-| `setLong(String, long)` | `void` | Sets or updates the long. |
-| `setString(String, String)` | `void` | Sets or updates the string. |
-| `setBoolean(String, boolean)` | `void` | Sets or updates the boolean. |
-| `call(String)` | `void` | Performs the call operation using the provided parameters (name). |
-| `call(String, int)` | `void` | Performs the call operation using the provided parameters (name, args). |
-| `call(String, float)` | `void` | Performs the call operation using the provided parameters (name, args). |
-| `call(String, String)` | `void` | Performs the call operation using the provided parameters (name, args). |
-| `call(String, boolean)` | `void` | Performs the call operation using the provided parameters (name, args). |
-| `call(String, Object...)` | `void` | Performs the call operation using the provided parameters (name, args). |
+<ApiDoc
+  constructors={[
+    {
+      signature: "LuaComponent(LuaComponent)",
+      description: <>Executes <code>LuaComponent</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "LuaComponent(Engine)",
+      description: <>Executes <code>LuaComponent</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "LuaComponent()",
+      description: <>Creates a new instance of LuaComponent.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "LuaComponent",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "get(String)",
+      returns: "LuaValue",
+      description: <>Returns the current value.</>
+    },
+    {
+      signature: "set(String, LuaValue)",
+      returns: "void",
+      description: <>Sets or updates the the value.</>
+    },
+    {
+      signature: "set(String, float)",
+      returns: "void",
+      description: <>Sets or updates the the value.</>
+    },
+    {
+      signature: "set(String, double)",
+      returns: "void",
+      description: <>Sets or updates the the value.</>
+    },
+    {
+      signature: "set(String, int)",
+      returns: "void",
+      description: <>Sets or updates the the value.</>
+    },
+    {
+      signature: "set(String, long)",
+      returns: "void",
+      description: <>Sets or updates the the value.</>
+    },
+    {
+      signature: "set(String, String)",
+      returns: "void",
+      description: <>Sets or updates the the value.</>
+    },
+    {
+      signature: "set(String, boolean)",
+      returns: "void",
+      description: <>Sets or updates the the value.</>
+    },
+    {
+      signature: "getFloat(String)",
+      returns: "float",
+      description: <>Returns the current float.</>
+    },
+    {
+      signature: "getDouble(String)",
+      returns: "double",
+      description: <>Returns the current double.</>
+    },
+    {
+      signature: "getInt(String)",
+      returns: "float",
+      description: <>Returns the current int.</>
+    },
+    {
+      signature: "getLong(String)",
+      returns: "long",
+      description: <>Returns the current long.</>
+    },
+    {
+      signature: "getString(String)",
+      returns: "String",
+      description: <>Returns the current string.</>
+    },
+    {
+      signature: "getBoolean(String)",
+      returns: "boolean",
+      description: <>Returns the current boolean.</>
+    },
+    {
+      signature: "getVar(String)",
+      returns: "ValueObject",
+      description: <>Returns the current var.</>
+    },
+    {
+      signature: "setVar(String, ValueObject)",
+      returns: "void",
+      description: <>Sets or updates the var.</>
+    },
+    {
+      signature: "setFloat(String, float)",
+      returns: "void",
+      description: <>Sets or updates the float.</>
+    },
+    {
+      signature: "setDouble(String, double)",
+      returns: "void",
+      description: <>Sets or updates the double.</>
+    },
+    {
+      signature: "setInt(String, int)",
+      returns: "void",
+      description: <>Sets or updates the int.</>
+    },
+    {
+      signature: "setLong(String, long)",
+      returns: "void",
+      description: <>Sets or updates the long.</>
+    },
+    {
+      signature: "setString(String, String)",
+      returns: "void",
+      description: <>Sets or updates the string.</>
+    },
+    {
+      signature: "setBoolean(String, boolean)",
+      returns: "void",
+      description: <>Sets or updates the boolean.</>
+    },
+    {
+      signature: "call(String)",
+      returns: "void",
+      description: <>Performs the call operation using the provided parameters (name).</>
+    },
+    {
+      signature: "call(String, int)",
+      returns: "void",
+      description: <>Performs the call operation using the provided parameters (name, args).</>
+    },
+    {
+      signature: "call(String, float)",
+      returns: "void",
+      description: <>Performs the call operation using the provided parameters (name, args).</>
+    },
+    {
+      signature: "call(String, String)",
+      returns: "void",
+      description: <>Performs the call operation using the provided parameters (name, args).</>
+    },
+    {
+      signature: "call(String, boolean)",
+      returns: "void",
+      description: <>Performs the call operation using the provided parameters (name, args).</>
+    },
+    {
+      signature: "call(String, Object...)",
+      returns: "void",
+      description: <>Performs the call operation using the provided parameters (name, args).</>
+    }
+  ]}
+/>

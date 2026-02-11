@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # GaussianBlur
 
 Referência completa da API de `GaussianBlur`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,24 +16,46 @@ Referência completa da API de `GaussianBlur`, incluindo construtores, atributos
 public class GaussianBlur extends Component
 ```
 
-## Construtores (3)
-
-| Signature | Description |
-| --- | --- |
-| GaussianBlur([GaussianBlur]) | Executa `GaussianBlur` e retorna quando a chamada do motor termina. |
-| GaussianBlur([Engine]) | Executa `GaussianBlur` e retorna quando a chamada do motor termina. |
-| GaussianBlur() | Executa `GaussianBlur` e retorna quando a chamada do motor termina. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [GaussianBlur] | Representa o valor de `instance` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Atributos Virtuais (3)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `blurRadius` | [float] | `get/set` | Atributo virtual exposto por `getBlurRadius`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `intensity` | [float] | `get/set` | Atributo virtual exposto por `getIntensity`. Acesse como um campo para ler ou escrever o valor subjacente. |
-| `quality` | [Quality] | `get/set` | Atributo virtual exposto por `getQuality`. Acesse como um campo para ler ou escrever o valor subjacente. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "GaussianBlur(GaussianBlur)",
+      description: <>Executa <code>GaussianBlur</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "GaussianBlur(Engine)",
+      description: <>Executa <code>GaussianBlur</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "GaussianBlur()",
+      description: <>Executa <code>GaussianBlur</code> e retorna quando a chamada do motor termina.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "GaussianBlur",
+      description: <>Representa o valor de <code>instance</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "blurRadius",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getBlurRadius</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "intensity",
+      type: "float",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getIntensity</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    },
+    {
+      name: "quality",
+      type: "Quality",
+      access: "get/set",
+      description: <>Atributo virtual exposto por <code>getQuality</code>. Acesse como um campo para ler ou escrever o valor subjacente.</>
+    }
+  ]}
+/>

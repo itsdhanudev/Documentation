@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # Collider
 
 Complete API reference for `Collider`, including constructors, attributes, virtual attributes, and methods.
@@ -14,38 +16,93 @@ Complete API reference for `Collider`, including constructors, attributes, virtu
 public class Collider extends Component
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| Collider([Collider]) | Executes `Collider` and returns after the underlying engine call finishes. |
-| Collider() | Creates a new instance of Collider. |
-| Collider([Shape]) | Executes `Collider` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `component` | [Collider] | Represents the `component` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (3)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `convexVertex` | [Vertex] | `set` | Sets the convex vertex of the collider. |
-| `vertex` | [Vertex] | `get/set` | Returns the collider vertex. |
-| `vertexFile` | [VertexFile] | `set` | Sets the vertex file for the collider. |
-
-## Methods (9)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `getShape()` | `Shape` | Returns the shape type of the collider. |
-| `setShape(Shape)` | `void` | Sets the shape type of the collider. |
-| `colliderWithName(String)` | `boolean` | Checks if this object is colliding with an object with the specified name. |
-| `isColliding()` | `boolean` | Checks if this object is colliding with anything. |
-| `getCollisionList()` | [List]&[lt];[Collision]&[gt]; | Returns a list of all current collisions. |
-| `getCollisionsCount()` | `int` | Returns the number of current collisions. |
-| `getCollisionAt(int)` | `Collision` | Returns the Collision at the specified index. |
-| `componentClassMatch(Component, Component)` | `boolean` | Executes `componentClassMatch` and returns after the underlying engine call finishes. |
-| `getEngineComponent()` | `Component` | Executes `getEngineComponent` and returns after the underlying engine call finishes. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "Collider(Collider)",
+      description: <>Executes <code>Collider</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "Collider()",
+      description: <>Creates a new instance of Collider.</>
+    },
+    {
+      signature: "Collider(Shape)",
+      description: <>Executes <code>Collider</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "component",
+      type: "Collider",
+      description: <>Represents the <code>component</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "convexVertex",
+      type: "Vertex",
+      access: "set",
+      description: <>Sets the convex vertex of the collider.</>
+    },
+    {
+      name: "vertex",
+      type: "Vertex",
+      access: "get/set",
+      description: <>Returns the collider vertex.</>
+    },
+    {
+      name: "vertexFile",
+      type: "VertexFile",
+      access: "set",
+      description: <>Sets the vertex file for the collider.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "getShape()",
+      returns: "Shape",
+      description: <>Returns the shape type of the collider.</>
+    },
+    {
+      signature: "setShape(Shape)",
+      returns: "void",
+      description: <>Sets the shape type of the collider.</>
+    },
+    {
+      signature: "colliderWithName(String)",
+      returns: "boolean",
+      description: <>Checks if this object is colliding with an object with the specified name.</>
+    },
+    {
+      signature: "isColliding()",
+      returns: "boolean",
+      description: <>Checks if this object is colliding with anything.</>
+    },
+    {
+      signature: "getCollisionList()",
+      returns: "List&lt;Collision&gt;",
+      description: <>Returns a list of all current collisions.</>
+    },
+    {
+      signature: "getCollisionsCount()",
+      returns: "int",
+      description: <>Returns the number of current collisions.</>
+    },
+    {
+      signature: "getCollisionAt(int)",
+      returns: "Collision",
+      description: <>Returns the Collision at the specified index.</>
+    },
+    {
+      signature: "componentClassMatch(Component, Component)",
+      returns: "boolean",
+      description: <>Executes <code>componentClassMatch</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "getEngineComponent()",
+      returns: "Component",
+      description: <>Executes <code>getEngineComponent</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # PanelArea
 
 Complete API reference for `PanelArea`, including constructors, attributes, virtual attributes, and methods.
@@ -14,32 +16,84 @@ Complete API reference for `PanelArea`, including constructors, attributes, virt
 public class PanelArea
 ```
 
-## Constructors (2)
-
-| Signature | Description |
-| --- | --- |
-| PanelArea([PanelArea]) | Executes `PanelArea` and returns after the underlying engine call finishes. |
-| PanelArea() | Executes `PanelArea` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [PanelArea] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Methods (12)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `setInstance(PanelArea)` | `void` | Executes `setInstance` and returns after the underlying engine call finishes. |
-| `addPanel(EditorPanel)` | `void` | Adds panel to the collection. |
-| `removePanel(EditorPanel)` | `void` | Removes panel from the collection. |
-| `requestDetach()` | `void` | Executes `requestDetach` and returns after the underlying engine call finishes. |
-| `getX()` | `float` | Returns the current x. |
-| `setX(float)` | `void` | Sets or updates the x. |
-| `getY()` | `float` | Returns the current y. |
-| `setY(float)` | `void` | Sets or updates the y. |
-| `getWidth()` | `float` | Returns the current width. |
-| `setWidth(float)` | `void` | Sets or updates the width. |
-| `getHeight()` | `float` | Returns the current height. |
-| `setHeight(float)` | `void` | Sets or updates the height. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "PanelArea(PanelArea)",
+      description: <>Executes <code>PanelArea</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "PanelArea()",
+      description: <>Executes <code>PanelArea</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "PanelArea",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "setInstance(PanelArea)",
+      returns: "void",
+      description: <>Executes <code>setInstance</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "addPanel(EditorPanel)",
+      returns: "void",
+      description: <>Adds panel to the collection.</>
+    },
+    {
+      signature: "removePanel(EditorPanel)",
+      returns: "void",
+      description: <>Removes panel from the collection.</>
+    },
+    {
+      signature: "requestDetach()",
+      returns: "void",
+      description: <>Executes <code>requestDetach</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "getX()",
+      returns: "float",
+      description: <>Returns the current x.</>
+    },
+    {
+      signature: "setX(float)",
+      returns: "void",
+      description: <>Sets or updates the x.</>
+    },
+    {
+      signature: "getY()",
+      returns: "float",
+      description: <>Returns the current y.</>
+    },
+    {
+      signature: "setY(float)",
+      returns: "void",
+      description: <>Sets or updates the y.</>
+    },
+    {
+      signature: "getWidth()",
+      returns: "float",
+      description: <>Returns the current width.</>
+    },
+    {
+      signature: "setWidth(float)",
+      returns: "void",
+      description: <>Sets or updates the width.</>
+    },
+    {
+      signature: "getHeight()",
+      returns: "float",
+      description: <>Returns the current height.</>
+    },
+    {
+      signature: "setHeight(float)",
+      returns: "void",
+      description: <>Sets or updates the height.</>
+    }
+  ]}
+/>

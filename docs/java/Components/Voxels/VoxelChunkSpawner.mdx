@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # VoxelChunkSpawner
 
 Complete API reference for `VoxelChunkSpawner`, including constructors, attributes, virtual attributes, and methods.
@@ -14,33 +16,71 @@ Complete API reference for `VoxelChunkSpawner`, including constructors, attribut
 public class VoxelChunkSpawner extends Component
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| VoxelChunkSpawner([VoxelChunkSpawner]) | Executes `VoxelChunkSpawner` and returns after the underlying engine call finishes. |
-| VoxelChunkSpawner([Engine]) | Executes `VoxelChunkSpawner` and returns after the underlying engine call finishes. |
-| VoxelChunkSpawner() | Creates a new instance of VoxelChunkSpawner. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [VoxelChunkSpawner] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (6)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `camera` | [SpatialObject] | `get/set` | Virtual attribute exposed by `getCamera`. Access it like a field to read or write the underlying value. |
-| `chunkBlueprint` | [VoxelChunk] | `get/set` | Virtual attribute exposed by `getChunkBlueprint`. Access it like a field to read or write the underlying value. |
-| `onlyVisibleChunks` | [boolean] | `set` | Virtual attribute exposed by `setOnlyVisibleChunks`. Access it like a field to read or write the underlying value. |
-| `renderChunks` | [int] | `get/set` | Virtual attribute exposed by `getRenderChunks`. Access it like a field to read or write the underlying value. |
-| `updateDelay` | [float] | `get/set` | Virtual attribute exposed by `getUpdateDelay`. Access it like a field to read or write the underlying value. |
-| `visibleDot` | [float] | `get/set` | Virtual attribute exposed by `getVisibleDot`. Access it like a field to read or write the underlying value. |
-
-## Methods (1)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `isOnlyVisibleChunks()` | `boolean` | Returns whether only visible chunks is true. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "VoxelChunkSpawner(VoxelChunkSpawner)",
+      description: <>Executes <code>VoxelChunkSpawner</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "VoxelChunkSpawner(Engine)",
+      description: <>Executes <code>VoxelChunkSpawner</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "VoxelChunkSpawner()",
+      description: <>Creates a new instance of VoxelChunkSpawner.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "VoxelChunkSpawner",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "camera",
+      type: "SpatialObject",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getCamera</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "chunkBlueprint",
+      type: "VoxelChunk",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getChunkBlueprint</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "onlyVisibleChunks",
+      type: "boolean",
+      access: "set",
+      description: <>Virtual attribute exposed by <code>setOnlyVisibleChunks</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "renderChunks",
+      type: "int",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getRenderChunks</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "updateDelay",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getUpdateDelay</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "visibleDot",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getVisibleDot</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "isOnlyVisibleChunks()",
+      returns: "boolean",
+      description: <>Returns whether only visible chunks is true.</>
+    }
+  ]}
+/>

@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # VoxelChunk
 
 Complete API reference for `VoxelChunk`, including constructors, attributes, virtual attributes, and methods.
@@ -14,43 +16,122 @@ Complete API reference for `VoxelChunk`, including constructors, attributes, vir
 public class VoxelChunk extends Component
 ```
 
-## Constructors (2)
-
-| Signature | Description |
-| --- | --- |
-| VoxelChunk([VoxelChunk]) | Executes `VoxelChunk` and returns after the underlying engine call finishes. |
-| VoxelChunk() | Executes `VoxelChunk` and returns after the underlying engine call finishes. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [VoxelChunk] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (6)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `blocksMatrix` | [OH3LevelIntArray] | `set` | Virtual attribute exposed by `setBlocksMatrix`. Access it like a field to read or write the underlying value. |
-| `blocksMatrixCritical` | [OH3LevelIntArray] | `get` | Virtual attribute exposed by `getBlocksMatrixCritical`. Access it like a field to read or write the underlying value. |
-| `height` | [int] | `get/set` | Virtual attribute exposed by `getHeight`. Access it like a field to read or write the underlying value. |
-| `offset` | [Vector2] | `get/set` | Virtual attribute exposed by `getOffset`. Access it like a field to read or write the underlying value. |
-| `usePositionAsCoordinatesOffset` | [boolean] | `get/set` | Virtual attribute exposed by `isUsePositionAsCoordinatesOffset`. Access it like a field to read or write the underlying value. |
-| `width` | [int] | `get/set` | Virtual attribute exposed by `getWidth`. Access it like a field to read or write the underlying value. |
-
-## Methods (12)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `apply()` | `void` | Executes `apply` and returns after the underlying engine call finishes. |
-| `invalidateBlocks()` | `void` | Executes `invalidateBlocks` and returns after the underlying engine call finishes. |
-| `getMaxVerticesCount()` | `int` | Returns the current max vertices count. |
-| `getBlock(int, int, int)` | `int` | Returns the current block. |
-| `getBlockLocal(int, int, int)` | `int` | Returns the current block local. |
-| `setBlock(int, int, int, int)` | `void` | Sets or updates the block. |
-| `setLocalBlock(int, int, int, int)` | `void` | Sets or updates the local block. |
-| `containsBlock(int, int, int)` | `boolean` | Performs the containsBlock operation using the provided parameters (x, y, z). |
-| `containsLocalBlock(int, int, int)` | `boolean` | Performs the containsLocalBlock operation using the provided parameters (x, y, z). |
-| `isReady()` | `boolean` | Returns whether ready is true. |
-| `componentClassMatch(Component, Component)` | `boolean` | Executes `componentClassMatch` and returns after the underlying engine call finishes. |
-| `getEngineComponent()` | `Component` | Executes `getEngineComponent` and returns after the underlying engine call finishes. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "VoxelChunk(VoxelChunk)",
+      description: <>Executes <code>VoxelChunk</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "VoxelChunk()",
+      description: <>Executes <code>VoxelChunk</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "VoxelChunk",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "blocksMatrix",
+      type: "OH3LevelIntArray",
+      access: "set",
+      description: <>Virtual attribute exposed by <code>setBlocksMatrix</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "blocksMatrixCritical",
+      type: "OH3LevelIntArray",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>getBlocksMatrixCritical</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "height",
+      type: "int",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getHeight</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "offset",
+      type: "Vector2",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getOffset</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "usePositionAsCoordinatesOffset",
+      type: "boolean",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>isUsePositionAsCoordinatesOffset</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "width",
+      type: "int",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getWidth</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "apply()",
+      returns: "void",
+      description: <>Executes <code>apply</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "invalidateBlocks()",
+      returns: "void",
+      description: <>Executes <code>invalidateBlocks</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "getMaxVerticesCount()",
+      returns: "int",
+      description: <>Returns the current max vertices count.</>
+    },
+    {
+      signature: "getBlock(int, int, int)",
+      returns: "int",
+      description: <>Returns the current block.</>
+    },
+    {
+      signature: "getBlockLocal(int, int, int)",
+      returns: "int",
+      description: <>Returns the current block local.</>
+    },
+    {
+      signature: "setBlock(int, int, int, int)",
+      returns: "void",
+      description: <>Sets or updates the block.</>
+    },
+    {
+      signature: "setLocalBlock(int, int, int, int)",
+      returns: "void",
+      description: <>Sets or updates the local block.</>
+    },
+    {
+      signature: "containsBlock(int, int, int)",
+      returns: "boolean",
+      description: <>Performs the containsBlock operation using the provided parameters (x, y, z).</>
+    },
+    {
+      signature: "containsLocalBlock(int, int, int)",
+      returns: "boolean",
+      description: <>Performs the containsLocalBlock operation using the provided parameters (x, y, z).</>
+    },
+    {
+      signature: "isReady()",
+      returns: "boolean",
+      description: <>Returns whether ready is true.</>
+    },
+    {
+      signature: "componentClassMatch(Component, Component)",
+      returns: "boolean",
+      description: <>Executes <code>componentClassMatch</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "getEngineComponent()",
+      returns: "Component",
+      description: <>Executes <code>getEngineComponent</code> and returns after the underlying engine call finishes.</>
+    }
+  ]}
+/>

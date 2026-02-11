@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # TagEnemyFieldOfView
 
 Complete API reference for `TagEnemyFieldOfView`, including constructors, attributes, virtual attributes, and methods.
@@ -14,27 +16,64 @@ Complete API reference for `TagEnemyFieldOfView`, including constructors, attrib
 public class TagEnemyFieldOfView
 ```
 
-## Constructors (3)
-
-| Signature | Description |
-| --- | --- |
-| TagEnemyFieldOfView([TagEnemyFieldOfView]) | Executes `TagEnemyFieldOfView` and returns after the underlying engine call finishes. |
-| TagEnemyFieldOfView([Engine]) | Executes `TagEnemyFieldOfView` and returns after the underlying engine call finishes. |
-| TagEnemyFieldOfView() | Creates a new instance of TagEnemyFieldOfView. |
-
-## Attributes (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `instance` | [TagEnemyFieldOfView] | Represents the `instance` value stored on this instance. Read or assign to update the property. |
-
-## Virtual Attributes (6)
-
-| Name | Type | Access | Description |
-| --- | --- | --- | --- |
-| `active` | [boolean] | `get/set` | Virtual attribute exposed by `isActive`. Access it like a field to read or write the underlying value. |
-| `fov` | [float] | `get/set` | Virtual attribute exposed by `getFov`. Access it like a field to read or write the underlying value. |
-| `maxDistance` | [float] | `get/set` | Virtual attribute exposed by `getMaxDistance`. Access it like a field to read or write the underlying value. |
-| `minDistance` | [float] | `get/set` | Virtual attribute exposed by `getMinDistance`. Access it like a field to read or write the underlying value. |
-| `targetTag` | [String] | `get` | Virtual attribute exposed by `getTargetTag`. Access it like a field to read or write the underlying value. |
-| `targetsTag` | [String] | `set` | Virtual attribute exposed by `setTargetsTag`. Access it like a field to read or write the underlying value. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "TagEnemyFieldOfView(TagEnemyFieldOfView)",
+      description: <>Executes <code>TagEnemyFieldOfView</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "TagEnemyFieldOfView(Engine)",
+      description: <>Executes <code>TagEnemyFieldOfView</code> and returns after the underlying engine call finishes.</>
+    },
+    {
+      signature: "TagEnemyFieldOfView()",
+      description: <>Creates a new instance of TagEnemyFieldOfView.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "instance",
+      type: "TagEnemyFieldOfView",
+      description: <>Represents the <code>instance</code> value stored on this instance. Read or assign to update the property.</>
+    }
+  ]}
+  virtualAttributes={[
+    {
+      name: "active",
+      type: "boolean",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>isActive</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "fov",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getFov</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "maxDistance",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getMaxDistance</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "minDistance",
+      type: "float",
+      access: "get/set",
+      description: <>Virtual attribute exposed by <code>getMinDistance</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "targetTag",
+      type: "String",
+      access: "get",
+      description: <>Virtual attribute exposed by <code>getTargetTag</code>. Access it like a field to read or write the underlying value.</>
+    },
+    {
+      name: "targetsTag",
+      type: "String",
+      access: "set",
+      description: <>Virtual attribute exposed by <code>setTargetsTag</code>. Access it like a field to read or write the underlying value.</>
+    }
+  ]}
+/>

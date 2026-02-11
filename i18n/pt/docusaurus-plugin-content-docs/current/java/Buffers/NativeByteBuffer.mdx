@@ -1,3 +1,5 @@
+import ApiDoc from '@site/src/components/ApiDoc';
+
 # NativeByteBuffer
 
 Referência completa da API de `NativeByteBuffer`, incluindo construtores, atributos, atributos virtuais e métodos.
@@ -14,28 +16,63 @@ Referência completa da API de `NativeByteBuffer`, incluindo construtores, atrib
 public class NativeByteBuffer
 ```
 
-## Construtores (3)
-
-| Signature | Description |
-| --- | --- |
-| NativeByteBuffer([NativeByteBuffer]) | Executa `NativeByteBuffer` e retorna quando a chamada do motor termina. |
-| NativeByteBuffer([Engine]) | Executa `NativeByteBuffer` e retorna quando a chamada do motor termina. |
-| NativeByteBuffer([int]) | Cria uma nova instância de NativeByteBuffer. |
-
-## Atributos (1)
-
-| Name | Type | Description |
-| --- | --- | --- |
-| `buffer` | [NativeByteBuffer] | Representa o valor de `buffer` armazenado nesta instância. Leia ou atribua para atualizar a propriedade. |
-
-## Métodos (7)
-
-| Signature | Returns | Description |
-| --- | --- | --- |
-| `get(int)` | `byte` | Retorna a propriedade `propriedade `valor value atual``. |
-| `set(int, byte)` | `void` | Define ou atualiza the value. |
-| `put(byte)` | `void` | Define ou atualiza the value. |
-| `capacity()` | `int` | Executa a operação capacity. |
-| `getPosition()` | `int` | Retorna a propriedade `propriedade `position atual``. |
-| `Position(int)` | `void` | Executa a operação Position usando os parâmetros informados (idx). |
-| `setPosition(int)` | `void` | Define ou atualiza a propriedade `propriedade `position``. |
+<ApiDoc
+  constructors={[
+    {
+      signature: "NativeByteBuffer(NativeByteBuffer)",
+      description: <>Executa <code>NativeByteBuffer</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "NativeByteBuffer(Engine)",
+      description: <>Executa <code>NativeByteBuffer</code> e retorna quando a chamada do motor termina.</>
+    },
+    {
+      signature: "NativeByteBuffer(int)",
+      description: <>Cria uma nova instância de NativeByteBuffer.</>
+    }
+  ]}
+  attributes={[
+    {
+      name: "buffer",
+      type: "NativeByteBuffer",
+      description: <>Representa o valor de <code>buffer</code> armazenado nesta instância. Leia ou atribua para atualizar a propriedade.</>
+    }
+  ]}
+  methods={[
+    {
+      signature: "get(int)",
+      returns: "byte",
+      description: <>Retorna a propriedade <code>propriedade </code>valor value atual``.</>
+    },
+    {
+      signature: "set(int, byte)",
+      returns: "void",
+      description: <>Define ou atualiza the value.</>
+    },
+    {
+      signature: "put(byte)",
+      returns: "void",
+      description: <>Define ou atualiza the value.</>
+    },
+    {
+      signature: "capacity()",
+      returns: "int",
+      description: <>Executa a operação capacity.</>
+    },
+    {
+      signature: "getPosition()",
+      returns: "int",
+      description: <>Retorna a propriedade <code>propriedade </code>position atual``.</>
+    },
+    {
+      signature: "Position(int)",
+      returns: "void",
+      description: <>Executa a operação Position usando os parâmetros informados (idx).</>
+    },
+    {
+      signature: "setPosition(int)",
+      returns: "void",
+      description: <>Define ou atualiza a propriedade <code>propriedade </code>position``.</>
+    }
+  ]}
+/>

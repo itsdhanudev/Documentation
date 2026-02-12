@@ -1,53 +1,46 @@
-# Vetor3.cross()
+# Vetor3.LEFT
 
-Método de instância em `Vector3`.
-
-## Descrição
-
-- Retorna the cross product of this Vector3 and the specified Vector3. |
-- Retorna the cross product of this Vector3 and the specified X, Y and Z values. |
+Represents negative X direction `(-1, 0, 0)`.
 
 ## Method Signature
 
 ```java
-cross(Vector3)
-cross(float, float, float)
+Vector3.left()
 ```
+
+## Descrição
+
+Canonical left direction in right-handed coordinate setups.
 
 ## Mathematical Definition
 
-`\mathbf{a}\times\mathbf{b}`
+`LEFT = (-1,0,0)`
 
 ## Parameters
 
-- `Vector3`: 3D vector input.
-- `float`: scalar numeric input.
+- None.
 
 ## Retorna
 
-- `Vector3`: returned by overloads of this method.
+- `Vector3`: unit vector on -X.
 
 ## Mutability
 
-- Does not modify o atual vector unless explicitly using a `Local`/`Equal` variant.
+- Treat as constant/read-only pattern.
 
 ## Edge Cases
 
-- Zero vectors can produce degenerate outputs for geometric methods.
-- `NaN` and `Infinity` inputs propagate according to IEEE-754 floating-point behavior.
-- Repeated operations may accumulate floating-point precision error.
+- For local-space motion, combine with transform basis vectors instead of world constantes.
 
 ## Usage Example
 
 ```java
-Vector3 edgeA = p1.subtract(p0);
-Vector3 edgeB = p2.subtract(p0);
-Vector3 normal = edgeA.cross(edgeB).normalize();
+myTransform.setPosition(myTransform.getPosition().add(Vector3.left().multiply(speed)));
 ```
 
 ## Mathematical Example
 
-Example input/output depends on overload; for vector arithmetic operations this is typically computed per-component.
+`RIGHT.add(LEFT) = ZERO`
 
 ## Visualization
 
@@ -84,7 +77,7 @@ Example input/output depends on overload; for vector arithmetic operations this 
           p.background('#0b1020');
           p.fill('#dbeafe');
           p.noStroke();
-          p.text('Tópico Vector3: vector3.cross', 16, 24);
+          p.text('Tópico Vector3: LEFT', 16, 24);
           p.text('Visualização genérica do vetor antes/depois', 16, 42);
 
           const ox = 140, oy = 250;
@@ -121,4 +114,3 @@ Example input/output depends on overload; for vector arithmetic operations this 
   </body>
 </html>
 ```
-

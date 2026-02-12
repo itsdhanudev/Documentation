@@ -1,53 +1,42 @@
-# Vetor3.cross()
+# Vetor3.Vector3(int)
 
-Método de instância em `Vector3`.
-
-## Descrição
-
-- Retorna the cross product of this Vector3 and the specified Vector3. |
-- Retorna the cross product of this Vector3 and the specified X, Y and Z values. |
+Creates a vector where all components receive the same integer value.
 
 ## Method Signature
 
 ```java
-cross(Vector3)
-cross(float, float, float)
+Vector3(int value)
 ```
 
-## Mathematical Definition
+## Descrição
 
-`\mathbf{a}\times\mathbf{b}`
+Useful for quick uniform vectors in integer-friendly setups.
 
 ## Parameters
 
-- `Vector3`: 3D vector input.
-- `float`: scalar numeric input.
+- `value` (`int`): promoted to float components.
 
 ## Retorna
 
-- `Vector3`: returned by overloads of this method.
+- `Vector3`: new vector `(value, value, value)`.
 
 ## Mutability
 
-- Does not modify o atual vector unless explicitly using a `Local`/`Equal` variant.
+- New instance creation only.
 
 ## Edge Cases
 
-- Zero vectors can produce degenerate outputs for geometric methods.
-- `NaN` and `Infinity` inputs propagate according to IEEE-754 floating-point behavior.
-- Repeated operations may accumulate floating-point precision error.
+- Large integers may lose precision when represented as float.
 
 ## Usage Example
 
 ```java
-Vector3 edgeA = p1.subtract(p0);
-Vector3 edgeB = p2.subtract(p0);
-Vector3 normal = edgeA.cross(edgeB).normalize();
+Vector3 oneHundred = new Vector3(100);
 ```
 
 ## Mathematical Example
 
-Example input/output depends on overload; for vector arithmetic operations this is typically computed per-component.
+`3 -> (3,3,3)`.
 
 ## Visualization
 
@@ -84,7 +73,7 @@ Example input/output depends on overload; for vector arithmetic operations this 
           p.background('#0b1020');
           p.fill('#dbeafe');
           p.noStroke();
-          p.text('Tópico Vector3: vector3.cross', 16, 24);
+          p.text('Tópico Vector3: Vector3_int', 16, 24);
           p.text('Visualização genérica do vetor antes/depois', 16, 42);
 
           const ox = 140, oy = 250;

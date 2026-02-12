@@ -1,0 +1,169 @@
+# Vetor3 Method Topics Index
+
+This index lists generated per-method topics using the `vector3.<topicname>.mdx` naming format.
+
+Total topics: **87**.
+
+## Files
+
+- `vector3.add.mdx`
+- `vector3.addadd.mdx`
+- `vector3.angle.mdx`
+- `vector3.back.mdx`
+- `vector3.blend.mdx`
+- `vector3.blendlocal.mdx`
+- `vector3.copy.mdx`
+- `vector3.cross.mdx`
+- `vector3.deserializelocal.mdx`
+- `vector3.distance.mdx`
+- `vector3.div.mdx`
+- `vector3.divequal.mdx`
+- `vector3.divide.mdx`
+- `vector3.divlocal.mdx`
+- `vector3.divx.mdx`
+- `vector3.divy.mdx`
+- `vector3.divz.mdx`
+- `vector3.dot.mdx`
+- `vector3.down.mdx`
+- `vector3.equals.mdx`
+- `vector3.forward.mdx`
+- `vector3.genericinterface.mdx`
+- `vector3.getxy.mdx`
+- `vector3.getxz.mdx`
+- `vector3.getyx.mdx`
+- `vector3.getyz.mdx`
+- `vector3.getzx.mdx`
+- `vector3.getzy.mdx`
+- `vector3.greaterorequalsthan.mdx`
+- `vector3.greaterthan.mdx`
+- `vector3.inspectorcontroller.mdx`
+- `vector3.isnull.mdx`
+- `vector3.left.mdx`
+- `vector3.comprimento.mdx`
+- `vector3.lerp.mdx`
+- `vector3.lerpinseconds.mdx`
+- `vector3.lessorequalsthan.mdx`
+- `vector3.lessthan.mdx`
+- `vector3.magnitude.mdx`
+- `vector3.max.mdx`
+- `vector3.min.mdx`
+- `vector3.mul.mdx`
+- `vector3.mulequal.mdx`
+- `vector3.mullocal.mdx`
+- `vector3.multiply.mdx`
+- `vector3.mulx.mdx`
+- `vector3.muly.mdx`
+- `vector3.mulz.mdx`
+- `vector3.negate.mdx`
+- `vector3.normalize.mdx`
+- `vector3.normalizelocal.mdx`
+- `vector3.notequals.mdx`
+- `vector3.one.mdx`
+- `vector3.pointerequals.mdx`
+- `vector3.reflect.mdx`
+- `vector3.removeremove.mdx`
+- `vector3.right.mdx`
+- `vector3.rotate.mdx`
+- `vector3.rotatearoundpivot.mdx`
+- `vector3.serializetostring.mdx`
+- `vector3.set.mdx`
+- `vector3.setxy.mdx`
+- `vector3.setxz.mdx`
+- `vector3.setyx.mdx`
+- `vector3.setyz.mdx`
+- `vector3.setzx.mdx`
+- `vector3.setzy.mdx`
+- `vector3.smoothdamp.mdx`
+- `vector3.sqrdistance.mdx`
+- `vector3.sqrcomprimento.mdx`
+- `vector3.sqrmagnitude.mdx`
+- `vector3.sub.mdx`
+- `vector3.subequal.mdx`
+- `vector3.sublocal.mdx`
+- `vector3.subtract.mdx`
+- `vector3.subx.mdx`
+- `vector3.suby.mdx`
+- `vector3.subz.mdx`
+- `vector3.sum.mdx`
+- `vector3.sumequal.mdx`
+- `vector3.sumlocal.mdx`
+- `vector3.sumx.mdx`
+- `vector3.sumy.mdx`
+- `vector3.sumz.mdx`
+- `vector3.tostring.mdx`
+- `vector3.trianglenormal.mdx`
+- `vector3.zero.mdx`
+
+## Visualization
+
+### p5.js HTML Source
+
+```html
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+    <style>
+      html, body { margin: 0; padding: 0; background: #0b1020; }
+      #sketch { width: 100vw; height: 100vh; overflow: hidden; }
+    </style>
+  </head>
+  <body>
+    <div id="sketch"></div>
+    <script>
+      const sketch = (p) => {
+        let t = 0;
+        p.setup = () => {
+          p.createCanvas(680, 320).parent('sketch');
+          p.textFont('monospace');
+        };
+
+        function axis(x1,y1,x2,y2,label,c) {
+          p.stroke(c); p.strokeWeight(2);
+          p.line(x1,y1,x2,y2);
+          p.noStroke(); p.fill(c); p.text(label, x2 + 6, y2 + 4);
+        }
+
+        p.draw = () => {
+          p.background('#0b1020');
+          p.fill('#dbeafe');
+          p.noStroke();
+          p.text('Tópico Vector3: vector3.methods.index', 16, 24);
+          p.text('Visualização genérica do vetor antes/depois', 16, 42);
+
+          const ox = 140, oy = 250;
+          axis(ox, oy, ox + 170, oy, 'X', '#60a5fa');
+          axis(ox, oy, ox, oy - 140, 'Y', '#34d399');
+          axis(ox, oy, ox + 90, oy - 90, 'Z', '#f59e0b');
+
+          const before = { x: 60, y: -70, z: 35 };
+          const factor = 0.5 + 0.5 * Math.sin(t);
+          const after = { x: before.x * (0.7 + factor*0.8), y: before.y * (0.6 + factor*0.6), z: before.z * (0.8 + factor*0.5) };
+
+          function drawVec(v, color, label, yText) {
+            p.stroke(color); p.strokeWeight(3);
+            const px = ox + v.x + v.z * 0.6;
+            const py = oy + v.y - v.z * 0.6;
+            p.line(ox, oy, px, py);
+            p.noStroke(); p.fill(color);
+            p.circle(px, py, 8);
+            p.text(label + '=(' + v.x.toFixed(1) + ', ' + v.y.toFixed(1) + ', ' + v.z.toFixed(1) + ')', 360, yText);
+          }
+
+          drawVec(before, '#a78bfa', 'before', 150);
+          drawVec(after, '#f43f5e', 'after ', 175);
+
+          p.noStroke();
+          p.fill('#93c5fd');
+          p.text('Este esboço p5 está incorporado via HTML no MDX.', 16, 300);
+
+          t += 0.02;
+        };
+      };
+      new p5(sketch);
+    </script>
+  </body>
+</html>
+```
+

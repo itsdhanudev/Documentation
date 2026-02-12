@@ -1,76 +1,129 @@
-# `Vector3.dot`
+# Vetor3.dot()
 
-## Assinatura
-
-```java
-float dot(Vector3 v)
-```
-
-## Resumo
-
-Retorna o produto escalar entre este vetor e outro vetor.
+Método de instância em `Vector3`.
 
 ## Descrição
 
-O produto escalar é útil para determinar o grau de similaridade entre duas direções. Quando ambos os vetores são normalizados:
+- Retorna the dot product of this Vector3 and the specified Vector3. |
+- Retorna the dot product of this Vector3 and the specified X, Y and Z values. |
+- Retorna the dot product of this Vector3 and the specified value, used for all components. |
+
+## Method Signature
 
 ```java
-public SpatialObject object;
+dot(Vector3)
+dot(float, float, float)
+dot(float)
+```
 
-/// Run only once
-void start() {}
+## Mathematical Definition
 
-/// Repeat every frame
-void repeat() {
-  Vector3 forward = myTransform.forward();
-  Vector3 toTarget = (object.getPosition() - myTransform.getPosition()).normalize();
-  float d = forward.dot(toTarget);
+`\mathbf{a}\cdot\mathbf{b}=a_xb_x+a_yb_y+a_zb_z`
 
-  if (d > 0.5f) {
-    print("inFront");
-  } else {
-    print("inBack");
-  }
+## Parameters
+
+- `Vector3`: 3D vector input.
+- `float`: scalar numeric input.
+
+## Retorna
+
+- `float`: returned by overloads of this method.
+
+## Mutability
+
+- Does not modify o atual vector unless explicitly using a `Local`/`Equal` variant.
+
+## Edge Cases
+
+- Zero vectors can produce degenerate outputs for geometric methods.
+- `NaN` and `Infinity` inputs propagate according to IEEE-754 floating-point behavior.
+- Repeated operations may accumulate floating-point precision error.
+
+## Usage Example
+
+```java
+Vector3 forward = myTransform.forward().normalize();
+Vector3 toTarget = target.getPosition().subtract(myTransform.getPosition()).normalize();
+float alignment = forward.dot(toTarget);
+if (alignment > 0.7f) {
+  print("Target is in front cone");
 }
 ```
 
-##
+## Mathematical Example
 
-**float**: O produto escalar dos dois vetores.
+Example input/output depends on overload; for vector arithmetic operations this is typically computed per-component.
 
-## Padrões de Uso Comuns
+## Visualization
 
-**Detecção de direção**: Verifica se um objeto está à frente ou atrás usando o vetor de direção.
+### p5.js HTML Source
 
-```java
-Vector3 forward = myTransform.forward();
-Vector3 toObject = (target.getPosition() - myTransform.getPosition()).normalize();
-float alignment = forward.dot(toObject);
+```html
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+    <style>
+      html, body { margin: 0; padding: 0; background: #0b1020; }
+      #sketch { width: 100vw; height: 100vh; overflow: hidden; }
+    </style>
+  </head>
+  <body>
+    <div id="sketch"></div>
+    <script>
+      const sketch = (p) => {
+        let t = 0;
+        p.setup = () => {
+          p.createCanvas(680, 320).parent('sketch');
+          p.textFont('monospace');
+        };
 
-if (alignment > 0) {
-  print("Target is in front");
-}
+        function axis(x1,y1,x2,y2,label,c) {
+          p.stroke(c); p.strokeWeight(2);
+          p.line(x1,y1,x2,y2);
+          p.noStroke(); p.fill(c); p.text(label, x2 + 6, y2 + 4);
+        }
+
+        p.draw = () => {
+          p.background('#0b1020');
+          p.fill('#dbeafe');
+          p.noStroke();
+          p.text('Tópico Vector3: vector3.dot', 16, 24);
+          p.text('Visualização genérica do vetor antes/depois', 16, 42);
+
+          const ox = 140, oy = 250;
+          axis(ox, oy, ox + 170, oy, 'X', '#60a5fa');
+          axis(ox, oy, ox, oy - 140, 'Y', '#34d399');
+          axis(ox, oy, ox + 90, oy - 90, 'Z', '#f59e0b');
+
+          const before = { x: 60, y: -70, z: 35 };
+          const factor = 0.5 + 0.5 * Math.sin(t);
+          const after = { x: before.x * (0.7 + factor*0.8), y: before.y * (0.6 + factor*0.6), z: before.z * (0.8 + factor*0.5) };
+
+          function drawVec(v, color, label, yText) {
+            p.stroke(color); p.strokeWeight(3);
+            const px = ox + v.x + v.z * 0.6;
+            const py = oy + v.y - v.z * 0.6;
+            p.line(ox, oy, px, py);
+            p.noStroke(); p.fill(color);
+            p.circle(px, py, 8);
+            p.text(label + '=(' + v.x.toFixed(1) + ', ' + v.y.toFixed(1) + ', ' + v.z.toFixed(1) + ')', 360, yText);
+          }
+
+          drawVec(before, '#a78bfa', 'before', 150);
+          drawVec(after, '#f43f5e', 'after ', 175);
+
+          p.noStroke();
+          p.fill('#93c5fd');
+          p.text('Este esboço p5 está incorporado via HTML no MDX.', 16, 300);
+
+          t += 0.02;
+        };
+      };
+      new p5(sketch);
+    </script>
+  </body>
+</html>
 ```
 
-**Medindo o alinhamento**: Determine o quão próximos dois vetores estão alinhados.
-
-```java
-Vector3 moveDirection = velocity.normalize();
-Vector3 desiredDirection = targetDirection.normalize();
-float similarity = moveDirection.dot(desiredDirection);
-```
-
-**Verificações do campo de visão**: Combine com um limiar para criar um cone de visão.
-
-```java
-float viewAngle = forward.dot(toTarget);
-if (viewAngle > 0.7f) {
-  print("Within narrow field of view");
-}
-```
-<div style={{ width: "100%", aspectRatio: "1 / 1" }}>
-  <iframe
-    src="https://rawcdn.githack.com/ITsMagic-Software/Documentation/main/static/hpages/vector3.dot.vis.html"
-    style={{ width: "100%", height: "100%", border: "none" }}
-  />
-</div>

@@ -1,53 +1,46 @@
-# Vetor3.cross()
+# Vetor3.ZERO
 
-Método de instância em `Vector3`.
-
-## Descrição
-
-- Retorna the cross product of this Vector3 and the specified Vector3. |
-- Retorna the cross product of this Vector3 and the specified X, Y and Z values. |
+Represents the zero vector `(0, 0, 0)`.
 
 ## Method Signature
 
 ```java
-cross(Vector3)
-cross(float, float, float)
+Vector3.zero()
 ```
+
+## Descrição
+
+Use as canonical "no direction / no displacement" value.
 
 ## Mathematical Definition
 
-`\mathbf{a}\times\mathbf{b}`
+`ZERO = (0,0,0)`
 
 ## Parameters
 
-- `Vector3`: 3D vector input.
-- `float`: scalar numeric input.
+- None.
 
 ## Retorna
 
-- `Vector3`: returned by overloads of this method.
+- `Vector3`: zero-valued vector.
 
 ## Mutability
 
-- Does not modify o atual vector unless explicitly using a `Local`/`Equal` variant.
+- Returned object should be treated as read-only unless you intentionally copy it.
 
 ## Edge Cases
 
-- Zero vectors can produce degenerate outputs for geometric methods.
-- `NaN` and `Infinity` inputs propagate according to IEEE-754 floating-point behavior.
-- Repeated operations may accumulate floating-point precision error.
+- Normalizing `ZERO` is undefined in strict math.
 
 ## Usage Example
 
 ```java
-Vector3 edgeA = p1.subtract(p0);
-Vector3 edgeB = p2.subtract(p0);
-Vector3 normal = edgeA.cross(edgeB).normalize();
+Vector3 velocity = Vector3.zero();
 ```
 
 ## Mathematical Example
 
-Example input/output depends on overload; for vector arithmetic operations this is typically computed per-component.
+`(5, -2, 1) + ZERO = (5, -2, 1)`
 
 ## Visualization
 
@@ -84,7 +77,7 @@ Example input/output depends on overload; for vector arithmetic operations this 
           p.background('#0b1020');
           p.fill('#dbeafe');
           p.noStroke();
-          p.text('Tópico Vector3: vector3.cross', 16, 24);
+          p.text('Tópico Vector3: ZERO', 16, 24);
           p.text('Visualização genérica do vetor antes/depois', 16, 42);
 
           const ox = 140, oy = 250;
@@ -121,4 +114,3 @@ Example input/output depends on overload; for vector arithmetic operations this 
   </body>
 </html>
 ```
-
